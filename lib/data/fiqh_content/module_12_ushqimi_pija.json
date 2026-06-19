@@ -1,0 +1,271 @@
+{
+  "module_id": "ushqimi_pija",
+  "module_title_sq": "Ushqimi dhe Pija",
+  "module_title_ar": "الأطعمة والأشربة",
+  "module_icon": "food",
+  "description": "Etika e ngrënies, pijet e lejuara dhe të ndaluara, therja islame dhe rregullat e gjuetisë.",
+  "lessons": [
+    {
+      "id": "ushqim_1",
+      "title_sq": "Etika e ngrënies dhe pirjes",
+      "title_ar": "آداب الأكل والشرب",
+      "level": "beginner",
+      "source_references": [
+        "Imam Neveviu, Rijadu es-Salihin",
+        "Es-Sejid Sabik, Fikhu es-Sunne"
+      ],
+      "sections": [
+        {
+          "heading": "Para ngrënies",
+          "content_sq": "Sunet: 1) Larja e duarve. 2) Thënia 'Bismilah' para fillimit. Nëse harrohet, thuhet: 'Bismilahi fi evvelihi ue ahirihi.' 3) Ngrënia me dorën e djathtë. 4) Ngrënia nga ana e vet (jo nga mesi i tabakasë). 5) Ulja gjatë ngrënies — Profeti ﷺ nuk hante i shtrirë.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "يا غلام سمِّ الله وكل بيمينك وكل مما يليك",
+              "translation_sq": "O djalosh! Thuaj Bismilah, ha me dorën e djathtë, dhe ha nga ana jote.",
+              "collection": "Buhariu & Muslimi"
+            },
+            {
+              "type": "hadith",
+              "arabic": "إذا أكل أحدكم فليأكل بيمينه وإذا شرب فليشرب بيمينه",
+              "translation_sq": "Kur ha ndonjëri prej jush, le të hajë me të djathtën, dhe kur pi, le të pijë me të djathtën.",
+              "collection": "Muslimi"
+            }
+          ]
+        },
+        {
+          "heading": "Pas ngrënies",
+          "content_sq": "Sunet: 1) Falënderimi i Allahut: 'El-hamdu lil-lahi el-ledhi at'amena ue sekana ue xhealena muslimin.' 2) Lëpirja e gishtave para larjes — Profeti ﷺ e bënte. 3) Larja e duarve pas ngrënies. 4) Mosshpërdorimi — 'Hani e pini por mos e teproni' (A'raf 7:31).",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "كُلُوا وَاشْرَبُوا وَلَا تُسْرِفُوا",
+              "translation_sq": "Hani dhe pini, por mos e teproni.",
+              "surah": "El-A'raf",
+              "surah_number": 7,
+              "ayah": 31
+            },
+            {
+              "type": "hadith",
+              "arabic": "الحمد لله الذي أطعمنا وسقانا وجعلنا مسلمين",
+              "translation_sq": "Falënderimi i takon Allahut që na ushqeu, na dha të pimë dhe na bëri muslimanë.",
+              "collection": "Tirmidhiu"
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Me cilën dorë hahet sipas sunetit?",
+          "options": [
+            "Majtën",
+            "Djathtën",
+            "Dy duart",
+            "Nuk ka rëndësi"
+          ],
+          "correct_index": 1,
+          "explanation": "Profeti ﷺ urdhëroi ngrënien me dorën e djathtë."
+        },
+        {
+          "question": "Çka thuhet para ngrënies?",
+          "options": [
+            "El-hamdulilah",
+            "Bismilah",
+            "Allahu Ekber",
+            "SubhanAllah"
+          ],
+          "correct_index": 1,
+          "explanation": "Para ngrënies thuhet 'Bismilah'."
+        },
+        {
+          "question": "A lejohet teprimi në ngrënie?",
+          "options": [
+            "Po, nëse ushqimi është hallall",
+            "Jo, Kur'ani ndalon teprimin",
+            "Vetëm në festa",
+            "Vetëm ushqim vegjetarian"
+          ],
+          "correct_index": 1,
+          "explanation": "Kur'ani: 'Hani dhe pini, por mos e teproni' (A'raf 7:31)."
+        }
+      ]
+    },
+    {
+      "id": "ushqim_2",
+      "title_sq": "Pijet e ndaluara dhe substancat dehëse",
+      "title_ar": "الأشربة المحرمة",
+      "level": "intermediate",
+      "source_references": [
+        "Dr. Jusuf el-Kardavi, Hallalli dhe Harami në Islam",
+        "Es-Sejid Sabik, Fikhu es-Sunne"
+      ],
+      "sections": [
+        {
+          "heading": "Ndalimi i alkoolit (el-Hamr)",
+          "content_sq": "Alkooli është i ndaluar me tekst kur'anor. Ndalimi erdhi gradualisht: 1) Fillimisht u tha se ka mëkat e dobi (Bekare 2:219). 2) Pastaj u ndalua namazi i dehur (Nisa 4:43). 3) Përfundimisht u ndalua plotësisht (Maide 5:90). Çdo pije dehëse është haram, qoftë pak apo shumë. Profeti ﷺ: 'Çdo dehëse është hamer dhe çdo hamer është haram.'",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا إِنَّمَا الْخَمْرُ وَالْمَيْسِرُ وَالْأَنصَابُ وَالْأَزْلَامُ رِجْسٌ مِّنْ عَمَلِ الشَّيْطَانِ",
+              "translation_sq": "O ju që keni besuar! Alkooli, bixhozi, idhujt dhe shigjetat e fatit janë ndyrësi nga vepra e shejtanit.",
+              "surah": "El-Maide",
+              "surah_number": 5,
+              "ayah": 90
+            },
+            {
+              "type": "hadith",
+              "arabic": "كل مسكر خمر وكل خمر حرام",
+              "translation_sq": "Çdo dehëse është hamer (alkool) dhe çdo hamer është haram.",
+              "collection": "Muslimi"
+            }
+          ]
+        },
+        {
+          "heading": "Droga dhe substancat narkotike",
+          "content_sq": "Çdo substancë që dëmton mendjen ose trupin është e ndaluar: drogat, narkotikët, duhani (sipas fetvave bashkëkohore). Ibn Tejmijje ka thënë: 'Hashishi është më i keq se alkooli sepse prish mendjen plotësisht.' Rregulli: çdo gjë që deh në sasi të madhe, është haram edhe në sasi të vogël.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "ما أسكر كثيره فقليله حرام",
+              "translation_sq": "Çdo gjë që deh në sasi të madhe, është haram edhe në sasi të vogël.",
+              "collection": "Ebu Davudi"
+            },
+            {
+              "type": "hadith",
+              "arabic": "نهى رسول الله ﷺ عن كل مسكر ومفتّر",
+              "translation_sq": "Profeti ﷺ ndaloi çdo dehëse dhe çdo substancë që dobëson (mpirë).",
+              "collection": "Ahmed"
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Si erdhi ndalimi i alkoolit?",
+          "options": [
+            "Menjëherë",
+            "Gradualisht, në 3 faza",
+            "Vetëm në Medine",
+            "Pas vdekjes së Profetit ﷺ"
+          ],
+          "correct_index": 1,
+          "explanation": "Ndalimi erdhi gradualisht në 3 faza kur'anore."
+        },
+        {
+          "question": "A lejohet sasia e vogël e alkoolit?",
+          "options": [
+            "Po, nëse nuk deh",
+            "Jo, çdo sasi është haram",
+            "Vetëm për ilaç",
+            "Vetëm birrë"
+          ],
+          "correct_index": 1,
+          "explanation": "Çdo gjë që deh në sasi të madhe, është haram edhe në sasi të vogël."
+        },
+        {
+          "question": "Çfarë thotë Ibn Tejmijje për hashishin?",
+          "options": [
+            "Është hallall",
+            "Është më i keq se alkooli",
+            "Është mekruh",
+            "Nuk ka dispozitë"
+          ],
+          "correct_index": 1,
+          "explanation": "Ibn Tejmijje: 'Hashishi është më i keq se alkooli sepse prish mendjen plotësisht.'"
+        }
+      ]
+    },
+    {
+      "id": "ushqim_3",
+      "title_sq": "Therja Islame (Edh-Dhebh)",
+      "title_ar": "الذبح الإسلامي",
+      "level": "advanced",
+      "source_references": [
+        "Dr. Jusuf el-Kardavi, Hallalli dhe Harami në Islam",
+        "Dr. Vehbe ez-Zuhajli, El-Fikhu el-Islami"
+      ],
+      "sections": [
+        {
+          "heading": "Kushtet e therjes hallall",
+          "content_sq": "Mishi bëhet hallall me kushtet: 1) Therësi të jetë musliman ose Ehli Kitab. 2) Të përmendet emri i Allahut (Bismilah). 3) Të priten dy damarët e gjakut (venat jugulare), fyti dhe ezofagu. 4) Gjaku të rrjedhë — ngordhësira (kafsha e ngordhur) është haram. 5) Kafsha të jetë e gjallë në momentin e therjes.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "وَلَا تَأْكُلُوا مِمَّا لَمْ يُذْكَرِ اسْمُ اللَّهِ عَلَيْهِ",
+              "translation_sq": "Mos hani nga ajo mbi të cilën nuk është përmendur emri i Allahut.",
+              "surah": "El-En'am",
+              "surah_number": 6,
+              "ayah": 121
+            },
+            {
+              "type": "quran",
+              "arabic": "حُرِّمَتْ عَلَيْكُمُ الْمَيْتَةُ وَالدَّمُ وَلَحْمُ الْخِنزِيرِ",
+              "translation_sq": "Ju janë ndaluar ngordhësira, gjaku, mishi i derrit...",
+              "surah": "El-Maide",
+              "surah_number": 5,
+              "ayah": 3
+            }
+          ]
+        },
+        {
+          "heading": "Kafshët e lejuara dhe të ndaluara",
+          "content_sq": "Hallall: bagëtitë (lopa, delja, dhia, deveja), shpendët shtëpiake, peshqit (pa therje). Haram: derri, kafshët grabitqare me dhëmbë (luani, ujku, arusha), shpendët grabitqare me kthetra (shqiponja, skifteri), gomari shtëpiak, insektet (përveç karkalecit). Diskutabile: kali (hallall sipas shumicës, mekruh sipas Hanefive).",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "نهى رسول الله ﷺ عن كل ذي ناب من السباع وكل ذي مخلب من الطير",
+              "translation_sq": "Profeti ﷺ ndaloi çdo grabitqar me dhëmbë dhe çdo shpend grabitqar me kthetra.",
+              "collection": "Buhariu & Muslimi"
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Çka thuhet gjatë therjes?",
+          "options": [
+            "El-hamdulilah",
+            "Allahu Ekber",
+            "Bismilah, Allahu Ekber",
+            "SubhanAllah"
+          ],
+          "correct_index": 2,
+          "explanation": "Gjatë therjes thuhet 'Bismilah, Allahu Ekber'."
+        },
+        {
+          "question": "A kërkon peshku therje?",
+          "options": [
+            "Po",
+            "Jo, peshku është hallall pa therje",
+            "Vetëm peshku i madh",
+            "Vetëm në det"
+          ],
+          "correct_index": 1,
+          "explanation": "Peshku është hallall pa therje sipas hadithit."
+        },
+        {
+          "question": "Pse është haram gomari shtëpiak?",
+          "options": [
+            "Sepse është i ndyrë",
+            "Profeti ﷺ e ndaloi në Hajber",
+            "Sepse ha bar",
+            "Nuk është haram"
+          ],
+          "correct_index": 1,
+          "explanation": "Profeti ﷺ e ndaloi mishin e gomarit shtëpiak ditën e Hajberit."
+        },
+        {
+          "question": "A lejohet mishi i kalit?",
+          "options": [
+            "Po sipas shumicës, mekruh sipas Hanefive",
+            "Haram sipas të gjithëve",
+            "Hallall sipas të gjithëve",
+            "Vetëm në nevojë"
+          ],
+          "correct_index": 0,
+          "explanation": "Kali është hallall sipas shumicës, mekruh sipas Hanefive."
+        }
+      ]
+    }
+  ]
+}

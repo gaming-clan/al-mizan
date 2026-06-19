@@ -1,0 +1,270 @@
+{
+  "module_id": "introduction",
+  "module_title_sq": "Hyrje në Fikh",
+  "module_title_ar": "مدخل إلى الفقه",
+  "module_icon": "book_open",
+  "description": "Mëso bazat e jurisprudencës islame: çfarë është fikhu, burimet e tij, dhe madhhebet katër.",
+  "lessons": [
+    {
+      "id": "intro_001",
+      "title_sq": "Çfarë është Fikhu?",
+      "title_ar": "ما هو الفقه؟",
+      "level": "beginner",
+      "source_references": [
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "Shafiqur Rahman An Nadwi, Al Fiqh ul Muyassar (Simple Fiqh)",
+        "Usul el-Fikh, Abdul-Vehhab Khallaf, Kapitulli 1",
+        "El-Fikh el-Islami ve Edil'letuhu, Vehbe ez-Zuhejli, Hyrja (përkufizimi i fikhut)"
+      ],
+      "sections": [
+        {
+          "heading": "Përkufizimi i Fikhut",
+          "content_sq": "Fjala 'fikh' (الفقه) në gjuhën arabe do të thotë 'kuptim i thellë'. Në terminologjinë islame, fikhu përkufizohet si: njohja e dispozitave praktike sheriatike (hukme), të nxjerra nga argumentet e tyre të detajuara (ed-dil'le et-tafsilijje). Fikhu merret me veprimet e njeriut — si namazi, agjërimi, tregëtia, martesa — dhe i klasifikon ato sipas pesë kategorive bazë: farz (obligim), mustehab (e pëlqyeshme), mubah (e lejuar), mekruh (e papëlqyeshme), haram (e ndaluar). Dallimi mes fikhut dhe akides (besimit): akideja merret me çfarë besojmë (njëshmëria e Allahut, profetësia, bota tjetër), ndërsa fikhu merret me çfarë bëjmë (si falemi, si agjërojmë, si tregtojmë).",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "فَلَوْلَا نَفَرَ مِن كُلِّ فِرْقَةٍ مِّنْهُمْ طَائِفَةٌ لِّيَتَفَقَّهُوا فِي الدِّينِ وَلِيُنذِرُوا قَوْمَهُمْ إِذَا رَجَعُوا إِلَيْهِمْ لَعَلَّهُمْ يَحْذَرُونَ",
+              "translation_sq": "Pse të mos shkojë nga çdo grup prej tyre një palë, për t'u thelluar në dijen fetare (li jetefeffehu fid-din) dhe të paralajmërojnë popullin e tyre kur të kthehen, në mënyrë që ata të ruhen.",
+              "surah": "Et-Teube",
+              "surah_number": 9,
+              "ayah": 122
+            },
+            {
+              "type": "hadith",
+              "arabic": "مَنْ يُرِدِ اللَّهُ بِهِ خَيْرًا يُفَقِّهْهُ فِي الدِّينِ",
+              "translation_sq": "Kujt Allahu ia do të mirën, ia jep kuptimin e thellë në fe (jufekkihhu fid-din).",
+              "narrator": "Muavije ibn Ebi Sufjan (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 71,
+              "classification": "sahih"
+            }
+          ],
+          "madhab_rulings": null
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Çfarë do të thotë fjala 'fikh' në gjuhën arabe?",
+          "options": [
+            "Besim",
+            "Kuptim i thellë",
+            "Lutje",
+            "Lexim"
+          ],
+          "correct_index": 1,
+          "explanation": "Fjala 'fikh' (الفقه) do të thotë 'kuptim i thellë'. Në terminologjinë islame, i referohet njohjes së dispozitave praktike sheriatike."
+        },
+        {
+          "question": "Me çfarë merret fikhu?",
+          "options": [
+            "Me çfarë besojmë",
+            "Me veprimet praktike të njeriut",
+            "Me historinë islame",
+            "Me shkencën e hadithit"
+          ],
+          "correct_index": 1,
+          "explanation": "Fikhu merret me veprimet praktike — namazi, agjërimi, tregëtia, martesa etj. — dhe i klasifikon sipas dispozitave sheriatike."
+        }
+      ]
+    },
+    {
+      "id": "intro_002",
+      "title_sq": "Burimet e Fikhut",
+      "title_ar": "مصادر الفقه",
+      "level": "beginner",
+      "source_references": [
+        "Shafiqur Rahman An Nadwi, Al Fiqh ul Muyassar (Simple Fiqh)",
+        "El-Fikh el-Islami ve Edil'letuhu, Vehbe ez-Zuhejli, Vëll. 1, Burimet e Sheriatit",
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "Usul el-Fikh, Abdul-Vehhab Khallaf",
+        "Er-Risale, Imam esh-Shafi'i (vepra e parë e Usul el-Fikhut)"
+      ],
+      "sections": [
+        {
+          "heading": "Katër Burimet Kryesore",
+          "content_sq": "Fikhu islam bazohet në katër burime kryesore, të pranuara nga shumica dërrmuese e dijetarëve:\n\n1. Kurani Famëlartë — Fjala e Allahut, burimi më i lartë dhe absolut.\n2. Sunneti (Hadithi) — Fjalët, veprat dhe aprovimet e Profetit Muhamed ﷺ.\n3. Ixhmai — Unanimiteti (pajtimi) i dijetarëve të një kohe mbi një çështje.\n4. Kijasi — Analogjia juridike: zbatimi i një dispozite ekzistuese në një rast të ri me arsye të njëjtë (il'le).",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا أَطِيعُوا اللَّهَ وَأَطِيعُوا الرَّسُولَ وَأُولِي الْأَمْرِ مِنكُمْ فَإِن تَنَازَعْتُمْ فِي شَيْءٍ فَرُدُّوهُ إِلَى اللَّهِ وَالرَّسُولِ",
+              "translation_sq": "O ju që keni besuar! Bindjuni Allahut, bindjuni të Dërguarit dhe përgjegjësve nga mesi juaj. Nëse nuk pajtoheni për diçka, kthejeni atë tek Allahu (Kurani) dhe i Dërguari (Sunneti).",
+              "surah": "En-Nisa",
+              "surah_number": 4,
+              "ayah": 59
+            },
+            {
+              "type": "hadith",
+              "arabic": "قَالَ: أَقْضِي بِكِتَابِ اللَّهِ، قَالَ: فَإِنْ لَمْ تَجِدْ؟ قَالَ: فَبِسُنَّةِ رَسُولِ اللَّهِ، قَالَ: فَإِنْ لَمْ تَجِدْ؟ قَالَ: أَجْتَهِدُ رَأْيِي وَلَا آلُو",
+              "translation_sq": "Tha (Muadhi): Gjykoj me Librin e Allahut. (Profeti) Tha: E nëse nuk gjen? Tha: Me Sunnetin e të Dërguarit. Tha: E nëse nuk gjen? Tha: Bëj ixhtihad me mendimin tim dhe nuk kursej përpjekje.",
+              "narrator": "Muadh ibn Xhebel (r.a.)",
+              "collection": "Sunen Ebu Davud",
+              "hadith_number": 3592,
+              "classification": "hasen"
+            }
+          ],
+          "madhab_rulings": null
+        },
+        {
+          "heading": "Kurani si Burimi i Parë",
+          "content_sq": "Kurani Famëlartë është fjala e Allahut të Lartësuar, e zbritur te Profeti Muhamed ﷺ nëpërmjet melekut Xhibril. Ai është burimi absolut dhe i padiskutueshëm i të gjitha dispozitave. Çdo gjykim fetar duhet të jetë në përputhje me Kuranin — asgjë nuk e kundërshton atë. Kurani përmban rreth 500 ajete me dispozita fikhore direkte (ajat el-ahkam).",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "وَنَزَّلْنَا عَلَيْكَ الْكِتَابَ تِبْيَانًا لِّكُلِّ شَيْءٍ",
+              "translation_sq": "Ne ta kemi zbritur Librin si shpjegim për çdo gjë.",
+              "surah": "En-Nahl",
+              "surah_number": 16,
+              "ayah": 89
+            }
+          ],
+          "madhab_rulings": null
+        },
+        {
+          "heading": "Sunneti si Burimi i Dytë",
+          "content_sq": "Sunneti përfshin fjalët (kavli), veprimet (fi'li) dhe aprovimet heshtëse (takrir) të Profetit ﷺ. Ai shpjegon dhe detajon dispozitat e Kuranit. P.sh., Kurani urdhëron namazin, por Sunneti na mëson si falet konkretisht. Koleksionet më të besueshme: Sahih Bukhari, Sahih Muslim, Sunen Ebu Davud, Sunen et-Tirmidhi, Sunen en-Nesai, Sunen Ibn Maxhe.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "وَمَا آتَاكُمُ الرَّسُولُ فَخُذُوهُ وَمَا نَهَاكُمْ عَنْهُ فَانتَهُوا",
+              "translation_sq": "Çfarë ju jep i Dërguari, merreni; e çfarë ju ndalon, largohuni prej saj.",
+              "surah": "El-Hashr",
+              "surah_number": 59,
+              "ayah": 7
+            }
+          ],
+          "madhab_rulings": null
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Cilat janë katër burimet kryesore të fikhut?",
+          "options": [
+            "Kurani, Sunneti, Ixhmai, Kijasi",
+            "Kurani, Fikhu, Akideja, Tefsiri",
+            "Sunneti, Tafsiri, Ixhmai, Istihsani",
+            "Kurani, Hadithi, Tefsiri, Logjika"
+          ],
+          "correct_index": 0,
+          "explanation": "Katër burimet kryesore janë: 1) Kurani, 2) Sunneti, 3) Ixhmai (unanimiteti i dijetarëve), 4) Kijasi (analogjia juridike)."
+        },
+        {
+          "question": "Çfarë është Kijasi?",
+          "options": [
+            "Pajtimi i dijetarëve",
+            "Analogjia juridike — zbatimi i një dispozite në rast të ri me arsye të njëjtë",
+            "Fjalët e Profetit ﷺ",
+            "Ajetet e Kuranit"
+          ],
+          "correct_index": 1,
+          "explanation": "Kijasi është analogjia juridike: kur një rast i ri nuk ka dispozitë direkte, dijetarët krahasojnë me një rast ekzistues që ka arsye (il'le) të njëjtë."
+        }
+      ]
+    },
+    {
+      "id": "intro_003",
+      "title_sq": "Madhhebet Katër",
+      "title_ar": "المذاهب الأربعة",
+      "level": "beginner",
+      "source_references": [
+        "El-Fikh ala el-Medhahib el-Erbe'a, Abdurrahman el-Xheziri, Hyrja",
+        "El-Fikh el-Islami ve Edil'letuhu, Vehbe ez-Zuhejli, Vëll. 1, Kap. Madhhebet",
+        "Shafiqur Rahman An Nadwi, Al Fiqh ul Muyassar (Simple Fiqh)",
+        "Er-Risale, Imam esh-Shafi'i (origjinali i Usul el-Fikhut)",
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "Bidajetul-Muxhtehid, Ibn Rushd, Parathënia"
+      ],
+      "sections": [
+        {
+          "heading": "Çfarë është një Medhheb?",
+          "content_sq": "Medhheb (مذهب) do të thotë 'rrugë' ose 'metodologji'. Në kontekstin e fikhut, medhheb është shkolla juridike e një imami të madh, e cila ka metodologjinë e vet për nxjerrjen e dispozitave nga Kurani dhe Sunneti. Katër madhhebet e pranuara në Islamin sunnit janë: Hanefi, Maliki, Shafi'i dhe Hanbeli. Të katër janë të sakta dhe të vlefshme — dallimi mes tyre qëndron në metodologjinë e interpretimit, jo në bazat e besimit.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "لَا يَزَالُ طَائِفَةٌ مِنْ أُمَّتِي ظَاهِرِينَ عَلَى الْحَقِّ",
+              "translation_sq": "Do të ketë gjithmonë një grup nga ummeti im që qëndron në të vërtetën.",
+              "narrator": "Abdullah ibn Mes'ud (r.a.)",
+              "collection": "Sahih Muslim",
+              "hadith_number": 2218,
+              "classification": "sahih"
+            }
+          ],
+          "madhab_rulings": null
+        },
+        {
+          "heading": "1. Madhhebi Hanefi",
+          "content_sq": "Themeluesi: Imam Ebu Hanife En-Nu'man ibn Thabit (80–150 h. / 699–767 e.s.), i lindur në Kufe, Irak. Ai është nga tabiinët (brezi pas sahabëve) — ka takuar disa sahabë. Quhet 'Imam el-A'dham' (Imami më i Madh). Metodologjia: thekson kijasin (analogjinë) dhe istihsanin (preferencën juridike). Përhapja: Turqi, Ballkan (Shqipëri, Kosovë, Maqedoni, Bosnjë), Pakistan, Indi, Bangladesh, Afganistan, Azi Qendrore. Librat bazë: El-Hidaje (El-Merginani), Mukhtesar el-Kuduri, Redd el-Muhtar / Hashijet Ibn Abidin.",
+          "evidences": [],
+          "madhab_rulings": null
+        },
+        {
+          "heading": "2. Madhhebi Maliki",
+          "content_sq": "Themeluesi: Imam Malik ibn Enes (93–179 h. / 711–795 e.s.), i lindur në Medine. Ai ishte dijetari më i njohur i Medines në kohën e tij. Metodologjia: thekson praktikën e banorëve të Medines (Amel Ehl el-Medine) si burim, sepse ata trashëguan drejtpërdrejt nga Profeti ﷺ. Përdor edhe Istislahin (maslahatin — interesin publik). Përhapja: Afrika Veriore (Marok, Algjeri, Tunizi, Libi), Afrika Perëndimore, disa rajone të Egjiptit. Librat bazë: El-Muvetta (Imam Maliku), Mukhtesar Khalil, Er-Risale (Ibn Ebi Zejd el-Kajrevani).",
+          "evidences": [],
+          "madhab_rulings": null
+        },
+        {
+          "heading": "3. Madhhebi Shafi'i",
+          "content_sq": "Themeluesi: Imam Muhamed ibn Idris esh-Shafi'i (150–204 h. / 767–820 e.s.), i lindur në Gazë, rritur në Mekë. Ai ishte nxënës i Imam Malikut dhe njëkohësisht studioi fikhun hanefi. Quhet 'Nasir es-Sunneh' (Mbrojtësi i Sunnetit). Imam Shafi'iu shkroi veprën e parë të Usul el-Fikhut: 'Er-Risale'. Metodologjia: e balancuar mes tekstit (Kuranit/Sunnetit) dhe arsyetimit (Kijasit). Përhapja: Egjipti Jugor, Jemeni, Indonezia, Malajzia, Afrika Lindore, Kaukazi. Librat bazë: El-Umm (Imam Shafi'iu), Minhaxxh et-Talibin (en-Nevevi), Revdatut-Talibin.",
+          "evidences": [],
+          "madhab_rulings": null
+        },
+        {
+          "heading": "4. Madhhebi Hanbeli",
+          "content_sq": "Themeluesi: Imam Ahmed ibn Hanbel (164–241 h. / 780–855 e.s.), i lindur në Bagdad. Ai ishte nxënës i Imam Shafi'iut dhe njëkohësisht muhaddith (dijetar hadithesh) i jashtëzakonshëm — koleksioni i tij 'El-Musned' përmban mbi 28,000 hadithe. Metodologjia: thekson tekstin e drejtpërdrejtë (Kuranin, Sunnetin, fjalët e sahabëve) para arsyetimit. Përdor kijasin vetëm si mundësi e fundit. Përhapja: Arabia Saudite, Katar, disa rajone të Irakut. Librat bazë: El-Mugni (Ibn Kudame), Zad el-Mustekni' (El-Haxhxhavi), Esh-Sherh el-Mumti' (Ibn Uthejmin).",
+          "evidences": [],
+          "madhab_rulings": null
+        },
+        {
+          "heading": "Pse Ndjekim një Medhheb?",
+          "content_sq": "Ndjekja e një madhhebi (taklid) nuk do të thotë adhurim i imamit — do të thotë ndjekje e metodologjisë së tij në kuptimin e Kuranit dhe Sunnetit. Arsyet kryesore:\n\n1. Shumica e muslimanëve nuk kanë mundësi të studiojnë drejtpërdrejt arabishten, hadithin dhe usul el-fikhun në nivelin e nevojshëm për ixhtihad.\n2. Madhhebet ofrojnë një sistem koherent — çdo çështje e re gjykohet brenda kuadrit të njëjtë metodologjik.\n3. Parandalon kaos fetar — pa medhheb, secili do të interpretonte sipas dëshirës.\n4. Imamët e medhhebeve ishin gjigandë të dijes — aftësia e tyre në Kuran, Hadith dhe gjuhë arabe ishte e pakrahasueshme.\n\nShënim: Ndjekja e një madhhebi nuk do të thotë se madhhebet e tjera janë gabim. Të katër janë rrugë të vlefshme për zbatimin e Sheriatit.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "فَاسْأَلُوا أَهْلَ الذِّكْرِ إِن كُنتُمْ لَا تَعْلَمُونَ",
+              "translation_sq": "Pyetni njerëzit e dijes, nëse nuk dini.",
+              "surah": "En-Nahl",
+              "surah_number": 16,
+              "ayah": 43
+            }
+          ],
+          "madhab_rulings": null
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Kush është themeluesi i madhhebit Hanefi?",
+          "options": [
+            "Imam Maliku",
+            "Imam Ebu Hanife",
+            "Imam Shafi'iu",
+            "Imam Ahmedi"
+          ],
+          "correct_index": 1,
+          "explanation": "Imam Ebu Hanife En-Nu'man ibn Thabit (80–150 h.) është themeluesi i madhhebit Hanefi."
+        },
+        {
+          "question": "Cili medhheb thekson praktikën e banorëve të Medines si burim?",
+          "options": [
+            "Hanefi",
+            "Maliki",
+            "Shafi'i",
+            "Hanbeli"
+          ],
+          "correct_index": 1,
+          "explanation": "Madhhebi Maliki thekson Amel Ehl el-Medine (praktikën e banorëve të Medines) si burim, sepse ata trashëguan drejtpërdrejt nga Profeti ﷺ."
+        },
+        {
+          "question": "Kush shkroi veprën e parë të Usul el-Fikhut?",
+          "options": [
+            "Imam Ebu Hanife",
+            "Imam Maliku",
+            "Imam Shafi'iu",
+            "Imam Ahmed ibn Hanbeli"
+          ],
+          "correct_index": 2,
+          "explanation": "Imam Shafi'iu shkroi 'Er-Risale', e cila konsiderohet vepra e parë sistematike e Usul el-Fikhut (bazave të jurisprudencës)."
+        }
+      ]
+    }
+  ]
+}

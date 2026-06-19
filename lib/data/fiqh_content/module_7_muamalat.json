@@ -1,0 +1,300 @@
+{
+  "module_id": "muamalat",
+  "module_title_sq": "Muamelati — Tregtia",
+  "module_title_ar": "المعاملات",
+  "module_icon": "handshake",
+  "description": "Mëso rreth rregullave të tregtisë, kontratave, kamatës dhe transaksioneve në Islam.",
+  "lessons": [
+    {
+      "id": "mua_001",
+      "title_sq": "Parimet e Tregtisë Islame",
+      "title_ar": "مبادئ التجارة الإسلامية",
+      "level": "intermediate",
+      "source_references": [
+        "Shafiqur Rahman An Nadwi, Al Fiqh ul Muyassar (Simple Fiqh)",
+        "Sahih Muslim",
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "El-Hidaje",
+        "El-Mugni"
+      ],
+      "sections": [
+        {
+          "heading": "Rregullat bazë të tregtisë",
+          "content_sq": "Tregtia në Islam bazohet në disa parime themelore: 1) Pëlqimi i ndërsjellë (taradi) — të dyja palët duhet të jenë dakord. 2) Ndershmëria dhe transparenca — mashtrimi (gash) është i ndaluar. 3) Ndalimi i kamatës (riba) — çdo shtesë pa kundërvlerë është haram. 4) Ndalimi i pasigurisë së tepruar (garar) — kontrata duhet të jetë e qartë. 5) Ndalimi i bixhozit (mejsir). Parimi bazë në muamelat (transaksione) është se gjithçka është e lejuar përderisa nuk ka argument që e ndalon — ndryshe nga ibadati (adhurimi) ku gjithçka është e ndaluar përderisa nuk ka argument që e lejon.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا لَا تَأْكُلُوا أَمْوَالَكُم بَيْنَكُم بِالْبَاطِلِ إِلَّا أَن تَكُونَ تِجَارَةً عَن تَرَاضٍ مِّنكُمْ",
+              "translation_sq": "O ju që keni besuar! Mos e hani pasurinë e njëri-tjetrit në mënyrë të palejueshme, përveçse nëse bëhet tregti me pëlqim të ndërsjellë.",
+              "surah": "En-Nisa",
+              "surah_number": 4,
+              "ayah": 29
+            },
+            {
+              "type": "hadith",
+              "arabic": "نَهَى رَسولُ اللهِ ﷺ عَنْ بَيْعِ الغَرَرِ",
+              "translation_sq": "I Dërguari i Allahut ﷺ e ndaloi shitblerjen me pasiguri (garar).",
+              "narrator": "Ebu Hurejre (r.a.)",
+              "collection": "Sahih Muslim",
+              "hadith_number": 1513,
+              "classification": "sahih"
+            }
+          ]
+        },
+        {
+          "heading": "Ndalimi i Kamatës (Riba)",
+          "content_sq": "Kamata (الربا) është nga mëkatet më të rënda në Islam. Ajo ndahet në dy lloje: 1) Riba el-Fadl — shkëmbimi i të njëjtit mall me shtesë (p.sh. 100g ar me 110g ar). 2) Riba en-Nesie — vonesa në shkëmbim të mallrave ribevije (ari, argjendi, gruri, elbi, hurma, kripa). Në kohën moderne, kamata bankare (interesi) konsiderohet riba nga shumica dërrmuese e dijetarëve. Alternativat islame përfshijnë: murabaha (shitje me fitim), ixhare (qira), mudarabe (partneritet me fitim/humbje), musharake (bashkëpjesëmarrje).",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "أَحَلَّ اللَّهُ الْبَيْعَ وَحَرَّمَ الرِّبَا",
+              "translation_sq": "Allahu e ka lejuar tregtinë dhe e ka ndaluar kamatën.",
+              "surah": "El-Bekare",
+              "surah_number": 2,
+              "ayah": 275
+            }
+          ],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Riba ndodh në 6 mallra ribevije. Shkëmbimi duhet të jetë i menjëhershëm dhe i barabartë për mallra të të njëjtit lloj.",
+              "source": "El-Hidaje, Merginanij"
+            },
+            "maliki": {
+              "ruling": "Riba zbatohet për mallra ushqimore dhe monetare. Kriteret janë: ushqimi që ruhet dhe vlera monetare.",
+              "source": "Esh-Sherhu el-Kebir"
+            },
+            "shafii": {
+              "ruling": "Riba zbatohet për mallra ushqimore (çdo ushqim) dhe monetare (ari, argjendi dhe ekuivalentët).",
+              "source": "El-Mexhmu', Nevevij"
+            },
+            "hanbali": {
+              "ruling": "Riba zbatohet për mallra që maten me peshë ose vëllim, plus arin dhe argjendin.",
+              "source": "El-Mugni, Ibn Kudame"
+            },
+            "consensus_note": "Ixhma' (unanimitet): Të katër medhhebet pajtohen se kamata (riba) është haram kategorikisht."
+          }
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Cili është parimi bazë në transaksionet islame?",
+          "options": [
+            "Gjithçka e ndaluar derisa të provohet e lejuar",
+            "Gjithçka e lejuar derisa të provohet e ndaluar",
+            "Vetëm ajo që Profeti bëri është e lejuar",
+            "Asgjë nuk është e lejuar"
+          ],
+          "correct_index": 1,
+          "explanation": "Në muamelat (transaksione), parimi bazë është se gjithçka është e lejuar përderisa nuk ka argument që e ndalon."
+        },
+        {
+          "question": "Çfarë do të thotë 'garar' në fikh?",
+          "options": [
+            "Kamata",
+            "Pasiguria e tepruar në kontratë",
+            "Bixhozi",
+            "Mashtrimi"
+          ],
+          "correct_index": 1,
+          "explanation": "Garar do të thotë pasiguri e tepruar në kontratë — kur objekti, çmimi ose dorëzimi janë të paqarta."
+        },
+        {
+          "question": "Sa lloje ka kamata (riba)?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct_index": 1,
+          "explanation": "Kamata ndahet në dy lloje: Riba el-Fadl (shtesë në shkëmbim) dhe Riba en-Nesie (vonesë në shkëmbim)."
+        },
+        {
+          "question": "Cila NUK është alternativë islame e kamatës bankare?",
+          "options": [
+            "Murabaha",
+            "Ixhare",
+            "Interesi fiks",
+            "Musharake"
+          ],
+          "correct_index": 2,
+          "explanation": "Interesi fiks është formë e kamatës. Alternativat islame përfshijnë murabahën, ixharen, mudaraben dhe musharaken."
+        }
+      ]
+    },
+    {
+      "id": "mua_002",
+      "title_sq": "Kontratat në Fikh",
+      "title_ar": "العقود في الفقه",
+      "level": "advanced",
+      "source_references": [
+        "Shafiqur Rahman An Nadwi, Al Fiqh ul Muyassar (Simple Fiqh)",
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "Sahih Bukhari",
+        "El-Hidaje",
+        "El-Mugni"
+      ],
+      "sections": [
+        {
+          "heading": "Shtyllat e Kontratës (Akd)",
+          "content_sq": "Çdo kontratë islame (el-akd) ka shtylla thelbësore: 1) El-Akidejn (palët kontraktuese) — duhet të jenë të mençur, të rritur dhe me vullnet të lirë. 2) El-Ma'kud alejhi (objekti i kontratës) — duhet të ekzistojë, të jetë i lejuar, i njohur dhe i dorëzueshëm. 3) Es-Sigah (oferta dhe pranimi) — ijab dhe kabul — duhet të jenë në të njëjtën seancë (mexhlis el-akd) dhe të përputhen. Kontrata bëhet e vlefshme kur të gjitha shtyllat dhe kushtet plotësohen.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا أَوْفُوا بِالْعُقُودِ",
+              "translation_sq": "O ju që keni besuar! Plotësoni kontratat (obligimet).",
+              "surah": "El-Maide",
+              "surah_number": 5,
+              "ayah": 1
+            }
+          ]
+        },
+        {
+          "heading": "E Drejta e Opsionit (Hijar)",
+          "content_sq": "Fikhu njeh disa lloje opsionesh (hijar) që mbrojnë palët: 1) Hijar el-Mexhlis — e drejta për t'u tërhequr para se palët të ndahen nga vendi i kontratës. 2) Hijar esh-Shart — opsioni i kushtëzuar (p.sh. 'e blej me kusht që kam 3 ditë ta kthej'). 3) Hijar el-Ajb — e drejta e kthimit nëse malli ka defekt. 4) Hijar el-Ghabn — e drejta e anulimit nëse çmimi ka pasur mashtrim të madh. Këto të drejta mbrojnë blerësin dhe shitësin nga padrejtësia.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "البَيِّعانِ بالخِيارِ ما لَمْ يَتَفَرَّقا",
+              "translation_sq": "Dy palët e shitblerjes kanë të drejtën e opsionit (tërheqjes) përderisa nuk janë ndarë.",
+              "narrator": "Hakim ibn Hizam (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 2079,
+              "classification": "sahih"
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Sa shtylla ka kontrata islame?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "correct_index": 1,
+          "explanation": "Kontrata ka 3 shtylla: palët kontraktuese, objekti i kontratës dhe oferta-pranimi (ijab-kabul)."
+        },
+        {
+          "question": "Çfarë është 'Hijar el-Ajb'?",
+          "options": [
+            "E drejta e opsionit në seancë",
+            "E drejta e kthimit për defekt",
+            "E drejta e negocimit",
+            "E drejta e vonesës"
+          ],
+          "correct_index": 1,
+          "explanation": "Hijar el-Ajb është e drejta e blerësit për të kthyer mallin nëse zbulon defekt që nuk ishte njoftuar."
+        },
+        {
+          "question": "Çfarë urdhëron Kurani për kontratat?",
+          "options": [
+            "T'i shmangemi",
+            "T'i plotësojmë",
+            "T'i ndryshojmë",
+            "T'i injorojmë"
+          ],
+          "correct_index": 1,
+          "explanation": "Ajeti 1 i sures El-Maide urdhëron: 'O ju që keni besuar! Plotësoni kontratat (obligimet).'"
+        }
+      ]
+    },
+    {
+      "id": "mua_003",
+      "title_sq": "Normat e Shitblerjes në Islam",
+      "title_ar": "أحكام البيع",
+      "level": "intermediate",
+      "source_references": [
+        "Shafiqur Rahman An Nadwi, Al Fiqh ul Muyassar (Simple Fiqh)",
+        "Sahih Muslim",
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "Sahih Bukhari",
+        "Normat e Shitblerjes"
+      ],
+      "sections": [
+        {
+          "heading": "Rëndësia e Njohjes së Normave të Tregtisë",
+          "content_sq": "Umer ibn Hattabi (r.a.) u është drejtuar njerëzve: 'Mos të shesë në tregun tonë përveç ai i cili ka njohuri në fe (lidhur me dispozitat e shitblerjes)!' Islami ka rregulluar normat e tregtisë për të siguruar drejtësi mes palëve. Njerëzit kanë nevojë të domosdoshme për shitblerje, sepse Allahu ka bërë që njeriu të mos ketë nën pronësi gjithçka që i nevojitet. Përmes tregtisë, njerëzit plotësojnë nevojat e njëri-tjetrit. Njohja e rregullave është edhe më e rëndësishme sot, me zhvillimin e madh ekonomik dhe teknologjik.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا إِذَا تَدَايَنتُم بِدَيْنٍ إِلَىٰ أَجَلٍ مُّسَمًّى فَاكْتُبُوهُ",
+              "translation_sq": "O ju që keni besuar! Kur merrni borxh mes jush deri në një afat të caktuar, shkruajeni atë.",
+              "surah": "El-Bekare",
+              "surah_number": 2,
+              "ayah": 282
+            }
+          ]
+        },
+        {
+          "heading": "Kushtet e Shitblerjes së Vlefshme",
+          "content_sq": "Që shitblerja të jetë e vlefshme, duhen plotësuar këto kushte: 1) Shitësi dhe blerësi duhet të jenë të mençur dhe me vullnet të lirë — nuk vlen kontrata e të detyruarit, 2) Malli duhet të ekzistojë dhe të jetë pronë e shitësit — nuk lejohet shitja e asaj që nuk e ke, 3) Malli duhet të jetë i njohur për blerësin — nuk lejohet fshehja e defekteve, 4) Çmimi duhet të jetë i caktuar dhe i qartë, 5) Malli duhet të jetë i dorëzueshëm — nuk lejohet shitja e peshkut në det, 6) Malli duhet të jetë i lejuar (hallall) — nuk lejohet tregtia e alkoolit, derrit, mishit të ngordhur. Profeti ﷺ tha: 'Kur Allahu ua ndalon një popull ngrënien e diçkaje, ua ndalon edhe çmimin e saj.'",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "إنَّ اللَّهَ ورَسولَهُ حَرَّمَ بَيْعَ الخَمْرِ والمَيْتَةِ والخِنْزِيرِ والأَصْنامِ",
+              "translation_sq": "Allahu dhe i Dërguari i Tij e kanë ndaluar shitjen e alkoolit, cofëtirës, derrit dhe idhujve.",
+              "narrator": "Xhabir ibn Abdullah (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 2236,
+              "classification": "sahih"
+            }
+          ]
+        },
+        {
+          "heading": "Shitblerjet e Ndaluara",
+          "content_sq": "Islam ndalon disa lloje shitblerjesh: 1) Shitja me mashtrim (gash) — Profeti ﷺ tha: 'Kush na mashtron, nuk është prej nesh', 2) Shitja me betim të rremë — Profeti ﷺ e ndaloi betimin për të shitur mallin, 3) Shitja mbi shitjen e tjetrit — nuk lejohet t'i ofrosh dikujt çmim më të mirë kur ai ka bërë marrëveshje me tjetërkënd, 4) Shitja nexhesh — ngritja artificiale e çmimit pa qëllim blerje, vetëm për ta mashtruar blerësin, 5) Monopolizimi (ihtikar) — grumbullimi i ushqimeve për t'i shitur me çmim të lartë kur ka mungesë, 6) Shitja me kusht kamatar — si shitja me pagesë të vonuar plus shtesë.",
+          "evidences": []
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Çfarë tha Umer ibn Hattabi (r.a.) për tregtarët?",
+          "options": [
+            "Të gjithë mund të shesin",
+            "Mos të shesë kush nuk ka njohuri në fe",
+            "Tregtia është e ndaluar",
+            "Vetëm arabët mund të tregtojnë"
+          ],
+          "correct_index": 1,
+          "explanation": "Umeri (r.a.) tha: 'Mos të shesë në tregun tonë përveç ai i cili ka njohuri në fe!'"
+        },
+        {
+          "question": "Cila NUK është kusht e shitblerjes së vlefshme?",
+          "options": [
+            "Malli të jetë i njohur",
+            "Çmimi i caktuar",
+            "Blerësi të jetë i pasur",
+            "Malli të jetë i dorëzueshëm"
+          ],
+          "correct_index": 2,
+          "explanation": "Pasuria e blerësit nuk është kusht — kushtet janë: malli i njohur, çmimi i caktuar, malli i dorëzueshëm, etj."
+        },
+        {
+          "question": "Çfarë është 'ihtikar' (monopolizimi)?",
+          "options": [
+            "Shitje me zbritje",
+            "Grumbullimi i ushqimeve për ti shitur shtrenjtë",
+            "Shitje me garanci",
+            "Blerje me këste"
+          ],
+          "correct_index": 1,
+          "explanation": "Ihtikar është grumbullimi i mallrave (veçanërisht ushqimeve) për ti shitur me çmim të lartë kur ka mungesë."
+        },
+        {
+          "question": "Çfarë thotë Profeti ﷺ për mashtrimin në tregti?",
+          "options": [
+            "Lejohet nëse ke nevojë",
+            "Kush na mashtron, nuk është prej nesh",
+            "Mashtrimi është mekruh",
+            "Lejohet me kusht"
+          ],
+          "correct_index": 1,
+          "explanation": "Profeti ﷺ tha: 'Kush na mashtron, nuk është prej nesh' — mashtrimi në tregti është haram."
+        }
+      ]
+    }
+  ]
+}

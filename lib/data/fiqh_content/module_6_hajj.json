@@ -1,0 +1,420 @@
+{
+  "module_id": "hajj",
+  "module_title_sq": "Haxhi dhe Umreja",
+  "module_title_ar": "الحج والعمرة",
+  "module_icon": "landmark",
+  "description": "Mëso rreth haxhit dhe umres: kushtet, shtyllat, ritualet dhe llojet.",
+  "lessons": [
+    {
+      "id": "haj_001",
+      "title_sq": "Bazat e Haxhit",
+      "title_ar": "أساسيات الحج",
+      "level": "beginner",
+      "source_references": [
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "El-Mugni",
+        "Sahih Bukhari",
+        "El-Hidaje"
+      ],
+      "sections": [
+        {
+          "heading": "Obligimi i Haxhit",
+          "content_sq": "Haxhi është shtylla e pestë e Islamit. Ai është obligim një herë në jetë për çdo mysliman të rritur, me mendje, të lirë, që ka mundësi fizike dhe financiare. Haxhi kryhet në muajin Dhul-Hixh-xhe (muaji i 12-të hënor) në Mekë dhe rrethinat e saj. Ritualet kryesore përfshijnë: Ihramin, Tavafin (rrotullimin rreth Qabes), Sa'jin (ecjen mes Safas dhe Merves), qëndrimin në Arafat, qëndrimin në Muzdelife, gjuajtjen e guralecëve në Mina, prerjen e kurbanit dhe rruajtjen/shkurtimin e flokëve.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "وَلِلَّهِ عَلَى النَّاسِ حِجُّ الْبَيْتِ مَنِ اسْتَطَاعَ إِلَيْهِ سَبِيلًا",
+              "translation_sq": "Për hir të Allahut, vizita e Shtëpisë (Qabes) është obligim për ata njerëz që kanë mundësi ta arrijnë atë.",
+              "surah": "Ali Imran",
+              "surah_number": 3,
+              "ayah": 97
+            },
+            {
+              "type": "hadith",
+              "arabic": "مَنْ حَجَّ لِلَّهِ فَلَمْ يَرْفُثْ وَلَمْ يَفْسُقْ رَجَعَ كَيَوْمِ وَلَدَتْهُ أُمُّهُ",
+              "translation_sq": "Kush kryen haxhin për Allahun dhe nuk bën vepra të turpshme e nuk bën mëkate, kthehet si ditën kur e ka lindur nëna.",
+              "narrator": "Ebu Hurejre (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 1521,
+              "classification": "sahih"
+            },
+            {
+              "type": "quran",
+              "arabic": "وَلِلَّهِ عَلَى النَّاسِ حِجُّ الْبَيْتِ مَنِ اسْتَطَاعَ إِلَيْهِ سَبِيلًا",
+              "translation_sq": "Allahu i ka bërë obligim njerëzve haxhin në Shtëpi, kujtdo që ka mundësi rruge deri tek ajo.",
+              "surah": "Ali Imran: 97"
+            },
+            {
+              "type": "hadith",
+              "arabic": "خُذُوا عَنِّي مَنَاسِكَكُمْ",
+              "translation_sq": "Merrni nga unë ritet tuaja të haxhit.",
+              "narrator": "Xhabir bin Abdullah (radijallahu anhu)",
+              "collection": "Muslimi"
+            }
+          ],
+          "ruling": "farz"
+        },
+        {
+          "heading": "Llojet e Haxhit",
+          "content_sq": "Haxhi kryhet në tri mënyra: 1) Ifrad — vetëm haxhi, pa umre. Haxhiu vesh ihramin vetëm me nijet haxhi. Nuk ka obligim kurbani. 2) Temettu' — umreja së pari, pastaj haxhi. Haxhiu bën umren, del nga ihrami, pastaj vesh ihramin përsëri për haxh. Ka obligim kurbani. 3) Kiran — haxhi dhe umreja bashkë me një ihram. Haxhiu vesh ihramin me nijet për të dyja dhe nuk del nga ihrami deri në fund. Ka obligim kurbani.",
+          "evidences": [],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Kiran-i është mënyra më e mirë. Nëse bën temettu' ose kiran, kurbani është vaxhib.",
+              "source": "El-Hidaje, Merginanij"
+            },
+            "maliki": {
+              "ruling": "Ifrad-i është më i mirë. Kurbani për temettu' dhe kiran është obligim.",
+              "source": "Esh-Sherhu el-Kebir"
+            },
+            "shafii": {
+              "ruling": "Ifrad-i është më i mirë për banorët e Mekës, temettu' për të tjerët.",
+              "source": "El-Mexhmu', Nevevij"
+            },
+            "hanbali": {
+              "ruling": "Temettu' është mënyra më e mirë, bazuar në praktikën e Profetit ﷺ.",
+              "source": "El-Mugni, Ibn Kudame"
+            }
+          }
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Sa herë në jetë është obligim haxhi?",
+          "options": [
+            "Çdo vit",
+            "Një herë",
+            "Dy herë",
+            "Tri herë"
+          ],
+          "correct_index": 1,
+          "explanation": "Haxhi është obligim vetëm një herë në jetë për atë që ka mundësi."
+        },
+        {
+          "question": "Cila lloj haxhi kërkon kurban?",
+          "options": [
+            "Vetëm Ifrad",
+            "Temettu' dhe Kiran",
+            "Vetëm Kiran",
+            "Asnjëra"
+          ],
+          "correct_index": 1,
+          "explanation": "Temettu' dhe Kiran kërkojnë prerjen e kurbanit, ndërsa Ifrad nuk kërkon."
+        },
+        {
+          "question": "Çfarë ndodh me mëkatet e atij që kryen haxhin sinqerisht?",
+          "options": [
+            "Falen gjysmën",
+            "Falen të gjitha",
+            "Kthehet si ditën kur ka lindur",
+            "Asgjë"
+          ],
+          "correct_index": 2,
+          "explanation": "Profeti ﷺ tha: 'Kush kryen haxhin sinqerisht, kthehet si ditën kur e ka lindur nëna.'"
+        },
+        {
+          "question": "Në cilin muaj kryhet haxhi?",
+          "options": [
+            "Ramazan",
+            "Sheval",
+            "Dhul-Ka'de",
+            "Dhul-Hixh-xhe"
+          ],
+          "correct_index": 3,
+          "explanation": "Haxhi kryhet në muajin Dhul-Hixh-xhe, muaji i 12-të i kalendarit hënor."
+        }
+      ]
+    },
+    {
+      "id": "haj_002",
+      "title_sq": "Ritualet e Haxhit Ditë pas Dite",
+      "title_ar": "مناسك الحج",
+      "level": "intermediate",
+      "source_references": [
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "Sahih Muslim",
+        "Sahih Bukhari",
+        "El-Hidaje"
+      ],
+      "sections": [
+        {
+          "heading": "Dita 8 Dhul-Hixh-xhe (Ditë Tervijeh)",
+          "content_sq": "Haxhiu vesh ihramin (nëse bën temettu', vesh ihramin e re; nëse bën kiran ose ifrad, është tashmë me ihram). Shkon në Mina ku fal namazet e drekës, ikindisë, akshamit, jacisë dhe sabahut të ditës tjetër, duke i shkurtuar namazet 4-rekatëshe në 2 rekate.",
+          "evidences": []
+        },
+        {
+          "heading": "Dita 9 Dhul-Hixh-xhe (Dita e Arafatit)",
+          "content_sq": "Dita e Arafatit është shtylla kryesore e haxhit — pa Arafat nuk ka haxh. Profeti ﷺ tha: 'Haxhi është Arafat.' Haxhiu qëndron në fushën e Arafatit nga dreka deri në perëndim, duke bërë dua, dhikr dhe istigfar. Dreka dhe ikindia falen bashkë (xhem') në kohën e drekës me 1 ezan dhe 2 ikamet. Pas perëndimit, haxhiu shkon në Muzdelife.",
+          "evidences": []
+        },
+        {
+          "heading": "Dita 10 Dhul-Hixh-xhe (Dita e Bajramit)",
+          "content_sq": "Dita e Bajramit të Kurbanit — dita më e ngarkuar me rituale: 1) Gjuajtja e 7 guralecëve në Xhemretul-Akabe (shtyllën e madhe) në Mina, 2) Prerja e kurbanit (për temettu'/kiran), 3) Rruajtja ose shkurtimi i flokëve — kjo bën lirimin e parë nga ihrami (et-tehallul el-evvel), 4) Tavafi i Ifadas (tavafi i haxhit) — shtyllë e haxhit. Pas tavafit, lirohet plotësisht nga ihrami.",
+          "evidences": []
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Cila është shtylla kryesore e haxhit?",
+          "options": [
+            "Tavafi",
+            "Sa'ji",
+            "Qëndrimi në Arafat",
+            "Gjuajtja e guralecëve"
+          ],
+          "correct_index": 2,
+          "explanation": "Profeti ﷺ tha: 'Haxhi është Arafat' — pa qëndrimin në Arafat nuk ka haxh."
+        },
+        {
+          "question": "Çfarë bëhet ditën e 10-të të Dhul-Hixh-xhes?",
+          "options": [
+            "Qëndrimi në Arafat",
+            "Gjuajtja e guralecëve, kurbani, rruajtja, tavafi",
+            "Vetëm tavafi",
+            "Vetëm dua"
+          ],
+          "correct_index": 1,
+          "explanation": "Dita 10 përfshin gjuajtjen e guralecëve, prerjen e kurbanit, rruajtjen e flokëve dhe tavafin e ifadas."
+        },
+        {
+          "question": "Ku qëndron haxhiu natën e 9-të?",
+          "options": [
+            "Mekë",
+            "Mina",
+            "Muzdelife",
+            "Arafat"
+          ],
+          "correct_index": 2,
+          "explanation": "Pas largimit nga Arafati në perëndim, haxhiu shkon në Muzdelife ku fal akshamim dhe jacinë bashkë."
+        }
+      ]
+    },
+    {
+      "id": "haj_003",
+      "title_sq": "Ihrami dhe Ndalesat e tij",
+      "title_ar": "الإحرام ومحظوراته",
+      "level": "intermediate",
+      "source_references": [
+        "Dispozitat e Haxhit, Albani",
+        "Haxhi dhe Rregullat e tij, Abedin Musallari",
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "Sahih Bukhari"
+      ],
+      "sections": [
+        {
+          "heading": "Veshja e Ihramit dhe Përgatitja",
+          "content_sq": "Para veshjes së ihramit është e pëlqyer: larja e plotë e trupit (edhe për gratë me menstruacione ose lehoni), parfumimi i trupit (jo i rrobave), falja e namazit nëse ka hyrë koha. Meshkujt veshin dy copë të bardha të paqepura: izarin (pjesa e poshtme) dhe ridanë (pjesa e sipërme), dhe sandale që nuk mbulojnë zogun e këmbës. Gratë veshin rrobat e tyre normale sipas sheriatit, por nuk veshin nikab të shtrënguar në fytyrë dhe nuk veshin doreza. Ihrami vishet në vendet e caktuara (mikat): Dhul-Hulejfe për banorët e Medines, Xhuhfe për banorët e Shamit, Karn el-Menazil për banorët e Nexhdit, Jelemlem për banorët e Jemenit.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "لَا يَلْبَسُ الْمُحْرِمُ الْقَمِيصَ وَلَا الْعِمَامَةَ وَلَا الْبُرْنُسَ وَلَا السَّرَاوِيلَ",
+              "translation_sq": "Muhrimi (ai që ka veshur ihramin) nuk vesh këmishë, çallmë, burnus (këmishë me kapuç) e as pantallona.",
+              "narrator": "Abdullah ibn Umer (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 1526,
+              "classification": "sahih"
+            }
+          ]
+        },
+        {
+          "heading": "Ndalesat e Ihramit",
+          "content_sq": "Gjatë ihramit ndalohen: 1) Për meshkujt: veshja e rrobave të qepura sipas trupit, mbulimi i kokës me kapele ose çallmë. 2) Për gratë: mbulimi i fytyrës me nikab të shtrënguar, veshja e dorezave. 3) Për të dy gjinitë: prerja e flokëve ose thojve, parfumimi pas veshjes së ihramit, gjuetia e kafshëve tokësore, marrëdhëniet bashkëshortore, martesa ose fejesa, prerja e pemëve brenda kufijve të Haremit. Kush i thyen këto ndalesa pa arsye, duhet të paguajë kompensim (fidje): therje kurbani, agjërim tri ditësh, ose ushqyerje e gjashtë të varfërve.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "الْحَجُّ أَشْهُرٌ مَّعْلُومَاتٌ فَمَن فَرَضَ فِيهِنَّ الْحَجَّ فَلَا رَفَثَ وَلَا فُسُوقَ وَلَا جِدَالَ فِي الْحَجِّ",
+              "translation_sq": "Haxhi kryhet në muajt e caktuar. Kush vendos ta kryejë haxhin, nuk duhet të ketë marrëdhënie, mëkate dhe grindje gjatë haxhit.",
+              "surah": "El-Bekare",
+              "surah_number": 2,
+              "ayah": 197
+            }
+          ]
+        },
+        {
+          "heading": "Telbijeja",
+          "content_sq": "Pas veshjes së ihramit, haxhiu thotë telbijenë me zë: 'Lebbejke All-llahumme lebbejk, lebbejke la sherike leke lebbejk, innel-hamde ven-ni'mete leke vel-mulk, la sherike lek' (Të përgjigjem o Allah, të përgjigjem! Të përgjigjem, Ti nuk ke shok, të përgjigjem! Lavdërimi, dhuntia dhe sundimi janë vetëm Tua, Ti nuk ke shok). Telbijeja thuhet nga momenti i veshjes së ihramit deri në gjuajtjen e guralecëve ditën e Bajramit. Gratë e thonë telbijenë me zë të ulët.",
+          "evidences": []
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Çfarë vesh meshkuji gjatë ihramit?",
+          "options": [
+            "Rroba normale",
+            "Dy copë të bardha të paqepura (izar dhe rida)",
+            "Vetëm një copë",
+            "Rroba të gjelbra"
+          ],
+          "correct_index": 1,
+          "explanation": "Meshkuji vesh dy copë të bardha të paqepura: izarin (pjesën e poshtme) dhe ridanë (pjesën e sipërme)."
+        },
+        {
+          "question": "Cila NUK është ndalesë e ihramit?",
+          "options": [
+            "Prerja e flokëve",
+            "Parfumimi",
+            "Pirja e ujit",
+            "Gjuetia e kafshëve"
+          ],
+          "correct_index": 2,
+          "explanation": "Pirja e ujit lejohet gjatë ihramit. Ndalesat përfshijnë prerjen e flokëve, parfumimin dhe gjuetinë."
+        },
+        {
+          "question": "Kur ndërpritet telbijeja gjatë haxhit?",
+          "options": [
+            "Kur arrin në Mekë",
+            "Kur fillon tavafin",
+            "Kur gjuan guralecët ditën e Bajramit",
+            "Kur del nga Arafati"
+          ],
+          "correct_index": 2,
+          "explanation": "Telbijeja ndërpritet kur haxhiu gjuan guralecët në Xhemretul-Akabe ditën e 10-të (Bajramit)."
+        },
+        {
+          "question": "A lejohet që gruaja të veshë rrobat e saj normale gjatë ihramit?",
+          "options": [
+            "Jo, duhet dy copë të bardha",
+            "Po, por pa nikab dhe doreza",
+            "Po, pa kufizime",
+            "Vetëm rroba të zeza"
+          ],
+          "correct_index": 1,
+          "explanation": "Gruaja vesh rrobat e saj normale sipas sheriatit, por nuk vesh nikab të shtrënguar në fytyrë dhe nuk vesh doreza."
+        },
+        {
+          "question": "Çfarë ndodh nëse haxhiu thyen një ndalesë pa arsye?",
+          "options": [
+            "Nuk ndodh asgjë",
+            "Haxhi prishet",
+            "Duhet të paguajë kompensim (fidje)",
+            "Duhet ta përsërisë haxhin"
+          ],
+          "correct_index": 2,
+          "explanation": "Kush thyen ndalesat e ihramit pa arsye duhet të paguajë kompensim: kurban, agjërim, ose ushqyerje të varfërve."
+        }
+      ]
+    },
+    {
+      "id": "haj_004",
+      "title_sq": "Shtyllat, Detyrat dhe Umreja",
+      "title_ar": "أركان الحج وواجباته والعمرة",
+      "level": "intermediate",
+      "source_references": [
+        "Haxhi dhe Rregullat e tij, Abedin Musallari",
+        "Sahih Muslim",
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "Dispozitat e Haxhit, Albani",
+        "Sahih Bukhari"
+      ],
+      "sections": [
+        {
+          "heading": "Shtyllat (Ruknet) e Haxhit",
+          "content_sq": "Shtyllat e haxhit janë katër veprime pa të cilat haxhi nuk është i vlefshëm dhe nuk zëvendësohen me kompensim: 1) Nijeti (qëllimi për haxh), 2) Qëndrimi në Arafat — shtylla më e rëndësishme, Profeti ﷺ tha: 'Haxhi është Arafat', 3) Tavafi i Ifadas (tavafi i haxhit) — rrotullimi shtatë herë rreth Qabes pas kthimit nga Mina, 4) Sa'ji — ecja shtatë herë mes kodrave Safa dhe Merve. Nëse nuk kryhet ndonjëra nga këto, haxhi është i pavlefshëm dhe duhet përsëritur.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "وَلِلَّهِ عَلَى النَّاسِ حِجُّ الْبَيْتِ مَنِ اسْتَطَاعَ إِلَيْهِ سَبِيلًا",
+              "translation_sq": "Allahu i ka bërë obligim njerëzve haxhin në Shtëpi, kujtdo që ka mundësi rruge deri tek ajo.",
+              "surah": "Ali Imran: 97"
+            },
+            {
+              "type": "hadith",
+              "arabic": "خُذُوا عَنِّي مَنَاسِكَكُمْ",
+              "translation_sq": "Merrni nga unë ritet tuaja të haxhit.",
+              "narrator": "Xhabir bin Abdullah (radijallahu anhu)",
+              "collection": "Muslimi"
+            }
+          ],
+          "ruling": "farz"
+        },
+        {
+          "heading": "Detyrat (Vaxhibet) e Haxhit",
+          "content_sq": "Detyrat e haxhit janë veprime obliguese, por nëse lihen, haxhi mbetet i vlefshëm me kusht që haxhiu të paguajë kompensim (therje dashi). Detyrat janë: 1) Veshja e ihramit në vendcaktime (mikat), 2) Qëndrimi në Arafat deri pas perëndimit të diellit, 3) Qëndrimi (fjetja) në Muzdelife natën e Bajramit, 4) Qëndrimi (fjetja) në Mina ditët e teshrikut (11, 12, 13 Dhul-Hixh-xhe), 5) Gjuajtja e guralecëve, 6) Qethja ose shkurtimi i flokëve, 7) Tavafi i lamtumirës (Tavaful-Veda) — i fundit para largimit nga Meka.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "مَنْ تَرَكَ نُسُكًا فَعَلَيْهِ دَمٌ",
+              "translation_sq": "Kush lë një ritual (detyrim), duhet të bëjë kurban.",
+              "narrator": "Abdullah ibn Abas (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 1755,
+              "classification": "sahih"
+            }
+          ]
+        },
+        {
+          "heading": "Umreja",
+          "content_sq": "Umreja është vizita e Qabes që mund të kryhet në çdo kohë të vitit. Ritualet e umres janë: 1) Veshja e ihramit në mikat me nijet për umre, 2) Tavafi — shtatë rrotullime rreth Qabes, 3) Sa'ji — shtatë herë mes Safas dhe Merves, 4) Qethja ose shkurtimi i flokëve. Umreja është sunnet i fortë, afër vaxhibit sipas disa dijetarëve. Profeti ﷺ tha: 'Umreja deri në umre është shlyerje e mëkateve mes tyre, ndërsa haxhi i pranuar nuk ka shpërblim tjetër veç Xhenetit.' Lejohet të bësh umre në emër të tjetërkujt, me kusht që ta kesh kryer vetë njëherë.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "الْعُمْرَةُ إِلَى الْعُمْرَةِ كَفَّارَةٌ لِمَا بَيْنَهُمَا وَالْحَجُّ الْمَبْرُورُ لَيْسَ لَهُ جَزَاءٌ إِلاَّ الْجَنَّةُ",
+              "translation_sq": "Umreja deri në umre është shlyerje e mëkateve mes tyre, ndërsa haxhi i pranuar nuk ka shpërblim tjetër veç Xhenetit.",
+              "narrator": "Ebu Hurejre (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 1773,
+              "classification": "sahih"
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Sa janë shtyllat (ruknet) e haxhit?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "7"
+          ],
+          "correct_index": 1,
+          "explanation": "Shtyllat e haxhit janë 4: nijeti, qëndrimi në Arafat, tavafi i ifadas dhe sa'ji."
+        },
+        {
+          "question": "Çfarë ndodh nëse lihet një detyrim (vaxhib) i haxhit?",
+          "options": [
+            "Haxhi prishet",
+            "Duhet therur kurban si kompensim",
+            "Nuk ndodh asgjë",
+            "Duhet agjëruar 30 ditë"
+          ],
+          "correct_index": 1,
+          "explanation": "Nëse lihet një detyrim, haxhi mbetet i vlefshëm por haxhiu duhet therur kurban si kompensim."
+        },
+        {
+          "question": "Sa rrotullime bëhen gjatë tavafit?",
+          "options": [
+            "3",
+            "5",
+            "7",
+            "10"
+          ],
+          "correct_index": 2,
+          "explanation": "Tavafi përbëhet nga 7 rrotullime rreth Qabes."
+        },
+        {
+          "question": "Cili tavaf bëhet si i fundit para largimit nga Meka?",
+          "options": [
+            "Tavafi i Kudum-it",
+            "Tavafi i Ifadas",
+            "Tavafi i Lamtumirës (Veda)",
+            "Tavafi i Umres"
+          ],
+          "correct_index": 2,
+          "explanation": "Tavafi i Lamtumirës (Tavaful-Veda) bëhet si veprim i fundit para largimit nga Meka."
+        },
+        {
+          "question": "Sipas hadithit, çfarë është shpërblimi i haxhit të pranuar?",
+          "options": [
+            "Falja e gjysmës së mëkateve",
+            "Shpërblim i dyfishtë",
+            "Nuk ka shpërblim tjetër veç Xhenetit",
+            "Falja e mëkateve të mëdha"
+          ],
+          "correct_index": 2,
+          "explanation": "Profeti ﷺ tha: 'Haxhi i pranuar nuk ka shpërblim tjetër veç Xhenetit.'"
+        }
+      ]
+    }
+  ]
+}

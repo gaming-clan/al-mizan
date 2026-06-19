@@ -1,0 +1,471 @@
+{
+  "module_id": "halal_haram",
+  "module_title_sq": "Hallalli dhe Harami — Ushqimi",
+  "module_title_ar": "الحلال والحرام",
+  "module_icon": "utensils",
+  "description": "Mëso rreth ushqimeve të lejuara dhe të ndaluara, therjes islame dhe rregullave të pijes.",
+  "lessons": [
+    {
+      "id": "hh_001",
+      "title_sq": "Ushqimet Hallall dhe Haram",
+      "title_ar": "الأطعمة الحلال والحرام",
+      "level": "beginner",
+      "source_references": [
+        "Dr. Jusuf El-Kardavi, Hallalli dhe Harami në Islam",
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "Shafiqur Rahman An Nadwi, Al Fiqh ul Muyassar (Simple Fiqh)",
+        "Sahih Bukhari",
+        "Sunen Ebu Davud",
+        "Sunen Tirmidhij",
+        "El-Mexhmu'"
+      ],
+      "sections": [
+        {
+          "heading": "Parimet Islame rreth Hallallit dhe Haramit",
+          "content_sq": "Dr. Jusuf El-Kardavi sqaron njëmbëdhjetë parime themelore islame rreth hallallit dhe haramit: 1) Në esencë gjërat janë të lejuara — sfera e haramit është shumë e ngushtë ndërsa ajo e hallallit shumë e gjerë. 2) Hallalli dhe harami janë e drejtë vetëm e Allahut — askush tjetër nuk ka autoritet t'i caktojë. 3) Lejimi i haramit dhe ndalimi i hallallit konsiderohen shirk ndaj Allahut. 4) Ndalimin e përcjell e keqja dhe dëmi — Allahu ndalon vetëm atë që ka dëm. 5) Zëvendësimi i haramit me hallall — për çdo gjë të ndaluar, Allahu ka mundësuar alternativë hallall. 6) Ajo që shpie në haram, konsiderohet haram. 7) Paraqitja e haramit si hallall është haram. 8) Qëllimi i mirë nuk e arsyeton haramin. 9) Largimi nga gjërat e dyshimta — ruajtja e besimtarit. 10) Harami është i ndaluar për secilin njësoj, pa dallim. 11) Nevoja lejon përjashtime — në raste domosdoshmërie lejohet e ndaluara në sasinë minimale.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "الحلال ما أحل الله في كتابه، والحرام ما حرم الله في كتابه، وما سكت عنه فهو مما عفا عنه",
+              "translation_sq": "Hallall është ajo që e ka lejuar Allahu në Librin e Tij, haram është ajo që e ka ndaluar, ndërsa ajo për të cilën ka heshtur — është falje nga Ai.",
+              "narrator": "Selman Farisiu (r.a.)",
+              "collection": "Sunen Tirmidhij",
+              "classification": "sahih"
+            },
+            {
+              "type": "hadith",
+              "arabic": "إن الله فرض فرائض فلا تضيعوها، وحدّ حدوداً فلا تعتدوها، وحرّم أشياء فلا تنتهكوها، وسكت عن أشياء رحمة بكم غير نسيان فلا تبحثوا عنها",
+              "translation_sq": "Allahu ka obliguar farze, pra mos i humbni; ka caktuar kufij, pra mos i tejkaloni; ka ndaluar gjëra, pra mos i shkelni! Heshtja e Tij ndaj disa gjërave është mëshirë, jo harresë — pra mos i gjurmoni!",
+              "narrator": "Transmetime të ndryshme",
+              "collection": "Sunen Darekutnij",
+              "classification": "hasen"
+            }
+          ],
+          "ruling": "obligim"
+        },
+        {
+          "heading": "Parimi bazë i ushqimit",
+          "content_sq": "Parimi bazë në Islam është se ushqimet janë hallall (të lejuara) përderisa nuk ka argument specifik që i ndalon. Allahu i Lartësuar thotë: 'Hani nga të mirat që ju kemi furnizuar.' Ushqimet e ndaluara (haram) përfshijnë: mishin e derrit, gjakun e rrjedhur, kafshën e ngordhur (që nuk është therur sipas rregullave), mishin e therur në emër të dikujt tjetër përveç Allahut, alkoolin dhe çdo substancë dehëse. Therja islame (dhabh/dhekah) kërkon: prerjen e fytit me thikë të mprehtë duke përmendur emrin e Allahut (Bismil-lah, Allahu Ekber), prerjen e venit jugulare dhe ezofagut, rrjedhjen e gjakut.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "يَا أَيُّهَا النَّاسُ كُلُوا مِمَّا فِي الْأَرْضِ حَلَالًا طَيِّبًا",
+              "translation_sq": "O njerëz! Hani nga ajo që është në tokë, hallall dhe e mirë.",
+              "surah": "El-Bekare",
+              "surah_number": 2,
+              "ayah": 168
+            },
+            {
+              "type": "quran",
+              "arabic": "حُرِّمَتْ عَلَيْكُمُ الْمَيْتَةُ وَالدَّمُ وَلَحْمُ الْخِنزِيرِ وَمَا أُهِلَّ لِغَيْرِ اللَّهِ بِهِ",
+              "translation_sq": "Ju janë ndaluar: e ngordhura, gjaku, mishi i derrit dhe ajo që është therur në emër të dikujt tjetër përveç Allahut.",
+              "surah": "El-Maide",
+              "surah_number": 5,
+              "ayah": 3
+            }
+          ],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Kafshët detare: vetëm peshku është hallall. Karkaleci dhe gaforrja janë haram. Kali është mekruh tahrim.",
+              "source": "Hashijetu Ibn Abidin"
+            },
+            "maliki": {
+              "ruling": "Të gjitha kafshët detare janë hallall pa përjashtim, përfshirë gaforrën dhe karkalecat.",
+              "source": "Esh-Sherhu el-Kebir"
+            },
+            "shafii": {
+              "ruling": "Të gjitha kafshët detare janë hallall. Kali është hallall. Hiena është hallall.",
+              "source": "El-Mexhmu', Nevevij"
+            },
+            "hanbali": {
+              "ruling": "Kafshët detare janë hallall. Kali është hallall. Hiena është hallall bazuar në hadith.",
+              "source": "El-Mugni, Ibn Kudame"
+            }
+          },
+          "ruling": "farz"
+        },
+        {
+          "heading": "Ndalimi i Alkoolit",
+          "content_sq": "Alkooli (el-hamr) është i ndaluar kategorikisht në Islam. Sipas Umer ibn Hattabit (r.a.): 'Hamër (dehëse) konsiderohet çdo gjë që dehë mendjen.' Ndalimi përfshin: pirjen, shitjen, blerjen, prodhimin, transportimin dhe shërbimin e alkoolit. Pejgamberi ﷺ ka mallkuar dhjetë persona lidhur me alkoolin: prodhuesin, kërkuesin e prodhimit, konsumuesin, bartësin, shitësin, shfrytëzuesin e fitimit, blerësin, atë për të cilin blihet, shërbimin dhe atë që i shërbehet. Ndalimi erdhi gradualisht në tri faza kuranore: 1) Njoftimi se ka dëm dhe dobi por dëmi më i madh (El-Bekare:219), 2) Ndalimi para namazit (En-Nisa:43), 3) Ndalimi i plotë (El-Maide:90-91). Pas zbritjes së ajetit të fundit, besimtarët e derdhën alkoolin nëpër rrugët e Medines. Dr. Kardavi thekson: 'Ndalohet edhe pakica e asaj që dehë me shumicë' — pra edhe një pikë alkool është haram. Gjithashtu ndalohen narkotikët (hashashi, kokaina, opiumi) dhe duhani, duke u bazuar në parimin: 'Mos e dëmto veten e as të tjerët' dhe 'Mos shkatërroni veten me duart tuaja' (El-Bekare:195).",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا إِنَّمَا الْخَمْرُ وَالْمَيْسِرُ وَالْأَنصَابُ وَالْأَزْلَامُ رِجْسٌ مِّنْ عَمَلِ الشَّيْطَانِ فَاجْتَنِبُوهُ",
+              "translation_sq": "O ju që keni besuar! Alkooli, bixhozi, idhujt dhe shigjetat e fatit janë ndyrësi nga vepra e shejtanit, prandaj largohuni prej tyre.",
+              "surah": "El-Maide",
+              "surah_number": 5,
+              "ayah": 90
+            },
+            {
+              "type": "hadith",
+              "arabic": "مَا أَسْكَرَ كَثِيرُهُ فَقَلِيلُهُ حَرَامٌ",
+              "translation_sq": "Ajo që dehë në sasi të madhe, është haram edhe në sasi të vogël.",
+              "narrator": "Xhabir ibn Abdullah (r.a.)",
+              "collection": "Sunen Ebu Davud",
+              "hadith_number": 3681,
+              "classification": "sahih"
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Sipas medh'hebit Hanefi, cila kafshë detare është hallall?",
+          "options": [
+            "Vetëm peshku",
+            "Peshku dhe gaforrja",
+            "Të gjitha kafshët detare",
+            "Asnjëra"
+          ],
+          "correct_index": 0,
+          "explanation": "Sipas Hanefijve, nga kafshët detare vetëm peshku është hallall, ndërsa gaforrja dhe karkaleci janë haram."
+        },
+        {
+          "question": "Si erdhi ndalimi i alkoolit në Islam?",
+          "options": [
+            "U ndalua menjëherë",
+            "Gradualisht në tri faza",
+            "Vetëm me hadith",
+            "Nuk u ndalua plotësisht"
+          ],
+          "correct_index": 1,
+          "explanation": "Ndalimi i alkoolit erdhi gradualisht në tri faza kuranore: njoftim i dëmit, ndalim para namazit, ndalim i plotë."
+        },
+        {
+          "question": "Cili është parimi bazë i ushqimeve në Islam?",
+          "options": [
+            "Gjithçka haram derisa të provohet hallall",
+            "Gjithçka hallall derisa të provohet haram",
+            "Vetëm ajo që përmendet në Kuran",
+            "Vetëm perimet"
+          ],
+          "correct_index": 1,
+          "explanation": "Parimi bazë është se ushqimet janë hallall përderisa nuk ka argument specifik që i ndalon."
+        },
+        {
+          "question": "Çfarë kërkon therja islame (dhekah)?",
+          "options": [
+            "Vetëm thikë të mprehtë",
+            "Përmendjen e emrit të Allahut + prerjen e venave + rrjedhjen e gjakut",
+            "Vetëm ndarjen e kokës",
+            "Asgjë specifike"
+          ],
+          "correct_index": 1,
+          "explanation": "Therja kërkon: emrin e Allahut, thikë të mprehtë, prerjen e venave jugulare dhe ezofagut, dhe rrjedhjen e gjakut."
+        },
+        {
+          "question": "Sa parime themelore rreth hallallit dhe haramit përmend Dr. Kardavi?",
+          "options": [
+            "5 parime",
+            "8 parime",
+            "11 parime",
+            "15 parime"
+          ],
+          "correct_index": 2,
+          "explanation": "Dr. Kardavi rendit 11 parime themelore islame rreth hallallit dhe haramit në librin e tij."
+        },
+        {
+          "question": "Cili është parimi i parë i Kardavit rreth hallallit/haramit?",
+          "options": [
+            "Gjithçka haram derisa të provohet hallall",
+            "Në esencë gjërat janë të lejuara",
+            "Vetëm dijetarët vendosin",
+            "Çdo popull ka rregullat e veta"
+          ],
+          "correct_index": 1,
+          "explanation": "Parimi i parë: Në esencë gjërat janë të lejuara — sfera e haramit është e ngushtë, ajo e hallallit shumë e gjerë."
+        },
+        {
+          "question": "Sa persona mallkoi Pejgamberi ﷺ lidhur me alkoolin?",
+          "options": [
+            "3 persona",
+            "5 persona",
+            "7 persona",
+            "10 persona"
+          ],
+          "correct_index": 3,
+          "explanation": "Pejgamberi ﷺ mallkoi 10 persona: prodhuesin, kërkuesin, konsumuesin, bartësin, shitësin, shfrytëzuesin e fitimit, blerësin, dhe të tjerë."
+        }
+      ]
+    },
+    {
+      "id": "hh_002",
+      "title_sq": "Therja Islame dhe Ushqimi i Ehli Kitabit",
+      "title_ar": "الذبح الإسلامي وطعام أهل الكتاب",
+      "level": "intermediate",
+      "source_references": [
+        "Dr. Jusuf El-Kardavi, Hallalli dhe Harami në Islam",
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "Shafiqur Rahman An Nadwi, Al Fiqh ul Muyassar (Simple Fiqh)",
+        "Sahih Bukhari",
+        "El-Mexhmu'",
+        "El-Hidaje",
+        "El-Mugni"
+      ],
+      "sections": [
+        {
+          "heading": "Kushtet e Therjes Islame (Dhekah)",
+          "content_sq": "Therja islame ka kushte specifike: 1) Therësi — duhet të jetë mysliman ose ehli kitab (i krishterë/hebre), i mençur, me qëllim therje. 2) Mjeti — thikë e mprehtë (metalike ose çdo material që pret), jo dhëmb e thua. 3) Prerja — duhet prerë minimalisht tri nga katër: dy venat jugulare, faringu (gryku) dhe ezofagu (tubi i ushqimit). 4) Bismil-lahi — përmendja e emrit të Allahut në momentin e therjes. Sipas Hanefijve: lënia me qëllim e bën haram; nëse harrohet, lejohet. Sipas Shafiijve: është sunnet, jo kusht. 5) Drejtimi — kafsha drejtohet nga kibleja (e pëlqyeshme, jo kusht).",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "ما أنْهَرَ الدَّمَ وذُكِرَ اسْمُ اللَّهِ عليه فَكُلُوهُ",
+              "translation_sq": "Çdo gjë që e derdh gjakun dhe përmendet emri i Allahut mbi të — hani prej saj.",
+              "narrator": "Rafi' ibn Hadixh (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 5498,
+              "classification": "sahih"
+            }
+          ],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Bismil-lahi është kusht i vlefmërisë. Lënia me qëllim e bën kafshën haram. Lënia nga harresa lejohet.",
+              "source": "El-Hidaje, Merginanij"
+            },
+            "maliki": {
+              "ruling": "Bismil-lahi është kusht. Lënia me qëllim ose nga harresa e bën haram (mendimi i njohur).",
+              "source": "Esh-Sherhu el-Kebir"
+            },
+            "shafii": {
+              "ruling": "Bismil-lahi është sunnet i fortë, jo kusht vlefmërie. Nëse lihet, therja mbetet e vlefshme.",
+              "source": "El-Mexhmu', Nevevij"
+            },
+            "hanbali": {
+              "ruling": "Bismil-lahi është kusht. Lënia me qëllim e bën haram. Lënia nga harresa — dy transmetime.",
+              "source": "El-Mugni, Ibn Kudame"
+            }
+          }
+        },
+        {
+          "heading": "Ushqimi i Ehli Kitabit",
+          "content_sq": "Kurani e lejon ushqimin e Ehli Kitabit (të krishterëve dhe hebrenjve): 'Ushqimi i atyre që u është dhënë Libri është hallall për ju.' Kjo do të thotë se mishi i therur prej tyre lejohet, me kushte: 1) Të mos jetë therur në emër të dikujt tjetër veç Allahut, 2) Të mos jetë nga kafshët e ndaluara (derri). Në kontekstin modern, dijetarët diskutojnë nëse mishi i importuar nga vendet e krishtera plotëson kushtet, duke pasur parasysh metodat industriale të therjes (stunning/electrocution). Shumica e dijetarëve bashkëkohorë rekomandojnë kujdes dhe preferim të mishit hallall të çertifikuar.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "وَطَعَامُ الَّذِينَ أُوتُوا الْكِتَابَ حِلٌّ لَّكُمْ",
+              "translation_sq": "Ushqimi i atyre që u është dhënë Libri është i lejuar (hallall) për ju.",
+              "surah": "El-Maide",
+              "surah_number": 5,
+              "ayah": 5
+            }
+          ]
+        },
+        {
+          "heading": "Prerja me Mjete Elektrike dhe Dispozitat e Kardavit",
+          "content_sq": "Dr. Kardavi sqaron në detaje çështjen e mishit të importuar nga vendet e krishtera: Sipas Kadi Ibn Arabiut: 'Ky është argument i prerë se gjahu dhe ushqimi i Ehli Kitabit u përkasin ushqimeve të mira që i ka lejuar Allahu.' Sipas një grupi të medh'hebit Malikij, nuk kushtëzohet që prerja e tyre t'i ngjajë prerjes sonë. Ibn Arabiu thotë: 'Meqë Allahu në përgjithësi na ka lejuar ushqimin e tyre dhe atë që ua lejon feja e tyre, atëherë edhe për ne është i lejuar.' Imam Maliku kur u pyet për kafshën e prerë nga Ehli Kitabi për festat e tyre, tha: 'Nuk e pëlqej por nuk e ndaloj.' Ebu Derdaja (r.a.) kur u pyet për mishin e prerë për kishën, urdhëroi të hahet duke thënë: 'Ata janë Ehli Kitab, ushqimi i tyre lejohet për ne ashtu siç lejohet i yni për ta.' Rregull e rëndësishme: Muslimani nuk duhet të pyesë për atë që mungon — nëse nuk dihet se si është bërë prerja, kafsha konsiderohet hallall. Pejgamberi ﷺ kur u pyet për mish tha: 'Përmendni emrin e Allahut dhe hani!' Sa i përket mishit nga shtetet komuniste/ateiste, ai nuk lejohet sepse nuk janë Ehli Kitab.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "سَمُّوا اللَّهَ وَكُلُوا",
+              "translation_sq": "Përmendni emrin e Allahut dhe hani!",
+              "narrator": "Aishja (r.a.)",
+              "collection": "Sahih Bukhari",
+              "classification": "sahih"
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Sa vena/tuba duhen prerë minimalisht në therje?",
+          "options": [
+            "1",
+            "2",
+            "3 nga 4",
+            "4 nga 4"
+          ],
+          "correct_index": 2,
+          "explanation": "Duhen prerë minimalisht 3 nga 4: dy venat jugulare, faringu (gryku) dhe ezofagu (tubi i ushqimit)."
+        },
+        {
+          "question": "Sipas cilit medh'heb Bismil-lahi NUK është kusht i therjes?",
+          "options": [
+            "Hanefi",
+            "Maliki",
+            "Shafi'i",
+            "Hanbeli"
+          ],
+          "correct_index": 2,
+          "explanation": "Sipas Shafiijve, Bismil-lahi është sunnet i fortë por jo kusht vlefmërie — nëse lihet, therja mbetet e vlefshme."
+        },
+        {
+          "question": "A lejohet mishi i therur nga i krishteri?",
+          "options": [
+            "Jo asnjëherë",
+            "Po, me kushte (jo për idhuj, jo derri)",
+            "Vetëm peshku",
+            "Vetëm me leje të veçantë"
+          ],
+          "correct_index": 1,
+          "explanation": "Kurani e lejon ushqimin e Ehli Kitabit, me kusht që të mos jetë therur për idhuj dhe të mos jetë derri."
+        },
+        {
+          "question": "Çfarë ndodh nëse therësi harron Bismil-lahin sipas Hanefijve?",
+          "options": [
+            "Kafsha bëhet haram",
+            "Kafsha mbetet hallall",
+            "Duhet therur përsëri",
+            "Duhet paguar gjobë"
+          ],
+          "correct_index": 1,
+          "explanation": "Sipas Hanefijve, lënia e Bismil-lahit nga harresa nuk e bën kafshën haram — vetëm lënia me qëllim."
+        },
+        {
+          "question": "Si qëndron Imam Maliku ndaj mishit të prerë nga Ehli Kitabi për festat e tyre?",
+          "options": [
+            "E ndalon kategorikisht",
+            "Nuk e pëlqen por nuk e ndalon",
+            "E lejon plotësisht",
+            "Kërkon therje të re"
+          ],
+          "correct_index": 1,
+          "explanation": "Imam Maliku tha: 'Nuk e pëlqej por nuk e ndaloj' — duke treguar devotshmëri pa shkuar në ndalim."
+        },
+        {
+          "question": "A lejohet mishi i importuar nga vende ateiste/komuniste sipas Kardavit?",
+          "options": [
+            "Po, lejohet gjithmonë",
+            "Jo, sepse nuk janë Ehli Kitab",
+            "Vetëm nëse ka çertifikatë hallall",
+            "Vetëm peshku"
+          ],
+          "correct_index": 1,
+          "explanation": "Dr. Kardavi sqaron se mishi nga shtetet komuniste/ateiste nuk lejohet sepse ata nuk janë Ehli Kitab."
+        }
+      ]
+    },
+    {
+      "id": "hh_003",
+      "title_sq": "Kafshët e Lejuara dhe të Ndaluara",
+      "title_ar": "الحيوانات المباحة والمحرمة",
+      "level": "intermediate",
+      "source_references": [
+        "Dr. Jusuf El-Kardavi, Hallalli dhe Harami në Islam",
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "Shafiqur Rahman An Nadwi, Al Fiqh ul Muyassar (Simple Fiqh)",
+        "Sahih Muslim",
+        "Sahih Bukhari",
+        "El-Hidaje",
+        "El-Mugni"
+      ],
+      "sections": [
+        {
+          "heading": "Kafshët Tokësore",
+          "content_sq": "Kafshët tokësore ndahen në: TË LEJUARA: bagëtia (lopë, dele, dhi, deve), shpendët shtëpiake (pula, rosa, pata), dreri, lepuri, shpendët e egra (thëllëza, shkurta). TË NDALUARA: derri, qeni, macja (konsumimi), grabitqarët me dhëmbë (luani, tigri, ujku, ariu), shpendët grabitqare me kthetra (shqiponja, skifteri, huqi), insektet (përveç karkalecit sipas shumicës), bretkosat, gjarpërinjtë. MOSPAJTIMI: kali (hallall sipas shumicës, mekruh te Hanefitë), gomari shtëpiak (haram sipas shumicës), mushka (haram sipas shumicës).",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "نَهَى رَسولُ اللهِ ﷺ عَنْ كُلِّ ذِي نابٍ مِنَ السِّباعِ وَكُلِّ ذِي مِخْلَبٍ مِنَ الطَّيْرِ",
+              "translation_sq": "I Dërguari i Allahut ﷺ e ndaloi çdo grabitqar me dhëmb (nga kafshët) dhe çdo grabitqar me kthetra (nga shpendët).",
+              "narrator": "Ibn Abbas (r.a.)",
+              "collection": "Sahih Muslim",
+              "hadith_number": 1934,
+              "classification": "sahih"
+            }
+          ]
+        },
+        {
+          "heading": "Kafshët Detare dhe Ujore",
+          "content_sq": "Kafshët detare kanë rregulla më të lehta. Kurani thotë: 'Ju është lejuar gjahu i detit dhe ushqimi i tij.' Medhhebet ndryshojnë: HANEFITË: Vetëm peshku që vdes në ujë natyralisht ose nga gjuetia. Gaforrja, karkaleci i detit, kalimarët — haram. Peshku i ngordhur që noton në sipërfaqe (jo nga gjuetia) — haram. SHUMICA (Maliki, Shafi'i, Hanbeli): Të gjitha kafshët detare janë hallall — përfshirë gaforrën, karkalecat, oktapodin, midjet. Nuk kërkohet therje për kafshët detare.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "أُحِلَّ لَكُمْ صَيْدُ الْبَحْرِ وَطَعَامُهُ مَتَاعًا لَّكُمْ",
+              "translation_sq": "Ju është lejuar gjahu i detit dhe ushqimi i tij, si furnizim për ju.",
+              "surah": "El-Maide",
+              "surah_number": 5,
+              "ayah": 96
+            }
+          ]
+        },
+        {
+          "heading": "Gjahu (Gjuetia) sipas Islamit",
+          "content_sq": "Dr. Kardavi sqaron rregullat e gjahut (gjuetisë) në detaje: KUSHTET E GJAHTARIT: Të jetë mysliman ose Ehli Kitab, të mos gjuajë pa qëllim (kot), të mos jetë i veshur me ihram (gjatë haxhit/umres). Pejgamberi ﷺ tha: 'Nëse ndokush vret ndonjë zog për kot, zogu do t'i ankohet Allahut Ditën e Kiametit.' KUSHTET E MJETEVE: 1) Mjeti vrasës (shigjeta, pushka) — duhet ta shpojë trupin, jo vetëm ta shtypë. Lejohet gjahu me pushkë moderne. 2) Shtazë gjuajtëse (qeni, falkoni) — duhet të jetë i stërvitur, të gjuajë për pronarin (jo për vete), dhe të përmendet emri i Allahut kur lëshohet. Nëse qeni ha nga gjahu, mishi nuk lejohet — Pejgamberi ﷺ tha: 'Nëse qeni e ha kafshën e gjuajtur, mos e ha, ngase e ka gjuajtur për vete.' GJAHU I DETIT: Lejohet plotësisht — 'Allahu ua ka lejuar gjahun e detit dhe ushqimin e tij' (El-Maide:96). Nëse gjahu gjendet i ngordhur pas gjuajtjes, lejohet me kushte: të mos bie në ujë, të mos ketë gjurmë tjetër që e ka mbytur, dhe mishi të mos jetë i kalbur.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "إذا أرسلت كلبك فاذكر اسم الله، فإن أمسك عليك فأدركته حياً فاذبحه",
+              "translation_sq": "Kur ta lëshosh qenin tënd, përmende emrin e Allahut. Nëse e kap të gjallë, atëherë there.",
+              "narrator": "Adij ibn Hatem (r.a.)",
+              "collection": "Sahih Bukhari & Muslim",
+              "classification": "sahih"
+            }
+          ]
+        },
+        {
+          "heading": "Definicionet: Hallall, Haram, Mekruh",
+          "content_sq": "Dr. Kardavi jep definicionet e qarta: HALLALLI (e lejuara) — nënkupton lejimin pa restriksione ndaluese, që e ka lejuar Ligjdhënësi (Allahu). HARAMI (e ndaluara) — nënkupton atë që Allahu e ka ndaluar rreptësisht; vepruesi ndëshkohet në Ahiret dhe mundësisht edhe në këtë botë me dënim ligjor. MEKRUHU (e papëlqyera) — atë që e ndaloi Ligjdhënësi por jo në mënyrë kategorike. Kjo është një shkallë më e ulët se harami. Vepruesi i mekruhit nuk dënohet si vepruesi i haramit, por vazhdimësia në mekruh e çon njeriun deri në haram.",
+          "evidences": []
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Pse janë haram kafshët grabitqare?",
+          "options": [
+            "Sepse janë të mëdha",
+            "Sepse kanë dhëmbë/kthetra grabitqare",
+            "Sepse janë të rralla",
+            "Sepse jetojnë në mal"
+          ],
+          "correct_index": 1,
+          "explanation": "Profeti ﷺ ndaloi çdo grabitqar me dhëmb (luani, ujku etj.) dhe çdo shpend grabitqar me kthetra (shqiponja etj.)."
+        },
+        {
+          "question": "A kërkohet therje për peshkun?",
+          "options": [
+            "Po, si çdo kafshë",
+            "Jo, nuk kërkohet therje",
+            "Vetëm Bismil-lahi",
+            "Varet nga madhësia"
+          ],
+          "correct_index": 1,
+          "explanation": "Kafshët detare nuk kërkojnë therje — janë hallall edhe pa prerje rituale."
+        },
+        {
+          "question": "Cili medh'heb e ndalon gaforrën?",
+          "options": [
+            "Maliki",
+            "Shafi'i",
+            "Hanefi",
+            "Hanbeli"
+          ],
+          "correct_index": 2,
+          "explanation": "Hanefitë e ndalojnë gaforrën — vetëm peshku është hallall sipas tyre nga kafshët detare."
+        },
+        {
+          "question": "Si qëndron çështja e kalit te medhhebet?",
+          "options": [
+            "Haram te të gjithë",
+            "Hallall te shumica, mekruh te Hanefitë",
+            "Hallall te të gjithë",
+            "Haram te shumica"
+          ],
+          "correct_index": 1,
+          "explanation": "Kali është hallall sipas shumicës së dijetarëve, por mekruh tahrim sipas medh'hebit Hanefi."
+        },
+        {
+          "question": "Çfarë ndodh nëse qeni i stërvitur ha nga gjahu?",
+          "options": [
+            "Gjahu mbetet hallall",
+            "Gjahu bëhet haram — e ka gjuajtur për vete",
+            "Duhet therur përsëri",
+            "Lejohet gjysma"
+          ],
+          "correct_index": 1,
+          "explanation": "Pejgamberi ﷺ tha: 'Nëse qeni e ha kafshën, mos e ha, ngase e ka gjuajtur për vete.'"
+        },
+        {
+          "question": "Cili është dallimi mes Haramit dhe Mekruhit sipas Kardavit?",
+          "options": [
+            "Nuk ka dallim",
+            "Harami ka ndalim kategorik me ndëshkim, mekruhi jo kategorik",
+            "Mekruhi është më i rëndë se harami",
+            "Mekruhi vlen vetëm për ushqimet"
+          ],
+          "correct_index": 1,
+          "explanation": "Harami ka ndalim kategorik me ndëshkim, ndërsa mekruhi ka ndalim jo kategorik pa ndëshkim si harami, por vazhdimësia çon në haram."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,888 @@
+{
+  "module_id": "taharah",
+  "module_title_sq": "Taharet — Pastërtia",
+  "module_title_ar": "الطهارة",
+  "module_icon": "droplets",
+  "description": "Mëso rreth pastërtisë rituale: abdesi, gusli, tejemumi, llojet e ujit, mes'hi dhe nexhasetet (papastërtitë).",
+  "lessons": [
+    {
+      "id": "tah_001",
+      "title_sq": "Abdesi (Vudu)",
+      "title_ar": "الوضوء",
+      "level": "beginner",
+      "source_references": [
+        "Sahih Muslim",
+        "Shafiqur Rahman An Nadwi, Al Fiqh ul Muyassar (Simple Fiqh)",
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "Sahih Bukhari",
+        "El-Hidaje",
+        "El-Mugni"
+      ],
+      "sections": [
+        {
+          "heading": "Përkufizimi i Abdesit",
+          "content_sq": "Abdesi (الوضوء) është larja e gjymtyrëve të caktuara me ujë, me nijet (qëllim) adhurimi. Fjala 'vudu' vjen nga fjala arabe 'el-vedaeh' që do të thotë pastërti dhe bukuri. Abdesi është kusht i namazit — namazi nuk pranohet pa abdes. Abdesi përfshin larjen e fytyrës, duarve deri në bërryla, mes'hun e kokës dhe larjen e këmbëve deri në nyje.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "لَا تُقْبَلُ صَلَاةٌ بِغَيْرِ طُهُورٍ",
+              "translation_sq": "Nuk pranohet namazi pa pastrim (abdes).",
+              "narrator": "Ibn Umer (radijallahu anhu)",
+              "collection": "Muslimi dhe Tirmidhiu"
+            }
+          ],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Farzet e abdesit janë 4: larja e fytyrës, larja e duarve deri në bërryla, mes'hu i një çerekut të kokës, larja e këmbëve.",
+              "source": "El-Hidaje, Merginanij"
+            },
+            "maliki": {
+              "ruling": "Farzet e abdesit janë 7, duke përfshirë nijetin (qëllimin) si farz.",
+              "source": "Esh-Sherhu es-Sagir, Ed-Derdir"
+            },
+            "shafii": {
+              "ruling": "Farzet e abdesit janë 6, duke përfshirë nijetin dhe tertib-in (renditjen).",
+              "source": "El-Mexhmu', Nevevij"
+            },
+            "hanbali": {
+              "ruling": "Farzet e abdesit janë 6, duke përfshirë nijetin, tertibin dhe muvalaen (vazhdimësinë).",
+              "source": "El-Mugni, Ibn Kudame"
+            }
+          },
+          "ruling": "farz"
+        },
+        {
+          "heading": "Sunetet e Abdesit",
+          "content_sq": "Sunetet e abdesit përfshijnë: thënien e Bismil-lahit në fillim, larjen e duarve tri herë para se të fillosh, misvakun (pastrimin e dhëmbëve), shpëlarjen e gojës (madmada), shpëlarjen e hundës (istinshak), larjen e gjymtyrëve tri herë, mes'hun e veshëve, fillimin nga gjymtyrët e djathta dhe duan në fund.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "مَن تَوَضَّأَ نَحْوَ وُضُوئِي هذا ثُمَّ صَلَّى رَكْعَتَيْنِ لا يُحَدِّثُ فِيهِما نَفْسَهُ غُفِرَ لَهُ ما تَقَدَّمَ مِن ذَنْبِهِ",
+              "translation_sq": "Kush merr abdes si abdesi im ky, pastaj fal dy rekate duke mos biseduar me veten, i falen mëkatet e mëparshme.",
+              "narrator": "Uthman ibn Affan (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 159,
+              "classification": "sahih"
+            }
+          ]
+        },
+        {
+          "heading": "Gjërat që e prishin Abdesin",
+          "content_sq": "Abdesi prishet nga: dalja e çfarëdo gjëje nga dy rrugët (para ose mbrapa), gjaku ose qelbi që del nga trupi (sipas Hanefijve), humbja e vetëdijes (gjumi i thellë, të fikët), prekja e organit gjenital pa pengesë (sipas Shafiijve dhe Hanbelive), ngrënia e mishit të devesë (sipas Hanbelive). Çdo medhheb ka dallime specifike.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "لَا تُقْبَلُ صَلَاةُ مَنْ أَحْدَثَ حَتَّى يَتَوَضَّأَ",
+              "translation_sq": "Nuk pranohet namazi i atij që ka prishur abdesin derisa të marrë abdes përsëri.",
+              "narrator": "Ebu Hurejra (radijallahu anhu)",
+              "collection": "Buhariu dhe Muslimi"
+            }
+          ],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Gjaku që rrjedh dhe del nga vendi i plagës e prish abdesin. Prekja e gruas nuk e prish.",
+              "source": "Hashijetu Ibn Abidin"
+            },
+            "maliki": {
+              "ruling": "Gjumi i lehtë nuk e prish abdesin. Prekja e organit gjenital me pëllëmbë e prish.",
+              "source": "Esh-Sherhu el-Kebir, Ed-Derdir"
+            },
+            "shafii": {
+              "ruling": "Prekja lëkurë-me-lëkurë e gruas së huaj e prish abdesin. Gjaku nuk e prish.",
+              "source": "Minhaxhu et-Talibin, Nevevij"
+            },
+            "hanbali": {
+              "ruling": "Ngrënia e mishit të devesë e prish abdesin. Gjaku i shumtë e prish.",
+              "source": "El-Mugni, Ibn Kudame"
+            }
+          }
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Sa janë farzet e abdesit sipas medh'hebit Hanefi?",
+          "options": [
+            "3",
+            "4",
+            "6",
+            "7"
+          ],
+          "correct_index": 1,
+          "explanation": "Sipas medh'hebit Hanefi, farzet e abdesit janë 4: larja e fytyrës, larja e duarve, mes'hu i kokës dhe larja e këmbëve."
+        },
+        {
+          "question": "Cili ajet kuranor urdhëron abdesin para namazit?",
+          "options": [
+            "El-Bekare 2:183",
+            "El-Maide 5:6",
+            "En-Nisa 4:43",
+            "El-Felek 113:1"
+          ],
+          "correct_index": 1,
+          "explanation": "Ajeti 6 i sures El-Maide urdhëron besimtarët të marrin abdes para namazit."
+        },
+        {
+          "question": "Çfarë do të thotë fjala 'vudu' në arabisht?",
+          "options": [
+            "Lutje",
+            "Pastërti dhe bukuri",
+            "Larje",
+            "Namaz"
+          ],
+          "correct_index": 1,
+          "explanation": "Fjala 'vudu' vjen nga 'el-vedaeh' që do të thotë pastërti dhe bukuri."
+        },
+        {
+          "question": "Sipas cilit medh'heb, prekja e gruas së huaj lëkurë-me-lëkurë e prish abdesin?",
+          "options": [
+            "Hanefi",
+            "Maliki",
+            "Shafi'i",
+            "Asnjëri"
+          ],
+          "correct_index": 2,
+          "explanation": "Sipas medh'hebit Shafi'i, prekja lëkurë-me-lëkurë e gruas së huaj e prish abdesin."
+        },
+        {
+          "question": "Cila nga këto është sunet e abdesit?",
+          "options": [
+            "Larja e fytyrës",
+            "Mes'hu i kokës",
+            "Misvaku para abdesit",
+            "Larja e këmbëve"
+          ],
+          "correct_index": 2,
+          "explanation": "Misvaku (pastrimi i dhëmbëve) para abdesit është sunet, ndërsa larja e fytyrës, mes'hu i kokës dhe larja e këmbëve janë farze."
+        }
+      ]
+    },
+    {
+      "id": "tah_002",
+      "title_sq": "Gusli (Larja e plotë)",
+      "title_ar": "الغسل",
+      "level": "beginner",
+      "source_references": [
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "Shafiqur Rahman An Nadwi, Al Fiqh ul Muyassar (Simple Fiqh)",
+        "Sahih Bukhari",
+        "El-Hidaje"
+      ],
+      "sections": [
+        {
+          "heading": "Kur bëhet i obliguar Gusli?",
+          "content_sq": "Gusli (larja e plotë e trupit) bëhet obligim (farz) në këto raste: pas marrëdhënieve intime, pas ejakulimit me epsh (edhe në gjumë), pas përfundimit të menstruacioneve (hajdit) dhe lehonisë (nifasit), pas vdekjes (larja e xhenazes), dhe kur një jobesimtar pranon Islamin.\n\nFjala gusul në kuptimin gjuhësor do të thotë: \"Hedhja e ujit në gjithë trupin.\" Ndërsa në kuptimin terminologjik: \"Përdorimi i ujit për pastrim në tërë trupin në mënyrë të veçantë.\"",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "وَإِن كُنتُمْ جُنُبًا فَاطَّهَّرُوا",
+              "translation_sq": "Nëse jeni xhunub, atëherë pastrohuni.",
+              "surah": "El-Maide: 6"
+            }
+          ],
+          "ruling": "farz"
+        },
+        {
+          "heading": "Si kryhet Gusli?",
+          "content_sq": "Farzet e guslit janë tre: 1) Futja e ujit në gojë (el-madmada), 2) Futja e ujit në hundë (el-istinshak), 3) Larja e tërë trupit.\n\nMënyra e plotë (sunnet) e guslit: 1) Nijeti (qëllimi), 2) Thënia Bismil-lah, 3) Larja e duarve tri herë, 4) Larja e organeve gjenitale, 5) Marrja e abdesit të plotë, 6) Hedhja e ujit mbi kokë tri herë duke përshkuar flokët deri në rrënjë, 7) Larja e gjithë trupit duke filluar nga ana e djathtë.\n\nGjatë guslit është obligim që uji të përfshijë të gjithë trupin — flokët dhe lëkurën — duke u siguruar që uji e ka përshkuar gjithë trupin.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "كانَ رَسولُ اللَّهِ ﷺ إذا اغْتَسَلَ مِنَ الجَنابَةِ يَبْدَأُ فَيَغْسِلُ يَدَيْهِ",
+              "translation_sq": "I Dërguari i Allahut ﷺ kur lahej nga xhunubllëku, fillonte duke larë duart e tij.",
+              "narrator": "Aishja (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 248,
+              "classification": "sahih"
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Cili nga këto NUK është rast kur gusli bëhet farz?",
+          "options": [
+            "Pas marrëdhënieve intime",
+            "Pas menstruacioneve",
+            "Para namazit të xhumasë",
+            "Pas ejakulimit me epsh"
+          ],
+          "correct_index": 2,
+          "explanation": "Gusli para xhumasë është sunnet (i pëlqyeshëm), jo farz (obligim)."
+        },
+        {
+          "question": "Sa janë farzet minimale të guslit sipas Hanefijve?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "6"
+          ],
+          "correct_index": 1,
+          "explanation": "Sipas Hanefijve, farzet minimale të guslit janë 3: shpëlarja e gojës, shpëlarja e hundës dhe larja e gjithë trupit."
+        },
+        {
+          "question": "Nga çfarë fillon Profeti ﷺ kur merrte gusl?",
+          "options": [
+            "Nga koka",
+            "Nga duart",
+            "Nga këmbët",
+            "Nga fytyra"
+          ],
+          "correct_index": 1,
+          "explanation": "Sipas hadithit të Aishjes (r.a.), Profeti ﷺ fillonte guslin duke larë duart e tij."
+        },
+        {
+          "question": "Sa janë farzet e guslit?",
+          "options": [
+            "Dy",
+            "Tre",
+            "Katër",
+            "Pesë"
+          ],
+          "correct_index": 1,
+          "explanation": "Farzet e guslit janë tre: futja e ujit në gojë, futja e ujit në hundë, dhe larja e tërë trupit."
+        }
+      ]
+    },
+    {
+      "id": "tah_003",
+      "title_sq": "Tejemumi (Abdesi me dhé)",
+      "title_ar": "التيمم",
+      "level": "beginner",
+      "source_references": [
+        "Sahih Muslim",
+        "Shafiqur Rahman An Nadwi, Al Fiqh ul Muyassar (Simple Fiqh)",
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "Sahih Bukhari",
+        "El-Mexhmu'",
+        "El-Hidaje",
+        "El-Mugni"
+      ],
+      "sections": [
+        {
+          "heading": "Përkufizimi dhe Kushtet e Tejemumit",
+          "content_sq": "Tejemumi (التيمم) do të thotë qëllim. Në Sheriat: fërkimi i fytyrës dhe i duarve pasi t'i përplasësh pëllëmbët në dhé të pastër, me qëllim pastrimi.\n\nKushtet e tejemumit janë tre:\n1) Pamundësia e përdorimit të ujit — ose për shkak të mos gjendjës së tij, ose për shkak të frikës nga përdorimi i tij në rast sëmundje, të ftohtë të madh e nuk ke mjet ngrohje për ujin, etj.\n2) Hyrja e kohës së namazit — nuk lejohet tejemumi për namazin e obliguar para se të hyjë koha e tij.\n3) Nijeti — sepse tejemumi pa nijet nuk është i vlefshëm. Vendndodhja e nijetit është zemra dhe nuk lejohet shqiptimi i tij.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "فَلَمْ تَجِدُوا مَاءً فَتَيَمَّمُوا صَعِيدًا طَيِّبًا فَامْسَحُوا بِوُجُوهِكُمْ وَأَيْدِيكُمْ",
+              "translation_sq": "E nëse nuk gjeni ujë, atëherë merrni tejemum me dhé të pastër, fërkoni fytyrat tuaja dhe duart tuaja.",
+              "surah": "En-Nisa: 43"
+            }
+          ],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Tejemumi lejohet me tokë, rërë, gur, dhe çdo gjë që i përket sipërfaqes së tokës. Duhet goditur duart dy herë: njëherë për fytyrën dhe njëherë për duart deri në bërryla.",
+              "source": "El-Hidaje, Merginanij"
+            },
+            "maliki": {
+              "ruling": "Tejemumi lejohet vetëm me dhé ose rërë. Mjafton një goditje e vetme. Fërkimi i fytyrës dhe duarve deri në kyçe.",
+              "source": "Esh-Sherhu es-Sagir, Ed-Derdir"
+            },
+            "shafii": {
+              "ruling": "Tejemumi lejohet vetëm me dhé që ka pluhur. Duhet dy goditje: njëherë për fytyrën dhe njëherë për duart deri në bërryla. Nijeti është farz.",
+              "source": "El-Mexhmu', Nevevij"
+            },
+            "hanbali": {
+              "ruling": "Tejemumi lejohet me dhé të pastër që ka pluhur. Dy goditje janë obligim. Duart fërkohen deri në kyçe sipas mendimit më të fortë.",
+              "source": "El-Mugni, Ibn Kudame"
+            },
+            "consensus_note": "Të katër medh'hebet pajtohen se tejemumi lejohet kur nuk ka ujë ose kur përdorimi i ujit dëmton."
+          },
+          "ruling": "farz (kur plotësohen kushtet)"
+        },
+        {
+          "heading": "Si kryhet Tejemumi?",
+          "content_sq": "Hapat e tejemumit: 1) Nijeti (qëllimi) për pastrim ritual, 2) Thuhet 'Bismil-lah', 3) Goditja e parë e duarve në tokë/dhé të pastër, 4) Fërkimi i fytyrës me dy pëllëmbat, 5) Goditja e dytë e duarve në tokë, 6) Fërkimi i dorës së majtë mbi dorën e djathtë dhe anasjelltas deri në bërryla (sipas Hanefive) ose deri në kyçe (sipas disa dijetarëve). Duhet siguruar që dheu të jetë i pastër dhe të mos ketë papastërti (nexhaset).",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "إِنَّمَا كَانَ يَكْفِيكَ هَكَذَا... فَضَرَبَ بِكَفَّيْهِ الأَرْضَ ونَفَخَ فِيهِمَا ثُمَّ مَسَحَ بِهِمَا وَجْهَهُ وكَفَّيْهِ",
+              "translation_sq": "Të mjaftonte kështu... dhe (Profeti ﷺ) goditi tokën me pëllëmbat, i fryu atyre, pastaj fërkoi fytyrën dhe pëllëmbat e tij.",
+              "narrator": "Ammar ibn Jasir (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 338,
+              "classification": "sahih"
+            }
+          ]
+        },
+        {
+          "heading": "Gjërat që e prishin Tejemumim",
+          "content_sq": "Tejemumi prishet nga: 1) Të gjitha gjërat që prishin abdesin (dalja nga dy rrugët, gjumi i thellë, etj.), 2) Të gjitha gjërat që bëjnë obligim guslin, 3) Prezenca (gjetja) e ujit — qoftë edhe gjatë namazit — për atë që nuk pati mundësi të gjente ujë. Por jo për atë që nuk e përdori ujin nga frika, si në rast sëmundjeje.",
+          "evidences": []
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Kur lejohet tejemumi?",
+          "options": [
+            "Gjithmonë",
+            "Vetëm kur nuk ka ujë ose kur uji dëmton",
+            "Vetëm në udhëtim",
+            "Vetëm në shkretëtirë"
+          ],
+          "correct_index": 1,
+          "explanation": "Tejemumi lejohet kur nuk gjendet ujë ose kur përdorimi i ujit dëmton shëndetin."
+        },
+        {
+          "question": "Cili ajet kuranor flet për tejemumim?",
+          "options": [
+            "El-Bekare 2:183",
+            "En-Nisa 4:43",
+            "El-Maide 5:90",
+            "Ali Imran 3:97"
+          ],
+          "correct_index": 1,
+          "explanation": "Ajeti 43 i sures En-Nisa përfshin urdhrin për tejemum kur nuk gjendet ujë."
+        },
+        {
+          "question": "Sa goditje në tokë kërkon tejemumi sipas Hanefijve?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct_index": 1,
+          "explanation": "Sipas Hanefijve, tejemumi kërkon dy goditje: njëherë për fytyrën dhe njëherë për duart deri në bërryla."
+        },
+        {
+          "question": "Çfarë e prish tejemumim përveç gjërave që prishin abdesin?",
+          "options": [
+            "Era e fortë",
+            "Gjetja e ujit",
+            "Koha e namazit",
+            "Ushqimi"
+          ],
+          "correct_index": 1,
+          "explanation": "Gjetja e ujit e prish tejemumim, sepse arsyeja e lejimit zhduket."
+        },
+        {
+          "question": "Profeti ﷺ tha se toka i është bërë çfarë?",
+          "options": [
+            "Shtëpi",
+            "Xhami dhe pastërti",
+            "Strehë",
+            "Rrugë"
+          ],
+          "correct_index": 1,
+          "explanation": "Profeti ﷺ tha: 'Toka më është bërë xhami (vend faljeje) dhe pastërti (mjet pastrimi).'"
+        },
+        {
+          "question": "A lejohet tejemumi para hyrjes së kohës së namazit?",
+          "options": [
+            "Po, lejohet gjithmonë",
+            "Jo, nuk lejohet",
+            "Vetëm për sunet",
+            "Vetëm në udhëtim"
+          ],
+          "correct_index": 1,
+          "explanation": "Nuk lejohet tejemumi për namazin farz para se të hyjë koha e tij. Kjo është kusht i tejemumit."
+        }
+      ]
+    },
+    {
+      "id": "tah_004",
+      "title_sq": "Llojet e Ujërave dhe Kushtet e Pastërtisë",
+      "title_ar": "أقسام المياه",
+      "level": "intermediate",
+      "source_references": [
+        "Sahih Muslim",
+        "Shafiqur Rahman An Nadwi, Al Fiqh ul Muyassar (Simple Fiqh)",
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "Sunen Ebu Davud",
+        "El-Mexhmu'",
+        "El-Hidaje",
+        "El-Mugni"
+      ],
+      "sections": [
+        {
+          "heading": "Uji i Pastër Pastrues (Tahir Mutahhir)",
+          "content_sq": "Uji i pastër pastrues (tahir mutahhir) është uji që është i pastër në vetvete dhe pastron të tjerët. Ky përfshin: ujin e shiut, ujin e lumenjve, ujin e burimeve, ujin e puseve, ujin e detit, ujin e borës dhe breshërit kur shkrijnë. Ky lloj uji lejohet për abdes, gusl dhe pastrim nga papastërtitë (nexhasetet). Uji i detit është hallall për abdes sipas hadithit: 'Uji i detit është i pastër dhe e ngordhura e tij është hallall.'",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "هُوَ الطَّهُورُ مَاؤُهُ الْحِلُّ مَيْتَتُهُ",
+              "translation_sq": "Uji i tij (detit) është i pastër pastrues dhe kafsha e ngordhur e tij është hallall.",
+              "narrator": "Ebu Hurejra (radijallahu anhu)",
+              "collection": "Ebu Daudi, Tirmidhiu, Nesaiu"
+            },
+            {
+              "type": "hadith",
+              "arabic": "إِنَّ الْمَاءَ طَهُورٌ لَا يُنَجِّسُهُ شَيْءٌ",
+              "translation_sq": "Uji është i pastër (pastrues) dhe asgjë nuk e bën atë të papastër.",
+              "narrator": "Ebu Said El-Hudri (radijallahu anhu)",
+              "collection": "Ebu Daudi, Tirmidhiu, Nesaiu"
+            }
+          ],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Uji ndahet në 3 kategori: tahir mutahhir (i pastër pastrues), tahir gajr mutahhir (i pastër jopastues), dhe nexhis (i papastër). Uji i përdorur (must'emel) nuk lejohet për abdes.",
+              "source": "El-Hidaje, Merginanij"
+            },
+            "maliki": {
+              "ruling": "Uji ndahet në 2 kategori kryesore: tahur (pastrues) dhe gajr tahur (jopastrues). Uji i pastër që ka ndryshuar ngjyrën/erën/shijen nga diçka e pastër mbetet pastrues.",
+              "source": "Esh-Sherhu es-Sagir, Ed-Derdir"
+            },
+            "shafii": {
+              "ruling": "Uji ndahet sipas sasisë: uji i shumtë (kulleteun = rreth 190 litra) nuk ndotet lehtë. Uji pak ndotet vetëm nëse ndryshon ngjyra, era ose shija.",
+              "source": "El-Mexhmu', Nevevij"
+            },
+            "hanbali": {
+              "ruling": "Uji nën kulleteun (rreth 190 litra) ndotet me çdo papastërti që bie në të, edhe nëse nuk ndryshon. Uji mbi kulleteun ndotet vetëm nëse ndryshon.",
+              "source": "El-Mugni, Ibn Kudame"
+            }
+          },
+          "ruling": "Lejohet për pastrim ritual"
+        },
+        {
+          "heading": "Uji i Pastër Jopastues dhe Uji i Papastër",
+          "content_sq": "Uji i pastër jopastues (tahir gajr mutahhir) sipas Hanefijve përfshin ujin e përdorur (must'emel) — ujin që ka rënë nga gjymtyrët gjatë abdesit ose guslit. Ky ujë është i pastër por nuk mund të ripërdoret për pastrim ritual. Uji i papastër (nexhis) është uji në të cilin ka rënë papastërti (nexhaset) dhe ka ndryshuar njërën nga tri vetitë: ngjyrën, erën ose shijen. Nëse uji është i shumtë (kulleteun e sipër) dhe nuk ka ndryshuar, mbetet i pastër sipas shumicës së dijetarëve.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "إنَّ الماءَ طَهورٌ لا يُنَجِّسُهُ شيءٌ",
+              "translation_sq": "Uji është pastrues, asgjë nuk e bën të papastër.",
+              "narrator": "Ebu Seid el-Hudrij (r.a.)",
+              "collection": "Sunen Ebu Davud",
+              "hadith_number": 67,
+              "classification": "sahih"
+            }
+          ]
+        },
+        {
+          "heading": "Kulleteun — Sasia Minimale e Ujit",
+          "content_sq": "Kulleteun (قلتان) është njësia matëse që përdoret në fikh për të dalluar ujin e shumtë nga uji pak. Është rreth 190-216 litra sipas llogaritjeve të ndryshme. Profeti ﷺ tha: 'Kur uji arrin kulleteun, nuk bart papastërti.' Kjo do të thotë se uji i shumtë (mbi kulleteun) nuk ndotet vetëm nga kontakti me papastërti — ndotet vetëm nëse ndryshon ngjyra, era ose shija. Uji pak (nën kulleteun) ndotet nga çdo kontakt me papastërti sipas shumicës së dijetarëve, por Hanefitë kanë mendim ndryshe — ata thonë se edhe uji pak ndotet vetëm nëse ndryshon.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "إذا بلغ الماء قلتين لم يحمل الخبث",
+              "translation_sq": "Kur uji arrin kulleteun (dy enë të mëdha), nuk bart papastërti.",
+              "narrator": "Abdullah ibn Umer (r.a.)",
+              "collection": "Sunen Ebu Davud",
+              "hadith_number": 63,
+              "classification": "sahih"
+            }
+          ]
+        },
+        {
+          "heading": "11 Llojet e Ujit të Pastër",
+          "content_sq": "Sipas dijetarëve të fikhut, ujërat e pastra që mund të përdoren për pastrim ritual (abdes dhe gusl) janë njëmbëdhjetë lloje:\n\n1. Uji i detit (ماء البحر) — i pastër dhe pastrues sipas hadithit të njohur: 'Uji i tij është pastrues dhe e ngordhura e tij është hallall.'\n\n2. Uji i shiut (ماء المطر) — Allahu thotë në Kuran: 'Ne kemi zbritur nga qielli ujë pastrues' (El-Furkan:48).\n\n3. Breshëri dhe bora (البَرَد والثلج) — kur shkrijnë, uji i tyre është i pastër. Profeti ﷺ lutej: 'Më pastro me borë, breshër dhe ujë të ftohtë.'\n\n4. Uji i lumit (ماء النهر) — ujërat rrjedhëse janë të pastra dhe pastruese pa kundërshtim mes dijetarëve.\n\n5. Uji i puseve dhe burimeve (ماء الآبار والعيون) — Profeti ﷺ mori abdes nga pusi i Buda'ah dhe tha se uji është pastrues.\n\n6. Uji i ngrohur (الماء المسخن) — uji që ngrohet nga dielli ose zjarri mbetet i pastër dhe pastrues. Disa e kanë konsideruar mekruh nëse ngrohet shumë nga dielli në enë metali, por mendimi i saktë është se mbetet pastrues.\n\n7. Uji i mbetur nga gusli ose abdesi (الماء المتبقي من الغسل) — uji që mbetet në enë pas guslit ose abdesit është i pastër dhe lejohet përdorimi i tij për pastrim të ri, sipas mendimit të shumicës. Ndryshon nga uji must'emel që bie nga gjymtyrët.\n\n8. Uji ku ka ngordhur gjallesë pa gjak (ما مات فيه ما لا دم له) — nëse në ujë ngordh një krijesë pa gjak si miza, milingona ose bletë, uji mbetet i pastër, sepse këto krijesa nuk kanë gjak rrjedhës dhe ngordhësira e tyre nuk është nexhaset.\n\n9. Uji që përdorin jomuslimanët (الماء الذي يستعمله غير المسلمين) — uji i mbetur nga jomuslimanët lejohet për abdes, sepse origjina e ujit është pastërtia. Profeti ﷺ mori abdes nga shakulloja e një gruaje mushrike.\n\n10. Uji i përzier me diçka të pastër (الماء المخلوط بشيء طاهر) — nëse uji përzihet me diçka të pastër si bimë, gjethe ose dhé, dhe nuk ndryshon aq shumë sa të mos quhet më ujë, ai mbetet pastrues. Por nëse substanca e pastër e dominon ujin dhe i ndryshon natyrën, atëherë nuk konsiderohet më ujë i thjeshtë.\n\n11. Uji në lëkura të regjura (الماء في الأوعية المدبوغة) — uji që ruhet në enë prej lëkure të regjur është i pastër, sipas hadithit: 'Regjimi i lëkurës është pastrimi i saj.' Lëkura e regjur konsiderohet e pastër dhe nuk e ndot ujin.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "هُوَ الطَّهُورُ مَاؤُهُ الحِلُّ مَيْتَتُهُ",
+              "translation_sq": "Uji i tij (detit) është pastrues dhe e ngordhura e tij është hallall.",
+              "narrator": "Ebu Hurejre (r.a.)",
+              "collection": "Sunen Ebu Davud",
+              "hadith_number": 83,
+              "classification": "sahih"
+            },
+            {
+              "type": "hadith",
+              "arabic": "اللَّهُمَّ اغْسِلْنِي مِنْ خَطَايَايَ بِالمَاءِ وَالثَّلْجِ وَالبَرَدِ",
+              "translation_sq": "O Allah, më pastro nga mëkatet e mia me ujë, borë dhe breshër.",
+              "narrator": "Ebu Hurejre (r.a.)",
+              "collection": "Sahih Muslim",
+              "hadith_number": 588,
+              "classification": "sahih"
+            },
+            {
+              "type": "hadith",
+              "arabic": "إِذَا دُبِغَ الإِهَابُ فَقَدْ طَهُرَ",
+              "translation_sq": "Kur lëkura të regjohet (përpunohet), ajo pastrohet.",
+              "narrator": "Ibn Abbas (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 5531,
+              "classification": "sahih"
+            }
+          ],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Të njëmbëdhjetë llojet e ujit janë pastruese (tahur). Uji i ngrohur me diell në enë metali është mekruh tenzihen por mbetet pastrues. Uji i përzier me substancë të pastër lejohet nëse vazhdon të quhet 'ujë'.",
+              "source": "El-Hidaje, Merginanij; Hashijetu Ibn Abidin"
+            },
+            "shafii": {
+              "ruling": "Uji pastrues duhet të jetë i pastër në vetvete, i papërzier me substanca që ia ndryshojnë natyrën, dhe jo must'emel (i përdorur). Të gjitha burimet natyrore të ujit janë pastruese.",
+              "source": "El-Mexhmu', Nevevij"
+            }
+          },
+          "ruling": "Lejohet për pastrim ritual"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Cili lloj uji lejohet për abdes?",
+          "options": [
+            "Uji i përzier me lëng frutash",
+            "Uji i shiut",
+            "Çaji",
+            "Uji i përdorur sipas Hanefijve"
+          ],
+          "correct_index": 1,
+          "explanation": "Uji i shiut është tahir mutahhir — i pastër dhe pastrues, pra lejohet për abdes."
+        },
+        {
+          "question": "Sa është sasia e 'kulleteun' në litra?",
+          "options": [
+            "Rreth 50 litra",
+            "Rreth 100 litra",
+            "Rreth 190-216 litra",
+            "Rreth 500 litra"
+          ],
+          "correct_index": 2,
+          "explanation": "Kulleteun llogaritet rreth 190-216 litra sipas llogaritjeve të ndryshme."
+        },
+        {
+          "question": "Sipas hadithit, çfarë thuhet për ujin e detit?",
+          "options": [
+            "Nuk lejohet për abdes",
+            "Është pastrues dhe e ngordhura e tij hallall",
+            "Lejohet vetëm në rast nevoje",
+            "Është mekruh"
+          ],
+          "correct_index": 1,
+          "explanation": "Profeti ﷺ tha: 'Uji i tij (detit) është pastrues dhe e ngordhura e tij është hallall.'"
+        },
+        {
+          "question": "Kur bëhet uji i papastër (nexhis)?",
+          "options": [
+            "Kur qëndron shumë",
+            "Kur ndryshon ngjyrën, erën ose shijen nga papastërtia",
+            "Kur ngrohet",
+            "Kur është i ftohtë"
+          ],
+          "correct_index": 1,
+          "explanation": "Uji bëhet nexhis kur papastërtia ndryshon njërën nga tri vetitë e tij: ngjyrën, erën ose shijen."
+        },
+        {
+          "question": "Çfarë është uji 'must'emel' sipas Hanefijve?",
+          "options": [
+            "Uji i papastër",
+            "Uji i përdorur në abdes/gusl",
+            "Uji i detit",
+            "Uji i shiut"
+          ],
+          "correct_index": 1,
+          "explanation": "Uji must'emel është uji i përdorur në abdes ose gusl — i pastër në vetvete por nuk lejohet për abdes të ri sipas Hanefijve."
+        }
+      ]
+    },
+    {
+      "id": "tah_005",
+      "title_sq": "Mes'hi mbi Meste dhe Çorape",
+      "title_ar": "المسح على الخفين",
+      "level": "intermediate",
+      "source_references": [
+        "Sahih Muslim",
+        "Shafiqur Rahman An Nadwi, Al Fiqh ul Muyassar (Simple Fiqh)",
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "Sahih Bukhari",
+        "Sunen Tirmidhij",
+        "El-Hidaje",
+        "El-Mugni"
+      ],
+      "sections": [
+        {
+          "heading": "Përkufizimi dhe Ligjshmëria e Mes'hit",
+          "content_sq": "Mes'hi mbi meste (el-huf) ose çorape është lehtësim sheriatik që lejon fërkimin e pëllembës së lagur mbi mbathjet në vend të larjes së këmbëve gjatë abdesit.\n\nKoha e mes'hit (fërkimit) mbi çorape është: për vendasin një ditë dhe një natë (24 orë), që nga momenti i mes'hit të parë; ndërsa për udhëtarin tri ditë e tri net (72 orë).",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "أَنَّ سَعْدًا حَدَّثَهُ عَنْ رَسُولِ اللَّهِ ﷺ أَنَّهُ يَمْسَحُ عَلَى الْخُفَّيْنِ",
+              "translation_sq": "Sadi i tregoi atij se i Dërguari i Allahut ﷺ jepte mes'h mbi mestet.",
+              "narrator": "Abdullah bin Umer (radijallahu anhu)",
+              "collection": "Buhariu dhe Muslimi"
+            }
+          ],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Mes'hi mbi meste lejohet: 1 ditë e natë (24 orë) për vendaliun, 3 ditë e netë (72 orë) për udhëtarin. Mestet duhet të mbulojnë nyjet. Lejohet mes'hi edhe mbi çorape të trasha.",
+              "source": "El-Hidaje, Merginanij"
+            },
+            "maliki": {
+              "ruling": "Mes'hi mbi meste nuk ka afat kohor — lejohet sa kohë që mestet janë veshur pa i hequr. Por rekomandohet heqja çdo ditë.",
+              "source": "El-Mudevvene, Imam Malik"
+            },
+            "shafii": {
+              "ruling": "Mes'hi mbi meste lejohet 1 ditë e natë për vendaliun, 3 ditë e netë për udhëtarin. Çorapet duhet të jenë të trasha sa të mund të ecësh me to.",
+              "source": "El-Mexhmu', Nevevij"
+            },
+            "hanbali": {
+              "ruling": "Mes'hi lejohet 1 ditë e natë për vendaliun, 3 ditë e netë për udhëtarin. Lejohet mbi çorape të trasha. Afati fillon nga prishja e parë e abdesit pas veshjes.",
+              "source": "El-Mugni, Ibn Kudame"
+            },
+            "consensus_note": "Të katër medh'hebet pajtohen se mes'hi mbi meste është i lejuar. Dallimi kryesor është tek Malikitë që nuk vendosin afat kohor."
+          },
+          "ruling": "Lejohet (ruhsa/lehtësim)"
+        },
+        {
+          "heading": "Kushtet e Mes'hit mbi Meste",
+          "content_sq": "Kushtet e mes'hit mbi meste:\n1) Të vishen mestet/çorapet mbasi ke përfunduar pastrimin (abdesin ose guslin) — siç ka thënë Profeti ﷺ: \"Lëri, sepse i kam veshur duke qenë i pastër.\"\n2) Të jenë të punuara prej diçkaje të pastër — nuk lejohet mes'hi mbi diçka të papastër (si lëkura e qenit ose derrit).\n3) Të jenë të lejuara (hallall) — nuk lejohet mbi diçka të vjedhur ose të zaptuar.\n4) Të mbulojnë kyçet e këmbëve — të mos jenë shumë të grisura (grisjet e lehta tolerohen).\n\nMënyra e mes'hit: Fshihet më e shumta e pjesës së sipërme të mesteve, duke u përjashtuar pjesa e poshtme dhe ajo e pasmja. Koha fillon nga momenti i fshirjes së parë dhe përfundon me plotësimin e kohës.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "أَمَرَنا رَسولُ اللهِ ﷺ أنْ نَمْسَحَ على الخُفَّيْنِ إذا نحن أدْخَلْناهُما على طُهْرٍ",
+              "translation_sq": "Na urdhëroi i Dërguari i Allahut ﷺ të japim mes'h mbi meste kur i veshim ato duke qenë me abdes.",
+              "narrator": "Safvan ibn Assaal (r.a.)",
+              "collection": "Sunen Tirmidhij",
+              "hadith_number": 96,
+              "classification": "hasen sahih"
+            }
+          ]
+        },
+        {
+          "heading": "Mes'hi mbi Çorape dhe Fashë (Lidhëse Plaqësh)",
+          "content_sq": "Mes'hi mbi çorape të trasha lejohet sipas shumicës së dijetarëve, me kusht që çorapet të jenë të trasha sa të mund të ecësh me to pa këpucë dhe të mos jenë transparente. Mes'hi mbi fashën (lidhësen e plagës) lejohet pa afat kohor dhe pa kusht abdesit paraprak — sepse plagosuri nuk mund ta heqë fashën lehtë. Fasha fërkohet e gjitha, jo vetëm pjesërisht.",
+          "evidences": [],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Lejohet mes'hi mbi çorape të trasha (el-xheureb) që nuk lëshojnë ujë dhe mund të ecësh me to. Fashën duhet fërkuar plotësisht.",
+              "source": "Hashijetu Ibn Abidin"
+            },
+            "shafii": {
+              "ruling": "Çorapet duhet të jenë aq të trasha sa nuk shihet lëkura nëpërmjet tyre dhe mund të ecësh me to vazhdimisht.",
+              "source": "El-Mexhmu', Nevevij"
+            }
+          }
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Sa zgjat afati i mes'hit mbi meste për vendaliun (jo udhëtarin)?",
+          "options": [
+            "12 orë",
+            "24 orë (1 ditë e natë)",
+            "48 orë",
+            "72 orë"
+          ],
+          "correct_index": 1,
+          "explanation": "Sipas shumicës së dijetarëve, afati i mes'hit për vendaliun është 1 ditë e natë (24 orë)."
+        },
+        {
+          "question": "Cili është kushti themelor para se të jepësh mes'h mbi meste?",
+          "options": [
+            "Të jesh në udhëtim",
+            "Të veshësh mestet pas abdesit të plotë",
+            "Të bësh nijet për mes'h",
+            "Të jesh i sëmurë"
+          ],
+          "correct_index": 1,
+          "explanation": "Mestet duhet të jenë veshur pas marrjes së abdesit të plotë me ujë — ky është kushti themelor."
+        },
+        {
+          "question": "Sa zgjat afati i mes'hit për udhëtarin?",
+          "options": [
+            "1 ditë",
+            "2 ditë",
+            "3 ditë e netë (72 orë)",
+            "Pa afat"
+          ],
+          "correct_index": 2,
+          "explanation": "Sipas shumicës së dijetarëve, afati i mes'hit për udhëtarin është 3 ditë e netë (72 orë)."
+        },
+        {
+          "question": "Cili medh'heb nuk vendos afat kohor për mes'hin mbi meste?",
+          "options": [
+            "Hanefi",
+            "Maliki",
+            "Shafi'i",
+            "Hanbeli"
+          ],
+          "correct_index": 1,
+          "explanation": "Malikitë nuk vendosin afat kohor për mes'hin — lejohet sa kohë mestet janë veshur pa u hequr."
+        },
+        {
+          "question": "A lejohet mes'hi mbi fashën (lidhësen e plagës) pa abdes paraprak?",
+          "options": [
+            "Po, sepse plagosuri nuk mund ta heqë lehtë",
+            "Jo, duhet patjetër abdes",
+            "Vetëm në rast udhëtimi",
+            "Vetëm nëse plaga është e vogël"
+          ],
+          "correct_index": 0,
+          "explanation": "Mes'hi mbi fashë lejohet pa kusht abdesit paraprak, sepse plagosuri ka arsye legjitime për të mos e hequr fashën."
+        },
+        {
+          "question": "Sa zgjat koha e mes'hit mbi çorape për udhëtarin?",
+          "options": [
+            "Një ditë dhe një natë",
+            "Dy ditë e dy net",
+            "Tri ditë e tri net",
+            "Pa limit kohor"
+          ],
+          "correct_index": 2,
+          "explanation": "Koha e mes'hit për udhëtarin është tri ditë e tri net (72 orë), ndërsa për vendasin një ditë e një natë (24 orë)."
+        }
+      ]
+    },
+    {
+      "id": "tah_006",
+      "title_sq": "Nexhaseti (Papastërtitë)",
+      "title_ar": "النجاسة",
+      "level": "intermediate",
+      "source_references": [
+        "Sahih Muslim",
+        "Shafiqur Rahman An Nadwi, Al Fiqh ul Muyassar (Simple Fiqh)",
+        "Fikhu Praktik, Rushit Musallari",
+        "Sunen Ibn Maxhe",
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "Sahih Bukhari",
+        "Sunen Ebu Davud",
+        "El-Mexhmu'",
+        "El-Hidaje",
+        "El-Mugni"
+      ],
+      "sections": [
+        {
+          "heading": "Llojet e Nexhasetit",
+          "content_sq": "Nexhaseti (النجاسة) janë substancat e papastra që pengojnë vlefshmërinë e namazit dhe duhet larguar para faljes. Nexhasetet ndahen sipas rëndësisë:\n\nNexhaset e rëndë (mugaladha): si pështyma e qenit — pastrohet me larje shtatë herë, njëra prej tyre me dhé.\nNexhaset e lehtë (muhafefe): si urina e foshnjës mashkull që ushqehet vetëm me qumësht — mjafton stërpikja me ujë.\nNexhaset e zakonshme (muteuasite): gjithë papastërtitë e tjera — pastrohen me larje derisa largohet gjurma (ngjyra, era, shija).\n\nEl-Medhi (المذي): sekrecion i hollë transparent që del me epsh — është nexhaset e lehtë, prish abdesin, dhe mjafton stërpikja e organit dhe abdes i ri.\nEl-Wedi (الودي): sekrecion i trashë pas urinimit — prish abdesin, kërkon pastrim.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "طُهُورُ إِنَاءِ أَحَدِكُمْ إِذَا وَلَغَ فِيهِ الْكَلْبُ أَنْ يَغْسِلَهُ سَبْعَ مَرَّاتٍ أُولَاهُنَّ بِالتُّرَابِ",
+              "translation_sq": "Pastrimi i enës së dikujt ku ka lëpirë qeni, është ta lajë atë shtatë herë, e para me dhé.",
+              "narrator": "Ebu Hurejra (radijallahu anhu)",
+              "collection": "Muslimi"
+            }
+          ],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Nexhasetet ndahen në: nexhaset e rëndë (mugalladha) si urina, jashtëqitja, gjaku i rrjedhshëm, vera, dhe nexhaset e lehtë (muhaffefe) si urina e kafshëve bimëngrënëse dhe shpendëve. Për mugalladha-n, sasia e falur është sa një monedhe (dirhem) në sipërfaqe ose sa 3-4 gram në peshë.",
+              "source": "El-Hidaje, Merginanij; Hashijetu Ibn Abidin"
+            },
+            "maliki": {
+              "ruling": "Nexhasetet nuk ndahen në të rënda dhe të lehta. Çdo nexhaset duhet larguar plotësisht nëse dihet vendi. Nëse nuk dihet vendi i saktë, lahet zona ku dyshohet.",
+              "source": "Esh-Sherhu es-Sagir, Ed-Derdir"
+            },
+            "shafii": {
+              "ruling": "Nexhaseti i qenit është i rëndë (mugalladha) — kërkon larje 7 herë, njëra me dhé. Nexhaset e tjera largohen me larje derisa të zhduket substanca, ngjyra dhe era. Nëse ngjyra mbetet pas mundimit, falet.",
+              "source": "El-Mexhmu', Nevevij"
+            },
+            "hanbali": {
+              "ruling": "Nexhaseti i qenit dhe derrit kërkon larje 7 herë, njëra me dhé. Nexhasetet e tjera largohen me larje një herë nëse zhduket substanca.",
+              "source": "El-Mugni, Ibn Kudame"
+            }
+          },
+          "ruling": "Njohja e nexhaseteve është farz i mjaftueshëm (farz kifaje)"
+        },
+        {
+          "heading": "Si Pastrohet Nexhaseti",
+          "content_sq": "Pastrimi nga nexhaseti është kusht i namazit.\n\nIstinxhaja: Pastrimi i rrugëve të jashtëqitjes (të hollë dhe të trashë) me ujë. Kjo është mënyra më e mirë e pastrimit.\n\nIstixhmari: Pastrimi i rrugëve të jashtëqitjes me gurë ose me diçka të pastër, në mungesë të ujit. Kërkohen së paku tri fërkime.\n\nPastrimi i rrobës së ndotur: lahet derisa të pastrohet prej papastërtisë.\nPastrimi i shtrojave: lahen me ujë, ose me detergjentet e sotshëm, dhe fërkohet derisa të largohet papastërtia.\nPastrimi i tokës: duke hedhur ujë sipër vendit të ndotur — siç urdhëroi Profeti ﷺ kur një beduin urinoi në xhami.\n\nRregulla: Origjina tek gjërat është pastërtia — nëse nuk kemi provë të qartë se diçka është bërë e pisët, atëherë kthehemi në origjinë dhe nuk duhet besimtari të merret me fiksime.\nJashtëqitjet e kafshëve që u hahet mishi janë të pastra dhe nuk e bëjnë pis rrobën apo vendin e faljes.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "إنَّ هذِهِ المَسَاجِدَ لا تَصْلُحُ لِشَيْءٍ مِنْ هَذَا البَوْلِ ولا القَذَرِ",
+              "translation_sq": "Një beduin urinoi në xhami dhe Profeti ﷺ urdhëroi t'i hidhet ujë.",
+              "narrator": "Enes bin Malik (radijallahu anhu)",
+              "collection": "Buhariu dhe Muslimi"
+            }
+          ]
+        },
+        {
+          "heading": "Sasia e Falur e Nexhasetit",
+          "content_sq": "Jo çdo sasi nexhaseti e prish namazin — dijetarët kanë caktuar sasi që falen (janë të justifikueshme) për shkak vështirësisë së shmangies së plotë. Medhhebet ndryshojnë në këtë çështje:\n\nSipas Hanefive, nexhaseti ndahet në dy lloje me sasi të ndryshme të falura:\n- Nexhaset e rëndë (mugalladha): falet deri në madhësinë e një dirhemi (monedhe, rreth sa një pëllëmbë e vogël — rreth 5 cm diametër) në sipërfaqe, ose rreth 3-4 gram në peshë. Përfshin: urinën e njeriut, jashtëqitjen, gjakun e rrjedhshëm, verën.\n- Nexhaset e lehtë (muhaffefe): falet deri sa të mbulojë një të katërtën (1/4) e rrobës ose gjymtyrës. Përfshin: urinën e kalit, jashtëqitjen e shpendëve jogurmëse.\n\nSipas Shafiive:\n- Nuk ka ndarje në mugalladha/muhaffefe për sa i përket sasisë. Çdo sasi nexhaseti, sado e vogël, duhet larguar — përveç gjakut të mushkonjave, gjakut të peshkut dhe gjakut që mbetet në vendin e therjes.\n- Nexhaseti i qenit është rast i veçantë — kërkon larje 7 herë.\n\nSipas Malikive:\n- Çdo nexhaset i dukshëm duhet larguar plotësisht. Sasia shumë e vogël që nuk duket (gjurmë) falet vetëm nëse largimi i saj do të shkaktonte vështirësi.\n\nSipas Hanbelive:\n- Gjaku dhe qelbi falen në sasi të vogël sipas zakonit (urfit). Nexhasetet e tjera duhet larguar plotësisht.",
+          "evidences": [],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Nexhaset e rëndë (mugalladha) falet deri sa një dirhem (rreth 5 cm diametër) në sipërfaqe ose 3-4 gram në peshë. Nexhaset e lehtë (muhaffefe) falet deri sa 1/4 e rrobës ose gjymtyrës. Namazi me nexhaset mbi këtë sasi është i pavlefshëm.",
+              "source": "El-Hidaje, Merginanij; Hashijetu Ibn Abidin"
+            },
+            "maliki": {
+              "ruling": "Nuk ka sasi të caktuar të falur — çdo nexhaset i dukshëm duhet larguar. Nëse largimi shkakton vështirësi, falet gjurma e mbetur.",
+              "source": "Esh-Sherhu es-Sagir, Ed-Derdir"
+            },
+            "shafii": {
+              "ruling": "Çdo sasi nexhaseti duhet larguar, pa dallim mes sasisë së vogël dhe të madhe. Përjashtohen: gjaku i plagëve të vogla, gjaku i mushkonjave dhe gjaku i peshqve.",
+              "source": "El-Mexhmu', Nevevij"
+            },
+            "hanbali": {
+              "ruling": "Gjaku dhe qelbi falen në sasi të vogël sipas zakonit. Nexhasetet e tjera duhet larguar plotësisht, pavarësisht sasisë.",
+              "source": "El-Mugni, Ibn Kudame"
+            },
+            "consensus_note": "Të gjithë dijetarët pajtohen se pastrimi nga nexhaseti është kusht i namazit. Dallimi qëndron në sasinë e falur dhe klasifikimin e nexhaseteve."
+          }
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Cila nga këto NUK është nexhaset (papastërti)?",
+          "options": [
+            "Gjaku i menstruacionit",
+            "Peshku i ngordhur",
+            "Urina e njeriut",
+            "Pështyma e qenit"
+          ],
+          "correct_index": 1,
+          "explanation": "Peshku i ngordhur nuk është nexhaset — krijesat e detit janë të pastra edhe pa therje, sipas hadithit: 'Na janë lejuar dy të ngordhura: peshku dhe karkaleci.'"
+        },
+        {
+          "question": "Sa herë duhet larë ena ku ka lëpirë qeni?",
+          "options": [
+            "3 herë",
+            "5 herë",
+            "7 herë, e para me dhé",
+            "10 herë"
+          ],
+          "correct_index": 2,
+          "explanation": "Sipas hadithit në Sahih Muslim, ena ku ka lëpirë qeni lahet 7 herë, e para e tyre me dhé."
+        },
+        {
+          "question": "Si pastrohet urina e foshnjës mashkull që ushqehet vetëm me gji?",
+          "options": [
+            "Lahet me ujë të nxehtë",
+            "Spërkitet me ujë",
+            "Lahet 7 herë",
+            "Nuk ka nevojë për pastrim"
+          ],
+          "correct_index": 1,
+          "explanation": "Urina e foshnjës mashkull që ushqehet vetëm me gji pastrohet thjesht me spërkitje uji, sipas hadithit: 'Spërkitet nga urina e djalit dhe lahet nga urina e vajzës.'"
+        },
+        {
+          "question": "Sa është sasia e falur e nexhasetit të rëndë (mugalladha) sipas Hanefive?",
+          "options": [
+            "Sa një kokërr gruri",
+            "Sa një dirhem (rreth 5 cm diametër)",
+            "Sa gjysma e rrobës",
+            "Nuk ka sasi të falur"
+          ],
+          "correct_index": 1,
+          "explanation": "Sipas Hanefive, nexhaseti i rëndë falet deri në madhësinë e një dirhemi (rreth 5 cm diametër) në sipërfaqe ose rreth 3-4 gram në peshë."
+        },
+        {
+          "question": "Cili ajet kuranor përmend ndalimin e ngordhësirës, gjakut të derdhur dhe mishit të derrit?",
+          "options": [
+            "El-Maide:90",
+            "El-Bekare:173",
+            "El-En'Am:145",
+            "En-Nisa:43"
+          ],
+          "correct_index": 2,
+          "explanation": "Ajeti 145 i sures El-En'Am thotë: 'Nuk gjej diçka të ndaluar përveçse ngordhësirë, gjak të derdhur, ose mish derri — sepse ai është ndyrësi (rixhs).'"
+        },
+        {
+          "question": "Çfarë është istinxhaja?",
+          "options": [
+            "Pastrimi me gurë",
+            "Pastrimi me ujë i rrugëve të jashtëqitjes",
+            "Pastrimi me dhé",
+            "Larja e duarve"
+          ],
+          "correct_index": 1,
+          "explanation": "Istinxhaja është pastrimi i rrugëve të jashtëqitjes me ujë. Ndërsa istixhmari është pastrimi me gurë ose diçka tjetër të pastër."
+        },
+        {
+          "question": "Si pastrohet nexhaseti e rëndë (mugaladha) si pështyma e qenit?",
+          "options": [
+            "Me një larje me ujë",
+            "Me tre larje me ujë",
+            "Me shtatë larje, njëra me dhé",
+            "Nuk pastrohet"
+          ],
+          "correct_index": 2,
+          "explanation": "Nexhaseti e rëndë pastrohet me larje shtatë herë, njëra prej tyre me dhé, siç ka ardhur në hadith."
+        }
+      ]
+    }
+  ]
+}

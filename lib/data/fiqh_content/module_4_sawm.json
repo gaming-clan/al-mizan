@@ -1,0 +1,290 @@
+{
+  "module_id": "sawm",
+  "module_title_sq": "Agjërimi",
+  "module_title_ar": "الصيام",
+  "module_icon": "sunset",
+  "description": "Mëso rreth agjërimit: kushtet, gjërat që e prishin, kefaret, fidje dhe llojet e agjërimit.",
+  "lessons": [
+    {
+      "id": "swm_001",
+      "title_sq": "Agjërimi i Ramazanit",
+      "title_ar": "صيام رمضان",
+      "level": "beginner",
+      "source_references": [
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "Sahih Muslim",
+        "Sahih Bukhari"
+      ],
+      "sections": [
+        {
+          "heading": "Obligimi i Agjërimit",
+          "content_sq": "Agjërimi i muajit të Ramazanit është shtylla e katërt e Islamit. Ai është obligim (farz) për çdo mysliman të rritur, me mendje të shëndoshë, të aftë fizikisht. Agjërimi fillon me agimin e vërtetë (el-fexhr es-sadik) dhe përfundon me perëndimin e diellit. Gjatë kësaj kohe, agjëruesi përmbahet nga ngrënia, pirja dhe marrëdhëniet intime.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا كُتِبَ عَلَيْكُمُ الصِّيَامُ كَمَا كُتِبَ عَلَى الَّذِينَ مِن قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُونَ",
+              "translation_sq": "O ju që keni besuar! Ju është bërë obligim agjërimi, ashtu siç u bë obligim edhe atyre para jush, që të bëheni të devotshëm.",
+              "surah": "El-Bekare",
+              "surah_number": 2,
+              "ayah": 183
+            },
+            {
+              "type": "quran",
+              "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا كُتِبَ عَلَيْكُمُ الصِّيَامُ كَمَا كُتِبَ عَلَى الَّذِينَ مِن قَبْلِكُمْ",
+              "translation_sq": "O besimtarë! Ju është bërë obligim agjërimi, ashtu siç u bë obligim atyre para jush.",
+              "surah": "El-Bekare: 183"
+            }
+          ],
+          "ruling": "farz"
+        },
+        {
+          "heading": "Gjërat që e prishin Agjërimin",
+          "content_sq": "Agjërimi prishet nga: ngrënia ose pirja me qëllim, marrëdhëniet intime gjatë ditës, vjellja e provokuar me qëllim (sipas shumicës), hyrja e substancave në trup nëpërmjet hundës ose veshit (sipas disa dijetarëve). Nëse dikush ha ose pi nga harresa, agjërimi nuk prishet sipas hadithit: 'Kush harron duke qenë agjërueshëm dhe ha ose pi, le ta plotësojë agjërimin, sepse Allahu e ka ushqyer.'",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "مَنْ نَسِيَ وَهُوَ صَائِمٌ فَأَكَلَ أَوْ شَرِبَ فَلْيُتِمَّ صَوْمَهُ فَإِنَّمَا أَطْعَمَهُ اللَّهُ وَسَقَاهُ",
+              "translation_sq": "Kush harron duke qenë agjërueshëm dhe ha ose pi, le ta plotësojë agjërimin e tij, sepse Allahu e ka ushqyer dhe i ka dhënë të pijë.",
+              "narrator": "Ebu Hurejre (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 1933,
+              "classification": "sahih"
+            }
+          ],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Vjellja e provokuar me qëllim e prish agjërimin nëse goja mbushet plot. Injeksionet ushqyese e prishin.",
+              "source": "Hashijetu Ibn Abidin"
+            },
+            "maliki": {
+              "ruling": "Vjellja e provokuar me qëllim e prish agjërimin. Kush vjell pa dashje nuk ka asgjë.",
+              "source": "Esh-Sherhu es-Sagir"
+            },
+            "shafii": {
+              "ruling": "Vjellja e provokuar me qëllim e prish nëse del diçka. Pikat e syrit nuk e prishin.",
+              "source": "El-Mexhmu', Nevevij"
+            },
+            "hanbali": {
+              "ruling": "Vjellja e provokuar e prish. Pikat e hundës dhe injeksionet venore nuk e prishin sipas mendimit më të saktë.",
+              "source": "El-Mugni, Ibn Kudame"
+            }
+          }
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Çfarë ndodh nëse agjëruesi ha nga harresa?",
+          "options": [
+            "Agjërimi prishet",
+            "Duhet të bëjë kefaret",
+            "Agjërimi vazhdon",
+            "Duhet ta përsërisë"
+          ],
+          "correct_index": 2,
+          "explanation": "Sipas hadithit të Profetit ﷺ, kush ha ose pi nga harresa le ta vazhdojë agjërimin, sepse Allahu e ka ushqyer."
+        },
+        {
+          "question": "Cili ajet kuranor obligon agjërimin?",
+          "options": [
+            "El-Maide 5:6",
+            "El-Bekare 2:183",
+            "Ali Imran 3:97",
+            "En-Nisa 4:43"
+          ],
+          "correct_index": 1,
+          "explanation": "Ajeti 183 i sures El-Bekare: 'Ju është bërë obligim agjërimi, ashtu siç u bë obligim atyre para jush.'"
+        },
+        {
+          "question": "Kur fillon agjërimi ditor?",
+          "options": [
+            "Në mesnatë",
+            "Me agimin e vërtetë (fexhri sadik)",
+            "Me lindjen e diellit",
+            "Me ezanin e sabahut"
+          ],
+          "correct_index": 1,
+          "explanation": "Agjërimi fillon me agimin e vërtetë (el-fexhr es-sadik) — drita horizontale që shfaqet para lindjes së diellit."
+        },
+        {
+          "question": "Agjërimi është shtylla e sa-të e Islamit?",
+          "options": [
+            "E treta",
+            "E katërta",
+            "E pesta",
+            "E dyta"
+          ],
+          "correct_index": 1,
+          "explanation": "Agjërimi i Ramazanit është shtylla e katërt e Islamit, pas shehadetit, namazit dhe zekatit."
+        }
+      ]
+    },
+    {
+      "id": "swm_002",
+      "title_sq": "Kefareti dhe Fidja",
+      "title_ar": "الكفارة والفدية",
+      "level": "intermediate",
+      "source_references": [
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "Sahih Muslim",
+        "Sahih Bukhari",
+        "El-Hidaje"
+      ],
+      "sections": [
+        {
+          "heading": "Kefareti (Shlyerja e Prishjes)",
+          "content_sq": "Kefareti obligohet kur agjëruesi e prish agjërimin me qëllim pa arsye legjitime — veçanërisht nëpërmjet marrëdhënieve intime gjatë ditës së Ramazanit. Kefareti sipas radhës: 1) Lirimi i një robi (nuk aplikohet sot), 2) Agjërimi i 60 ditëve radhazi pa ndërprerje, 3) Ushqimi i 60 të varfërve. Sipas Hanefijve, ngrënia dhe pirja me qëllim gjithashtu obligon kefaret. Sipas shumicës së dijetarëve tjerë, kefaret obligohet vetëm për marrëdhëniet intime.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "جاءَ رَجُلٌ إلى النَّبيِّ ﷺ فقالَ: هَلَكْتُ يا رَسولَ اللَّهِ. قالَ: وما أهْلَكَكَ؟ قالَ: وقَعْتُ على امْرَأَتي في رَمَضانَ",
+              "translation_sq": "Erdhi një burrë te Profeti ﷺ dhe tha: U shkatërrova, o i Dërguari i Allahut! Tha: Çfarë të shkatërroi? Tha: Pata marrëdhënie me gruan time në Ramazan.",
+              "narrator": "Ebu Hurejre (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 1936,
+              "classification": "sahih"
+            }
+          ],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Kefareti obligohet për ngrënie, pirje dhe marrëdhënie intime me qëllim. 60 ditë agjërim radhazi, ose ushqimi i 60 të varfërve.",
+              "source": "El-Hidaje, Merginanij"
+            },
+            "shafii": {
+              "ruling": "Kefareti obligohet vetëm për marrëdhënie intime me qëllim. Për ngrënie/pirje me qëllim: vetëm kaza (plotësim) pa kefaret.",
+              "source": "El-Mexhmu', Nevevij"
+            }
+          },
+          "ruling": "vaxhib"
+        },
+        {
+          "heading": "Fidja (Kompensimi)",
+          "content_sq": "Fidja jepet kur personi nuk mundet fizikisht të agjërojë dhe nuk pritet të shërohet — si plaku i moshuar, i sëmuri kronik, gruaja shtatzënë ose gjidhënësja (sipas disa dijetarëve). Fidja: ushqimi i një të varfëri për çdo ditë (rreth 1.6 kg grurë ose vlera e saj). Nëse sëmundja shërohet, personi duhet t'i plotësojë (kaza) ditët e humbura. Udhëtari dhe i sëmuri i përkohshëm nuk japin fidja, por i plotësojnë ditët pas Ramazanit.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "وَعَلَى الَّذِينَ يُطِيقُونَهُ فِدْيَةٌ طَعَامُ مِسْكِينٍ",
+              "translation_sq": "Ata që e kanë shumë të vështirë, kanë mundësi kompensimi — ushqimin e një të varfëri.",
+              "surah": "El-Bekare",
+              "surah_number": 2,
+              "ayah": 184
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Sa ditë agjërim kërkon kefareti?",
+          "options": [
+            "30 ditë",
+            "40 ditë",
+            "60 ditë radhazi",
+            "90 ditë"
+          ],
+          "correct_index": 2,
+          "explanation": "Kefareti kërkon 60 ditë agjërim radhazi pa ndërprerje, ose ushqimin e 60 të varfërve."
+        },
+        {
+          "question": "Kush jep fidja në vend të agjërimit?",
+          "options": [
+            "Udhëtari",
+            "Plaku i moshuar që nuk mundet të agjërojë",
+            "Fëmija",
+            "Çdokush"
+          ],
+          "correct_index": 1,
+          "explanation": "Fidja jepet nga ai që nuk mundet fizikisht të agjërojë dhe nuk pritet të shërohet, si plaku i moshuar."
+        },
+        {
+          "question": "Sipas cilit medh'heb, ngrënia me qëllim gjatë Ramazanit obligon kefaret?",
+          "options": [
+            "Shafi'i",
+            "Maliki",
+            "Hanefi",
+            "Hanbeli"
+          ],
+          "correct_index": 2,
+          "explanation": "Sipas Hanefijve, kefareti obligohet edhe për ngrënie dhe pirje me qëllim, jo vetëm për marrëdhënie intime."
+        },
+        {
+          "question": "Çfarë bën udhëtari që nuk agjëron në Ramazan?",
+          "options": [
+            "Jep fidja",
+            "I plotëson ditët pas Ramazanit (kaza)",
+            "Nuk ka obligim",
+            "Bën kefaret"
+          ],
+          "correct_index": 1,
+          "explanation": "Udhëtari lejohet të mos agjërojë, por duhet t'i plotësojë (kaza) ditët e humbura pas Ramazanit."
+        }
+      ]
+    },
+    {
+      "id": "swm_003",
+      "title_sq": "Agjërimet Vullnetare dhe Sunete",
+      "title_ar": "صيام التطوع",
+      "level": "beginner",
+      "source_references": [
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "Sahih Muslim",
+        "Sahih Bukhari"
+      ],
+      "sections": [
+        {
+          "heading": "Ditët e Pëlqyeshme për Agjërim",
+          "content_sq": "Profeti ﷺ agjëronte dhe nxiste agjërimin në këto ditë: 6 ditë të Shevalit pas Ramazanit — kush agjëron Ramazanin pastaj 6 ditë të Shevalit, sikur të ketë agjëruar gjithë vitin. Dita e Arafatit (9 Dhul Hixhe) — shlyen mëkatet e vitit të kaluar dhe vitit të ardhshëm (për jo-haxhinjtë). Dita e Ashures (10 Muharrem) + një ditë para ose pas — shlyen mëkatet e vitit të kaluar. Agjërimi i të hënës dhe të enjtes — Profeti ﷺ agjëronte rregullisht. Tri ditë të çdo muaji hënor (13, 14, 15 — ditët e bardha).",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "مَن صامَ رَمَضانَ ثُمَّ أتْبَعَهُ سِتًّا مِن شَوَّالٍ كانَ كَصِيامِ الدَّهْرِ",
+              "translation_sq": "Kush agjëron Ramazanin pastaj e pason me gjashtë ditë nga Shevali, është sikur të ketë agjëruar gjithë kohën.",
+              "narrator": "Ebu Ejjub el-Ensarij (r.a.)",
+              "collection": "Sahih Muslim",
+              "hadith_number": 1164,
+              "classification": "sahih"
+            }
+          ]
+        },
+        {
+          "heading": "Ditët kur ndalohet Agjërimi",
+          "content_sq": "Ndalohet agjërimi në: ditën e Bajramit të Ramazanit (1 Sheval), ditën e Bajramit të Kurbanit (10 Dhul Hixhe), ditët e Teshrikut (11, 12, 13 Dhul Hixhe) — sipas shumicës. Gjithashtu mekruh (e papëlqyeshme) është veçimi i ditës së xhuma ose ditës së shtunë me agjërim pa pasur arsye, dhe agjërimi i dyshimit (dita e 30-të e Shabanit kur ka dyshim për Ramazanin).",
+          "evidences": []
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Sa ditë duhet agjëruar në Sheval pas Ramazanit?",
+          "options": [
+            "3",
+            "6",
+            "10",
+            "15"
+          ],
+          "correct_index": 1,
+          "explanation": "Agjërimi i 6 ditëve të Shevalit pas Ramazanit — sikur të kesh agjëruar gjithë vitin."
+        },
+        {
+          "question": "Cila ditë shlyen mëkatet e vitit të kaluar dhe të ardhshëm?",
+          "options": [
+            "Ashura",
+            "Arafati",
+            "E hëna",
+            "1 Muharremi"
+          ],
+          "correct_index": 1,
+          "explanation": "Agjërimi i ditës së Arafatit shlyen mëkatet e vitit të kaluar dhe vitit të ardhshëm (për jo-haxhinjtë)."
+        },
+        {
+          "question": "Kur ndalohet agjërimi?",
+          "options": [
+            "Ditën e Arafatit",
+            "Ditën e Bajramit",
+            "Ditën e xhuma",
+            "Ditën e Ashures"
+          ],
+          "correct_index": 1,
+          "explanation": "Ndalohet agjërimi ditën e Bajramit të Ramazanit dhe ditën e Bajramit të Kurbanit."
+        }
+      ]
+    }
+  ]
+}

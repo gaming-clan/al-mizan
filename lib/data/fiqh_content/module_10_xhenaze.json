@@ -1,0 +1,268 @@
+{
+  "module_id": "xhenaze",
+  "module_title_sq": "Xhenazja (Funeral)",
+  "module_title_ar": "الجنازة",
+  "module_icon": "cemetery",
+  "description": "Rregullat e përgatitjes së të vdekurit, namazit të xhenazes, varrimit dhe ngushëllimit.",
+  "lessons": [
+    {
+      "id": "xhenaze_1",
+      "title_sq": "Përgatitja e të vdekurit (Tehxhiz)",
+      "title_ar": "تجهيز الميت",
+      "level": "intermediate",
+      "source_references": [
+        "Es-Sejid Sabik, Fikhu es-Sunne",
+        "Ibn Kudame, El-Mugni"
+      ],
+      "sections": [
+        {
+          "heading": "Kur ndodh vdekja — veprimet e para",
+          "content_sq": "Kur muslimani ndërron jetë, duhet bërë: 1) T'i mbyllen sytë dhe t'i lidhet nofulla. 2) T'i drejtohet kah Kibla nëse është e mundur. 3) Të lexohet sureja Jasin pranë tij (sipas disa dijetarëve). 4) Të nxitohet përgatitja e xhenazes — Profeti ﷺ urdhëroi nxitimin e varrimit. 5) Të lajmërohen të afërmit dhe xhemati.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "أسرعوا بالجنازة فإن تك صالحة فخير تقدمونها إليه",
+              "translation_sq": "Nxitoni me xhenazen! Nëse (i vdekuri) ka qenë i mirë, po e çoni drejt mirësisë.",
+              "collection": "Buhariu & Muslimi"
+            }
+          ]
+        },
+        {
+          "heading": "Larja e të vdekurit (Gusli)",
+          "content_sq": "Larja e xhenazes është farz kifaje (detyrë kolektive). Rregullat: 1) E lan ai që i vdekuri ka caktuar, ose i afërmi më i ngushtë. 2) Burrin e lan burrat, gruan e lanë gratë — përjashtim bashkëshortët mund ta lajnë njëri-tjetrin. 3) Larja bëhet tek (1, 3, 5 herë) me ujë e sidër (gjethe të bërsisë). 4) Herën e fundit shtohet kafur. 5) Avrete (pjesët intime) mbulohen gjatë larjes. 6) Dëshmorët nuk lahen — varrosen me rrobat e tyre.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "اغسلنها ثلاثا أو خمسا أو أكثر من ذلك بماء وسدر",
+              "translation_sq": "Lajeni atë (vajzën e Profetit ﷺ) tre ose pesë herë, me ujë e sidër (gjethe bërsi).",
+              "collection": "Buhariu & Muslimi"
+            }
+          ]
+        },
+        {
+          "heading": "Qefinosja (Tekfin)",
+          "content_sq": "Qefinosja bëhet me pëlhura të bardha prej pambuku. Burri qefinoset me 3 pëlhura të bardha pa këmishë e pa çallmë sipas sunetit. Gruaja qefinoset me 5 copë: izari (mbështjellja e poshtme), këmisha, shamia, mbështjellja e sipërme, dhe rripi i belit. Është sunnet parfumimi me misk ose parfum para qefinosjes.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "كُفن رسول الله ﷺ في ثلاثة أثواب بيض سحولية",
+              "translation_sq": "Profeti ﷺ u qefinos me tre pëlhura të bardha nga Sehul (Jemen).",
+              "collection": "Buhariu & Muslimi"
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "A është larja e xhenazes detyrë individuale?",
+          "options": [
+            "Po, për çdo musliman",
+            "Jo, është farz kifaje",
+            "Jo, është sunnet",
+            "Vetëm për imamin"
+          ],
+          "correct_index": 1,
+          "explanation": "Larja e xhenazes është farz kifaje — nëse e bëjnë disa, bie detyrimi nga të tjerët."
+        },
+        {
+          "question": "Me sa pëlhura qefinoset burri sipas sunetit?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "5"
+          ],
+          "correct_index": 2,
+          "explanation": "Burri qefinoset me 3 pëlhura të bardha pa këmishë sipas sunetit."
+        },
+        {
+          "question": "A lahen dëshmorët?",
+          "options": [
+            "Po, si të gjithë",
+            "Jo, varrosen me rrobat e tyre",
+            "Vetëm me ujë",
+            "Varet nga familja"
+          ],
+          "correct_index": 1,
+          "explanation": "Dëshmorët nuk lahen por varrosen me rrobat e tyre."
+        },
+        {
+          "question": "Çfarë shtohet në larjen e fundit?",
+          "options": [
+            "Sapun",
+            "Kafur",
+            "Ujë trëndafili",
+            "Asgjë"
+          ],
+          "correct_index": 1,
+          "explanation": "Në larjen e fundit shtohet kafur (kamfor) sipas hadithit."
+        }
+      ]
+    },
+    {
+      "id": "xhenaze_2",
+      "title_sq": "Namazi i Xhenazes",
+      "title_ar": "صلاة الجنازة",
+      "level": "intermediate",
+      "source_references": [
+        "Es-Sejid Sabik, Fikhu es-Sunne",
+        "Dr. Vehbe ez-Zuhajli, El-Fikhu el-Islami"
+      ],
+      "sections": [
+        {
+          "heading": "Dispozita dhe kushtet",
+          "content_sq": "Namazi i xhenazes është farz kifaje mbi muslimanët. Kushtet janë: 1) Nijeti. 2) Të jetë musliman i vdekuri. 3) Xhenazja të jetë prezent (sipas shumicës). 4) Faleësi të jetë me abdes. 5) Të drejtohet kah Kibla. Imami qëndron përballë gjoksit të burrit ose përballë kokës së gruas.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "صلوا على من قال لا إله إلا الله",
+              "translation_sq": "Faluni namazin e xhenazes për çdo kë ka thënë 'La ilahe il-lAllah'.",
+              "collection": "Buhariu"
+            }
+          ]
+        },
+        {
+          "heading": "Mënyra e faljes",
+          "content_sq": "Namazi i xhenazes ka 4 tekbire pa ruku e pa sexhde: 1) Tekbiri i parë: lexohet Fatihaja. 2) Tekbiri i dytë: lexohet salavati mbi Profetin ﷺ (si në teshehud). 3) Tekbiri i tretë: bëhet dua për të vdekurin — 'Allahum-me igfir li hajjina ue mejjitina...' 4) Tekbiri i katërt: bëhet dua e shkurtër, pastaj jepet selam nga e djathta (e majta sipas disa dijetarëve).",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "اللهم اغفر لحيِّنا وميِّتنا وشاهدنا وغائبنا",
+              "translation_sq": "O Allah! Fali të gjallët dhe të vdekurit tanë, të pranishmit dhe të mungaurit.",
+              "collection": "Muslimi"
+            }
+          ]
+        },
+        {
+          "heading": "Rastet e veçanta",
+          "content_sq": "Fëmija që ka lindur i gjallë dhe ka vdekur — i falet namazi i xhenazes. Aborti pas 4 muajve — i falet namazi nëse ka pasur shenja jete. Vetëvrasësi — shumica e dijetarëve thonë se i falet namazi edhe pse ka bërë mëkat të madh. Personi i pagdhendur — nuk i falet namazi i xhenazes.",
+          "evidences": []
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Sa tekbire ka namazi i xhenazes?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "correct_index": 2,
+          "explanation": "Namazi i xhenazes ka 4 tekbire."
+        },
+        {
+          "question": "Çka lexohet pas tekbirit të parë?",
+          "options": [
+            "Salavati",
+            "Duaja",
+            "Fatihaja",
+            "Sureja Ihlas"
+          ],
+          "correct_index": 2,
+          "explanation": "Pas tekbirit të parë lexohet sureja Fatiha."
+        },
+        {
+          "question": "A ka ruku e sexhde namazi i xhenazes?",
+          "options": [
+            "Po, si namazet tjera",
+            "Jo, vetëm tekbire",
+            "Vetëm sexhde",
+            "Vetëm ruku"
+          ],
+          "correct_index": 1,
+          "explanation": "Namazi i xhenazes nuk ka ruku as sexhde, vetëm 4 tekbire me lexim në këmbë."
+        },
+        {
+          "question": "Ku qëndron imami kur fal xhenazen e burrit?",
+          "options": [
+            "Përballë kokës",
+            "Përballë gjoksit",
+            "Përballë këmbëve",
+            "Pas xhenazes"
+          ],
+          "correct_index": 1,
+          "explanation": "Imami qëndron përballë gjoksit të burrit dhe përballë kokës së gruas."
+        }
+      ]
+    },
+    {
+      "id": "xhenaze_3",
+      "title_sq": "Varrimi dhe Ngushëllimi",
+      "title_ar": "الدفن والتعزية",
+      "level": "beginner",
+      "source_references": [
+        "Es-Sejid Sabik, Fikhu es-Sunne"
+      ],
+      "sections": [
+        {
+          "heading": "Rregullat e varrimit",
+          "content_sq": "Varrimi bëhet duke e vendosur xhenazen në varr në anën e djathtë, me fytyrë kah Kibla. Thënia kur vendoset: 'Bismilahi ue ala mil-leti Resulilah' (Me emrin e Allahut dhe sipas fesë së të Dërguarit). Varri thellohet aq sa të mos dalin era. Është sunnet lahdi (hapja anësore brenda varrit). Nuk lejohet varrimi në arkivol përveçse kur toka është e lagësht ose me gurë.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "بسم الله وعلى ملة رسول الله",
+              "translation_sq": "Me emrin e Allahut dhe sipas fesë së të Dërguarit të Allahut.",
+              "collection": "Ebu Davudi, Tirmidhiu"
+            }
+          ]
+        },
+        {
+          "heading": "Ngushëllimi (et-Ta'zijeh)",
+          "content_sq": "Ngushëllimi i familjes së të vdekurit është sunnet. Zgjat deri në 3 ditë sipas shumicës. Thuhet: 'In-na lil-lahi ue in-na ilejhi raxhi'un' (Ne jemi të Allahut dhe tek Ai kthehemi). Është sunnet të përgatitet ushqim për familjen e të vdekurit. Vajtimi i tepruar dhe rrahja e fytyrës janë të ndaluara. Vizita e varrezave është sunnet për burrat — kujton vdekjen dhe ahiretin.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ",
+              "translation_sq": "Ne jemi të Allahut dhe tek Ai do të kthehemi.",
+              "surah": "El-Bekare",
+              "surah_number": 2,
+              "ayah": 156
+            },
+            {
+              "type": "hadith",
+              "arabic": "زوروا القبور فإنها تذكركم الآخرة",
+              "translation_sq": "Vizitoni varrezat sepse ato ju kujtojnë ahiretin (jetën tjetër).",
+              "collection": "Muslimi"
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Në cilën anë vendoset xhenazja në varr?",
+          "options": [
+            "Majtas",
+            "Djathtas, me fytyrë kah Kibla",
+            "Mbrapa",
+            "Nuk ka rëndësi"
+          ],
+          "correct_index": 1,
+          "explanation": "Xhenazja vendoset në anën e djathtë me fytyrë kah Kibla."
+        },
+        {
+          "question": "Sa ditë zgjat ngushëllimi sipas sunetit?",
+          "options": [
+            "1 ditë",
+            "3 ditë",
+            "7 ditë",
+            "40 ditë"
+          ],
+          "correct_index": 1,
+          "explanation": "Ngushëllimi zgjat deri në 3 ditë sipas shumicës së dijetarëve."
+        },
+        {
+          "question": "A lejohet vizita e varrezave?",
+          "options": [
+            "Jo, është haram",
+            "Po, është sunnet për burrat",
+            "Vetëm në Ramazan",
+            "Vetëm të premteve"
+          ],
+          "correct_index": 1,
+          "explanation": "Vizita e varrezave është sunnet sepse kujton vdekjen dhe ahiretin."
+        }
+      ]
+    }
+  ]
+}

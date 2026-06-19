@@ -1,0 +1,276 @@
+{
+  "module_id": "zakat",
+  "module_title_sq": "Zekati",
+  "module_title_ar": "الزكاة",
+  "module_icon": "hand_coins",
+  "description": "Mëso rreth zekatit: kushtet, nisabi, llojet e pasurisë, zekati i të mbjellave dhe bagëtisë.",
+  "lessons": [
+    {
+      "id": "zkt_001",
+      "title_sq": "Bazat e Zekatit",
+      "title_ar": "أساسيات الزكاة",
+      "level": "beginner",
+      "source_references": [
+        "Sunen Ebu Davud",
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "Sahih Bukhari"
+      ],
+      "sections": [
+        {
+          "heading": "Çfarë është Zekati?",
+          "content_sq": "Zekati është shtylla e tretë e Islamit. Fjala 'zekat' do të thotë 'pastrim' dhe 'rritje'. Zekati është obligim për çdo mysliman që zotëron pasuri mbi nisabin (pragun minimal) për një vit hënor të plotë. Përqindja bazë e zekatit është 2.5% (ose 1/40) e pasurisë. Zekati pastron pasurinë, shëron zemrën nga koprracia dhe ndihmon të varfërit.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "خُذْ مِنْ أَمْوَالِهِمْ صَدَقَةً تُطَهِّرُهُمْ وَتُزَكِّيهِم بِهَا",
+              "translation_sq": "Merr nga pasuria e tyre lëmoshë (zekat) me të cilën i pastron dhe i rrit ata.",
+              "surah": "Et-Teube",
+              "surah_number": 9,
+              "ayah": 103
+            },
+            {
+              "type": "hadith",
+              "arabic": "تُؤْخَذُ مِنْ أَغْنِيائِهِمْ فَتُرَدُّ في فُقَرائِهِمْ",
+              "translation_sq": "Merret nga të pasurit e tyre dhe u kthehet të varfërve të tyre.",
+              "narrator": "Ibn Abbas (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 1395,
+              "classification": "sahih"
+            }
+          ],
+          "ruling": "farz"
+        },
+        {
+          "heading": "Nisabi dhe Llogaritja",
+          "content_sq": "Nisabi është pragu minimal i pasurisë mbi të cilin zekati bëhet obligim. Nisabi llogaritet sipas vlerës së arit ose argjendit: Ari: 85 gram ar i pastër (21 karat ose më shumë). Argjendi: 595 gram argjend i pastër. Paraja: ekuivalenti i 85g ar ose 595g argjend (merret vlera më e ulët sipas shumicës). Llogaritja: Pasuria totale (para, ar, argjend, investime, mallra tregtare) minus borxhet = pasuria neto. Nëse pasuria neto > nisabi për 1 vit hënor → zekat = 2.5% e pasurisë neto.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "إذا كانَتْ لَكَ مِئَتا دِرْهَمٍ وحالَ عَلَيْها الحَوْلُ فَفِيها خَمْسَةُ دَراهِمَ",
+              "translation_sq": "Kur ke 200 dirhem (595g argjend) dhe kalon një vit mbi to, jep pesë dirhem (2.5%).",
+              "narrator": "Ali ibn Ebi Talib (r.a.)",
+              "collection": "Sunen Ebu Davud",
+              "hadith_number": 1573,
+              "classification": "hasen"
+            }
+          ]
+        },
+        {
+          "heading": "Tetë kategoritë e përfituesve",
+          "content_sq": "Kurani përcakton tetë kategori njerëzish që kanë të drejtë të marrin zekat (Et-Teube 9:60): 1) El-Fukara (të varfërit), 2) El-Mesakin (nevojtarët), 3) El-Amilune alejha (mbledhësit e zekatit), 4) El-Muëllefetu kulubuhum (ata zemrat e të cilëve duhen fituar), 5) Fir-Rikab (lirimi i skllevërve), 6) El-Garimune (borxhlinjtë), 7) Fi Sebilil-lah (në rrugën e Allahut), 8) Ibnus-Sebil (udhëtari i mbetur).",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "إِنَّمَا الصَّدَقَاتُ لِلْفُقَرَاءِ وَالْمَسَاكِينِ وَالْعَامِلِينَ عَلَيْهَا وَالْمُؤَلَّفَةِ قُلُوبُهُمْ وَفِي الرِّقَابِ وَالْغَارِمِينَ وَفِي سَبِيلِ اللَّهِ وَابْنِ السَّبِيلِ",
+              "translation_sq": "Lëmoshat (zekati) janë vetëm për: të varfërit, nevojtarët, mbledhësit e zekatit, ata zemrat e të cilëve duhen fituar, lirimin e robërve, borxhlinjtë, rrugën e Allahut dhe udhëtarin e mbetur.",
+              "surah": "Et-Teube",
+              "surah_number": 9,
+              "ayah": 60
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Sa gram ar është nisabi i zekatit?",
+          "options": [
+            "50 gram",
+            "72 gram",
+            "85 gram",
+            "100 gram"
+          ],
+          "correct_index": 2,
+          "explanation": "Nisabi i zekatit për arin është 85 gram ar i pastër."
+        },
+        {
+          "question": "Sa përqind e pasurisë jepet si zekat?",
+          "options": [
+            "1%",
+            "2.5%",
+            "5%",
+            "10%"
+          ],
+          "correct_index": 1,
+          "explanation": "Përqindja bazë e zekatit është 2.5% (ose 1/40) e pasurisë mbi nisab."
+        },
+        {
+          "question": "Sa kategori përfituesish të zekatit përmend Kurani?",
+          "options": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "correct_index": 3,
+          "explanation": "Kurani përmend 8 kategori përfituesish në ajetin 60 të sures Et-Teube."
+        },
+        {
+          "question": "Çfarë do të thotë fjala 'zekat'?",
+          "options": [
+            "Tatim",
+            "Pastrim dhe rritje",
+            "Borxh",
+            "Dhuratë"
+          ],
+          "correct_index": 1,
+          "explanation": "Fjala 'zekat' do të thotë 'pastrim' dhe 'rritje' — pastron pasurinë dhe rrit bereqetin."
+        }
+      ]
+    },
+    {
+      "id": "zkt_002",
+      "title_sq": "Zekati i të Mbjellave (Ushri)",
+      "title_ar": "زكاة الزروع والثمار",
+      "level": "intermediate",
+      "source_references": [
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "El-Mugni",
+        "Sahih Bukhari",
+        "El-Hidaje"
+      ],
+      "sections": [
+        {
+          "heading": "Ushri — Zekati i Prodhimeve Bujqësore",
+          "content_sq": "Ushri (العشر) është zekati që jepet mbi prodhimet bujqësore. Nisabi i të mbjellave është 5 vesak (وسق), që barazohet me rreth 653 kg. Prodhimi nën këtë sasi nuk obligon zekat. Norma e zekatit varet nga mënyra e ujitjes: 10% (1/10) nëse ujitet me shi, lum ose burime natyrore (pa kosto), 5% (1/20) nëse ujitet me makineri ose ujë të blerë (me kosto). Nëse ujitet me të dyja, jepet 7.5%.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "فِيما سَقَتِ السَّمَاءُ والعُيُونُ أَوْ كانَ عَثَرِيًّا العُشْرُ، وما سُقِيَ بِالنَّضْحِ نِصْفُ العُشْرِ",
+              "translation_sq": "Ajo që ujitet nga qielli (shiu) ose burimet — dhjetën (10%), dhe ajo që ujitet me makineri — gjysmën e dhjetës (5%).",
+              "narrator": "Abdullah ibn Umer (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 1483,
+              "classification": "sahih"
+            }
+          ],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Ushri obligohet mbi çdo prodhim tokësor pa nisab minimal. Norma: 10% me shi, 5% me makineri.",
+              "source": "El-Hidaje, Merginanij",
+              "additional_note": "Hanefitë nuk kushtëzojnë nisabin për prodhimet bujqësore — çdo sasi obligon zekat."
+            },
+            "shafii": {
+              "ruling": "Ushri obligohet vetëm mbi ushqimet bazë që ruhen (grurë, elb, oriz, hurma, rrush). Nisabi: 5 vesak (653 kg).",
+              "source": "El-Mexhmu', Nevevij"
+            },
+            "hanbali": {
+              "ruling": "Ushri obligohet mbi frutat dhe drithërat që maten dhe ruhen. Nisabi: 5 vesak.",
+              "source": "El-Mugni, Ibn Kudame"
+            }
+          },
+          "ruling": "farz"
+        },
+        {
+          "heading": "Llojet e Prodhimeve që Obligojnë Ushrin",
+          "content_sq": "Sipas shumicës së dijetarëve, ushri jepet mbi drithërat (grurë, elb, oriz, misër) dhe frutat (hurma, rrush). Sipas Hanefijve, jepet mbi çdo prodhim tokësor — përfshirë perimet dhe pemët. Zekati llogaritet në kohën e korrjes, jo pas një viti. Kurani thotë: 'Jepni hakun e tij ditën e korrjes.' (El-En'am 6:141). Nëse prodhimi shitet, zekati mund të jepet edhe në para.",
+          "evidences": []
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Sa është nisabi i ushrit (zekatit të të mbjellave)?",
+          "options": [
+            "100 kg",
+            "300 kg",
+            "653 kg (5 vesak)",
+            "1000 kg"
+          ],
+          "correct_index": 2,
+          "explanation": "Nisabi i të mbjellave është 5 vesak, rreth 653 kg sipas shumicës së dijetarëve."
+        },
+        {
+          "question": "Sa përqind jepet zekat nëse toka ujitet me shi?",
+          "options": [
+            "2.5%",
+            "5%",
+            "7.5%",
+            "10%"
+          ],
+          "correct_index": 3,
+          "explanation": "Nëse prodhimi ujitet me shi ose burime natyrore (pa kosto), jepet 10% (ushri i plotë)."
+        },
+        {
+          "question": "Sipas cilit medh'heb nuk ka nisab minimal për ushrin?",
+          "options": [
+            "Shafi'i",
+            "Maliki",
+            "Hanefi",
+            "Hanbeli"
+          ],
+          "correct_index": 2,
+          "explanation": "Hanefitë nuk kushtëzojnë nisab minimal — çdo sasi prodhimi obligon zekat."
+        }
+      ]
+    },
+    {
+      "id": "zkt_003",
+      "title_sq": "Zekati i Bagëtisë",
+      "title_ar": "زكاة الأنعام",
+      "level": "advanced",
+      "source_references": [
+        "Sunen Ebu Davud",
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "Sahih Bukhari",
+        "El-Hidaje"
+      ],
+      "sections": [
+        {
+          "heading": "Kushtet e Zekatit të Bagëtisë",
+          "content_sq": "Zekati i bagëtisë (zekatun-en'am) obligohet mbi deve, lopë/ka dhe dele/dhi. Kushtet: 1) Arritja e nisabit (numrit minimal), 2) Kalimi i një viti hënor, 3) Bagëtia duhet të jetë 'saime' — kullotuese në kullota natyrore gjatë shumicës së vitit, jo e ushqyer me ushqim të blerë. Nisabet: Dele/dhi — nisabi fillon nga 40 krerë. Lopë/ka — nisabi fillon nga 30 krerë. Deve — nisabi fillon nga 5 krerë.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "في أرْبَعٍ وعِشْرِينَ مِنَ الإِبِلِ فَما دُونَها مِنَ الغَنَمِ مِن كُلِّ خَمْسٍ شاةٌ",
+              "translation_sq": "Për 24 deve e poshtë, për çdo 5 deve jepet 1 dele.",
+              "narrator": "Enes ibn Malik (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 1454,
+              "classification": "sahih"
+            }
+          ],
+          "ruling": "farz"
+        },
+        {
+          "heading": "Tabela e Zekatit të Bagëtisë",
+          "content_sq": "Dele/Dhi: 40-120 krerë = 1 dele, 121-200 = 2 dele, 201-399 = 3 dele, pastaj 1 dele shtesë për çdo 100. Lopë/Ka: 30-39 = 1 viç 1-vjeçar (tabi'), 40-59 = 1 lopë 2-vjeçare (musinneh), 60-69 = 2 viça 1-vjeçarë, pastaj alternon çdo 30 (tabi') dhe çdo 40 (musinneh). Deve: 5-9 = 1 dele, 10-14 = 2 dele, 15-19 = 3 dele, 20-24 = 4 dele, 25-35 = 1 deve femër 1-vjeçare (bintu mekhad), 36-45 = 1 deve femër 2-vjeçare (bintu lebun), 46-60 = 1 deve 3-vjeçare (hikkah), 61-75 = 1 deve 4-vjeçare (xhedh'ah), 76-90 = 2 bintu lebun, 91-120 = 2 hikkah.",
+          "evidences": []
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Sa dele/dhi duhet të kesh minimalisht për zekat?",
+          "options": [
+            "20",
+            "30",
+            "40",
+            "50"
+          ],
+          "correct_index": 2,
+          "explanation": "Nisabi i deleve/dhive fillon nga 40 krerë — për 40-120 dele jepet 1 dele."
+        },
+        {
+          "question": "Çfarë do të thotë 'saime' për bagëtinë?",
+          "options": [
+            "E shëndetshme",
+            "Kullotuese në kullota natyrore",
+            "E shtrenjtë",
+            "E re"
+          ],
+          "correct_index": 1,
+          "explanation": "Saime do të thotë bagëti që kulloton në kullota natyrore gjatë shumicës së vitit, jo e ushqyer me ushqim të blerë."
+        },
+        {
+          "question": "Sa deve kërkohen për nisab?",
+          "options": [
+            "3",
+            "5",
+            "10",
+            "20"
+          ],
+          "correct_index": 1,
+          "explanation": "Nisabi i deveve fillon nga 5 krerë — për 5-9 deve jepet 1 dele."
+        }
+      ]
+    }
+  ]
+}

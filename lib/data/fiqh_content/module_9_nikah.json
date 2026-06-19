@@ -1,0 +1,351 @@
+{
+  "module_id": "nikah",
+  "module_title_sq": "Nikahu (Martesa)",
+  "module_title_ar": "النكاح",
+  "module_icon": "family",
+  "description": "Dispozitat e martesës, kushtët, të drejtat bashkëshortore dhe divorci në Islam.",
+  "lessons": [
+    {
+      "id": "nikah_1",
+      "title_sq": "Martesa në Islam — Dispozita dhe Urtësia",
+      "title_ar": "النكاح في الإسلام",
+      "level": "beginner",
+      "source_references": [
+        "Ibn Kudame, El-Mugni",
+        "Dr. Vehbe ez-Zuhajli, El-Fikhu el-Islami"
+      ],
+      "sections": [
+        {
+          "heading": "Dispozita e martesës",
+          "content_sq": "Martesa në Islam është sunnet i fortë (sunnet muekede) sipas shumicës së dijetarëve. Ajo bëhet farz për atë që ka mundësi financiare dhe ka frikë se do të bjerë në haram nëse nuk martohet. Ajo është mubah (e lejuar) për atë që nuk ka dëshirë të fortë dhe nuk ka frikë nga harami. Është mekruh për atë që nuk ka mundësi financiare dhe ka frikë se do t'i bëjë padrejtësi gruas.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "وَأَنكِحُوا الْأَيَامَىٰ مِنكُمْ وَالصَّالِحِينَ مِنْ عِبَادِكُمْ",
+              "translation_sq": "Martoni të pamartuarit dhe të pamartuarat tuaja, dhe robërit e robëreshat tuaja të ndershme.",
+              "surah": "En-Nur",
+              "surah_number": 24,
+              "ayah": 32
+            },
+            {
+              "type": "hadith",
+              "arabic": "يا معشر الشباب من استطاع منكم الباءة فليتزوج",
+              "translation_sq": "O ju të rinj! Kush ka mundësi le të martohet, sepse kjo ndihmon në ruajtjen e shikimit dhe mbrojtjen e nderit.",
+              "collection": "Buhariu & Muslimi"
+            }
+          ]
+        },
+        {
+          "heading": "Kushtet e martesës (Shurutu en-Nikah)",
+          "content_sq": "Kushtet e vlefshmerisë së martesës janë: 1) Pëlqimi i dy palëve — gruaja nuk martohet me detyrim. 2) Kujdestari (Veliu) — sipas Shafiive dhe Hanbelive është kusht, sipas Hanefive gruaja e pjekur mund të martohet vetë. 3) Dy dëshmitarë meshkuj muslimanë. 4) Mehri (dhurata martesore) — e drejtë e gruas që burri duhet ta japë. 5) Formulimi (Ixhab dhe Kabul) — oferta dhe pranimi.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "لا نكاح إلا بولي وشاهدي عدل",
+              "translation_sq": "Nuk ka martesë pa kujdestar dhe dy dëshmitarë të drejtë.",
+              "collection": "Tirmidhiu"
+            },
+            {
+              "type": "hadith",
+              "arabic": "لا تُنكح الأيم حتى تُستأمر ولا تُنكح البكر حتى تُستأذن",
+              "translation_sq": "Nuk martohet e veja derisa të pyetet, as virgjëresha derisa t'i merret leja.",
+              "collection": "Buhariu"
+            }
+          ]
+        },
+        {
+          "heading": "Gratë e ndaluara për martesë (Muharremat)",
+          "content_sq": "Islami ndalon martesën me kategori të caktuara grash: A) Nga gjaku (neseb): nëna, vajza, motra, halla, tezja, vajza e vëllait, vajza e motrës. B) Nga gjidhënia (rida): nëna e qumështit, motra e qumështit — me kusht 5 herë thithje sipas Shafiive. C) Nga krushqia: vjehrra, nusja e djalit, vajza e gruas nga burri tjetër (nëse martesa është konsumuar).",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "حُرِّمَتْ عَلَيْكُمْ أُمَّهَاتُكُمْ وَبَنَاتُكُمْ وَأَخَوَاتُكُمْ",
+              "translation_sq": "Ju janë ndaluar (për martesë) nënat tuaja, vajzat tuaja, motrat tuaja...",
+              "surah": "En-Nisa",
+              "surah_number": 4,
+              "ayah": 23
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Kur bëhet martesa farz?",
+          "options": [
+            "Kur ke mundësi dhe ke frikë nga harami",
+            "Gjithmonë",
+            "Vetëm pas 30 vjeçarisë",
+            "Kur prindërit vendosin"
+          ],
+          "correct_index": 0,
+          "explanation": "Martesa bëhet farz kur personi ka mundësi financiare dhe ka frikë se do të bjerë në haram."
+        },
+        {
+          "question": "Sa dëshmitarë kërkohen për martesë?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct_index": 1,
+          "explanation": "Kërkohen dy dëshmitarë meshkuj muslimanë."
+        },
+        {
+          "question": "Çka është mehri?",
+          "options": [
+            "Taksa e martesës",
+            "Dhurata që burri i jep gruas",
+            "Pagesa për imamin",
+            "Dhurata për prindërit"
+          ],
+          "correct_index": 1,
+          "explanation": "Mehri është dhurata martesore, e drejtë e gruas që burri duhet ta japë."
+        },
+        {
+          "question": "A mund të martohet gruaja pa pëlqimin e saj?",
+          "options": [
+            "Po, prindërit vendosin",
+            "Jo, pëlqimi i saj është kusht",
+            "Vetëm nëse babai vendos",
+            "Varet nga mosha"
+          ],
+          "correct_index": 1,
+          "explanation": "Pëlqimi i gruas është kusht i martesës sipas hadithit."
+        }
+      ]
+    },
+    {
+      "id": "nikah_2",
+      "title_sq": "Të drejtat bashkëshortore",
+      "title_ar": "الحقوق الزوجية",
+      "level": "intermediate",
+      "source_references": [
+        "Dr. Vehbe ez-Zuhajli, El-Fikhu el-Islami",
+        "Ibn Kudame, El-Mugni"
+      ],
+      "sections": [
+        {
+          "heading": "Të drejtat e gruas mbi burrin",
+          "content_sq": "Gruaja ka këto të drejta: 1) Mehri — dhurata martesore që i takon asaj plotësisht. 2) Nafakaja — shpenzimet e jetesës: ushqimi, veshmbathja, strehimi sipas mundësisë së burrit. 3) Trajtimi i mirë — Allahu urdhëron: 'Jetoni me to me mirësi.' 4) Drejtësia ndërmjet grave nëse ka më shumë se një grua. 5) Të mos dëmtohet fizikisht as psikologjikisht.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "وَعَاشِرُوهُنَّ بِالْمَعْرُوفِ",
+              "translation_sq": "Jetoni me to (gratë) me mirësi.",
+              "surah": "En-Nisa",
+              "surah_number": 4,
+              "ayah": 19
+            },
+            {
+              "type": "hadith",
+              "arabic": "خيركم خيركم لأهله وأنا خيركم لأهلي",
+              "translation_sq": "Më i miri ndër ju është ai që është më i mirë me familjen e tij, e unë jam më i miri me familjen time.",
+              "collection": "Tirmidhiu"
+            }
+          ]
+        },
+        {
+          "heading": "Të drejtat e burrit mbi gruan",
+          "content_sq": "Burri ka këto të drejta: 1) Bindja në gjëra të lejuara — gruaja nuk duhet t'i kundërshtojë burrit në çështje hallall. 2) Ruajtja e pasurisë dhe nderit të burrit kur ai mungon. 3) Të mos lejojë në shtëpi atë që burri nuk e dëshiron. 4) Të mos dalë pa lejen e tij sipas disa dijetarëve (çështje diskutabile).",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "فَالصَّالِحَاتُ قَانِتَاتٌ حَافِظَاتٌ لِّلْغَيْبِ بِمَا حَفِظَ اللَّهُ",
+              "translation_sq": "Gratë e mira janë ato që janë të bindura dhe që ruajnë (nderin dhe pasurinë) në mungesë të burrit, me atë çka Allahu i ka ruajtur.",
+              "surah": "En-Nisa",
+              "surah_number": 4,
+              "ayah": 34
+            }
+          ]
+        },
+        {
+          "heading": "Të drejtat e përbashkëta",
+          "content_sq": "Dy bashkëshortët kanë të drejta reciproke: 1) Besnikëria bashkëshortore. 2) Respekti dhe dashuria reciproke. 3) Marrëdhëniet intime janë e drejtë e të dyve. 4) Bashkëpunimi në rritjen e fëmijëve. 5) Ruajtja e sekreteve familjare. Profeti ﷺ ka thënë: 'Besimtari më i plotë në besim është ai me moral më të mirë, dhe më i miri ndër ju është ai që është më i mirë me gruan e tij.'",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "وَلَهُنَّ مِثْلُ الَّذِي عَلَيْهِنَّ بِالْمَعْرُوفِ",
+              "translation_sq": "Ato (gratë) kanë të drejta të ngjashme me detyrimet e tyre, sipas zakonit të mirë.",
+              "surah": "El-Bekare",
+              "surah_number": 2,
+              "ayah": 228
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Cila është e drejta kryesore financiare e gruas?",
+          "options": [
+            "Trashëgimia",
+            "Nafakaja (shpenzimet e jetesës)",
+            "Puna e burrit",
+            "Pasuria e prindërve"
+          ],
+          "correct_index": 1,
+          "explanation": "Nafakaja — ushqimi, veshmbathja, strehimi — është detyrë e burrit ndaj gruas."
+        },
+        {
+          "question": "Çfarë thotë Profeti ﷺ për burrin më të mirë?",
+          "options": [
+            "Ai që fiton më shumë",
+            "Ai që falet më shumë",
+            "Ai që është më i mirë me familjen",
+            "Ai që ka më shumë dije"
+          ],
+          "correct_index": 2,
+          "explanation": "Profeti ﷺ: 'Më i miri ndër ju është ai që është më i mirë me familjen e tij.'"
+        },
+        {
+          "question": "A ka gruaja të drejtë mbi mehrin?",
+          "options": [
+            "Jo, i takon familjes",
+            "Po, i takon plotësisht asaj",
+            "Vetëm gjysmën",
+            "Vetëm nëse divorcohet"
+          ],
+          "correct_index": 1,
+          "explanation": "Mehri i takon plotësisht gruas dhe askush nuk ka të drejtë t'ia marrë."
+        },
+        {
+          "question": "Çka duhet të ruajë gruaja kur burri mungon?",
+          "options": [
+            "Vetëm shtëpinë",
+            "Nderin dhe pasurinë",
+            "Vetëm fëmijët",
+            "Asgjë"
+          ],
+          "correct_index": 1,
+          "explanation": "Kur'ani thotë: 'Ruajnë nderin dhe pasurinë në mungesë të burrit.'"
+        }
+      ]
+    },
+    {
+      "id": "nikah_3",
+      "title_sq": "Divorci (Et-Talak)",
+      "title_ar": "الطلاق",
+      "level": "advanced",
+      "source_references": [
+        "Dr. Vehbe ez-Zuhajli, El-Fikhu el-Islami",
+        "Ibn Kudame, El-Mugni",
+        "Es-Sejid Sabik, Fikhu es-Sunne"
+      ],
+      "sections": [
+        {
+          "heading": "Dispozita e divorcit",
+          "content_sq": "Divorci (talaku) është i lejuar por i papëlqyer (mekruh) kur nuk ka arsye. Profeti ﷺ ka thënë: 'Gjëja më e urryar e lejuar tek Allahu është divorci.' Ai bëhet i lejuar kur ka arsye të vlefshme si mospajtueshmëria e rëndë, dhuna, mospërmbushja e detyrave bashkëshortore. Bëhet haram nëse gruaja është me menstruacione (sipas shumicës) ose nëse burri e divorcon tre herë njëherësh.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "أبغض الحلال إلى الله الطلاق",
+              "translation_sq": "Gjëja më e urryar e lejuar tek Allahu është divorci.",
+              "collection": "Ebu Davudi"
+            },
+            {
+              "type": "quran",
+              "arabic": "يَا أَيُّهَا النَّبِيُّ إِذَا طَلَّقْتُمُ النِّسَاءَ فَطَلِّقُوهُنَّ لِعِدَّتِهِنَّ",
+              "translation_sq": "O Profet! Kur t'i divorconi gratë, divorcojini ato në kohën e iddetit të tyre (periudhës së pritjes).",
+              "surah": "Et-Talak",
+              "surah_number": 65,
+              "ayah": 1
+            }
+          ]
+        },
+        {
+          "heading": "Llojet e divorcit",
+          "content_sq": "1) Talaku rexh'i (i kthyeshëm) — divorci i parë dhe i dytë. Burri mund ta kthejë gruan brenda iddetit (3 menstruacione) pa nikah të ri. 2) Talaku bain — pas divorcit të tretë, gruaja nuk i kthehet burrit derisa të martohet me dikë tjetër me martesë reale. 3) Hul'u — kur gruaja kërkon divorcin duke ia kthyer mehrin burrit. 4) Feshu — anulimi i martesës nga gjykata për arsye si defekte, mosnafakë, etj.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "الطَّلَاقُ مَرَّتَانِ فَإِمْسَاكٌ بِمَعْرُوفٍ أَوْ تَسْرِيحٌ بِإِحْسَانٍ",
+              "translation_sq": "Divorci (i kthyeshëm) është dy herë: pastaj ose mbajtje me mirësi, ose lëshim me bukuri.",
+              "surah": "El-Bekare",
+              "surah_number": 2,
+              "ayah": 229
+            }
+          ]
+        },
+        {
+          "heading": "Iddeti (periudha e pritjes)",
+          "content_sq": "Pas divorcit, gruaja kalon periudhën e iddetit: 1) Gruaja me menstruacione: 3 cikle menstruale. 2) Gruaja shtatzënë: deri në lindje. 3) Gruaja pas menopauzës: 3 muaj hënorë. 4) E veja: 4 muaj e 10 ditë. Gjatë iddetit, gruaja e divorcuar me talak rexh'i ka të drejtë nafakaje dhe strehimi nga ish-burri.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "وَالْمُطَلَّقَاتُ يَتَرَبَّصْنَ بِأَنفُسِهِنَّ ثَلَاثَةَ قُرُوءٍ",
+              "translation_sq": "Gratë e divorcuara presin vetë tre cikle menstruale (para se të martohen përsëri).",
+              "surah": "El-Bekare",
+              "surah_number": 2,
+              "ayah": 228
+            },
+            {
+              "type": "quran",
+              "arabic": "وَأُولَاتُ الْأَحْمَالِ أَجَلُهُنَّ أَن يَضَعْنَ حَمْلَهُنَّ",
+              "translation_sq": "Dhe ato që janë shtatzëna — afati i tyre është deri kur të lindin.",
+              "surah": "Et-Talak",
+              "surah_number": 65,
+              "ayah": 4
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Sa herë mund të divorcohet me talak rexh'i?",
+          "options": [
+            "1 herë",
+            "2 herë",
+            "3 herë",
+            "Pa kufi"
+          ],
+          "correct_index": 1,
+          "explanation": "Talaku rexh'i (i kthyeshëm) është dy herë. Pas heres së tretë bëhet bain."
+        },
+        {
+          "question": "Sa zgjat iddeti i gruas me menstruacione?",
+          "options": [
+            "1 muaj",
+            "3 cikle menstruale",
+            "6 muaj",
+            "1 vit"
+          ],
+          "correct_index": 1,
+          "explanation": "Gruaja me menstruacione pret 3 cikle menstruale."
+        },
+        {
+          "question": "Çka është hul'u?",
+          "options": [
+            "Divorci nga gjykata",
+            "Kur gruaja kërkon divorcin duke kthyer mehrin",
+            "Divorci i tretë",
+            "Anulimi i martesës"
+          ],
+          "correct_index": 1,
+          "explanation": "Hul'u është kur gruaja kërkon divorcin duke ia kthyer mehrin ose një kompensim burrit."
+        },
+        {
+          "question": "Sa zgjat iddeti i gruas së ve?",
+          "options": [
+            "3 muaj",
+            "4 muaj e 10 ditë",
+            "6 muaj",
+            "1 vit"
+          ],
+          "correct_index": 1,
+          "explanation": "E veja pret 4 muaj e 10 ditë pas vdekjes së burrit."
+        },
+        {
+          "question": "A është divorci i lejuar në Islam?",
+          "options": [
+            "Jo, është haram",
+            "Po, por është gjëja më e urryar e lejuar",
+            "Po, është i rekomanduar",
+            "Vetëm me leje të gjykatës"
+          ],
+          "correct_index": 1,
+          "explanation": "Divorci është hallall por mekruh — gjëja më e urryar e lejuar tek Allahu."
+        }
+      ]
+    }
+  ]
+}

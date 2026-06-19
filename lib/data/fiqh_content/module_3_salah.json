@@ -1,0 +1,657 @@
+{
+  "module_id": "salah",
+  "module_title_sq": "Namazi — Falja",
+  "module_title_ar": "الصلاة",
+  "module_icon": "moon",
+  "description": "Mëso rreth namazit: kushtet, shtyllat, vaxhibet, sunetet dhe llojet e namazit.",
+  "lessons": [
+    {
+      "id": "sal_001",
+      "title_sq": "Kushtet e Namazit",
+      "title_ar": "شروط الصلاة",
+      "level": "beginner",
+      "source_references": [
+        "Shafiqur Rahman An Nadwi, Al Fiqh ul Muyassar (Simple Fiqh)",
+        "Sahih Muslim",
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "Sahih Bukhari",
+        "El-Hidaje"
+      ],
+      "sections": [
+        {
+          "heading": "Kushtet para Namazit",
+          "content_sq": "Kushtet (شروط) e namazit janë ato gjëra që duhet të plotësohen para se të fillojë namazi. Pa plotësimin e tyre, namazi nuk është i vlefshëm. Nëse mungon njëri prej këtyre kushteve, namazi është i pavlefshëm. Kushtet janë veprime jashtë namazit.\n\nKushtet e namazit janë nëntë:\n1. Islami — namazi pranohet vetëm nga muslimani.\n2. Mendja — personi duhet të jetë në gjendje mendore normale.\n3. Dallimi (mosha e pjekurisë) — fëmija nuk obligohet por mësohet.\n4. Marrja e abdesit ose e guslit, sipas nevojës.\n5. Largimi i papastërtive nga vendi, trupi dhe rrobat.\n6. Mbulimi i auretit (pjesëve të turpshme).\n7. Hyrja e kohës së namazit.\n8. Drejtimi drejt Qabes (Kiblës).\n9. Nijeti (qëllimi) në zemër.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "إِنَّ الصَّلَاةَ كَانَتْ عَلَى الْمُؤْمِنِينَ كِتَابًا مَّوْقُوتًا",
+              "translation_sq": "Namazi është obligim i caktuar me kohë për besimtarët.",
+              "surah": "En-Nisa: 103"
+            },
+            {
+              "type": "quran",
+              "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا إِذَا قُمْتُمْ إِلَى الصَّلَاةِ فَاغْسِلُوا وُجُوهَكُمْ",
+              "translation_sq": "O besimtarë! Kur ngriheni për namaz, lani fytyrat tuaja...",
+              "surah": "El-Maide: 6"
+            }
+          ],
+          "ruling": "farz"
+        },
+        {
+          "heading": "Kohët e Namazeve",
+          "content_sq": "Pesë namazet ditore dhe kohët e tyre: Sabahu (el-fexhr) — nga agimi deri para lindjes së diellit. Dreka (edh-dhuhr) — kur dielli kalon zeniten deri kur hija bëhet sa objekti (ose dyfishi sipas Hanefijve). Ikindia (el-asr) — nga mbarimi i kohës së drekës deri para perëndimit. Akshami (el-magrib) — pas perëndimit të diellit deri kur zhduket skuqja në horizont. Jacia (el-isha) — pas zhdukjes së skuqjes deri në mesnatë (ose agim sipas nevojës).",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "وَقْتُ الظُّهْرِ إذا زالَتِ الشَّمْسُ",
+              "translation_sq": "Koha e drekës fillon kur dielli kalon zeniten.",
+              "narrator": "Abdullah ibn Amr (r.a.)",
+              "collection": "Sahih Muslim",
+              "hadith_number": 612,
+              "classification": "sahih"
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Cila NUK është kusht e namazit?",
+          "options": [
+            "Pastërtia",
+            "Nijeti",
+            "Leximi i sures El-Fatiha",
+            "Kthimi nga kibla"
+          ],
+          "correct_index": 2,
+          "explanation": "Leximi i El-Fatihas është rukn (shtyllë) e namazit, jo kusht. Kushtet plotësohen para namazit."
+        },
+        {
+          "question": "Kur fillon koha e namazit të drekës?",
+          "options": [
+            "Në mesditë",
+            "Kur dielli kalon zeniten",
+            "Pas lindjes së diellit",
+            "Para perëndimit"
+          ],
+          "correct_index": 1,
+          "explanation": "Koha e drekës fillon kur dielli kalon zeniten (pikën më të lartë) dhe fillon të anojë nga perëndimi."
+        },
+        {
+          "question": "Sa janë namazet e obliguara ditore?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "7"
+          ],
+          "correct_index": 2,
+          "explanation": "Namazet e obliguara ditore janë 5: Sabahu, Dreka, Ikindia, Akshami dhe Jacia."
+        },
+        {
+          "question": "Cili hadith flet për rëndësinë e nijetit?",
+          "options": [
+            "Hadithi i Xhibrilit",
+            "Innemal a'malu bin-nijat",
+            "Hadithi i hallallit dhe haramit",
+            "Hadithi i mëshirës"
+          ],
+          "correct_index": 1,
+          "explanation": "'Veprat vlerësohen sipas qëllimeve' — hadithi i transmetuar nga Umer ibn el-Hattabi (r.a.) në Sahih Bukhari."
+        },
+        {
+          "question": "Sa janë kushtet e namazit?",
+          "options": [
+            "Shtatë",
+            "Tetë",
+            "Nëntë",
+            "Dhjetë"
+          ],
+          "correct_index": 2,
+          "explanation": "Kushtet e namazit janë nëntë: Islami, mendja, dallimi, abdesi/gusli, largimi i papastërtive, mbulimi i auretit, hyrja e kohës, drejtimi drejt Kiblës, dhe nijeti."
+        }
+      ]
+    },
+    {
+      "id": "sal_002",
+      "title_sq": "Shtyllat (Ruknet) e Namazit",
+      "title_ar": "أركان الصلاة",
+      "level": "intermediate",
+      "source_references": [
+        "Shafiqur Rahman An Nadwi, Al Fiqh ul Muyassar (Simple Fiqh)",
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "Sahih Bukhari",
+        "El-Hidaje",
+        "El-Mugni"
+      ],
+      "sections": [
+        {
+          "heading": "Shtyllat themelore",
+          "content_sq": "Shtyllat (أركان) janë veprimet thelbësore brenda namazit, pa të cilat namazi nuk është i vlefshëm edhe nëse lihen pa dashje. Shtyllat e namazit janë katërmbëdhjetë:\n\n1. Qëndrimi në këmbë nëse ke mundësi gjatë namazit farz.\n2. Tekbiri fillestar (Allahu Ekber).\n3. Leximi i sures El-Fatiha.\n4. Rukuja (përkulja).\n5. Ngritja prej rukusë.\n6. Sexhdja me shtatë gjymtyrët (fytyra, dy shputat e duarve, gjunjët, dy këmbët).\n7. Ngritja prej sexhdes.\n8. Ulja ndërmjet dy sexhdeve.\n9. Ulja për teshehudin e fundit.\n10. Leximi i teshehudit gjatë uljes së fundit.\n11. Salavatet mbi Profetin ﷺ gjatë uljes së teshehudit.\n12. Dy selamet (es-selamu alejkum ue rahmetullah).\n13. Qetësia (tuma'nineh) në kryerjen e të gjitha shtyllave.\n14. Renditja (tertib) — kryerja e shtyllave sipas radhës.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "صَلُّوا كَمَا رَأَيْتُمُونِي أُصَلِّي",
+              "translation_sq": "Faluni siç më keni parë mua duke u falur.",
+              "narrator": "Malik bin El-Huwejrith (radijallahu anhu)",
+              "collection": "Buhariu"
+            }
+          ],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Shtyllat (farzet) e namazit janë 6. El-Fatiha nuk është rukn por vaxhib — nëse harrohet, namazi plotësohet me sexhde-sehvi.",
+              "source": "El-Hidaje, Merginanij"
+            },
+            "maliki": {
+              "ruling": "Shtyllat janë 14, duke përfshirë El-Fatihan dhe tumëninan (qetësinë) në çdo pozicion.",
+              "source": "Esh-Sherhu es-Sagir"
+            },
+            "shafii": {
+              "ruling": "Shtyllat janë 14 (ose 17 sipas disa llogaritjeve), duke përfshirë El-Fatihan, tertibin dhe tumëninan.",
+              "source": "El-Mexhmu', Nevevij"
+            },
+            "hanbali": {
+              "ruling": "Shtyllat janë 14, shumë të ngjashme me ato të Shafiijve.",
+              "source": "El-Mugni, Ibn Kudame"
+            },
+            "consensus_note": "Të katër medhhebet pajtohen se rukuja, sexhdja, tekbiri fillestar dhe selami janë shtylla."
+          },
+          "ruling": "farz"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Sipas Hanefijve, çfarë ndodh nëse harron El-Fatihan në namaz?",
+          "options": [
+            "Namazi prishet",
+            "Bën sexhde-sehvi",
+            "Nuk ka problem",
+            "Duhet ta përsërisë"
+          ],
+          "correct_index": 1,
+          "explanation": "Sipas Hanefijve, El-Fatiha është vaxhib (jo rukn), kështu që nëse harrohet, namazi plotësohet me sexhde-sehvi."
+        },
+        {
+          "question": "Sa janë shtyllat e namazit sipas Hanefijve?",
+          "options": [
+            "6",
+            "10",
+            "14",
+            "17"
+          ],
+          "correct_index": 0,
+          "explanation": "Sipas Hanefijve, farzet (shtyllat) e namazit janë 6."
+        },
+        {
+          "question": "Cila vepër e namazit nuk mund të zëvendësohet nëse lihet?",
+          "options": [
+            "Suneti",
+            "Shtyllat (ruknet)",
+            "Mustehabet",
+            "Duat vullnetare"
+          ],
+          "correct_index": 1,
+          "explanation": "Shtyllat janë thelbësore — nëse lihen, namazi nuk është i vlefshëm edhe nëse lihen pa dashje."
+        },
+        {
+          "question": "Sa janë shtyllat e namazit?",
+          "options": [
+            "Dhjetë",
+            "Dymbëdhjetë",
+            "Katërmbëdhjetë",
+            "Gjashtëmbëdhjetë"
+          ],
+          "correct_index": 2,
+          "explanation": "Shtyllat e namazit janë 14, duke filluar nga qëndrimi në këmbë deri te renditja e tyre sipas radhës."
+        }
+      ]
+    },
+    {
+      "id": "sal_003",
+      "title_sq": "Vaxhibet dhe Sunetet e Namazit",
+      "title_ar": "واجبات الصلاة وسننها",
+      "level": "intermediate",
+      "source_references": [
+        "Shafiqur Rahman An Nadwi, Al Fiqh ul Muyassar (Simple Fiqh)",
+        "Obligimet e Namazit (material i veçantë)",
+        "Hashijetu Ibn Abidin",
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "Sahih Bukhari",
+        "El-Hidaje"
+      ],
+      "sections": [
+        {
+          "heading": "Vaxhibet (Obligimet) e Namazit",
+          "content_sq": "Vaxhibet janë veprime obliguese brenda namazit — nëse lihen pa dashje, namazi plotësohet me sexhde-sehvi (sexhdjen e harresës). Sipas shumicës së dijetarëve, obligimet e namazit janë 8: 1) Të gjitha tekbiret përveç tekbirit fillestar — tekbiri fillestar është rukn (shtyllë), ndërsa tekbiret e tjera (tekbiret e kalimit) janë vaxhib, 2) Thënia 'Subhane Rabbijel-Adhim' në ruku — së paku një herë, ndërsa tri herë është sunet, 3) Thënia 'Semiall-llahu limen hamideh' — kjo thuhet nga imami dhe ai që falet vetëm, 4) Thënia 'Rabbena ue lekel-hamd' — kjo thuhet nga imami, xhemati (ai që falet pas imamit) dhe ai që falet vetëm, 5) Thënia 'Subhane Rabbijel-A'la' në sexhde — së paku një herë, ndërsa tri herë është sunet, 6) Thënia 'Rabbi gfir li' në uljen midis dy sexhdeve, 7) Ulja për teshehudin e parë — në namazet 3 ose 4 rekatëshe, 8) Leximi i teshehudit (Et-Tehijatu) në uljen e parë. Sipas Hanefijve shtohen edhe: leximi i El-Fatihas, bashkimi i një sureje pas saj në dy rekatet e para, caktimi i dy rekateve të para për lexim, bërja e kunut-it në namazin e vitrit dhe tekbiret e bajramit.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "إذا كَبَّرَ الإِمامُ فكبِّروا، وإذا قال: سَمِعَ اللهُ لمَن حَمِدَه, فقولُوا: ربَّنا ولكَ الحمدُ",
+              "translation_sq": "Kur imami bën tekbir, bëni edhe ju tekbir. Kur thotë 'Semiall-llahu limen hamideh', thoni 'Rabbena ue lekel-hamd'.",
+              "narrator": "Ebu Hurejre (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 734,
+              "classification": "sahih"
+            },
+            {
+              "type": "hadith",
+              "arabic": "لاَ صَلاَةَ لِمَنْ لَمْ يَقْرَأْ بِفَاتِحَةِ الكِتَابِ",
+              "translation_sq": "Nuk ka namaz për atë që nuk lexon Fatihatun-Kitab (El-Fatihan).",
+              "narrator": "Ubade ibn es-Samit (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 756,
+              "classification": "sahih"
+            }
+          ],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Vaxhibet janë më shumë se 8, duke përfshirë: El-Fatihan, bashkimin e sures, caktimin e rekateve për lexim, tertib-in mes sexhdeve, kunut-in e vitrit. Nëse lihet një vaxhib pa dashje, bëhet sexhde-sehvi pas selamit të parë.",
+              "source": "El-Hidaje, Merginanij"
+            },
+            "hanbali": {
+              "ruling": "Vaxhibet janë 8 (lista e mësipërme). Nëse lihet ndonjëri pa dashje, bëhet sexhde-sehvi para selamit.",
+              "source": "El-Mugni, Ibn Kudame"
+            }
+          },
+          "ruling": "vaxhib"
+        },
+        {
+          "heading": "Ndryshimi ndërmjet Shtyllës dhe Obligimit",
+          "content_sq": "Ndryshimi ndërmjet tyre qëndron në faktin se:\n\nShtylla: nëse lihet qëllimisht, namazi prishet. Nëse harrohet, duhet ta kryejë atë që ka harruar dhe çka vijon pas asaj shtylle, dhe në fund bën sexhden e harresës.\n\nObligimi (vaxhibi): nëse lihet me qëllim, namazi prishet. Nëse harrohet, mjafton kryerja e sexhdes së harresës në fund — nuk ka nevojë ta përsërisë veprimin.",
+          "evidences": [],
+          "madhab_rulings": null,
+          "ruling": "important_concept"
+        },
+        {
+          "heading": "Sunetet e Namazit",
+          "content_sq": "Sunetet e namazit ndahen në sunete muekede (të forta) dhe gajr muekede (të lehta). Sunete muekede: ngritja e duarve në tekbirin fillestar, vendosja e dorës së djathtë mbi të majtën nën kërthizë (sipas Hanefijve), leximi i Subhaneke-s (duaja hapëse), leximi i E'udhu bil-lahi dhe Bismil-lahi, thënia 'Amin' pas El-Fatihas, tesbihat në ruku (Subhane Rabbijel-Adhim) dhe në sexhde (Subhane Rabbijel-A'la), thënia 'Semiall-llahu limen hamideh' dhe 'Rabbena lekel-hamd', salavatet në uljen e fundit.",
+          "evidences": []
+        },
+        {
+          "heading": "Sexhde-sehvi (Sexhdja e Harresës)",
+          "content_sq": "Sexhde-sehvi (sexhdja e harresës) bëhet në pesë raste:\n\n1. Kur harron diçka dhe del nga namazi — Profeti ﷺ fali njëherë ikindinë dhe dha selam pas tre rekatesh. Kur iu tërhoq vërejtja, fali edhe një rekat, dha selam, pastaj bëri dy sexhde e dha selam përsëri. (Muslimi)\n\n2. Kur shton në namaz — Profeti ﷺ fali njëherë drekën pesë rekate. Kur e njoftuan, bëri dy sexhde pasi kishte dhënë selam. (Buhariu dhe Muslimi)\n\n3. Kur harron teshehudin e parë — Profeti ﷺ u ngrit pas dy rekateve pa u ulur. Në fund bëri sexhde para selamit. (Buhariu dhe Muslimi) Kjo tregon se teshehudi i parë nuk është shtyllë por obligim.\n\n4. Kur nuk e di sa ke falur dhe merr për bazë më të paktën — Profeti ﷺ ka thënë: \"Kur dikush dyshon dhe nuk di sa ka falur tre apo katër, ta largojë dyshimin dhe të ndërtojë mbi atë që ka siguri, pastaj të bjerë në sexhde para selamit.\" (Muslimi)\n\n5. Kur dyshon sa ke falur dhe merr për bazë atë që e sheh më të saktë — Profeti ﷺ ka thënë: \"Kur të dyshojë dikush, të mundohet të gjejë se kush është e sakta, pastaj të plotësojë, të japë selam, e pastaj të bëjë dy sexhde.\" (Buhariu dhe Muslimi)\n\nDallimi: Në rastin 4 sexhdet janë para selamit (dyshimi i barabartë), ndërsa në rastin 5 janë pas selamit (ka animin nga njëra anë).",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "صَلَّى بِنَا رَسُولُ اللَّهِ ﷺ رَكْعَتَيْنِ ثُمَّ قَامَ فَلَمْ يَجْلِسْ",
+              "translation_sq": "Na priu në namaz i Dërguari i Allahut ﷺ dy rekate, pastaj u ngrit pa u ulur (pa lexuar teshehudin e parë).",
+              "narrator": "Abdullah bin Buhejne (radijallahu anhu)",
+              "collection": "Buhariu dhe Muslimi"
+            },
+            {
+              "type": "hadith",
+              "arabic": "إِذَا شَكَّ أَحَدُكُمْ فِي صَلَاتِهِ فَلَمْ يَدْرِ كَمْ صَلَّى ثَلَاثًا أَمْ أَرْبَعًا فَلْيَطْرَحِ الشَّكَّ وَلْيَبْنِ عَلَى مَا اسْتَيْقَنَ",
+              "translation_sq": "Kur dikush prej jush dyshon në namaz dhe nuk di sa ka falur tre apo katër, ta largojë dyshimin dhe të ndërtojë mbi atë që ka siguri.",
+              "narrator": "Ebu Said El-Hudri (radijallahu anhu)",
+              "collection": "Muslimi"
+            },
+            {
+              "type": "hadith",
+              "arabic": "إِنَّمَا أَنَا بَشَرٌ مِثْلُكُمْ أَنْسَى كَمَا تَنْسَوْنَ فَإِذَا نَسِيتُ فَذَكِّرُونِي",
+              "translation_sq": "Unë jam njeri si ju, harroj siç harroni ju. Kur harroj, kujtomëni.",
+              "narrator": "Abdullah bin Mesud (radijallahu anhu)",
+              "collection": "Buhariu dhe Muslimi"
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Çfarë bën nëse harron një vaxhib të namazit?",
+          "options": [
+            "Namazi prishet",
+            "Bën sexhde-sehvi",
+            "Vazhdon normalisht",
+            "Fillon nga e para"
+          ],
+          "correct_index": 1,
+          "explanation": "Nëse lë një vaxhib pa dashje, namazi plotësohet me sexhde-sehvi në fund."
+        },
+        {
+          "question": "Sipas Hanefijve, ku bëhet sexhde-sehvi?",
+          "options": [
+            "Para selamit",
+            "Pas selamit të parë",
+            "Pas çdo gabimi",
+            "Në mesin e namazit"
+          ],
+          "correct_index": 1,
+          "explanation": "Sipas Hanefijve, sexhde-sehvi bëhet pas selamit të parë (djathtas), pastaj dy sexhde, tesheh-hud dhe selam."
+        },
+        {
+          "question": "Çfarë thuhet në ruku?",
+          "options": [
+            "Subhane Rabbijel-A'la",
+            "Subhane Rabbijel-Adhim",
+            "Rabbena lekel-hamd",
+            "Allahu Ekber"
+          ],
+          "correct_index": 1,
+          "explanation": "Në ruku thuhet 'Subhane Rabbijel-Adhim' (I lartësuar është Zoti im, Madhështori), ndërsa në sexhde thuhet 'Subhane Rabbijel-A'la'."
+        },
+        {
+          "question": "Cila nga këto është sunet e namazit?",
+          "options": [
+            "Leximi i El-Fatihas",
+            "Rukuja",
+            "Thënia 'Amin' pas El-Fatihas",
+            "Selami"
+          ],
+          "correct_index": 2,
+          "explanation": "Thënia 'Amin' pas El-Fatihas është sunet, ndërsa leximi i El-Fatihas, rukuja dhe selami janë farze/vaxhibe."
+        },
+        {
+          "question": "Sa janë obligimet (vaxhibet) e namazit sipas shumicës?",
+          "options": [
+            "5",
+            "6",
+            "8",
+            "12"
+          ],
+          "correct_index": 2,
+          "explanation": "Sipas shumicës së dijetarëve, obligimet e namazit janë 8, duke përfshirë tekbiret, tesbihat, teshehudin e parë etj."
+        },
+        {
+          "question": "Çfarë thuhet gjatë uljes midis dy sexhdeve?",
+          "options": [
+            "Subhane Rabbijel-Adhim",
+            "Subhane Rabbijel-A'la",
+            "Rabbi gfir li",
+            "Semiall-llahu limen hamideh"
+          ],
+          "correct_index": 2,
+          "explanation": "'Rabbi gfir li' (O Zot, më fal!) thuhet gjatë uljes midis dy sexhdeve dhe është obligim i namazit."
+        },
+        {
+          "question": "Çfarë ndodh kur harron një shtyllë të namazit?",
+          "options": [
+            "Mjafton sexhde-sehvi",
+            "Duhet ta kryejë shtyllën e harruar dhe çka vijon, plus sexhde-sehvi",
+            "Namazi nuk prishet fare",
+            "Duhet ta përsërisë namazin"
+          ],
+          "correct_index": 1,
+          "explanation": "Kur harrohet një shtyllë, duhet ta kryejë atë që ka harruar dhe çka vijon pas saj, dhe në fund bën sexhden e harresës."
+        },
+        {
+          "question": "Kur dyshon në numrin e rekateve dhe nuk anon nga asnjëra anë, çfarë bën?",
+          "options": [
+            "Përsërit namazin",
+            "Ndërton mbi më të paktën dhe bën sexhde para selamit",
+            "Jep selam menjëherë",
+            "Nuk bën asgjë"
+          ],
+          "correct_index": 1,
+          "explanation": "Kur dyshimi është i barabartë, ndërton mbi atë që ka siguri (më e pakta) dhe bën sexhde-sehvi para selamit."
+        }
+      ]
+    },
+    {
+      "id": "sal_004",
+      "title_sq": "Namazi i Xhumasë dhe Namazet Vullnetare",
+      "title_ar": "صلاة الجمعة والنوافل",
+      "level": "intermediate",
+      "source_references": [
+        "Shafiqur Rahman An Nadwi, Al Fiqh ul Muyassar (Simple Fiqh)",
+        "Sahih Muslim",
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "Sahih Bukhari",
+        "El-Hidaje"
+      ],
+      "sections": [
+        {
+          "heading": "Namazi i Xhumasë",
+          "content_sq": "Namazi i xhumasë (el-xhumu'ah) është obligim (farz ajn) mbi çdo musliman mashkull që ka arritur moshën, është i aftë nga ana mendore, i lirë, vendali dhe jo udhëtar.\n\nKushtet e vlefshmërisë së xhumasë janë:\n1. Koha — fillon me hyrjen e kohës së namazit të drekës deri në fundin e kohës së drekës.\n2. Prezantimi i xhematit nga tre persona e më shumë.\n3. Dy hytbet (ligjërata) — ku përfshihet: falënderimi i Allahut, salavatet mbi Profetin ﷺ, leximi i një ajeti kuranor, dhe porositja për devotshmëri.\n4. Falja e namazit të xhumasë — dy rekate.\n5. Namazi i xhumasë zëvendëson namazin e drekës — nuk lejohet të falet dreka pasi ke falur xhumanë.\n6. Ai person që nuk arrin ta falë namazin e xhumasë, obligohet të falë namazin e drekës, qoftë vendali ose udhëtar.\n\nJustifikohet lënia e xhumasë dhe xhematit për: të sëmurin, atë që ka frikë se i humbet pasuria, atë që ruan pasuri, dhe në natë të ftohtë ose me shi.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا إِذَا نُودِيَ لِلصَّلَاةِ مِن يَوْمِ الْجُمُعَةِ فَاسْعَوْا إِلَىٰ ذِكْرِ اللَّهِ",
+              "translation_sq": "O besimtarë! Kur thirret për namazin e ditës së premte, nxitoni drejt përmendjes së Allahut.",
+              "surah": "El-Xhumu'a: 9"
+            }
+          ],
+          "ruling": "farz"
+        },
+        {
+          "heading": "Namazet Sunete (Nafile)",
+          "content_sq": "Sunetet e rregullta (reuatib) që shoqërojnë farzet:\n- 4 rekate para farzit të drekës dhe 2 pas farzit të drekës.\n- 4 rekate para ikindisë (jo muekede).\n- 2 rekate pas farzit të akshamit.\n- 2 rekate pas farzit të jacisë.\n- 2 rekate para farzit të sabahut (suneti më i fortë).\n\nNamazi i vitrit: Koha fillon pas farzit të jacisë deri në kohën e lindjes së agimit. Numri më i pakët i rekateve është një, dhe më i shumtë njëmbëdhjetë. Më e mira është të falësh dy e nga dy rekate dhe të japësh selam, pastaj ta mbyllësh me një rekat.",
+          "evidences": []
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Sa rekate ka namazi i xhumasë?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "correct_index": 0,
+          "explanation": "Namazi i xhumasë ka 2 rekate me imam, të cilit i paraprijnë dy hutbe."
+        },
+        {
+          "question": "Cili sunet i sabahut është më i fortë?",
+          "options": [
+            "Dy rekatet sunnet para farzit",
+            "Namazi i duhasë",
+            "Namazi i tehexh-xhudit",
+            "Vitri"
+          ],
+          "correct_index": 0,
+          "explanation": "Dy rekatet sunnet para sabahut janë sunnet muekede i fortë — Profeti ﷺ nuk i linte pothuajse kurrë."
+        },
+        {
+          "question": "Çfarë thotë Kurani për ditën e xhuma?",
+          "options": [
+            "Agjëroni",
+            "Nxitoni për përmendjen e Allahut",
+            "Rrini në shtëpi",
+            "Lexoni Kuran gjithë ditën"
+          ],
+          "correct_index": 1,
+          "explanation": "Ajeti 9 i sures El-Xhumu'a urdhëron: 'Nxitoni për përmendjen e Allahut dhe lini shitblerjen.'"
+        },
+        {
+          "question": "Kur falet namazi i duhasë?",
+          "options": [
+            "Pas akshamit",
+            "Pas jacisë",
+            "20 min pas lindjes deri para drekës",
+            "Pas sabahut menjëherë"
+          ],
+          "correct_index": 2,
+          "explanation": "Koha e duhasë fillon rreth 20 min pas lindjes së diellit dhe zgjat deri rreth 20 min para kohës së drekës."
+        },
+        {
+          "question": "Sa rekate falen në namazin e xhumasë?",
+          "options": [
+            "Një rekat",
+            "Dy rekate",
+            "Tre rekate",
+            "Katër rekate"
+          ],
+          "correct_index": 1,
+          "explanation": "Namazi i xhumasë falet dy rekate pas dy hytbeve, dhe zëvendëson namazin e drekës."
+        },
+        {
+          "question": "Cila është koha më e pakët e rekateve të vitrit?",
+          "options": [
+            "Një rekat",
+            "Dy rekate",
+            "Tre rekate",
+            "Pesë rekate"
+          ],
+          "correct_index": 0,
+          "explanation": "Numri më i pakët i rekateve të vitrit është një rekat, dhe më i shumtë njëmbëdhjetë."
+        }
+      ]
+    },
+    {
+      "id": "sal_005",
+      "title_sq": "Gjërat që e Prishin Namazin dhe Namazi i Udhëtarit",
+      "title_ar": "مبطلات الصلاة وصلاة المسافر",
+      "level": "intermediate",
+      "source_references": [
+        "Sahih Muslim",
+        "Shafiqur Rahman An Nadwi, Al Fiqh ul Muyassar (Simple Fiqh)",
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
+        "Shtyllat e Namazit",
+        "Sahih Bukhari",
+        "El-Hidaje",
+        "El-Mugni"
+      ],
+      "sections": [
+        {
+          "heading": "Namazi i Njerëzve me Arsye",
+          "content_sq": "Qëndrimi në këmbë është shtyllë e namazit, por nëse personi nuk ka mundësi:\n- Nëse nuk mundet në këmbë, le të falet ulur.\n- Nëse nuk mundet ulur, le të falet mbi njërin krah.\n- Nëse nuk mundet as kështu, le të falet shtrirë duke treguar me kokë, aq sa ka mundësi.\n\nRregullat që kanë lidhje me udhëtimin janë katër:\n1. Shkurtimi (kasr) — namazet 4-rekatëshe shkurtohen në 2.\n2. Bashkimi (xhem') — bashkohet dreka me ikindinë, ose akshami me jacinë.\n3. Mes'hi mbi mestet për tri ditë (në vend të një dite për vendasin).\n4. Çelja (iftari) gjatë Ramazanit.",
+          "evidences": [],
+          "madhab_rulings": null,
+          "ruling": "important_concept"
+        },
+        {
+          "heading": "Gjërat që e Prishin Namazin",
+          "content_sq": "Namazi prishet (bëhet i pavlefshëm) nga këto gjëra: 1) Fjalët e qëllimshme — çdo fjalë që nuk ka lidhje me namazin e prish atë, 2) Ngrënia ose pirja gjatë namazit, 3) Veprimi i shumtë i njëpasnjëshëm — tri veprime radhazi që nuk kanë lidhje me namazin, 4) Kthimi i gjoksit nga kibla pa arsye, 5) Dalja e hadethit (prishja e abdesit), 6) Zbulimi i avretit pa e mbuluar menjëherë, 7) Qeshja me zë gjatë namazit — sipas Hanefijve kjo prish edhe abdesin, 8) Lënia e një shtylle (rukni) pa arsye.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "كُنَّا نَتَكَلَّمُ فِي الصَّلَاةِ يُكَلِّمُ أَحَدُنَا صَاحِبَهُ... حَتَّى نَزَلَتْ: وَقُومُوا لِلَّهِ قَانِتِينَ فَأُمِرْنَا بِالسُّكُوتِ",
+              "translation_sq": "Flisnim gjatë namazit... derisa zbriti ajeti 'Ngrihuni para Allahut me përulësi' dhe u urdhëruam të heshtim.",
+              "narrator": "Zejd ibn Erkam (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 1200,
+              "classification": "sahih"
+            }
+          ],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Qeshja me zë gjatë namazit e prish namazin DHE abdesin. Qeshja pa zë (buzëqeshja) nuk e prish as namazin as abdesin.",
+              "source": "El-Hidaje, Merginanij"
+            },
+            "shafii": {
+              "ruling": "Qeshja me zë e prish vetëm namazin, jo abdesin. Veprimi i vogël (si rregullimi i rrobës) nuk e prish namazin.",
+              "source": "El-Mexhmu', Nevevij"
+            }
+          }
+        },
+        {
+          "heading": "Namazi i Udhëtarit (Kasr dhe Xhem')",
+          "content_sq": "Muslimani udhëtar ka dy lehtësime në namaz: 1) Kasr (shkurtimi) — namazet 4-rekatëshe (dreka, ikindia, jacia) shkurtohen në 2 rekate. Distanca minimale e udhëtimit: rreth 80 km sipas shumicës. Profeti ﷺ i shkurtonte namazet kur udhëtonte. 2) Xhem' (bashkimi) — dreka dhe ikindia falen bashkë në kohën e njërës prej tyre, po ashtu akshami dhe jacia. Xhem'i lejohet edhe për të sëmurin, shiun e fortë ose nevojë urgjente. Sabahu nuk bashkohet me asnjë namaz tjetër.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "وَإِذَا ضَرَبْتُمْ فِي الْأَرْضِ فَلَيْسَ عَلَيْكُمْ جُنَاحٌ أَن تَقْصُرُوا مِنَ الصَّلَاةِ",
+              "translation_sq": "Kur udhëtoni nëpër tokë, nuk keni mëkat nëse i shkurtoni namazet.",
+              "surah": "En-Nisa",
+              "surah_number": 4,
+              "ayah": 101
+            }
+          ],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Kasr-i (shkurtimi) është vaxhib (obligim) për udhëtarin, jo vetëm lehtësim. Xhem'i (bashkimi) lejohet vetëm në Arafat dhe Muzdelife gjatë haxhit.",
+              "source": "El-Hidaje, Merginanij"
+            },
+            "maliki": {
+              "ruling": "Kasr-i është sunnet muekede. Xhem'i lejohet në udhëtim dhe për të sëmurin.",
+              "source": "Esh-Sherhu el-Kebir"
+            },
+            "shafii": {
+              "ruling": "Kasr-i është ruhsa (lehtësim). Xhem'i lejohet në udhëtim, shi dhe sëmundje.",
+              "source": "El-Mexhmu', Nevevij"
+            },
+            "hanbali": {
+              "ruling": "Kasr-i është ruhsa. Xhem'i lejohet në udhëtim, shi, sëmundje dhe nevojë.",
+              "source": "El-Mugni, Ibn Kudame"
+            }
+          }
+        },
+        {
+          "heading": "Mekruhet (Gjërat e Papëlqyera) në Namaz",
+          "content_sq": "Veprimet e papëlqyera (mekruh) gjatë namazit përfshijnë:\n1. Të falësh namaz në kushtet e shtrëngesës për të kryer nevojat personale.\n2. Lëvizja e kokës pa arsye (majtas-djathtas).\n3. Ngritja e shikimit lart, majtas e djathtas.\n4. Të luash me rrobat ose me ndonjë gjë tjetër gjatë namazit.\n5. Mbështetja diku gjatë namazit.\n6. Kërcitja e gishtërinjve.\n7. Prania e fotove ose pamjeve me gjallesa (njerëz e kafshë) para falësit.\n8. Të shkrifësh trupin në shenjë rehatie ose ardhje të gjumit.\n9. Hyrja në namaz kur mendja është e zënë dhe e shqetësuar.",
+          "evidences": [],
+          "madhab_rulings": null,
+          "ruling": "makruh"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Sipas Hanefijve, çfarë prish qeshja me zë gjatë namazit?",
+          "options": [
+            "Vetëm namazin",
+            "Namazin dhe abdesin",
+            "Asgjë",
+            "Vetëm abdesin"
+          ],
+          "correct_index": 1,
+          "explanation": "Sipas Hanefijve, qeshja me zë gjatë namazit e prish edhe namazin edhe abdesin."
+        },
+        {
+          "question": "Sa rekate fal udhëtari në vend të 4 rekateve?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct_index": 1,
+          "explanation": "Udhëtari i shkurton namazet 4-rekatëshe (dreka, ikindia, jacia) në 2 rekate."
+        },
+        {
+          "question": "Cili namaz NUK mund të bashkohet me namaz tjetër?",
+          "options": [
+            "Dreka",
+            "Ikindia",
+            "Sabahu",
+            "Jacia"
+          ],
+          "correct_index": 2,
+          "explanation": "Sabahu nuk bashkohet me asnjë namaz tjetër. Bashkohen dreka me ikindinë dhe akshami me jacinë."
+        },
+        {
+          "question": "Sipas cilit medh'heb, kasr-i është obligim (jo vetëm lehtësim)?",
+          "options": [
+            "Hanefi",
+            "Maliki",
+            "Shafi'i",
+            "Hanbeli"
+          ],
+          "correct_index": 0,
+          "explanation": "Sipas Hanefijve, shkurtimi i namazit gjatë udhëtimit është vaxhib (obligim), jo thjesht lehtësim."
+        },
+        {
+          "question": "Cila nga këto NUK e prish namazin?",
+          "options": [
+            "Fjalët e qëllimshme",
+            "Ngrënia gjatë namazit",
+            "Buzëqeshja pa zë",
+            "Kthimi nga kibla"
+          ],
+          "correct_index": 2,
+          "explanation": "Buzëqeshja pa zë (tebessumi) nuk e prish namazin. Vetëm qeshja me zë e prish."
+        },
+        {
+          "question": "Si duhet të falet ai që nuk mundet të qëndrojë në këmbë?",
+          "options": [
+            "Nuk obligohet me namaz",
+            "Falet ulur, e nëse nuk mundet, mbi krah, e nëse nuk mundet, shtrirë",
+            "Duhet patjetër në këmbë",
+            "Falet vetëm me sy"
+          ],
+          "correct_index": 1,
+          "explanation": "Ai që nuk mundet në këmbë falet ulur; nëse nuk mundet ulur, mbi njërin krah; nëse nuk mundet, shtrirë duke treguar me kokë."
+        },
+        {
+          "question": "Cila nga këto është mekruh (e papëlqyer) në namaz?",
+          "options": [
+            "Leximi i Fatihasë",
+            "Lëvizja e kokës pa arsye",
+            "Tekbiri fillestar",
+            "Sexhdja"
+          ],
+          "correct_index": 1,
+          "explanation": "Lëvizja e kokës pa arsye (shikimi majtas-djathtas) është nga gjërat e papëlqyera në namaz."
+        }
+      ]
+    }
+  ]
+}
