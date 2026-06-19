@@ -4,6 +4,8 @@
 
 ### Mëso Fikhun · تعلّم الفقه
 
+A comprehensive Flutter educational app for Islamic jurisprudence (Fiqh) in Albanian
+
 Aplikacion edukativ Flutter për jurisprudencën islame (Fikh) në gjuhën shqipe
 
 تطبيق تعليمي بإطار Flutter للفقه الإسلامي باللغة الألبانية
@@ -102,6 +104,92 @@ lib/
 ├── data/           # 12 skedarë JSON me përmbajtje fikhore
 ├── features/       # Home, Modules, Quiz, Search, Bookmarks, Profile, Zakat, Ask Scholar
 └── shared/         # Widget-e të përbashkëta (QuranVerseCard, HadithCard, MadhabComparison)
+```
+
+---
+
+## 🇬🇧 English
+
+### About
+
+**Al Mizan** (الميزان — "The Scale") is a comprehensive Flutter application for learning Islamic jurisprudence (Fiqh) in Albanian. The app works 100% offline and contains structured lessons, interactive quizzes, evidences from the Quran and Sunnah, and comparisons across the four madhabs.
+
+### Content
+
+| Module | Lessons | Quizzes | Evidences |
+|--------|---------|---------|-----------|
+| Introduction to Fiqh | 3 | 7 | 8 |
+| Taharah — Purification | 6 | 33 | 18 |
+| Salah — Prayer | 5 | 30 | 12 |
+| Sawm — Fasting | 3 | 11 | 6 |
+| Zakat — Alms | 3 | 10 | 6 |
+| Hajj & Umrah | 4 | 17 | 10 |
+| Mu'amalat — Trade | 3 | 11 | 7 |
+| Halal & Haram | 3 | 19 | 12 |
+| Nikah — Marriage | 3 | 13 | 14 |
+| Janazah — Funeral | 3 | 11 | 8 |
+| Oaths & Vows | 2 | 7 | 8 |
+| Food & Drink | 3 | 10 | 11 |
+| **Total** | **41** | **179** | **120** |
+
+### Key Features
+
+- **12 Fiqh modules** with lessons organized by level (beginner, intermediate, advanced)
+- **179 quiz questions** with detailed explanations
+- **120 evidences** from the Quran and Hadith with Arabic text and Albanian translation
+- **Four-madhab comparison** (Hanafi, Maliki, Shafi'i, Hanbali) for every ruling
+- **Zakat calculator** with multiple asset types and nisab thresholds
+- **General quiz** with questions across all modules
+- **Full-text search** across lessons and content
+- **Bookmarks** to save favorite lessons
+- **Two themes** — Light (Parchment) and Dark (Obsidian)
+- **100% offline** — no internet required
+
+### Academic Sources
+
+Content is derived and adapted from well-known Fiqh works:
+
+- Dr. Wahbah az-Zuhayli — *Islamic Legislation*
+- Dr. Yusuf al-Qaradawi — *The Lawful and the Prohibited in Islam*
+- Muhammad Nasiruddin al-Albani — *Rulings of Hajj and Umrah*
+- Sayyid Sabiq — *Fiqh us-Sunnah*
+
+### Tech Stack
+
+- **Flutter** — cross-platform framework
+- **Riverpod** — state management
+- **GoRouter** — navigation
+- **Drift** — local SQLite database
+- **Material 3** — modern design with Google Fonts
+- **Design System**: Al-Mizan (Google Stitch) — Source Serif 4, Plus Jakarta Sans, Amiri
+
+### Build
+
+```bash
+# Clone the repo
+git clone https://github.com/gaming-clan/al-mizan.git
+cd al-mizan
+
+# Install dependencies
+flutter pub get
+
+# Generate Drift code
+dart run build_runner build
+
+# Build APK
+flutter build apk --debug
+```
+
+> **Windows note**: Set `JAVA_TOOL_OPTIONS=-Djava.net.preferIPv4Stack=true` before building.
+
+### Project Structure
+
+```
+lib/
+├── core/           # Themes, colors, routing, database, constants
+├── data/           # 12 JSON files with Fiqh content
+├── features/       # Home, Modules, Quiz, Search, Bookmarks, Profile, Zakat, Ask Scholar
+└── shared/         # Reusable widgets (QuranVerseCard, HadithCard, MadhabComparison)
 ```
 
 ---
