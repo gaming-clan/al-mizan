@@ -73,7 +73,7 @@ class ZakatCalculator {
     required double pricePerKg,
     required String currencyCode,
   }) {
-    final nisabKg = AppConstants.cropNisabKg;
+    const nisabKg = AppConstants.cropNisabKg;
     final isEligible = harvestKg >= nisabKg;
     final rate = isRainIrrigated
         ? AppConstants.cropRateRainIrrigated

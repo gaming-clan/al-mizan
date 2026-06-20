@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../../../core/theme/app_colors.dart';
 
 /// Pre-populated Q&A screen — curated answers from scholars.
 /// Follows the Stitch "Ask a Scholar" design pattern.

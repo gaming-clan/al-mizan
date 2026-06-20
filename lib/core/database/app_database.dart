@@ -141,6 +141,20 @@ class AppDatabase extends _$AppDatabase {
     return query.getSingleOrNull();
   }
 
+  Future<Map<String, double?>> getBestQuizResultsForLessons(
+      List<String> lessonIds) async {
+    if (lessonIds.isEmpty) return {};
+    final rows = await (select(quizResults)
+          ..where((t) => t.lessonId.isIn(lessonIds))
+          ..orderBy([(t) => OrderingTerm.desc(t.percentage)]))
+        .get();
+    final map = <String, double?>{};
+    for (final row in rows) {
+      map[row.lessonId] ??= row.percentage;
+    }
+    return map;
+  }
+
   // ── Streak ──
 
   Future<void> recordLearningDay() {

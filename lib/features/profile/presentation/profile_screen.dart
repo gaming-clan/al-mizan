@@ -129,7 +129,7 @@ class ProfileScreen extends ConsumerWidget {
               value: isDark,
               onChanged: (_) =>
                   ref.read(darkModeProvider.notifier).toggle(),
-              activeColor: cs.primary,
+              activeThumbColor: cs.primary,
             ),
           ),
           const SizedBox(height: 8),

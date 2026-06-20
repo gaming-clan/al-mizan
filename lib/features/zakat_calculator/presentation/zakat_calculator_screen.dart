@@ -62,11 +62,6 @@ class _ZakatCalculatorScreenState
     super.dispose();
   }
 
-  String get _sym {
-    final code = ref.read(selectedCurrencyProvider);
-    return AppConstants.currencySymbols[code] ?? '\$';
-  }
-
   void _calcWealth(double goldPriceUsd) {
     final code = ref.read(selectedCurrencyProvider);
     final rate = ref.read(exchangeRateProvider);

@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../../features/home/presentation/home_screen.dart';
 import '../../features/modules/presentation/module_list_screen.dart';
 import '../../features/modules/presentation/lesson_list_screen.dart';
 import '../../features/modules/presentation/lesson_screen.dart';
+import '../../features/onboarding/presentation/onboarding_screen.dart';
 import '../../features/quiz/presentation/quiz_screen.dart';
 import '../../features/quiz/presentation/general_quiz_screen.dart';
 import '../../features/search/presentation/search_screen.dart';
@@ -20,6 +22,14 @@ final _shellNavigatorKey = GlobalKey<NavigatorState>();
 final appRouter = GoRouter(
   navigatorKey: _rootNavigatorKey,
   initialLocation: '/',
+  redirect: (context, state) async {
+    final prefs = await SharedPreferences.getInstance();
+    final done = prefs.getBool('onboarding_complete') ?? false;
+    final loc = state.matchedLocation;
+    if (!done && loc != '/onboarding') return '/onboarding';
+    if (done && loc == '/onboarding') return '/';
+    return null;
+  },
   routes: [
     ShellRoute(
       navigatorKey: _shellNavigatorKey,
@@ -93,6 +103,11 @@ final appRouter = GoRouter(
       path: '/settings',
       parentNavigatorKey: _rootNavigatorKey,
       builder: (context, state) => const SettingsScreen(),
+    ),
+    GoRoute(
+      path: '/onboarding',
+      parentNavigatorKey: _rootNavigatorKey,
+      builder: (context, state) => const OnboardingScreen(),
     ),
   ],
 );

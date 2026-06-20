@@ -35,7 +35,26 @@ class SearchScreen extends ConsumerWidget {
               data: (results) {
                 if (results.isEmpty &&
                     ref.read(searchQueryProvider).isNotEmpty) {
-                  return const Center(child: Text('Asnjë rezultat.'));
+                  return Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.search_off_rounded,
+                            size: 64,
+                            color: theme.colorScheme.primary
+                                .withValues(alpha: 0.3)),
+                        const SizedBox(height: 16),
+                        Text('Asnjë rezultat',
+                            style: theme.textTheme.titleMedium),
+                        const SizedBox(height: 8),
+                        Text(
+                          'Provo terma të tjerë kërkimi.',
+                          style: theme.textTheme.bodySmall?.copyWith(
+                              color: theme.colorScheme.onSurfaceVariant),
+                        ),
+                      ],
+                    ),
+                  );
                 }
                 if (results.isEmpty) {
                   return Center(
