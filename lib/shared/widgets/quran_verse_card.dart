@@ -11,6 +11,7 @@ class QuranVerseCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
+    final cs = Theme.of(context).colorScheme;
     return Card(
       color: isDark ? AppColors.quranCardBgDark : AppColors.quranCardBg,
       margin: EdgeInsets.zero,
@@ -19,15 +20,14 @@ class QuranVerseCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            const Row(
+            Row(
               children: [
-                Icon(Icons.auto_stories_rounded,
-                    size: 16, color: AppColors.primary),
-                SizedBox(width: 6),
+                Icon(Icons.auto_stories_rounded, size: 16, color: cs.primary),
+                const SizedBox(width: 6),
                 Text(
                   'Kuran',
                   style: TextStyle(
-                    color: AppColors.primary,
+                    color: cs.primary,
                     fontWeight: FontWeight.w600,
                     fontSize: 12,
                   ),
@@ -56,7 +56,7 @@ class QuranVerseCard extends StatelessWidget {
                 ayah: evidence.ayah ?? 0,
               ),
               style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                    color: AppColors.primary,
+                    color: cs.primary,
                     fontWeight: FontWeight.w500,
                   ),
             ),

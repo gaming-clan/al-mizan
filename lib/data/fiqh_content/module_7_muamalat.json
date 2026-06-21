@@ -295,6 +295,112 @@
           "explanation": "Profeti ﷺ tha: 'Kush na mashtron, nuk është prej nesh' — mashtrimi në tregti është haram."
         }
       ]
+    },
+    {
+      "id": "mua_004",
+      "title_sq": "Shirket dhe Mudaraba — Ortakëria Islame",
+      "title_ar": "الشركة والمضاربة",
+      "level": "advanced",
+      "source_references": [
+        "Normat e Shitblerjes Islame — Vehbe ez-Zuhajli",
+        "FIKHU PRAKTIK, faqe 83-279",
+        "Dr. Vehbe ez-Zuhajli, Ligjet e Sheriatit Islamik"
+      ],
+      "sections": [
+        {
+          "heading": "Shirket — Ortakëria në Kapital dhe Punë",
+          "content_sq": "Shirket (الشركة) është bashkimi i dy ose më shumë personave me kapital ose punë për fitim të përbashkët. Llojet kryesore të shirketit: 1) Shirket el-Amval (ortakëria kapitaliste): dy persona bashkojnë kapital për tregti. Fitimi ndahet sipas marrëveshjes, humbja sipas proporcionit të kapitalit. 2) Shirket el-A'mal (ortakëria e punës): dy zejtarë marrin punë bashkërisht pa kapital të veçantë. 3) Shirket el-Vuxhuh (ortakëria e reputacionit): persona me reputacion blejnë në kredi dhe shesin me fitim. 4) Shirket el-Mufavada (ortakëria totale): ortakët ndajnë gjithçka barabara — kapital, punë, fitim, humbje. Kushti bazë: sjellja e ndershme, transparenca dhe mungesa e elementeve haramine.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "أَنَا ثَالِثُ الشَّرِيكَيْنِ مَا لَمْ يَخُنْ أَحَدُهُمَا صَاحِبَهُ فَإِذَا خَانَ خَرَجْتُ مِنْ بَيْنِهِمَا",
+              "translation_sq": "Unë jam i treti midis dy ortakëve sa kohë asnjëri nuk e tradhton tjetrin. Kur ndonjëri tradhton, dal nga mesi i tyre.",
+              "narrator": "Ebu Hurejre (r.a.)",
+              "collection": "Ebu Davud",
+              "hadith_number": 3383,
+              "classification": "hasen"
+            }
+          ]
+        },
+        {
+          "heading": "Mudaraba — Ortakëria Kapital-Punë",
+          "content_sq": "Mudaraba (المضاربة) është kontrata ku një palë jep kapitalin (rab el-mal) dhe pala tjetër jep punën dhe menaxhimin (mudarib). Fitimi ndahet sipas përqindjes së dakorduar (p.sh. 60% për mudarib, 40% për rab el-mal). Humbja bie mbi kapitalin — mudarib nuk humb asgjë materialë përveç punës. Mudaraba është lejuar historikisht sepse stimulon aktivitetin ekonomik — shumë sahabë e praktikuan. Kontrata e mudarabës duhet të specifikojë: mënyrën e ndarjes së fitimit, ndalimin e investimeve haramine, dhe kushtet e mbylljes. Bankat islamike sot e mbështesin produktet e tyre mbi mudarabën dhe musharakan.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "وَآخَرُونَ يَضْرِبُونَ فِي الْأَرْضِ يَبْتَغُونَ مِن فَضْلِ اللَّهِ",
+              "translation_sq": "Dhe të tjerë udhëtojnë nëpër tokë duke kërkuar dhuntinë e Allahut (tregti).",
+              "surah": "El-Muzemmil",
+              "surah_number": 73,
+              "ayah": 20
+            }
+          ],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Mudaraba është e vlefshme. Mudarib mund të investojë në çdo tregti hallall pa kufizime gjeografike.",
+              "source": "El-Hidaje, Merginanij"
+            },
+            "maliki": {
+              "ruling": "Mudaraba lejohet me kushtin që mudarib të punojë vetë, jo t'ia delegojë tjetrit.",
+              "source": "El-Mudavvene"
+            },
+            "shafii": {
+              "ruling": "Mudaraba lejohet. Fitimi ndahet sipas kushtit, humbja bie mbi kapitalin.",
+              "source": "El-Umm, Imam Shafi'i"
+            },
+            "hanbali": {
+              "ruling": "Mudaraba lejohet. Nëse mudarib shkel kushtet e kontratës, bëhet i garantueshëm për humbjet.",
+              "source": "El-Mugni, Ibn Kudame"
+            }
+          }
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Në mudarabën, kush mban humbjen materiale?",
+          "options": [
+            "Mudarib (ai që punon)",
+            "Rab el-mal (ai që jep kapitalin)",
+            "Ndahet barabara",
+            "Ndahet sipas punës"
+          ],
+          "correct_index": 1,
+          "explanation": "Në mudarabën, humbja materiale bie mbi rab el-mal (kapitalin). Mudarib humb vetëm punën e tij."
+        },
+        {
+          "question": "Çfarë është shirket el-mufavada?",
+          "options": [
+            "Ortakëria e punës",
+            "Ortakëria e reputacionit",
+            "Ortakëria totale ku gjithçka ndahet barabara",
+            "Ortakëria e kapitalit"
+          ],
+          "correct_index": 2,
+          "explanation": "Shirket el-mufavada është ortakëria totale — kapital, punë, fitim dhe humbje ndahen barabara."
+        },
+        {
+          "question": "Sipas hadithit, kur 'del' Allahu nga mes dy ortakëve?",
+          "options": [
+            "Kur fitojnë shumë",
+            "Kur humbin",
+            "Kur njëri tradhton tjetrin",
+            "Kur mbyllet kontrata"
+          ],
+          "correct_index": 2,
+          "explanation": "Allahu është 'i treti' midis ortakëve të ndershëm — nëse njëri tradhton, Allahu tërhiqet."
+        },
+        {
+          "question": "Cili element e dallon mudarabën nga shirket i zakonshëm?",
+          "options": [
+            "Mudaraba kërkon dy kapitale",
+            "Mudaraba ndan kapitalin me punën — njëri jep para, tjetri punon",
+            "Mudaraba është vetëm për tregti ndërkombëtare",
+            "Mudaraba nuk lejon fitim"
+          ],
+          "correct_index": 1,
+          "explanation": "Mudaraba ndan rolet: rab el-mal jep kapitalin, mudarib jep punën dhe menaxhimin — fitimi ndahet sipas marrëveshjes."
+        }
+      ]
     }
   ]
 }

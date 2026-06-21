@@ -285,6 +285,120 @@
           "explanation": "Ndalohet agjërimi ditën e Bajramit të Ramazanit dhe ditën e Bajramit të Kurbanit."
         }
       ]
+    },
+    {
+      "id": "swm_004",
+      "title_sq": "Itikafi — Qëndrimi Adhurues në Xhami",
+      "title_ar": "الاعتكاف",
+      "level": "advanced",
+      "source_references": [
+        "Dr. Abdul-Azeem Badawi, Concise Presentation of the Fiqh of the Sunnah",
+        "FIKHU PRAKTIK, faqe 83-279",
+        "Es-Sejid Sabik, Fikhu es-Sunne"
+      ],
+      "sections": [
+        {
+          "heading": "Çka është Itikafi dhe rëndësia e tij",
+          "content_sq": "Itikafi (الاعتكاف) është qëndrimi i qëllimshëm në xhami me qëllim adhurimi, duke u izoluar nga punët e botës. Është sunnet i konfirmuar (sunnet muekked) — Profeti ﷺ e praktikonte çdo vit, veçanërisht në dhjetë ditët e fundit të Ramazanit (të dhjetë netët). Qëllimi i itikafit është: forcimi i lidhjes me Allahun, kërkimi i Natës së Kadrit, largimi nga çdo gjë tjetër përveç adhurimit. Nëse dikush e nis itikafen me nedhir (zotim), bëhet obligim.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "كَانَ النَّبِيُّ ﷺ يَعْتَكِفُ فِي كُلِّ رَمَضَانَ عَشَرَةَ أَيَّامٍ فَلَمَّا كَانَ الْعَامُ الَّذِي قُبِضَ فِيهِ اعْتَكَفَ عِشْرِينَ يَوْمًا",
+              "translation_sq": "Profeti ﷺ bënte itikafen çdo Ramazan dhjetë ditë. Vitin kur ndërroi jetë bëri itikafen njëzet ditë.",
+              "narrator": "Ebu Hurejre (r.a.)",
+              "collection": "Buhariu",
+              "hadith_number": 2044,
+              "classification": "sahih"
+            },
+            {
+              "type": "quran",
+              "arabic": "وَلَا تُبَاشِرُوهُنَّ وَأَنتُمْ عَاكِفُونَ فِي الْمَسَاجِدِ",
+              "translation_sq": "Dhe mos i afroheni grave ndërsa jeni të veçuar (itikaf) në xhami.",
+              "surah": "El-Bekare",
+              "surah_number": 2,
+              "ayah": 187
+            }
+          ]
+        },
+        {
+          "heading": "Kushtet dhe Gjërat që e Prishin Itikafen",
+          "content_sq": "Kushtet e itikafit: 1) Të jesh musliman, i rritur, me mendje. 2) Të jesh në xhami ku falet xhumaja (sipas disa medhhebeve, çdo xhami me xhemat mjafton). 3) Qëllimi (nijja). 4) Agjërimi gjatë itikafit (sipas Hanefijve — e kundërtë sipas shumicës tjetër). Gjërat që e prishin itikafen: Dalj nga xhamia pa nevojë. Marrëdhëniet intime. Humbja e vetëdijes. Dhënia e dorës gruas (sipas disa dijetarëve). Lejohet: Dalja për nevoja fiziologjike, për larje xhunabetit, për ushqim nëse nuk ka kush ta sjellë. Gruaja mund të bëjë itikafen në xhami me lejen e burrit.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "إِنِّي اعْتَكَفْتُ الْعَشْرَ الْأَوَّلَ أَلْتَمِسُ هَذِهِ اللَّيْلَةَ ثُمَّ اعْتَكَفْتُ الْعَشْرَ الْأَوْسَطَ ثُمَّ أُوحِيَ إِلَيَّ فَأُرِيتُهَا فِي الْعَشْرِ الْأَوَاخِرِ",
+              "translation_sq": "Bëra itikafen dhjetë të parë duke kërkuar atë natë, pastaj dhjetë të mesmen, pastaj mu shpall se është në dhjetë të fundit.",
+              "narrator": "Ubej ibën Ka'b (r.a.)",
+              "collection": "Muslimi",
+              "classification": "sahih"
+            }
+          ],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Agjërimi është kusht i itikafit. Itikafi minimal është sa kohëzgjatja e vendqëndrimit me qëllim.",
+              "source": "El-Hidaje, Merginanij"
+            },
+            "maliki": {
+              "ruling": "Itikafi minimal është natë e ditë. Agjërimi nuk është kusht, por është sunnet gjatë tij.",
+              "source": "El-Mudavvene"
+            },
+            "shafii": {
+              "ruling": "Itikafi minimal është çdo kohëzgjatje qoftë edhe çaste — nuk kërkohet agjërim.",
+              "source": "El-Mexhmu', Nevevij"
+            },
+            "hanbali": {
+              "ruling": "Itikafi minimal është qoftë edhe sa koha e namazit. Nuk kërkohet agjërim.",
+              "source": "El-Mugni, Ibn Kudame"
+            }
+          }
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Sa ditë bënte Profeti ﷺ itikafen zakonisht?",
+          "options": [
+            "3 ditë",
+            "5 ditë",
+            "10 ditë",
+            "30 ditë"
+          ],
+          "correct_index": 2,
+          "explanation": "Profeti ﷺ bënte itikafen dhjetë ditë çdo Ramazan — vitin e fundit bëri njëzet ditë."
+        },
+        {
+          "question": "Çfarë lejohet gjatë itikafit?",
+          "options": [
+            "Dalja nga xhamia për punë",
+            "Dalja për nevoja fiziologjike",
+            "Marrëdhëniet intime",
+            "Fjetja jashtë xhamisë"
+          ],
+          "correct_index": 1,
+          "explanation": "Lejohet dalja nga xhamia vetëm për nevoja fiziologjike, larje xhunabi ose ushqim nëse nuk ka kush ta sjellë."
+        },
+        {
+          "question": "Sipas cilit medh'heb agjërimi është kusht i itikafit?",
+          "options": [
+            "Malekitë",
+            "Shafi'itë",
+            "Hanefitë",
+            "Hanbelitë"
+          ],
+          "correct_index": 2,
+          "explanation": "Vetëm Hanefitë e konsiderojnë agjërimin kusht të itikafit. Shumica e medhhebeve nuk e kërkojnë."
+        },
+        {
+          "question": "Kur e bën Profeti ﷺ itikafen zakonisht?",
+          "options": [
+            "Dhjetë ditët e para të Ramazanit",
+            "Dhjetë ditët e mesme",
+            "Dhjetë ditët e fundit të Ramazanit",
+            "Muajin Muharrem"
+          ],
+          "correct_index": 2,
+          "explanation": "Profeti ﷺ bënte itikafen në dhjetë ditët e fundit të Ramazanit për të kërkuar Natën e Kadrit."
+        }
+      ]
     }
   ]
 }

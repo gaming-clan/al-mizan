@@ -271,6 +271,120 @@
           "explanation": "Nisabi i deveve fillon nga 5 krerë — për 5-9 deve jepet 1 dele."
         }
       ]
+    },
+    {
+      "id": "zkt_004",
+      "title_sq": "Zekat Fitri — Sadakatul Fitr",
+      "title_ar": "زكاة الفطر",
+      "level": "beginner",
+      "source_references": [
+        "Dr. Vehbe ez-Zuhajli, Ligjet e Sheriatit Islamik",
+        "FIKHU PRAKTIK, faqe 83-279",
+        "Sahih Buhari & Muslimi"
+      ],
+      "sections": [
+        {
+          "heading": "Çka është Zekat Fitri dhe obligimi i tij",
+          "content_sq": "Zekat Fitri (Sadakatul Fitr) është zekat i detyrueshëm (vaxhib sipas shumicës, farz sipas disa) që jepet para namazit të Bajramit. Obligohet për çdo musliman të lirë — për veten dhe për ata që ka nën kujdestari (femijë, grua, shërbëtor). Qëllimi i Zekat Fitrit: pastrimi i agjërueses nga gabimet dhe lapsuset gjatë Ramazanit, dhe ushqimi i të varfërve në ditën e Bajramit. Profeti ﷺ e ka bërë Zekat Fitrin obligim para se të institutionalizonte zekatun e pasurisë.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "فَرَضَ رَسُولُ اللَّهِ ﷺ زَكَاةَ الْفِطْرِ طُهْرَةً لِلصَّائِمِ مِنَ اللَّغْوِ وَالرَّفَثِ وَطُعْمَةً لِلْمَسَاكِينِ",
+              "translation_sq": "I Dërguari i Allahut ﷺ e bëri Zekat Fitrin obligim — pastrim për agjëruesen nga lapsuset dhe fjalët e pahijshme, dhe ushqim për të varfërit.",
+              "narrator": "Ibën Abbas (r.a.)",
+              "collection": "Ebu Davud & Ibn Maxhe",
+              "classification": "hasen"
+            },
+            {
+              "type": "hadith",
+              "arabic": "أَدُّوهَا قَبْلَ خُرُوجِ النَّاسِ إِلَى الصَّلَاةِ",
+              "translation_sq": "Jepeni atë para se njerëzit të dalin për namaz (Bajramin).",
+              "narrator": "Ibën Omer (r.a.)",
+              "collection": "Buhariu",
+              "hadith_number": 1503,
+              "classification": "sahih"
+            }
+          ]
+        },
+        {
+          "heading": "Sasia dhe Koha e dhënies",
+          "content_sq": "Sasia e Zekat Fitrit: një sa'a (matëse e kohës) nga ushqimi kryesor i vendit — grurë, elb, hurme, rrush të thatë, djathë (sipas hadithit të Ibën Omerit). Sasia equiv. moderne: rreth 2.5 - 3 kg ushqim. Shumica e dijetarëve sot lejojnë dhënien e vlerës monetare. Kohët e dhënies: E lejueshme: 1-2 ditë para Bajramit. Koha e preferuar: mëngjesin e Bajramit para namazit. E papëlqyeshme: pas namazit të Bajramit — bëhet sadaka e zakonshme, jo Zekat Fitër. Zekat Fitri i jepet vetëm të 8 kategorive që marrin zekat.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "كَانَ ابْنُ عُمَرَ يُعْطِيهَا الَّذِينَ يَقْبَلُونَهَا وَكَانُوا يُعْطُونَ قَبْلَ الْفِطْرِ بِيَوْمٍ أَوْ يَوْمَيْنِ",
+              "translation_sq": "Ibn Omeri jepte Zekat Fitrin te ata që e merrnin, dhe ata jepnin një ose dy ditë para Bajramit.",
+              "narrator": "Nafi'",
+              "collection": "Buhariu",
+              "classification": "sahih"
+            }
+          ],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Lejohet dhënia e vlerës monetare (para) në vend të ushqimit — çmimi llogaritet sipas çmimit të tregut.",
+              "source": "El-Hidaje, Merginanij"
+            },
+            "maliki": {
+              "ruling": "Duhet dhënë ushqim, jo para. Ushqimi i vendit llogaritet.",
+              "source": "El-Mudavvene"
+            },
+            "shafii": {
+              "ruling": "Duhet dhënë ushqim, jo para, sipas ushqimit bazë të vendit.",
+              "source": "El-Mexhmu', Nevevij"
+            },
+            "hanbali": {
+              "ruling": "Duhet dhënë ushqim nga ato të përmendura në hadith. Gruri: gjysmë sa'a; të tjerat: sa'a e plotë.",
+              "source": "El-Mugni, Ibn Kudame"
+            }
+          }
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Cili është qëllimi kryesor i Zekat Fitrit?",
+          "options": [
+            "Ndërtimi i xhamive",
+            "Pastrimi i agjërueses dhe ushqimi i të varfërve",
+            "Financimi i shkollës",
+            "Ndihma ushtarake"
+          ],
+          "correct_index": 1,
+          "explanation": "Zekat Fitri pastron agjëruesen nga lapsuset e Ramazanit dhe ushqen të varfërit ditën e Bajramit."
+        },
+        {
+          "question": "Kur jepet Zekat Fitri?",
+          "options": [
+            "Në fund të Ramazanit",
+            "Pas namazit të Bajramit",
+            "Para namazit të Bajramit",
+            "Çdo natë të Ramazanit"
+          ],
+          "correct_index": 2,
+          "explanation": "Koha e preferuar është para namazit të Bajramit — pas namazit bëhet sadaka e thjeshtë, jo Zekat Fitri."
+        },
+        {
+          "question": "Sipas cilit medh'heb lejohet dhënia e parasë në vend të ushqimit?",
+          "options": [
+            "Malekitë",
+            "Shafi'itë",
+            "Hanbelitë",
+            "Hanefitë"
+          ],
+          "correct_index": 3,
+          "explanation": "Vetëm Hanefitë e lejojnë dhënien e vlerës monetare. Shumica kërkon ushqim fizik."
+        },
+        {
+          "question": "Sa ditë para Bajramit lejohet dhënia e Zekat Fitrit?",
+          "options": [
+            "1 javë",
+            "3 ditë",
+            "1-2 ditë",
+            "10 ditë"
+          ],
+          "correct_index": 2,
+          "explanation": "Lejohet dhënia 1-2 ditë para Bajramit — Ibn Omeri dhe shokët e Profetit ﷺ e bënin kështu."
+        }
+      ]
     }
   ]
 }

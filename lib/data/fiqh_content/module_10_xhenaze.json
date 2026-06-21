@@ -263,6 +263,110 @@
           "explanation": "Vizita e varrezave është sunnet sepse kujton vdekjen dhe ahiretin."
         }
       ]
+    },
+    {
+      "id": "xhn_004",
+      "title_sq": "Ta'zija — Ngushëllimi dhe Vajtimi Islam",
+      "title_ar": "التعزية والعزاء",
+      "level": "intermediate",
+      "source_references": [
+        "FIKHU PRAKTIK, faqe 83-279",
+        "Dr. Vehbe ez-Zuhajli, Ligjet e Sheriatit Islamik",
+        "Es-Sejid Sabik, Fikhu es-Sunne"
+      ],
+      "sections": [
+        {
+          "heading": "Ta'zija — Ngushëllimi i Familjes së të Ndjerit",
+          "content_sq": "Ta'zija (التعزية) është vizita dhe ngushëllimi i familjes së të ndjerit, duke i dhënë forcë dhe durim në sprovën e humbjes. Ta'zija është sunnet i konfirmuar dhe shembull profetik. Formula e ngushëllimit: 'Innali-llahi ue inna ilejhi raxhiun, Allahu e mëshiroftë të ndjerit, ju shtoftë shpërblimin dhe ju falë tё ndjerin.' Koha e ta'zisë: nga dita e vdekjes deri në tre ditë — pas tre ditësh nuk rekomandohet, veçse nëse personi kishte munguar. Shërbimi i ushqimit familjes: banorët e lagjes duhet t'i pregatisin ushqim familjes së të ndjerit, jo anasjelltas.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "عَنِ النَّبِيِّ ﷺ أَنَّهُ قَالَ لِابْنَتِهِ اصْبِرِي وَاحْتَسِبِي فَإِنَّ لِلَّهِ مَا أَخَذَ وَلَهُ مَا أَعْطَى",
+              "translation_sq": "Profeti ﷺ i tha të bijës: Bëji durim dhe prit shpërblim nga Allahu, sepse Allahut i takon çfarë mori dhe Atij i takon çfarë dha.",
+              "narrator": "Usame ibën Zejd (r.a.)",
+              "collection": "Buhariu & Muslimi",
+              "classification": "sahih"
+            },
+            {
+              "type": "hadith",
+              "arabic": "اصْنَعُوا لِآلِ جَعْفَرٍ طَعَامًا فَإِنَّهُ قَدْ جَاءَهُمْ مَا يَشْغَلُهُمْ",
+              "translation_sq": "Pregaditini ushqim familjes së Xha'ferit, sepse atyre ka ardhur diçka që i zë të zënë.",
+              "narrator": "Abdullah ibën Xha'fer (r.a.)",
+              "collection": "Ebu Davud & Tirmidhij",
+              "classification": "hasen"
+            }
+          ]
+        },
+        {
+          "heading": "Vajtimi i Lejuar dhe i Ndaluar",
+          "content_sq": "Islami dallon qartë midis vajtimit të lejuar dhe të ndaluar: E LEJUAR: Lotët nga mëshira dhe dhembshuria — Profeti ﷺ qau kur vdiq djali i tij Ibrahim. Trishtimi i zemrës. Thënia e 'Inna lillahi ue inna ilejhi raxhiun'. E NDALUAR: Ulurima, gërvishja e fytyrës, shqyerja e rrobave — vepra të xhahiljetit (periudhës para Islamit). Qarja me zë të lartë me qëllim shfaqjeje (nijah). Vajtimi i paguar (nijah). Profeti ﷺ ka thënë: 'Ai që qan me zë mbi të vdekur — kur të vdesë do të ndëshkohet me atë.' Durim me shpresë shpërblimi (ihtisab) është cilësia e besimtarit.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "إِنَّ الْعَيْنَ تَدْمَعُ وَالْقَلْبَ يَحْزَنُ وَلَا نَقُولُ إِلَّا مَا يُرْضِي رَبَّنَا وَاللَّهِ يَا إِبْرَاهِيمُ إِنَّا بِكَ لَمَحْزُونُونَ",
+              "translation_sq": "Syri qan dhe zemra trishtërohet, por nuk themi veçse çfarë kënaq Zotin tonë. Pasha Allahun, o Ibrahim, ne jemi të trishtuar për ty.",
+              "narrator": "Enes ibën Malik (r.a.) — fjalët e Profetit ﷺ",
+              "collection": "Buhariu",
+              "hadith_number": 1303,
+              "classification": "sahih"
+            },
+            {
+              "type": "quran",
+              "arabic": "الَّذِينَ إِذَا أَصَابَتْهُم مُّصِيبَةٌ قَالُوا إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ",
+              "translation_sq": "Ata të cilët, kur u godet ndonjë e keqe, thonë: 'Vërtet ne jemi të Allahut dhe vërtet te Ai do të kthehemi.'",
+              "surah": "El-Bekare",
+              "surah_number": 2,
+              "ayah": 156
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Sa ditë zgjat periudha e ta'zisë (ngushëllimit)?",
+          "options": [
+            "1 ditë",
+            "3 ditë",
+            "7 ditë",
+            "40 ditë"
+          ],
+          "correct_index": 1,
+          "explanation": "Ta'zija rekomandohet brenda tre ditëve nga vdekja — pas kësaj nuk rekomandohet, veçse nëse personi kishte munguar."
+        },
+        {
+          "question": "Çfarë duhet bërë familja e të ndjerit lidhur me ushqimin?",
+          "options": [
+            "Familja pret mysafirët me ushqim",
+            "Fqinjët dhe banorët e lagjes i pregatisin ushqim familjes",
+            "Nuk hahet asgjë tre ditë",
+            "Organizohet banketi"
+          ],
+          "correct_index": 1,
+          "explanation": "Profeti ﷺ urdhëroi fqinjët t'i pregatissë ushqim familjes së të ndjerit, jo anasjelltas."
+        },
+        {
+          "question": "Çfarë është e ndaluar kur dikush vdes?",
+          "options": [
+            "Qarja me lot",
+            "Trishtimi i zemrës",
+            "Ulurima dhe gërvishja e fytyrës",
+            "Thënia e 'Inna lillahi'"
+          ],
+          "correct_index": 2,
+          "explanation": "Ulurima, gërvishja e fytyrës dhe shqyerja e rrobave janë zakone të xhahiljetit — të ndaluara në Islam."
+        },
+        {
+          "question": "A qau Profeti ﷺ kur vdiq djali i tij Ibrahim?",
+          "options": [
+            "Jo, nuk lejohet të qash",
+            "Po, dhe tha se lotët dhe trishtimi janë të lejuara",
+            "Jo, vetëm njerëzit e zakonshëm qajnë",
+            "Po, por e konsideroi gabim"
+          ],
+          "correct_index": 1,
+          "explanation": "Profeti ﷺ qau dhe tha: 'Syri qan dhe zemra trishtërohet' — duke treguar se lotët nga mëshira janë të lejuara."
+        }
+      ]
     }
   ]
 }

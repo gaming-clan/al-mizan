@@ -466,6 +466,119 @@
           "explanation": "Harami ka ndalim kategorik me ndëshkim, ndërsa mekruhi ka ndalim jo kategorik pa ndëshkim si harami, por vazhdimësia çon në haram."
         }
       ]
+    },
+    {
+      "id": "hh_004",
+      "title_sq": "Darura — Nevoja Çliron nga Haramet",
+      "title_ar": "الضرورة تبيح المحظورات",
+      "level": "intermediate",
+      "source_references": [
+        "Dr. Jusuf Kardavi, Hallalli dhe Harami në Islam",
+        "Dr. Vehbe ez-Zuhajli, Ligjet e Sheriatit Islamik",
+        "FIKHU PRAKTIK, faqe 83-279"
+      ],
+      "sections": [
+        {
+          "heading": "Parimi i Darura-s (Nevojës) në Fikh",
+          "content_sq": "Darura (الضرورة) është nevoja e domosdoshme që e shtyn personin të bëjë diçka normalisht të ndaluar (haram). Parimi bazë: 'Nevoja bën hallall haramin' (ed-daruratu tubihul mahzurat). Ky parim bazohet direkt në Kuran: Allahu ka lejuar ngrënien e kafshëve të ngordhura kur jeta është në rrezik. Kushtet e darura-s sipas dijetarëve: 1) Rreziku duhet të jetë real dhe i pranishëm, jo imagjinar. 2) Nuk ka alternativë hallall. 3) Merret vetëm aq sa nevojitet — jo më shumë. 4) Darura nuk krijohet me qëllim nga vetë personi. Kardavi theksoi: Islami është fe lehtësie dhe mëshire — haramin e lejon vetëm kur jeta ose shëndeti janë seriozisht në rrezik.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "فَمَنِ اضْطُرَّ غَيْرَ بَاغٍ وَلَا عَادٍ فَلَا إِثْمَ عَلَيْهِ إِنَّ اللَّهَ غَفُورٌ رَحِيمٌ",
+              "translation_sq": "Por kush detyrohet nga nevoja e domosdoshme, pa dashur mëkat dhe pa tejkaluar kufirin — nuk ka mëkat mbi të. Allahu është Falës, Mëshirëplotë.",
+              "surah": "El-Bekare",
+              "surah_number": 2,
+              "ayah": 173
+            },
+            {
+              "type": "quran",
+              "arabic": "وَقَدْ فَصَّلَ لَكُم مَّا حَرَّمَ عَلَيْكُمْ إِلَّا مَا اضْطُرِرْتُمْ إِلَيْهِ",
+              "translation_sq": "Dhe Ai ju ka shpjeguar me hollësi çfarë ju ka ndaluar — përveç kur jeni të detyruar ndaj saj.",
+              "surah": "El-En'am",
+              "surah_number": 6,
+              "ayah": 119
+            }
+          ]
+        },
+        {
+          "heading": "Shembuj të Darura-s dhe Kufijt e saj",
+          "content_sq": "Shembuj konkretë ku darura bën hallall: 1) Ngrënia e mishit të ngordhur ose mishit të derrit kur nuk ka ushqim tjetër dhe jeta është në rrezik. 2) Konsumimi i alkoolit si ilaç kur nuk ka alternativë (shumë dijetarë janë skeptikë për këtë rast sot). 3) Zbulimi i auratit (pjesëve intime) te mjeku kur nevojitet ekzaminim. 4) Gënjeshtra e lejuar: kur dikush e kanos me vdekje që të mohojë fenë. KUFIJT e darura-s (Kardavi): Nuk është çdo vështirësi darura — dihet fjalë: 'Vështirësia lehtëson, po jo çdo gjë.' Darura është situata ku të mohosh lehtësinë do sjellë dëm serioz, jo thjesht shqetësim. Pas rregullit 'nevoja bën hallall' vjen plotësimet: 'por vetëm sa nevoja'.  ",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "إِنَّ اللَّهَ يُحِبُّ أَنْ تُؤْتَى رُخَصُهُ كَمَا يَكْرَهُ أَنْ تُؤْتَى مَعْصِيَتُهُ",
+              "translation_sq": "Allahu e do marrjen e lehtësimeve të Tij, siç e urren bërjen e gjynaheve ndaj Tij.",
+              "narrator": "Ibën Omer (r.a.)",
+              "collection": "Ahmed & Ibën Hibban",
+              "classification": "sahih"
+            }
+          ],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Darura lejon ngrënien e harames deri sa zhduk rrezikun — por jo me tepricë. Ilaçi me alkool lejohet vetëm nëse mjeku konfirmon mungesën e alternativës.",
+              "source": "El-Hidaje, Merginanij"
+            },
+            "maliki": {
+              "ruling": "Darura interpretohet ngushtë — vetëm rreziku i jetës lejon ngrënien e kafshëve të ngordhura.",
+              "source": "El-Mudavvene"
+            },
+            "shafii": {
+              "ruling": "Darura lejon haramet vetëm në sasinë minimale të nevojshme. Nuk mund të hajë deri sa ngopet.",
+              "source": "El-Umm, Imam Shafi'i"
+            },
+            "hanbali": {
+              "ruling": "Darura lejon haramet kur nuk ka alternativë hallall. Gënjeshtra lejohet për të shpëtuar jetën e një besimtari.",
+              "source": "El-Mugni, Ibn Kudame"
+            }
+          }
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Çfarë do të thotë parimi 'darura' në fikh?",
+          "options": [
+            "Gjithçka që është e vështirë bëhet hallall",
+            "Nevoja e domosdoshme e vërtetë mund të lejojë haramet",
+            "Çdo lehtësim fetar quhet darura",
+            "Harami nuk ndryshon kurrë"
+          ],
+          "correct_index": 1,
+          "explanation": "Darura është nevoja e vërtetë e domosdoshme (jo çdo vështirësi) që lejon haramet — me kushtin e minimumit të nevojshëm."
+        },
+        {
+          "question": "Cili ajet lejon ngrënien e ushqimit haram nga nevoja?",
+          "options": [
+            "El-Maide 5:3",
+            "El-Bekare 2:173",
+            "En-Nahl 16:115",
+            "El-An'am 6:145"
+          ],
+          "correct_index": 1,
+          "explanation": "El-Bekare 2:173: 'Kush detyrohet nga nevoja... nuk ka mëkat mbi të. Allahu është Falës, Mëshirëplotë.'"
+        },
+        {
+          "question": "Sa mund të merret nga e ndaluara kur ka darura?",
+          "options": [
+            "Sa të duash",
+            "Vetëm minimumi i domosdoshëm",
+            "Gjysma e sasisë normale",
+            "Asgjë nuk lejohet kurrsesi"
+          ],
+          "correct_index": 1,
+          "explanation": "Parimi tjetër plotësues: 'Darura vlerësohet sipas sasisë së saj' — merret vetëm minimumi që zhduk nevojën."
+        },
+        {
+          "question": "A bëhet çdo vështirësi darura?",
+          "options": [
+            "Po, çdo vështirësi e lehtëson haramin",
+            "Jo — darura kërkon rrezik real dhe serioz, jo thjesht shqetësim",
+            "Po, nëse personi e dëshiron",
+            "Vetëm gjatë Ramazanit"
+          ],
+          "correct_index": 1,
+          "explanation": "Dijetarët theksojnë: 'Vështirësia lehtëson, por jo çdo gjë' — darura kërkon rrezik real, jo shqetësim të zakonshëm."
+        }
+      ]
     }
   ]
 }

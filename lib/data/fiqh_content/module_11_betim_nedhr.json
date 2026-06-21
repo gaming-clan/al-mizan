@@ -195,6 +195,231 @@
           "explanation": "Nedhri i kushtëzuar plotësohet kur realizohet kushti i vendosur."
         }
       ]
+    },
+    {
+      "id": "betim_3",
+      "title_sq": "Betimi me Formula dhe Kushtet e Vlefshmërisë",
+      "title_ar": "صيغة اليمين وشروط انعقادها",
+      "level": "beginner",
+      "source_references": [
+        "Dr. Vehbe ez-Zuhajli, Ligjet e Sheriatit Islamik",
+        "FIKHU PRAKTIK, faqe 83-279"
+      ],
+      "sections": [
+        {
+          "heading": "Formulat e Betimit",
+          "content_sq": "Betimi i vlefshëm bëhet me emrat dhe cilësitë e Allahut. Formulat më të zakonshme: 'Vallahi' (Pasha Allahun), 'Billahi' (Në Allahun), 'Tallahi' (Betohem në Allahun). Betimi me cilësitë e Allahut si 'Pasha madhërinë e Allahut', 'Pasha fuqinë e Allahut' është gjithashtu i vlefshëm. Ndërkaq, betimi me krijesat si 'Pasha jetën time', 'Pasha Profetëve' ose 'Pasha Kaben' nuk formëson betimin e ligjshëm. Dallimi midis formulave është i rëndësishëm sepse vetëm betimi i ligjshëm e obligon kefaratin.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "إِنَّ اللَّهَ يَنْهَاكُمْ أَنْ تَحْلِفُوا بِآبَائِكُمْ",
+              "translation_sq": "Vërtet Allahu ju ndalon të betoheni me emrat e etërve tuaj.",
+              "narrator": "Ibën Omer (r.a.)",
+              "collection": "Buhariu & Muslimi",
+              "classification": "sahih"
+            },
+            {
+              "type": "hadith",
+              "arabic": "مَن كَانَ حَالِفاً فَلْيَحْلِفْ بِاللَّهِ أَوْ لِيَصْمُتْ",
+              "translation_sq": "Kush do të betohet, le të betohet në Allahun, ose le të heshtë.",
+              "narrator": "Ibën Omer (r.a.)",
+              "collection": "Buhariu & Muslimi",
+              "classification": "sahih"
+            }
+          ]
+        },
+        {
+          "heading": "Kushtet e Vlefshmërisë së Betimit",
+          "content_sq": "Për të qenë betimi i vlefshëm (mun'akide — i lidhur), duhen plotësuar këto kushte: 1) Personi të jetë musliman, i rritur dhe me mendje të shëndoshë. 2) Betimi të bëhet me vullnet të lirë, jo me detyrim. 3) Betimi të jetë me emrin ose cilësinë e Allahut. 4) Betimi të jetë për diçka të mundshme, jo të pamundshme absolutisht. 5) Qëllimi i qartë — betimi i bërë nga zakoni i gjuhës (lagv) pa qëllim nuk obligon kefaret. Hanefitë shtojnë: betimi duhet të jetë lidhur me të ardhmen, jo me të kaluarën e vërtetë.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "لَا يُؤَاخِذُكُمُ اللَّهُ بِاللَّغْوِ فِي أَيْمَانِكُمْ",
+              "translation_sq": "Allahu nuk ju dënon për betimin e pavullnetshëm (lagv) në betimet tuaja.",
+              "surah": "El-Maide",
+              "surah_number": 5,
+              "ayah": 89
+            }
+          ],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Betimi me 'Pasha Kuranin' nuk është betim i vlefshëm, sepse Kurani është krijesë sipas tyre (Hanefijve modernë e kundërshtojnë këtë qëndrim).",
+              "source": "El-Hidaje, Merginanij"
+            },
+            "maliki": {
+              "ruling": "Betimi me cilësitë e Allahut si 'Pasha diturinë e Allahut' është betim i plotë.",
+              "source": "El-Mudavvene"
+            },
+            "shafii": {
+              "ruling": "Betimi me 'Pasha Kuranin' është i vlefshëm sepse Kurani është fjala e pakrijuar e Allahut.",
+              "source": "El-Mexhmu', Nevevij"
+            },
+            "hanbali": {
+              "ruling": "Betimi me emrat dhe cilësitë e Allahut është i vlefshëm. Betimi me 'Pasha Profetëve' nuk e obligon kefaratin.",
+              "source": "El-Mugni, Ibn Kudame"
+            }
+          }
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Cilat formulë e bëjnë betimin ligjërisht të vlefshëm?",
+          "options": [
+            "Pasha Profeti ﷺ",
+            "Vallahi, Billahi, Tallahi",
+            "Pasha Kaben",
+            "Pasha shpirtin tim"
+          ],
+          "correct_index": 1,
+          "explanation": "Vetëm Vallahi, Billahi, Tallahi (dhe formulat me emrat e Allahut) formësojnë betimin e vlefshëm ligjërisht."
+        },
+        {
+          "question": "Çfarë është betimi 'lagv'?",
+          "options": [
+            "Betimi i qëllimshëm për të ardhmen",
+            "Betimi i rremë",
+            "Betimi i pavullnetshëm nga zakoni i gjuhës",
+            "Betimi në gjyq"
+          ],
+          "correct_index": 2,
+          "explanation": "Lagv është betimi i pavullnetshëm, si 'Vallahi' që thuhet nga zakoni pa qëllim — nuk obligon kefaret."
+        },
+        {
+          "question": "A është betimi nën detyrim i vlefshëm?",
+          "options": [
+            "Po, gjithmonë",
+            "Jo, betimi nën detyrim nuk obligon kefaret",
+            "Vetëm nëse bëhet me gojë",
+            "Vetëm nëse është për të ardhmen"
+          ],
+          "correct_index": 1,
+          "explanation": "Vullneti i lirë është kusht i vlefshmërisë — betimi nën detyrim nuk obligon kefaret sipas shumicës."
+        },
+        {
+          "question": "Sipas cilit medh'heb betimi me 'Pasha Kuranin' është i vlefshëm?",
+          "options": [
+            "Hanefitë",
+            "Malekitë",
+            "Shafi'itë dhe Hanbelitë",
+            "Askush"
+          ],
+          "correct_index": 2,
+          "explanation": "Shafi'itë dhe Hanbelitë e pranojnë betimin me 'Pasha Kuranin' sepse Kurani është fjala e pakrijuar e Allahut."
+        }
+      ]
+    },
+    {
+      "id": "betim_4",
+      "title_sq": "Betimi i Ilasë dhe Betimi Xhihad",
+      "title_ar": "الإيلاء والحلف على الجهاد",
+      "level": "advanced",
+      "source_references": [
+        "Dr. Vehbe ez-Zuhajli, Ligjet e Sheriatit Islamik, vëll. II",
+        "FIKHU PRAKTIK, faqe 83-279",
+        "Es-Sejid Sabik, Fikhu es-Sunne"
+      ],
+      "sections": [
+        {
+          "heading": "Il-a' — Betimi i Largimit nga Gruaja",
+          "content_sq": "Il-a' (الإيلاء) është betimi i burrit se nuk do t'i afrohet gruas për katër muaj ose më shumë. Ky betim ka pasoja juridike specifike: Allahu i ka dhënë burrit afat prej katër muajsh për t'u kthyer. Nëse kthehet — jep kefaretin e betimit. Nëse nuk kthehet pas katër muajve — gruaja ka të drejtë të kërkojë divorc. Ky rregull i mori fund traditës paraislame ku burri largohej nga gruaja pafundësisht pa e lëshuar dhe pa e mbajtur. Il-a' konsiderohet betim i vlefshëm me pasoja fikhore të veçanta.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "لِلَّذِينَ يُؤْلُونَ مِنْ نِسَائِهِمْ تَرَبُّصُ أَرْبَعَةِ أَشْهُرٍ فَإِنْ فَاءُوا فَإِنَّ اللَّهَ غَفُورٌ رَحِيمٌ",
+              "translation_sq": "Ata që ilin (betohen të largohen) nga gratë e tyre, kanë afat prej katër muajsh. Nëse kthehen — Allahu është Falës, Mëshirëplotë.",
+              "surah": "El-Bekare",
+              "surah_number": 2,
+              "ayah": 226
+            },
+            {
+              "type": "quran",
+              "arabic": "وَإِنْ عَزَمُوا الطَّلَاقَ فَإِنَّ اللَّهَ سَمِيعٌ عَلِيمٌ",
+              "translation_sq": "Nëse vendosin për divorc — Allahu dëgjon dhe di.",
+              "surah": "El-Bekare",
+              "surah_number": 2,
+              "ayah": 227
+            }
+          ],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Pas katër muajsh divorci ndodh automatikisht (talak bain) pa nevojën e vendimit gjyqësor.",
+              "source": "El-Hidaje, Merginanij"
+            },
+            "maliki": {
+              "ruling": "Pas katër muajsh gjykata vendos — ose burri kthehet ose divorcohet.",
+              "source": "El-Mudavvene"
+            },
+            "shafii": {
+              "ruling": "Il-a' nuk shkakton divorc automatik — nevojitet zgjedhja e burrit ose vendimi i gjykatës.",
+              "source": "El-Umm, Imam Shafi'i"
+            },
+            "hanbali": {
+              "ruling": "Gjykata i jep burrit zgjedhjen: kthim ose divorc. Nëse refuzon — gjykata divorcim.",
+              "source": "El-Mugni, Ibn Kudame"
+            }
+          }
+        },
+        {
+          "heading": "Betimi mbi vepra të ardhshme — Kufiri i Lejueshmërisë",
+          "content_sq": "Islami lejon betimin mbi vepra të ardhshme, por vendos kufij: Nuk lejohet betimi për të bërë diçka haram ('Vallahi nuk do të fal më'). Nuk lejohet betimi për të lënë diçka vaxhib. Nëse realizohet se thyerja e betimit është më e mirë (si rikthimi te namazi), Profeti ﷺ urdhëroi: 'Bëje atë që është më e mirë dhe jep kefaret.' Dijetarët theksojnë se njeriu nuk duhet të betohet për gjëra që mund të ndryshojnë, veçanërisht lidhur me ibadetin.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "إِنِّي وَاللهِ إِنْ شَاءَ اللهُ لَا أَحْلِفُ عَلَى يَمِينٍ فَأَرَى غَيْرَهَا خَيْرًا مِنْهَا إِلَّا كَفَّرْتُ عَنْ يَمِيني وَأَتَيْتُ الَّذِي هُوَ خَيْرٌ",
+              "translation_sq": "Nuk betohem mbi asnjë betim dhe pastaj shoh se tjetri është më i mirë, pa dhënë kefaret dhe pa bërë atë që është më e mirë.",
+              "narrator": "Ebu Hurejre (r.a.)",
+              "collection": "Buhariu & Muslimi",
+              "classification": "sahih"
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Sa muaj është afati i il-a' sipas Kuranit?",
+          "options": [
+            "Dy muaj",
+            "Tre muaj",
+            "Katër muaj",
+            "Gjashtë muaj"
+          ],
+          "correct_index": 2,
+          "explanation": "Allahu i ka dhënë burrit afat katër muajsh për t'u kthyer pas il-a'-it (El-Bekare 2:226)."
+        },
+        {
+          "question": "Sipas cilit medh'heb divorci pas il-a'-it ndodh automatikisht?",
+          "options": [
+            "Malekitë",
+            "Hanefitë",
+            "Shafi'itë",
+            "Hanbelitë"
+          ],
+          "correct_index": 1,
+          "explanation": "Sipas Hanefijve, pas katër muajsh divorci ndodh automatikisht si talak bain pa nevojë gjykate."
+        },
+        {
+          "question": "Çfarë duhet bërë nëse thyerja e betimit është më e mirë?",
+          "options": [
+            "Mbahet betimi gjithmonë",
+            "Jepet kefaret dhe bëhet ajo që është më e mirë",
+            "Nuk mund të thyhet betimi kurrë",
+            "Bëhet vetëm pendimi"
+          ],
+          "correct_index": 1,
+          "explanation": "Profeti ﷺ urdhëroi: 'Bëje atë që është më e mirë dhe jep kefaret' — kefaret e lëshon nga betimi."
+        },
+        {
+          "question": "A lejohet betimi për të lënë namazin?",
+          "options": [
+            "Po, nëse është betim i sinqertë",
+            "Jo, betimi mbi lënien e vaxhibit nuk plotësohet",
+            "Po, vetëm nëse bëhet kefaret",
+            "Vetëm nëse bëhet me qëllim"
+          ],
+          "correct_index": 1,
+          "explanation": "Betimi për të lënë diçka vaxhib (si namazi) nuk plotësohet — jepet kefaret dhe plotësohet vaxhibi."
+        }
+      ]
     }
   ]
 }

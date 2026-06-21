@@ -266,6 +266,110 @@
           "explanation": "Kali është hallall sipas shumicës, mekruh sipas Hanefive."
         }
       ]
+    },
+    {
+      "id": "ush_004",
+      "title_sq": "Adabot e Ngrënies dhe Pirjes",
+      "title_ar": "آداب الأكل والشرب",
+      "level": "beginner",
+      "source_references": [
+        "Dr. Abdul-Azeem Badawi, Concise Presentation of the Fiqh of the Sunnah",
+        "FIKHU PRAKTIK, faqe 83-279",
+        "Rijadul Salihin, Imam Nevevij"
+      ],
+      "sections": [
+        {
+          "heading": "Adabot e Ngrënies sipas Sunnetit",
+          "content_sq": "Islami ka vendosur adabe (etiketa) të hollësishme për ngrënien: 1) Fillimi me 'Bismil-lah' — nëse harron të thotë në fillim, thotë 'Bismil-lahi fi evvelihi ue ahirih'. 2) Ngrënia me dorën e djathtë — Profeti ﷺ ndaloi ngrënien me dorën e majtë. 3) Ngrënia nga ana e enës që është para teje (jo nga mesi). 4) Mosrefuzimi i ngrënies hallall edhe nëse nuk e dëshiron (duke e falënderuar). 5) Mbajtja e enëve të mbyllura gjatë natës. 6) Larja e duarve para dhe pas ngrënies. 7) Falënderimi i Allahut pas ngrënies: 'Elhamdul-lahi ladhi at'amena ue sekana ue xhalana min el-muslimin' (Falënderimi i Allahut që na ushqeu, na dha të pijmë dhe na bëri muslimanë).",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "يَا غُلَامُ سَمِّ اللَّهَ وَكُلْ بِيَمِينِكَ وَكُلْ مِمَّا يَلِيكَ",
+              "translation_sq": "O djalë, thuaj Bismil-lah, ha me dorën e djathtë dhe ha nga ana që është para teje.",
+              "narrator": "Omer ibën Ebi Seleme (r.a.)",
+              "collection": "Buhariu & Muslimi",
+              "classification": "sahih"
+            },
+            {
+              "type": "hadith",
+              "arabic": "إِذَا أَكَلَ أَحَدُكُمْ فَلْيَأْكُلْ بِيَمِينِهِ وَإِذَا شَرِبَ فَلْيَشْرَبْ بِيَمِينِهِ فَإِنَّ الشَّيْطَانَ يَأْكُلُ بِشِمَالِهِ وَيَشْرَبُ بِشِمَالِهِ",
+              "translation_sq": "Kur dikush nga ju ha, le të hajë me dorën e djathtë, dhe kur pi, le të pijë me dorën e djathtë, sepse djalli ha me të majtën dhe pi me të majtën.",
+              "narrator": "Ibën Omer (r.a.)",
+              "collection": "Muslimi",
+              "hadith_number": 2020,
+              "classification": "sahih"
+            }
+          ]
+        },
+        {
+          "heading": "Adabot e Pirjes dhe Gjërat e Ndaluara",
+          "content_sq": "Adabot e pirjes sipas sunnetit: 1) Pirja e ujit i ulur — hadithi ndalon pirjen në këmbë (sipas disa dijetarëve kjo është tenzihij/e papëlqyeshme). 2) Pirja në tre frymë — jo e gjitha me një frymë. 3) Mosfryrja në enë dhe mosthithja e frymës brenda enës. 4) Shikimi në enë para pirjes — për të mos pirë diçka të dëmshme. 5) Ndalimi i pirjes me grykën e ibrikut (enës) direkt — mund të ketë insekte. Gjëra të ndaluara: Pirja me dorën e majtë. Ngrënia e tepërt dhe ngazëllimi (israf). Profeti ﷺ ka thënë: 'Nuk ka enë më të keqe që fëmija i Ademit e mbush shumë se barku. I mjaftojnë pak kafshatash që t'i mbajë kurrizin drejt.'",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "مَا مَلَأَ آدَمِيٌّ وِعَاءً شَرًّا مِنْ بَطْنٍ بِحَسْبِ ابْنِ آدَمَ أُكُلَاتٌ يُقِمْنَ صُلْبَهُ",
+              "translation_sq": "Nuk ka enë më të keqe që fëmija i Ademit e mbush shumë se barku. I mjaftojnë disa kafshatash të cilat ia mbajnë kurrizin drejt.",
+              "narrator": "Mikdam ibën Ma'dikjerib (r.a.)",
+              "collection": "Tirmidhij & Ibn Maxhe",
+              "classification": "sahih"
+            },
+            {
+              "type": "hadith",
+              "arabic": "لَا يَتَنَفَّسْ فِي الْإِنَاءِ",
+              "translation_sq": "Mos nxirrni frymën brenda enës (kur pini).",
+              "narrator": "Ebu Katade (r.a.)",
+              "collection": "Buhariu & Muslimi",
+              "classification": "sahih"
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Çfarë thuhet nëse harron të thotë Bismil-lah para ngrënies?",
+          "options": [
+            "Agjëron të nesërmen si kompensim",
+            "'Bismil-lahi fi evvelihi ue ahirih' kur e kujton",
+            "Ngrënia e asaj vakt nuk është hallall",
+            "Kurrgjë — nuk ka rëndësi"
+          ],
+          "correct_index": 1,
+          "explanation": "Profeti ﷺ mësoi: nëse harron Bismil-lahun, thuaj 'Bismil-lahi fi evvelihi ue ahirih' (në emrin e Allahut në fillim dhe fund të saj)."
+        },
+        {
+          "question": "Me cilën dorë duhet ngrënë sipas sunnetit?",
+          "options": [
+            "Me dorën e majtë",
+            "Me dorën e djathtë",
+            "Me cilëndo dorë",
+            "Me dy duar"
+          ],
+          "correct_index": 1,
+          "explanation": "Profeti ﷺ urdhëroi: 'Ha me dorën e djathtë' — ngrënia me të majtën është ndaluar."
+        },
+        {
+          "question": "Sa frymë rekomandohen gjatë pirjes sipas sunnetit?",
+          "options": [
+            "Një frymë e gjatë",
+            "Dy frymë",
+            "Tre frymë",
+            "Sa të duash"
+          ],
+          "correct_index": 2,
+          "explanation": "Profeti ﷺ pinte në tre frymë — kjo është sunnet dhe shmang dëmin shëndetësor nga pirja e shpejtë."
+        },
+        {
+          "question": "Çfarë ndaloi Profeti ﷺ lidhur me enën gjatë pirjes?",
+          "options": [
+            "Pirjen nga ena e ftohtë",
+            "Nxjerrjen e frymës brenda enës",
+            "Pirjen e ujit të ngrohtë",
+            "Pirjen me dy duar"
+          ],
+          "correct_index": 1,
+          "explanation": "Hadithi thotë: 'Mos nxirrni frymën brenda enës' — sepse kjo mund të ndotin ujin dhe nuk është e sjellshme."
+        }
+      ]
     }
   ]
 }
