@@ -8,7 +8,7 @@ class AppConstants {
   // Zakat
   static const double zakatRate = 0.025; // 2.5%
   static const double defaultGoldPricePerGram = 75.0; // USD fallback
-  static const double goldNisabGrams = 87.48; // ~7.5 tola
+  static const double goldNisabGrams = 85.0; // standard nisabi (85g ar)
   static const double silverNisabGrams = 612.36; // ~52.5 tola
 
   // Crop zakat
@@ -39,14 +39,14 @@ class AppConstants {
     'USD': 1.0,
     'EUR': 0.92,
     'GBP': 0.79,
-    'ALL': 98.0,
+    'ALL': 83.0, // 1 USD ≈ 83 ALL → 85g × $75 × 83 ≈ 530,000 ALL (nisabi)
     'TRY': 38.5,
     'SAR': 3.75,
   };
 
-  // Gold price API (free)
-  static const String goldApiUrl =
-      'https://www.goldapi.io/api/XAU/USD';
+  // Exchange rate API (free, no key)
+  static const String exchangeRateApiUrl =
+      'https://open.er-api.com/v6/latest/USD';
 
   // Madhab keys
   static const String hanafi = 'hanafi';

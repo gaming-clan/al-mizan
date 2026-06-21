@@ -187,29 +187,115 @@ class _ZakatCalculatorScreenState
   // ── Wealth tab ──
 
   Widget _wealthTab(double goldPriceUsd, String sym, ThemeData theme) {
+    final currencyCode = ref.watch(selectedCurrencyProvider);
     final rate = ref.watch(exchangeRateProvider);
+    final liveAsync = ref.watch(liveRatesProvider);
+    final isLive = liveAsync is AsyncData;
     final localGoldPrice = goldPriceUsd * rate;
+    final nisabAll = AppConstants.goldNisabGrams * localGoldPrice;
+    final cs = theme.colorScheme;
+
     return ListView(
       padding: const EdgeInsets.all(16),
       children: [
+        // Gold price info card
         Card(
           color: AppColors.accent.withValues(alpha: 0.08),
           child: Padding(
             padding: const EdgeInsets.all(12),
-            child: Row(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Icon(Icons.info_outline_rounded, color: AppColors.accent),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: Text(
-                    'Çmimi i arit: $sym${localGoldPrice.toStringAsFixed(2)}/gram',
-                    style: theme.textTheme.bodyMedium,
-                  ),
+                Row(
+                  children: [
+                    const Icon(Icons.info_outline_rounded,
+                        color: AppColors.accent),
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: Text(
+                        'Çmimi i arit: $sym${localGoldPrice.toStringAsFixed(2)}/gram',
+                        style: theme.textTheme.bodyMedium,
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 6, vertical: 2),
+                      decoration: BoxDecoration(
+                        color: isLive
+                            ? AppColors.success.withValues(alpha: 0.15)
+                            : cs.surfaceContainerHigh,
+                        borderRadius: BorderRadius.circular(6),
+                      ),
+                      child: Text(
+                        isLive ? 'Live' : 'Fallback',
+                        style: TextStyle(
+                          fontSize: 10,
+                          fontWeight: FontWeight.w600,
+                          color: isLive
+                              ? AppColors.success
+                              : cs.onSurfaceVariant,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 6),
+                Text(
+                  'Kursi: 1 USD = ${rate.toStringAsFixed(2)} $currencyCode',
+                  style: theme.textTheme.bodySmall
+                      ?.copyWith(color: cs.onSurfaceVariant),
                 ),
               ],
             ),
           ),
         ),
+        const SizedBox(height: 8),
+        // Albania-specific nisab note
+        if (currencyCode == 'ALL')
+          Card(
+            color: cs.primaryContainer.withValues(alpha: 0.3),
+            child: Padding(
+              padding: const EdgeInsets.all(12),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Icon(Icons.location_on_rounded,
+                          size: 16, color: cs.primary),
+                      const SizedBox(width: 6),
+                      Text(
+                        'NISABI NË SHQIPËRI',
+                        style: theme.textTheme.labelSmall?.copyWith(
+                          color: cs.primary,
+                          letterSpacing: 0.8,
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    'L${_fmtAll(nisabAll)} lekë të reja',
+                    style: theme.textTheme.titleMedium?.copyWith(
+                      color: cs.primary,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                  Text(
+                    '≈ ${_fmtAll(nisabAll * 10)} lekë të vjetra  •  85 gr ari',
+                    style: theme.textTheme.bodySmall
+                        ?.copyWith(color: cs.onSurfaceVariant),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    'Burimi: Hoxhë — ndryshon çdo ditë sipas çmimit të arit',
+                    style: theme.textTheme.labelSmall
+                        ?.copyWith(color: cs.onSurfaceVariant),
+                  ),
+                ],
+              ),
+            ),
+          ),
         const SizedBox(height: 16),
         _field('Ari (gram)', _goldCtrl, Icons.diamond_rounded),
         _field('Argjendi (gram)', _silverCtrl, Icons.circle_outlined),
@@ -311,6 +397,17 @@ class _ZakatCalculatorScreenState
         ],
       ],
     );
+  }
+
+  /// Formats a number as Albanian Lek with thousands separators (e.g. 530,000)
+  String _fmtAll(double v) {
+    final parts = v.toStringAsFixed(0).split('').reversed.toList();
+    final result = <String>[];
+    for (int i = 0; i < parts.length; i++) {
+      if (i > 0 && i % 3 == 0) result.add(',');
+      result.add(parts[i]);
+    }
+    return result.reversed.join();
   }
 
   Widget _field(String label, TextEditingController ctrl, IconData icon,

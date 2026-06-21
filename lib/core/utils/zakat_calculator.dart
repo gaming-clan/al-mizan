@@ -3,6 +3,22 @@ import 'package:http/http.dart' as http;
 import '../constants/app_constants.dart';
 
 class ZakatCalculator {
+  /// Fetches live exchange rates vs USD from open.er-api.com.
+  /// Falls back to constants if offline or API fails.
+  static Future<Map<String, double>> getLiveExchangeRates() async {
+    try {
+      final response = await http
+          .get(Uri.parse(AppConstants.exchangeRateApiUrl))
+          .timeout(const Duration(seconds: 5));
+      if (response.statusCode == 200) {
+        final data = jsonDecode(response.body) as Map<String, dynamic>;
+        final rates = data['rates'] as Map<String, dynamic>;
+        return rates.map((k, v) => MapEntry(k, (v as num).toDouble()));
+      }
+    } catch (_) {}
+    return Map<String, double>.from(AppConstants.fallbackExchangeRates);
+  }
+
   /// Fetches current gold price per gram in USD.
   static Future<double> getGoldPricePerGram() async {
     try {
