@@ -134,7 +134,7 @@ class _ZakatCalculatorScreenState
                   const SizedBox(width: 8),
                   Expanded(
                     child: DropdownButtonFormField<String>(
-                      value: currencyCode,
+                      initialValue: currencyCode,
                       isExpanded: true,
                       decoration: InputDecoration(
                         isDense: true,

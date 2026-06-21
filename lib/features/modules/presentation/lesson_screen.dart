@@ -44,66 +44,76 @@ class LessonScreen extends ConsumerWidget {
               ),
             ],
           ),
-          body: ListView(
-            padding: const EdgeInsets.all(16),
-            children: [
-              Text(lesson.titleAr,
-                  style: theme.textTheme.headlineMedium?.copyWith(
-                    fontFamily: 'Amiri',
-                    fontSize: 24,
-                  ),
-                  textDirection: TextDirection.rtl,
-                  textAlign: TextAlign.center),
-              const SizedBox(height: 16),
-              for (final section in lesson.sections) ...[
-                _SectionWidget(section: section),
-                const SizedBox(height: 16),
-              ],
-              if (lesson.sourceReferences.isNotEmpty) ...[
-                const Divider(height: 32),
-                Text('Referencat', style: theme.textTheme.titleMedium),
-                const SizedBox(height: 8),
-                for (final ref in lesson.sourceReferences)
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 4),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Icon(Icons.library_books_rounded,
-                            size: 14, color: AppColors.textSecondary),
-                        const SizedBox(width: 8),
-                        Expanded(
-                          child: Text(ref, style: theme.textTheme.bodySmall),
-                        ),
-                      ],
+          body: Align(
+            alignment: Alignment.topCenter,
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 840),
+              child: ListView(
+                padding: const EdgeInsets.all(16),
+                children: [
+                  Text(
+                    lesson.titleAr,
+                    style: theme.textTheme.headlineMedium?.copyWith(
+                      fontFamily: 'Amiri',
+                      fontSize: 24,
                     ),
+                    textDirection: TextDirection.rtl,
+                    textAlign: TextAlign.center,
                   ),
-              ],
-              const SizedBox(height: 24),
-              if (lesson.quiz.isNotEmpty)
-                FilledButton.icon(
-                  onPressed: () =>
-                      context.push('/quiz/$moduleId/$lessonId'),
-                  icon: const Icon(Icons.quiz_rounded),
-                  label: const Text('Fillo Kuizin'),
-                ),
-              const SizedBox(height: 16),
-              OutlinedButton.icon(
-                onPressed: () async {
-                  await db.markLessonCompleted(lessonId, moduleId);
-                  await db.recordLearningDay();
-                  if (context.mounted) {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(
-                          content: Text('Mësimi u shënua si i përfunduar!')),
-                    );
-                  }
-                },
-                icon: const Icon(Icons.check_circle_outline_rounded),
-                label: const Text('Shëno si të Përfunduar'),
+                  const SizedBox(height: 16),
+                  for (final section in lesson.sections) ...[
+                    _SectionWidget(section: section),
+                    const SizedBox(height: 16),
+                  ],
+                  if (lesson.sourceReferences.isNotEmpty) ...[
+                    const Divider(height: 32),
+                    Text('Referencat', style: theme.textTheme.titleMedium),
+                    const SizedBox(height: 8),
+                    for (final ref in lesson.sourceReferences)
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 4),
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Icon(Icons.library_books_rounded,
+                                size: 14, color: AppColors.textSecondary),
+                            const SizedBox(width: 8),
+                            Expanded(
+                              child: Text(ref,
+                                  style: theme.textTheme.bodySmall),
+                            ),
+                          ],
+                        ),
+                      ),
+                  ],
+                  const SizedBox(height: 24),
+                  if (lesson.quiz.isNotEmpty)
+                    FilledButton.icon(
+                      onPressed: () =>
+                          context.push('/quiz/$moduleId/$lessonId'),
+                      icon: const Icon(Icons.quiz_rounded),
+                      label: const Text('Fillo Kuizin'),
+                    ),
+                  const SizedBox(height: 16),
+                  OutlinedButton.icon(
+                    onPressed: () async {
+                      await db.markLessonCompleted(lessonId, moduleId);
+                      await db.recordLearningDay();
+                      if (context.mounted) {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          const SnackBar(
+                              content:
+                                  Text('Mësimi u shënua si i përfunduar!')),
+                        );
+                      }
+                    },
+                    icon: const Icon(Icons.check_circle_outline_rounded),
+                    label: const Text('Shëno si të Përfunduar'),
+                  ),
+                  const SizedBox(height: 32),
+                ],
               ),
-              const SizedBox(height: 32),
-            ],
+            ),
           ),
         );
       },

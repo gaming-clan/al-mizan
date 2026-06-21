@@ -10,22 +10,24 @@ class ModuleListScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final modulesAsync = ref.watch(modulesProvider);
+    final width = MediaQuery.sizeOf(context).width;
+    final cols = width >= 900 ? 4 : (width >= 600 ? 3 : 2);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Module')),
       body: modulesAsync.when(
         data: (modules) => GridView.builder(
           padding: const EdgeInsets.all(12),
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: cols,
             mainAxisSpacing: 8,
             crossAxisSpacing: 8,
-            childAspectRatio: 0.95,
+            childAspectRatio: cols >= 3 ? 1.0 : 0.95,
           ),
           itemCount: modules.length,
           itemBuilder: (context, index) => ModuleCard(module: modules[index]),
         ),
-        loading: () => const _ModuleListShimmer(),
+        loading: () => _ModuleListShimmer(cols: cols),
         error: (e, _) => _ModuleListError(error: e),
       ),
     );
@@ -33,7 +35,8 @@ class ModuleListScreen extends ConsumerWidget {
 }
 
 class _ModuleListShimmer extends StatelessWidget {
-  const _ModuleListShimmer();
+  final int cols;
+  const _ModuleListShimmer({this.cols = 2});
 
   @override
   Widget build(BuildContext context) {
@@ -44,11 +47,11 @@ class _ModuleListShimmer extends StatelessWidget {
       child: GridView.builder(
         padding: const EdgeInsets.all(12),
         physics: const NeverScrollableScrollPhysics(),
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: cols,
           mainAxisSpacing: 8,
           crossAxisSpacing: 8,
-          childAspectRatio: 0.95,
+          childAspectRatio: cols >= 3 ? 1.0 : 0.95,
         ),
         itemCount: 12,
         itemBuilder: (_, __) => Card(

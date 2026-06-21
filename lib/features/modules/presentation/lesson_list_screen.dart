@@ -40,7 +40,11 @@ class LessonListScreen extends ConsumerWidget {
         loading: () => AppBar(title: const Text('...')),
         error: (_, __) => AppBar(title: const Text('Gabim')),
       ),
-      body: moduleAsync.when(
+      body: Align(
+        alignment: Alignment.topCenter,
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 900),
+          child: moduleAsync.when(
         data: (module) => progressAsync.when(
           data: (progress) =>
               _LeveledList(module: module, progress: progress, moduleId: moduleId),
@@ -50,6 +54,8 @@ class LessonListScreen extends ConsumerWidget {
         ),
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (e, _) => _ErrorView(error: e),
+      ),
+        ),
       ),
     );
   }

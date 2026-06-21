@@ -17,10 +17,17 @@ class HomeScreen extends ConsumerWidget {
     final isDark = theme.brightness == Brightness.dark;
     final cs = theme.colorScheme;
 
+    final width = MediaQuery.sizeOf(context).width;
+    final gridCols = width >= 900 ? 4 : (width >= 600 ? 3 : 2);
+
     return Scaffold(
       body: SafeArea(
         bottom: false,
-        child: CustomScrollView(
+        child: Align(
+          alignment: Alignment.topCenter,
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 1200),
+            child: CustomScrollView(
           slivers: [
             // ── HEADER ──
             SliverToBoxAdapter(
@@ -170,11 +177,11 @@ class HomeScreen extends ConsumerWidget {
               data: (modules) => SliverPadding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 sliver: SliverGrid(
-                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: gridCols,
                     mainAxisSpacing: 10,
                     crossAxisSpacing: 10,
-                    childAspectRatio: 1.15,
+                    childAspectRatio: gridCols >= 3 ? 1.0 : 1.15,
                   ),
                   delegate: SliverChildBuilderDelegate(
                     (context, index) =>
@@ -238,6 +245,8 @@ class HomeScreen extends ConsumerWidget {
           ],
         ),
       ),
+    ),
+  ),
     );
   }
 }
