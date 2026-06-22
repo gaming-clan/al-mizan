@@ -40,7 +40,7 @@ final lessonProgressProvider =
     for (final lesson in module.lessons)
       lesson.id: LessonStatus(
         isRead: completedIds.contains(lesson.id),
-        quizPassed: (quizResults[lesson.id] ?? 0) >= 60.0,
+        quizPassed: lesson.quiz.isEmpty || (quizResults[lesson.id] ?? 0) >= 60.0,
       ),
   };
 });

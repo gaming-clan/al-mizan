@@ -18,6 +18,7 @@ class LessonScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final moduleAsync = ref.watch(moduleProvider(moduleId));
+    final progressAsync = ref.watch(lessonProgressProvider(moduleId));
     final db = ref.read(databaseProvider);
     final theme = Theme.of(context);
 
@@ -27,6 +28,7 @@ class LessonScreen extends ConsumerWidget {
           (l) => l.id == lessonId,
           orElse: () => module.lessons.first,
         );
+        final isAlreadyRead = progressAsync.valueOrNull?[lessonId]?.isRead ?? false;
         return Scaffold(
           appBar: AppBar(
             title: Text(lesson.titleSq),
@@ -69,7 +71,7 @@ class LessonScreen extends ConsumerWidget {
                     const Divider(height: 32),
                     Text('Referencat', style: theme.textTheme.titleMedium),
                     const SizedBox(height: 8),
-                    for (final ref in lesson.sourceReferences)
+                    for (final sourceRef in lesson.sourceReferences)
                       Padding(
                         padding: const EdgeInsets.only(bottom: 4),
                         child: Row(
@@ -79,7 +81,7 @@ class LessonScreen extends ConsumerWidget {
                                 size: 14, color: AppColors.textSecondary),
                             const SizedBox(width: 8),
                             Expanded(
-                              child: Text(ref,
+                              child: Text(sourceRef,
                                   style: theme.textTheme.bodySmall),
                             ),
                           ],
@@ -96,19 +98,25 @@ class LessonScreen extends ConsumerWidget {
                     ),
                   const SizedBox(height: 16),
                   OutlinedButton.icon(
-                    onPressed: () async {
-                      await db.markLessonCompleted(lessonId, moduleId);
-                      await db.recordLearningDay();
-                      if (context.mounted) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          const SnackBar(
-                              content:
-                                  Text('Mësimi u shënua si i përfunduar!')),
-                        );
-                      }
-                    },
-                    icon: const Icon(Icons.check_circle_outline_rounded),
-                    label: const Text('Shëno si të Përfunduar'),
+                    onPressed: isAlreadyRead
+                        ? null
+                        : () async {
+                            await db.markLessonCompleted(lessonId, moduleId);
+                            await db.recordLearningDay();
+                            ref.invalidate(lessonProgressProvider(moduleId));
+                            if (context.mounted) {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                const SnackBar(
+                                    content: Text('Mësimi u shënua si i përfunduar!')),
+                              );
+                            }
+                          },
+                    icon: Icon(isAlreadyRead
+                        ? Icons.check_circle_rounded
+                        : Icons.check_circle_outline_rounded),
+                    label: Text(isAlreadyRead
+                        ? 'I Përfunduar'
+                        : 'Shëno si të Përfunduar'),
                   ),
                   const SizedBox(height: 32),
                 ],
