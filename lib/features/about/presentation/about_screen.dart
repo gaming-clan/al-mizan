@@ -99,7 +99,10 @@ class AboutScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Rreth Nesh')),
       body: ListView(
-        padding: const EdgeInsets.symmetric(vertical: 12),
+        padding: EdgeInsets.only(
+          top: 12,
+          bottom: 12 + MediaQuery.viewPaddingOf(context).bottom,
+        ),
         children: [
           // ── App header ──
           Padding(
