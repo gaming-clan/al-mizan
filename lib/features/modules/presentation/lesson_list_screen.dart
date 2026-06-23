@@ -104,6 +104,14 @@ class _LeveledList extends StatelessWidget {
               unlocked: _isLevelUnlocked(level, progress),
               moduleId: moduleId,
             ),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(16, 8, 16, 20),
+          child: OutlinedButton.icon(
+            onPressed: () => context.push('/module-quiz/$moduleId'),
+            icon: const Icon(Icons.quiz_rounded),
+            label: const Text('Kuiz i Modulit (3 Nivele)'),
+          ),
+        ),
       ],
     );
   }

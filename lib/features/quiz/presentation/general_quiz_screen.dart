@@ -236,6 +236,30 @@ class _GeneralQuizBody extends ConsumerWidget {
                         '${quizState.correctCount} / ${questions.length} sakte',
                         style: theme.textTheme.bodyLarge,
                       ),
+                      const SizedBox(height: 12),
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 20, vertical: 10),
+                        decoration: BoxDecoration(
+                          color: AppColors.accent.withValues(alpha: 0.1),
+                          borderRadius: BorderRadius.circular(16),
+                          border: Border.all(color: AppColors.accent),
+                        ),
+                        child: Column(
+                          children: [
+                            Text(
+                              'Niveli i arritur:',
+                              style: theme.textTheme.bodySmall
+                                  ?.copyWith(color: Colors.grey),
+                            ),
+                            Text(
+                              _levelAchieved(pct),
+                              style: theme.textTheme.titleMedium
+                                  ?.copyWith(color: AppColors.accent),
+                            ),
+                          ],
+                        ),
+                      ),
                       const SizedBox(height: 8),
                       Text(
                         _resultMessage(pct),
@@ -329,6 +353,13 @@ class _GeneralQuizBody extends ConsumerWidget {
     if (pct >= 70) return 'Shumë mirë! Vazhdo të mësosh.';
     if (pct >= 50) return 'Mirë, por ka vend për përmirësim.';
     return 'Duhet të studiosh më shumë. Mos u dorëzo!';
+  }
+
+  String _levelAchieved(double pct) {
+    if (pct >= 80) return 'Avancuar';
+    if (pct >= 60) return 'Mesatar';
+    if (pct >= 40) return 'Fillestar';
+    return 'Nën Fillestar';
   }
 }
 

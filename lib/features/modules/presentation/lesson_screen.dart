@@ -5,6 +5,7 @@ import '../../../core/theme/app_colors.dart';
 import '../../../shared/widgets/quran_verse_card.dart';
 import '../../../shared/widgets/hadith_card.dart';
 import '../../../shared/widgets/madhab_comparison.dart';
+import '../../../shared/widgets/level_complete_dialog.dart';
 import '../../home/providers/home_provider.dart';
 import '../providers/module_provider.dart';
 import '../data/models/fiqh_models.dart';
@@ -104,12 +105,30 @@ class LessonScreen extends ConsumerWidget {
                             await db.markLessonCompleted(lessonId, moduleId);
                             await db.recordLearningDay();
                             ref.invalidate(lessonProgressProvider(moduleId));
-                            if (context.mounted) {
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                const SnackBar(
-                                    content: Text('Mësimi u shënua si i përfunduar!')),
-                              );
-                            }
+                            if (!context.mounted) return;
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              const SnackBar(
+                                  content: Text('Mësimi u shënua si i përfunduar!')),
+                            );
+                            try {
+                              final progress = await ref
+                                  .read(lessonProgressProvider(moduleId).future);
+                              if (!context.mounted) return;
+                              final levelLessons = module.lessons
+                                  .where((l) => l.level == lesson.level)
+                                  .toList();
+                              final allComplete = levelLessons.isNotEmpty &&
+                                  levelLessons.every(
+                                      (l) => progress[l.id]?.isComplete == true);
+                              if (allComplete) {
+                                showDialog(
+                                  context: context,
+                                  barrierDismissible: false,
+                                  builder: (_) =>
+                                      LevelCompleteDialog(level: lesson.level),
+                                );
+                              }
+                            } catch (_) {}
                           },
                     icon: Icon(isAlreadyRead
                         ? Icons.check_circle_rounded

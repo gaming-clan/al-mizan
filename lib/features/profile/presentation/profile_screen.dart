@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../home/providers/home_provider.dart';
 import '../../settings/providers/settings_provider.dart';
-import '../../../core/constants/app_constants.dart';
 
 class ProfileScreen extends ConsumerWidget {
   const ProfileScreen({super.key});
@@ -136,16 +136,7 @@ class ProfileScreen extends ConsumerWidget {
           _SettingsTile(
             icon: Icons.info_outline_rounded,
             title: 'Rreth App-it',
-            onTap: () {
-              showAboutDialog(
-                context: context,
-                applicationName: AppConstants.appName,
-                applicationVersion: '1.0.0',
-                applicationLegalese:
-                    'Aplikacion edukativ për jurisprudencën islame.\n'
-                    'Të gjitha të drejtat janë të rezervuara.',
-              );
-            },
+            onTap: () => context.push('/about'),
           ),
           const SizedBox(height: 24),
 

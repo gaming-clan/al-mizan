@@ -8,9 +8,11 @@ import '../../features/modules/presentation/lesson_screen.dart';
 import '../../features/onboarding/presentation/onboarding_screen.dart';
 import '../../features/quiz/presentation/quiz_screen.dart';
 import '../../features/quiz/presentation/general_quiz_screen.dart';
+import '../../features/quiz/presentation/module_quiz_screen.dart';
 import '../../features/search/presentation/search_screen.dart';
 import '../../features/bookmarks/presentation/bookmarks_screen.dart';
 import '../../features/settings/presentation/settings_screen.dart';
+import '../../features/about/presentation/about_screen.dart';
 import '../../features/zakat_calculator/presentation/zakat_calculator_screen.dart';
 import '../../features/ask_scholar/presentation/ask_scholar_screen.dart';
 import '../../features/profile/presentation/profile_screen.dart';
@@ -90,6 +92,14 @@ final appRouter = GoRouter(
       builder: (context, state) => const GeneralQuizScreen(),
     ),
     GoRoute(
+      path: '/module-quiz/:moduleId',
+      parentNavigatorKey: _rootNavigatorKey,
+      builder: (context, state) {
+        final moduleId = state.pathParameters['moduleId']!;
+        return ModuleQuizScreen(moduleId: moduleId);
+      },
+    ),
+    GoRoute(
       path: '/zakat',
       parentNavigatorKey: _rootNavigatorKey,
       builder: (context, state) => const ZakatCalculatorScreen(),
@@ -108,6 +118,11 @@ final appRouter = GoRouter(
       path: '/onboarding',
       parentNavigatorKey: _rootNavigatorKey,
       builder: (context, state) => const OnboardingScreen(),
+    ),
+    GoRoute(
+      path: '/about',
+      parentNavigatorKey: _rootNavigatorKey,
+      builder: (context, state) => const AboutScreen(),
     ),
   ],
 );

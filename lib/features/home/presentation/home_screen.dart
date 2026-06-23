@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../core/constants/app_constants.dart';
+import '../../../core/constants/daily_quotes.dart';
 import '../../../core/theme/app_colors.dart';
 import '../providers/home_provider.dart';
 
@@ -133,7 +134,7 @@ class HomeScreen extends ConsumerWidget {
                       ),
                       const SizedBox(height: 12),
                       Text(
-                        'Kërko diturinë nga djepi deri në varr.',
+                        DailyQuotes.forToday().text,
                         style: GoogleFonts.sourceSerif4(
                           fontSize: 20,
                           fontWeight: FontWeight.w600,
@@ -145,7 +146,7 @@ class HomeScreen extends ConsumerWidget {
                       ),
                       const SizedBox(height: 8),
                       Text(
-                        '— Hadith (Taberaniu)',
+                        '— ${DailyQuotes.forToday().author}',
                         style: theme.textTheme.bodySmall?.copyWith(
                           color: isDark
                               ? AppColors.darkOnSurfaceVariant
