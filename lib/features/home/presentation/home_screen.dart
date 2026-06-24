@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../../core/constants/app_constants.dart';
 import '../../../core/constants/daily_quotes.dart';
 import '../../../core/theme/app_colors.dart';
+import '../../settings/providers/settings_provider.dart';
 import '../providers/home_provider.dart';
 
 class HomeScreen extends ConsumerWidget {
@@ -14,6 +15,7 @@ class HomeScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final modulesAsync = ref.watch(modulesProvider);
     final streakAsync = ref.watch(streakProvider);
+    final userName = ref.watch(userNameProvider);
     final theme = Theme.of(context);
     final isDark = theme.brightness == Brightness.dark;
     final cs = theme.colorScheme;
@@ -41,7 +43,9 @@ class HomeScreen extends ConsumerWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Es-selamu alejkum',
+                            userName.isEmpty
+                                ? 'Es-selamu alejkum'
+                                : 'Es-selamu alejkum, $userName!',
                             style: theme.textTheme.bodyMedium?.copyWith(
                               color: cs.onSurfaceVariant,
                             ),

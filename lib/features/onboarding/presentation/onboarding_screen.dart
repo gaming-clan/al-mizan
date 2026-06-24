@@ -1,20 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../../settings/providers/settings_provider.dart';
 
-class OnboardingScreen extends StatefulWidget {
+class OnboardingScreen extends ConsumerStatefulWidget {
   const OnboardingScreen({super.key});
 
   @override
-  State<OnboardingScreen> createState() => _OnboardingScreenState();
+  ConsumerState<OnboardingScreen> createState() => _OnboardingScreenState();
 }
 
-class _OnboardingScreenState extends State<OnboardingScreen> {
+class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
   final _controller = PageController();
+  final _nameController = TextEditingController();
   int _currentPage = 0;
 
-  static const _pages = [
+  static const _infoPages = [
     _OnboardingPage(
       icon: Icons.balance_rounded,
       title: 'Al Mizan',
@@ -45,14 +48,20 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     ),
   ];
 
+  static const _totalPages = 5;
+
   Future<void> _finish(BuildContext context) async {
+    final name = _nameController.text.trim();
+    if (name.isNotEmpty) {
+      await ref.read(userNameProvider.notifier).setName(name);
+    }
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool('onboarding_complete', true);
     if (context.mounted) context.go('/');
   }
 
   void _next() {
-    if (_currentPage < _pages.length - 1) {
+    if (_currentPage < _totalPages - 1) {
       _controller.nextPage(
         duration: const Duration(milliseconds: 350),
         curve: Curves.easeInOut,
@@ -63,6 +72,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   @override
   void dispose() {
     _controller.dispose();
+    _nameController.dispose();
     super.dispose();
   }
 
@@ -70,7 +80,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final cs = theme.colorScheme;
-    final isLast = _currentPage == _pages.length - 1;
+    final isLast = _currentPage == _totalPages - 1;
 
     return Scaffold(
       backgroundColor: cs.surface,
@@ -101,9 +111,13 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               child: PageView.builder(
                 controller: _controller,
                 onPageChanged: (i) => setState(() => _currentPage = i),
-                itemCount: _pages.length,
-                itemBuilder: (context, index) =>
-                    _PageContent(page: _pages[index]),
+                itemCount: _totalPages,
+                itemBuilder: (context, index) {
+                  if (index < _infoPages.length) {
+                    return _PageContent(page: _infoPages[index]);
+                  }
+                  return _NameInputContent(controller: _nameController);
+                },
               ),
             ),
 
@@ -113,7 +127,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: List.generate(
-                  _pages.length,
+                  _totalPages,
                   (i) => AnimatedContainer(
                     duration: const Duration(milliseconds: 300),
                     margin: const EdgeInsets.symmetric(horizontal: 4),
@@ -157,6 +171,90 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class _NameInputContent extends StatelessWidget {
+  final TextEditingController controller;
+  const _NameInputContent({required this.controller});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final cs = theme.colorScheme;
+
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 32),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Container(
+            width: 120,
+            height: 120,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: cs.primaryContainer.withValues(alpha: 0.4),
+              border: Border.all(
+                  color: cs.primary.withValues(alpha: 0.3), width: 2),
+            ),
+            child: Icon(Icons.person_rounded, size: 56, color: cs.primary),
+          ),
+          const SizedBox(height: 32),
+          Text(
+            'Mirë se vini!',
+            style: GoogleFonts.sourceSerif4(
+              fontSize: 32,
+              fontWeight: FontWeight.w700,
+              color: cs.onSurface,
+            ),
+            textAlign: TextAlign.center,
+          ),
+          const SizedBox(height: 8),
+          Text(
+            'Si dëshironi të quheni?',
+            style: theme.textTheme.titleMedium?.copyWith(
+              color: cs.primary,
+              fontWeight: FontWeight.w600,
+            ),
+            textAlign: TextAlign.center,
+          ),
+          const SizedBox(height: 28),
+          TextField(
+            controller: controller,
+            textCapitalization: TextCapitalization.words,
+            textAlign: TextAlign.center,
+            style: theme.textTheme.titleLarge,
+            decoration: InputDecoration(
+              hintText: 'Emri ose pseudonimi juaj',
+              hintStyle: theme.textTheme.titleMedium?.copyWith(
+                color: cs.onSurfaceVariant.withValues(alpha: 0.5),
+              ),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(14),
+              ),
+              enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(14),
+                borderSide: BorderSide(color: cs.outlineVariant),
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(14),
+                borderSide: BorderSide(color: cs.primary, width: 2),
+              ),
+              contentPadding:
+                  const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+            ),
+          ),
+          const SizedBox(height: 12),
+          Text(
+            'Mund ta ndryshoni në çdo kohë nga karta e profilit.',
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: cs.onSurfaceVariant,
+            ),
+            textAlign: TextAlign.center,
+          ),
+        ],
       ),
     );
   }

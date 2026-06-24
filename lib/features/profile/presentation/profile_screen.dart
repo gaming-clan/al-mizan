@@ -6,6 +6,43 @@ import '../../../core/theme/app_colors.dart';
 import '../../home/providers/home_provider.dart';
 import '../../settings/providers/settings_provider.dart';
 
+void _showEditNameDialog(
+    BuildContext context, WidgetRef ref, String currentName) {
+  final controller = TextEditingController(text: currentName);
+  showDialog(
+    context: context,
+    builder: (ctx) => AlertDialog(
+      title: const Text('Ndrysho emrin'),
+      content: TextField(
+        controller: controller,
+        textCapitalization: TextCapitalization.words,
+        autofocus: true,
+        decoration: const InputDecoration(
+          hintText: 'Emri ose pseudonimi',
+          border: OutlineInputBorder(),
+        ),
+        onSubmitted: (_) {
+          ref.read(userNameProvider.notifier).setName(controller.text);
+          Navigator.pop(ctx);
+        },
+      ),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.pop(ctx),
+          child: const Text('Anulo'),
+        ),
+        FilledButton(
+          onPressed: () {
+            ref.read(userNameProvider.notifier).setName(controller.text);
+            Navigator.pop(ctx);
+          },
+          child: const Text('Ruaj'),
+        ),
+      ],
+    ),
+  );
+}
+
 class ProfileScreen extends ConsumerWidget {
   const ProfileScreen({super.key});
 
@@ -16,6 +53,8 @@ class ProfileScreen extends ConsumerWidget {
     final isDark = ref.watch(darkModeProvider);
     final streakAsync = ref.watch(streakProvider);
     final modulesAsync = ref.watch(modulesProvider);
+    final userName = ref.watch(userNameProvider);
+    final displayName = userName.isEmpty ? 'Nxënës' : userName;
 
     return Scaffold(
       appBar: AppBar(title: const Text('Profili')),
@@ -41,11 +80,30 @@ class ProfileScreen extends ConsumerWidget {
                   ),
                 ),
                 const SizedBox(height: 12),
-                Text(
-                  'Student',
-                  style: theme.textTheme.headlineSmall?.copyWith(
-                    color: cs.onSurface,
-                  ),
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      displayName,
+                      style: theme.textTheme.headlineSmall?.copyWith(
+                        color: cs.onSurface,
+                      ),
+                    ),
+                    const SizedBox(width: 6),
+                    InkWell(
+                      onTap: () =>
+                          _showEditNameDialog(context, ref, userName),
+                      borderRadius: BorderRadius.circular(8),
+                      child: Padding(
+                        padding: const EdgeInsets.all(4),
+                        child: Icon(
+                          Icons.edit_rounded,
+                          size: 16,
+                          color: cs.onSurfaceVariant,
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
                 const SizedBox(height: 4),
                 Text(

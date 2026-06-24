@@ -21,3 +21,24 @@ class DarkModeNotifier extends StateNotifier<bool> {
     await prefs.setBool('dark_mode', state);
   }
 }
+
+final userNameProvider = StateNotifierProvider<UserNameNotifier, String>((ref) {
+  return UserNameNotifier();
+});
+
+class UserNameNotifier extends StateNotifier<String> {
+  UserNameNotifier() : super('') {
+    _load();
+  }
+
+  Future<void> _load() async {
+    final prefs = await SharedPreferences.getInstance();
+    state = prefs.getString('user_name') ?? '';
+  }
+
+  Future<void> setName(String name) async {
+    state = name.trim();
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString('user_name', state);
+  }
+}
