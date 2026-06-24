@@ -1,11 +1,11 @@
 {
-    "name": "fikh_academy",
-    "short_name": "fikh_academy",
+    "name": "Al Mizan — Mëso Fikhun",
+    "short_name": "Al Mizan",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#003527",
+    "theme_color": "#003527",
+    "description": "Aplikacion edukativ për Fikhun Islam në gjuhën shqipe. 12 module fikhore, kuize interaktive dhe krahasim mes katër medhhebeve.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
