@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import '../../settings/providers/settings_provider.dart';
 
-class OnboardingScreen extends ConsumerStatefulWidget {
+class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
 
   @override
-  ConsumerState<OnboardingScreen> createState() => _OnboardingScreenState();
+  State<OnboardingScreen> createState() => _OnboardingScreenState();
 }
 
-class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
+class _OnboardingScreenState extends State<OnboardingScreen> {
   final _controller = PageController();
   final _nameController = TextEditingController();
   int _currentPage = 0;
@@ -52,10 +50,10 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
 
   Future<void> _finish(BuildContext context) async {
     final name = _nameController.text.trim();
-    if (name.isNotEmpty) {
-      await ref.read(userNameProvider.notifier).setName(name);
-    }
     final prefs = await SharedPreferences.getInstance();
+    if (name.isNotEmpty) {
+      await prefs.setString('user_name', name);
+    }
     await prefs.setBool('onboarding_complete', true);
     if (context.mounted) context.go('/');
   }
