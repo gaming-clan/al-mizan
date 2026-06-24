@@ -185,76 +185,86 @@ class _NameInputContent extends StatelessWidget {
     final theme = Theme.of(context);
     final cs = theme.colorScheme;
 
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 32),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Container(
-            width: 120,
-            height: 120,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: cs.primaryContainer.withValues(alpha: 0.4),
-              border: Border.all(
-                  color: cs.primary.withValues(alpha: 0.3), width: 2),
-            ),
-            child: Icon(Icons.person_rounded, size: 56, color: cs.primary),
-          ),
-          const SizedBox(height: 32),
-          Text(
-            'Mirë se vini!',
-            style: GoogleFonts.sourceSerif4(
-              fontSize: 32,
-              fontWeight: FontWeight.w700,
-              color: cs.onSurface,
-            ),
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(height: 8),
-          Text(
-            'Si dëshironi të quheni?',
-            style: theme.textTheme.titleMedium?.copyWith(
-              color: cs.primary,
-              fontWeight: FontWeight.w600,
-            ),
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(height: 28),
-          TextField(
-            controller: controller,
-            textCapitalization: TextCapitalization.words,
-            textAlign: TextAlign.center,
-            style: theme.textTheme.titleLarge,
-            decoration: InputDecoration(
-              hintText: 'Emri ose pseudonimi juaj',
-              hintStyle: theme.textTheme.titleMedium?.copyWith(
-                color: cs.onSurfaceVariant.withValues(alpha: 0.5),
+    return LayoutBuilder(
+      builder: (context, constraints) => SingleChildScrollView(
+        child: ConstrainedBox(
+          constraints: BoxConstraints(minHeight: constraints.maxHeight),
+          child: IntrinsicHeight(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 24),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 120,
+                    height: 120,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: cs.primaryContainer.withValues(alpha: 0.4),
+                      border: Border.all(
+                          color: cs.primary.withValues(alpha: 0.3), width: 2),
+                    ),
+                    child:
+                        Icon(Icons.person_rounded, size: 56, color: cs.primary),
+                  ),
+                  const SizedBox(height: 32),
+                  Text(
+                    'Mirë se vini!',
+                    style: GoogleFonts.sourceSerif4(
+                      fontSize: 32,
+                      fontWeight: FontWeight.w700,
+                      color: cs.onSurface,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: 8),
+                  Text(
+                    'Si dëshironi të quheni?',
+                    style: theme.textTheme.titleMedium?.copyWith(
+                      color: cs.primary,
+                      fontWeight: FontWeight.w600,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: 28),
+                  TextField(
+                    controller: controller,
+                    textCapitalization: TextCapitalization.words,
+                    textAlign: TextAlign.center,
+                    style: theme.textTheme.titleLarge,
+                    decoration: InputDecoration(
+                      hintText: 'Emri ose pseudonimi juaj',
+                      hintStyle: theme.textTheme.titleMedium?.copyWith(
+                        color: cs.onSurfaceVariant.withValues(alpha: 0.5),
+                      ),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(14),
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(14),
+                        borderSide: BorderSide(color: cs.outlineVariant),
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(14),
+                        borderSide: BorderSide(color: cs.primary, width: 2),
+                      ),
+                      contentPadding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 16),
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  Text(
+                    'Mund ta ndryshoni në çdo kohë nga karta e profilit.',
+                    style: theme.textTheme.bodySmall?.copyWith(
+                      color: cs.onSurfaceVariant,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ],
               ),
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(14),
-              ),
-              enabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(14),
-                borderSide: BorderSide(color: cs.outlineVariant),
-              ),
-              focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(14),
-                borderSide: BorderSide(color: cs.primary, width: 2),
-              ),
-              contentPadding:
-                  const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
             ),
           ),
-          const SizedBox(height: 12),
-          Text(
-            'Mund ta ndryshoni në çdo kohë nga karta e profilit.',
-            style: theme.textTheme.bodySmall?.copyWith(
-              color: cs.onSurfaceVariant,
-            ),
-            textAlign: TextAlign.center,
-          ),
-        ],
+        ),
       ),
     );
   }

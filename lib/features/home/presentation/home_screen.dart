@@ -43,9 +43,7 @@ class HomeScreen extends ConsumerWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            userName.isEmpty
-                                ? 'Es-selamu alejkum'
-                                : 'Es-selamu alejkum, $userName!',
+                            'Es-selamu alejkum, ${userName.isEmpty ? 'Nxënës' : userName}!',
                             style: theme.textTheme.bodyMedium?.copyWith(
                               color: cs.onSurfaceVariant,
                             ),
