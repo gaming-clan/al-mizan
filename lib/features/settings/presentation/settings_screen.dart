@@ -9,32 +9,92 @@ class SettingsScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final isDark = ref.watch(darkModeProvider);
+    final theme = Theme.of(context);
+    final cs = theme.colorScheme;
+    final currentTheme = ref.watch(themeProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Cilësime')),
       body: ListView(
-        padding: const EdgeInsets.symmetric(vertical: 8),
+        padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
         children: [
-          Card(
-            margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-            child: SwitchListTile(
-              secondary: Icon(
-                isDark ? Icons.dark_mode_rounded : Icons.light_mode_rounded,
-                color: AppColors.primary,
-              ),
-              title: const Text('Dark Mode'),
-              subtitle: const Text('Ndërro ndriçimin e pamjes'),
-              value: isDark,
-              onChanged: (_) => ref.read(darkModeProvider.notifier).toggle(),
-            ),
+          // ── Theme picker ──
+          Text(
+            'TEMA',
+            style: theme.textTheme.labelMedium?.copyWith(letterSpacing: 1.2),
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 12),
+          GridView.count(
+            shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
+            crossAxisCount: 4,
+            crossAxisSpacing: 10,
+            mainAxisSpacing: 10,
+            childAspectRatio: 0.72,
+            children: AppThemeType.values.map((t) {
+              final isSelected = t == currentTheme;
+              return GestureDetector(
+                onTap: () => ref.read(themeProvider.notifier).setTheme(t),
+                child: Column(
+                  children: [
+                    AnimatedContainer(
+                      duration: const Duration(milliseconds: 200),
+                      width: 56,
+                      height: 56,
+                      decoration: BoxDecoration(
+                        color: t.swatchSurface,
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: isSelected ? cs.primary : cs.outlineVariant,
+                          width: isSelected ? 3 : 1.5,
+                        ),
+                        boxShadow: isSelected
+                            ? [
+                                BoxShadow(
+                                  color: cs.primary.withValues(alpha: 0.3),
+                                  blurRadius: 8,
+                                  spreadRadius: 1,
+                                )
+                              ]
+                            : null,
+                      ),
+                      child: Center(
+                        child: Container(
+                          width: 24,
+                          height: 24,
+                          decoration: BoxDecoration(
+                            color: t.swatchPrimary,
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 6),
+                    Text(
+                      t.displayName,
+                      style: theme.textTheme.labelSmall?.copyWith(
+                        fontWeight:
+                            isSelected ? FontWeight.w700 : FontWeight.w400,
+                        color:
+                            isSelected ? cs.primary : cs.onSurfaceVariant,
+                      ),
+                      textAlign: TextAlign.center,
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ],
+                ),
+              );
+            }).toList(),
+          ),
+          const SizedBox(height: 24),
+
+          // ── Info ──
           Card(
-            margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+            margin: EdgeInsets.zero,
             child: ListTile(
-              leading:
-                  const Icon(Icons.info_outline_rounded, color: AppColors.info),
+              leading: const Icon(Icons.info_outline_rounded,
+                  color: AppColors.info),
               title: const Text('Rreth App-it'),
               subtitle: const Text('${AppConstants.appName} v1.0.0'),
               onTap: () {

@@ -6,6 +6,113 @@ import '../../../core/theme/app_colors.dart';
 import '../../home/providers/home_provider.dart';
 import '../../settings/providers/settings_provider.dart';
 
+void _showThemePicker(BuildContext context, WidgetRef ref) {
+  final current = ref.read(themeProvider);
+  showModalBottomSheet(
+    context: context,
+    shape: const RoundedRectangleBorder(
+      borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+    ),
+    builder: (ctx) {
+      final theme = Theme.of(ctx);
+      final cs = theme.colorScheme;
+      return Padding(
+        padding: const EdgeInsets.fromLTRB(24, 20, 24, 32),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Center(
+              child: Container(
+                width: 36,
+                height: 4,
+                decoration: BoxDecoration(
+                  color: cs.outlineVariant,
+                  borderRadius: BorderRadius.circular(2),
+                ),
+              ),
+            ),
+            const SizedBox(height: 16),
+            Text('Zgjidh Temën',
+                style: theme.textTheme.titleLarge),
+            const SizedBox(height: 16),
+            GridView.count(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              crossAxisCount: 4,
+              crossAxisSpacing: 10,
+              mainAxisSpacing: 10,
+              childAspectRatio: 0.78,
+              children: AppThemeType.values.map((t) {
+                final isSelected = t == current;
+                return GestureDetector(
+                  onTap: () {
+                    ref.read(themeProvider.notifier).setTheme(t);
+                    Navigator.pop(ctx);
+                  },
+                  child: Column(
+                    children: [
+                      AnimatedContainer(
+                        duration: const Duration(milliseconds: 200),
+                        width: 56,
+                        height: 56,
+                        decoration: BoxDecoration(
+                          color: t.swatchSurface,
+                          shape: BoxShape.circle,
+                          border: Border.all(
+                            color: isSelected
+                                ? cs.primary
+                                : cs.outlineVariant,
+                            width: isSelected ? 3 : 1.5,
+                          ),
+                          boxShadow: isSelected
+                              ? [
+                                  BoxShadow(
+                                    color: cs.primary.withValues(alpha: 0.3),
+                                    blurRadius: 8,
+                                    spreadRadius: 1,
+                                  )
+                                ]
+                              : null,
+                        ),
+                        child: Center(
+                          child: Container(
+                            width: 24,
+                            height: 24,
+                            decoration: BoxDecoration(
+                              color: t.swatchPrimary,
+                              shape: BoxShape.circle,
+                            ),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 6),
+                      Text(
+                        t.displayName,
+                        style: theme.textTheme.labelSmall?.copyWith(
+                          fontWeight: isSelected
+                              ? FontWeight.w700
+                              : FontWeight.w400,
+                          color: isSelected
+                              ? cs.primary
+                              : cs.onSurfaceVariant,
+                        ),
+                        textAlign: TextAlign.center,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ],
+                  ),
+                );
+              }).toList(),
+            ),
+          ],
+        ),
+      );
+    },
+  );
+}
+
 void _showEditNameDialog(
     BuildContext context, WidgetRef ref, String currentName) {
   final controller = TextEditingController(text: currentName);
@@ -50,11 +157,11 @@ class ProfileScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
     final cs = theme.colorScheme;
-    final isDark = ref.watch(darkModeProvider);
     final streakAsync = ref.watch(streakProvider);
     final modulesAsync = ref.watch(modulesProvider);
     final userName = ref.watch(userNameProvider);
     final displayName = userName.isEmpty ? 'Nxënës' : userName;
+    final currentTheme = ref.watch(themeProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Profili')),
@@ -179,16 +286,32 @@ class ProfileScreen extends ConsumerWidget {
           ),
           const SizedBox(height: 8),
           _SettingsTile(
-            icon: isDark
-                ? Icons.dark_mode_rounded
-                : Icons.light_mode_rounded,
-            title: 'Pamja e errët',
-            trailing: Switch.adaptive(
-              value: isDark,
-              onChanged: (_) =>
-                  ref.read(darkModeProvider.notifier).toggle(),
-              activeThumbColor: cs.primary,
+            icon: Icons.palette_outlined,
+            title: 'Tema',
+            trailing: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Container(
+                  width: 14,
+                  height: 14,
+                  decoration: BoxDecoration(
+                    color: currentTheme.swatchPrimary,
+                    shape: BoxShape.circle,
+                    border: Border.all(
+                        color: cs.outlineVariant, width: 1),
+                  ),
+                ),
+                const SizedBox(width: 6),
+                Text(
+                  currentTheme.displayName,
+                  style: theme.textTheme.bodySmall,
+                ),
+                const SizedBox(width: 4),
+                Icon(Icons.chevron_right_rounded,
+                    color: cs.onSurfaceVariant, size: 20),
+              ],
             ),
+            onTap: () => _showThemePicker(context, ref),
           ),
           const SizedBox(height: 8),
           _SettingsTile(

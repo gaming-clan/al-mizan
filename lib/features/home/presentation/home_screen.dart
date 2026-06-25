@@ -4,7 +4,6 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../core/constants/app_constants.dart';
 import '../../../core/constants/daily_quotes.dart';
-import '../../../core/theme/app_colors.dart';
 import '../../settings/providers/settings_provider.dart';
 import '../providers/home_provider.dart';
 
@@ -17,8 +16,8 @@ class HomeScreen extends ConsumerWidget {
     final streakAsync = ref.watch(streakProvider);
     final userName = ref.watch(userNameProvider);
     final theme = Theme.of(context);
-    final isDark = theme.brightness == Brightness.dark;
     final cs = theme.colorScheme;
+    final isDark = theme.brightness == Brightness.dark;
 
     final width = MediaQuery.sizeOf(context).width;
     final gridCols = width >= 900 ? 4 : (width >= 600 ? 3 : 2);
@@ -102,14 +101,10 @@ class HomeScreen extends ConsumerWidget {
                 child: Container(
                   decoration: BoxDecoration(
                     color: isDark
-                        ? AppColors.darkSurfaceContainerHigh
-                        : AppColors.primaryContainer,
+                        ? cs.surfaceContainerHigh
+                        : cs.primaryContainer,
                     borderRadius: BorderRadius.circular(16),
-                    border: Border.all(
-                      color: isDark
-                          ? AppColors.darkOutlineVariant
-                          : AppColors.outlineVariant,
-                    ),
+                    border: Border.all(color: cs.outlineVariant),
                   ),
                   padding: const EdgeInsets.all(20),
                   child: Column(
@@ -118,17 +113,13 @@ class HomeScreen extends ConsumerWidget {
                       Row(
                         children: [
                           Icon(Icons.auto_awesome_rounded,
-                              color: isDark
-                                  ? AppColors.darkSecondary
-                                  : AppColors.onPrimary,
+                              color: isDark ? cs.secondary : cs.onPrimaryContainer,
                               size: 16),
                           const SizedBox(width: 6),
                           Text(
                             'MEDITIMI I DITËS',
                             style: theme.textTheme.labelMedium?.copyWith(
-                              color: isDark
-                                  ? AppColors.darkSecondary
-                                  : AppColors.onPrimary,
+                              color: isDark ? cs.secondary : cs.onPrimaryContainer,
                               letterSpacing: 1.2,
                             ),
                           ),
@@ -140,9 +131,7 @@ class HomeScreen extends ConsumerWidget {
                         style: GoogleFonts.sourceSerif4(
                           fontSize: 20,
                           fontWeight: FontWeight.w600,
-                          color: isDark
-                              ? AppColors.darkOnSurface
-                              : AppColors.onPrimary,
+                          color: isDark ? cs.onSurface : cs.onPrimaryContainer,
                           height: 1.4,
                         ),
                       ),
@@ -151,8 +140,8 @@ class HomeScreen extends ConsumerWidget {
                         '— ${DailyQuotes.forToday().author}',
                         style: theme.textTheme.bodySmall?.copyWith(
                           color: isDark
-                              ? AppColors.darkOnSurfaceVariant
-                              : AppColors.onPrimary.withValues(alpha: 0.7),
+                              ? cs.onSurfaceVariant
+                              : cs.onPrimaryContainer.withValues(alpha: 0.75),
                           fontStyle: FontStyle.italic,
                         ),
                       ),

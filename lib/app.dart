@@ -9,13 +9,11 @@ class FikhAcademyApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final isDark = ref.watch(darkModeProvider);
+    final appThemeType = ref.watch(themeProvider);
     return MaterialApp.router(
       title: 'Al Mizan - Mëso Fikhun',
       debugShowCheckedModeBanner: false,
-      theme: AppTheme.light,
-      darkTheme: AppTheme.dark,
-      themeMode: isDark ? ThemeMode.dark : ThemeMode.light,
+      theme: AppTheme.forThemeType(appThemeType),
       routerConfig: appRouter,
     );
   }
