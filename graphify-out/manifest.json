@@ -1,0 +1,782 @@
+{
+  ".claude/settings.local.json": {
+    "mtime": 1782061006.231006,
+    "ast_hash": "9ca07a1513f8fdfcbeeb0170e798eeb0",
+    "semantic_hash": ""
+  },
+  "android/app/build.gradle.kts": {
+    "mtime": 1781986786.456717,
+    "ast_hash": "9e7211822b01f5712be31163ef59faf0",
+    "semantic_hash": ""
+  },
+  "android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java": {
+    "mtime": 1782405260.3152997,
+    "ast_hash": "d49c91f41c2747e89284b1e980e7c033",
+    "semantic_hash": ""
+  },
+  "android/app/src/main/kotlin/com/fikhacademy/fikh_academy/MainActivity.kt": {
+    "mtime": 1781899475.471414,
+    "ast_hash": "2dbe564d29b9a36983161f929b152484",
+    "semantic_hash": ""
+  },
+  "android/build.gradle.kts": {
+    "mtime": 1781899475.495731,
+    "ast_hash": "f11f360aed44d4f6871b398346af14f0",
+    "semantic_hash": ""
+  },
+  "android/gradlew": {
+    "mtime": 1781986805.738071,
+    "ast_hash": "7f1cd7eb3f75a1dc85cd37753972a6e2",
+    "semantic_hash": ""
+  },
+  "android/settings.gradle.kts": {
+    "mtime": 1781899475.5060017,
+    "ast_hash": "16e2fa36a3875eb757511a8b0857c121",
+    "semantic_hash": ""
+  },
+  "ios/Flutter/ephemeral/flutter_lldb_helper.py": {
+    "mtime": 1781985898.3632493,
+    "ast_hash": "98fc75412162af387e2e3461e4e58094",
+    "semantic_hash": ""
+  },
+  "ios/Flutter/flutter_export_environment.sh": {
+    "mtime": 1781985898.3829446,
+    "ast_hash": "67bea9e1d230e6f4e38833efe758235a",
+    "semantic_hash": ""
+  },
+  "ios/RunnerTests/RunnerTests.swift": {
+    "mtime": 1781899477.4001546,
+    "ast_hash": "a225a382d14d7b16b6f602a5c1d49331",
+    "semantic_hash": ""
+  },
+  "ios/Runner/AppDelegate.swift": {
+    "mtime": 1781899477.3466895,
+    "ast_hash": "303ca46dbd58544be7b816861d70a27c",
+    "semantic_hash": ""
+  },
+  "ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json": {
+    "mtime": 1781899477.350734,
+    "ast_hash": "c3cdf9688b604d14f2e76a8287e16167",
+    "semantic_hash": ""
+  },
+  "ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json": {
+    "mtime": 1781899477.3798158,
+    "ast_hash": "770f4f65e02ca2fc57f46f4f4148d15d",
+    "semantic_hash": ""
+  },
+  "ios/Runner/GeneratedPluginRegistrant.h": {
+    "mtime": 1781985899.2752826,
+    "ast_hash": "decb9041b5e91a07e66f4664e5dac408",
+    "semantic_hash": ""
+  },
+  "ios/Runner/GeneratedPluginRegistrant.m": {
+    "mtime": 1782405260.3732963,
+    "ast_hash": "713f0a1231e031cb6a1bb51facf3ba77",
+    "semantic_hash": ""
+  },
+  "ios/Runner/Runner-Bridging-Header.h": {
+    "mtime": 1781899477.3961353,
+    "ast_hash": "e07862ac930ed4d8479185d52c6cc66d",
+    "semantic_hash": ""
+  },
+  "lib/app.dart": {
+    "mtime": 1782404147.1235056,
+    "ast_hash": "69b964fafa03975cb7c7edfdca5ff7fc",
+    "semantic_hash": ""
+  },
+  "lib/core/constants/app_constants.dart": {
+    "mtime": 1782061069.8885093,
+    "ast_hash": "618f835c6a64fb4cbc91754d5fc795b0",
+    "semantic_hash": ""
+  },
+  "lib/core/constants/daily_quotes.dart": {
+    "mtime": 1782237429.3101635,
+    "ast_hash": "90b80807f9d525b276efb021fefb8814",
+    "semantic_hash": ""
+  },
+  "lib/core/database/app_database.dart": {
+    "mtime": 1781986382.113621,
+    "ast_hash": "b97f0ee71152084da5654039c4df2326",
+    "semantic_hash": ""
+  },
+  "lib/core/database/connection/connection.dart": {
+    "mtime": 1781899477.41004,
+    "ast_hash": "de8908bf5e12895f9a4bfa9ba6f934cd",
+    "semantic_hash": ""
+  },
+  "lib/core/database/connection/native.dart": {
+    "mtime": 1781899477.4110525,
+    "ast_hash": "9b4fd547447e4c3ee025b7dc2158ef04",
+    "semantic_hash": ""
+  },
+  "lib/core/database/connection/web.dart": {
+    "mtime": 1782329848.9708905,
+    "ast_hash": "7c891a20b650dca6ef2c04a23200b144",
+    "semantic_hash": ""
+  },
+  "lib/core/routing/app_router.dart": {
+    "mtime": 1782242324.191758,
+    "ast_hash": "d855954ab9bf70ce1950fdab0c7c6c42",
+    "semantic_hash": ""
+  },
+  "lib/core/routing/shell_scaffold.dart": {
+    "mtime": 1782034661.260256,
+    "ast_hash": "b739e8d7358d7ef65132da8c76618e06",
+    "semantic_hash": ""
+  },
+  "lib/core/theme/app_colors.dart": {
+    "mtime": 1782404060.6283827,
+    "ast_hash": "923620cc703766d9336dda610b4b38bc",
+    "semantic_hash": ""
+  },
+  "lib/core/theme/app_theme.dart": {
+    "mtime": 1782404129.0783393,
+    "ast_hash": "6cf6211e0d2baa17bed5e8f604600f40",
+    "semantic_hash": ""
+  },
+  "lib/core/theme/app_typography.dart": {
+    "mtime": 1781899477.4233353,
+    "ast_hash": "18e206571376c79a44165ef6f73e269b",
+    "semantic_hash": ""
+  },
+  "lib/core/utils/arabic_text_helper.dart": {
+    "mtime": 1781899477.4253685,
+    "ast_hash": "5b30797e48f58f2d59bb7eac9465024f",
+    "semantic_hash": ""
+  },
+  "lib/core/utils/zakat_calculator.dart": {
+    "mtime": 1782061077.6191845,
+    "ast_hash": "a151af78fe4c61e73be394ee0733fa7b",
+    "semantic_hash": ""
+  },
+  "lib/data/fiqh_content/module_10_xhenaze.json": {
+    "mtime": 1782059710.9268486,
+    "ast_hash": "5703c104673c44bbd832daa428289ef5",
+    "semantic_hash": ""
+  },
+  "lib/data/fiqh_content/module_11_betim_nedhr.json": {
+    "mtime": 1782059539.5254476,
+    "ast_hash": "d6dc94917080914098c4a50740531406",
+    "semantic_hash": ""
+  },
+  "lib/data/fiqh_content/module_12_ushqimi_pija.json": {
+    "mtime": 1782059867.5094743,
+    "ast_hash": "1c7e9a6d53c96952b8cfb7e7ebd76565",
+    "semantic_hash": ""
+  },
+  "lib/data/fiqh_content/module_1_introduction.json": {
+    "mtime": 1781899477.4411764,
+    "ast_hash": "941f3431db9eef10e36e2c2ce356a094",
+    "semantic_hash": ""
+  },
+  "lib/data/fiqh_content/module_2_taharah.json": {
+    "mtime": 1781899477.4411764,
+    "ast_hash": "36a698cf1627f397635e7b9bff4255e0",
+    "semantic_hash": ""
+  },
+  "lib/data/fiqh_content/module_3_salah.json": {
+    "mtime": 1781899477.4436855,
+    "ast_hash": "4be2612f2f72da8f45635dda38048884",
+    "semantic_hash": ""
+  },
+  "lib/data/fiqh_content/module_4_sawm.json": {
+    "mtime": 1782059598.3718576,
+    "ast_hash": "892c02663847a0ee3ab59f49547be86d",
+    "semantic_hash": ""
+  },
+  "lib/data/fiqh_content/module_5_zakat.json": {
+    "mtime": 1782059661.1160152,
+    "ast_hash": "f2dc43b559e78134a85c4241d15183e5",
+    "semantic_hash": ""
+  },
+  "lib/data/fiqh_content/module_6_hajj.json": {
+    "mtime": 1781899477.4497736,
+    "ast_hash": "bf866dcce196d9a985421a4074ca41e3",
+    "semantic_hash": ""
+  },
+  "lib/data/fiqh_content/module_7_muamalat.json": {
+    "mtime": 1782059764.773491,
+    "ast_hash": "578bd2e8fe8899cb98f5aa5b9e4e05f2",
+    "semantic_hash": ""
+  },
+  "lib/data/fiqh_content/module_8_halal_haram.json": {
+    "mtime": 1782059819.155436,
+    "ast_hash": "9bf4c096661049026ecff31f27ca267e",
+    "semantic_hash": ""
+  },
+  "lib/data/fiqh_content/module_9_nikah.json": {
+    "mtime": 1781899477.4543018,
+    "ast_hash": "57d475fae45cefd70afdf49024ce4943",
+    "semantic_hash": ""
+  },
+  "lib/features/about/presentation/about_screen.dart": {
+    "mtime": 1782243238.111943,
+    "ast_hash": "d3dfb655d738ea45b6b716cad4cfaac4",
+    "semantic_hash": ""
+  },
+  "lib/features/ask_scholar/presentation/ask_scholar_screen.dart": {
+    "mtime": 1781986146.5816822,
+    "ast_hash": "a99ec6a3845d3495979b98a9e7518ee9",
+    "semantic_hash": ""
+  },
+  "lib/features/bookmarks/presentation/bookmarks_screen.dart": {
+    "mtime": 1781899477.4605145,
+    "ast_hash": "f271d59763cc98e8867a350dd6e660ce",
+    "semantic_hash": ""
+  },
+  "lib/features/bookmarks/providers/bookmarks_provider.dart": {
+    "mtime": 1781899477.4645393,
+    "ast_hash": "96b7c5e4e668abf135f2dc370708387b",
+    "semantic_hash": ""
+  },
+  "lib/features/home/presentation/home_screen.dart": {
+    "mtime": 1782404196.2398794,
+    "ast_hash": "1997b78d762c717afa71d660a44b5dd9",
+    "semantic_hash": ""
+  },
+  "lib/features/home/presentation/widgets/module_card.dart": {
+    "mtime": 1781899477.47067,
+    "ast_hash": "1eda371adbfcf91a69155b4b006ef677",
+    "semantic_hash": ""
+  },
+  "lib/features/home/providers/home_provider.dart": {
+    "mtime": 1781899477.474689,
+    "ast_hash": "1e228e8ae20d67b8b7b45743a48ada74",
+    "semantic_hash": ""
+  },
+  "lib/features/modules/data/fiqh_data_source.dart": {
+    "mtime": 1781899477.476788,
+    "ast_hash": "e675e8770f70bd464cbb8e916e8c802a",
+    "semantic_hash": ""
+  },
+  "lib/features/modules/data/models/fiqh_models.dart": {
+    "mtime": 1781899477.4787972,
+    "ast_hash": "d8ce00f3046aa3c877e12e7e14740af5",
+    "semantic_hash": ""
+  },
+  "lib/features/modules/presentation/lesson_list_screen.dart": {
+    "mtime": 1782233471.9837446,
+    "ast_hash": "271ec3fd3d77eeb23f0321d523701453",
+    "semantic_hash": ""
+  },
+  "lib/features/modules/presentation/lesson_screen.dart": {
+    "mtime": 1782233451.81953,
+    "ast_hash": "a2e4ae25ebb0e41ec24c625ea63bf351",
+    "semantic_hash": ""
+  },
+  "lib/features/modules/presentation/module_list_screen.dart": {
+    "mtime": 1782034898.2200973,
+    "ast_hash": "16356fe0c32b15bae070d4c90f2af468",
+    "semantic_hash": ""
+  },
+  "lib/features/modules/providers/module_provider.dart": {
+    "mtime": 1782109831.4792066,
+    "ast_hash": "0cd528a68f9da75470c8877d62d1ed76",
+    "semantic_hash": ""
+  },
+  "lib/features/onboarding/presentation/onboarding_screen.dart": {
+    "mtime": 1782311358.5141087,
+    "ast_hash": "1d262f124dc9f0b32637590bfa7a968a",
+    "semantic_hash": ""
+  },
+  "lib/features/profile/presentation/profile_screen.dart": {
+    "mtime": 1782405332.902218,
+    "ast_hash": "b40d7aebd7586ef3abbbb94b588c55b7",
+    "semantic_hash": ""
+  },
+  "lib/features/quiz/presentation/general_quiz_screen.dart": {
+    "mtime": 1782233499.7313595,
+    "ast_hash": "608d6c7f3d6ee316649986da67b5bcfb",
+    "semantic_hash": ""
+  },
+  "lib/features/quiz/presentation/module_quiz_screen.dart": {
+    "mtime": 1782233430.6952844,
+    "ast_hash": "3b2d13f6398cad7a76f34af4d3831a3b",
+    "semantic_hash": ""
+  },
+  "lib/features/quiz/presentation/quiz_screen.dart": {
+    "mtime": 1782233375.3156989,
+    "ast_hash": "ece02b6dda270b7ee33ecf2f32436174",
+    "semantic_hash": ""
+  },
+  "lib/features/quiz/providers/quiz_provider.dart": {
+    "mtime": 1781899477.5006106,
+    "ast_hash": "81486bca6a44d6f4e83e494dd5d67157",
+    "semantic_hash": ""
+  },
+  "lib/features/search/presentation/search_screen.dart": {
+    "mtime": 1781986532.3170676,
+    "ast_hash": "702488b445816c40447c53c5eeb757dc",
+    "semantic_hash": ""
+  },
+  "lib/features/search/providers/search_provider.dart": {
+    "mtime": 1781899477.5056438,
+    "ast_hash": "67da9000effc81b3801e40b616a904a7",
+    "semantic_hash": ""
+  },
+  "lib/features/settings/presentation/settings_screen.dart": {
+    "mtime": 1782404292.4268937,
+    "ast_hash": "370d27ff3514d60aca57c1978cc07a40",
+    "semantic_hash": ""
+  },
+  "lib/features/settings/providers/settings_provider.dart": {
+    "mtime": 1782405271.7541118,
+    "ast_hash": "aff3b36531c4ef2ddad0e679f610bc5b",
+    "semantic_hash": ""
+  },
+  "lib/features/zakat_calculator/presentation/zakat_calculator_screen.dart": {
+    "mtime": 1782061123.28235,
+    "ast_hash": "0dbcb42645a1feb738a82762a4c37baa",
+    "semantic_hash": ""
+  },
+  "lib/features/zakat_calculator/providers/zakat_provider.dart": {
+    "mtime": 1782061086.6681342,
+    "ast_hash": "ca7faf7ec0595c2ef77bb9c285735c0a",
+    "semantic_hash": ""
+  },
+  "lib/main.dart": {
+    "mtime": 1781899477.5195074,
+    "ast_hash": "ca01ab6ee10a1a1bc88531f377162573",
+    "semantic_hash": ""
+  },
+  "lib/shared/widgets/hadith_card.dart": {
+    "mtime": 1782059452.3270612,
+    "ast_hash": "8982534a79ab5ecadf459506e2d1d832",
+    "semantic_hash": ""
+  },
+  "lib/shared/widgets/level_complete_dialog.dart": {
+    "mtime": 1782233339.62436,
+    "ast_hash": "25bf63053b8e477cab9b9c6be9fc2ab0",
+    "semantic_hash": ""
+  },
+  "lib/shared/widgets/madhab_comparison.dart": {
+    "mtime": 1781899477.5266006,
+    "ast_hash": "28799a0ff54089d5633857ea33a6d7c9",
+    "semantic_hash": ""
+  },
+  "lib/shared/widgets/quran_verse_card.dart": {
+    "mtime": 1782059442.8460424,
+    "ast_hash": "2d97d4d5e80394492e76f9a4c0c9f647",
+    "semantic_hash": ""
+  },
+  "linux/flutter/generated_plugin_registrant.cc": {
+    "mtime": 1782405260.3323,
+    "ast_hash": "1a3207813b32eda9e0391e31baa6c241",
+    "semantic_hash": ""
+  },
+  "linux/flutter/generated_plugin_registrant.h": {
+    "mtime": 1781899477.536959,
+    "ast_hash": "d295462c9da9f7fef22dc86c34492318",
+    "semantic_hash": ""
+  },
+  "linux/runner/main.cc": {
+    "mtime": 1781899477.5432494,
+    "ast_hash": "0643b8609698e96b3abd63c210361a87",
+    "semantic_hash": ""
+  },
+  "linux/runner/my_application.cc": {
+    "mtime": 1781899477.5461564,
+    "ast_hash": "b106ec9d8af92d0f844bd17d469f3ad3",
+    "semantic_hash": ""
+  },
+  "linux/runner/my_application.h": {
+    "mtime": 1781899477.548004,
+    "ast_hash": "7bd839b67ebee22174be9f4da4521b6f",
+    "semantic_hash": ""
+  },
+  "macos/Flutter/GeneratedPluginRegistrant.swift": {
+    "mtime": 1782405260.3822944,
+    "ast_hash": "a0eb237f80c4a8491e9a349fa99778bf",
+    "semantic_hash": ""
+  },
+  "macos/Flutter/ephemeral/flutter_export_environment.sh": {
+    "mtime": 1781985898.3909397,
+    "ast_hash": "935770211e0f5c88371001a33235b812",
+    "semantic_hash": ""
+  },
+  "macos/RunnerTests/RunnerTests.swift": {
+    "mtime": 1781899477.6156461,
+    "ast_hash": "97d3a20fd20a063c192e886d1822b4a8",
+    "semantic_hash": ""
+  },
+  "macos/Runner/AppDelegate.swift": {
+    "mtime": 1781899477.5759532,
+    "ast_hash": "2a7411ae3e7c6715525b94b6f8d2e80b",
+    "semantic_hash": ""
+  },
+  "macos/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json": {
+    "mtime": 1781899477.5799818,
+    "ast_hash": "5bd47c3ef1d1a261037c87fb3ddb9cfd",
+    "semantic_hash": ""
+  },
+  "macos/Runner/MainFlutterWindow.swift": {
+    "mtime": 1781899477.6095731,
+    "ast_hash": "4a747b1f256d62a2bbb79bd976891eb5",
+    "semantic_hash": ""
+  },
+  "test/widget_test.dart": {
+    "mtime": 1781899477.6197004,
+    "ast_hash": "31313da90824a5d63d6d8f3bd16cea9e",
+    "semantic_hash": ""
+  },
+  "windows/flutter/generated_plugin_registrant.cc": {
+    "mtime": 1782405260.3522975,
+    "ast_hash": "bb243d2174a2a8e7de2330ea1d86f206",
+    "semantic_hash": ""
+  },
+  "windows/flutter/generated_plugin_registrant.h": {
+    "mtime": 1781899477.6429715,
+    "ast_hash": "0ea33875f9f8e118f9c2ded03e2e2835",
+    "semantic_hash": ""
+  },
+  "windows/runner/flutter_window.cpp": {
+    "mtime": 1781899477.6495192,
+    "ast_hash": "9b92b95a9eecce25e3e9d356688d0cb6",
+    "semantic_hash": ""
+  },
+  "windows/runner/flutter_window.h": {
+    "mtime": 1781899477.6515298,
+    "ast_hash": "79bea736711adda00c49419a39a4a0b4",
+    "semantic_hash": ""
+  },
+  "windows/runner/main.cpp": {
+    "mtime": 1781899477.6515298,
+    "ast_hash": "b49b2d4979f53068408b2b21a2e238d1",
+    "semantic_hash": ""
+  },
+  "windows/runner/resource.h": {
+    "mtime": 1781899477.6535368,
+    "ast_hash": "c8f809a4f8d3f2f625e358fd90f72fee",
+    "semantic_hash": ""
+  },
+  "windows/runner/utils.cpp": {
+    "mtime": 1781899477.6590426,
+    "ast_hash": "9b5697b276c8ad67a02ec12ad2c09851",
+    "semantic_hash": ""
+  },
+  "windows/runner/utils.h": {
+    "mtime": 1781899477.6610637,
+    "ast_hash": "c741fb9cddbf3a62f4688b6cca39ddcc",
+    "semantic_hash": ""
+  },
+  "windows/runner/win32_window.cpp": {
+    "mtime": 1781899477.6630862,
+    "ast_hash": "928e86a2be27eca688669dce6c9177d9",
+    "semantic_hash": ""
+  },
+  "windows/runner/win32_window.h": {
+    "mtime": 1781899477.665096,
+    "ast_hash": "5a4cf051798d7e6931ee0405a4523c8f",
+    "semantic_hash": ""
+  },
+  "CLAUDE_CODE_PROMPT.md": {
+    "mtime": 1781899475.4563384,
+    "ast_hash": "c982fefec1eeb3aed5eb5f30336f330b",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1782329290.9117126,
+    "ast_hash": "491cc5f76ddc43e16258d58419fae583",
+    "semantic_hash": ""
+  },
+  "analysis_options.yaml": {
+    "mtime": 1781899475.4563384,
+    "ast_hash": "9cc86360fcf6c207575cd9d9ff234488",
+    "semantic_hash": ""
+  },
+  "ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md": {
+    "mtime": 1781899477.387861,
+    "ast_hash": "e175e436acacf76c814d83532d0b662c",
+    "semantic_hash": ""
+  },
+  "linux/CMakeLists.txt": {
+    "mtime": 1781899477.5326738,
+    "ast_hash": "1ceb3fec1580b4757f2216cc7db4eaf9",
+    "semantic_hash": ""
+  },
+  "linux/flutter/CMakeLists.txt": {
+    "mtime": 1781899477.533927,
+    "ast_hash": "46690fb8ffaf7d227d8bc4713f31140d",
+    "semantic_hash": ""
+  },
+  "linux/runner/CMakeLists.txt": {
+    "mtime": 1781899477.5412383,
+    "ast_hash": "6d75431dc21756981b53a7494c836311",
+    "semantic_hash": ""
+  },
+  "pubspec.yaml": {
+    "mtime": 1782405243.0629723,
+    "ast_hash": "6c01cb8fc427c1147dabc28db4ac12bc",
+    "semantic_hash": ""
+  },
+  "web/index.html": {
+    "mtime": 1782329842.2246783,
+    "ast_hash": "8805ad3a7f0ce96c4c0d1341798c3384",
+    "semantic_hash": ""
+  },
+  "windows/CMakeLists.txt": {
+    "mtime": 1781899477.637192,
+    "ast_hash": "b1b37716dd88b4cb321a939ef28097f2",
+    "semantic_hash": ""
+  },
+  "windows/flutter/CMakeLists.txt": {
+    "mtime": 1781899477.6392004,
+    "ast_hash": "0c500410e3259a9a053797dc1c28070e",
+    "semantic_hash": ""
+  },
+  "windows/runner/CMakeLists.txt": {
+    "mtime": 1781899477.644981,
+    "ast_hash": "e99a99b5cc82a168fc557eb23b8d5a96",
+    "semantic_hash": ""
+  },
+  "docs/1.-ligjet-e-sheriatit-_dr.-vehbetu-zuhejli_-1.pdf": {
+    "mtime": 1781899475.5185049,
+    "ast_hash": "909b972ca05e63b2f1bc501e42f9f3fa",
+    "semantic_hash": ""
+  },
+  "docs/2.-p\u00ebrpilimi-i-ligjeve-prej-teksteve-t\u00eb-sheriatit-_dr.-vehbetu-zuhejli_-1.pdf": {
+    "mtime": 1781899475.5322635,
+    "ast_hash": "4e2c7578fcf3c735f5f64de62cabb31e",
+    "semantic_hash": ""
+  },
+  "docs/Abedin-Musallari-Haxhi-dhe-rregullat-e-tij.pdf": {
+    "mtime": 1781899475.551991,
+    "ast_hash": "9108fc7c823ffe1537859f409d0ba7b1",
+    "semantic_hash": ""
+  },
+  "docs/DOC-20260209-WA0113..pdf": {
+    "mtime": 1781899475.5638068,
+    "ast_hash": "1aec2e973cffecd89046fbafc9e47319",
+    "semantic_hash": ""
+  },
+  "docs/Dispozitat-e-haxhit-dhe-te-umres-sipas-Kuranit-dhe-Sunnetit-Muhamed-Nasirud-din-Albani.pdf": {
+    "mtime": 1781899475.571761,
+    "ast_hash": "66a3331de6f123d0ba8d2d3e3125b2ae",
+    "semantic_hash": ""
+  },
+  "docs/Dr.-Jusuf-Kardavi-Hallalli-dhe-harami-me-balline.pdf": {
+    "mtime": 1781899475.5990589,
+    "ast_hash": "0a9a2b56e98aece6b98cf5989838c836",
+    "semantic_hash": ""
+  },
+  "docs/E-DREJTA-PENALE-ISLAME-pjesa-e-posacme-1.pdf": {
+    "mtime": 1781899475.6366165,
+    "ast_hash": "f5ceeb4b384e45cb65638f8263e80390",
+    "semantic_hash": ""
+  },
+  "docs/FIKHU PRAKTIK-83-279.pdf": {
+    "mtime": 1781899475.6591651,
+    "ast_hash": "93e6aeff814e6a031c2d369bacdbbb0e",
+    "semantic_hash": ""
+  },
+  "docs/Normat_e_shitblerjes-2 (1).pdf": {
+    "mtime": 1781899475.671933,
+    "ast_hash": "b76c7f10a28c537f0bcf877258f00d73",
+    "semantic_hash": ""
+  },
+  "docs/Normat_e_shitblerjes-2.pdf": {
+    "mtime": 1781899475.6820898,
+    "ast_hash": "b76c7f10a28c537f0bcf877258f00d73",
+    "semantic_hash": ""
+  },
+  "docs/Shtyllat (Ruknet )e namazit.pdf": {
+    "mtime": 1781899475.686331,
+    "ast_hash": "a93c558e9f950f96c70fc90424412295",
+    "semantic_hash": ""
+  },
+  "docs/Tua-mesojme-femijeve-besimin.pdf": {
+    "mtime": 1781899475.6906204,
+    "ast_hash": "b6ce926f74ef7a19143c3875192a2d96",
+    "semantic_hash": ""
+  },
+  "docs/concise-presentation-of-the-fiqh-of-the-sunnah-and-the-noble-book.pdf": {
+    "mtime": 1781899494.42702,
+    "ast_hash": "b8c22e839abbc9c7862067be7a647248",
+    "semantic_hash": ""
+  },
+  "docs/simplefiqh1-130224archive.pdf": {
+    "mtime": 1781899477.2768042,
+    "ast_hash": "508f4d2bdfecd8bec9bc6fd97e6fab44",
+    "semantic_hash": ""
+  },
+  "android/app/src/main/res/mipmap-hdpi/ic_launcher.png": {
+    "mtime": 1781986718.0752175,
+    "ast_hash": "4a8d9c0a72768aea0f324bffb15393fd",
+    "semantic_hash": ""
+  },
+  "android/app/src/main/res/mipmap-mdpi/ic_launcher.png": {
+    "mtime": 1781986718.0752175,
+    "ast_hash": "5306bc5c95ed0676bbd0827b68b98bb8",
+    "semantic_hash": ""
+  },
+  "android/app/src/main/res/mipmap-xhdpi/ic_launcher.png": {
+    "mtime": 1781986718.077238,
+    "ast_hash": "9f6f36f28cb4ca1bdd4169ec70ad51f5",
+    "semantic_hash": ""
+  },
+  "android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png": {
+    "mtime": 1781986718.077238,
+    "ast_hash": "37407a47bfcccae56d255697b08d896d",
+    "semantic_hash": ""
+  },
+  "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png": {
+    "mtime": 1781986718.077238,
+    "ast_hash": "96697cd5a9deb4b905320cbe5b542e59",
+    "semantic_hash": ""
+  },
+  "assets/icon/app_icon.png": {
+    "mtime": 1781986336.6083994,
+    "ast_hash": "441000ced743830114c959cb939f24ec",
+    "semantic_hash": ""
+  },
+  "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png": {
+    "mtime": 1781899477.353253,
+    "ast_hash": "c785f8932297af4acd5f5ccb7630f01c",
+    "semantic_hash": ""
+  },
+  "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png": {
+    "mtime": 1781899477.3552742,
+    "ast_hash": "a2f8558fb1d42514111fbbb19fb67314",
+    "semantic_hash": ""
+  },
+  "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png": {
+    "mtime": 1781899477.3572829,
+    "ast_hash": "2247a840b6ee72b8a069208af170e5b1",
+    "semantic_hash": ""
+  },
+  "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png": {
+    "mtime": 1781899477.358937,
+    "ast_hash": "1b3b1538136316263c7092951e923e9d",
+    "semantic_hash": ""
+  },
+  "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png": {
+    "mtime": 1781899477.3609524,
+    "ast_hash": "be8887071dd7ec39cb754d236aa9584f",
+    "semantic_hash": ""
+  },
+  "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png": {
+    "mtime": 1781899477.3629637,
+    "ast_hash": "043119ef4faa026ff82bd03f241e5338",
+    "semantic_hash": ""
+  },
+  "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png": {
+    "mtime": 1781899477.364977,
+    "ast_hash": "2b1452c4c1bda6177b4fbbb832df217f",
+    "semantic_hash": ""
+  },
+  "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png": {
+    "mtime": 1781899477.3675005,
+    "ast_hash": "2247a840b6ee72b8a069208af170e5b1",
+    "semantic_hash": ""
+  },
+  "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png": {
+    "mtime": 1781899477.3696322,
+    "ast_hash": "8245359312aea1b0d2412f79a07b0ca5",
+    "semantic_hash": ""
+  },
+  "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png": {
+    "mtime": 1781899477.3696322,
+    "ast_hash": "5b3c0902200ce596e9848f22e1f0fe0e",
+    "semantic_hash": ""
+  },
+  "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png": {
+    "mtime": 1781899477.3716445,
+    "ast_hash": "5b3c0902200ce596e9848f22e1f0fe0e",
+    "semantic_hash": ""
+  },
+  "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png": {
+    "mtime": 1781899477.3736541,
+    "ast_hash": "e419d22a37bc40ba185aca1acb6d4ac6",
+    "semantic_hash": ""
+  },
+  "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png": {
+    "mtime": 1781899477.3746624,
+    "ast_hash": "36c0d7a7132bdde18898ffdfcfcdc4d2",
+    "semantic_hash": ""
+  },
+  "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png": {
+    "mtime": 1781899477.3766785,
+    "ast_hash": "643842917530acf4c5159ae851b0baf2",
+    "semantic_hash": ""
+  },
+  "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png": {
+    "mtime": 1781899477.3776884,
+    "ast_hash": "665cb5e3c5729da6d639d26eff47a503",
+    "semantic_hash": ""
+  },
+  "ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png": {
+    "mtime": 1781899477.3818285,
+    "ast_hash": "978c1bee49d7ad5fc1a4d81099b13e18",
+    "semantic_hash": ""
+  },
+  "ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png": {
+    "mtime": 1781899477.3858497,
+    "ast_hash": "978c1bee49d7ad5fc1a4d81099b13e18",
+    "semantic_hash": ""
+  },
+  "ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png": {
+    "mtime": 1781899477.387861,
+    "ast_hash": "978c1bee49d7ad5fc1a4d81099b13e18",
+    "semantic_hash": ""
+  },
+  "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_1024.png": {
+    "mtime": 1781899477.5819912,
+    "ast_hash": "c9becc9105f8cabce934d20c7bfb6aac",
+    "semantic_hash": ""
+  },
+  "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_128.png": {
+    "mtime": 1781899477.5847862,
+    "ast_hash": "3ded30823804caaa5ccc944067c54a36",
+    "semantic_hash": ""
+  },
+  "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_16.png": {
+    "mtime": 1781899477.5868194,
+    "ast_hash": "8bf511604bc6ed0a6aeb380c5113fdcf",
+    "semantic_hash": ""
+  },
+  "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_256.png": {
+    "mtime": 1781899477.5868194,
+    "ast_hash": "dfe2c93d1536ae02f085cc63faa3430e",
+    "semantic_hash": ""
+  },
+  "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_32.png": {
+    "mtime": 1781899477.5900612,
+    "ast_hash": "8e0ae58e362a6636bdfccbc04da2c58c",
+    "semantic_hash": ""
+  },
+  "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_512.png": {
+    "mtime": 1781899477.5925703,
+    "ast_hash": "0ad44039155424738917502c69667699",
+    "semantic_hash": ""
+  },
+  "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_64.png": {
+    "mtime": 1781899477.5925703,
+    "ast_hash": "04e7b6ef05346c70b663ca1d97de3ad5",
+    "semantic_hash": ""
+  },
+  "web/favicon.png": {
+    "mtime": 1781899477.6217115,
+    "ast_hash": "5dcef449791fa27946b3d35ad8803796",
+    "semantic_hash": ""
+  },
+  "web/icons/Icon-192.png": {
+    "mtime": 1781899477.6242692,
+    "ast_hash": "ac9a721a12bbc803b44f645561ecb1e1",
+    "semantic_hash": ""
+  },
+  "web/icons/Icon-512.png": {
+    "mtime": 1781899477.6261785,
+    "ast_hash": "96e752610906ba2a93c65f8abe1645f1",
+    "semantic_hash": ""
+  },
+  "web/icons/Icon-maskable-192.png": {
+    "mtime": 1781899477.6271904,
+    "ast_hash": "c457ef57daa1d16f64b27b786ec2ea3c",
+    "semantic_hash": ""
+  },
+  "web/icons/Icon-maskable-512.png": {
+    "mtime": 1781899477.629205,
+    "ast_hash": "301a7604d45b3e739efc881eb04896ea",
+    "semantic_hash": ""
+  }
+}
