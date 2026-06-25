@@ -117,6 +117,36 @@ class ThemeNotifier extends StateNotifier<AppThemeType> {
 }
 
 // ══════════════════════════════════════════
+//  AVATAR PROVIDER
+// ══════════════════════════════════════════
+
+final avatarPathProvider =
+    StateNotifierProvider<AvatarPathNotifier, String?>((ref) {
+  return AvatarPathNotifier();
+});
+
+class AvatarPathNotifier extends StateNotifier<String?> {
+  AvatarPathNotifier() : super(null) {
+    _load();
+  }
+
+  Future<void> _load() async {
+    final prefs = await SharedPreferences.getInstance();
+    state = prefs.getString('avatar_path');
+  }
+
+  Future<void> setPath(String? path) async {
+    state = path;
+    final prefs = await SharedPreferences.getInstance();
+    if (path == null) {
+      await prefs.remove('avatar_path');
+    } else {
+      await prefs.setString('avatar_path', path);
+    }
+  }
+}
+
+// ══════════════════════════════════════════
 //  USER NAME PROVIDER
 // ══════════════════════════════════════════
 

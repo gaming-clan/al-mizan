@@ -28,6 +28,9 @@ dependencies:
   # Storage
   shared_preferences: ^2.2.3
 
+  # Media
+  image_picker: ^1.1.2
+
   # UI
   google_fonts: ^6.2.1
   lucide_icons: ^0.257.0

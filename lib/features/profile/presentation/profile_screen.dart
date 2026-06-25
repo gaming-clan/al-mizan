@@ -1,10 +1,180 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:image_picker/image_picker.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../home/providers/home_provider.dart';
 import '../../settings/providers/settings_provider.dart';
+
+// ── Avatar widget ──────────────────────────────────────────
+class _ProfileAvatar extends StatelessWidget {
+  final String? avatarPath;
+  final String name;
+  final double size;
+  final Color primaryColor;
+  final Color onPrimaryColor;
+  final Color outlineColor;
+  final Color textColor;
+
+  const _ProfileAvatar({
+    required this.avatarPath,
+    required this.name,
+    required this.size,
+    required this.primaryColor,
+    required this.onPrimaryColor,
+    required this.outlineColor,
+    required this.textColor,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final hasImage =
+        avatarPath != null && File(avatarPath!).existsSync();
+    final letter =
+        name.trim().isNotEmpty ? name.trim()[0].toUpperCase() : null;
+
+    return Container(
+      width: size,
+      height: size,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: primaryColor,
+        border: Border.all(color: outlineColor, width: 2),
+        image: hasImage
+            ? DecorationImage(
+                image: FileImage(File(avatarPath!)),
+                fit: BoxFit.cover,
+              )
+            : null,
+      ),
+      child: hasImage
+          ? null
+          : letter != null
+              ? Center(
+                  child: Text(
+                    letter,
+                    style: GoogleFonts.sourceSerif4(
+                      fontSize: size * 0.42,
+                      fontWeight: FontWeight.w700,
+                      color: onPrimaryColor,
+                    ),
+                  ),
+                )
+              : Icon(
+                  Icons.person_rounded,
+                  size: size * 0.46,
+                  color: onPrimaryColor,
+                ),
+    );
+  }
+}
+
+// ── Avatar picker ───────────────────────────────────────────
+void _showAvatarPicker(
+    BuildContext context, WidgetRef ref, String currentName) {
+  final hasPhoto = ref.read(avatarPathProvider) != null;
+  showModalBottomSheet(
+    context: context,
+    shape: const RoundedRectangleBorder(
+      borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+    ),
+    builder: (ctx) {
+      final theme = Theme.of(ctx);
+      final cs = theme.colorScheme;
+      return SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Container(
+                width: 36,
+                height: 4,
+                margin: const EdgeInsets.only(bottom: 16),
+                decoration: BoxDecoration(
+                  color: cs.outlineVariant,
+                  borderRadius: BorderRadius.circular(2),
+                ),
+              ),
+              ListTile(
+                leading: Container(
+                  width: 40,
+                  height: 40,
+                  decoration: BoxDecoration(
+                    color: cs.primaryContainer.withValues(alpha: 0.3),
+                    shape: BoxShape.circle,
+                  ),
+                  child: Icon(Icons.photo_library_rounded,
+                      color: cs.primary),
+                ),
+                title: const Text('Zgjidh nga galeria'),
+                subtitle: const Text('Ngarko foto nga pajisja'),
+                onTap: () async {
+                  Navigator.pop(ctx);
+                  final picker = ImagePicker();
+                  final picked = await picker.pickImage(
+                    source: ImageSource.gallery,
+                    imageQuality: 85,
+                    maxWidth: 512,
+                    maxHeight: 512,
+                  );
+                  if (picked != null) {
+                    ref
+                        .read(avatarPathProvider.notifier)
+                        .setPath(picked.path);
+                  }
+                },
+              ),
+              ListTile(
+                leading: Container(
+                  width: 40,
+                  height: 40,
+                  decoration: BoxDecoration(
+                    color: cs.primaryContainer.withValues(alpha: 0.3),
+                    shape: BoxShape.circle,
+                  ),
+                  child: Icon(Icons.text_fields_rounded,
+                      color: cs.primary),
+                ),
+                title: const Text('Gjenero avatar'),
+                subtitle: Text(
+                  currentName.trim().isNotEmpty
+                      ? 'Shkronja "${currentName.trim()[0].toUpperCase()}" si avatar'
+                      : 'Shkronja e parë e emrit',
+                ),
+                onTap: () {
+                  ref.read(avatarPathProvider.notifier).setPath(null);
+                  Navigator.pop(ctx);
+                },
+              ),
+              if (hasPhoto)
+                ListTile(
+                  leading: Container(
+                    width: 40,
+                    height: 40,
+                    decoration: BoxDecoration(
+                      color: cs.errorContainer.withValues(alpha: 0.3),
+                      shape: BoxShape.circle,
+                    ),
+                    child: Icon(Icons.delete_outline_rounded,
+                        color: cs.error),
+                  ),
+                  title: const Text('Hiq foton'),
+                  onTap: () {
+                    ref.read(avatarPathProvider.notifier).setPath(null);
+                    Navigator.pop(ctx);
+                  },
+                ),
+              const SizedBox(height: 8),
+            ],
+          ),
+        ),
+      );
+    },
+  );
+}
 
 void _showThemePicker(BuildContext context, WidgetRef ref) {
   final current = ref.read(themeProvider);
@@ -162,6 +332,7 @@ class ProfileScreen extends ConsumerWidget {
     final userName = ref.watch(userNameProvider);
     final displayName = userName.isEmpty ? 'Nxënës' : userName;
     final currentTheme = ref.watch(themeProvider);
+    final avatarPath = ref.watch(avatarPathProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Profili')),
@@ -172,18 +343,39 @@ class ProfileScreen extends ConsumerWidget {
           Center(
             child: Column(
               children: [
-                Container(
-                  width: 80,
-                  height: 80,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: cs.primaryContainer,
-                    border: Border.all(color: cs.outlineVariant, width: 2),
-                  ),
-                  child: Icon(
-                    Icons.person_rounded,
-                    size: 40,
-                    color: cs.onPrimary,
+                GestureDetector(
+                  onTap: () => _showAvatarPicker(context, ref, userName),
+                  child: Stack(
+                    children: [
+                      _ProfileAvatar(
+                        avatarPath: avatarPath,
+                        name: userName,
+                        size: 88,
+                        primaryColor: cs.primaryContainer,
+                        onPrimaryColor: cs.onPrimary,
+                        outlineColor: cs.outlineVariant,
+                        textColor: cs.onSurface,
+                      ),
+                      Positioned(
+                        bottom: 0,
+                        right: 0,
+                        child: Container(
+                          width: 26,
+                          height: 26,
+                          decoration: BoxDecoration(
+                            color: cs.primary,
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                                color: cs.surface, width: 2),
+                          ),
+                          child: Icon(
+                            Icons.camera_alt_rounded,
+                            size: 13,
+                            color: cs.onPrimary,
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
                 const SizedBox(height: 12),
