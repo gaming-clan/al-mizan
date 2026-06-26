@@ -13,6 +13,7 @@ import '../../features/search/presentation/search_screen.dart';
 import '../../features/bookmarks/presentation/bookmarks_screen.dart';
 import '../../features/settings/presentation/settings_screen.dart';
 import '../../features/about/presentation/about_screen.dart';
+import '../../features/about/presentation/privacy_policy_screen.dart';
 import '../../features/zakat_calculator/presentation/zakat_calculator_screen.dart';
 import '../../features/ask_scholar/presentation/ask_scholar_screen.dart';
 import '../../features/profile/presentation/profile_screen.dart';
@@ -123,6 +124,11 @@ final appRouter = GoRouter(
       path: '/about',
       parentNavigatorKey: _rootNavigatorKey,
       builder: (context, state) => const AboutScreen(),
+    ),
+    GoRoute(
+      path: '/privacy',
+      parentNavigatorKey: _rootNavigatorKey,
+      builder: (context, state) => const PrivacyPolicyScreen(),
     ),
   ],
 );
