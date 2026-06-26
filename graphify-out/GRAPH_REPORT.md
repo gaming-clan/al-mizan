@@ -1,15 +1,16 @@
-# Graph Report - .  (2026-06-25)
+# Graph Report - al-mizan  (2026-06-26)
 
 ## Corpus Check
-- cluster-only mode — file stats not available
+- 100 files · ~1,000,483 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1137 nodes · 1429 edges · 67 communities (55 shown, 12 thin omitted)
+- 1171 nodes · 1479 edges · 67 communities (55 shown, 12 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 8 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `907c94da`
+- Built from commit: `bbc08c49`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -93,10 +94,10 @@
   windows/runner/main.cpp → windows/runner/utils.cpp
 - `build` --references--> `themeProvider`  [EXTRACTED]
   lib/app.dart → lib/features/settings/providers/settings_provider.dart
-- `HomeScreen` --references--> `modulesProvider`  [EXTRACTED]
-  lib/features/home/presentation/home_screen.dart → lib/features/home/providers/home_provider.dart
-- `build` --references--> `modulesProvider`  [EXTRACTED]
-  lib/features/home/presentation/home_screen.dart → lib/features/home/providers/home_provider.dart
+- `BookmarksScreen` --references--> `databaseProvider`  [EXTRACTED]
+  lib/features/bookmarks/presentation/bookmarks_screen.dart → lib/features/home/providers/home_provider.dart
+- `build` --references--> `databaseProvider`  [EXTRACTED]
+  lib/features/bookmarks/presentation/bookmarks_screen.dart → lib/features/home/providers/home_provider.dart
 
 ## Import Cycles
 - None detected.
@@ -128,15 +129,15 @@ Cohesion: 0.07
 Nodes (25): Any, Bool, Cocoa, file_selector_macos, Flutter, RegisterGeneratedPlugins(), FlutterAppDelegate, FlutterMacOS (+17 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.05
-Nodes (35): app_colors.dart, ../../features/settings/providers/settings_provider.dart, package:google_fonts/google_fonts.dart, static TextStyle get, static ThemeData get, andalusianGarden, AppTheme, azureMosaic (+27 more)
+Cohesion: 0.10
+Nodes (20): static TextStyle get, AppTypography, arabicGeneral, arabicLight, bodyLarge, bodyMedium, bodySmall, displayLarge (+12 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.06
-Nodes (35): bool get, desertSands,
+Nodes (36): bool get, desertSands,
   azureMosaic,
   andalusianGarden,
-  midnightIndigo,, ../../features/about/presentation/about_screen.dart, ../../features/ask_scholar/presentation/ask_scholar_screen.dart, ../../features/bookmarks/presentation/bookmarks_screen.dart, ../../features/home/presentation/home_screen.dart, ../../features/modules/presentation/lesson_list_screen.dart, ../../features/modules/presentation/lesson_screen.dart (+27 more)
+  midnightIndigo,, ../../features/about/presentation/about_screen.dart, ../../features/about/presentation/privacy_policy_screen.dart, ../../features/ask_scholar/presentation/ask_scholar_screen.dart, ../../features/bookmarks/presentation/bookmarks_screen.dart, ../../features/home/presentation/home_screen.dart, ../../features/modules/presentation/lesson_list_screen.dart (+28 more)
 
 ### Community 8 - "Community 8"
 Cohesion: 0.06
@@ -144,7 +145,7 @@ Nodes (35): connection/connection.dart, addBookmark, completedAt, correctAnswers
 
 ### Community 9 - "Community 9"
 Cohesion: 0.06
-Nodes (34): _answered, build, _buildFinalResult, _buildLevelIntro, _buildLevelResult, _buildQuestion, _correct, correctIndex (+26 more)
+Nodes (32): _answered, build, _buildFinalResult, _buildLevelIntro, _buildLevelResult, _buildQuestion, _correct, correctIndex (+24 more)
 
 ### Community 10 - "Community 10"
 Cohesion: 0.06
@@ -159,48 +160,48 @@ Cohesion: 0.06
 Nodes (30): _businessCtrl, _calcLivestock, _camelCtrl, _cashCtrl, _cattleCtrl, createState, _cropResult, _cropsTab (+22 more)
 
 ### Community 13 - "Community 13"
-Cohesion: 0.07
-Nodes (27): AppConstants, appName, appNameAr, appTagline, cropNisabKg, cropRateMachineIrrigated, cropRateRainIrrigated, currencyNames (+19 more)
+Cohesion: 0.06
+Nodes (34): AppConstants, appName, appNameAr, appTagline, cropNisabKg, cropRateMachineIrrigated, cropRateRainIrrigated, currencyNames (+26 more)
 
 ### Community 14 - "Community 14"
 Cohesion: 0.09
-Nodes (25): ConsumerState, allQuestions, allQuestionsProvider, answered, build, color, correctIndex, createState (+17 more)
+Nodes (22): allQuestions, answered, color, correctIndex, createState, dataSource, difficulty, _DifficultyCard (+14 more)
 
 ### Community 15 - "Community 15"
 Cohesion: 0.11
 Nodes (22): FlPluginRegistry, fl_register_plugins(), FlView, GApplication, gboolean, gchar, GObject, GtkApplication (+14 more)
 
 ### Community 16 - "Community 16"
-Cohesion: 0.13
-Nodes (16): app.dart, core/routing/app_router.dart, core/theme/app_theme.dart, build, FikhAcademyApp, main, package:fikh_academy/app.dart, package:flutter/material.dart (+8 more)
+Cohesion: 0.25
+Nodes (8): core/routing/app_router.dart, core/theme/app_theme.dart, ../../features/settings/providers/settings_provider.dart, build, FikhAcademyApp, _showThemePicker, build, themeProvider
 
 ### Community 17 - "Community 17"
-Cohesion: 0.11
-Nodes (18): package:image_picker/image_picker.dart, avatarPath, color, controller, current, hasPhoto, icon, label (+10 more)
+Cohesion: 0.10
+Nodes (20): package:image_picker/image_picker.dart, avatarPath, color, controller, current, hasPhoto, icon, label (+12 more)
 
 ### Community 18 - "Community 18"
-Cohesion: 0.11
-Nodes (18): body, build, _controller, createState, _currentPage, dispose, icon, _infoPages (+10 more)
+Cohesion: 0.10
+Nodes (20): body, build, _controller, createState, _currentPage, dispose, _finish, icon (+12 more)
 
 ### Community 19 - "Community 19"
-Cohesion: 0.11
-Nodes (17): Color, package:url_launcher/url_launcher.dart, AboutScreen, _appLinks, build, icon, iconBg, iconColor (+9 more)
+Cohesion: 0.08
+Nodes (24): package:url_launcher/url_launcher.dart, _appLinks, author, build, child, color, cs, detail (+16 more)
 
 ### Community 20 - "Community 20"
-Cohesion: 0.11
-Nodes (17): error, _ErrorView, index, _isLevelUnlocked, isRead, lesson, lessons, level (+9 more)
+Cohesion: 0.09
+Nodes (22): Color, error, _ErrorView, index, _isLevelUnlocked, isRead, lesson, lessons (+14 more)
 
 ### Community 21 - "Community 21"
-Cohesion: 0.13
-Nodes (15): dart:math, int?, List, answered, copyWith, correctCount, currentIndex, initialize (+7 more)
+Cohesion: 0.14
+Nodes (14): dart:math, int?, answered, copyWith, correctCount, currentIndex, initialize, nextQuestion (+6 more)
 
 ### Community 22 - "Community 22"
-Cohesion: 0.17
-Nodes (12): ../../../core/database/app_database.dart, ../../home/providers/home_provider.dart, ../../modules/data/models/fiqh_models.dart, BookmarksScreen, build, bookmarksProvider, ../providers/bookmarks_provider.dart, db (+4 more)
+Cohesion: 0.24
+Nodes (8): ../../../core/database/app_database.dart, ../../home/providers/home_provider.dart, BookmarksScreen, build, bookmarksProvider, ../providers/bookmarks_provider.dart, db, getAllBookmarks
 
 ### Community 23 - "Community 23"
-Cohesion: 0.13
-Nodes (15): _DifficultyCard, _DifficultySelector, _OptionButton, _LessonTile, _LeveledList, _LevelSection, _LockedOverlay, _LevelBreakdownRow (+7 more)
+Cohesion: 0.12
+Nodes (16): AboutScreen, _Divider, _FeatureRow, _HeroHeader, _InfoCard, _LinkTile, _SectionLabel, _SourceRow (+8 more)
 
 ### Community 24 - "Community 24"
 Cohesion: 0.14
@@ -215,8 +216,8 @@ Cohesion: 0.14
 Nodes (13): answer, build, createState, _expanded, isDark, _QA, _qaList, question (+5 more)
 
 ### Community 27 - "Community 27"
-Cohesion: 0.26
-Nodes (13): ConsumerWidget, build, LessonListScreen, build, LessonScreen, _loadQuestions, build, QuizScreen (+5 more)
+Cohesion: 0.21
+Nodes (17): ConsumerWidget, allQuestionsProvider, build, _GeneralQuizBody, build, LessonListScreen, build, LessonScreen (+9 more)
 
 ### Community 28 - "Community 28"
 Cohesion: 0.15
@@ -231,48 +232,48 @@ Cohesion: 0.17
 Nodes (11): ../data/models/fiqh_models.dart, LessonSection, lessonId, moduleId, section, _SectionWidget, ../providers/module_provider.dart, ../../../shared/widgets/hadith_card.dart (+3 more)
 
 ### Community 31 - "Community 31"
-Cohesion: 0.18
-Nodes (9): ../../core/theme/app_colors.dart, FiqhModule, build, level, LevelCompleteDialog, build, _iconForModule, module (+1 more)
+Cohesion: 0.13
+Nodes (14): app_colors.dart, package:google_fonts/google_fonts.dart, static ThemeData get, andalusianGarden, AppTheme, azureMosaic, _build, dark (+6 more)
 
 ### Community 32 - "Community 32"
 Cohesion: 0.20
 Nodes (8): openConnection, openConnection, dart:io, package:drift/drift.dart, package:drift/native.dart, package:drift/web.dart, package:path/path.dart, package:path_provider/path_provider.dart
 
 ### Community 33 - "Community 33"
-Cohesion: 0.22
-Nodes (9): ../../home/presentation/widgets/module_card.dart, package:shimmer/shimmer.dart, build, cols, error, _ModuleListError, ModuleListScreen, _ModuleListShimmer (+1 more)
+Cohesion: 0.29
+Nodes (6): ../../home/presentation/widgets/module_card.dart, package:shimmer/shimmer.dart, cols, error, _ModuleListError, _ModuleListShimmer
 
 ### Community 34 - "Community 34"
-Cohesion: 0.27
-Nodes (8): ../../modules/data/fiqh_data_source.dart, package:go_router/go_router.dart, build, SearchScreen, ../providers/search_provider.dart, query, searchQueryProvider, searchResultsProvider
+Cohesion: 0.19
+Nodes (11): ../../modules/data/fiqh_data_source.dart, package:fikh_academy/app.dart, package:flutter_riverpod/flutter_riverpod.dart, package:flutter_test/flutter_test.dart, build, SearchScreen, ../providers/search_provider.dart, query (+3 more)
 
 ### Community 35 - "Community 35"
-Cohesion: 0.29
-Nodes (10): build, _calcCrops, _calcWealth, _wealthTab, _ZakatCalculatorScreenState, exchangeRateProvider, goldPriceProvider, liveRatesProvider (+2 more)
+Cohesion: 0.25
+Nodes (11): build, _calcCrops, _calcWealth, _wealthTab, ZakatCalculatorScreen, _ZakatCalculatorScreenState, exchangeRateProvider, goldPriceProvider (+3 more)
 
 ### Community 36 - "Community 36"
-Cohesion: 0.22
-Nodes (8): MadhabRuling, MadhabRulings, build, MadhabComparison, madhabKey, _MadhabRow, ruling, rulings
+Cohesion: 0.10
+Nodes (18): app.dart, ../../core/constants/app_constants.dart, ../../core/theme/app_colors.dart, main, MadhabRuling, MadhabRulings, package:flutter/material.dart, SettingsScreen (+10 more)
 
 ### Community 37 - "Community 37"
-Cohesion: 0.31
-Nodes (9): HomeScreen, build, ProfileScreen, _showAvatarPicker, _showEditNameDialog, streakProvider, avatarPathProvider, userNameProvider (+1 more)
+Cohesion: 0.18
+Nodes (16): build, HomeScreen, build, ModuleListScreen, build, ProfileScreen, _showAvatarPicker, _showEditNameDialog (+8 more)
 
 ### Community 38 - "Community 38"
-Cohesion: 0.25
-Nodes (7): author, DailyQuote, DailyQuotes, forToday, _quotes, text, static const List
+Cohesion: 0.15
+Nodes (12): ColorScheme, List, build, bullets, content, cs, number, PrivacyPolicyScreen (+4 more)
 
 ### Community 39 - "Community 39"
-Cohesion: 0.25
-Nodes (7): ../../core/constants/app_constants.dart, ../../../core/utils/zakat_calculator.dart, currency, getGoldPricePerGram, getLiveExchangeRates, liveAsync, when
+Cohesion: 0.29
+Nodes (6): ../../../core/utils/zakat_calculator.dart, currency, getGoldPricePerGram, getLiveExchangeRates, liveAsync, when
 
 ### Community 40 - "Community 40"
 Cohesion: 0.32
 Nodes (8): AskScholarScreen, _AskScholarScreenState, _QACard, _QACardState, OnboardingScreen, _OnboardingScreenState, State, StatefulWidget
 
 ### Community 41 - "Community 41"
-Cohesion: 0.25
-Nodes (7): build, child, _currentIndex, ShellScaffold, _tabs, static const, Widget?
+Cohesion: 0.13
+Nodes (13): FiqhModule, package:go_router/go_router.dart, build, child, _currentIndex, ShellScaffold, _tabs, static const (+5 more)
 
 ### Community 42 - "Community 42"
 Cohesion: 0.33
@@ -286,16 +287,16 @@ Nodes (5): ArabicTextHelper, containsArabic, formatHadithRef, formatQuranRef, wr
 Cohesion: 0.40
 Nodes (5): Bookmarks, CompletedLessons, LearningStreak, QuizResults, Table
 
-### Community 46 - "Community 46"
-Cohesion: 0.50
-Nodes (4): build, Route /ask, Route /general-quiz, Route /zakat
-
 ### Community 47 - "Community 47"
-Cohesion: 0.67
-Nodes (3): _, @DriftDatabase, AppDatabase
+Cohesion: 0.29
+Nodes (6): _, @DriftDatabase, AppDatabase, ../../modules/data/models/fiqh_models.dart, db, getCurrentStreak
+
+### Community 52 - "Community 52"
+Cohesion: 0.40
+Nodes (6): ConsumerState, ConsumerStatefulWidget, GeneralQuizScreen, _GeneralQuizScreenState, ModuleQuizScreen, _ModuleQuizScreenState
 
 ## Knowledge Gaps
-- **706 isolated node(s):** `flutter_export_environment.sh script`, `-registerWithRegistry`, `AppConstants`, `appName`, `appNameAr` (+701 more)
+- **722 isolated node(s):** `flutter_export_environment.sh script`, `-registerWithRegistry`, `AppConstants`, `appName`, `appNameAr` (+717 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -303,11 +304,11 @@ Nodes (3): _, @DriftDatabase, AppDatabase
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `size` connect `Community 1` to `Community 17`?**
-  _High betweenness centrality (0.055) - this node is a cross-community bridge._
-- **Why does `LivestockZakatResult` connect `Community 10` to `Community 12`?**
+  _High betweenness centrality (0.040) - this node is a cross-community bridge._
+- **Why does `CropZakatResult` connect `Community 10` to `Community 12`?**
   _High betweenness centrality (0.021) - this node is a cross-community bridge._
 - **What connects `Intercept NOTIFY_DEBUGGER_ABOUT_RX_PAGES and touch the pages.`, `flutter_export_environment.sh script`, `-registerWithRegistry` to the rest of the system?**
-  _707 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _723 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.009259259259259259 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

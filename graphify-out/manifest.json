@@ -115,8 +115,8 @@
     "semantic_hash": ""
   },
   "lib/core/routing/app_router.dart": {
-    "mtime": 1782242324.191758,
-    "ast_hash": "d855954ab9bf70ce1950fdab0c7c6c42",
+    "mtime": 1782458239.2542188,
+    "ast_hash": "ff35a4cb0060bd0dc17c3161dfd746f7",
     "semantic_hash": ""
   },
   "lib/core/routing/shell_scaffold.dart": {
@@ -210,8 +210,8 @@
     "semantic_hash": ""
   },
   "lib/features/about/presentation/about_screen.dart": {
-    "mtime": 1782243238.111943,
-    "ast_hash": "d3dfb655d738ea45b6b716cad4cfaac4",
+    "mtime": 1782458798.6183474,
+    "ast_hash": "6bb5b1ac6da57d747486f750e03982cb",
     "semantic_hash": ""
   },
   "lib/features/ask_scholar/presentation/ask_scholar_screen.dart": {
@@ -777,6 +777,21 @@
   "web/icons/Icon-maskable-512.png": {
     "mtime": 1781899477.629205,
     "ast_hash": "301a7604d45b3e739efc881eb04896ea",
+    "semantic_hash": ""
+  },
+  ".claude/settings.json": {
+    "mtime": 1782417736.813808,
+    "ast_hash": "7bf81dca0376bde3a32244b82bc7cbc0",
+    "semantic_hash": ""
+  },
+  "lib/features/about/presentation/privacy_policy_screen.dart": {
+    "mtime": 1782458221.7193978,
+    "ast_hash": "6c450fa7fd67fd4078345d2021932fdd",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1782417736.8089254,
+    "ast_hash": "8a6643a420fdad6bfb583523bc6cef16",
     "semantic_hash": ""
   }
 }
