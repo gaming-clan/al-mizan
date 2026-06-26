@@ -13,7 +13,9 @@
       "source_references": [
         "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
         "Sahih Muslim",
-        "Sahih Bukhari"
+        "Sahih Bukhari",
+        "E Drejta Islame II (Fikh), Komuniteti Mysliman i Shqipërisë, Stamboll 2013",
+        "Ilmihali - Përmbledhje e Shkurtër Mësimesh dhe Rregullash Islame (Progresi Botime)"
       ],
       "sections": [
         {
@@ -397,6 +399,119 @@
           ],
           "correct_index": 2,
           "explanation": "Profeti ﷺ bënte itikafen në dhjetë ditët e fundit të Ramazanit për të kërkuar Natën e Kadrit."
+        }
+      ]
+    },
+    {
+      "id": "swm_005",
+      "title_sq": "Rëndësia dhe Dobitë e Agjërimit",
+      "title_ar": "فضل الصيام وفوائده",
+      "level": "beginner",
+      "source_references": [
+        "E Drejta Islame II (Fikh), Komuniteti Mysliman i Shqipërisë, Stamboll 2013",
+        "Sahih Bukhari",
+        "Sahih Muslim",
+        "Sunen Ibn Maxhe",
+        "Ilmihali - Përmbledhje e Shkurtër Mësimesh dhe Rregullash Islame (Progresi Botime)"
+      ],
+      "sections": [
+        {
+          "heading": "Përkufizimi dhe Urtësia e Agjërimit",
+          "content_sq": "Fjala arabe 'saum' ose 'sijam' do të thotë leksikisht 'shmangie nga një veprim ose punë e caktuar, ndërprerje e ushqyerjes.' Si term i të drejtës Islame, agjërimi është ndërprerja me qëllim adhurimi e ushqyerjes dhe marrëdhënieve seksuale nga agimi i parë (fexhrul sidk) deri në perëndimin e diellit.\n\nAgjërimi ka shumë urtësi:\n1. Forcon vullnetin dhe kontrollin e dëshirave.\n2. Pastron shpirtin nga gjynahet.\n3. Mëson durimin — Profeti ﷺ tha: 'Agjërimi është gjysma e durimit!'\n4. Kujtesa e Allahut mbetet gjithmonë e gjallë gjatë ditës.\n5. Mjekësia moderne konfirmon dobitë fizike: largon yndyrnat e tepërta, jep pushim organizmit.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "الصَّوْمُ جُنَّةٌ، فَلَا يَرْفُثْ وَلَا يَجْهَلْ",
+              "translation_sq": "Agjërimi është mburojë, prandaj mos flasë fjalë të ndyra dhe mos sillet si i pamend.",
+              "narrator": "Ebu Hurejre (r.a.)",
+              "collection": "Sahih Bukhari",
+              "classification": "sahih"
+            },
+            {
+              "type": "hadith",
+              "arabic": "الصِّيَامُ نِصْفُ الصَّبْرِ",
+              "translation_sq": "Agjërimi është gjysma e durimit.",
+              "narrator": "Transmetim i lidhur me Sunen Ibn Maxhe, nr. 1745",
+              "collection": "Sunen Ibn Maxhe",
+              "classification": "hasen"
+            }
+          ],
+          "ruling": "farz"
+        },
+        {
+          "heading": "Shpërblimet dhe Vlera e Agjërimit",
+          "content_sq": "Allahu i Lartësuar e ka veçuar agjërimin me një vlerë të posaçme:\n\n1. ALLAHU SHPËRBLEN DREJTPËRDREJT — Profeti ﷺ transmeton nga Allahu: 'Çdo vepër e birit të Ademit shumëfishohet — e mira me dhjetë deri shtatëqind herë. Allahu i Lartë tha: «Përveç agjërimit, sepse ai është për Mua dhe Unë e shpërbej. Robi lë epshet e tij dhe ushqimin e tij për hir Tim.»'\n\n2. DY GËZIME — Profeti ﷺ tha: 'Agjëruesi ka dy gëzime: gëzimi kur çel iftar dhe gëzimi kur takon Zotin e tij.'\n\n3. ERA E GOJËS — Profeti ﷺ tha: 'Era e gojës së agjëruesit është tek Allahu më e mirë se era e miskut.'\n\n4. XHENNETI ER-RAJJAN — Ka një derë në Xhennet të quajtur 'Er-Rajjan' — nëpër të do të hyjnë vetëm agjëruesit.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "كُلُّ عَمَلِ ابْنِ آدَمَ يُضَاعَفُ... إِلَّا الصَّوْمَ فَإِنَّهُ لِي وَأَنَا أَجْزِي بِهِ",
+              "translation_sq": "Çdo vepër e birit të Ademit shumëfishohet... përveç agjërimit, sepse ai është për Mua dhe Unë e shpërbej.",
+              "narrator": "Ebu Hurejre (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 1894,
+              "classification": "sahih"
+            },
+            {
+              "type": "hadith",
+              "arabic": "إِنَّ فِي الجَنَّةِ بَابًا يُقَالُ لَهُ الرَّيَّانُ يَدْخُلُ مِنْهُ الصَّائِمُونَ يَوْمَ القِيَامَةِ",
+              "translation_sq": "Në Xhennet ka një derë të quajtur Er-Rajjan — nëpër të do të hyjnë agjëruesit ditën e Kijametit.",
+              "narrator": "Sehl ibn Sa'd (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 1896,
+              "classification": "sahih"
+            }
+          ],
+          "ruling": null
+        },
+        {
+          "heading": "Agjërimi dhe Shoqëria — Ndikimi Social",
+          "content_sq": "Agjërimi nuk është vetëm adhurim individual — ai ka ndikim të thellë social:\n\n1. NDJESHMËRIA NDAJ TË VARFËRVE — Ai që agjëron njeh vuajtjen e të uriturve dhe zgjat dorën e ndihmës.\n\n2. UNITETI I UMMETIT — Gjithë bota islame agjëron dhe çel iftar njëkohësisht, duke krijuar ndjenjë të thellë bashkimi.\n\n3. IFTARI I PËRBASHKËT — Profeti ﷺ ka thënë: 'Kush ushqen agjëruesin ka shpërblimin e tij pa u zvogëluar shpërblimet e agjëruesit.'\n\n4. FORMIMI I KARAKTERIT — Agjëruesi mësohet me disiplinë, durim, sinqeritet me Allahun (sepse askush nuk mund ta kontrollojë).",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "مَنْ فَطَّرَ صَائِمًا كَانَ لَهُ مِثْلُ أَجْرِهِ غَيْرَ أَنَّهُ لَا يَنْقُصُ مِنْ أَجْرِ الصَّائِمِ شَيْئًا",
+              "translation_sq": "Kush ushqen agjëruesin ka shpërblimet si ai (agjëruesi), pa u zvogëluar asgjë nga shpërblimet e agjëruesit.",
+              "narrator": "Zejd ibën Halid (r.a.)",
+              "collection": "Sunen Tirmidhi",
+              "classification": "sahih"
+            }
+          ],
+          "ruling": null
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Cili hadith tregon se Allahu e shpërblen agjërimin drejtpërdrejt?",
+          "options": [
+            "Hadithi i Xhibrilit",
+            "Hadith Kudsi: 'Agjërimi është për Mua dhe Unë e shpërbej'",
+            "Hadithi i nënave tre",
+            "Hadithi i hallallit dhe haramit"
+          ],
+          "correct_index": 1,
+          "explanation": "Ky hadith kudsi i transmetuar nga Ebu Hurejre tregon se Allahu e ka veçuar agjërimin — do ta shpërblejë Vetë pa e specifikuar numrin e shumëfishimit."
+        },
+        {
+          "question": "Si quhet dera e Xhennetit e rezervuar për agjëruesit?",
+          "options": [
+            "Er-Rahman",
+            "Es-Selam",
+            "Er-Rajjan",
+            "El-Firdeus"
+          ],
+          "correct_index": 2,
+          "explanation": "'Er-Rajjan' është emri i derës në Xhennet nëpër të cilën do të hyjnë vetëm agjëruesit. (Sahih Bukhari)"
+        },
+        {
+          "question": "Çfarë mëson agjërimi për karakterin e njeriut?",
+          "options": [
+            "Zemërgjerësi materiale",
+            "Disiplinë, durim dhe sinqeritet me Allahun",
+            "Aftësi shoqërizimi",
+            "Kompetencë profesionale"
+          ],
+          "correct_index": 1,
+          "explanation": "Agjërimi mëson disiplinë, durim dhe sinqeritet — sepse askush nuk mund ta kontrollojë nëse agjëron vërtet: vetëm Allahu di."
         }
       ]
     }

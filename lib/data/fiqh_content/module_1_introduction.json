@@ -265,6 +265,156 @@
           "explanation": "Imam Shafi'iu shkroi 'Er-Risale', e cila konsiderohet vepra e parë sistematike e Usul el-Fikhut (bazave të jurisprudencës)."
         }
       ]
+    },
+    {
+      "id": "intro_004",
+      "title_sq": "Historia e Fikhut Islam",
+      "title_ar": "تاريخ الفقه الإسلامي",
+      "level": "intermediate",
+      "source_references": [
+        "E Drejta Islame I (Fikh), Komuniteti Mysliman i Shqipërisë, Stamboll 2013",
+        "Shafiqur Rahman An Nadwi, Al Fiqh ul Muyassar (Simple Fiqh)",
+        "El-Fikh el-Islami ve Edil'letuhu, Vehbe ez-Zuhejli"
+      ],
+      "sections": [
+        {
+          "heading": "Periudhat e Historisë së Fikhut",
+          "content_sq": "Shkenca e fikhut ka kaluar nëpër gjashtë periudha kryesore:\n\n1. Periudha e Vahjit (610–632 e.s.) — fillon me misionin profetik të Hz. Muhamedit (a.s.). Burimi ishte revelacioni hyjnor (vahji). Dispozitat zbuloheshin gradualisht, sipas nevojave të komunitetit.\n\n2. Periudha e Sahabëve (632–660 e.s.) — Pas Profetit ﷺ, katër Kalifët Rashidinë udhëhoqën komunitetin. Dolën çështje të reja; dijetarët sahabë u mblodhën dhe vendosën me konsultim (shura).\n\n3. Periudha e Tabiinëve (660–738 e.s.) — Nxënësit e sahabëve zgjeruan fikhun. U ndanë dy shkolla: 'Ehli Hadith' (Medine) dhe 'Ehli Re'j' (Kufe).\n\n4. Periudha e Imamëve të Mëdhenj (738–900 e.s.) — U formuan katër madhhebet kryesore: Hanefi, Maliki, Shafi'i dhe Hanbeli. Kjo quhet 'Epoka e Artë e Fikhut'.\n\n5. Periudha e Imitimit dhe Stanjacionit (900–1300 e.s.) — Dijetarët u fokusuan kryesisht në komentimin e veprave të imamëve.\n\n6. Periudha e Kodifikimit Ligjor (1800–sot) — Shumica e shteteve islame kodifikuan fikhun në forma ligjore moderne.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "تَرَكْتُ فِيكُمْ أَمْرَيْنِ لَنْ تَضِلُّوا مَا تَمَسَّكْتُمْ بِهِمَا كِتَابَ اللَّهِ وَسُنَّةَ نَبِيِّهِ",
+              "translation_sq": "Ju lë juve dy gjëra — nuk do të humbni kurrë nëse jeni të lidhur fort me to: Librin e Allahut dhe Sunnetin e Profetit të Tij.",
+              "narrator": "Malik ibn Enes (r.a.) — Muvetta",
+              "collection": "Muvetta, Imam Malik",
+              "classification": "sahih"
+            }
+          ],
+          "ruling": null
+        },
+        {
+          "heading": "Besëlidhja e Parë e Akabës — Dokumenti i Parë Juridik",
+          "content_sq": "Marrëveshja e bërë nga Profeti ﷺ me përfaqësuesit e Medines në Akabe, konsiderohet dokumenti i parë i shkruar juridik Islam. Nenet e kësaj marrëveshjeje ishin:\n\n1. Të adhurohet vetëm Allahu.\n2. Të mos vidhet.\n3. Të mos vriten fëmijët.\n4. Të mos bëhet kurvëri (prostitucion).\n5. Të mos shpifet për gruan e ndershme.\n6. Të mos thuhet gënjeshtër.\n7. Medinasit i japin fjalën Profetit se nuk do ta kundërshtonin Allahun.\n\nKjo marrëveshje tregon se Islami ndërtoi themelet e shoqërisë mbi parime juridike të qarta nga momenti i parë.",
+          "evidences": [],
+          "ruling": null
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Sa periudha kryesore ka historia e shkencës së fikhut?",
+          "options": [
+            "3 periudha",
+            "4 periudha",
+            "6 periudha",
+            "8 periudha"
+          ],
+          "correct_index": 2,
+          "explanation": "Historia e fikhut ka 6 periudha kryesore: vahji, sahabët, tabiinët, imamët e mëdhenj, imitimi, kodifikimi modern."
+        },
+        {
+          "question": "Si quhet periudha kur u formuan katër madhhebet kryesore?",
+          "options": [
+            "Epoka e Errësirës",
+            "Periudha e Sahabëve",
+            "Epoka e Artë e Fikhut",
+            "Periudha e Kodifikimit"
+          ],
+          "correct_index": 2,
+          "explanation": "Periudha 738–900 e.s., kur jetuan dhe punuan Imamët e Mëdhenj (Ebu Hanife, Maliku, Shafi'iu, Ahmedi), quhet 'Epoka e Artë e Fikhut'."
+        }
+      ]
+    },
+    {
+      "id": "intro_005",
+      "title_sq": "Zhvlerësuesit e Islamit (Nevakid el-Islam)",
+      "title_ar": "نواقض الإسلام",
+      "level": "intermediate",
+      "source_references": [
+        "Imam Abdullah Ibn Baz, Zhvlerësuesit e Islamit (MBUROJA.net)",
+        "E Drejta Islame I (Fikh), Komuniteti Mysliman i Shqipërisë, Stamboll 2013",
+        "Shejh Muhamed ibn Abdul-Uehab, el-Akidetus-Sahiha"
+      ],
+      "sections": [
+        {
+          "heading": "Çfarë janë Zhvlerësuesit e Islamit?",
+          "content_sq": "Zhvlerësuesit e Islamit (Nevakid el-Islam) janë veprimet ose besimet që e largojnë personin krejtësisht nga Islami — duke e bërë gjakun dhe pasurinë e tij të lejueshme. Imam Abdullah Ibn Baz (1910–1999), dijetari i madh saudi, ka përmendur dhjetë prej tyre si më të rrezikshmit dhe më të zakonshmet.\n\nDijetarët e fikhut kanë dhënë shumë vëmendje kësaj teme sepse: 1) Largimi nga Islami (ridde) është falja e vetme që nuk falet nëse personi vdes pa u penduar. 2) Shumë njerëz bien në to nga injoranca. 3) Shpëtimi fillon me njohjen e tyre.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "وَمَن يَرْتَدِدْ مِنكُمْ عَن دِينِهِ فَيَمُتْ وَهُوَ كَافِرٌ فَأُولَٰئِكَ حَبِطَتْ أَعْمَالُهُمْ",
+              "translation_sq": "Kush largohet nga feja e tij dhe vdes si mohues, veprat e tyre shkatërrohen në këtë botë dhe në botën tjetër.",
+              "surah": "El-Bekare",
+              "surah_number": 2,
+              "ayah": 217
+            }
+          ],
+          "ruling": null
+        },
+        {
+          "heading": "Dhjetë Zhvlerësuesit Kryesorë",
+          "content_sq": "Sipas Imam Ibn Bazit, dhjetë zhvlerësuesit kryesorë janë:\n\n1. SHIRKU — Shoqërimi i dikujt me Allahun në adhurim (p.sh. të lutesh te varret duke kërkuar ndihmë nga të vdekurit).\n\n2. NDËRMJETËSI MES ALLAHUT DHE KRIJESAVE — Kush vë ndërmjetës mes vetes dhe Allahut, duke iu lutur e duke iu mbështetur atyre, ka mohuar.\n\n3. MOSBESIMI NE KUFRIN E MUSHRIKËVE — Kush nuk i konsideron idhujtarët si mohues, ose dyshon në kufrin e tyre, ka mohuar.\n\n4. BESIMI SE LIGJI NJERËZOR ËSHTË MË I MIRË — Kush beson se ligjet dhe kushtetutat njerëzore janë më të mira se Sheriati, ka mohuar.\n\n5. URREJTJA E ASAJ ME TË CILËN ERDHI PROFETI ﷺ — Edhe nëse e zbaton, nëse e urren si rregulli i namazit ose agjërimit, ka mohuar.\n\n6. PËRQESHJA E FESË — Kush tallëset me faltoren, me namazin, me shpërblimin ose dënimin fetar, ka mohuar.\n\n7. MAGJIA — Kush bën magji (sihër), ose është i kënaqur me të, ka mohuar.\n\n8. MBËSHTETJA E MOHUESVE KUNDRA MUSLIMANËVE — Kush ndihmon jobesimtarët kundër muslimanëve ka mohuar.\n\n9. BESIMI SE DIKUSH MUND TÁ LËJË SHERIATIN — Kush beson se disa njerëz (si 'shenjt') janë jashtë Sheriatit, ka mohuar.\n\n10. LARGIMI NGA ISLAMI — Kush kthen shpinën fesë, duke refuzuar ta mësojë ose ta zbatojë.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "قُلْ أَبِاللَّهِ وَآيَاتِهِ وَرَسُولِهِ كُنتُمْ تَسْتَهْزِئُونَ لَا تَعْتَذِرُوا قَدْ كَفَرْتُم بَعْدَ إِيمَانِكُمْ",
+              "translation_sq": "Thuaj: A me Allahun, me ajetet e Tij dhe me të Dërguarin e Tij talleshit? Mos u arsyetoni — vërtet keni mohuar pas besimit.",
+              "surah": "Et-Teube",
+              "surah_number": 9,
+              "ayah": 65
+            },
+            {
+              "type": "quran",
+              "arabic": "إِنَّ اللَّهَ لَا يَغْفِرُ أَن يُشْرَكَ بِهِ وَيَغْفِرُ مَا دُونَ ذَٰلِكَ لِمَن يَشَاءُ",
+              "translation_sq": "Allahu nuk fal që t'i shoqërohet diçka, dhe fal çdo gjë tjetër për kënd dëshiron.",
+              "surah": "En-Nisa",
+              "surah_number": 4,
+              "ayah": 48
+            }
+          ],
+          "ruling": null
+        },
+        {
+          "heading": "Shënim i Rëndësishëm",
+          "content_sq": "Imam Ibn Bazi thekson se para se të aplikohet gjykimi i riddes (largimit nga Islami) ndaj dikujt, duhen plotësuar kushtet:\n\n1. Personi duhet të dijë se ajo veprim/besim kundërshton Islamin (nuk vlen për të padijshmin).\n2. Nuk duhet të ketë arsye detyruese (ikrah — shtrëngim).\n3. Nuk duhet të jetë në gjendje konfuze mendore.\n\nQëllimi i studimit të kësaj teme nuk është të akuzosh njerëzit, por të mbrosh besimin e vet nga gabimet. Profeti ﷺ tha: 'Pyesni Allahun për udhëzim, drejtësi dhe shëndet.'",
+          "evidences": [],
+          "ruling": null
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Sa zhvlerësues kryesorë të Islamit ka përmendur Imam Ibn Bazi?",
+          "options": [
+            "5",
+            "7",
+            "10",
+            "12"
+          ],
+          "correct_index": 2,
+          "explanation": "Imam Ibn Bazi ka listuar dhjetë zhvlerësues kryesorë të Islamit, duke theksuar se janë më të rrezikshmit dhe më të zakonshmet."
+        },
+        {
+          "question": "Cili është zhvlerësuesi i parë dhe më i rëndësishëm sipas Imam Ibn Bazit?",
+          "options": [
+            "Magjia",
+            "Shirku — shoqërimi i dikujt me Allahun",
+            "Braktisja e namazit",
+            "Tregtia me alkool"
+          ],
+          "correct_index": 1,
+          "explanation": "Zhvlerësuesi i parë dhe kryesor është Shirku — shoqërimi i dikujt me Allahun në adhurim. Allahu nuk fal shirk nëse personi vdes pa u penduar."
+        },
+        {
+          "question": "A mund të llogaritet dikush si largohet nga Islami pa e ditur?",
+          "options": [
+            "Po, vepra çdo herë e llogarit si ridde",
+            "Jo, i padijshmi ka arsyetim deri sa t'i arrijë dija",
+            "Varet nga madhhhabi",
+            "Vetëm nëse bën dy herë"
+          ],
+          "correct_index": 1,
+          "explanation": "Dijetarët janë unanim se i padijshmi ka arsyetim (uzur bil-xhehl) — gjykimi i riddes kërkon që personi ta dijë se ajo veprim/besim kundërshton Islamin."
+        }
+      ]
     }
   ]
 }

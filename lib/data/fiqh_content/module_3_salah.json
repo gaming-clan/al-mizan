@@ -498,7 +498,9 @@
         "Shtyllat e Namazit",
         "Sahih Bukhari",
         "El-Hidaje",
-        "El-Mugni"
+        "El-Mugni",
+        "Shejh Muhamed Nasirudin el-Albani, Forma e Namazit të të Dërguarit (MBUROJA.net)",
+        "E Drejta Islame I (Fikh), Komuniteti Mysliman i Shqipërisë, Stamboll 2013"
       ],
       "sections": [
         {
@@ -650,6 +652,185 @@
           ],
           "correct_index": 1,
           "explanation": "Lëvizja e kokës pa arsye (shikimi majtas-djathtas) është nga gjërat e papëlqyera në namaz."
+        }
+      ]
+    },
+    {
+      "id": "sal_006",
+      "title_sq": "Forma e Namazit të të Dërguarit ﷺ",
+      "title_ar": "صفة صلاة النبي ﷺ",
+      "level": "advanced",
+      "source_references": [
+        "Shejh Muhamed Nasirudin el-Albani, Forma e Namazit të të Dërguarit ﷺ (MBUROJA.net)",
+        "Sahih Bukhari",
+        "Sahih Muslim",
+        "Sunen Ebu Davud",
+        "E Drejta Islame I (Fikh), Komuniteti Mysliman i Shqipërisë, Stamboll 2013",
+        "Ilmihali - Përmbledhje e Shkurtër Mësimesh dhe Rregullash Islame (Progresi Botime)"
+      ],
+      "sections": [
+        {
+          "heading": "Hyrje dhe Metodologjia",
+          "content_sq": "Shejh Muhamed Nasirudin el-Albani (1914–1999) i ka kushtuar jetën studimit të hadithit. Libri i tij 'Forma e Namazit të të Dërguarit — e Përshkruar prej Fillimit deri në Fund' është ndër veprat më të rëndësishme mbi temën. Metodologjia e tij bazohet në:\n\n1. Vetëm hadithet sahih (të vërteta) dhe hasen (të mira).\n2. Të gjitha katër madhhebet pajtojnë se: kur hadithi i saktë kundërshton mendimin e imamit, ndiqet hadithi.\n3. Imam Ebu Hanife tha: 'Kur gjen hadith të vërtetë, ky është medhhebi im.'\n4. Imam Malik tha: 'Të gjithë jemi marrës e dhënës, përveç pronarit të kësaj varri' — tregoi varrin e Profetit ﷺ.\n5. Imam Shafii tha: 'Kur hadithi i saktë kundërshton fjalët e mia, hadithi është fjala ime.'\n6. Imam Ahmedi tha: 'Mos e imit mua, dhe as Shafiun, as Malikun, as Evzaijun — por merr nga aty ku ata kanë marrë.'",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "صَلُّوا كَمَا رَأَيْتُمُونِي أُصَلِّي",
+              "translation_sq": "Faluni siç më keni parë mua duke u falur.",
+              "narrator": "Malik ibn El-Huwejrith (r.a.)",
+              "collection": "Sahih Bukhari",
+              "classification": "sahih"
+            }
+          ],
+          "ruling": null
+        },
+        {
+          "heading": "Qëndrimi para Namazit — Nijeti dhe Tekbiri",
+          "content_sq": "Para se të fillojë namazi:\n\n1. NIJETI — Nijeti është në zemër, jo me gojë. Profeti ﷺ nuk e thoshte nijetin me gojë dhe nuk transmetohet asnjë hadith sahih për këtë. Imamët e mëdhenj janë pajtuar se nijeti me zemër mjafton.\n\n2. DREJTIMI DREJT KIBLËS — Obligim për çdo namaz.\n\n3. TEKBIRI FILLESTAR — Ngriten duart në nivel të shpatullave ose veshëve duke thënë 'Allahu Ekber'. Transmetohet se Profeti ﷺ i ngrinte duart:\n   a) Para tekbirit.\n   b) Njëkohësisht me tekbirin.\n   c) Pas tekbirit.\n   Të gjitha variantet janë sunnete.\n\n4. VENDOSJA E DUARVE — Vendoset dora e djathtë mbi të majtën. Mbi gjoks sipas shumicës, nën kërthizë sipas Hanefijve.\n\n5. DUAJA HAPËSE (Subhaneke) — Profeti ﷺ lexonte Subhaneke-n ose dua të tjera hapëse. Transmetohen disa variante: 'Subhaneke Allahumme ve bi-hamdike, ve tebarakesmuke, ve te'ala xhedduke ve la ilahe gajruk.'",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "كَانَ رَسُولُ اللَّهِ ﷺ إِذَا قَامَ إِلَى الصَّلَاةِ كَبَّرَ ثُمَّ رَفَعَ يَدَيْهِ",
+              "translation_sq": "I Dërguari i Allahut ﷺ kur qëndronte për namaz, bënte tekbir dhe pastaj ngrinte duart e tij.",
+              "narrator": "Malik ibn El-Huwejrith (r.a.)",
+              "collection": "Sahih Muslim",
+              "classification": "sahih"
+            }
+          ],
+          "ruling": null
+        },
+        {
+          "heading": "Leximi i Kuranit — El-Fatiha dhe Sure",
+          "content_sq": "Sipas Al-Albanit, bazuar në hadithe sahih:\n\n1. El-FATIHA është e detyrueshme (farz) në çdo rekat — Profeti ﷺ tha: 'Nuk ka namaz për atë që nuk lexon Fatihatu-l-Kitab.'\n\n2. Pas El-Fatihas Profeti ﷺ ndalonte shkurt para se të fillonte suren tjetër.\n\n3. LEXIMI AJET PAS AJETI — Profeti ﷺ ndante leximin ajet pas ajeti, duke ndalur pas çdo ajeti: 'El-hamdu lil-lahi Rabb-il-alemin' (ndalon), 'Er-Rahmanir-Rahim' (ndalon), 'Maliki Jeum-id-Din' (ndalon)...\n\n4. 'AMIN' — Profeti ﷺ e thoshte Amin me zë dhe shumë i fortë. Ai ka thënë: 'Kur imami thotë Amin, ju gjithashtu thoni Amin, sepse kujt i bie Amin-i me Amin-in e melekëve, i falen mëkatet e kaluara.'\n\n5. SURJA PAS EL-FATIHAS — Lexohet në dy rekatet e para. Profeti ﷺ lexonte sure të gjata dhe të mesme, sipas rrethanave.\n\n6. LEXIMI ME ZË DHE PA ZË:\n   - Me zë: Sabahu, dy rekatet e para të akshamit, dy rekatet e para të jacisë, xhumaja, bajramet, teravitë, vitri i Ramazanit.\n   - Pa zë: Dreka, ikindia, rekati i tretë i akshamit, dy rekatet e fundit të jacisë.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "لَا صَلَاةَ لِمَنْ لَمْ يَقْرَأْ بِفَاتِحَةِ الْكِتَابِ",
+              "translation_sq": "Nuk ka namaz për atë që nuk lexon Fatihatu-l-Kitab (El-Fatihan).",
+              "narrator": "Ubade ibn es-Samit (r.a.)",
+              "collection": "Sahih Bukhari dhe Sahih Muslim",
+              "classification": "sahih"
+            },
+            {
+              "type": "hadith",
+              "arabic": "إِذَا أَمَّنَ الإِمَامُ فَأَمِّنُوا فَإِنَّهُ مَنْ وَافَقَ تَأْمِينُهُ تَأْمِينَ الْمَلَائِكَةِ غُفِرَ لَهُ مَا تَقَدَّمَ مِنْ ذَنْبِهِ",
+              "translation_sq": "Kur imami thotë Amin, thoni edhe ju Amin — kujt i bie Amin-i me Amin-in e melekëve, i falen mëkatet e kaluara.",
+              "narrator": "Ebu Hurejre (r.a.)",
+              "collection": "Sahih Bukhari",
+              "classification": "sahih"
+            }
+          ],
+          "ruling": null
+        },
+        {
+          "heading": "Rukuja — Përkulja",
+          "content_sq": "Rukuja (përkulja) kryhet kështu sipas haditheve sahih:\n\n1. Profeti ﷺ ngrinte duart deri te shpatullat ose veshët para se të shkonte në ruku.\n\n2. POZICIONI — Profeti ﷺ i vendoste duart mbi gjunjë me gishtërinjtë e hapur ose të mbledhur. Kurrizi ishte drejt — si dërrasa e sheshte. Koka nuk ishte e ngritur dhe as e ulur — por e barabartë me kurrizin.\n\n3. DHIKRI NË RUKU — 'Subhane Rabbijel-Adhim' (I lartësuar është Zoti im, Madhështori). Preferohet tri herë. Hadithet tregojnë edhe lutje shtesë.\n\n4. TUMA'NINEH (qetësia) — Obligim. Profeti ﷺ ndalonte një moment i qetë në ruku. I tha njeriut që falte shpejt: 'Kthehu dhe fal, sepse nuk ke falur.'\n\n5. NGRITJA NGA RUKUJA — Profeti ﷺ thoshte 'Semiall-llahu limen hamideh' dhe ngrinte duart njëkohësisht, duke u drejtuar plotësisht, pastaj thoshte 'Rabbena ue lekel-hamd'.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "ثُمَّ ارْكَعْ حَتَّى تَطْمَئِنَّ رَاكِعًا",
+              "translation_sq": "Pastaj bëj ruku derisa të qetësohesh plotësisht në ruku.",
+              "narrator": "Ebu Hurejre (r.a.) — hadithi i 'mussijus-salah' (atij që falja e kishte gabime)",
+              "collection": "Sahih Bukhari dhe Sahih Muslim",
+              "classification": "sahih"
+            }
+          ],
+          "ruling": null
+        },
+        {
+          "heading": "Sexhdja — Prostradimi",
+          "content_sq": "Sexhdja (prostradimi) është momenti i afrimit më të madh të robit me Zotin e tij. Hadithet sahih tregojnë:\n\n1. RENDITJA E SEXHDES — Profeti ﷺ zbriste duke i vendosur gishtërinjtë e duarve (jo shuplakat) mbi tokë. Shuplakat vendosen PARA gjunjëve sipas hadithit të Ebu Hurejres, ose gjunjët para shuplakave sipas haditheve të tjera. Dijetarët kanë mendime të ndryshme.\n\n2. SHTATË ANËTARËT E SEXHDES — Profeti ﷺ ka thënë: 'Unë u urdhërova të bie në sexhde mbi shtatë kocka: fytyrën (hundën dhe ballin), dy shuplakat, dy gjunjët dhe dy majat e gishtërinjve të këmbëve.'\n\n3. QETËSIA NË SEXHDE — Obligim. Profeti ﷺ qëndronte sa kohë duhej.\n\n4. DHIKRI NË SEXHDE — 'Subhane Rabbijel-A'la' (I lartësuar qoftë Zoti im, Mëi i Larti). Preferohet tri herë.\n\n5. LUTET DHE KËRKON NGA ALLAHU — Profeti ﷺ ka thënë: 'Robëria më e afërt e robit me Zotin e tij është sexhdja, prandaj shumoni lutjet.'\n\n6. NDËRMJET DY SEXHDEVE — Ulet duke thënë 'Rabbi-gfirli, Rabbi-gfirli' (O Zot më fal, O Zot më fal).",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "أَقْرَبُ مَا يَكُونُ الْعَبْدُ مِنْ رَبِّهِ وَهُوَ سَاجِدٌ فَأَكْثِرُوا الدُّعَاءَ",
+              "translation_sq": "Robëria më e afërt e robit me Zotin e tij është kur është në sexhde, prandaj shumoni lutjet.",
+              "narrator": "Ebu Hurejre (r.a.)",
+              "collection": "Sahih Muslim",
+              "classification": "sahih"
+            },
+            {
+              "type": "hadith",
+              "arabic": "أُمِرْتُ أَنْ أَسْجُدَ عَلَى سَبْعَةِ أَعْظُمٍ",
+              "translation_sq": "Unë u urdhërova të bie në sexhde mbi shtatë kocka: fytyra (balli dhe hunda), dy shuplakat, dy gjunjët dhe dy majat e gishtërinjve të këmbëve.",
+              "narrator": "Ibn Abbasi (r.a.)",
+              "collection": "Sahih Bukhari",
+              "classification": "sahih"
+            }
+          ],
+          "ruling": null
+        },
+        {
+          "heading": "Teshehudi dhe Selami",
+          "content_sq": "Mbyllja e namazit:\n\n1. TESHEHUDI — Profeti ﷺ ulej (xhelse) pas dy rekateve dhe pas rekatin e fundit duke lexuar Et-Tehijatu. Transmetohen disa versione, gjithë sahih. Versioni i transmetuar nga Ibn Mes'udi (r.a.):\n'Et-Tehijatu lil-lahi, ves-salavatu vet-tajjibat, es-selamu alejke ejjuhen-Nebijju ve rahmetull-llahi ve berekatuhu, es-selamu alejne ve ala ibadil-lahis-salihin, eshedu en la ilahe ill-Allah ve eshedu enne Muhammeden abduhu ve resuluh.'\n\n2. SALAVATET MBI PROFETIN ﷺ — Pas teshehudit të fundit. Forma e plotë (Ibrahim salawat): 'Allahumme salli ala Muhammedin ve ala ali Muhammed kema sallejte ala Ibrahime ve ala ali Ibrahim inneke Hamidun Mexhid...'\n\n3. LUTJET PARA SELAMIT — Profeti ﷺ lutej para selamit. Ka thënë: 'Kur dikush prej jush përfundojë teshehudin e fundit, le të kërkojë mbrojtje te Allahu nga katër gjëra: nga dënimi i Xhehenemit, nga dënimi i varrit, nga sprova e jetës dhe vdekjes, dhe nga e keqja e Dexhallit.'\n\n4. SELAMI — Jepet djathtas 'Es-selamu alejkum ue rahmetullah', pastaj majtas e njëjtë. Profeti ﷺ herë jepte selam me dy palë dhe herë me njëren anë kthehej shumë dhe me tjetrën pak.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ السَّلامُ عَلَيْكَ أَيُّهَا النَّبِيُّ",
+              "translation_sq": "Et-Tehijatu — nderimi i plotë, falënderimet dhe të mirat janë të Allahut. Paqja qoftë mbi ty, o Profet...",
+              "narrator": "Ibn Mes'ud (r.a.)",
+              "collection": "Sahih Bukhari",
+              "classification": "sahih"
+            }
+          ],
+          "ruling": null
+        }
+      ],
+      "quiz": [
+        {
+          "question": "A transmetohet nga Profeti ﷺ të thotë nijetin me gojë?",
+          "options": [
+            "Po, me fjalë 'Nevevajtu'",
+            "Jo, nijeti është në zemër dhe nuk transmetohet hadith sahih për thënien me gojë",
+            "Po, vetëm në namaz xhemati",
+            "Varet nga medhhebi"
+          ],
+          "correct_index": 1,
+          "explanation": "Sipas Al-Albanit dhe shumicës së dijetarëve, nuk transmetohet asnjë hadith sahih se Profeti ﷺ e thoshte nijetin me gojë. Nijeti bëhet me zemër."
+        },
+        {
+          "question": "Mbi sa 'kocka' (gjymtyrë) urdhërohemi të biem në sexhde?",
+          "options": [
+            "4",
+            "5",
+            "7",
+            "10"
+          ],
+          "correct_index": 2,
+          "explanation": "Profeti ﷺ ka thënë: 'Unë u urdhërova të bie në sexhde mbi shtatë kocka': balli dhe hunda (fytyra), dy shuplakat, dy gjunjët dhe dy majat e gishtërinjve të këmbëve."
+        },
+        {
+          "question": "Cili hadith tregon se sexhdja është momenti i afrimit më të madh me Allahun?",
+          "options": [
+            "Akrebu ma jekunu-l-abdu min Rabbihi ve huve saxhid",
+            "Sallallahu alejhi ve sellem",
+            "Inne-s-salate kanet alel-muminine kitaben mevkuta",
+            "Innema-l-amalu bin-nijjat"
+          ],
+          "correct_index": 0,
+          "explanation": "'Akrebu ma jekunu-l-abdu min Rabbihi ve huve saxhid' — robëria më e afërt e robit me Zotin e tij është kur është në sexhde. (Sahih Muslim)"
+        },
+        {
+          "question": "Çfarë thuhet gjatë sexhdes sipas haditheve sahih?",
+          "options": [
+            "Subhane Rabbijel-Adhim",
+            "Subhane Rabbijel-A'la",
+            "Allahu Ekber",
+            "Rabbena lekel-hamd"
+          ],
+          "correct_index": 1,
+          "explanation": "Gjatë sexhdes thuhet 'Subhane Rabbijel-A'la' (I lartësuar qoftë Zoti im, më i Larti), ndërsa gjatë rukusë thuhet 'Subhane Rabbijel-Adhim'."
+        },
+        {
+          "question": "Cila fjalë pas El-Fatihas rekomandohet të thuhet me zë edhe nga xhemati?",
+          "options": [
+            "Bismil-lah",
+            "Amin",
+            "Subhane Rabbijel-A'la",
+            "El-hamdu lil-lah"
+          ],
+          "correct_index": 1,
+          "explanation": "Profeti ﷺ e thoshte 'Amin' me zë dhe i fortë. Ai ka thënë: 'Kujt i bie Amin-i me Amin-in e melekëve, i falen mëkatet e kaluara.'"
         }
       ]
     }
