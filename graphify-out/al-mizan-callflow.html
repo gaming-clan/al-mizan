@@ -60,7 +60,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
 <div class="container">
 
 <h1>al-mizan — Complete Call Flow &amp; Architecture Documentation</h1>
-<p class="subtitle">Generated from graphify knowledge graph: 1171 nodes, 1478 edges, 67 communities. Commit: bbc08c4</p>
+<p class="subtitle">Generated from graphify knowledge graph: 1171 nodes, 1478 edges, 67 communities. Commit: 199164d</p>
 
 <div class="nav">
     <a href="#overview">Architecture Overview</a>
@@ -74,10 +74,10 @@ hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
     <a href="#community-0">Community 0</a>
     <a href="#community-1">Community 1</a>
     <a href="#community-3">Community 3</a>
-    <a href="#community-13">Community 13</a>
+    <a href="#community-7">Community 7</a>
     <a href="#community-8">Community 8</a>
-    <a href="#community-10">Community 10</a>
     <a href="#community-9">Community 9</a>
+    <a href="#community-11">Community 11</a>
     <a href="#other">Other</a>
 </div>
 
@@ -92,7 +92,7 @@ flowchart LR
     class EXTRACT_PIPELINE_5F350230 module;
     BUILD_GRAPH_321CBB04("Graph Build<br/><small>56 nodes</small>")
     class BUILD_GRAPH_321CBB04 module;
-    ANALYSIS_CLUSTERING_C79796DA("Analysis &amp; Clustering<br/><small>106 nodes</small>")
+    ANALYSIS_CLUSTERING_C79796DA("Analysis &amp; Clustering<br/><small>112 nodes</small>")
     class ANALYSIS_CLUSTERING_C79796DA module;
     OUTPUTS_DOCS_ED82387C("Outputs &amp; Docs<br/><small>4 nodes</small>")
     class OUTPUTS_DOCS_ED82387C module;
@@ -108,27 +108,27 @@ flowchart LR
     class COMMUNITY_1_3073A0DB module;
     COMMUNITY_3_D8DFCEA7("Community 3<br/><small>40 nodes</small>")
     class COMMUNITY_3_D8DFCEA7 module;
-    COMMUNITY_13_E329587C("Community 13<br/><small>36 nodes</small>")
-    class COMMUNITY_13_E329587C module;
+    COMMUNITY_7_989501FC("Community 7<br/><small>36 nodes</small>")
+    class COMMUNITY_7_989501FC module;
     COMMUNITY_8_9FC4FAC0("Community 8<br/><small>36 nodes</small>")
     class COMMUNITY_8_9FC4FAC0 module;
-    COMMUNITY_10_48432F59("Community 10<br/><small>34 nodes</small>")
-    class COMMUNITY_10_48432F59 module;
-    COMMUNITY_9_1D55D1EE("Community 9<br/><small>33 nodes</small>")
+    COMMUNITY_9_1D55D1EE("Community 9<br/><small>34 nodes</small>")
     class COMMUNITY_9_1D55D1EE module;
-    OTHER_D0941E68("Other<br/><small>329 nodes</small>")
+    COMMUNITY_11_DE018FC2("Community 11<br/><small>33 nodes</small>")
+    class COMMUNITY_11_DE018FC2 module;
+    OTHER_D0941E68("Other<br/><small>323 nodes</small>")
     class OTHER_D0941E68 module;
     OTHER_D0941E68 -->|defines x32| BUILD_GRAPH_321CBB04
     CLI_SKILLS_9964CBB8 -->|imports x24| OTHER_D0941E68
     INGEST_CACHE_UPDATE_FF457338 -->|defines x19| OTHER_D0941E68
     SERVE_API_35EC8E86 -->|imports x17| OTHER_D0941E68
     EXTRACT_PIPELINE_5F350230 -->|imports x11| OTHER_D0941E68
-    ANALYSIS_CLUSTERING_C79796DA -->|defines x7| OTHER_D0941E68
     CLI_SKILLS_9964CBB8 -->|imports x6| BUILD_GRAPH_321CBB04
     OTHER_D0941E68 -->|inherits x6| CLI_SKILLS_9964CBB8
-    COMMUNITY_8_9FC4FAC0 -->|defines x5| OTHER_D0941E68
-    OTHER_D0941E68 -->|references x5| COMMUNITY_9_1D55D1EE
-    COMMUNITY_9_1D55D1EE -->|defines x5| OTHER_D0941E68
+    COMMUNITY_7_989501FC -->|defines x5| OTHER_D0941E68
+    ANALYSIS_CLUSTERING_C79796DA -->|inherits x5| OTHER_D0941E68
+    OTHER_D0941E68 -->|references x5| COMMUNITY_11_DE018FC2
+    COMMUNITY_11_DE018FC2 -->|defines x5| OTHER_D0941E68
     BUILD_GRAPH_321CBB04 -->|imports x3| CLI_SKILLS_9964CBB8
     classDef entry fill:#422006,stroke:#fbbf24,color:#fde68a,stroke-width:1px;
     classDef api fill:#450a0a,stroke:#f87171,color:#fee2e2,stroke-width:1px;
@@ -146,19 +146,19 @@ flowchart LR
     <h4>Architecture Layers</h4>
     <table style="width:100%;font-size:0.85rem;">
       <tr><th>Layer</th><th>Nodes</th><th>Communities</th></tr>
-      <tr><td>Extraction Pipeline</td><td>19</td><td><code>41, 45</code></td></tr><tr><td>Graph Build</td><td>56</td><td><code>27, 37, 29, 16, 57, 59</code></td></tr><tr><td>Analysis &amp; Clustering</td><td>106</td><td><code>2, 5, 26, 32</code></td></tr><tr><td>Outputs &amp; Docs</td><td>4</td><td><code>53, 54</code></td></tr><tr><td>CLI &amp; Skill Installers</td><td>124</td><td><code>4, 11, 15, 36, 49, 46</code></td></tr><tr><td>Ingestion &amp; Updates</td><td>40</td><td><code>19, 31</code></td></tr><tr><td>Serving API</td><td>52</td><td><code>7, 34</code></td></tr><tr><td>Community 0</td><td>216</td><td><code>0</code></td></tr><tr><td>Community 1</td><td>46</td><td><code>1</code></td></tr><tr><td>Community 3</td><td>40</td><td><code>3</code></td></tr><tr><td>Community 13</td><td>36</td><td><code>13</code></td></tr><tr><td>Community 8</td><td>36</td><td><code>8</code></td></tr><tr><td>Community 10</td><td>34</td><td><code>10</code></td></tr><tr><td>Community 9</td><td>33</td><td><code>9</code></td></tr><tr><td>Other</td><td>329</td><td><code>12, 14, 20, 17, 18, 6, 23, 21, 24, 25, 28, 38, 30, 35, 22, 40, 33, 39, 47, 42, 43, 52, 44, 48, 50, 51, 55, 56, 58, 60, 61, 62, 63, 64, 65, 66</code></td></tr>
+      <tr><td>Extraction Pipeline</td><td>19</td><td><code>27, 46</code></td></tr><tr><td>Graph Build</td><td>56</td><td><code>22, 24, 33, 38, 56, 59</code></td></tr><tr><td>Analysis &amp; Clustering</td><td>112</td><td><code>2, 6, 21, 36</code></td></tr><tr><td>Outputs &amp; Docs</td><td>4</td><td><code>52, 53</code></td></tr><tr><td>CLI &amp; Skill Installers</td><td>124</td><td><code>5, 10, 13, 17, 48, 50</code></td></tr><tr><td>Ingestion &amp; Updates</td><td>40</td><td><code>14, 25</code></td></tr><tr><td>Serving API</td><td>52</td><td><code>4, 29</code></td></tr><tr><td>Community 0</td><td>216</td><td><code>0</code></td></tr><tr><td>Community 1</td><td>46</td><td><code>1</code></td></tr><tr><td>Community 3</td><td>40</td><td><code>3</code></td></tr><tr><td>Community 7</td><td>36</td><td><code>7</code></td></tr><tr><td>Community 8</td><td>36</td><td><code>8</code></td></tr><tr><td>Community 9</td><td>34</td><td><code>9</code></td></tr><tr><td>Community 11</td><td>33</td><td><code>11</code></td></tr><tr><td>Other</td><td>323</td><td><code>12, 15, 16, 18, 19, 20, 23, 26, 28, 30, 31, 32, 34, 35, 37, 39, 40, 41, 42, 43, 44, 45, 47, 49, 51, 54, 55, 57, 58, 60, 61, 62, 63, 64, 65, 66</code></td></tr>
     </table>
   </div>
   <div class="card">
     <h4>Core Flow</h4>
-    <div class="arrow-chain">Outputs &amp; Docs -&gt; Extraction Pipeline -&gt; Other -&gt; Graph Build -&gt; CLI &amp; Skill Installers -&gt; Serving API -&gt; Community 9</div>
+    <div class="arrow-chain">Outputs &amp; Docs -&gt; Extraction Pipeline -&gt; Other -&gt; Graph Build -&gt; CLI &amp; Skill Installers -&gt; Serving API -&gt; Community 11</div>
   </div>
 </div>
 <div class="grid">
   <div class="card">
     <h4>Graph Report Highlights</h4>
     <ul>
-      <li>1171 nodes · 1479 edges · 67 communities (55 shown, 12 thin omitted)</li>
+      <li>1171 nodes · 1479 edges · 67 communities (54 shown, 13 thin omitted)</li>
       <li>Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 8 edges (avg confidence: 0.8)</li>
       <li>Token cost: 0 input · 0 output</li>
       <li>1. `AL MIZAN — Claude Code Prompt` - 12 edges</li>
@@ -761,12 +761,12 @@ flowchart LR
 
 <!-- ====== 4. Analysis & Clustering ====== -->
 <h2 id="analysis-clustering">4. Analysis &amp; Clustering</h2>
-<p>Analysis &amp; Clustering groups implementation around features, fiqh, modelsdart, modules, mostly in data/models/fiqh_models.dart, ask_scholar/presentation/ask_scholar_screen.dart, macos/Flutter/GeneratedPluginRegistrant.swift. This section covers 106 nodes and 111 internal edges; the diagram shows only representative relationships to stay readable.</p>
+<p>Analysis &amp; Clustering groups implementation around features, fiqh, modelsdart, modules, mostly in data/models/fiqh_models.dart, ask_scholar/presentation/ask_scholar_screen.dart, macos/Flutter/GeneratedPluginRegistrant.swift. This section covers 112 nodes and 121 internal edges; the diagram shows only representative relationships to stay readable.</p>
 
 <div class="mermaid">
 %%{init: {"theme": "dark", "themeVariables": {"fontSize": "15.0px", "fontFamily": "Segoe UI, system-ui, sans-serif", "primaryColor": "#1e293b", "primaryTextColor": "#e2e8f0", "primaryBorderColor": "#38bdf8", "secondaryColor": "#0f172a", "tertiaryColor": "#334155", "lineColor": "#64748b", "textColor": "#e2e8f0"}, "flowchart": {"htmlLabels": true, "curve": "basis", "nodeSpacing": 48, "rankSpacing": 64, "padding": 14, "diagramPadding": 10, "useMaxWidth": true}}}%%
 flowchart LR
-    %% Section: Analysis &amp; Clustering (106 nodes, 111 edges)
+    %% Section: Analysis &amp; Clustering (112 nodes, 121 edges)
     subgraph analysis_clustering_ios_Runner_AppDelegate_swift_05405a63["ios/Runner/AppDelegate.swift"]
         ios_runner_appdelegate_swift_runner_appdelegate_aac06938("AppDelegate<br/><small>ios/Runner/AppDelegate.swift</small>")
         runner_appdelegate_appdelegate_application_d459a047("application()<br/><small>ios/Runner/AppDelegate.swift</small>")
@@ -805,7 +805,7 @@ flowchart LR
     ios_runnertests_runnertests_swift_runnertests_ru_7d74dddb -->|imports| uikit_d75dff57
     package_drift_drift_dart_8a1fc388 -->|imports| connection_native_9425426e
     flutter_generatedpluginregistrant_04de1f0c -->|imports| fluttermacos_cfa46073
-    %% Omitted for readability: 88 nodes, 0 edges
+    %% Omitted for readability: 94 nodes, 0 edges
     class ios_runner_appdelegate_swift_runner_appdelegate_aac06938 klass;
     class runner_appdelegate_appdelegate_application_d459a047 function;
     class flutter_ff25d178 module;
@@ -1093,7 +1093,7 @@ flowchart LR
     <table style="width:100%;font-size:0.85rem;">
       <tr><th>File</th><th>Coverage</th></tr>
       <tr><td><code>data/models/fiqh_models.dart</code></td><td>45 nodes</td></tr>
-<tr><td><code>ask_scholar/presentation/ask_scholar_screen.dart</code></td><td>14 nodes</td></tr>
+<tr><td><code>ask_scholar/presentation/ask_scholar_screen.dart</code></td><td>18 nodes</td></tr>
 <tr><td><code>macos/Flutter/GeneratedPluginRegistrant.swift</code></td><td>8 nodes</td></tr>
 <tr><td><code>ios/Runner/AppDelegate.swift</code></td><td>5 nodes</td></tr>
 <tr><td><code>macos/Runner/MainFlutterWindow.swift</code></td><td>5 nodes</td></tr>
@@ -1104,7 +1104,7 @@ flowchart LR
   </div>
   <div class="card">
     <h4>Design Notes</h4>
-    <p>This section comes from graphify community clustering. Relationship summary: defines x58, imports x26, references x9, contains x6. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
+    <p>This section comes from graphify community clustering. Relationship summary: defines x62, imports x26, references x11, inherits x9. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
   </div>
 </div>
 <hr>
@@ -3257,15 +3257,343 @@ flowchart LR
 </div>
 <hr>
 
-<!-- ====== 12. Community 13 ====== -->
-<h2 id="community-13">12. Community 13</h2>
-<p>Community 13 groups implementation around constants, app, constantsdart, daily, mostly in core/constants/app_constants.dart, core/constants/daily_quotes.dart. This section covers 36 nodes and 35 internal edges; the diagram shows only representative relationships to stay readable.</p>
+<!-- ====== 12. Community 7 ====== -->
+<h2 id="community-7">12. Community 7</h2>
+<p>Community 7 groups implementation around app, databasedart, database, get, mostly in core/database/app_database.dart. This section covers 36 nodes and 35 internal edges; the diagram shows only representative relationships to stay readable.</p>
 
 <div class="mermaid">
 %%{init: {"theme": "dark", "themeVariables": {"fontSize": "15.0px", "fontFamily": "Segoe UI, system-ui, sans-serif", "primaryColor": "#1e293b", "primaryTextColor": "#e2e8f0", "primaryBorderColor": "#38bdf8", "secondaryColor": "#0f172a", "tertiaryColor": "#334155", "lineColor": "#64748b", "textColor": "#e2e8f0"}, "flowchart": {"htmlLabels": true, "curve": "basis", "nodeSpacing": 48, "rankSpacing": 64, "padding": 14, "diagramPadding": 10, "useMaxWidth": true}}}%%
 flowchart LR
-    %% Section: Community 13 (36 nodes, 35 edges)
-    subgraph community_13_core_constants_app_constants_dart_a343efff["core/constants/app_constants.dart"]
+    %% Section: Community 7 (36 nodes, 35 edges)
+    subgraph community_7_core_database_app_database_dart_b8ff2792["core/database/app_database.dart"]
+        database_app_database_ef4a184a("app_database.dart")
+        database_app_database_daysbetween_d961e3fb("_daysBetween<br/><small>core/database/app_database.dart</small>")
+        database_app_database_todaystring_cabfaacd("_todayString<br/><small>core/database/app_database.dart</small>")
+        database_app_database_addbookmark_fb6b49bd("addBookmark<br/><small>core/database/app_database.dart</small>")
+        database_app_database_completedat_e005de95("completedAt<br/><small>core/database/app_database.dart</small>")
+        database_app_database_correctanswers_1adf97b4("correctAnswers<br/><small>core/database/app_database.dart</small>")
+        database_app_database_countcompletedlessons_e5e730b5("countCompletedLessons<br/><small>core/database/app_database.dart</small>")
+        database_app_database_createdat_d0d25c8f("createdAt<br/><small>core/database/app_database.dart</small>")
+        database_app_database_date_9eddd324("date<br/><small>core/database/app_database.dart</small>")
+        database_app_database_getallbookmarks_d293484c("getAllBookmarks<br/><small>core/database/app_database.dart</small>")
+        database_app_database_getbestquizresult_88f0fa39("getBestQuizResult<br/><small>core/database/app_database.dart</small>")
+    end
+    subgraph community_7_External_generated_98f394bd["External / generated"]
+        connection_connection_dart_d286d4ef("connection/connection.dart")
+        datetimecolumn_get_b32f7388("DateTimeColumn get")
+        intcolumn_get_1bdc950c("IntColumn get")
+        realcolumn_get_d8b33358("RealColumn get")
+        set_65c10dc3("Set")
+        textcolumn_get_bf50c9b0("TextColumn get")
+        int_get_cf7a28e1("int get")
+    end
+    database_app_database_ef4a184a -->|imports| connection_connection_dart_d286d4ef
+    %% Omitted for readability: 18 nodes, 0 edges
+    class database_app_database_ef4a184a function;
+    class database_app_database_daysbetween_d961e3fb function;
+    class database_app_database_todaystring_cabfaacd function;
+    class database_app_database_addbookmark_fb6b49bd function;
+    class database_app_database_completedat_e005de95 function;
+    class database_app_database_correctanswers_1adf97b4 function;
+    class database_app_database_countcompletedlessons_e5e730b5 function;
+    class database_app_database_createdat_d0d25c8f function;
+    class database_app_database_date_9eddd324 function;
+    class database_app_database_getallbookmarks_d293484c function;
+    class database_app_database_getbestquizresult_88f0fa39 function;
+    class connection_connection_dart_d286d4ef function;
+    class datetimecolumn_get_b32f7388 klass;
+    class intcolumn_get_1bdc950c klass;
+    class realcolumn_get_d8b33358 klass;
+    class set_65c10dc3 klass;
+    class textcolumn_get_bf50c9b0 klass;
+    class int_get_cf7a28e1 function;
+    classDef entry fill:#422006,stroke:#fbbf24,color:#fde68a,stroke-width:1px;
+    classDef api fill:#450a0a,stroke:#f87171,color:#fee2e2,stroke-width:1px;
+    classDef async fill:#2e1065,stroke:#a78bfa,color:#ede9fe,stroke-width:1px;
+    classDef klass fill:#064e3b,stroke:#34d399,color:#d1fae5,stroke-width:1px;
+    classDef ui fill:#831843,stroke:#f472b6,color:#fce7f3,stroke-width:1px;
+    classDef module fill:#172554,stroke:#60a5fa,color:#dbeafe,stroke-width:1px;
+    classDef test fill:#3f3f46,stroke:#a1a1aa,color:#f4f4f5,stroke-width:1px;
+    classDef concept fill:#292524,stroke:#a8a29e,color:#fafaf9,stroke-dasharray:4 3;
+    classDef function fill:#0f172a,stroke:#38bdf8,color:#e0f2fe,stroke-width:1px;
+</div>
+
+<h3>Call Details</h3>
+<table class="call-table">
+<tr>
+  <th style="width:5%">#</th>
+  <th style="width:28%">Node</th>
+  <th style="width:10%">Type</th>
+  <th style="width:17%">Caller</th>
+  <th style="width:20%">Callees</th>
+  <th style="width:20%">Description</th>
+</tr>
+<tr>
+  <td>1</td>
+  <td><code>app_database.dart</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td><code>connection/connection.dart</code></td>
+  <td>app_database.dart node in core/database/app_database.dart.</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td><code>lessonId</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>lessonId node in core/database/app_database.dart.</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td><code>TextColumn get</code><br><small style="color:var(--muted)"></small></td>
+  <td><span class="tag tag-class">Class</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>TextColumn get node in project.</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td><code>moduleId</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>moduleId node in core/database/app_database.dart.</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td><code>completedAt</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>completedAt node in core/database/app_database.dart.</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td><code>DateTimeColumn get</code><br><small style="color:var(--muted)"></small></td>
+  <td><span class="tag tag-class">Class</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>DateTimeColumn get node in project.</td>
+</tr>
+<tr>
+  <td>7</td>
+  <td><code>primaryKey</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>primaryKey node in core/database/app_database.dart.</td>
+</tr>
+<tr>
+  <td>8</td>
+  <td><code>Set</code><br><small style="color:var(--muted)"></small></td>
+  <td><span class="tag tag-class">Class</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>Set node in project.</td>
+</tr>
+<tr>
+  <td>9</td>
+  <td><code>id</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>id node in core/database/app_database.dart.</td>
+</tr>
+<tr>
+  <td>10</td>
+  <td><code>IntColumn get</code><br><small style="color:var(--muted)"></small></td>
+  <td><span class="tag tag-class">Class</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>IntColumn get node in project.</td>
+</tr>
+<tr>
+  <td>11</td>
+  <td><code>createdAt</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>createdAt node in core/database/app_database.dart.</td>
+</tr>
+<tr>
+  <td>12</td>
+  <td><code>totalQuestions</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>totalQuestions node in core/database/app_database.dart.</td>
+</tr>
+<tr>
+  <td>13</td>
+  <td><code>correctAnswers</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>correctAnswers node in core/database/app_database.dart.</td>
+</tr>
+<tr>
+  <td>14</td>
+  <td><code>percentage</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>percentage node in core/database/app_database.dart.</td>
+</tr>
+<tr>
+  <td>15</td>
+  <td><code>RealColumn get</code><br><small style="color:var(--muted)"></small></td>
+  <td><span class="tag tag-class">Class</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>RealColumn get node in project.</td>
+</tr>
+<tr>
+  <td>16</td>
+  <td><code>takenAt</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>takenAt node in core/database/app_database.dart.</td>
+</tr>
+<tr>
+  <td>17</td>
+  <td><code>date</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>date node in core/database/app_database.dart.</td>
+</tr>
+<tr>
+  <td>18</td>
+  <td><code>lessonsCompleted</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>lessonsCompleted node in core/database/app_database.dart.</td>
+</tr>
+<tr>
+  <td>19</td>
+  <td><code>schemaVersion</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>schemaVersion node in core/database/app_database.dart.</td>
+</tr>
+<tr>
+  <td>20</td>
+  <td><code>int get</code><br><small style="color:var(--muted)"></small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>int get node in project.</td>
+</tr>
+<tr>
+  <td>21</td>
+  <td><code>markLessonCompleted</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>markLessonCompleted node in core/database/app_database.dart.</td>
+</tr>
+<tr>
+  <td>22</td>
+  <td><code>isLessonCompleted</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>isLessonCompleted node in core/database/app_database.dart.</td>
+</tr>
+<tr>
+  <td>23</td>
+  <td><code>getCompletedLessonsForModule</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>getCompletedLessonsForModule node in core/database/app_database.dart.</td>
+</tr>
+<tr>
+  <td>24</td>
+  <td><code>countCompletedLessons</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>countCompletedLessons node in core/database/app_database.dart.</td>
+</tr>
+<tr>
+  <td>25</td>
+  <td><code>addBookmark</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>addBookmark node in core/database/app_database.dart.</td>
+</tr>
+<tr>
+  <td>26</td>
+  <td><code>removeBookmark</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>removeBookmark node in core/database/app_database.dart.</td>
+</tr>
+<tr>
+  <td>27</td>
+  <td><code>isBookmarked</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>isBookmarked node in core/database/app_database.dart.</td>
+</tr>
+<tr>
+  <td>28</td>
+  <td><code>getAllBookmarks</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>getAllBookmarks node in core/database/app_database.dart.</td>
+</tr>
+<tr>
+  <td>29</td>
+  <td><code>saveQuizResult</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>saveQuizResult node in core/database/app_database.dart.</td>
+</tr>
+<tr>
+  <td>30</td>
+  <td><code>getBestQuizResult</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
+  <td><span class="tag tag-func">Function</span></td>
+  <td>External entry / no inbound edge</td>
+  <td>No direct outbound edge</td>
+  <td>getBestQuizResult node in core/database/app_database.dart.</td>
+</tr>
+</table>
+
+<div class="grid">
+  <div class="card">
+    <h4>Key Files</h4>
+    <table style="width:100%;font-size:0.85rem;">
+      <tr><th>File</th><th>Coverage</th></tr>
+      <tr><td><code>core/database/app_database.dart</code></td><td>29 nodes</td></tr>
+    </table>
+  </div>
+  <div class="card">
+    <h4>Design Notes</h4>
+    <p>This section comes from graphify community clustering. Relationship summary: defines x28, references x6, imports x1. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
+  </div>
+</div>
+<hr>
+
+<!-- ====== 13. Community 8 ====== -->
+<h2 id="community-8">13. Community 8</h2>
+<p>Community 8 groups implementation around constants, app, constantsdart, daily, mostly in core/constants/app_constants.dart, core/constants/daily_quotes.dart. This section covers 36 nodes and 35 internal edges; the diagram shows only representative relationships to stay readable.</p>
+
+<div class="mermaid">
+%%{init: {"theme": "dark", "themeVariables": {"fontSize": "15.0px", "fontFamily": "Segoe UI, system-ui, sans-serif", "primaryColor": "#1e293b", "primaryTextColor": "#e2e8f0", "primaryBorderColor": "#38bdf8", "secondaryColor": "#0f172a", "tertiaryColor": "#334155", "lineColor": "#64748b", "textColor": "#e2e8f0"}, "flowchart": {"htmlLabels": true, "curve": "basis", "nodeSpacing": 48, "rankSpacing": 64, "padding": 14, "diagramPadding": 10, "useMaxWidth": true}}}%%
+flowchart LR
+    %% Section: Community 8 (36 nodes, 35 edges)
+    subgraph community_8_core_constants_app_constants_dart_7e1d20f3["core/constants/app_constants.dart"]
         constants_app_constants_98d851bb("app_constants.dart")
         constants_app_constants_appconstants_a9fbd65b("AppConstants<br/><small>core/constants/app_constants.dart</small>")
         constants_app_constants_appname_8668eb24("appName<br/><small>core/constants/app_constants.dart</small>")
@@ -3600,343 +3928,15 @@ flowchart LR
 </div>
 <hr>
 
-<!-- ====== 13. Community 8 ====== -->
-<h2 id="community-8">13. Community 8</h2>
-<p>Community 8 groups implementation around app, databasedart, database, get, mostly in core/database/app_database.dart. This section covers 36 nodes and 35 internal edges; the diagram shows only representative relationships to stay readable.</p>
+<!-- ====== 14. Community 9 ====== -->
+<h2 id="community-9">14. Community 9</h2>
+<p>Community 9 groups implementation around zakat, calculatordart, utils, zakatcalculator, mostly in core/utils/zakat_calculator.dart. This section covers 34 nodes and 33 internal edges; the diagram shows only representative relationships to stay readable.</p>
 
 <div class="mermaid">
 %%{init: {"theme": "dark", "themeVariables": {"fontSize": "15.0px", "fontFamily": "Segoe UI, system-ui, sans-serif", "primaryColor": "#1e293b", "primaryTextColor": "#e2e8f0", "primaryBorderColor": "#38bdf8", "secondaryColor": "#0f172a", "tertiaryColor": "#334155", "lineColor": "#64748b", "textColor": "#e2e8f0"}, "flowchart": {"htmlLabels": true, "curve": "basis", "nodeSpacing": 48, "rankSpacing": 64, "padding": 14, "diagramPadding": 10, "useMaxWidth": true}}}%%
 flowchart LR
-    %% Section: Community 8 (36 nodes, 35 edges)
-    subgraph community_8_core_database_app_database_dart_4f0cbc71["core/database/app_database.dart"]
-        database_app_database_ef4a184a("app_database.dart")
-        database_app_database_daysbetween_d961e3fb("_daysBetween<br/><small>core/database/app_database.dart</small>")
-        database_app_database_todaystring_cabfaacd("_todayString<br/><small>core/database/app_database.dart</small>")
-        database_app_database_addbookmark_fb6b49bd("addBookmark<br/><small>core/database/app_database.dart</small>")
-        database_app_database_completedat_e005de95("completedAt<br/><small>core/database/app_database.dart</small>")
-        database_app_database_correctanswers_1adf97b4("correctAnswers<br/><small>core/database/app_database.dart</small>")
-        database_app_database_countcompletedlessons_e5e730b5("countCompletedLessons<br/><small>core/database/app_database.dart</small>")
-        database_app_database_createdat_d0d25c8f("createdAt<br/><small>core/database/app_database.dart</small>")
-        database_app_database_date_9eddd324("date<br/><small>core/database/app_database.dart</small>")
-        database_app_database_getallbookmarks_d293484c("getAllBookmarks<br/><small>core/database/app_database.dart</small>")
-        database_app_database_getbestquizresult_88f0fa39("getBestQuizResult<br/><small>core/database/app_database.dart</small>")
-    end
-    subgraph community_8_External_generated_5e10b264["External / generated"]
-        connection_connection_dart_d286d4ef("connection/connection.dart")
-        datetimecolumn_get_b32f7388("DateTimeColumn get")
-        intcolumn_get_1bdc950c("IntColumn get")
-        realcolumn_get_d8b33358("RealColumn get")
-        set_65c10dc3("Set")
-        textcolumn_get_bf50c9b0("TextColumn get")
-        int_get_cf7a28e1("int get")
-    end
-    database_app_database_ef4a184a -->|imports| connection_connection_dart_d286d4ef
-    %% Omitted for readability: 18 nodes, 0 edges
-    class database_app_database_ef4a184a function;
-    class database_app_database_daysbetween_d961e3fb function;
-    class database_app_database_todaystring_cabfaacd function;
-    class database_app_database_addbookmark_fb6b49bd function;
-    class database_app_database_completedat_e005de95 function;
-    class database_app_database_correctanswers_1adf97b4 function;
-    class database_app_database_countcompletedlessons_e5e730b5 function;
-    class database_app_database_createdat_d0d25c8f function;
-    class database_app_database_date_9eddd324 function;
-    class database_app_database_getallbookmarks_d293484c function;
-    class database_app_database_getbestquizresult_88f0fa39 function;
-    class connection_connection_dart_d286d4ef function;
-    class datetimecolumn_get_b32f7388 klass;
-    class intcolumn_get_1bdc950c klass;
-    class realcolumn_get_d8b33358 klass;
-    class set_65c10dc3 klass;
-    class textcolumn_get_bf50c9b0 klass;
-    class int_get_cf7a28e1 function;
-    classDef entry fill:#422006,stroke:#fbbf24,color:#fde68a,stroke-width:1px;
-    classDef api fill:#450a0a,stroke:#f87171,color:#fee2e2,stroke-width:1px;
-    classDef async fill:#2e1065,stroke:#a78bfa,color:#ede9fe,stroke-width:1px;
-    classDef klass fill:#064e3b,stroke:#34d399,color:#d1fae5,stroke-width:1px;
-    classDef ui fill:#831843,stroke:#f472b6,color:#fce7f3,stroke-width:1px;
-    classDef module fill:#172554,stroke:#60a5fa,color:#dbeafe,stroke-width:1px;
-    classDef test fill:#3f3f46,stroke:#a1a1aa,color:#f4f4f5,stroke-width:1px;
-    classDef concept fill:#292524,stroke:#a8a29e,color:#fafaf9,stroke-dasharray:4 3;
-    classDef function fill:#0f172a,stroke:#38bdf8,color:#e0f2fe,stroke-width:1px;
-</div>
-
-<h3>Call Details</h3>
-<table class="call-table">
-<tr>
-  <th style="width:5%">#</th>
-  <th style="width:28%">Node</th>
-  <th style="width:10%">Type</th>
-  <th style="width:17%">Caller</th>
-  <th style="width:20%">Callees</th>
-  <th style="width:20%">Description</th>
-</tr>
-<tr>
-  <td>1</td>
-  <td><code>app_database.dart</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td><code>connection/connection.dart</code></td>
-  <td>app_database.dart node in core/database/app_database.dart.</td>
-</tr>
-<tr>
-  <td>2</td>
-  <td><code>lessonId</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>lessonId node in core/database/app_database.dart.</td>
-</tr>
-<tr>
-  <td>3</td>
-  <td><code>TextColumn get</code><br><small style="color:var(--muted)"></small></td>
-  <td><span class="tag tag-class">Class</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>TextColumn get node in project.</td>
-</tr>
-<tr>
-  <td>4</td>
-  <td><code>moduleId</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>moduleId node in core/database/app_database.dart.</td>
-</tr>
-<tr>
-  <td>5</td>
-  <td><code>completedAt</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>completedAt node in core/database/app_database.dart.</td>
-</tr>
-<tr>
-  <td>6</td>
-  <td><code>DateTimeColumn get</code><br><small style="color:var(--muted)"></small></td>
-  <td><span class="tag tag-class">Class</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>DateTimeColumn get node in project.</td>
-</tr>
-<tr>
-  <td>7</td>
-  <td><code>primaryKey</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>primaryKey node in core/database/app_database.dart.</td>
-</tr>
-<tr>
-  <td>8</td>
-  <td><code>Set</code><br><small style="color:var(--muted)"></small></td>
-  <td><span class="tag tag-class">Class</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>Set node in project.</td>
-</tr>
-<tr>
-  <td>9</td>
-  <td><code>id</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>id node in core/database/app_database.dart.</td>
-</tr>
-<tr>
-  <td>10</td>
-  <td><code>IntColumn get</code><br><small style="color:var(--muted)"></small></td>
-  <td><span class="tag tag-class">Class</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>IntColumn get node in project.</td>
-</tr>
-<tr>
-  <td>11</td>
-  <td><code>createdAt</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>createdAt node in core/database/app_database.dart.</td>
-</tr>
-<tr>
-  <td>12</td>
-  <td><code>totalQuestions</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>totalQuestions node in core/database/app_database.dart.</td>
-</tr>
-<tr>
-  <td>13</td>
-  <td><code>correctAnswers</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>correctAnswers node in core/database/app_database.dart.</td>
-</tr>
-<tr>
-  <td>14</td>
-  <td><code>percentage</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>percentage node in core/database/app_database.dart.</td>
-</tr>
-<tr>
-  <td>15</td>
-  <td><code>RealColumn get</code><br><small style="color:var(--muted)"></small></td>
-  <td><span class="tag tag-class">Class</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>RealColumn get node in project.</td>
-</tr>
-<tr>
-  <td>16</td>
-  <td><code>takenAt</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>takenAt node in core/database/app_database.dart.</td>
-</tr>
-<tr>
-  <td>17</td>
-  <td><code>date</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>date node in core/database/app_database.dart.</td>
-</tr>
-<tr>
-  <td>18</td>
-  <td><code>lessonsCompleted</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>lessonsCompleted node in core/database/app_database.dart.</td>
-</tr>
-<tr>
-  <td>19</td>
-  <td><code>schemaVersion</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>schemaVersion node in core/database/app_database.dart.</td>
-</tr>
-<tr>
-  <td>20</td>
-  <td><code>int get</code><br><small style="color:var(--muted)"></small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>int get node in project.</td>
-</tr>
-<tr>
-  <td>21</td>
-  <td><code>markLessonCompleted</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>markLessonCompleted node in core/database/app_database.dart.</td>
-</tr>
-<tr>
-  <td>22</td>
-  <td><code>isLessonCompleted</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>isLessonCompleted node in core/database/app_database.dart.</td>
-</tr>
-<tr>
-  <td>23</td>
-  <td><code>getCompletedLessonsForModule</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>getCompletedLessonsForModule node in core/database/app_database.dart.</td>
-</tr>
-<tr>
-  <td>24</td>
-  <td><code>countCompletedLessons</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>countCompletedLessons node in core/database/app_database.dart.</td>
-</tr>
-<tr>
-  <td>25</td>
-  <td><code>addBookmark</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>addBookmark node in core/database/app_database.dart.</td>
-</tr>
-<tr>
-  <td>26</td>
-  <td><code>removeBookmark</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>removeBookmark node in core/database/app_database.dart.</td>
-</tr>
-<tr>
-  <td>27</td>
-  <td><code>isBookmarked</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>isBookmarked node in core/database/app_database.dart.</td>
-</tr>
-<tr>
-  <td>28</td>
-  <td><code>getAllBookmarks</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>getAllBookmarks node in core/database/app_database.dart.</td>
-</tr>
-<tr>
-  <td>29</td>
-  <td><code>saveQuizResult</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>saveQuizResult node in core/database/app_database.dart.</td>
-</tr>
-<tr>
-  <td>30</td>
-  <td><code>getBestQuizResult</code><br><small style="color:var(--muted)">core/database/app_database.dart</small></td>
-  <td><span class="tag tag-func">Function</span></td>
-  <td>External entry / no inbound edge</td>
-  <td>No direct outbound edge</td>
-  <td>getBestQuizResult node in core/database/app_database.dart.</td>
-</tr>
-</table>
-
-<div class="grid">
-  <div class="card">
-    <h4>Key Files</h4>
-    <table style="width:100%;font-size:0.85rem;">
-      <tr><th>File</th><th>Coverage</th></tr>
-      <tr><td><code>core/database/app_database.dart</code></td><td>29 nodes</td></tr>
-    </table>
-  </div>
-  <div class="card">
-    <h4>Design Notes</h4>
-    <p>This section comes from graphify community clustering. Relationship summary: defines x28, references x6, imports x1. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
-  </div>
-</div>
-<hr>
-
-<!-- ====== 14. Community 10 ====== -->
-<h2 id="community-10">14. Community 10</h2>
-<p>Community 10 groups implementation around zakat, calculatordart, utils, zakatcalculator, mostly in core/utils/zakat_calculator.dart. This section covers 34 nodes and 33 internal edges; the diagram shows only representative relationships to stay readable.</p>
-
-<div class="mermaid">
-%%{init: {"theme": "dark", "themeVariables": {"fontSize": "15.0px", "fontFamily": "Segoe UI, system-ui, sans-serif", "primaryColor": "#1e293b", "primaryTextColor": "#e2e8f0", "primaryBorderColor": "#38bdf8", "secondaryColor": "#0f172a", "tertiaryColor": "#334155", "lineColor": "#64748b", "textColor": "#e2e8f0"}, "flowchart": {"htmlLabels": true, "curve": "basis", "nodeSpacing": 48, "rankSpacing": 64, "padding": 14, "diagramPadding": 10, "useMaxWidth": true}}}%%
-flowchart LR
-    %% Section: Community 10 (34 nodes, 33 edges)
-    subgraph community_10_core_utils_zakat_calculator_dart_3d975b76["core/utils/zakat_calculator.dart"]
+    %% Section: Community 9 (34 nodes, 33 edges)
+    subgraph community_9_core_utils_zakat_calculator_dart_f19bd11d["core/utils/zakat_calculator.dart"]
         utils_zakat_calculator_05ac0550("zakat_calculator.dart")
         utils_zakat_calculator_cropzakatresult_9ba8c078("CropZakatResult<br/><small>core/utils/zakat_calculator.dart</small>")
         utils_zakat_calculator_livestockzakatresult_6e1dfc76("LivestockZakatResult<br/><small>core/utils/zakat_calculator.dart</small>")
@@ -3954,7 +3954,7 @@ flowchart LR
         utils_zakat_calculator_getgoldpricepergram_61ec3df3("getGoldPricePerGram<br/><small>core/utils/zakat_calculator.dart</small>")
         utils_zakat_calculator_getliveexchangerates_24ea4659("getLiveExchangeRates<br/><small>core/utils/zakat_calculator.dart</small>")
     end
-    subgraph community_10_External_generated_a43658f6["External / generated"]
+    subgraph community_9_External_generated_69f5d4bc["External / generated"]
         constants_app_constants_dart_3f12d104("../constants/app constants.dart")
         package_http_http_dart_0b3805a1("package:http/http.dart")
     end
@@ -4257,14 +4257,14 @@ flowchart LR
 </div>
 <hr>
 
-<!-- ====== 15. Community 9 ====== -->
-<h2 id="community-9">15. Community 9</h2>
-<p>Community 9 groups implementation around quiz, module, screendart, features, mostly in quiz/presentation/module_quiz_screen.dart. This section covers 33 nodes and 32 internal edges; the diagram shows only representative relationships to stay readable.</p>
+<!-- ====== 15. Community 11 ====== -->
+<h2 id="community-11">15. Community 11</h2>
+<p>Community 11 groups implementation around quiz, module, screendart, features, mostly in quiz/presentation/module_quiz_screen.dart. This section covers 33 nodes and 32 internal edges; the diagram shows only representative relationships to stay readable.</p>
 
 <div class="mermaid">
 %%{init: {"theme": "dark", "themeVariables": {"fontSize": "15.0px", "fontFamily": "Segoe UI, system-ui, sans-serif", "primaryColor": "#1e293b", "primaryTextColor": "#e2e8f0", "primaryBorderColor": "#38bdf8", "secondaryColor": "#0f172a", "tertiaryColor": "#334155", "lineColor": "#64748b", "textColor": "#e2e8f0"}, "flowchart": {"htmlLabels": true, "curve": "basis", "nodeSpacing": 48, "rankSpacing": 64, "padding": 14, "diagramPadding": 10, "useMaxWidth": true}}}%%
 flowchart LR
-    %% Section: Community 9 (33 nodes, 32 edges)
+    %% Section: Community 11 (33 nodes, 32 edges)
     presentation_module_quiz_screen_685c6338("module_quiz_screen.dart")
     presentation_module_quiz_screen_answered_63a2496e("_answered<br/><small>quiz/presentation/module_quiz_screen.dart</small>")
     presentation_module_quiz_screen_build_043210ce("build<br/><small>quiz/presentation/module_quiz_screen.dart</small>")
@@ -4599,12 +4599,12 @@ flowchart LR
 
 <!-- ====== 16. Other ====== -->
 <h2 id="other">16. Other</h2>
-<p>Other groups implementation around features, screendart, presentation, quiz, mostly in zakat_calculator/presentation/zakat_calculator_screen.dart, quiz/presentation/general_quiz_screen.dart, modules/presentation/lesson_list_screen.dart. This section covers 329 nodes and 371 internal edges; the diagram shows only representative relationships to stay readable.</p>
+<p>Other groups implementation around features, screendart, presentation, quiz, mostly in zakat_calculator/presentation/zakat_calculator_screen.dart, quiz/presentation/general_quiz_screen.dart, modules/presentation/lesson_list_screen.dart. This section covers 323 nodes and 363 internal edges; the diagram shows only representative relationships to stay readable.</p>
 
 <div class="mermaid">
 %%{init: {"theme": "dark", "themeVariables": {"fontSize": "15.0px", "fontFamily": "Segoe UI, system-ui, sans-serif", "primaryColor": "#1e293b", "primaryTextColor": "#e2e8f0", "primaryBorderColor": "#38bdf8", "secondaryColor": "#0f172a", "tertiaryColor": "#334155", "lineColor": "#64748b", "textColor": "#e2e8f0"}, "flowchart": {"htmlLabels": true, "curve": "basis", "nodeSpacing": 48, "rankSpacing": 64, "padding": 14, "diagramPadding": 10, "useMaxWidth": true}}}%%
 flowchart LR
-    %% Section: Other (329 nodes, 371 edges)
+    %% Section: Other (323 nodes, 363 edges)
     subgraph other_External_generated_9e8859fa["External / generated"]
         home_providers_home_provider_dart_4ff1153c("../../home/providers/home provider.dart")
         modules_data_models_fiqh_models_dart_b6300dc4("../../modules/data/models/fiqh models.dart")
@@ -4640,7 +4640,7 @@ flowchart LR
     core_database_app_database_dart_3ed11b0e -->|imports| providers_home_provider_d4a3df03
     presentation_home_screen_19651276 -->|imports| core_constants_daily_quotes_dart_d2d725c6
     modules_data_models_fiqh_models_dart_b6300dc4 -->|imports| providers_home_provider_d4a3df03
-    %% Omitted for readability: 311 nodes, 0 edges
+    %% Omitted for readability: 305 nodes, 0 edges
     class home_providers_home_provider_dart_4ff1153c function;
     class modules_data_models_fiqh_models_dart_b6300dc4 function;
     class providers_bookmarks_provider_dart_1e13f1df function;
@@ -4939,7 +4939,7 @@ flowchart LR
   </div>
   <div class="card">
     <h4>Design Notes</h4>
-    <p>This section comes from graphify community clustering. Relationship summary: defines x218, inherits x52, references x51, imports x39. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
+    <p>This section comes from graphify community clustering. Relationship summary: defines x218, references x49, inherits x46, imports x39. The diagram prioritizes high-confidence calls or usage relationships; the table keeps the broader node inventory.</p>
   </div>
 </div>
 <hr>
@@ -4969,7 +4969,7 @@ flowchart LR
 
 <div style="text-align:center; padding:40px 0; color: var(--muted); font-size:0.9rem;">
   <p>al-mizan — Architecture Documentation</p>
-  <p>Generated: 2026-06-26 08:04 UTC · graphify callflow-html</p>
+  <p>Generated: 2026-06-26 21:20 UTC · graphify callflow-html</p>
 </div>
 
 </div><!-- .container -->

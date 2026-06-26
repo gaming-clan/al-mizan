@@ -150,68 +150,68 @@
     "semantic_hash": ""
   },
   "lib/data/fiqh_content/module_10_xhenaze.json": {
-    "mtime": 1782059710.9268486,
-    "ast_hash": "5703c104673c44bbd832daa428289ef5",
+    "mtime": 1782508330.7409384,
+    "ast_hash": "38142b0fbbfa040f6787363a6d0b3092",
     "semantic_hash": ""
   },
   "lib/data/fiqh_content/module_11_betim_nedhr.json": {
-    "mtime": 1782059539.5254476,
-    "ast_hash": "d6dc94917080914098c4a50740531406",
+    "mtime": 1782508385.441575,
+    "ast_hash": "b49b4ed6453860aa10910445e950f025",
     "semantic_hash": ""
   },
   "lib/data/fiqh_content/module_12_ushqimi_pija.json": {
-    "mtime": 1782059867.5094743,
-    "ast_hash": "1c7e9a6d53c96952b8cfb7e7ebd76565",
+    "mtime": 1782508394.3263056,
+    "ast_hash": "1b2c66d813516fe43a841c142532df63",
     "semantic_hash": ""
   },
   "lib/data/fiqh_content/module_1_introduction.json": {
-    "mtime": 1781899477.4411764,
-    "ast_hash": "941f3431db9eef10e36e2c2ce356a094",
+    "mtime": 1782508045.8426158,
+    "ast_hash": "721e30e38a9d5afb11d89eee84f53b59",
     "semantic_hash": ""
   },
   "lib/data/fiqh_content/module_2_taharah.json": {
-    "mtime": 1781899477.4411764,
-    "ast_hash": "36a698cf1627f397635e7b9bff4255e0",
+    "mtime": 1782508310.5285718,
+    "ast_hash": "b692f86a5ffef6a1fe4fad2a8303e7f7",
     "semantic_hash": ""
   },
   "lib/data/fiqh_content/module_3_salah.json": {
-    "mtime": 1781899477.4436855,
-    "ast_hash": "4be2612f2f72da8f45635dda38048884",
+    "mtime": 1782508214.2760828,
+    "ast_hash": "52353780af474e8ecfec2bf68e97040a",
     "semantic_hash": ""
   },
   "lib/data/fiqh_content/module_4_sawm.json": {
-    "mtime": 1782059598.3718576,
-    "ast_hash": "892c02663847a0ee3ab59f49547be86d",
+    "mtime": 1782508295.9357336,
+    "ast_hash": "52487d413f8d9d069d51b46f20876d21",
     "semantic_hash": ""
   },
   "lib/data/fiqh_content/module_5_zakat.json": {
-    "mtime": 1782059661.1160152,
-    "ast_hash": "f2dc43b559e78134a85c4241d15183e5",
+    "mtime": 1782508316.1946468,
+    "ast_hash": "e64eb7581848eb0dd7ac4e984dc921fb",
     "semantic_hash": ""
   },
   "lib/data/fiqh_content/module_6_hajj.json": {
-    "mtime": 1781899477.4497736,
-    "ast_hash": "bf866dcce196d9a985421a4074ca41e3",
+    "mtime": 1782508325.5495327,
+    "ast_hash": "f155f483f2979167ac49fec9271d93cb",
     "semantic_hash": ""
   },
   "lib/data/fiqh_content/module_7_muamalat.json": {
-    "mtime": 1782059764.773491,
-    "ast_hash": "578bd2e8fe8899cb98f5aa5b9e4e05f2",
+    "mtime": 1782508338.7563016,
+    "ast_hash": "670d535dd194b8ba139f2f1831965e61",
     "semantic_hash": ""
   },
   "lib/data/fiqh_content/module_8_halal_haram.json": {
-    "mtime": 1782059819.155436,
-    "ast_hash": "9bf4c096661049026ecff31f27ca267e",
+    "mtime": 1782508346.6033058,
+    "ast_hash": "035f8e89f1ddc8a7dcac0c1959935377",
     "semantic_hash": ""
   },
   "lib/data/fiqh_content/module_9_nikah.json": {
-    "mtime": 1781899477.4543018,
-    "ast_hash": "57d475fae45cefd70afdf49024ce4943",
+    "mtime": 1782508352.7513402,
+    "ast_hash": "1805ebd5e09e8872feec669859f288e4",
     "semantic_hash": ""
   },
   "lib/features/about/presentation/about_screen.dart": {
-    "mtime": 1782458798.6183474,
-    "ast_hash": "6bb5b1ac6da57d747486f750e03982cb",
+    "mtime": 1782508586.0336604,
+    "ast_hash": "fb2924d039ce23f2dc065f20859e9576",
     "semantic_hash": ""
   },
   "lib/features/ask_scholar/presentation/ask_scholar_screen.dart": {
@@ -792,6 +792,61 @@
   "CLAUDE.md": {
     "mtime": 1782417736.8089254,
     "ast_hash": "8a6643a420fdad6bfb583523bc6cef16",
+    "semantic_hash": ""
+  },
+  "docs/fiqh sources 2/Forma e namazit e t\u00eb D\u00ebrguarit -- e p\u00ebrshkruar prej fillimit deri n\u00eb fund.pdf": {
+    "mtime": 1782505927.4305894,
+    "ast_hash": "639b34df4b98b787d5e0eb84cbdbd65d",
+    "semantic_hash": ""
+  },
+  "docs/fiqh sources 2/Sahih-hu i el-Buharit.pdf": {
+    "mtime": 1782505820.558621,
+    "ast_hash": "bb63fbbf526c2ec3d76cd8867233f0cc",
+    "semantic_hash": ""
+  },
+  "docs/fiqh sources 2/Sahih-u i el-Buharit - Kaptina e pejgamber\u00ebve.pdf": {
+    "mtime": 1782505836.9956372,
+    "ast_hash": "bb63fbbf526c2ec3d76cd8867233f0cc",
+    "semantic_hash": ""
+  },
+  "docs/fiqh sources 2/Zhvler\u00ebsuesit e Islamit1.pdf": {
+    "mtime": 1782505886.767666,
+    "ast_hash": "596c35d0c1d22f740496ba91c8e67d82",
+    "semantic_hash": ""
+  },
+  "docs/fiqh sources 2/arnavutca-fikih-1.pdf": {
+    "mtime": 1782505694.7462478,
+    "ast_hash": "fd189da34f972254fb82d691754aef9e",
+    "semantic_hash": ""
+  },
+  "docs/fiqh sources 2/arnavutca-fikih-2.pdf": {
+    "mtime": 1782505701.5557804,
+    "ast_hash": "4abefe56d9da62914f9e26dad2276630",
+    "semantic_hash": ""
+  },
+  "docs/fiqh sources 2/arnavutca-fikih-3.pdf": {
+    "mtime": 1782505712.6230657,
+    "ast_hash": "83253799a5bfaea5e91827d30cd50c3a",
+    "semantic_hash": ""
+  },
+  "docs/fiqh sources 2/arnavutca-hadis-1.pdf": {
+    "mtime": 1782505727.3016071,
+    "ast_hash": "1320a69d9ac962a860747b7c3fcdd103",
+    "semantic_hash": ""
+  },
+  "docs/fiqh sources 2/arnavutca-hadis-2.pdf": {
+    "mtime": 1782505739.649279,
+    "ast_hash": "0f2cbe819e7267a8468f403345a7977d",
+    "semantic_hash": ""
+  },
+  "docs/fiqh sources 2/arnavutca-ilmihal.pdf": {
+    "mtime": 1782505761.3499596,
+    "ast_hash": "6ea18714f652adf0138a39caac299033",
+    "semantic_hash": ""
+  },
+  "docs/fiqh sources 2/hallalli-dhe-harami.pdf": {
+    "mtime": 1782505804.7717333,
+    "ast_hash": "3efeec498b95a7c67a4aa28ee5502362",
     "semantic_hash": ""
   }
 }
