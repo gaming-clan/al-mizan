@@ -60,6 +60,14 @@ class AboutScreen extends StatelessWidget {
 
   static const _appLinks = [
     _LinkItem(
+      title: 'Urtësia Islame',
+      subtitle: 'Thënie islame shqip',
+      icon: Icons.format_quote_rounded,
+      iconBg: Color(0xFF003527),
+      iconColor: Color(0xFF80BEA6),
+      url: 'https://play.google.com/store/apps/details?id=com.urtesia.thenie_islame',
+    ),
+    _LinkItem(
       title: 'Mburoja App',
       subtitle: 'Dhikër dhe lutje mbrojtëse',
       icon: Icons.shield_rounded,
