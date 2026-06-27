@@ -4,7 +4,6 @@ import android.appwidget.AppWidgetManager
 import android.appwidget.AppWidgetProvider
 import android.content.Context
 import android.widget.RemoteViews
-import es.antonborri.home_widget.HomeWidgetPlugin
 
 class AlMizanWidget : AppWidgetProvider() {
     override fun onUpdate(
@@ -23,11 +22,14 @@ private fun updateWidget(
     appWidgetManager: AppWidgetManager,
     appWidgetId: Int
 ) {
-    val data = HomeWidgetPlugin.getData(context)
+    // home_widget Flutter package writes to SharedPreferences named "HomeWidgetPlugin"
+    val prefs = context.getSharedPreferences("HomeWidgetPlugin", Context.MODE_PRIVATE)
 
-    val quoteText = data.getString("widget_quote_text", "Mësoje edebin përpara diturisë.") ?: "Mësoje edebin përpara diturisë."
-    val quoteAuthor = data.getString("widget_quote_author", "Imam Maliku") ?: "Imam Maliku"
-    val streak = data.getInt("widget_streak", 0)
+    val quoteText = prefs.getString("widget_quote_text", "Mësoje edebin përpara diturisë.")
+        ?: "Mësoje edebin përpara diturisë."
+    val quoteAuthor = prefs.getString("widget_quote_author", "Imam Maliku")
+        ?: "Imam Maliku"
+    val streak = prefs.getInt("widget_streak", 0)
 
     val streakLabel = if (streak > 0) "🔥 $streak ditë" else "Fillo sot!"
 

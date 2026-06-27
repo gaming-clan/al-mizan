@@ -163,20 +163,16 @@ class _SectionWidget extends StatelessWidget {
       children: [
         if (section.ruling != null)
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
             margin: const EdgeInsets.only(bottom: 10),
             decoration: BoxDecoration(
-              color: AppColors.primary.withValues(alpha: 0.15),
-              borderRadius: BorderRadius.circular(8),
-              border: Border.all(
-                color: AppColors.primary.withValues(alpha: 0.4),
-                width: 1,
-              ),
+              color: _rulingColor(section.ruling!),
+              borderRadius: BorderRadius.circular(6),
             ),
             child: Text(
-              section.ruling!.toUpperCase(),
+              _rulingLabel(section.ruling!),
               style: const TextStyle(
-                color: AppColors.primary,
+                color: Colors.white,
                 fontSize: 11,
                 fontWeight: FontWeight.w700,
                 letterSpacing: 0.8,
@@ -201,5 +197,44 @@ class _SectionWidget extends StatelessWidget {
         ],
       ],
     );
+  }
+}
+
+Color _rulingColor(String ruling) {
+  switch (ruling.toLowerCase()) {
+    case 'farz':
+      return const Color(0xFF1B6B45);
+    case 'vaxhib':
+    case 'obligim':
+      return const Color(0xFFB86200);
+    case 'mekruh':
+    case 'makruh':
+      return const Color(0xFF5A5A6E);
+    case 'sunnet':
+      return const Color(0xFF2260A8);
+    case 'important_concept':
+      return const Color(0xFF4A3080);
+    default:
+      return const Color(0xFF2B5C3E);
+  }
+}
+
+String _rulingLabel(String ruling) {
+  switch (ruling.toLowerCase()) {
+    case 'farz':
+      return 'FARZ';
+    case 'vaxhib':
+      return 'VAXHIB';
+    case 'obligim':
+      return 'OBLIGIM';
+    case 'mekruh':
+    case 'makruh':
+      return 'MEKRUH';
+    case 'sunnet':
+      return 'SUNNET';
+    case 'important_concept':
+      return 'E RËNDËSISHME';
+    default:
+      return ruling.toUpperCase();
   }
 }
