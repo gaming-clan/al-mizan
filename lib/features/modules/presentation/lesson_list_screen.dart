@@ -93,7 +93,10 @@ class _LeveledList extends StatelessWidget {
     }
 
     return ListView(
-      padding: const EdgeInsets.symmetric(vertical: 12),
+      padding: EdgeInsets.only(
+        top: 12,
+        bottom: MediaQuery.of(context).padding.bottom + 24,
+      ),
       children: [
         for (final level in _levels)
           if (grouped.containsKey(level))

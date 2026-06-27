@@ -194,9 +194,10 @@ class _ZakatCalculatorScreenState
     final localGoldPrice = goldPriceUsd * rate;
     final nisabAll = AppConstants.goldNisabGrams * localGoldPrice;
     final cs = theme.colorScheme;
+    final bottomPad = MediaQuery.of(context).padding.bottom + 16;
 
     return ListView(
-      padding: const EdgeInsets.all(16),
+      padding: EdgeInsets.fromLTRB(16, 16, 16, bottomPad),
       children: [
         // Gold price info card
         Card(
@@ -320,8 +321,9 @@ class _ZakatCalculatorScreenState
   // ── Crops tab ──
 
   Widget _cropsTab(String sym, ThemeData theme) {
+    final bottomPad = MediaQuery.of(context).padding.bottom + 16;
     return ListView(
-      padding: const EdgeInsets.all(16),
+      padding: EdgeInsets.fromLTRB(16, 16, 16, bottomPad),
       children: [
         Card(
           color: AppColors.accent.withValues(alpha: 0.08),
@@ -364,8 +366,9 @@ class _ZakatCalculatorScreenState
   // ── Livestock tab ──
 
   Widget _livestockTab(ThemeData theme) {
+    final bottomPad = MediaQuery.of(context).padding.bottom + 16;
     return ListView(
-      padding: const EdgeInsets.all(16),
+      padding: EdgeInsets.fromLTRB(16, 16, 16, bottomPad),
       children: [
         Card(
           color: AppColors.accent.withValues(alpha: 0.08),

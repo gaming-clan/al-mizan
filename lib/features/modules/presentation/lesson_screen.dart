@@ -163,11 +163,15 @@ class _SectionWidget extends StatelessWidget {
       children: [
         if (section.ruling != null)
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-            margin: const EdgeInsets.only(bottom: 8),
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+            margin: const EdgeInsets.only(bottom: 10),
             decoration: BoxDecoration(
-              color: AppColors.primary.withValues(alpha: 0.1),
+              color: AppColors.primary.withValues(alpha: 0.15),
               borderRadius: BorderRadius.circular(8),
+              border: Border.all(
+                color: AppColors.primary.withValues(alpha: 0.4),
+                width: 1,
+              ),
             ),
             child: Text(
               section.ruling!.toUpperCase(),
@@ -175,7 +179,7 @@ class _SectionWidget extends StatelessWidget {
                 color: AppColors.primary,
                 fontSize: 11,
                 fontWeight: FontWeight.w700,
-                letterSpacing: 1,
+                letterSpacing: 0.8,
               ),
             ),
           ),
