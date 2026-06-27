@@ -74,6 +74,18 @@ enum AppThemeType {
         return const Color(0xFF131313);
     }
   }
+
+  /// Returns the theme appropriate for the given hour (0–23).
+  ///   04:00–06:59  →  Andalusian Garden  (agim i freskët)
+  ///   07:00–16:59  →  Parchment          (ditë e pastër)
+  ///   17:00–20:59  →  Desert Sands       (perëndim i ngrohtë)
+  ///   21:00–03:59  →  Midnight Indigo    (natë e thellë)
+  static AppThemeType forHour(int hour) {
+    if (hour >= 4 && hour < 7) return AppThemeType.andalusianGarden;
+    if (hour >= 7 && hour < 17) return AppThemeType.parchment;
+    if (hour >= 17 && hour < 21) return AppThemeType.desertSands;
+    return AppThemeType.midnightIndigo;
+  }
 }
 
 // ══════════════════════════════════════════
@@ -115,6 +127,47 @@ class ThemeNotifier extends StateNotifier<AppThemeType> {
     await prefs.setString('app_theme', theme.name);
   }
 }
+
+// ══════════════════════════════════════════
+//  AUTO-THEME PROVIDER
+// ══════════════════════════════════════════
+
+final autoThemeProvider =
+    StateNotifierProvider<AutoThemeNotifier, bool>((ref) {
+  return AutoThemeNotifier();
+});
+
+class AutoThemeNotifier extends StateNotifier<bool> {
+  AutoThemeNotifier() : super(false) {
+    _load();
+  }
+
+  Future<void> _load() async {
+    final prefs = await SharedPreferences.getInstance();
+    state = prefs.getBool('auto_theme') ?? false;
+  }
+
+  Future<void> setAuto(bool value) async {
+    state = value;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool('auto_theme', value);
+  }
+}
+
+// Ticks every minute so effectiveThemeProvider rebuilds automatically.
+final _autoClockProvider = StreamProvider<int>((ref) async* {
+  yield 0;
+  yield* Stream.periodic(const Duration(minutes: 1), (i) => i + 1);
+});
+
+/// The theme that should actually be applied to the app.
+/// When auto-theme is on, it follows the time of day; otherwise the manual pick.
+final effectiveThemeProvider = Provider<AppThemeType>((ref) {
+  final isAuto = ref.watch(autoThemeProvider);
+  if (!isAuto) return ref.watch(themeProvider);
+  ref.watch(_autoClockProvider); // rebuild every minute
+  return AppThemeType.forHour(DateTime.now().hour);
+});
 
 // ══════════════════════════════════════════
 //  AVATAR PROVIDER

@@ -176,6 +176,13 @@ void _showAvatarPicker(
   );
 }
 
+String _autoThemeLabel(int hour) {
+  if (hour >= 4 && hour < 7) return 'Agim — Andalusian Garden';
+  if (hour >= 7 && hour < 17) return 'Ditë — Parchment';
+  if (hour >= 17 && hour < 21) return 'Perëndim — Desert Sands';
+  return 'Natë — Midnight Indigo';
+}
+
 void _showThemePicker(BuildContext context, WidgetRef ref) {
   final current = ref.read(themeProvider);
   showModalBottomSheet(
@@ -332,6 +339,8 @@ class ProfileScreen extends ConsumerWidget {
     final userName = ref.watch(userNameProvider);
     final displayName = userName.isEmpty ? 'Nxënës' : userName;
     final currentTheme = ref.watch(themeProvider);
+    final isAutoTheme = ref.watch(autoThemeProvider);
+    final effectiveTheme = ref.watch(effectiveThemeProvider);
     final avatarPath = ref.watch(avatarPathProvider);
 
     return Scaffold(
@@ -477,33 +486,59 @@ class ProfileScreen extends ConsumerWidget {
             ),
           ),
           const SizedBox(height: 8),
+          // Auto-theme toggle
           _SettingsTile(
-            icon: Icons.palette_outlined,
-            title: 'Tema',
-            trailing: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Container(
-                  width: 14,
-                  height: 14,
-                  decoration: BoxDecoration(
-                    color: currentTheme.swatchPrimary,
-                    shape: BoxShape.circle,
-                    border: Border.all(
-                        color: cs.outlineVariant, width: 1),
-                  ),
-                ),
-                const SizedBox(width: 6),
-                Text(
-                  currentTheme.displayName,
-                  style: theme.textTheme.bodySmall,
-                ),
-                const SizedBox(width: 4),
-                Icon(Icons.chevron_right_rounded,
-                    color: cs.onSurfaceVariant, size: 20),
-              ],
+            icon: Icons.brightness_auto_rounded,
+            title: 'Temë automatike',
+            subtitle: isAutoTheme
+                ? _autoThemeLabel(DateTime.now().hour)
+                : 'Ndryshon sipas orës së ditës',
+            trailing: Switch.adaptive(
+              value: isAutoTheme,
+              onChanged: (v) =>
+                  ref.read(autoThemeProvider.notifier).setAuto(v),
+              activeTrackColor: cs.primary,
             ),
-            onTap: () => _showThemePicker(context, ref),
+            onTap: () => ref
+                .read(autoThemeProvider.notifier)
+                .setAuto(!isAutoTheme),
+          ),
+          const SizedBox(height: 4),
+          // Manual theme picker (disabled when auto is on)
+          Opacity(
+            opacity: isAutoTheme ? 0.4 : 1.0,
+            child: _SettingsTile(
+              icon: Icons.palette_outlined,
+              title: 'Tema',
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Container(
+                    width: 14,
+                    height: 14,
+                    decoration: BoxDecoration(
+                      color: effectiveTheme.swatchPrimary,
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                          color: cs.outlineVariant, width: 1),
+                    ),
+                  ),
+                  const SizedBox(width: 6),
+                  Text(
+                    isAutoTheme
+                        ? effectiveTheme.displayName
+                        : currentTheme.displayName,
+                    style: theme.textTheme.bodySmall,
+                  ),
+                  const SizedBox(width: 4),
+                  Icon(Icons.chevron_right_rounded,
+                      color: cs.onSurfaceVariant, size: 20),
+                ],
+              ),
+              onTap: isAutoTheme
+                  ? null
+                  : () => _showThemePicker(context, ref),
+            ),
           ),
           const SizedBox(height: 8),
           _SettingsTile(
@@ -611,12 +646,14 @@ class _StatCard extends StatelessWidget {
 class _SettingsTile extends StatelessWidget {
   final IconData icon;
   final String title;
+  final String? subtitle;
   final Widget? trailing;
   final VoidCallback? onTap;
 
   const _SettingsTile({
     required this.icon,
     required this.title,
+    this.subtitle,
     this.trailing,
     this.onTap,
   });
@@ -638,6 +675,11 @@ class _SettingsTile extends StatelessWidget {
         ),
         leading: Icon(icon, color: cs.primary),
         title: Text(title, style: theme.textTheme.titleSmall),
+        subtitle: subtitle != null
+            ? Text(subtitle!, style: theme.textTheme.bodySmall?.copyWith(
+                color: cs.onSurfaceVariant,
+              ))
+            : null,
         trailing: trailing ??
             Icon(Icons.chevron_right_rounded,
                 color: cs.onSurfaceVariant, size: 20),

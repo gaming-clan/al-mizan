@@ -9,7 +9,7 @@ class FikhAcademyApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final appThemeType = ref.watch(themeProvider);
+    final appThemeType = ref.watch(effectiveThemeProvider);
     return MaterialApp.router(
       title: 'Al Mizan - Mëso Fikhun',
       debugShowCheckedModeBanner: false,
