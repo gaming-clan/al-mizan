@@ -19,7 +19,10 @@ class ArabicTextHelper {
     required int surahNumber,
     required int ayah,
   }) {
-    return 'Sure $surah ($surahNumber), Ajet $ayah';
+    if (surahNumber > 0 && ayah > 0) {
+      return 'Sure $surah ($surahNumber), Ajet $ayah';
+    }
+    return 'Sure $surah';
   }
 
   /// Formats a hadith reference string.
