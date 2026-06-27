@@ -41,9 +41,6 @@ dependencies:
   # Network
   http: ^1.2.1
 
-  # Home screen widget
-  home_widget: ^0.7.0
-
   # Utils
   intl: ^0.20.2
   json_annotation: ^4.9.0

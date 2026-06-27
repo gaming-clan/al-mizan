@@ -11,8 +11,8 @@ class AlMizanWidget : AppWidgetProvider() {
         appWidgetManager: AppWidgetManager,
         appWidgetIds: IntArray
     ) {
-        for (appWidgetId in appWidgetIds) {
-            updateWidget(context, appWidgetManager, appWidgetId)
+        for (id in appWidgetIds) {
+            updateWidget(context, appWidgetManager, id)
         }
     }
 }
@@ -22,14 +22,15 @@ private fun updateWidget(
     appWidgetManager: AppWidgetManager,
     appWidgetId: Int
 ) {
-    // home_widget Flutter package writes to SharedPreferences named "HomeWidgetPlugin"
-    val prefs = context.getSharedPreferences("HomeWidgetPlugin", Context.MODE_PRIVATE)
+    // shared_preferences Flutter package writes to "FlutterSharedPreferences" with "flutter." prefix
+    val prefs = context.getSharedPreferences("FlutterSharedPreferences", Context.MODE_PRIVATE)
 
-    val quoteText = prefs.getString("widget_quote_text", "Mësoje edebin përpara diturisë.")
+    val quoteText = prefs.getString("flutter.widget_quote_text", "Mësoje edebin përpara diturisë.")
         ?: "Mësoje edebin përpara diturisë."
-    val quoteAuthor = prefs.getString("widget_quote_author", "Imam Maliku")
+    val quoteAuthor = prefs.getString("flutter.widget_quote_author", "Imam Maliku")
         ?: "Imam Maliku"
-    val streak = prefs.getInt("widget_streak", 0)
+    // shared_preferences stores int as Long on Android
+    val streak = prefs.getLong("flutter.widget_streak", 0L).toInt()
 
     val streakLabel = if (streak > 0) "🔥 $streak ditë" else "Fillo sot!"
 
