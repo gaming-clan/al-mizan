@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../core/constants/app_constants.dart';
 import '../../../core/constants/daily_quotes.dart';
+import '../../../services/widget_update_service.dart';
 import '../../settings/providers/settings_provider.dart';
 import '../providers/home_provider.dart';
 
@@ -15,6 +16,14 @@ class HomeScreen extends ConsumerWidget {
     final modulesAsync = ref.watch(modulesProvider);
     final streakAsync = ref.watch(streakProvider);
     final userName = ref.watch(userNameProvider);
+
+    // Update home screen widget when streak data is ready
+    streakAsync.whenData((_) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        WidgetUpdateService.update(ref.read(databaseProvider));
+      });
+    });
+
     final theme = Theme.of(context);
     final cs = theme.colorScheme;
     final isDark = theme.brightness == Brightness.dark;
