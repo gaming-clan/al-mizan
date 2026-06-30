@@ -218,7 +218,7 @@
       "sections": [
         {
           "heading": "Kushtet e Zekatit të Bagëtisë",
-          "content_sq": "Zekati i bagëtisë (zekatun-en'am) obligohet mbi deve, lopë/ka dhe dele/dhi. Kushtet: 1) Arritja e nisabit (numrit minimal), 2) Kalimi i një viti hënor, 3) Bagëtia duhet të jetë 'saime' — kullotuese në kullota natyrore gjatë shumicës së vitit, jo e ushqyer me ushqim të blerë. Nisabet: Dele/dhi — nisabi fillon nga 40 krerë. Lopë/ka — nisabi fillon nga 30 krerë. Deve — nisabi fillon nga 5 krerë.",
+          "content_sq": "Zekati i bagëtisë (zekatun-en'am) obligohet mbi deve, lopë/qe dhe dele/dhi. Kushtet: 1) Arritja e nisabit (numrit minimal), 2) Kalimi i një viti hënor, 3) Bagëtia duhet të jetë 'saime' — kullotuese në kullota natyrore gjatë shumicës së vitit, jo e ushqyer me ushqim të blerë. Nisabet: Dele/dhi — nisabi fillon nga 40 krerë. Lopë/qe — nisabi fillon nga 30 krerë. Deve — nisabi fillon nga 5 krerë.",
           "evidences": [
             {
               "type": "hadith",
@@ -234,7 +234,7 @@
         },
         {
           "heading": "Tabela e Zekatit të Bagëtisë",
-          "content_sq": "Dele/Dhi: 40-120 krerë = 1 dele, 121-200 = 2 dele, 201-399 = 3 dele, pastaj 1 dele shtesë për çdo 100. Lopë/Ka: 30-39 = 1 viç 1-vjeçar (tabi'), 40-59 = 1 lopë 2-vjeçare (musinneh), 60-69 = 2 viça 1-vjeçarë, pastaj alternon çdo 30 (tabi') dhe çdo 40 (musinneh). Deve: 5-9 = 1 dele, 10-14 = 2 dele, 15-19 = 3 dele, 20-24 = 4 dele, 25-35 = 1 deve femër 1-vjeçare (bintu mekhad), 36-45 = 1 deve femër 2-vjeçare (bintu lebun), 46-60 = 1 deve 3-vjeçare (hikkah), 61-75 = 1 deve 4-vjeçare (xhedh'ah), 76-90 = 2 bintu lebun, 91-120 = 2 hikkah.",
+          "content_sq": "Dele/Dhi: 40-120 krerë = 1 dele, 121-200 = 2 dele, 201-399 = 3 dele, pastaj 1 dele shtesë për çdo 100. Lopë/Qe: 30-39 = 1 viç 1-vjeçar (tabi'), 40-59 = 1 lopë 2-vjeçare (musinneh), 60-69 = 2 viça 1-vjeçarë, pastaj alternon çdo 30 (tabi') dhe çdo 40 (musinneh). Deve: 5-9 = 1 dele, 10-14 = 2 dele, 15-19 = 3 dele, 20-24 = 4 dele, 25-35 = 1 deve femër 1-vjeçare (bintu mekhad), 36-45 = 1 deve femër 2-vjeçare (bintu lebun), 46-60 = 1 deve 3-vjeçare (hikkah), 61-75 = 1 deve 4-vjeçare (xhedh'ah), 76-90 = 2 bintu lebun, 91-120 = 2 hikkah.",
           "evidences": []
         }
       ],
@@ -287,7 +287,7 @@
       "sections": [
         {
           "heading": "Çka është Zekat Fitri dhe obligimi i tij",
-          "content_sq": "Zekat Fitri (Sadakatul Fitr) është zekat i detyrueshëm (vaxhib sipas shumicës, farz sipas disa) që jepet para namazit të Bajramit. Obligohet për çdo musliman të lirë — për veten dhe për ata që ka nën kujdestari (femijë, grua, shërbëtor). Qëllimi i Zekat Fitrit: pastrimi i agjërueses nga gabimet dhe lapsuset gjatë Ramazanit, dhe ushqimi i të varfërve në ditën e Bajramit. Profeti ﷺ e ka bërë Zekat Fitrin obligim para se të institutionalizonte zekatun e pasurisë.",
+          "content_sq": "Zekat Fitri (Sadakatul Fitr) është zekat i detyrueshëm (vaxhib sipas shumicës, farz sipas disa) që jepet para namazit të Bajramit. Obligohet për çdo musliman të lirë — për veten dhe për ata që ka nën kujdestari (femijë, grua, shërbëtor). Qëllimi i Zekat Fitrit: pastrimi i agjëruesit/agjërueses nga gabimet dhe lapsuset gjatë Ramazanit, dhe ushqimi i të varfërve në ditën e Bajramit. Profeti ﷺ e ka bërë Zekat Fitrin obligim para se të institutionalizonte zekatun e pasurisë.",
           "evidences": [
             {
               "type": "hadith",
@@ -346,12 +346,12 @@
           "question": "Cili është qëllimi kryesor i Zekat Fitrit?",
           "options": [
             "Ndërtimi i xhamive",
-            "Pastrimi i agjërueses dhe ushqimi i të varfërve",
+            "Pastrimi i agjëruesit/agjërueses dhe ushqimi i të varfërve",
             "Financimi i shkollës",
             "Ndihma ushtarake"
           ],
           "correct_index": 1,
-          "explanation": "Zekat Fitri pastron agjëruesen nga lapsuset e Ramazanit dhe ushqen të varfërit ditën e Bajramit."
+          "explanation": "Zekat Fitri pastron agjëruesin/agjëruesen nga lapsuset e Ramazanit dhe ushqen të varfërit ditën e Bajramit."
         },
         {
           "question": "Kur jepet Zekat Fitri?",
