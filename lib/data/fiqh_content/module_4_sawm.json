@@ -323,8 +323,8 @@
           ]
         },
         {
-          "heading": "Kushtet dhe Gjërat që e Prishin Itikafen",
-          "content_sq": "Kushtet e itikafit: 1) Të jesh musliman, i rritur, me mendje. 2) Të jesh në xhami ku falet xhumaja (sipas disa medhhebeve, çdo xhami me xhemat mjafton). 3) Qëllimi (nijja). 4) Agjërimi gjatë itikafit (sipas Hanefijve — e kundërtë sipas shumicës tjetër). Gjërat që e prishin itikafen: Dalj nga xhamia pa nevojë. Marrëdhëniet intime. Humbja e vetëdijes. Dhënia e dorës gruas (sipas disa dijetarëve). Lejohet: Dalja për nevoja fiziologjike, për larje xhunabetit, për ushqim nëse nuk ka kush ta sjellë. Gruaja mund të bëjë itikafen në xhami me lejen e burrit.",
+          "heading": "Kushtet dhe Gjërat që e Prishin Itikafin",
+          "content_sq": "Kushtet e itikafit: 1) Të jesh musliman, i rritur, me mendje. 2) Të jesh në xhami ku falet xhumaja (sipas disa medhhebeve, çdo xhami me xhemat mjafton). 3) Qëllimi (nijja). 4) Agjërimi gjatë itikafit (detyrë sipas Hanefijve, medhhebet e tjera nuk e detyrojnë). Gjërat që e prishin itikafin: Dalj nga xhamia pa nevojë. Marrëdhëniet intime. Humbja e vetëdijes. Dhënia e dorës gruas (sipas disa dijetarëve). Lejohet: Dalja për nevoja fiziologjike, për larje xhunubllëku, për ushqim nëse nuk ka kush ta sjellë. Gruaja mund të bëjë itikafin në xhami me lejen e burrit.",
           "evidences": [
             {
               "type": "hadith",
@@ -376,7 +376,7 @@
             "Fjetja jashtë xhamisë"
           ],
           "correct_index": 1,
-          "explanation": "Lejohet dalja nga xhamia vetëm për nevoja fiziologjike, larje xhunabi ose ushqim nëse nuk ka kush ta sjellë."
+          "explanation": "Lejohet dalja nga xhamia vetëm për nevoja fiziologjike, larje xhunubllëku ose ushqim nëse nuk ka kush ta sjellë."
         },
         {
           "question": "Sipas cilit medh'heb agjërimi është kusht i itikafit?",
