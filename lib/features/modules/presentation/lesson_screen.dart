@@ -53,6 +53,14 @@ class LessonScreen extends ConsumerWidget {
             : <Lesson>[];
         final nextLevelFirstLesson =
             nextLevelLessons.isNotEmpty ? nextLevelLessons.first : null;
+        const levelLabels = {
+          'beginner': 'Fillestar',
+          'intermediate': 'Mesatar',
+          'advanced': 'Avancuar',
+        };
+        final nextLevelLabel = nextLevelFirstLesson != null
+            ? levelLabels[nextLevelFirstLesson.level]
+            : null;
 
         return Scaffold(
           appBar: AppBar(
@@ -150,6 +158,7 @@ class LessonScreen extends ConsumerWidget {
                                   barrierDismissible: false,
                                   builder: (_) => LevelCompleteDialog(
                                     level: lesson.level,
+                                    nextLevelLabel: nextLevelLabel,
                                     onContinue: nextLevelFirstLesson != null
                                         ? () => context.push(
                                             '/lesson/$moduleId/${nextLevelFirstLesson.id}')

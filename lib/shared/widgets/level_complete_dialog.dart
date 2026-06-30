@@ -3,8 +3,16 @@ import '../../core/theme/app_colors.dart';
 
 class LevelCompleteDialog extends StatelessWidget {
   final String level;
+  /// Label of the next level that actually has lessons in this module
+  /// (e.g. 'Mesatar', 'Avancuar'), or null if there isn't one.
+  final String? nextLevelLabel;
   final VoidCallback? onContinue;
-  const LevelCompleteDialog({super.key, required this.level, this.onContinue});
+  const LevelCompleteDialog({
+    super.key,
+    required this.level,
+    this.nextLevelLabel,
+    this.onContinue,
+  });
 
   String get _levelLabel {
     if (level == 'beginner') return 'Fillestar';
@@ -13,16 +21,10 @@ class LevelCompleteDialog extends StatelessWidget {
     return level;
   }
 
-  String? get _nextLevelLabel {
-    if (level == 'beginner') return 'Mesatar';
-    if (level == 'intermediate') return 'Avancuar';
-    return null;
-  }
-
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final hasNext = _nextLevelLabel != null;
+    final hasNext = nextLevelLabel != null && onContinue != null;
 
     return AlertDialog(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
@@ -45,14 +47,14 @@ class LevelCompleteDialog extends StatelessWidget {
           if (hasNext) ...[
             const SizedBox(height: 8),
             Text(
-              'Je gati për nivelin "$_nextLevelLabel"!',
+              'Je gati për nivelin "$nextLevelLabel"!',
               textAlign: TextAlign.center,
               style: theme.textTheme.bodyMedium?.copyWith(color: AppColors.success),
             ),
           ] else ...[
             const SizedBox(height: 8),
             Text(
-              'Ke arritur nivelin maksimal! Ekspert i vërtetë!',
+              'Ke përfunduar të gjitha mësimet e këtij moduli! Ekspert i vërtetë!',
               textAlign: TextAlign.center,
               style: theme.textTheme.bodyMedium?.copyWith(color: AppColors.success),
             ),
@@ -69,7 +71,7 @@ class LevelCompleteDialog extends StatelessWidget {
               if (hasNext) onContinue?.call();
             },
             child: Text(
-              hasNext ? 'Vazhdo me Nivelin $_nextLevelLabel' : 'Shkëlqyeshëm!',
+              hasNext ? 'Vazhdo me Nivelin $nextLevelLabel' : 'Shkëlqyeshëm!',
             ),
           ),
         ),
