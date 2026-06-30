@@ -30,6 +30,30 @@ class LessonScreen extends ConsumerWidget {
           orElse: () => module.lessons.first,
         );
         final isAlreadyRead = progressAsync.valueOrNull?[lessonId]?.isRead ?? false;
+
+        // Ordered lesson list: beginner → intermediate → advanced
+        final levelOrder = ['beginner', 'intermediate', 'advanced'];
+        final allLessonsOrdered = [
+          for (final lvl in levelOrder)
+            ...module.lessons.where((l) => l.level == lvl),
+        ];
+        final currentIdx = allLessonsOrdered.indexWhere((l) => l.id == lessonId);
+        final nextLesson = (currentIdx >= 0 && currentIdx < allLessonsOrdered.length - 1)
+            ? allLessonsOrdered[currentIdx + 1]
+            : null;
+
+        // First lesson of next level (for the level-complete dialog)
+        final nextLevel = lesson.level == 'beginner'
+            ? 'intermediate'
+            : lesson.level == 'intermediate'
+                ? 'advanced'
+                : null;
+        final nextLevelLessons = nextLevel != null
+            ? module.lessons.where((l) => l.level == nextLevel).toList()
+            : <Lesson>[];
+        final nextLevelFirstLesson =
+            nextLevelLessons.isNotEmpty ? nextLevelLessons.first : null;
+
         return Scaffold(
           appBar: AppBar(
             title: Text(lesson.titleSq),
@@ -124,8 +148,13 @@ class LessonScreen extends ConsumerWidget {
                                 showDialog(
                                   context: context,
                                   barrierDismissible: false,
-                                  builder: (_) =>
-                                      LevelCompleteDialog(level: lesson.level),
+                                  builder: (_) => LevelCompleteDialog(
+                                    level: lesson.level,
+                                    onContinue: nextLevelFirstLesson != null
+                                        ? () => context.push(
+                                            '/lesson/$moduleId/${nextLevelFirstLesson.id}')
+                                        : null,
+                                  ),
                                 );
                               }
                             } catch (_) {}
@@ -137,6 +166,15 @@ class LessonScreen extends ConsumerWidget {
                         ? 'I Përfunduar'
                         : 'Shëno si të Përfunduar'),
                   ),
+                  if (isAlreadyRead && nextLesson != null) ...[
+                    const SizedBox(height: 8),
+                    FilledButton.icon(
+                      onPressed: () =>
+                          context.push('/lesson/$moduleId/${nextLesson.id}'),
+                      icon: const Icon(Icons.arrow_forward_rounded),
+                      label: const Text('Mësimi Pasardhës'),
+                    ),
+                  ],
                   const SizedBox(height: 32),
                 ],
               ),

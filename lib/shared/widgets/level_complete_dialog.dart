@@ -3,7 +3,8 @@ import '../../core/theme/app_colors.dart';
 
 class LevelCompleteDialog extends StatelessWidget {
   final String level;
-  const LevelCompleteDialog({super.key, required this.level});
+  final VoidCallback? onContinue;
+  const LevelCompleteDialog({super.key, required this.level, this.onContinue});
 
   String get _levelLabel {
     if (level == 'beginner') return 'Fillestar';
@@ -63,9 +64,12 @@ class LevelCompleteDialog extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(bottom: 8),
           child: FilledButton(
-            onPressed: () => Navigator.of(context).pop(),
+            onPressed: () {
+              Navigator.of(context).pop();
+              if (hasNext) onContinue?.call();
+            },
             child: Text(
-              hasNext ? 'Vazhdo me Nivelin $_nextLevelLabel' : 'Shkellqyeshëm!',
+              hasNext ? 'Vazhdo me Nivelin $_nextLevelLabel' : 'Shkëlqyeshëm!',
             ),
           ),
         ),
