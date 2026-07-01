@@ -246,7 +246,7 @@ class HomeScreen extends ConsumerWidget {
                     crossAxisCount: gridCols,
                     mainAxisSpacing: isLargeScreen ? 12 : 10,
                     crossAxisSpacing: isLargeScreen ? 12 : 10,
-                    childAspectRatio: isLargeScreen ? 1.0 : 1.15,
+                    childAspectRatio: isLargeScreen ? 0.82 : 1.15,
                   ),
                   delegate: SliverChildBuilderDelegate(
                     (context, index) => _ModuleGridCard(
