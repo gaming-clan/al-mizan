@@ -7,17 +7,27 @@ import '../../../shared/widgets/hadith_card.dart';
 import '../../../shared/widgets/madhab_comparison.dart';
 import '../../../shared/widgets/level_complete_dialog.dart';
 import '../../home/providers/home_provider.dart';
+import '../../home/providers/last_lesson_provider.dart';
 import '../providers/module_provider.dart';
 import '../data/models/fiqh_models.dart';
 
-class LessonScreen extends ConsumerWidget {
+class LessonScreen extends ConsumerStatefulWidget {
   final String moduleId;
   final String lessonId;
   const LessonScreen(
       {super.key, required this.moduleId, required this.lessonId});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<LessonScreen> createState() => _LessonScreenState();
+}
+
+class _LessonScreenState extends ConsumerState<LessonScreen> {
+  bool _savedLastLesson = false;
+
+  @override
+  Widget build(BuildContext context) {
+    final moduleId = widget.moduleId;
+    final lessonId = widget.lessonId;
     final moduleAsync = ref.watch(moduleProvider(moduleId));
     final progressAsync = ref.watch(lessonProgressProvider(moduleId));
     final db = ref.read(databaseProvider);
@@ -29,6 +39,21 @@ class LessonScreen extends ConsumerWidget {
           (l) => l.id == lessonId,
           orElse: () => module.lessons.first,
         );
+
+        // Save this as the last-opened lesson (once per screen).
+        if (!_savedLastLesson) {
+          _savedLastLesson = true;
+          WidgetsBinding.instance.addPostFrameCallback((_) {
+            ref.read(lastLessonProvider.notifier).save(
+                  LastLesson(
+                    moduleId: moduleId,
+                    lessonId: lesson.id,
+                    lessonTitle: lesson.titleSq,
+                    moduleTitle: module.titleSq,
+                  ),
+                );
+          });
+        }
         final isAlreadyRead = progressAsync.valueOrNull?[lessonId]?.isRead ?? false;
 
         // Ordered lesson list: beginner → intermediate → advanced

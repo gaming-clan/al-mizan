@@ -6,6 +6,7 @@ import '../../../core/constants/app_constants.dart';
 import '../../../core/constants/daily_quotes.dart';
 import '../../settings/providers/settings_provider.dart';
 import '../providers/home_provider.dart';
+import '../providers/last_lesson_provider.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -15,6 +16,7 @@ class HomeScreen extends ConsumerWidget {
     final modulesAsync = ref.watch(modulesProvider);
     final streakAsync = ref.watch(streakProvider);
     final userName = ref.watch(userNameProvider);
+    final lastLesson = ref.watch(lastLessonProvider);
 
     final theme = Theme.of(context);
     final cs = theme.colorScheme;
@@ -151,6 +153,74 @@ class HomeScreen extends ConsumerWidget {
                 ),
               ),
             ),
+
+            // ── CONTINUE WHERE YOU LEFT OFF ──
+            if (lastLesson != null)
+              SliverToBoxAdapter(
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
+                  child: Material(
+                    color: cs.secondaryContainer.withValues(alpha: 0.35),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16),
+                      side: BorderSide(color: cs.outlineVariant),
+                    ),
+                    child: InkWell(
+                      borderRadius: BorderRadius.circular(16),
+                      onTap: () => context.push(
+                          '/lesson/${lastLesson.moduleId}/${lastLesson.lessonId}'),
+                      child: Padding(
+                        padding: const EdgeInsets.all(16),
+                        child: Row(
+                          children: [
+                            Container(
+                              padding: const EdgeInsets.all(10),
+                              decoration: BoxDecoration(
+                                color: cs.primary.withValues(alpha: 0.10),
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: Icon(Icons.play_circle_fill_rounded,
+                                  color: cs.primary, size: 26),
+                            ),
+                            const SizedBox(width: 14),
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'VAZHDO KU MBETE',
+                                    style: theme.textTheme.labelSmall?.copyWith(
+                                      color: cs.onSurfaceVariant,
+                                      letterSpacing: 1.1,
+                                    ),
+                                  ),
+                                  const SizedBox(height: 3),
+                                  Text(
+                                    lastLesson.lessonTitle,
+                                    style: theme.textTheme.titleSmall,
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                  ),
+                                  Text(
+                                    lastLesson.moduleTitle,
+                                    style: theme.textTheme.bodySmall?.copyWith(
+                                      color: cs.onSurfaceVariant,
+                                    ),
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Icon(Icons.chevron_right_rounded,
+                                color: cs.onSurfaceVariant, size: 22),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
 
             // ── STUDY PROGRESS ──
             SliverToBoxAdapter(
