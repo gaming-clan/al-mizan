@@ -306,7 +306,7 @@
             {
               "type": "hadith",
               "arabic": "كَانَ النَّبِيُّ ﷺ يَعْتَكِفُ فِي كُلِّ رَمَضَانَ عَشَرَةَ أَيَّامٍ فَلَمَّا كَانَ الْعَامُ الَّذِي قُبِضَ فِيهِ اعْتَكَفَ عِشْرِينَ يَوْمًا",
-              "translation_sq": "Profeti ﷺ bënte itikafen çdo Ramazan dhjetë ditë. Vitin kur ndërroi jetë bëri itikafen njëzet ditë.",
+              "translation_sq": "Profeti ﷺ bënte itikafin çdo Ramazan dhjetë ditë. Vitin kur ndërroi jetë bëri itikafin njëzet ditë.",
               "narrator": "Ebu Hurejre (r.a.)",
               "collection": "Buhariu",
               "hadith_number": 2044,
@@ -329,7 +329,7 @@
             {
               "type": "hadith",
               "arabic": "إِنِّي اعْتَكَفْتُ الْعَشْرَ الْأَوَّلَ أَلْتَمِسُ هَذِهِ اللَّيْلَةَ ثُمَّ اعْتَكَفْتُ الْعَشْرَ الْأَوْسَطَ ثُمَّ أُوحِيَ إِلَيَّ فَأُرِيتُهَا فِي الْعَشْرِ الْأَوَاخِرِ",
-              "translation_sq": "Bëra itikafen dhjetë të parë duke kërkuar atë natë, pastaj dhjetë të mesmen, pastaj mu shpall se është në dhjetë të fundit.",
+              "translation_sq": "Bëra itikafin dhjetë të parë duke kërkuar atë natë, pastaj dhjetë të mesmen, pastaj mu shpall se është në dhjetë të fundit.",
               "narrator": "Ubej ibën Ka'b (r.a.)",
               "collection": "Muslimi",
               "classification": "sahih"
@@ -357,7 +357,7 @@
       ],
       "quiz": [
         {
-          "question": "Sa ditë bënte Profeti ﷺ itikafen zakonisht?",
+          "question": "Sa ditë bënte Profeti ﷺ itikafin zakonisht?",
           "options": [
             "3 ditë",
             "5 ditë",
@@ -365,7 +365,7 @@
             "30 ditë"
           ],
           "correct_index": 2,
-          "explanation": "Profeti ﷺ bënte itikafen dhjetë ditë çdo Ramazan — vitin e fundit bëri njëzet ditë."
+          "explanation": "Profeti ﷺ bënte itikafin dhjetë ditë çdo Ramazan — vitin e fundit bëri njëzet ditë."
         },
         {
           "question": "Çfarë lejohet gjatë itikafit?",
@@ -390,7 +390,7 @@
           "explanation": "Vetëm Hanefitë e konsiderojnë agjërimin kusht të itikafit. Shumica e medhhebeve nuk e kërkojnë."
         },
         {
-          "question": "Kur e bën Profeti ﷺ itikafen zakonisht?",
+          "question": "Kur e bën Profeti ﷺ itikafin zakonisht?",
           "options": [
             "Dhjetë ditët e para të Ramazanit",
             "Dhjetë ditët e mesme",
@@ -398,7 +398,7 @@
             "Muajin Muharrem"
           ],
           "correct_index": 2,
-          "explanation": "Profeti ﷺ bënte itikafen në dhjetë ditët e fundit të Ramazanit për të kërkuar Natën e Kadrit."
+          "explanation": "Profeti ﷺ bënte itikafin në dhjetë ditët e fundit të Ramazanit për të kërkuar Natën e Kadrit."
         }
       ]
     },
