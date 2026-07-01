@@ -23,7 +23,9 @@ class HomeScreen extends ConsumerWidget {
     final isDark = theme.brightness == Brightness.dark;
 
     final width = MediaQuery.sizeOf(context).width;
-    final gridCols = width >= 900 ? 4 : (width >= 600 ? 3 : 2);
+    // Large screens = tablets & foldables (landscape). Phones (<600) stay as-is.
+    final isLargeScreen = width >= 600;
+    final gridCols = width >= 1000 ? 5 : (isLargeScreen ? 4 : 2);
 
     return Scaffold(
       body: SafeArea(
@@ -242,13 +244,15 @@ class HomeScreen extends ConsumerWidget {
                 sliver: SliverGrid(
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: gridCols,
-                    mainAxisSpacing: 10,
-                    crossAxisSpacing: 10,
-                    childAspectRatio: gridCols >= 3 ? 1.0 : 1.15,
+                    mainAxisSpacing: isLargeScreen ? 12 : 10,
+                    crossAxisSpacing: isLargeScreen ? 12 : 10,
+                    childAspectRatio: isLargeScreen ? 1.0 : 1.15,
                   ),
                   delegate: SliverChildBuilderDelegate(
-                    (context, index) =>
-                        _ModuleGridCard(module: modules[index]),
+                    (context, index) => _ModuleGridCard(
+                      module: modules[index],
+                      large: isLargeScreen,
+                    ),
                     childCount: modules.length,
                   ),
                 ),
@@ -317,7 +321,8 @@ class HomeScreen extends ConsumerWidget {
 /// Module card matching Stitch design — bordered, no shadow, icon + title
 class _ModuleGridCard extends StatelessWidget {
   final dynamic module;
-  const _ModuleGridCard({required this.module});
+  final bool large;
+  const _ModuleGridCard({required this.module, this.large = false});
 
   IconData _iconForModule(String iconKey) {
     switch (iconKey) {
@@ -365,31 +370,33 @@ class _ModuleGridCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         onTap: () => context.push('/module/${module.moduleId}'),
         child: Padding(
-          padding: const EdgeInsets.all(14),
+          padding: EdgeInsets.all(large ? 18 : 14),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                padding: const EdgeInsets.all(12),
+                padding: EdgeInsets.all(large ? 18 : 12),
                 decoration: BoxDecoration(
                   color: cs.primary.withValues(alpha: 0.08),
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(large ? 14 : 10),
                 ),
                 child: Icon(
                   _iconForModule(module.moduleIcon),
-                  size: 26,
+                  size: large ? 40 : 26,
                   color: cs.primary,
                 ),
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: large ? 14 : 10),
               Text(
                 module.titleSq,
-                style: theme.textTheme.titleSmall,
+                style: large
+                    ? theme.textTheme.titleMedium
+                    : theme.textTheme.titleSmall,
                 textAlign: TextAlign.center,
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
               ),
-              const SizedBox(height: 4),
+              SizedBox(height: large ? 6 : 4),
               Text(
                 '${module.lessons.length} mësime',
                 style: theme.textTheme.bodySmall,
