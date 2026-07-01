@@ -3,7 +3,7 @@
   "module_title_sq": "Hyrje në Fikh",
   "module_title_ar": "مدخل إلى الفقه",
   "module_icon": "book_open",
-  "description": "Mëso bazat e jurisprudencës islame: çfarë është fikhu, burimet e tij, dhe madhhebet katër.",
+  "description": "Mëso bazat e jurisprudencës islame: çfarë është fikhu, burimet e tij, dhe medhhebet katër.",
   "lessons": [
     {
       "id": "intro_001",
@@ -162,12 +162,12 @@
     },
     {
       "id": "intro_003",
-      "title_sq": "Madhhebet Katër",
+      "title_sq": "Medhhebet Katër",
       "title_ar": "المذاهب الأربعة",
       "level": "beginner",
       "source_references": [
         "El-Fikh ala el-Medhahib el-Erbe'a, Abdurrahman el-Xheziri, Hyrja",
-        "El-Fikh el-Islami ve Edil'letuhu, Vehbe ez-Zuhejli, Vëll. 1, Kap. Madhhebet",
+        "El-Fikh el-Islami ve Edil'letuhu, Vehbe ez-Zuhejli, Vëll. 1, Kap. Medhhebet",
         "Shafiqur Rahman An Nadwi, Al Fiqh ul Muyassar (Simple Fiqh)",
         "Er-Risale, Imam esh-Shafi'i (origjinali i Usul el-Fikhut)",
         "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
@@ -176,7 +176,7 @@
       "sections": [
         {
           "heading": "Çfarë është një Medhheb?",
-          "content_sq": "Medhheb (مذهب) do të thotë 'rrugë' ose 'metodologji'. Në kontekstin e fikhut, medhheb është shkolla juridike e një imami të madh, e cila ka metodologjinë e vet për nxjerrjen e dispozitave nga Kurani dhe Sunneti. Katër madhhebet e pranuara në Islamin sunnit janë: Hanefi, Maliki, Shafi'i dhe Hanbeli. Të katër janë të sakta dhe të vlefshme — dallimi mes tyre qëndron në metodologjinë e interpretimit, jo në bazat e besimit.",
+          "content_sq": "Medhheb (مذهب) do të thotë 'rrugë' ose 'metodologji'. Në kontekstin e fikhut, medhheb është shkolla juridike e një imami të madh, e cila ka metodologjinë e vet për nxjerrjen e dispozitave nga Kurani dhe Sunneti. Katër medhhebet e pranuara në Islamin sunnit janë: Hanefi, Maliki, Shafi'i dhe Hanbeli. Të katër janë të sakta dhe të vlefshme — dallimi mes tyre qëndron në metodologjinë e interpretimit, jo në bazat e besimit.",
           "evidences": [
             {
               "type": "hadith",
@@ -191,32 +191,32 @@
           "madhab_rulings": null
         },
         {
-          "heading": "1. Madhhebi Hanefi",
+          "heading": "1. Medhhebi Hanefi",
           "content_sq": "Themeluesi: Imam Ebu Hanife En-Nu'man ibn Thabit (80–150 h. / 699–767 e.s.), i lindur në Kufe, Irak. Ai është nga tabiinët (brezi pas sahabëve) — ka takuar disa sahabë. Quhet 'Imam el-A'dham' (Imami më i Madh). Metodologjia: thekson kijasin (analogjinë) dhe istihsanin (preferencën juridike). Përhapja: Turqi, Ballkan (Shqipëri, Kosovë, Maqedoni, Bosnjë), Pakistan, Indi, Bangladesh, Afganistan, Azi Qendrore. Librat bazë: El-Hidaje (El-Merginani), Mukhtesar el-Kuduri, Redd el-Muhtar / Hashijet Ibn Abidin.",
           "evidences": [],
           "madhab_rulings": null
         },
         {
-          "heading": "2. Madhhebi Maliki",
+          "heading": "2. Medhhebi Maliki",
           "content_sq": "Themeluesi: Imam Malik ibn Enes (93–179 h. / 711–795 e.s.), i lindur në Medine. Ai ishte dijetari më i njohur i Medines në kohën e tij. Metodologjia: thekson praktikën e banorëve të Medines (Amel Ehl el-Medine) si burim, sepse ata trashëguan drejtpërdrejt nga Profeti ﷺ. Përdor edhe Istislahin (maslahatin — interesin publik). Përhapja: Afrika Veriore (Marok, Algjeri, Tunizi, Libi), Afrika Perëndimore, disa rajone të Egjiptit. Librat bazë: El-Muvetta (Imam Maliku), Mukhtesar Khalil, Er-Risale (Ibn Ebi Zejd el-Kajrevani).",
           "evidences": [],
           "madhab_rulings": null
         },
         {
-          "heading": "3. Madhhebi Shafi'i",
+          "heading": "3. Medhhebi Shafi'i",
           "content_sq": "Themeluesi: Imam Muhamed ibn Idris esh-Shafi'i (150–204 h. / 767–820 e.s.), i lindur në Gazë, rritur në Mekë. Ai ishte nxënës i Imam Malikut dhe njëkohësisht studioi fikhun hanefi. Quhet 'Nasir es-Sunneh' (Mbrojtësi i Sunnetit). Imam Shafi'iu shkroi veprën e parë të Usul el-Fikhut: 'Er-Risale'. Metodologjia: e balancuar mes tekstit (Kuranit/Sunnetit) dhe arsyetimit (Kijasit). Përhapja: Egjipti Jugor, Jemeni, Indonezia, Malajzia, Afrika Lindore, Kaukazi. Librat bazë: El-Umm (Imam Shafi'iu), Minhaxxh et-Talibin (en-Nevevi), Revdatut-Talibin.",
           "evidences": [],
           "madhab_rulings": null
         },
         {
-          "heading": "4. Madhhebi Hanbeli",
+          "heading": "4. Medhhebi Hanbeli",
           "content_sq": "Themeluesi: Imam Ahmed ibn Hanbel (164–241 h. / 780–855 e.s.), i lindur në Bagdad. Ai ishte nxënës i Imam Shafi'iut dhe njëkohësisht muhaddith (dijetar hadithesh) i jashtëzakonshëm — koleksioni i tij 'El-Musned' përmban mbi 28,000 hadithe. Metodologjia: thekson tekstin e drejtpërdrejtë (Kuranin, Sunnetin, fjalët e sahabëve) para arsyetimit. Përdor kijasin vetëm si mundësi e fundit. Përhapja: Arabia Saudite, Katar, disa rajone të Irakut. Librat bazë: El-Mugni (Ibn Kudame), Zad el-Mustekni' (El-Haxhxhavi), Esh-Sherh el-Mumti' (Ibn Uthejmin).",
           "evidences": [],
           "madhab_rulings": null
         },
         {
           "heading": "Pse Ndjekim një Medhheb?",
-          "content_sq": "Ndjekja e një madhhebi (taklid) nuk do të thotë adhurim i imamit — do të thotë ndjekje e metodologjisë së tij në kuptimin e Kuranit dhe Sunnetit. Arsyet kryesore:\n\n1. Shumica e muslimanëve nuk kanë mundësi të studiojnë drejtpërdrejt arabishten, hadithin dhe usul el-fikhun në nivelin e nevojshëm për ixhtihad.\n2. Madhhebet ofrojnë një sistem koherent — çdo çështje e re gjykohet brenda kuadrit të njëjtë metodologjik.\n3. Parandalon kaos fetar — pa medhheb, secili do të interpretonte sipas dëshirës.\n4. Imamët e medhhebeve ishin gjigandë të dijes — aftësia e tyre në Kuran, Hadith dhe gjuhë arabe ishte e pakrahasueshme.\n\nShënim: Ndjekja e një madhhebi nuk do të thotë se madhhebet e tjera janë gabim. Të katër janë rrugë të vlefshme për zbatimin e Sheriatit.",
+          "content_sq": "Ndjekja e një medhhebi (taklid) nuk do të thotë adhurim i imamit — do të thotë ndjekje e metodologjisë së tij në kuptimin e Kuranit dhe Sunnetit. Arsyet kryesore:\n\n1. Shumica e muslimanëve nuk kanë mundësi të studiojnë drejtpërdrejt arabishten, hadithin dhe usul el-fikhun në nivelin e nevojshëm për ixhtihad.\n2. Medhhebet ofrojnë një sistem koherent — çdo çështje e re gjykohet brenda kuadrit të njëjtë metodologjik.\n3. Parandalon kaos fetar — pa medhheb, secili do të interpretonte sipas dëshirës.\n4. Imamët e medhhebeve ishin gjigandë të dijes — aftësia e tyre në Kuran, Hadith dhe gjuhë arabe ishte e pakrahasueshme.\n\nShënim: Ndjekja e një medhhebi nuk do të thotë se medhhebet e tjera janë gabim. Të katër janë rrugë të vlefshme për zbatimin e Sheriatit.",
           "evidences": [
             {
               "type": "quran",
@@ -232,7 +232,7 @@
       ],
       "quiz": [
         {
-          "question": "Kush është themeluesi i madhhebit Hanefi?",
+          "question": "Kush është themeluesi i medhhebit Hanefi?",
           "options": [
             "Imam Maliku",
             "Imam Ebu Hanife",
@@ -240,7 +240,7 @@
             "Imam Ahmedi"
           ],
           "correct_index": 1,
-          "explanation": "Imam Ebu Hanife En-Nu'man ibn Thabit (80–150 h.) është themeluesi i madhhebit Hanefi."
+          "explanation": "Imam Ebu Hanife En-Nu'man ibn Thabit (80–150 h.) është themeluesi i medhhebit Hanefi."
         },
         {
           "question": "Cili medhheb thekson praktikën e banorëve të Medines si burim?",
@@ -251,7 +251,7 @@
             "Hanbeli"
           ],
           "correct_index": 1,
-          "explanation": "Madhhebi Maliki thekson Amel Ehl el-Medine (praktikën e banorëve të Medines) si burim, sepse ata trashëguan drejtpërdrejt nga Profeti ﷺ."
+          "explanation": "Medhhebi Maliki thekson Amel Ehl el-Medine (praktikën e banorëve të Medines) si burim, sepse ata trashëguan drejtpërdrejt nga Profeti ﷺ."
         },
         {
           "question": "Kush shkroi veprën e parë të Usul el-Fikhut?",
@@ -279,7 +279,7 @@
       "sections": [
         {
           "heading": "Periudhat e Historisë së Fikhut",
-          "content_sq": "Shkenca e fikhut ka kaluar nëpër gjashtë periudha kryesore:\n\n1. Periudha e Vahjit (610–632 e.s.) — fillon me misionin profetik të Hz. Muhamedit (a.s.). Burimi ishte revelacioni hyjnor (vahji). Dispozitat zbuloheshin gradualisht, sipas nevojave të komunitetit.\n\n2. Periudha e Sahabëve (632–660 e.s.) — Pas Profetit ﷺ, katër Kalifët Rashidinë udhëhoqën komunitetin. Dolën çështje të reja; dijetarët sahabë u mblodhën dhe vendosën me konsultim (shura).\n\n3. Periudha e Tabiinëve (660–738 e.s.) — Nxënësit e sahabëve zgjeruan fikhun. U ndanë dy shkolla: 'Ehli Hadith' (Medine) dhe 'Ehli Re'j' (Kufe).\n\n4. Periudha e Imamëve të Mëdhenj (738–900 e.s.) — U formuan katër madhhebet kryesore: Hanefi, Maliki, Shafi'i dhe Hanbeli. Kjo quhet 'Epoka e Artë e Fikhut'.\n\n5. Periudha e Imitimit dhe Stanjacionit (900–1300 e.s.) — Dijetarët u fokusuan kryesisht në komentimin e veprave të imamëve.\n\n6. Periudha e Kodifikimit Ligjor (1800–sot) — Shumica e shteteve islame kodifikuan fikhun në forma ligjore moderne.",
+          "content_sq": "Shkenca e fikhut ka kaluar nëpër gjashtë periudha kryesore:\n\n1. Periudha e Vahjit (610–632 e.s.) — fillon me misionin profetik të Hz. Muhamedit (a.s.). Burimi ishte revelacioni hyjnor (vahji). Dispozitat zbuloheshin gradualisht, sipas nevojave të komunitetit.\n\n2. Periudha e Sahabëve (632–660 e.s.) — Pas Profetit ﷺ, katër Kalifët Rashidinë udhëhoqën komunitetin. Dolën çështje të reja; dijetarët sahabë u mblodhën dhe vendosën me konsultim (shura).\n\n3. Periudha e Tabiinëve (660–738 e.s.) — Nxënësit e sahabëve zgjeruan fikhun. U ndanë dy shkolla: 'Ehli Hadith' (Medine) dhe 'Ehli Re'j' (Kufe).\n\n4. Periudha e Imamëve të Mëdhenj (738–900 e.s.) — U formuan katër medhhebet kryesore: Hanefi, Maliki, Shafi'i dhe Hanbeli. Kjo quhet 'Epoka e Artë e Fikhut'.\n\n5. Periudha e Imitimit dhe Stanjacionit (900–1300 e.s.) — Dijetarët u fokusuan kryesisht në komentimin e veprave të imamëve.\n\n6. Periudha e Kodifikimit Ligjor (1800–sot) — Shumica e shteteve islame kodifikuan fikhun në forma ligjore moderne.",
           "evidences": [
             {
               "type": "hadith",
@@ -312,7 +312,7 @@
           "explanation": "Historia e fikhut ka 6 periudha kryesore: vahji, sahabët, tabiinët, imamët e mëdhenj, imitimi, kodifikimi modern."
         },
         {
-          "question": "Si quhet periudha kur u formuan katër madhhebet kryesore?",
+          "question": "Si quhet periudha kur u formuan katër medhhebet kryesore?",
           "options": [
             "Epoka e Errësirës",
             "Periudha e Sahabëve",
