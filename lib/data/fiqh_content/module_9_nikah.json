@@ -290,9 +290,61 @@
               "ayah": 4
             }
           ]
+        },
+        {
+          "heading": "Dhihari (Ez-Zihar)",
+          "content_sq": "Dhihari (الظهار) është kur burri i thotë gruas së vet: 'Ti për mua je si shpina e nënës sime' — një shprehje e injorancës paraislame (xhahilijetit) me të cilën arabët e konsideronin gruan të ndaluar përgjithmonë. Islami e cilësoi këtë si fjalë të keqe dhe të rreme, por nuk e bëri divorc. Dhihari e ndalon marrëdhënien intime mes bashkëshortëve derisa burri të japë kefaretin (shlyerjen). Kefareti i dhiharit është sipas radhës: 1) Lirimi i një robi; 2) Nëse nuk mundet, agjërimi i dy muajve rresht pa ndërprerje; 3) Nëse nuk e përballon as këtë, ushqimi i gjashtëdhjetë të varfërve. Këto dispozita zbritën në suren El-Muxhadele lidhur me rastin e Heule bint Thalebe (r.a.), e cila iu ankua Profetit ﷺ për burrin e saj Eus ibn Samit.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "الَّذِينَ يُظَاهِرُونَ مِنكُم مِّن نِّسَائِهِم مَّا هُنَّ أُمَّهَاتِهِمْ ۖ إِنْ أُمَّهَاتُهُمْ إِلَّا اللَّائِي وَلَدْنَهُمْ ۚ وَإِنَّهُمْ لَيَقُولُونَ مُنكَرًا مِّنَ الْقَوْلِ وَزُورًا ۚ وَإِنَّ اللَّهَ لَعَفُوٌّ غَفُورٌ",
+              "translation_sq": "Ata prej jush që bëjnë zhihar me gratë e veta (duke thënë se janë si nënat e tyre) — ato nuk janë nënat e tyre; nënat e tyre janë vetëm ato që i kanë lindur. Ata me të vërtetë thonë një fjalë të keqe dhe gënjeshtër; e All-llahu është që shlyen e fal shumë.",
+              "surah": "El-Muxhadele",
+              "surah_number": 58,
+              "ayah": 2
+            },
+            {
+              "type": "quran",
+              "arabic": "وَالَّذِينَ يُظَاهِرُونَ مِن نِّسَائِهِمْ ثُمَّ يَعُودُونَ لِمَا قَالُوا فَتَحْرِيرُ رَقَبَةٍ مِّن قَبْلِ أَن يَتَمَاسَّا ۚ ذَٰلِكُمْ تُوعَظُونَ بِهِ ۚ وَاللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ",
+              "translation_sq": "Ata që bëjnë zhihar me gratë e veta, e pastaj tërhiqen nga ajo që thanë, janë të obliguar ta lirojnë një rob para se të kontaktojnë me njëri-tjetrin. Kjo është këshillë me të cilën porositeni; e All-llahu është i njohur hollësisht me atë që punoni.",
+              "surah": "El-Muxhadele",
+              "surah_number": 58,
+              "ayah": 3
+            },
+            {
+              "type": "quran",
+              "arabic": "فَمَن لَّمْ يَجِدْ فَصِيَامُ شَهْرَيْنِ مُتَتَابِعَيْنِ مِن قَبْلِ أَن يَتَمَاسَّا ۖ فَمَن لَّمْ يَسْتَطِعْ فَإِطْعَامُ سِتِّينَ مِسْكِينًا ۚ ذَٰلِكَ لِتُؤْمِنُوا بِاللَّهِ وَرَسُولِهِ ۚ وَتِلْكَ حُدُودُ اللَّهِ ۗ وَلِلْكَافِرِينَ عَذَابٌ أَلِيمٌ",
+              "translation_sq": "E kush nuk gjen (rob për lirim), atëherë le të agjërojë dy muaj rresht para se të kontaktojnë; e kush nuk mundet, le t'i ushqejë gjashtëdhjetë të varfër. Kjo është që t'i besoni All-llahut dhe të Dërguarit të Tij. Këto janë kufijtë e All-llahut; e për mohuesit është dënim i dhembshëm.",
+              "surah": "El-Muxhadele",
+              "surah_number": 58,
+              "ayah": 4
+            }
+          ]
         }
       ],
       "quiz": [
+        {
+          "question": "Cili është kefareti i parë i dhiharit (sipas radhës)?",
+          "options": [
+            "Agjërimi i dy muajve rresht",
+            "Lirimi i një robi",
+            "Ushqimi i gjashtëdhjetë të varfërve",
+            "Dhënia e mehrit"
+          ],
+          "correct_index": 1,
+          "explanation": "Kefareti i dhiharit është sipas radhës: fillimisht lirimi i një robi; nëse nuk mundet, agjërimi i dy muajve rresht; e nëse as këtë, ushqimi i gjashtëdhjetë të varfërve (El-Muxhadele 58:3-4)."
+        },
+        {
+          "question": "Çka është dhihari?",
+          "options": [
+            "Divorci i tretë i pakthyeshëm",
+            "Kur burri i thotë gruas se është si shpina e nënës së tij",
+            "Kur gruaja kërkon divorcin duke kthyer mehrin",
+            "Betimi për të mos iu afruar gruas"
+          ],
+          "correct_index": 1,
+          "explanation": "Dhihari është kur burri i thotë gruas së vet se ajo për të është si shpina e nënës së tij — fjalë e keqe dhe e rreme që nuk e bën divorc, por e ndalon marrëdhënien intime derisa të jepet kefareti."
+        },
         {
           "question": "Sa herë mund të divorcohet me talak rexh'i?",
           "options": [
@@ -346,7 +398,7 @@
             "Vetëm me leje të gjykatës"
           ],
           "correct_index": 1,
-          "explanation": "Divorci është hallall por mekruh — gjëja më e urryar e lejuar tek Allahu."
+          "explanation": "Divorci është hallall por mekruh — gjëja më e urryer e lejuar tek Allahu."
         }
       ]
     }
