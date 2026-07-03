@@ -237,12 +237,12 @@
       "sections": [
         {
           "heading": "Dispozita e divorcit",
-          "content_sq": "Divorci (talaku) është i lejuar por i papëlqyer (mekruh) kur nuk ka arsye. Profeti ﷺ ka thënë: 'Gjëja më e urryar e lejuar tek Allahu është divorci.' Ai bëhet i lejuar kur ka arsye të vlefshme si mospajtueshmëria e rëndë, dhuna, mospërmbushja e detyrave bashkëshortore. Bëhet haram nëse gruaja është me menstruacione (sipas shumicës) ose nëse burri e divorcon tre herë njëherësh.",
+          "content_sq": "Divorci (talaku) është i lejuar por i papëlqyer (mekruh) kur nuk ka arsye. Profeti ﷺ ka thënë: 'Gjëja më e urryer e lejuar tek Allahu është divorci.' Ai bëhet i lejuar kur ka arsye të vlefshme si mospajtueshmëria e rëndë, dhuna, mospërmbushja e detyrave bashkëshortore. Bëhet haram nëse gruaja është me menstruacione (sipas shumicës) ose nëse burri e divorcon tre herë njëherësh.",
           "evidences": [
             {
               "type": "hadith",
               "arabic": "أبغض الحلال إلى الله الطلاق",
-              "translation_sq": "Gjëja më e urryar e lejuar tek Allahu është divorci.",
+              "translation_sq": "Gjëja më e urryer e lejuar tek Allahu është divorci.",
               "collection": "Ebu Davudi"
             },
             {
@@ -393,7 +393,7 @@
           "question": "A është divorci i lejuar në Islam?",
           "options": [
             "Jo, është haram",
-            "Po, por është gjëja më e urryar e lejuar",
+            "Po, por është gjëja më e urryer e lejuar",
             "Po, është i rekomanduar",
             "Vetëm me leje të gjykatës"
           ],

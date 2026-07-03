@@ -8,6 +8,7 @@ import '../../features/modules/presentation/lesson_screen.dart';
 import '../../features/onboarding/presentation/onboarding_screen.dart';
 import '../../features/quiz/presentation/quiz_screen.dart';
 import '../../features/quiz/presentation/general_quiz_screen.dart';
+import '../../features/quiz/presentation/timed_challenge_screen.dart';
 import '../../features/quiz/presentation/module_quiz_screen.dart';
 import '../../features/search/presentation/search_screen.dart';
 import '../../features/bookmarks/presentation/bookmarks_screen.dart';
@@ -91,6 +92,11 @@ final appRouter = GoRouter(
       path: '/general-quiz',
       parentNavigatorKey: _rootNavigatorKey,
       builder: (context, state) => const GeneralQuizScreen(),
+    ),
+    GoRoute(
+      path: '/timed-challenge',
+      parentNavigatorKey: _rootNavigatorKey,
+      builder: (context, state) => const TimedChallengeScreen(),
     ),
     GoRoute(
       path: '/module-quiz/:moduleId',

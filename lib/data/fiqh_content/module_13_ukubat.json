@@ -131,16 +131,8 @@
       "sections": [
         {
           "heading": "Çka janë hududet dhe krimet e tyre",
-          "content_sq": "Hududet (حدود) janë dënimet e caktuara saktësisht me tekst kuranor ose profetik, si e drejtë e Allahut. Krimet klasike të hududit janë: 1) ZINAJA (marrëdhëniet jashtëmartesore), 2) KADHFI (shpifja për zina pa dëshmi), 3) VJEDHJA (sirka), 4) KUSARIA (hiraba — sulmi i armatosur ndaj udhëtarëve), 5) PIRJA E ALKOOLIT (shurb el-hamr). Meqë janë 'e drejtë e Allahut', pasi çështja provohet plotësisht në gjyq, gjykatësi nuk mund t'i ndryshojë a falë. Por përpara gjyqit, pendimi i sinqertë dhe mbulimi i mëkatit janë të pëlqyera — Islami nuk nxit ekspozimin e mëkateve private.",
+          "content_sq": "Hududet (حدود) janë dënimet e caktuara saktësisht me tekst kuranor ose profetik, si e drejtë e Allahut. Krimet klasike të hududit janë: 1) ZINAJA (marrëdhëniet jashtëmartesore), 2) KADHFI (shpifja për zina pa dëshmi), 3) VJEDHJA (sirka), 4) KUSARIA (hiraba — sulmi i armatosur ndaj udhëtarëve), 5) PIRJA E ALKOOLIT (shurb el-hamr), 6) MAGJIA (es-sihr). Meqë janë 'e drejtë e Allahut', pasi çështja provohet plotësisht në gjyq, gjykatësi nuk mund t'i ndryshojë a falë. Por përpara gjyqit, pendimi i sinqertë dhe mbulimi i mëkatit janë të pëlqyera — Islami nuk nxit ekspozimin e mëkateve private.",
           "evidences": [
-            {
-              "type": "quran",
-              "arabic": "الزَّانِيَةُ وَالزَّانِي فَاجْلِدُوا كُلَّ وَاحِدٍ مِّنْهُمَا مِائَةَ جَلْدَةٍ",
-              "translation_sq": "Laviren dhe lavirin — rrihni secilin prej tyre me nga njëqind goditje.",
-              "surah": "En-Nur",
-              "surah_number": 24,
-              "ayah": 2
-            },
             {
               "type": "quran",
               "arabic": "وَالَّذِينَ يَرْمُونَ الْمُحْصَنَاتِ ثُمَّ لَمْ يَأْتُوا بِأَرْبَعَةِ شُهَدَاءَ فَاجْلِدُوهُمْ ثَمَانِينَ جَلْدَةً وَلَا تَقْبَلُوا لَهُمْ شَهَادَةً أَبَدًا",
@@ -156,6 +148,61 @@
               "surah": "El-Maide",
               "surah_number": 5,
               "ayah": 38
+            }
+          ]
+        },
+        {
+          "heading": "Dënimi i zinasë sipas gjendjes së kryerësit",
+          "content_sq": "Dënimi i zinasë NUK është i njëjtë për të gjithë — dallon sipas gjendjes së kryerësit: 1) I PAMARTUARI (bekar / gajr muhsan): njëqind rrahje sipas ajetit të Sures En-Nur (24:2), dhe sipas hadithit edhe mërgim një vit (Hanefitë e konsiderojnë mërgimin ta'zir sipas vlerësimit të gjykatësit, jo pjesë të haddit). 2) I MARTUARI (muhsan — kushdo që ka pasur martesë të vlefshme): GURËZIM deri në vdekje (rexhm) — i vërtetuar me Sunnetin e saktë dhe të pandërprerë e me zbatimin e Profetit ﷺ (rasti i Maiz ibn Malikut dhe i gruas Gamidije, të cilët erdhën vetë të pendohen) dhe me ixhmanë e sahabëve. 3) ROBI DHE ROBËRESHA: gjysma e dënimit të të lirit — pesëdhjetë rrahje, sipas tekstit të qartë të Kuranit (En-Nisa 4:25); ata nuk gurëzohen, sepse gurëzimi nuk përgjysmohet dot.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "الزَّانِيَةُ وَالزَّانِي فَاجْلِدُوا كُلَّ وَاحِدٍ مِّنْهُمَا مِائَةَ جَلْدَةٍ",
+              "translation_sq": "Laviren dhe lavirin — rrihni secilin prej tyre me nga njëqind goditje.",
+              "surah": "En-Nur",
+              "surah_number": 24,
+              "ayah": 2
+            },
+            {
+              "type": "hadith",
+              "arabic": "خُذُوا عَنِّي خُذُوا عَنِّي قَدْ جَعَلَ اللَّهُ لَهُنَّ سَبِيلًا الْبِكْرُ بِالْبِكْرِ جَلْدُ مِائَةٍ وَنَفْيُ سَنَةٍ وَالثَّيِّبُ بِالثَّيِّبِ جَلْدُ مِائَةٍ وَالرَّجْمُ",
+              "translation_sq": "Merrni prej meje, merrni prej meje! Allahu u ka bërë atyre rrugë: beqari me beqaren — njëqind rrahje dhe mërgim një vit; i martuari me të martuarën — njëqind rrahje dhe gurëzimi.",
+              "narrator": "Ubade ibn es-Samit (r.a.)",
+              "collection": "Sahih Muslim",
+              "hadith_number": 1690,
+              "classification": "sahih"
+            },
+            {
+              "type": "quran",
+              "arabic": "فَإِذَا أُحْصِنَّ فَإِنْ أَتَيْنَ بِفَاحِشَةٍ فَعَلَيْهِنَّ نِصْفُ مَا عَلَى الْمُحْصَنَاتِ مِنَ الْعَذَابِ",
+              "translation_sq": "E kur të martohen (robëreshat), nëse bëjnë imoralitet, dënimi i tyre është gjysma e dënimit të grave të lira.",
+              "surah": "En-Nisa",
+              "surah_number": 4,
+              "ayah": 25
+            }
+          ]
+        },
+        {
+          "heading": "Magjia (Es-Sihr)",
+          "content_sq": "Magjia është ndër mëkatet më të rënda — Profeti ﷺ e renditi ndër shtatë shkatërrimtaret. Shumica e dijetarëve (Hanefitë, Malikitë dhe Hanbelitë) e konsiderojnë magjistarin të dënueshëm me VDEKJE, sepse magjia e vërtetë përmban kufr dhe dëmton rëndë shoqërinë. Argumentet: Umeri r.a. u shkroi valive: 'Vritni çdo magjistar e magjistare' — dhe këtë e zbatuan sahabët pa kundërshtim; hadithi 'Dënimi i magjistarit është goditja me shpatë' (i dobët si fjalë e Profetit ﷺ, por i saktë si fjalë e Xhundubit r.a.). Hafsa r.a., bashkëshortja e Profetit ﷺ, urdhëroi ekzekutimin e robëreshës që i bëri magji. Shafiitë dallojnë: magjistari vritet vetëm nëse magjia e tij përmban kufr të qartë ose nëse vret dikë me të (atëherë me kisas). Dënimin e zbaton vetëm autoriteti pas provës së plotë në gjyq.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "كَتَبَ عُمَرُ بْنُ الْخَطَّابِ أَنِ اقْتُلُوا كُلَّ سَاحِرٍ وَسَاحِرَةٍ",
+              "translation_sq": "Umer ibn el-Hattabi (r.a.) shkroi (urdhëroi): Vritni çdo magjistar dhe magjistare.",
+              "narrator": "Bexhale ibn Abde",
+              "collection": "Ebu Davud",
+              "hadith_number": 3043,
+              "classification": "sahih"
+            },
+            {
+              "type": "hadith",
+              "arabic": "حَدُّ السَّاحِرِ ضَرْبَةٌ بِالسَّيْفِ",
+              "translation_sq": "Dënimi i magjistarit është goditja me shpatë.",
+              "narrator": "Xhundub (r.a.)",
+              "collection": "Tirmidhi",
+              "hadith_number": 1460,
+              "classification": "daif"
             }
           ]
         },
@@ -251,6 +298,39 @@
           ],
           "correct_index": 1,
           "explanation": "El-Maide 5:34: kush pendohet para se të kapet, i falet dënimi hudud — mbetet vetëm kthimi i të drejtave të njerëzve."
+        },
+        {
+          "question": "Cili është dënimi i zinasë për të MARTUARIN (muhsan)?",
+          "options": [
+            "100 rrahje",
+            "Gurëzim deri në vdekje (rexhm)",
+            "Mërgim një vit",
+            "50 rrahje"
+          ],
+          "correct_index": 1,
+          "explanation": "100 rrahjet e Sures En-Nur vlejnë për të pamartuarin; për të martuarin dënimi është gurëzimi, i vërtetuar me Sunnetin e saktë (rasti i Maizit dhe Gamidijes) dhe ixhmanë e sahabëve."
+        },
+        {
+          "question": "Sa është dënimi i zinasë për robin/robëreshën?",
+          "options": [
+            "Njësoj si i liri — 100 rrahje",
+            "Gjysma e dënimit të të lirit — 50 rrahje",
+            "Gurëzim",
+            "Nuk dënohet fare"
+          ],
+          "correct_index": 1,
+          "explanation": "Sipas En-Nisa 4:25, robëreshave u takon gjysma e dënimit të grave të lira — 50 rrahje; ata nuk gurëzohen, sepse gurëzimi nuk përgjysmohet dot."
+        },
+        {
+          "question": "Cili është dënimi i magjistarit sipas shumicës së dijetarëve?",
+          "options": [
+            "Gjobë",
+            "Vdekja — sipas urdhrit të Umerit r.a. dhe zbatimit të sahabëve",
+            "40 rrahje",
+            "Vetëm burgim"
+          ],
+          "correct_index": 1,
+          "explanation": "Shumica (Hanefitë, Malikitë, Hanbelitë) e dënojnë magjistarin me vdekje — Umeri r.a. urdhëroi vrasjen e çdo magjistari; Shafiitë e kushtëzojnë me kufr të qartë ose vrasje."
         }
       ]
     },

@@ -291,6 +291,13 @@ class HomeScreen extends ConsumerWidget {
                     ),
                     const SizedBox(height: 8),
                     _QuickActionTile(
+                      icon: Icons.timer_rounded,
+                      title: 'Sfida me Kohë',
+                      subtitle: 'Kuiz me kohë të kufizuar — sa më i lartë niveli, aq më pak kohë',
+                      onTap: () => context.push('/timed-challenge'),
+                    ),
+                    const SizedBox(height: 8),
+                    _QuickActionTile(
                       icon: Icons.calculate_rounded,
                       title: 'Llogaritës Zekati',
                       subtitle: 'Llogarit detyrimet e zekatit',
