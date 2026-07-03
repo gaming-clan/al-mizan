@@ -350,6 +350,8 @@ class _ModuleGridCard extends StatelessWidget {
         return Icons.gavel_rounded;
       case 'food':
         return Icons.lunch_dining_rounded;
+      case 'justice':
+        return Icons.balance_rounded;
       default:
         return Icons.book_rounded;
     }

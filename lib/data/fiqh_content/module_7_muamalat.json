@@ -419,6 +419,136 @@
           "explanation": "Mudaraba ndan rolet: rab el-mal jep kapitalin, mudarib jep punën dhe menaxhimin — fitimi ndahet sipas marrëveshjes."
         }
       ]
+    },
+    {
+      "id": "mua_005",
+      "title_sq": "Borxhi në Islam (Ed-Dejn)",
+      "title_ar": "الدين في الإسلام",
+      "level": "advanced",
+      "source_references": [
+        "Dr. Vehbe ez-Zuhajli, El-Fikhu el-Islami ve Edil'letuhu",
+        "Es-Sejid Sabik, Fikhu es-Sunne",
+        "Sahih Bukhari",
+        "Sahih Muslim"
+      ],
+      "sections": [
+        {
+          "heading": "Dispozita e borxhit dhe shkrimi i tij",
+          "content_sq": "Borxhi (ed-dejn) është i lejuar në Islam — vetë Profeti ﷺ ka marrë hua. Por Islami e rregullon me kujdes: ajeti më i gjatë i Kuranit (El-Bekare 2:282, 'ajeti i dejnit') urdhëron shkrimin e borxhit, caktimin e afatit dhe dëshmitarët — për të mbrojtur të dyja palët nga harresa dhe mosmarrëveshjet. Huadhënia është vepër e mirë (karz hasen) me shpërblim të madh, por huamarrja pa nevojë dhe pa qëllim kthimi është mëkat i rëndë. Kushtet e borxhit të drejtë: shuma dhe afati i qartë, pa kamatë, të shkruhet dhe të dëshmohet.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا إِذَا تَدَايَنتُم بِدَيْنٍ إِلَىٰ أَجَلٍ مُّسَمًّى فَاكْتُبُوهُ",
+              "translation_sq": "O ju që besuat, kur merrni hua borxh njëri-tjetrit për një afat të caktuar, shkruajeni atë.",
+              "surah": "El-Bekare",
+              "surah_number": 2,
+              "ayah": 282
+            }
+          ]
+        },
+        {
+          "heading": "Obligimi i kthimit dhe pesha e borxhit",
+          "content_sq": "Kthimi i borxhit është obligim (vaxhib) — pesha e tij në Islam është shumë e rëndë: 1) Shpirti i besimtarit mbetet 'i varur' me borxhin e tij pas vdekjes derisa të paguhet. 2) Edhe dëshmorit (shehidit) i falet gjithçka përveç borxhit. 3) Zvarritja e pagesës nga ai që ka mundësi është padrejtësi (dhulm). 4) Kush merr borxh me nijet të mirë për ta kthyer, Allahu e ndihmon; kush e merr për ta ngrënë padrejtësisht, Allahu e shkatërron. Profeti ﷺ kërkonte mbrojtje nga borxhi në lutjet e tij dhe nuk ia falte namazin e xhenazes atij që linte borxh pa garantues.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "نَفْسُ الْمُؤْمِنِ مُعَلَّقَةٌ بِدَيْنِهِ حَتَّى يُقْضَى عَنْهُ",
+              "translation_sq": "Shpirti i besimtarit është i varur me borxhin e tij derisa t'i paguhet.",
+              "narrator": "Ebu Hurejre (r.a.)",
+              "collection": "Tirmidhi",
+              "hadith_number": 1078,
+              "classification": "hasen"
+            },
+            {
+              "type": "hadith",
+              "arabic": "مَطْلُ الْغَنِيِّ ظُلْمٌ",
+              "translation_sq": "Zvarritja e pagesës nga i pasuri (që ka mundësi të paguajë) është padrejtësi.",
+              "narrator": "Ebu Hurejre (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 2287,
+              "classification": "sahih"
+            },
+            {
+              "type": "hadith",
+              "arabic": "مَنْ أَخَذَ أَمْوَالَ النَّاسِ يُرِيدُ أَدَاءَهَا أَدَّى اللَّهُ عَنْهُ وَمَنْ أَخَذَ يُرِيدُ إِتْلَافَهَا أَتْلَفَهُ اللَّهُ",
+              "translation_sq": "Kush merr pasurinë e njerëzve me qëllim që t'ua kthejë, Allahu ia mundëson kthimin; e kush e merr me qëllim që ta shkatërrojë, Allahu e shkatërron atë.",
+              "narrator": "Ebu Hurejre (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 2387,
+              "classification": "sahih"
+            }
+          ]
+        },
+        {
+          "heading": "Lehtësimi ndaj borxhliut në vështirësi",
+          "content_sq": "Nëse borxhliu është realisht në vështirësi (mu'sir), huadhënësi urdhërohet ta presë deri në lehtësim — dhe falja e borxhit është edhe më e mirë, e konsiderohet sadaka. Profeti ﷺ ka treguar për një tregtar që i urdhëronte shërbëtorët t'ia falnin borxhin atij në vështirësi, dhe Allahu e fali për këtë. Nga ana tjetër, borxhliu që ka mundësi nuk lejohet të vonojë — duhet të paguajë sa më parë. Rregulli: huadhënësi tregon mëshirë ndaj të varfrit, borxhliu tregon seriozitet ndaj detyrimit.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "وَإِن كَانَ ذُو عُسْرَةٍ فَنَظِرَةٌ إِلَىٰ مَيْسَرَةٍ ۚ وَأَن تَصَدَّقُوا خَيْرٌ لَّكُمْ ۖ إِن كُنتُمْ تَعْلَمُونَ",
+              "translation_sq": "Po nëse (borxhliu) është në vështirësi, atëherë t'i pritet derisa të lehtësohet; e nëse ia falni (borxhin) si lëmoshë, kjo është edhe më mirë për ju, po qe se e dini.",
+              "surah": "El-Bekare",
+              "surah_number": 2,
+              "ayah": 280
+            },
+            {
+              "type": "hadith",
+              "arabic": "يُغْفَرُ لِلشَّهِيدِ كُلُّ ذَنْبٍ إِلَّا الدَّيْنَ",
+              "translation_sq": "Dëshmorit i falet çdo mëkat, përveç borxhit.",
+              "narrator": "Abdullah ibn Amr (r.a.)",
+              "collection": "Sahih Muslim",
+              "hadith_number": 1886,
+              "classification": "sahih"
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Cili është ajeti më i gjatë i Kuranit dhe për çfarë flet?",
+          "options": [
+            "El-Bekare 2:255 — për Kursinë",
+            "El-Bekare 2:282 — për shkrimin e borxhit",
+            "En-Nisa 4:11 — për trashëgiminë",
+            "El-Maide 5:3 — për ushqimet"
+          ],
+          "correct_index": 1,
+          "explanation": "Ajeti më i gjatë i Kuranit është El-Bekare 2:282 ('ajeti i dejnit'), i cili urdhëron shkrimin e borxhit, caktimin e afatit dhe dëshmitarët."
+        },
+        {
+          "question": "Çfarë i falet dëshmorit sipas hadithit?",
+          "options": [
+            "Gjithçka pa përjashtim",
+            "Çdo mëkat përveç borxhit",
+            "Vetëm mëkatet e vogla",
+            "Asgjë"
+          ],
+          "correct_index": 1,
+          "explanation": "Dëshmorit i falet çdo mëkat, përveç borxhit (Sahih Muslim) — kjo tregon peshën e madhe të borxhit në Islam."
+        },
+        {
+          "question": "Çfarë duhet bërë me borxhliun që është realisht në vështirësi?",
+          "options": [
+            "Të padisë menjëherë",
+            "T'i pritet deri në lehtësim, ose t'i falet borxhi",
+            "T'i shtohet kamata",
+            "Të burgoset"
+          ],
+          "correct_index": 1,
+          "explanation": "Sipas El-Bekare 2:280, borxhliut në vështirësi i pritet deri në lehtësim — dhe falja e borxhit është edhe më e mirë."
+        },
+        {
+          "question": "Çfarë është 'matl el-ganij' (zvarritja e të pasurit)?",
+          "options": [
+            "Vepër e lejuar",
+            "Padrejtësi (dhulm)",
+            "E pëlqyeshme",
+            "Kusht i borxhit"
+          ],
+          "correct_index": 1,
+          "explanation": "Zvarritja e pagesës së borxhit nga ai që ka mundësi është padrejtësi (dhulm), sipas hadithit të Bukharit."
+        }
+      ]
     }
   ]
 }

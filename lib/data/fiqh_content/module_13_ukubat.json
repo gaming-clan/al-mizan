@@ -1,0 +1,658 @@
+{
+  "module_id": "ukubat",
+  "module_title_sq": "E Drejta Penale Islame",
+  "module_title_ar": "العقوبات",
+  "module_icon": "justice",
+  "description": "Mëso bazat e së drejtës penale islame: hududet, kisasi, dijeti dhe ta'ziri, me parimet e drejtësisë dhe standardet e provës.",
+  "lessons": [
+    {
+      "id": "ukb_001",
+      "title_sq": "Hyrje në të Drejtën Penale Islame",
+      "title_ar": "مدخل إلى فقه العقوبات",
+      "level": "beginner",
+      "source_references": [
+        "Dr. Vehbe ez-Zuhajli, El-Fikhu el-Islami ve Edil'letuhu",
+        "Abdul-Kadir Aude, Et-Teshri' el-Xhinai el-Islami",
+        "Ibn Kudame, El-Mugni"
+      ],
+      "sections": [
+        {
+          "heading": "Qëllimet e së drejtës penale islame",
+          "content_sq": "E drejta penale islame (fikhu el-ukubat) synon mbrojtjen e pesë domosdoshmërive themelore (ed-daruriat el-hams): 1) FEJA (ed-din), 2) JETA (en-nefs), 3) MENDJA (el-akl), 4) NDERI DHE PASARDHJA (el-ird ve en-nesl), 5) PASURIA (el-mal). Çdo dënim në Sheriat lidhet me mbrojtjen e njërës prej këtyre vlerave. Dënimet kanë dy funksione: zevaxhir (parandaluese — frikësojnë nga krimi) dhe xhevabir (shlyese — e pastrojnë kryerësin nga mëkati në botën tjetër). Drejtësia është themeli: Kurani urdhëron drejtësi absolute edhe ndaj armikut.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا كُونُوا قَوَّامِينَ لِلَّهِ شُهَدَاءَ بِالْقِسْطِ ۖ وَلَا يَجْرِمَنَّكُمْ شَنَآنُ قَوْمٍ عَلَىٰ أَلَّا تَعْدِلُوا ۚ اعْدِلُوا هُوَ أَقْرَبُ لِلتَّقْوَىٰ",
+              "translation_sq": "O ju që besuat! Bëhuni të drejtë për hir të Allahut, dëshmues me drejtësi; dhe të mos ju shtyjë urrejtja ndaj një populli që të mos bëni drejtësi. Bëni drejtësi — ajo është më afër devotshmërisë.",
+              "surah": "El-Maide",
+              "surah_number": 5,
+              "ayah": 8
+            }
+          ],
+          "ruling": "important_concept"
+        },
+        {
+          "heading": "Ndarja e dënimeve: Hudud, Kisas, Ta'zir",
+          "content_sq": "Dënimet në të drejtën islame ndahen në tri kategori: 1) HUDUDET — dënime të caktuara saktësisht me tekst kuranor ose profetik, si e drejtë e Allahut; nuk mund të ndryshohen, shtohen a falen nga gjykatësi pasi çështja arrin në gjyq. 2) KISASI DHE DIJETI — ndëshkimi i barabartë për vrasje ose plagosje me qëllim, si e drejtë e njeriut (familjes së viktimës); familja mund të zgjedhë kisasin, dëmshpërblimin (dijetin) ose faljen. 3) TA'ZIRI — dënime të pacaktuara me tekst, që i cakton autoriteti sipas rrethanave, për shkelje më të lehta. Ky sistem ndan qartë të drejtat e Allahut nga të drejtat e njerëzve.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "تِلْكَ حُدُودُ اللَّهِ فَلَا تَعْتَدُوهَا ۚ وَمَن يَتَعَدَّ حُدُودَ اللَّهِ فَأُولَٰئِكَ هُمُ الظَّالِمُونَ",
+              "translation_sq": "Këta janë kufijtë e Allahut, mos i kaloni ata. Kush i kalon kufijtë e Allahut, pikërisht ata janë të padrejtët.",
+              "surah": "El-Bekare",
+              "surah_number": 2,
+              "ayah": 229
+            }
+          ]
+        },
+        {
+          "heading": "Parimet themelore të procedurës penale",
+          "content_sq": "E drejta penale islame ngrihet mbi parime rigoroze: 1) ZBATIMI VETËM NGA AUTORITETI — dënimet i zbaton vetëm gjykata dhe autoriteti kompetent shtetëror; asnjë individ nuk ka të drejtë të marrë ligjin në dorë — vetëgjyqësia është vetë krim. 2) PREZUMIMI I PAFAJËSISË — origjina është pafajësia (el-aslu bera'etu edh-dhimme); barra e provës i takon paditësit. 3) SHMANGIA ME DYSHIME — hududet nuk zbatohen kur ka dyshim (shubhe); maksima 'idreu el-hudud bish-shubuhat' është e pranuar nga të gjitha medhhebet. 4) PËRGJEGJËSIA INDIVIDUALE — askush nuk mban fajin e tjetrit; nuk dënohet familja apo të afërmit e kryerësit. 5) PA KRIM E PA DËNIM PA TEKST — askush nuk dënohet për diçka që s'ishte e ndaluar në kohën e kryerjes.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "وَلَا تَكْسِبُ كُلُّ نَفْسٍ إِلَّا عَلَيْهَا ۚ وَلَا تَزِرُ وَازِرَةٌ وِزْرَ أُخْرَىٰ",
+              "translation_sq": "Secili njeri atë që punon e ka për vete, dhe askush nuk mban barrën (fajin) e tjetrit.",
+              "surah": "El-En'am",
+              "surah_number": 6,
+              "ayah": 164
+            },
+            {
+              "type": "hadith",
+              "arabic": "ادْرَءُوا الْحُدُودَ عَنِ الْمُسْلِمِينَ مَا اسْتَطَعْتُمْ",
+              "translation_sq": "Shmangini dënimet hudud nga muslimanët sa të mundeni (kur ka dyshim).",
+              "narrator": "Aishja (r.a.)",
+              "collection": "Tirmidhi",
+              "hadith_number": 1424,
+              "classification": "daif"
+            }
+          ],
+          "ruling": "important_concept"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Cilat janë pesë domosdoshmëritë që mbron e drejta penale islame?",
+          "options": [
+            "Feja, jeta, mendja, nderi, pasuria",
+            "Namazi, agjërimi, zekati, haxhi, shehadeti",
+            "Shteti, ushtria, tregtia, toka, familja",
+            "Liria, barazia, vëllazëria, drejtësia, paqja"
+          ],
+          "correct_index": 0,
+          "explanation": "Ed-daruriat el-hams: mbrojtja e fesë, jetës, mendjes, nderit/pasardhjes dhe pasurisë — çdo dënim lidhet me njërën prej tyre."
+        },
+        {
+          "question": "Kush ka të drejtë t'i zbatojë dënimet penale në Islam?",
+          "options": [
+            "Çdo musliman i rritur",
+            "Vetëm gjykata dhe autoriteti kompetent",
+            "Familja e viktimës",
+            "Imami i xhamisë"
+          ],
+          "correct_index": 1,
+          "explanation": "Dënimet i zbaton vetëm autoriteti gjyqësor kompetent — vetëgjyqësia është e ndaluar dhe përbën vetë krim."
+        },
+        {
+          "question": "Çfarë ndodh me dënimin hudud kur ka dyshim (shubhe)?",
+          "options": [
+            "Zbatohet përgjysmë",
+            "Shmanget — nuk zbatohet",
+            "Zbatohet dyfish",
+            "Vendos populli"
+          ],
+          "correct_index": 1,
+          "explanation": "Maksima 'idreu el-hudud bish-shubuhat' — hududet shmangen kur ka dyshim — është e pranuar nga të gjitha medhhebet."
+        },
+        {
+          "question": "Cilat janë tri kategoritë e dënimeve në të drejtën islame?",
+          "options": [
+            "Burgim, gjobë, punë",
+            "Hudud, kisas/dijet, ta'zir",
+            "Farz, sunnet, mubah",
+            "Kurani, Sunneti, Ixhmai"
+          ],
+          "correct_index": 1,
+          "explanation": "Dënimet ndahen në hudud (të caktuara me tekst), kisas/dijet (ndëshkim i barabartë ose dëmshpërblim) dhe ta'zir (të pacaktuara, sipas autoritetit)."
+        }
+      ]
+    },
+    {
+      "id": "ukb_002",
+      "title_sq": "Hududet — Dënimet e Caktuara",
+      "title_ar": "الحدود",
+      "level": "intermediate",
+      "source_references": [
+        "Dr. Vehbe ez-Zuhajli, El-Fikhu el-Islami ve Edil'letuhu",
+        "Abdul-Kadir Aude, Et-Teshri' el-Xhinai el-Islami",
+        "Sahih Muslim",
+        "Sahih Bukhari"
+      ],
+      "sections": [
+        {
+          "heading": "Çka janë hududet dhe krimet e tyre",
+          "content_sq": "Hududet (حدود) janë dënimet e caktuara saktësisht me tekst kuranor ose profetik, si e drejtë e Allahut. Krimet klasike të hududit janë: 1) ZINAJA (marrëdhëniet jashtëmartesore), 2) KADHFI (shpifja për zina pa dëshmi), 3) VJEDHJA (sirka), 4) KUSARIA (hiraba — sulmi i armatosur ndaj udhëtarëve), 5) PIRJA E ALKOOLIT (shurb el-hamr). Meqë janë 'e drejtë e Allahut', pasi çështja provohet plotësisht në gjyq, gjykatësi nuk mund t'i ndryshojë a falë. Por përpara gjyqit, pendimi i sinqertë dhe mbulimi i mëkatit janë të pëlqyera — Islami nuk nxit ekspozimin e mëkateve private.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "الزَّانِيَةُ وَالزَّانِي فَاجْلِدُوا كُلَّ وَاحِدٍ مِّنْهُمَا مِائَةَ جَلْدَةٍ",
+              "translation_sq": "Laviren dhe lavirin — rrihni secilin prej tyre me nga njëqind goditje.",
+              "surah": "En-Nur",
+              "surah_number": 24,
+              "ayah": 2
+            },
+            {
+              "type": "quran",
+              "arabic": "وَالَّذِينَ يَرْمُونَ الْمُحْصَنَاتِ ثُمَّ لَمْ يَأْتُوا بِأَرْبَعَةِ شُهَدَاءَ فَاجْلِدُوهُمْ ثَمَانِينَ جَلْدَةً وَلَا تَقْبَلُوا لَهُمْ شَهَادَةً أَبَدًا",
+              "translation_sq": "Ata që shpifin për gratë e ndershme dhe nuk sjellin katër dëshmitarë — rrihni me tetëdhjetë goditje dhe mos ua pranoni kurrë dëshminë.",
+              "surah": "En-Nur",
+              "surah_number": 24,
+              "ayah": 4
+            },
+            {
+              "type": "quran",
+              "arabic": "وَالسَّارِقُ وَالسَّارِقَةُ فَاقْطَعُوا أَيْدِيَهُمَا جَزَاءً بِمَا كَسَبَا نَكَالًا مِّنَ اللَّهِ",
+              "translation_sq": "Vjedhësit dhe vjedhëses — pritjuani duart, si shpërblim për atë që fituan, ndëshkim nga Allahu.",
+              "surah": "El-Maide",
+              "surah_number": 5,
+              "ayah": 38
+            }
+          ]
+        },
+        {
+          "heading": "Standardi i lartë i provës",
+          "content_sq": "Hududet kanë standardet më të larta të provës në historinë e së drejtës: ZINAJA provohet vetëm me katër dëshmitarë okularë të drejtë që dëshmojnë aktin e plotë njëkohësisht — kusht praktikisht pothuajse i pamundur — ose me pohim të lirë të përsëritur të vetë personit, të cilin ai mund ta tërheqë. Kush akuzon pa katër dëshmitarë, dënohet vetë me 80 goditje për shpifje (kadhf). VJEDHJA kërkon: marrje fshehurazi nga vend i ruajtur (hirz), vlerë mbi nisabin (një çerek dinari ar), pa dyshim pronësie — vjedhja nga nevoja e urisë nuk dënohet me hadd (Umeri r.a. e pezulloi në vitin e zisë). Ky standard tregon se qëllimi kryesor i hududit është parandalimi dhe mbrojtja e shoqërisë, jo ekzekutimi i dënimeve.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "لَا تُقْطَعُ يَدُ السَّارِقِ إِلَّا فِي رُبُعِ دِينَارٍ فَصَاعِدًا",
+              "translation_sq": "Dora e vjedhësit nuk pritet veçse për një çerek dinari e lart.",
+              "narrator": "Aishja (r.a.)",
+              "collection": "Sahih Muslim",
+              "hadith_number": 1684,
+              "classification": "sahih"
+            }
+          ],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Nisabi i vjedhjes: 10 dirhem (më i lartë se të tjerët). Dyshimi më i vogël e shmang haddin.",
+              "source": "El-Hidaje, Merginanij"
+            },
+            "maliki": {
+              "ruling": "Nisabi: 1/4 dinari ose 3 dirhem. Kërkohet marrja nga vend i ruajtur (hirz).",
+              "source": "El-Mudavvene"
+            },
+            "shafii": {
+              "ruling": "Nisabi: 1/4 dinari ar. Pohimi mund të tërhiqet dhe haddi bie.",
+              "source": "El-Mexhmu', Nevevij"
+            },
+            "hanbali": {
+              "ruling": "Nisabi: 1/4 dinari ose 3 dirhem. Vjedhja nga nevoja e urisë nuk dënohet me hadd.",
+              "source": "El-Mugni, Ibn Kudame"
+            }
+          }
+        },
+        {
+          "heading": "Kusaria (Hiraba) dhe pendimi",
+          "content_sq": "Hiraba është sulmi i armatosur ndaj njerëzve në rrugë (grabitje me dhunë, terrorizimi i shoqërisë) — krimi më i rëndë kundër sigurisë publike, i quajtur në Kuran 'luftë kundër Allahut dhe të Dërguarit'. Dënimet shkallëzohen sipas rëndesës së krimit (vrasje, grabitje, vetëm frikësim). Por Kurani menjëherë pas dënimit shton: kush pendohet PARA se të kapet, i falet dënimi hudud (mbeten vetëm të drejtat e njerëzve si kthimi i pasurisë). Kjo derë e hapur pendimi tregon se qëllimi është ndalja e krimit, jo hakmarrja.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "إِلَّا الَّذِينَ تَابُوا مِن قَبْلِ أَن تَقْدِرُوا عَلَيْهِمْ ۖ فَاعْلَمُوا أَنَّ اللَّهَ غَفُورٌ رَّحِيمٌ",
+              "translation_sq": "Përveç atyre që pendohen para se t'i kapni. Dijeni se Allahu është Falës i madh, Mëshirues.",
+              "surah": "El-Maide",
+              "surah_number": 5,
+              "ayah": 34
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Sa dëshmitarë okularë kërkohen për të provuar zinanë?",
+          "options": [
+            "Dy",
+            "Tre",
+            "Katër",
+            "Një"
+          ],
+          "correct_index": 2,
+          "explanation": "Zinaja provohet vetëm me katër dëshmitarë okularë të drejtë njëkohësisht — standardi më i lartë i provës; kush akuzon pa ta, dënohet vetë për shpifje."
+        },
+        {
+          "question": "Çfarë dënimi ka shpifja për zina pa katër dëshmitarë (kadhf)?",
+          "options": [
+            "40 goditje",
+            "80 goditje dhe refuzimi i dëshmisë përgjithmonë",
+            "100 goditje",
+            "Vetëm gjobë"
+          ],
+          "correct_index": 1,
+          "explanation": "Sipas En-Nur 24:4, shpifësi dënohet me 80 goditje dhe nuk i pranohet më dëshmia."
+        },
+        {
+          "question": "Cili është nisabi i vjedhjes sipas shumicës së medhhebeve?",
+          "options": [
+            "Një dinar i plotë",
+            "Një çerek dinari ar",
+            "Dhjetë dinarë",
+            "S'ka nisab"
+          ],
+          "correct_index": 1,
+          "explanation": "Sipas hadithit të Muslimit, dora nuk pritet veçse për një çerek dinari e lart (Hanefitë: 10 dirhem)."
+        },
+        {
+          "question": "Çfarë ndodh me kryerësin e hirabës që pendohet para se të kapet?",
+          "options": [
+            "Dënohet njësoj",
+            "I falet dënimi hudud, mbeten vetëm të drejtat e njerëzve",
+            "Dëbohet nga vendi",
+            "Burgoset përjetë"
+          ],
+          "correct_index": 1,
+          "explanation": "El-Maide 5:34: kush pendohet para se të kapet, i falet dënimi hudud — mbetet vetëm kthimi i të drejtave të njerëzve."
+        }
+      ]
+    },
+    {
+      "id": "ukb_003",
+      "title_sq": "Kisasi dhe Dijeti",
+      "title_ar": "القصاص والدية",
+      "level": "advanced",
+      "source_references": [
+        "Dr. Vehbe ez-Zuhajli, El-Fikhu el-Islami ve Edil'letuhu",
+        "Ibn Kudame, El-Mugni",
+        "Sahih Bukhari"
+      ],
+      "sections": [
+        {
+          "heading": "Kisasi — ndëshkimi i barabartë",
+          "content_sq": "Kisasi (القصاص) është ndëshkimi i barabartë për vrasjen ose plagosjen me qëllim: jeta për jetën, syri për syrin — por gjithmonë përmes gjykatës, kurrë me vetëgjyqësi. Kisasi është E DREJTË E FAMILJES SË VIKTIMËS, jo e shtetit: familja mund të zgjedhë NJËRËN nga tri rrugët: 1) Kisasin (ndëshkimin e barabartë), 2) Dijetin (dëmshpërblimin), 3) Faljen pa asgjë — dhe falja është më e mira, Kurani e quan shlyerje mëkatesh (keffare) për falësin. Kurani thotë se 'në kisas ka jetë' — sepse siguria e ndëshkimit të drejtë parandalon gjakmarrjet e pafundme fisnore që Islami i gjeti dhe i ndaloi.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا كُتِبَ عَلَيْكُمُ الْقِصَاصُ فِي الْقَتْلَى ۖ فَمَنْ عُفِيَ لَهُ مِنْ أَخِيهِ شَيْءٌ فَاتِّبَاعٌ بِالْمَعْرُوفِ وَأَدَاءٌ إِلَيْهِ بِإِحْسَانٍ",
+              "translation_sq": "O ju që besuat! Ju është caktuar kisasi për të vrarët... E atij që i falet diçka nga vëllai i tij, atëherë (të ndiqet) rruga e drejtë dhe t'i paguhet atij (dijeti) me të mirë.",
+              "surah": "El-Bekare",
+              "surah_number": 2,
+              "ayah": 178
+            },
+            {
+              "type": "quran",
+              "arabic": "وَلَكُمْ فِي الْقِصَاصِ حَيَاةٌ يَا أُولِي الْأَلْبَابِ لَعَلَّكُمْ تَتَّقُونَ",
+              "translation_sq": "Në kisas ka jetë për ju, o ju të mençur, që të ruheni.",
+              "surah": "El-Bekare",
+              "surah_number": 2,
+              "ayah": 179
+            },
+            {
+              "type": "quran",
+              "arabic": "وَكَتَبْنَا عَلَيْهِمْ فِيهَا أَنَّ النَّفْسَ بِالنَّفْسِ وَالْعَيْنَ بِالْعَيْنِ وَالْأَنفَ بِالْأَنفِ وَالْأُذُنَ بِالْأُذُنِ وَالسِّنَّ بِالسِّنِّ وَالْجُرُوحَ قِصَاصٌ ۚ فَمَن تَصَدَّقَ بِهِ فَهُوَ كَفَّارَةٌ لَّهُ",
+              "translation_sq": "Dhe Ne u caktuam atyre në të (Tevrat): jeta për jetën, syri për syrin, hunda për hundën, veshi për veshin, dhëmbi për dhëmbin, dhe plagët janë kisas. E kush e fal atë (kisasin), ajo është shlyerje (mëkatesh) për të.",
+              "surah": "El-Maide",
+              "surah_number": 5,
+              "ayah": 45
+            }
+          ]
+        },
+        {
+          "heading": "Dijeti — dëmshpërblimi i gjakut",
+          "content_sq": "Dijeti (الدية) është dëmshpërblimi që i paguhet familjes së viktimës kur nuk zbatohet kisasi: kur familja e zgjedh atë në vend të kisasit, kur vrasja është aksidentale, ose kur kisasi bie për ndonjë pengesë. Dijeti klasik i jetës është 100 deve (ose ekuivalenti: 1000 dinarë ar / 12000 dirhem argjend — sot vlera përkatëse monetare). Për gjymtyrët: dijet i plotë për ato teke (hunda, gjuha), gjysmë dijeti për njërën nga çiftet (syri, veshi, dora, këmba). VRASJA AKSIDENTALE (katl el-hata) nuk ka kisas — ka dijet (që e paguan familja e gjerë e kryerësit — akile — për ta lehtësuar barrën) dhe kefaret: lirimi i një robi ose agjërimi i dy muajve rresht.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "وَمَا كَانَ لِمُؤْمِنٍ أَن يَقْتُلَ مُؤْمِنًا إِلَّا خَطَأً ۚ وَمَن قَتَلَ مُؤْمِنًا خَطَأً فَتَحْرِيرُ رَقَبَةٍ مُّؤْمِنَةٍ وَدِيَةٌ مُّسَلَّمَةٌ إِلَىٰ أَهْلِهِ إِلَّا أَن يَصَّدَّقُوا",
+              "translation_sq": "Asnjë besimtari nuk i takon të vrasë besimtar tjetër, përveç gabimisht. Kush vret një besimtar gabimisht — (dënimi është) lirimi i një robi besimtar dhe dijeti që i dorëzohet familjes së tij, përveç nëse ata e falin.",
+              "surah": "En-Nisa",
+              "surah_number": 4,
+              "ayah": 92
+            }
+          ]
+        },
+        {
+          "heading": "Shenjtëria e jetës",
+          "content_sq": "Baza e gjithë kësaj fushe është shenjtëria absolute e jetës njerëzore: Kurani e barazon vrasjen e një njeriu të pafajshëm me vrasjen e mbarë njerëzimit, dhe shpëtimin e një jete me shpëtimin e mbarë njerëzimit (El-Maide 5:32). Vrasja me qëllim është ndër mëkatet më të rënda pas shirkut. Ndalohet vrasja e çdo shpirti të pafajshëm — pa dallim feje a kombësie. Edhe në luftë, Islami ndalon vrasjen e grave, fëmijëve, pleqve dhe joluftëtarëve.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "وَلَا تَقْتُلُوا النَّفْسَ الَّتِي حَرَّمَ اللَّهُ إِلَّا بِالْحَقِّ",
+              "translation_sq": "Dhe mos e vrisni njeriun që Allahu e ka ndaluar (vrasjen e tij), përveç me të drejtë (me vendim gjyqësor).",
+              "surah": "El-Isra",
+              "surah_number": 17,
+              "ayah": 33
+            }
+          ],
+          "ruling": "important_concept"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Cilat tri mundësi ka familja e viktimës në vrasjen me qëllim?",
+          "options": [
+            "Vetëm kisasin",
+            "Kisasin, dijetin ose faljen",
+            "Vetëm dijetin",
+            "Hakmarrjen private"
+          ],
+          "correct_index": 1,
+          "explanation": "Familja e viktimës zgjedh: kisasin (ndëshkimin e barabartë), dijetin (dëmshpërblimin) ose faljen — dhe falja është më e mira."
+        },
+        {
+          "question": "Çfarë dënimi ka vrasja aksidentale (katl el-hata)?",
+          "options": [
+            "Kisas",
+            "Dijet dhe kefaret (lirim robi ose 2 muaj agjërim)",
+            "Asgjë",
+            "Burgim i përjetshëm"
+          ],
+          "correct_index": 1,
+          "explanation": "Vrasja aksidentale nuk ka kisas — ka dijet për familjen e viktimës dhe kefaret: lirim robi ose agjërim dy muaj rresht (En-Nisa 4:92)."
+        },
+        {
+          "question": "Çfarë do të thotë ajeti 'në kisas ka jetë'?",
+          "options": [
+            "Kisasi e kthen viktimën në jetë",
+            "Siguria e ndëshkimit të drejtë parandalon vrasjet dhe gjakmarrjet",
+            "Kisasi zgjimin e jetës së re",
+            "Vrasësi jeton në burg"
+          ],
+          "correct_index": 1,
+          "explanation": "Kur dihet se vrasja ndëshkohet me drejtësi nga gjykata, parandalohen vrasjet e reja dhe gjakmarrjet e pafundme fisnore."
+        },
+        {
+          "question": "Si e vlerëson Kurani faljen e kisasit nga familja e viktimës?",
+          "options": [
+            "Si dobësi",
+            "Si shlyerje mëkatesh (keffare) për falësin",
+            "Si e ndaluar",
+            "Si detyrim"
+          ],
+          "correct_index": 1,
+          "explanation": "El-Maide 5:45: 'Kush e fal atë, ajo është shlyerje (mëkatesh) për të' — falja është e pëlqyer dhe e shpërblyer."
+        }
+      ]
+    },
+    {
+      "id": "ukb_004",
+      "title_sq": "Ta'ziri dhe Barazia para Ligjit",
+      "title_ar": "التعزير والمساواة أمام القضاء",
+      "level": "advanced",
+      "source_references": [
+        "Dr. Vehbe ez-Zuhajli, El-Fikhu el-Islami ve Edil'letuhu",
+        "Ibn Kajjim el-Xhevzije, Et-Turuk el-Hukmije",
+        "Sahih Bukhari"
+      ],
+      "sections": [
+        {
+          "heading": "Ta'ziri — dënimet e pacaktuara",
+          "content_sq": "Ta'ziri (التعزير) përfshin dënimet për shkeljet që nuk kanë dënim të caktuar me tekst — pjesa më e madhe e veprave penale në praktikë. Formën dhe masën e cakton autoriteti gjyqësor sipas rëndesës së veprës, rrethanave dhe gjendjes së kryerësit: qortim, gjobë, burgim, dëbim etj. Ta'ziri është më i butë se hududet — sipas hadithit, rrahja në ta'zir nuk kalon dhjetë goditje. Fleksibiliteti i ta'zirit i lejon shtetit islam të ndëshkojë krime të reja (mashtrimet financiare, krimet kibernetike etj.) sipas parimeve të përgjithshme të drejtësisë, duke respektuar gjithmonë ndalimin e torturës dhe të poshtërimit.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "لَا يُجْلَدُ فَوْقَ عَشْرِ جَلَدَاتٍ إِلَّا فِي حَدٍّ مِنْ حُدُودِ اللَّهِ",
+              "translation_sq": "Nuk rrihet (askush) mbi dhjetë goditje, përveçse në ndonjë hadd nga hududet e Allahut.",
+              "narrator": "Ebu Burde (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 6848,
+              "classification": "sahih"
+            }
+          ]
+        },
+        {
+          "heading": "Barazia para ligjit",
+          "content_sq": "Parimi më i shquar i drejtësisë penale islame është barazia absolute para ligjit: nuk ka imunitet për të pasurit, të fuqishmit apo fisnikët. Rasti i famshëm: kur një grua fisnike nga fisi Mahzum vodhi dhe disa kërkuan ndërmjetësim te Profeti ﷺ përmes Usames, ai u zemërua dhe tha fjalën historike: 'Popujt para jush u shkatërruan sepse kur vidhte fisniku e linin, e kur vidhte i dobëti ia zbatonin dënimin. Pasha Allahun, edhe sikur Fatimja, bija e Muhamedit, të vidhte, do t'ia prisja dorën.' Gjykatësi duhet të jetë i paanshëm edhe në mënyrën si i shikon dhe i dëgjon palët; Umeri r.a. u gjykua si palë e barabartë përballë një çifuti te gjykatësi.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "وَايْمُ اللَّهِ لَوْ أَنَّ فَاطِمَةَ بِنْتَ مُحَمَّدٍ سَرَقَتْ لَقَطَعْتُ يَدَهَا",
+              "translation_sq": "Pasha Allahun, edhe sikur Fatimja, bija e Muhamedit, të vidhte, do t'ia prisja dorën.",
+              "narrator": "Aishja (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 6788,
+              "classification": "sahih"
+            },
+            {
+              "type": "quran",
+              "arabic": "إِنَّ اللَّهَ يَأْمُرُكُمْ أَن تُؤَدُّوا الْأَمَانَاتِ إِلَىٰ أَهْلِهَا وَإِذَا حَكَمْتُم بَيْنَ النَّاسِ أَن تَحْكُمُوا بِالْعَدْلِ",
+              "translation_sq": "Allahu ju urdhëron t'ua ktheni amanetet të zotëve të tyre dhe, kur të gjykoni mes njerëzve, të gjykoni me drejtësi.",
+              "surah": "En-Nisa",
+              "surah_number": 4,
+              "ayah": 58
+            }
+          ],
+          "ruling": "important_concept"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Çka është ta'ziri?",
+          "options": [
+            "Dënim i caktuar me tekst kuranor",
+            "Dënim i pacaktuar që e cakton autoriteti sipas rrethanave",
+            "Dëmshpërblimi i gjakut",
+            "Falja e dënimit"
+          ],
+          "correct_index": 1,
+          "explanation": "Ta'ziri është dënimi për shkeljet pa dënim të caktuar me tekst — formën dhe masën e cakton autoriteti gjyqësor sipas rrethanave."
+        },
+        {
+          "question": "Sa është maksimumi i goditjeve në ta'zir sipas hadithit?",
+          "options": [
+            "Dhjetë",
+            "Dyzet",
+            "Tetëdhjetë",
+            "Njëqind"
+          ],
+          "correct_index": 0,
+          "explanation": "Sipas hadithit të Bukharit: 'Nuk rrihet mbi dhjetë goditje, përveçse në ndonjë hadd nga hududet e Allahut.'"
+        },
+        {
+          "question": "Çfarë tha Profeti ﷺ për barazinë para ligjit në rastin e gruas nga Mahzumi?",
+          "options": [
+            "E fali sepse ishte fisnike",
+            "Edhe sikur Fatimja, bija e tij, të vidhte, do t'ia priste dorën",
+            "Ia la dënimin fisit të saj",
+            "E dëboi nga qyteti"
+          ],
+          "correct_index": 1,
+          "explanation": "Profeti ﷺ refuzoi ndërmjetësimin dhe tha se popujt e mëparshëm u shkatërruan nga pabarazia para ligjit — ligji vlen njësoj për të gjithë."
+        },
+        {
+          "question": "Pse u shkatërruan popujt e mëparshëm sipas hadithit?",
+          "options": [
+            "Nga varfëria",
+            "Sepse dënonin të dobëtit dhe i linin fisnikët pa dënim",
+            "Nga luftërat",
+            "Nga mosbesimi vetëm"
+          ],
+          "correct_index": 1,
+          "explanation": "Kur vidhte fisniku e linin, e kur vidhte i dobëti ia zbatonin dënimin — pabarazia para ligjit shkatërron shoqëritë."
+        }
+      ]
+    },
+    {
+      "id": "ukb_005",
+      "title_sq": "Gjyqësia — Edebi i Gjykatësit dhe Dëshmitarët",
+      "title_ar": "القضاء وآداب القاضي والشهادات",
+      "level": "advanced",
+      "source_references": [
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book (El-Vexhiz), Libri i Gjyqësisë",
+        "Dr. Vehbe ez-Zuhajli, El-Fikhu el-Islami ve Edil'letuhu",
+        "Sahih Bukhari",
+        "Sunen et-Tirmidhi"
+      ],
+      "sections": [
+        {
+          "heading": "Pesha e detyrës së gjykatësit",
+          "content_sq": "Gjykimi mes njerëzve është amanet i rëndë dhe përgjegjësi e madhe para Allahut. Profeti ﷺ tha: 'Kush caktohet gjykatës mes njerëzve, është therur pa thikë' — paralajmërim për peshën e detyrës. Hadithi i tri gjykatësve e ndan qartë: 'Gjykatësit janë tre: një në Xhennet e dy në zjarr. Ai që e njeh të vërtetën dhe gjykon me të — në Xhennet; ai që e njeh të vërtetën dhe gjykon padrejtësisht — në zjarr; dhe ai që gjykon mes njerëzve pa dije — në zjarr.' Megjithatë, gjykatësi i sinqertë që përpiqet (bën ixhtihad) shpërblehet edhe kur gabon: 'Kur gjykatësi gjykon duke u përpjekur dhe ia qëllon, ka dy shpërblime; e kur gjykon duke u përpjekur dhe gabon, ka një shpërblim.'",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "الْقُضَاةُ ثَلَاثَةٌ وَاحِدٌ فِي الْجَنَّةِ وَاثْنَانِ فِي النَّارِ",
+              "translation_sq": "Gjykatësit janë tre: një në Xhennet dhe dy në zjarr.",
+              "narrator": "Burejde (r.a.)",
+              "collection": "Ebu Davud",
+              "hadith_number": 3573,
+              "classification": "sahih"
+            },
+            {
+              "type": "hadith",
+              "arabic": "إِذَا حَكَمَ الْحَاكِمُ فَاجْتَهَدَ ثُمَّ أَصَابَ فَلَهُ أَجْرَانِ وَإِذَا حَكَمَ فَاجْتَهَدَ ثُمَّ أَخْطَأَ فَلَهُ أَجْرٌ",
+              "translation_sq": "Kur gjykatësi gjykon duke u përpjekur (me ixhtihad) dhe ia qëllon, ka dy shpërblime; e kur gjykon duke u përpjekur dhe gabon, ka një shpërblim.",
+              "narrator": "Amr ibn el-As (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 7352,
+              "classification": "sahih"
+            }
+          ]
+        },
+        {
+          "heading": "Edebi i gjykatësit (Adab el-Kadi)",
+          "content_sq": "Nga edebet dhe detyrimet e gjykatësit: 1) NUK GJYKON I ZEMËRUAR — Profeti ﷺ tha: 'Të mos gjykojë askush mes dy vetave duke qenë i zemëruar' — zemërimi turbullon gjykimin; njësoj edhe uria e fortë, lodhja apo shqetësimi i madh. 2) DËGJON TË DYJA PALËT — Profeti ﷺ e porositi Aliun r.a.: 'Kur të ulen para teje dy palët, mos gjyko për të parin derisa të dëgjosh edhe tjetrin — kështu do ta dish si të gjykosh.' 3) I TRAJTON PALËT NJËSOJ — në ulje, në shikim, në dëgjim; pa i buzëqeshur njërës e vrenjtur tjetrës. 4) NUK MERR RYSHFET — 'Allahu e mallkoi ryshfetdhënësin dhe ryshfetmarrësin në gjykim'; edhe dhuratat për gjykatësin në detyrë janë derë ryshfeti. 5) NUK GJYKON PËR VETEN a të afërmit e ngushtë ku ka interes.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "لَا يَقْضِيَنَّ حَكَمٌ بَيْنَ اثْنَيْنِ وَهُوَ غَضْبَانُ",
+              "translation_sq": "Të mos gjykojë askush (gjykatës) mes dy vetave duke qenë i zemëruar.",
+              "narrator": "Ebu Bekre (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 7158,
+              "classification": "sahih"
+            },
+            {
+              "type": "hadith",
+              "arabic": "إِذَا جَلَسَ إِلَيْكَ الْخَصْمَانِ فَلَا تَقْضِيَنَّ حَتَّى تَسْمَعَ مِنَ الْآخَرِ كَمَا سَمِعْتَ مِنَ الْأَوَّلِ فَإِنَّهُ أَحْرَى أَنْ يَتَبَيَّنَ لَكَ الْقَضَاءُ",
+              "translation_sq": "Kur të ulen para teje dy palët në gjyq, mos gjyko derisa të dëgjosh nga tjetri ashtu siç dëgjove nga i pari — kështu do të të qartësohet gjykimi.",
+              "narrator": "Ali ibn Ebi Talib (r.a.)",
+              "collection": "Tirmidhi",
+              "hadith_number": 1331,
+              "classification": "hasen"
+            },
+            {
+              "type": "hadith",
+              "arabic": "لَعَنَ رَسُولُ اللَّهِ ﷺ الرَّاشِيَ وَالْمُرْتَشِيَ فِي الْحُكْمِ",
+              "translation_sq": "I Dërguari i Allahut ﷺ e mallkoi ryshfetdhënësin dhe ryshfetmarrësin në gjykim.",
+              "narrator": "Ebu Hurejre (r.a.)",
+              "collection": "Tirmidhi",
+              "hadith_number": 1336,
+              "classification": "sahih"
+            }
+          ],
+          "ruling": "important_concept"
+        },
+        {
+          "heading": "Barra e provës dhe betimi",
+          "content_sq": "Rregulli themelor i procedurës gjyqësore islame: 'Prova (bejjine) i takon paditësit, ndërsa betimi i takon atij që mohon (të paditurit).' Paditësi duhet të sjellë dëshmitarë ose prova; nëse s'ka prova, i padituri betohet dhe çështja mbyllet në favor të tij — sepse origjina është pafajësia (bera'etu edh-dhimme). Gjykatësi gjykon vetëm mbi prova të jashtme, jo mbi hamendje: Profeti ﷺ tha se ai gjykon sipas asaj që dëgjon, dhe kush fiton padrejtësisht me gojtarinë e tij një të drejtë të vëllait, po merr një copë zjarri — pra vendimi i gjykatës nuk e bën hallall atë që në të vërtetë është haram.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "الْبَيِّنَةُ عَلَى الْمُدَّعِي وَالْيَمِينُ عَلَى الْمُدَّعَى عَلَيْهِ",
+              "translation_sq": "Prova i takon paditësit, ndërsa betimi i takon të paditurit.",
+              "narrator": "Abdullah ibn Amr (r.a.)",
+              "collection": "Tirmidhi",
+              "hadith_number": 1341,
+              "classification": "hasen"
+            },
+            {
+              "type": "hadith",
+              "arabic": "فَمَنْ قَضَيْتُ لَهُ بِحَقِّ أَخِيهِ شَيْئًا بِقَوْلِهِ فَإِنَّمَا أَقْطَعُ لَهُ قِطْعَةً مِنَ النَّارِ",
+              "translation_sq": "Kujt i gjykoj diçka nga e drejta e vëllait të tij (padrejtësisht) për shkak të gojtarisë së tij — po i pres një copë zjarri.",
+              "narrator": "Umm Seleme (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 7169,
+              "classification": "sahih"
+            }
+          ]
+        },
+        {
+          "heading": "Dëshmitarët sipas llojit të çështjes",
+          "content_sq": "Numri i dëshmitarëve ndryshon sipas peshës së çështjes: 1) ZINAJA — katër dëshmitarë meshkuj të drejtë; kush s'i sjell, është vetë shpifës. 2) HUDUDET E TJERA DHE KISASI (vjedhja, pirja, kadhfi, vrasja) — dy dëshmitarë meshkuj të drejtë. 3) ÇËSHTJET PASURORE (borxhet, kontratat, shitblerjet) — dy burra, ose një burrë dhe dy gra (El-Bekare 2:282). 4) ÇËSHTJET QË I NJOHIN ZAKONISHT VETËM GRATË (gjidhënia, lindja, të fshehtat femërore) — pranohet dëshmia e grave vetëm; për gjidhënien Profeti ﷺ e pranoi dëshminë e një gruaje të vetme (rasti i Ukbe ibn el-Harithit). 5) HËNA E RAMAZANIT — mjafton një dëshmitar i drejtë (Profeti ﷺ agjëroi me dëshminë e Ibn Umerit r.a.); ndërsa për hënën e Shevalit (Bajramin) kërkohen dy dëshmitarë. KUSHTET E DËSHMITARIT: musliman i rritur, me mendje, i drejtë (adl), pa interes në çështje dhe pa armiqësi me palën.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "وَاسْتَشْهِدُوا شَهِيدَيْنِ مِن رِّجَالِكُمْ ۖ فَإِن لَّمْ يَكُونَا رَجُلَيْنِ فَرَجُلٌ وَامْرَأَتَانِ مِمَّن تَرْضَوْنَ مِنَ الشُّهَدَاءِ",
+              "translation_sq": "Dhe merrni dy dëshmitarë nga burrat tuaj; e nëse nuk janë dy burra, atëherë një burrë dhe dy gra, nga dëshmitarët që i pëlqeni.",
+              "surah": "El-Bekare",
+              "surah_number": 2,
+              "ayah": 282
+            },
+            {
+              "type": "quran",
+              "arabic": "لَوْلَا جَاءُوا عَلَيْهِ بِأَرْبَعَةِ شُهَدَاءَ ۚ فَإِذْ لَمْ يَأْتُوا بِالشُّهَدَاءِ فَأُولَٰئِكَ عِندَ اللَّهِ هُمُ الْكَاذِبُونَ",
+              "translation_sq": "Përse nuk sollën për të katër dëshmitarë? E derisa nuk i sollën dëshmitarët, ata tek Allahu janë pikërisht gënjeshtarët.",
+              "surah": "En-Nur",
+              "surah_number": 24,
+              "ayah": 13
+            },
+            {
+              "type": "hadith",
+              "arabic": "تَرَاءَى النَّاسُ الْهِلَالَ فَأَخْبَرْتُ رَسُولَ اللَّهِ ﷺ أَنِّي رَأَيْتُهُ فَصَامَ وَأَمَرَ النَّاسَ بِصِيَامِهِ",
+              "translation_sq": "Njerëzit po e kërkonin hënën e re; i tregova të Dërguarit të Allahut ﷺ se unë e pashë — ai agjëroi dhe i urdhëroi njerëzit të agjërojnë.",
+              "narrator": "Abdullah ibn Umer (r.a.)",
+              "collection": "Ebu Davud",
+              "hadith_number": 2342,
+              "classification": "sahih"
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Sipas hadithit të tre gjykatësve, cili gjykatës është në Xhennet?",
+          "options": [
+            "Ai që gjykon pa dije por me qëllim të mirë",
+            "Ai që e njeh të vërtetën dhe gjykon me të",
+            "Ai që gjykon shpejt",
+            "Ai që nuk gjykon kurrë"
+          ],
+          "correct_index": 1,
+          "explanation": "Gjykatësit janë tre: ai që e njeh të vërtetën dhe gjykon me të — në Xhennet; ai që gjykon padrejtësisht me dije dhe ai që gjykon pa dije — në zjarr."
+        },
+        {
+          "question": "A lejohet gjykatësi të gjykojë duke qenë i zemëruar?",
+          "options": [
+            "Po, nëse çështja është e qartë",
+            "Jo — hadithi e ndalon gjykimin në zemërim",
+            "Po, në raste urgjente",
+            "Vetëm në çështje të vogla"
+          ],
+          "correct_index": 1,
+          "explanation": "Profeti ﷺ tha: 'Të mos gjykojë askush mes dy vetave duke qenë i zemëruar' — zemërimi turbullon gjykimin (Bukhari 7158)."
+        },
+        {
+          "question": "Kujt i takon prova dhe kujt betimi në gjyq?",
+          "options": [
+            "Prova të paditurit, betimi paditësit",
+            "Prova paditësit, betimi të paditurit",
+            "Të dyja paditësit",
+            "Të dyja gjykatësit"
+          ],
+          "correct_index": 1,
+          "explanation": "Rregulli procedural: 'El-bejjine ala el-muddei, vel-jemin ala el-muddea alejhi' — prova i takon paditësit, betimi të paditurit."
+        },
+        {
+          "question": "Sa dëshmitarë duhen për çështjet pasurore sipas El-Bekare 2:282?",
+          "options": [
+            "Katër burra",
+            "Dy burra, ose një burrë dhe dy gra",
+            "Vetëm një burrë",
+            "Tre gra"
+          ],
+          "correct_index": 1,
+          "explanation": "Për borxhet dhe kontratat: dy dëshmitarë burra, ose një burrë dhe dy gra (El-Bekare 2:282)."
+        },
+        {
+          "question": "Sa dëshmitarë mjaftojnë për hënën e re të Ramazanit?",
+          "options": [
+            "Katër",
+            "Një dëshmitar i drejtë",
+            "Dhjetë",
+            "Dy gra"
+          ],
+          "correct_index": 1,
+          "explanation": "Profeti ﷺ agjëroi dhe urdhëroi agjërimin me dëshminë e vetme të Ibn Umerit r.a. — për Shevalin (Bajramin) kërkohen dy."
+        }
+      ]
+    }
+  ]
+}

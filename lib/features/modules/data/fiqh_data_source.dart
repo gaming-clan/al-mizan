@@ -23,6 +23,7 @@ class FiqhDataSource {
     'xhenaze': 'lib/data/fiqh_content/module_10_xhenaze.json',
     'betim_nedhr': 'lib/data/fiqh_content/module_11_betim_nedhr.json',
     'ushqimi_pija': 'lib/data/fiqh_content/module_12_ushqimi_pija.json',
+    'ukubat': 'lib/data/fiqh_content/module_13_ukubat.json',
   };
 
   /// All module IDs in display order.

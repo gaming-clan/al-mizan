@@ -401,6 +401,146 @@
           "explanation": "Divorci është hallall por mekruh — gjëja më e urryer e lejuar tek Allahu."
         }
       ]
+    },
+    {
+      "id": "nikah_4",
+      "title_sq": "Trashëgimia (El-Mirath)",
+      "title_ar": "الميراث",
+      "level": "advanced",
+      "source_references": [
+        "Dr. Vehbe ez-Zuhajli, El-Fikhu el-Islami ve Edil'letuhu",
+        "Ibn Kudame, El-Mugni",
+        "Sahih Bukhari",
+        "Es-Sejid Sabik, Fikhu es-Sunne"
+      ],
+      "sections": [
+        {
+          "heading": "Rëndësia e trashëgimisë dhe radha e të drejtave",
+          "content_sq": "Trashëgimia (el-mirath) është ndër të paktat fusha ku Kurani i cakton pjesët në mënyrë të detajuar — Allahu i quan 'kufijtë e Allahut' dhe i mbyll me premtim Xhenneti për atë që i respekton dhe kërcënim për atë që i shkel (En-Nisa 4:13-14). Para se të ndahet trashëgimia, nga pasuria e të ndjerit paguhen sipas radhës: 1) Shpenzimet e varrimit; 2) Borxhet e të ndjerit; 3) Testamenti (vasijeti) — më së shumti një e treta e pasurisë dhe jo për trashëgimtarët; 4) Pjesa e mbetur ndahet mes trashëgimtarëve sipas pjesëve të caktuara në Kuran. Testamenti mbi një të tretën nuk vlen pa pëlqimin e trashëgimtarëve — Profeti ﷺ i tha Sa'd ibn Ebi Vekkasit: 'Një e treta, dhe një e treta është shumë.'",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "الثُّلُثُ وَالثُّلُثُ كَثِيرٌ إِنَّكَ أَنْ تَذَرَ وَرَثَتَكَ أَغْنِيَاءَ خَيْرٌ مِنْ أَنْ تَذَرَهُمْ عَالَةً يَتَكَفَّفُونَ النَّاسَ",
+              "translation_sq": "Një e treta, dhe një e treta është shumë. Vërtet, t'i lësh trashëgimtarët e tu të pasur është më mirë sesa t'i lësh nevojtarë duke lypur te njerëzit.",
+              "narrator": "Sa'd ibn Ebi Vekkas (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 2742,
+              "classification": "sahih"
+            }
+          ]
+        },
+        {
+          "heading": "Pjesët e caktuara nga Kurani (El-Furud)",
+          "content_sq": "Pjesët kryesore të caktuara në Kuran (En-Nisa 4:11-12): FËMIJËT: djalit i takon sa pjesa e dy vajzave; nëse janë vetëm vajza (dy e më shumë), u takojnë dy të tretat; nëse është një vajzë e vetme, i takon gjysma. PRINDËRIT: secilit një e gjashta nëse i ndjeri ka fëmijë; nëse s'ka fëmijë dhe e trashëgojnë vetëm prindërit, nënës i takon një e treta. BASHKËSHORTËT: burrit i takon gjysma e pasurisë së gruas nëse ajo s'ka fëmijë, përndryshe një e katërta; gruas i takon një e katërta nëse burri s'ka fëmijë, përndryshe një e teta. Pjesa që mbetet pas pjesëve të caktuara u takon të afërmve meshkuj më të afërt (asaba). Këto pjesë janë 'ferida' — obligim i prerë nga Allahu, jo zgjedhje njerëzore.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "يُوصِيكُمُ اللَّهُ فِي أَوْلَادِكُمْ ۖ لِلذَّكَرِ مِثْلُ حَظِّ الْأُنثَيَيْنِ ۚ فَإِن كُنَّ نِسَاءً فَوْقَ اثْنَتَيْنِ فَلَهُنَّ ثُلُثَا مَا تَرَكَ ۖ وَإِن كَانَتْ وَاحِدَةً فَلَهَا النِّصْفُ",
+              "translation_sq": "Allahu ju porosit për fëmijët tuaj: mashkullit i takon pjesa sa e dy femrave. Nëse janë (vetëm) femra, më shumë se dy, atyre u takojnë dy të tretat e asaj që ka lënë (i ndjeri); e nëse është një e vetme, asaj i takon gjysma.",
+              "surah": "En-Nisa",
+              "surah_number": 4,
+              "ayah": 11
+            },
+            {
+              "type": "quran",
+              "arabic": "وَلَكُمْ نِصْفُ مَا تَرَكَ أَزْوَاجُكُمْ إِن لَّمْ يَكُن لَّهُنَّ وَلَدٌ ۚ فَإِن كَانَ لَهُنَّ وَلَدٌ فَلَكُمُ الرُّبُعُ مِمَّا تَرَكْنَ",
+              "translation_sq": "Juve (burrave) ju takon gjysma e asaj që lënë gratë tuaja, nëse ato nuk kanë fëmijë; e nëse kanë fëmijë, juve ju takon një e katërta e asaj që lënë.",
+              "surah": "En-Nisa",
+              "surah_number": 4,
+              "ayah": 12
+            },
+            {
+              "type": "hadith",
+              "arabic": "أَلْحِقُوا الْفَرَائِضَ بِأَهْلِهَا فَمَا بَقِيَ فَهُوَ لِأَوْلَى رَجُلٍ ذَكَرٍ",
+              "translation_sq": "Jepuni pjesët e caktuara (të trashëgimisë) atyre që u takojnë; ajo që mbetet i takon mashkullit më të afërt (të të ndjerit).",
+              "narrator": "Abdullah ibn Abbas (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 6732,
+              "classification": "sahih"
+            }
+          ]
+        },
+        {
+          "heading": "Pengesat e trashëgimisë",
+          "content_sq": "Trashëgimtari humbet të drejtën e trashëgimisë në tri raste kryesore: 1) VRASJA — vrasësi nuk trashëgon nga i vrari (që të mos nxitet krimi për pasuri); 2) DALLIMI I FESË — muslimani nuk e trashëgon jomuslimanin dhe as jomuslimani muslimanin, sipas hadithit të qartë; 3) ROBËRIA (nuk aplikohet sot). Kujdes: privimi i vajzave nga trashëgimia — zakon i pranishëm në disa vende — është padrejtësi e rëndë dhe shkelje e drejtpërdrejtë e kufijve të Allahut, sepse pjesa e femrës është e caktuar me tekst kuranor.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "لَا يَرِثُ الْمُسْلِمُ الْكَافِرَ وَلَا الْكَافِرُ الْمُسْلِمَ",
+              "translation_sq": "Muslimani nuk e trashëgon mohuesin, as mohuesi muslimanin.",
+              "narrator": "Usame ibn Zejd (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 6764,
+              "classification": "sahih"
+            },
+            {
+              "type": "quran",
+              "arabic": "تِلْكَ حُدُودُ اللَّهِ ۚ وَمَن يُطِعِ اللَّهَ وَرَسُولَهُ يُدْخِلْهُ جَنَّاتٍ تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ",
+              "translation_sq": "Këta janë kufijtë e Allahut. Kush i bindet Allahut dhe të Dërguarit të Tij, Ai e fut në kopshte nëpër të cilat rrjedhin lumenj.",
+              "surah": "En-Nisa",
+              "surah_number": 4,
+              "ayah": 13
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Cila është radha e të drejtave mbi pasurinë e të ndjerit?",
+          "options": [
+            "Trashëgimia → testamenti → borxhet → varrimi",
+            "Varrimi → borxhet → testamenti (max 1/3) → trashëgimia",
+            "Borxhet → trashëgimia → varrimi → testamenti",
+            "Testamenti → varrimi → trashëgimia → borxhet"
+          ],
+          "correct_index": 1,
+          "explanation": "Nga pasuria e të ndjerit paguhen sipas radhës: shpenzimet e varrimit, borxhet, testamenti (më së shumti 1/3), dhe pastaj ndahet trashëgimia."
+        },
+        {
+          "question": "Sa është maksimumi që lejohet të lihet me testament (vasijet)?",
+          "options": [
+            "Gjysma e pasurisë",
+            "Një e treta",
+            "Një e katërta",
+            "E gjithë pasuria"
+          ],
+          "correct_index": 1,
+          "explanation": "Profeti ﷺ i tha Sa'd ibn Ebi Vekkasit: 'Një e treta, dhe një e treta është shumë' — testamenti nuk kalon 1/3 e pasurisë."
+        },
+        {
+          "question": "Sa i takon gruas nga pasuria e burrit nëse ai ka fëmijë?",
+          "options": [
+            "Gjysma",
+            "Një e katërta",
+            "Një e teta",
+            "Një e gjashta"
+          ],
+          "correct_index": 2,
+          "explanation": "Gruas i takon një e katërta nëse burri s'ka fëmijë; nëse ka fëmijë, i takon një e teta (En-Nisa 4:12)."
+        },
+        {
+          "question": "Cila nga këto është pengesë e trashëgimisë?",
+          "options": [
+            "Sëmundja e trashëgimtarit",
+            "Vrasja e trashëgimlënësit nga trashëgimtari",
+            "Varfëria e trashëgimtarit",
+            "Mosha e re"
+          ],
+          "correct_index": 1,
+          "explanation": "Vrasësi nuk trashëgon nga i vrari — pengesat kryesore janë vrasja dhe dallimi i fesë."
+        },
+        {
+          "question": "Sa u takon dy a më shumë vajzave nëse i ndjeri s'ka djem?",
+          "options": [
+            "Gjysma",
+            "Dy të tretat",
+            "Një e treta",
+            "E gjithë pasuria"
+          ],
+          "correct_index": 1,
+          "explanation": "Sipas En-Nisa 4:11, dy a më shumë vajzave (pa djem) u takojnë dy të tretat e pasurisë."
+        }
+      ]
     }
   ]
 }
