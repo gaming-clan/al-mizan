@@ -298,6 +298,13 @@ class HomeScreen extends ConsumerWidget {
                     ),
                     const SizedBox(height: 8),
                     _QuickActionTile(
+                      icon: Icons.today_rounded,
+                      title: 'Sfida Ditore',
+                      subtitle: '10 pyetje të përziera çdo ditë — ruaj serinë!',
+                      onTap: () => context.push('/daily-challenge'),
+                    ),
+                    const SizedBox(height: 8),
+                    _QuickActionTile(
                       icon: Icons.calculate_rounded,
                       title: 'Llogaritës Zekati',
                       subtitle: 'Llogarit detyrimet e zekatit',

@@ -408,6 +408,7 @@
       "title_ar": "الميراث",
       "level": "advanced",
       "source_references": [
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book (El-Vexhiz), Libri i Trashëgimisë",
         "Dr. Vehbe ez-Zuhajli, El-Fikhu el-Islami ve Edil'letuhu",
         "Ibn Kudame, El-Mugni",
         "Sahih Bukhari",
@@ -457,6 +458,36 @@
               "collection": "Sahih Bukhari",
               "hadith_number": 6732,
               "classification": "sahih"
+            }
+          ]
+        },
+        {
+          "heading": "Kush merr sa? — Gjashtë pjesët e detajuara",
+          "content_sq": "Sipas El-Vexhiz të Dr. Abdul-Azim Bedeviut, pjesët e caktuara në Kuran janë gjashtë: 1/2, 1/4, 1/8, 2/3, 1/3 dhe 1/6.\n\nGJYSMA (1/2): 1) Burri, kur gruaja e ndjerë nuk ka fëmijë; 2) Vajza e vetme (pa vëlla); 3) Vajza e vetme e djalit (kur s'ka fëmijë të drejtpërdrejtë); 4) Motra e vetme nga të dy prindërit; 5) Motra e vetme nga babai (kur i ndjeri s'ka fëmijë e baba).\n\nÇEREKU (1/4): 1) Burri, kur gruaja e ndjerë ka fëmijë; 2) Gruaja (një a më shumë — e ndajnë bashkë), kur burri i ndjerë nuk ka fëmijë.\n\nE TETA (1/8): Gruaja (një a më shumë — e ndajnë bashkë), kur burri i ndjerë ka fëmijë.\n\nDY TË TRETAT (2/3): 1) Dy a më shumë vajza (pa djalë); 2) Dy a më shumë vajza të djalit; 3) Dy a më shumë motra nga të dy prindërit; 4) Dy a më shumë motra nga babai.\n\nE TRETA (1/3): 1) Nëna, kur i ndjeri nuk ka fëmijë dhe as dy a më shumë vëllezër/motra; 2) Dy a më shumë vëllezër/motra nga nëna (e ndajnë barabar, mashkulli sa femra).\n\nE GJASHTA (1/6): 1) Babai, kur i ndjeri ka fëmijë; 2) Nëna, kur i ndjeri ka fëmijë ose dy a më shumë vëllezër/motra; 3) Gjyshi, në mungesë të babait; 4) Gjyshja, në mungesë të nënës; 5) Vajza e djalit, krahas vajzës së vetme të drejtpërdrejtë (si plotësim i 2/3); 6) Motra nga babai, krahas motrës së vetme nga të dy prindërit (si plotësim i 2/3); 7) Vëllai ose motra e vetme nga nëna.\n\nPas dhënies së pjesëve të caktuara, MBETJA u takon asabave (të afërmve meshkuj sipas radhës: djali, pastaj babai, vëllai...) — dhe djali merr gjithmonë sa dy vajza.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "وَلَهُنَّ الرُّبُعُ مِمَّا تَرَكْتُمْ إِن لَّمْ يَكُن لَّكُمْ وَلَدٌ ۚ فَإِن كَانَ لَكُمْ وَلَدٌ فَلَهُنَّ الثُّمُنُ مِمَّا تَرَكْتُم",
+              "translation_sq": "Atyre (grave) u takon një e katërta e asaj që lini ju, nëse nuk keni fëmijë; e nëse keni fëmijë, atyre u takon një e teta e asaj që lini.",
+              "surah": "En-Nisa",
+              "surah_number": 4,
+              "ayah": 12
+            },
+            {
+              "type": "quran",
+              "arabic": "وَلِأَبَوَيْهِ لِكُلِّ وَاحِدٍ مِّنْهُمَا السُّدُسُ مِمَّا تَرَكَ إِن كَانَ لَهُ وَلَدٌ ۚ فَإِن لَّمْ يَكُن لَّهُ وَلَدٌ وَوَرِثَهُ أَبَوَاهُ فَلِأُمِّهِ الثُّلُثُ",
+              "translation_sq": "Prindërve të tij — secilit prej tyre një e gjashta nga ajo që ka lënë, nëse ai ka fëmijë; e nëse nuk ka fëmijë dhe e trashëgojnë (vetëm) prindërit, atëherë nënës i takon një e treta.",
+              "surah": "En-Nisa",
+              "surah_number": 4,
+              "ayah": 11
+            },
+            {
+              "type": "quran",
+              "arabic": "فَإِن كَانَتَا اثْنَتَيْنِ فَلَهُمَا الثُّلُثَانِ مِمَّا تَرَكَ",
+              "translation_sq": "E nëse janë dy (motra), atyre u takojnë dy të tretat e asaj që ka lënë.",
+              "surah": "En-Nisa",
+              "surah_number": 4,
+              "ayah": 176
             }
           ]
         },
@@ -539,6 +570,28 @@
           ],
           "correct_index": 1,
           "explanation": "Sipas En-Nisa 4:11, dy a më shumë vajzave (pa djem) u takojnë dy të tretat e pasurisë."
+        },
+        {
+          "question": "Sa merr nëna kur i ndjeri ka fëmijë?",
+          "options": [
+            "Një e treta",
+            "Një e gjashta",
+            "Gjysma",
+            "Një e katërta"
+          ],
+          "correct_index": 1,
+          "explanation": "Kur i ndjeri ka fëmijë, secilit prind i takon një e gjashta; nëna merr një të tretën vetëm kur s'ka fëmijë e as dy+ vëllezër/motra (En-Nisa 4:11)."
+        },
+        {
+          "question": "Kur merr burri një të katërtën (1/4) nga pasuria e gruas?",
+          "options": [
+            "Gjithmonë",
+            "Kur gruaja ka fëmijë",
+            "Kur gruaja s'ka fëmijë",
+            "Kurrë"
+          ],
+          "correct_index": 1,
+          "explanation": "Burri merr gjysmën kur gruaja s'ka fëmijë; kur ajo ka fëmijë, ai merr një të katërtën (En-Nisa 4:12)."
         }
       ]
     }
