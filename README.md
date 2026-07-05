@@ -31,43 +31,51 @@ Aplikacion edukativ Flutter për jurisprudencën islame (Fikh) në gjuhën shqip
 
 | Moduli | Mësime | Kuize | Evidenca |
 |--------|--------|-------|----------|
-| Hyrje në Fikh | 3 | 9 | 11 |
-| Taharet — Pastërtia | 6 | 35 | 38 |
-| Namazi — Falja | 5 | 31 | 14 |
-| Agjërimi | 4 | 18 | 8 |
-| Zekati | 4 | 12 | 11 |
-| Haxhi dhe Umreja | 4 | 18 | 6 |
-| Muamelati — Tregtia | 4 | 16 | 2 |
-| Hallalli dhe Harami | 4 | 32 | 37 |
-| Nikahu — Martesa | 3 | 12 | 6 |
-| Xhenazja | 4 | 19 | 7 |
-| Betimet dhe Nedhri | 4 | 19 | 5 |
-| Ushqimi dhe Pija | 4 | 18 | 10 |
-| **Gjithsej** | **48** | **239** | **155** |
+| Hyrje në Fikh | 5 | 12 | 12 |
+| Taharet — Pastërtia | 6 | 33 | 18 |
+| Namazi — Falja | 6 | 35 | 20 |
+| Agjërimi | 5 | 18 | 14 |
+| Zekati | 4 | 14 | 9 |
+| Haxhi dhe Umreja | 4 | 17 | 10 |
+| Muamelati — Tregtia | 5 | 19 | 17 |
+| Hallalli dhe Harami | 4 | 23 | 15 |
+| Nikahu — Martesa | 4 | 22 | 26 |
+| Xhenazja | 4 | 15 | 12 |
+| Betimet dhe Nedhri | 4 | 15 | 14 |
+| Ushqimi dhe Pija | 4 | 14 | 15 |
+| E Drejta Penale Islame | 5 | 24 | 31 |
+| **Gjithsej** | **60** | **261** | **213** |
 
 ### Veçoritë kryesore
 
-- **12 module fikhore** me **48 mësime** të ndara sipas niveleve (fillestar, mesatar, avancuar)
-- **239 pyetje kuizi** me shpjegime të detajuara
-- **155 evidenca** nga Kurani dhe hadithet me tekst arab dhe përkthim shqip
+- **13 module fikhore** me **60 mësime** të ndara sipas niveleve (fillestar, mesatar, avancuar)
+- **261 pyetje kuizi** me shpjegime të detajuara
+- **213 evidenca** nga Kurani dhe hadithet me tekst arab dhe përkthim shqip
 - **Krahasim i katër medhhebeve** (Hanefi, Maliki, Shafi'i, Hanbeli) për çdo çështje
+- **Sfida me Kohë** — kuize me kohëmatës: sa më i lartë niveli, aq më pak kohë për pyetje
+- **Sfida Ditore** — 10 pyetje të përziera çdo ditë, me seri ditore (streak)
+- **Vazhdo ku mbete** — kartë në ballinë që të kthen te mësimi i fundit i hapur
+- **Kalim automatik** — buton për mësimin pasardhës dhe për nivelin tjetër pas përfundimit
 - **Llogaritës Zekati** me shumë lloje pasurie dhe nisab
-- **Kuiz i përgjithshëm** me pyetje nga të gjitha modulet
+- **Kuiz i përgjithshëm** dhe **kuiz moduli me 3 nivele**
 - **Kërkim i plotë** nëpër mësime dhe përmbajtje
 - **Shënime/Bookmark** për ruajtjen e mësimeve të preferuara
 - **Personalizim** — vendos emrin ose pseudonimin gjatë onboarding-ut; ndryshohet në çdo kohë nga profili
-- **Dy tema** — e ndriçme (Parchment) dhe e errët (Obsidian)
+- **7 tema** (Parchment, Night, Desert Sands, Azure Mosaic, Andalusian Garden, Midnight Indigo, Ebony Gold) + **temë automatike** sipas orës së ditës
+- **Përshtatje për tableta dhe foldable** — layout responsiv në ekranet e mëdha
 - **100% offline** — nuk kërkon internet
 
 ### Burimet shkencore
 
 Përmbajtja është nxjerrë dhe përshtatur nga vepra të njohura fikhore:
 
-- Dr. Vehbe ez-Zuhejli — *Ligjet e Sheriatit Islam*
+- Dr. Vehbe ez-Zuhejli — *Ligjet e Sheriatit Islam* / *El-Fikhu el-Islami ve Edil'letuhu*
+- Dr. Abdul-Azim el-Bedevi — *El-Vexhiz* (The Concise Presentation of the Fiqh of the Sunnah and the Noble Book)
 - Dr. Jusuf el-Kardavi — *Hallalli dhe Harami në Islam*
 - Muhamed Nasirud-din el-Albani — *Dispozitat e Haxhit dhe Umres*
 - Abedin Musallari — *Haxhi dhe Rregullat e Tij*
 - Sejjid Sabik — *Fikhus-Sunneh*
+- Ibn Kudame — *El-Mugni*
 
 ### Teknologjia
 
@@ -102,7 +110,7 @@ flutter build apk --debug
 ```
 lib/
 ├── core/           # Tema, ngjyra, routing, database, konstante
-├── data/           # 12 skedarë JSON me përmbajtje fikhore
+├── data/           # 13 skedarë JSON me përmbajtje fikhore
 ├── features/       # Home, Modules, Quiz, Search, Bookmarks, Profile, Zakat, Ask Scholar
 └── shared/         # Widget-e të përbashkëta (QuranVerseCard, HadithCard, MadhabComparison)
 ```
@@ -119,42 +127,50 @@ lib/
 
 | Module | Lessons | Quizzes | Evidences |
 |--------|---------|---------|-----------|
-| Introduction to Fiqh | 3 | 9 | 11 |
-| Taharah — Purification | 6 | 35 | 38 |
-| Salah — Prayer | 5 | 31 | 14 |
-| Sawm — Fasting | 4 | 18 | 8 |
-| Zakat — Alms | 4 | 12 | 11 |
-| Hajj & Umrah | 4 | 18 | 6 |
-| Mu'amalat — Trade | 4 | 16 | 2 |
-| Halal & Haram | 4 | 32 | 37 |
-| Nikah — Marriage | 3 | 12 | 6 |
-| Janazah — Funeral | 4 | 19 | 7 |
-| Oaths & Vows | 4 | 19 | 5 |
-| Food & Drink | 4 | 18 | 10 |
-| **Total** | **48** | **239** | **155** |
+| Introduction to Fiqh | 5 | 12 | 12 |
+| Taharah — Purification | 6 | 33 | 18 |
+| Salah — Prayer | 6 | 35 | 20 |
+| Sawm — Fasting | 5 | 18 | 14 |
+| Zakat — Alms | 4 | 14 | 9 |
+| Hajj & Umrah | 4 | 17 | 10 |
+| Mu'amalat — Trade | 5 | 19 | 17 |
+| Halal & Haram | 4 | 23 | 15 |
+| Nikah — Marriage | 4 | 22 | 26 |
+| Janazah — Funeral | 4 | 15 | 12 |
+| Oaths & Vows | 4 | 15 | 14 |
+| Food & Drink | 4 | 14 | 15 |
+| Islamic Criminal Law | 5 | 24 | 31 |
+| **Total** | **60** | **261** | **213** |
 
 ### Key Features
 
-- **12 Fiqh modules** with **48 lessons** organized by level (beginner, intermediate, advanced)
-- **239 quiz questions** with detailed explanations
-- **155 evidences** from the Quran and Hadith with Arabic text and Albanian translation
+- **13 Fiqh modules** with **60 lessons** organized by level (beginner, intermediate, advanced)
+- **261 quiz questions** with detailed explanations
+- **213 evidences** from the Quran and Hadith with Arabic text and Albanian translation
 - **Four-madhab comparison** (Hanafi, Maliki, Shafi'i, Hanbali) for every ruling
+- **Timed Challenge** — quizzes against the clock: the higher the level, the less time per question
+- **Daily Challenge** — 10 mixed-level questions every day, with a daily streak
+- **Continue where you left off** — home card that takes you back to the last opened lesson
+- **Auto progression** — next-lesson button and next-level navigation on completion
 - **Zakat calculator** with multiple asset types and nisab thresholds
-- **General quiz** with questions across all modules
+- **General quiz** and **3-level module quiz**
 - **Full-text search** across lessons and content
 - **Bookmarks** to save favorite lessons
 - **Personalization** — set your name or nickname during onboarding; change it anytime from the profile card
-- **Two themes** — Light (Parchment) and Dark (Obsidian)
+- **7 themes** (Parchment, Night, Desert Sands, Azure Mosaic, Andalusian Garden, Midnight Indigo, Ebony Gold) + **auto theme** by time of day
+- **Tablet & foldable support** — responsive layout on large screens
 - **100% offline** — no internet required
 
 ### Academic Sources
 
 Content is derived and adapted from well-known Fiqh works:
 
-- Dr. Wahbah az-Zuhayli — *Islamic Legislation*
+- Dr. Wahbah az-Zuhayli — *Islamic Legislation* / *al-Fiqh al-Islami wa Adillatuhu*
+- Dr. Abdul-Azeem Badawi — *al-Wajiz* (The Concise Presentation of the Fiqh of the Sunnah and the Noble Book)
 - Dr. Yusuf al-Qaradawi — *The Lawful and the Prohibited in Islam*
 - Muhammad Nasiruddin al-Albani — *Rulings of Hajj and Umrah*
 - Sayyid Sabiq — *Fiqh us-Sunnah*
+- Ibn Qudamah — *al-Mughni*
 
 ### Tech Stack
 
@@ -189,7 +205,7 @@ flutter build apk --debug
 ```
 lib/
 ├── core/           # Themes, colors, routing, database, constants
-├── data/           # 12 JSON files with Fiqh content
+├── data/           # 13 JSON files with Fiqh content
 ├── features/       # Home, Modules, Quiz, Search, Bookmarks, Profile, Zakat, Ask Scholar
 └── shared/         # Reusable widgets (QuranVerseCard, HadithCard, MadhabComparison)
 ```
@@ -206,42 +222,50 @@ lib/
 
 | الوحدة | الدروس | الاختبارات | الأدلة |
 |--------|--------|-----------|--------|
-| مقدمة في الفقه | ٣ | ٩ | ١١ |
-| الطهارة | ٦ | ٣٥ | ٣٨ |
-| الصلاة | ٥ | ٣١ | ١٤ |
-| الصيام | ٤ | ١٨ | ٨ |
-| الزكاة | ٤ | ١٢ | ١١ |
-| الحج والعمرة | ٤ | ١٨ | ٦ |
-| المعاملات — التجارة | ٤ | ١٦ | ٢ |
-| الحلال والحرام | ٤ | ٣٢ | ٣٧ |
-| النكاح — الزواج | ٣ | ١٢ | ٦ |
-| الجنازة | ٤ | ١٩ | ٧ |
-| الأيمان والنذور | ٤ | ١٩ | ٥ |
-| الأطعمة والأشربة | ٤ | ١٨ | ١٠ |
-| **المجموع** | **٤٨** | **٢٣٩** | **١٥٥** |
+| مقدمة في الفقه | ٥ | ١٢ | ١٢ |
+| الطهارة | ٦ | ٣٣ | ١٨ |
+| الصلاة | ٦ | ٣٥ | ٢٠ |
+| الصيام | ٥ | ١٨ | ١٤ |
+| الزكاة | ٤ | ١٤ | ٩ |
+| الحج والعمرة | ٤ | ١٧ | ١٠ |
+| المعاملات — التجارة | ٥ | ١٩ | ١٧ |
+| الحلال والحرام | ٤ | ٢٣ | ١٥ |
+| النكاح — الزواج | ٤ | ٢٢ | ٢٦ |
+| الجنازة | ٤ | ١٥ | ١٢ |
+| الأيمان والنذور | ٤ | ١٥ | ١٤ |
+| الأطعمة والأشربة | ٤ | ١٤ | ١٥ |
+| العقوبات — الفقه الجنائي | ٥ | ٢٤ | ٣١ |
+| **المجموع** | **٦٠** | **٢٦١** | **٢١٣** |
 
 ### المميزات الرئيسية
 
-- **١٢ وحدة فقهية** بـ **٤٨ درساً** مرتّبة حسب المستوى (مبتدئ، متوسط، متقدم)
-- **٢٣٩ سؤال اختبار** مع شروحات مفصّلة
-- **١٥٥ دليل شرعي** من القرآن والأحاديث بالعربية مع ترجمة ألبانية
+- **١٣ وحدة فقهية** بـ **٦٠ درساً** مرتّبة حسب المستوى (مبتدئ، متوسط، متقدم)
+- **٢٦١ سؤال اختبار** مع شروحات مفصّلة
+- **٢١٣ دليل شرعي** من القرآن والأحاديث بالعربية مع ترجمة ألبانية
 - **مقارنة المذاهب الأربعة** (الحنفي، المالكي، الشافعي، الحنبلي) في كل مسألة
+- **تحدي الوقت** — اختبارات بعدّاد تنازلي: كلما ارتفع المستوى قلّ الوقت لكل سؤال
+- **التحدي اليومي** — ١٠ أسئلة منوّعة كل يوم مع سلسلة أيام متتالية
+- **تابع من حيث توقفت** — بطاقة في الرئيسية تعيدك إلى آخر درس فتحته
+- **تنقّل تلقائي** — زر للدرس التالي وللمستوى التالي عند الإتمام
 - **حاسبة الزكاة** بأنواع أموال متعددة وحساب النصاب
-- **اختبار شامل** بأسئلة من جميع الوحدات
+- **اختبار شامل** واختبار وحدة **بثلاثة مستويات**
 - **بحث كامل** في الدروس والمحتوى
 - **حفظ الملاحظات** لتخزين الدروس المفضلة
 - **التخصيص** — أدخل اسمك أو لقبك عند الإعداد الأوّلي؛ يمكن تغييره في أي وقت من بطاقة الملف الشخصي
-- **سمتان** — فاتحة (رق) وداكنة (سبج)
+- **٧ سمات** + **سمة تلقائية** حسب وقت اليوم
+- **دعم الأجهزة اللوحية والقابلة للطي** — تصميم متجاوب للشاشات الكبيرة
 - **يعمل بدون إنترنت بالكامل**
 
 ### المصادر العلمية
 
 استُخرج المحتوى وأُعدّ من مؤلفات فقهية معروفة:
 
-- د. وهبة الزحيلي — *التشريع الإسلامي*
+- د. وهبة الزحيلي — *الفقه الإسلامي وأدلته*
+- د. عبد العظيم بدوي — *الوجيز في فقه السنة والكتاب العزيز*
 - د. يوسف القرضاوي — *الحلال والحرام في الإسلام*
 - محمد ناصر الدين الألباني — *أحكام الحج والعمرة*
 - سيد سابق — *فقه السنة*
+- ابن قدامة — *المغني*
 
 ### التقنيات المستخدمة
 
@@ -276,7 +300,7 @@ flutter build apk --debug
 ```
 lib/
 ├── core/           # السمات، الألوان، التوجيه، قاعدة البيانات، الثوابت
-├── data/           # ١٢ ملف JSON بمحتوى فقهي
+├── data/           # ١٣ ملف JSON بمحتوى فقهي
 ├── features/       # الرئيسية، الوحدات، الاختبار، البحث، المحفوظات، الملف الشخصي، الزكاة
 └── shared/         # عناصر مشتركة (بطاقة آية، بطاقة حديث، مقارنة مذاهب)
 ```
@@ -293,32 +317,38 @@ lib/
 
 | Modulo | Lezioni | Quiz | Prove |
 |--------|---------|------|-------|
-| Introduzione al Fiqh | 3 | 9 | 11 |
-| Taharah — Purificazione | 6 | 35 | 38 |
-| Salah — Preghiera | 5 | 31 | 14 |
-| Sawm — Digiuno | 4 | 18 | 8 |
-| Zakat — Elemosina | 4 | 12 | 11 |
-| Hajj & Umrah | 4 | 18 | 6 |
-| Mu'amalat — Commercio | 4 | 16 | 2 |
-| Halal & Haram | 4 | 32 | 37 |
-| Nikah — Matrimonio | 3 | 12 | 6 |
-| Janazah — Funerale | 4 | 19 | 7 |
-| Giuramenti e Voti | 4 | 19 | 5 |
-| Cibo & Bevande | 4 | 18 | 10 |
-| **Totale** | **48** | **239** | **155** |
+| Introduzione al Fiqh | 5 | 12 | 12 |
+| Taharah — Purificazione | 6 | 33 | 18 |
+| Salah — Preghiera | 6 | 35 | 20 |
+| Sawm — Digiuno | 5 | 18 | 14 |
+| Zakat — Elemosina | 4 | 14 | 9 |
+| Hajj & Umrah | 4 | 17 | 10 |
+| Mu'amalat — Commercio | 5 | 19 | 17 |
+| Halal & Haram | 4 | 23 | 15 |
+| Nikah — Matrimonio | 4 | 22 | 26 |
+| Janazah — Funerale | 4 | 15 | 12 |
+| Giuramenti e Voti | 4 | 15 | 14 |
+| Cibo & Bevande | 4 | 14 | 15 |
+| Diritto Penale Islamico | 5 | 24 | 31 |
+| **Totale** | **60** | **261** | **213** |
 
 ### Caratteristiche principali
 
-- **12 moduli Fiqh** con **48 lezioni** organizzate per livello (principiante, intermedio, avanzato)
-- **239 domande quiz** con spiegazioni dettagliate
-- **155 prove** dal Corano e Hadith con testo arabo e traduzione albanese
+- **13 moduli Fiqh** con **60 lezioni** organizzate per livello (principiante, intermedio, avanzato)
+- **261 domande quiz** con spiegazioni dettagliate
+- **213 prove** dal Corano e Hadith con testo arabo e traduzione albanese
 - **Confronto tra quattro madhab** (Hanafi, Maliki, Shafi'i, Hanbali) per ogni sentenza
+- **Sfida a tempo** — quiz con timer: più alto il livello, meno tempo per domanda
+- **Sfida giornaliera** — 10 domande miste ogni giorno, con serie giornaliera (streak)
+- **Riprendi da dove eri** — scheda nella home che riporta all'ultima lezione aperta
+- **Progressione automatica** — pulsante per la lezione successiva e per il livello successivo
 - **Calcolatore Zakat** con più tipologie di patrimonio e soglie di nisab
-- **Quiz generale** con domande da tutti i moduli
+- **Quiz generale** e **quiz del modulo a 3 livelli**
 - **Ricerca testuale completa** nelle lezioni e nei contenuti
 - **Segnalibri** per salvare le lezioni preferite
 - **Personalizzazione** — imposta il nome o soprannome durante l'onboarding; modificabile in qualsiasi momento dal profilo
-- **Due temi** — Chiaro (Pergamena) e Scuro (Ossidiana)
+- **7 temi** + **tema automatico** in base all'ora del giorno
+- **Supporto tablet e foldable** — layout responsivo sugli schermi grandi
 - **100% offline** — nessuna connessione richiesta
 
 ---
@@ -333,32 +363,38 @@ lib/
 
 | Modül | Dersler | Sınav Soruları | Deliller |
 |-------|---------|----------------|---------|
-| Fıkha Giriş | 3 | 9 | 11 |
-| Taharet — Temizlik | 6 | 35 | 38 |
-| Namaz — İbadet | 5 | 31 | 14 |
-| Oruç | 4 | 18 | 8 |
-| Zekat | 4 | 12 | 11 |
-| Hac & Umre | 4 | 18 | 6 |
-| Muamelat — Ticaret | 4 | 16 | 2 |
-| Helal & Haram | 4 | 32 | 37 |
-| Nikah — Evlilik | 3 | 12 | 6 |
-| Cenaze | 4 | 19 | 7 |
-| Yeminler ve Adaklar | 4 | 19 | 5 |
-| Yiyecek & İçecek | 4 | 18 | 10 |
-| **Toplam** | **48** | **239** | **155** |
+| Fıkha Giriş | 5 | 12 | 12 |
+| Taharet — Temizlik | 6 | 33 | 18 |
+| Namaz — İbadet | 6 | 35 | 20 |
+| Oruç | 5 | 18 | 14 |
+| Zekat | 4 | 14 | 9 |
+| Hac & Umre | 4 | 17 | 10 |
+| Muamelat — Ticaret | 5 | 19 | 17 |
+| Helal & Haram | 4 | 23 | 15 |
+| Nikah — Evlilik | 4 | 22 | 26 |
+| Cenaze | 4 | 15 | 12 |
+| Yeminler ve Adaklar | 4 | 15 | 14 |
+| Yiyecek & İçecek | 4 | 14 | 15 |
+| İslam Ceza Hukuku | 5 | 24 | 31 |
+| **Toplam** | **60** | **261** | **213** |
 
 ### Temel özellikler
 
-- **12 fıkıh modülü** ile **48 ders** (başlangıç, orta, ileri seviye)
-- **239 sınav sorusu** ayrıntılı açıklamalarla
-- **155 delil** Kuran ve hadislerden, Arapça metin ve Arnavutça çeviriyle
+- **13 fıkıh modülü** ile **60 ders** (başlangıç, orta, ileri seviye)
+- **261 sınav sorusu** ayrıntılı açıklamalarla
+- **213 delil** Kuran ve hadislerden, Arapça metin ve Arnavutça çeviriyle
 - **Dört mezhep karşılaştırması** (Hanefi, Maliki, Şafii, Hanbeli) her hüküm için
+- **Zamana Karşı Meydan Okuma** — süre sayaçlı sınavlar: seviye yükseldikçe soru başına süre azalır
+- **Günlük Meydan Okuma** — her gün 10 karışık soru, günlük seri (streak) ile
+- **Kaldığın yerden devam et** — ana ekrandaki kart son açılan derse götürür
+- **Otomatik ilerleme** — sonraki ders ve sonraki seviye düğmeleri
 - **Zekat hesaplayıcı** çoklu varlık türleri ve nisap eşikleri ile
-- **Genel sınav** tüm modüllerden sorularla
+- **Genel sınav** ve **3 seviyeli modül sınavı**
 - **Tam metin arama** dersler ve içerikler arasında
 - **Yer imleri** favori dersleri kaydetmek için
 - **Kişiselleştirme** — kayıt sırasında isim veya takma ad belirle; profil kartından istediğin zaman değiştir
-- **İki tema** — Açık (Parşömen) ve Koyu (Obsidyen)
+- **7 tema** + günün saatine göre **otomatik tema**
+- **Tablet ve katlanabilir desteği** — büyük ekranlarda duyarlı tasarım
 - **%100 çevrimdışı** — internet bağlantısı gerekmez
 
 ---
@@ -373,32 +409,38 @@ lib/
 
 | Modul | Lekcije | Pitanja | Dokazi |
 |-------|---------|---------|--------|
-| Uvod u Fikh | 3 | 9 | 11 |
-| Taharet — Čistoća | 6 | 35 | 38 |
-| Salat — Namaz | 5 | 31 | 14 |
-| Post — Ramazan | 4 | 18 | 8 |
-| Zekat | 4 | 12 | 11 |
-| Hadž & Umra | 4 | 18 | 6 |
-| Muamelat — Trgovina | 4 | 16 | 2 |
-| Halal & Haram | 4 | 32 | 37 |
-| Nikah — Brak | 3 | 12 | 6 |
-| Dženaza | 4 | 19 | 7 |
-| Zakletve i Zavjeti | 4 | 19 | 5 |
-| Hrana & Piće | 4 | 18 | 10 |
-| **Ukupno** | **48** | **239** | **155** |
+| Uvod u Fikh | 5 | 12 | 12 |
+| Taharet — Čistoća | 6 | 33 | 18 |
+| Salat — Namaz | 6 | 35 | 20 |
+| Post — Ramazan | 5 | 18 | 14 |
+| Zekat | 4 | 14 | 9 |
+| Hadž & Umra | 4 | 17 | 10 |
+| Muamelat — Trgovina | 5 | 19 | 17 |
+| Halal & Haram | 4 | 23 | 15 |
+| Nikah — Brak | 4 | 22 | 26 |
+| Dženaza | 4 | 15 | 12 |
+| Zakletve i Zavjeti | 4 | 15 | 14 |
+| Hrana & Piće | 4 | 14 | 15 |
+| Islamsko krivično pravo | 5 | 24 | 31 |
+| **Ukupno** | **60** | **261** | **213** |
 
 ### Ključne funkcionalnosti
 
-- **12 fikhskih modula** sa **48 lekcija** po nivoima (početnik, srednji, napredni)
-- **239 kviz pitanja** s detaljnim objašnjenjima
-- **155 dokaza** iz Kur'ana i hadisa s arapskim tekstom i albanskim prijevodom
+- **13 fikhskih modula** sa **60 lekcija** po nivoima (početnik, srednji, napredni)
+- **261 kviz pitanja** s detaljnim objašnjenjima
+- **213 dokaza** iz Kur'ana i hadisa s arapskim tekstom i albanskim prijevodom
 - **Usporedba četiri mezheba** (Hanefi, Maliki, Šafii, Hanbeli) za svako pitanje
+- **Izazov na vrijeme** — kvizovi sa tajmerom: što je viši nivo, manje vremena po pitanju
+- **Dnevni izazov** — 10 miješanih pitanja svaki dan, s dnevnim nizom (streak)
+- **Nastavi gdje si stao** — kartica na početnoj vraća na zadnju otvorenu lekciju
+- **Automatski napredak** — dugme za sljedeću lekciju i sljedeći nivo
 - **Kalkulator zekata** s više vrsta imovine i nisab pragovima
-- **Opći kviz** s pitanjima iz svih modula
+- **Opći kviz** i **kviz modula na 3 nivoa**
 - **Pretraga cijelog teksta** kroz lekcije i sadržaj
 - **Oznake** za čuvanje omiljenih lekcija
 - **Personalizacija** — unesi ime ili nadimak tokom onboardinga; promjeni u bilo kom trenutku iz profila
-- **Dvije teme** — Svjetla (Pergament) i Tamna (Opsidijan)
+- **7 tema** + **automatska tema** prema dobu dana
+- **Podrška za tablete i preklopne uređaje** — responzivan raspored na velikim ekranima
 - **100% offline** — nije potrebna internet veza
 
 ---
