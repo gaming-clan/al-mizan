@@ -1,0 +1,80 @@
+{
+  "@@locale": "sq",
+
+  "appTitle": "Al Mizan - Mëso Fikhun",
+
+  "navHome": "Ballina",
+  "navModules": "Module",
+  "navSearch": "Kërko",
+  "navBookmarks": "Shënime",
+  "navProfile": "Profili",
+
+  "homeGreeting": "Es-selamu alejkum, {name}!",
+  "@homeGreeting": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "homeGreetingDefault": "Nxënës",
+  "dailyMeditation": "MEDITIMI I DITËS",
+  "continueStudy": "VAZHDIMI I STUDIMIT",
+  "quickTools": "VEGLA TË SHPEJTA",
+  "continueWhereYouLeft": "VAZHDO KU MBETE",
+  "lessonsCount": "{count} mësime",
+  "@lessonsCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+
+  "generalQuiz": "Kuiz i Përgjithshëm",
+  "generalQuizSubtitle": "Testo njohuritë nga të gjitha temat",
+  "timedChallenge": "Sfida me Kohë",
+  "timedChallengeSubtitle": "Kuiz me kohë të kufizuar — sa më i lartë niveli, aq më pak kohë",
+  "dailyChallenge": "Sfida Ditore",
+  "dailyChallengeSubtitle": "10 pyetje të përziera çdo ditë — ruaj serinë!",
+  "zakatCalculator": "Llogaritës Zekati",
+  "zakatCalculatorSubtitle": "Llogarit detyrimet e zekatit",
+  "askScholar": "Pyet Dijetarin",
+  "askScholarSubtitle": "Pyetje dhe përgjigje rreth fesë",
+
+  "levelBeginner": "Fillestar",
+  "levelIntermediate": "Mesatar",
+  "levelAdvanced": "Avancuar",
+
+  "settings": "Cilësime",
+  "settingsTheme": "TEMA",
+  "settingsLanguage": "GJUHA",
+  "aboutApp": "Rreth App-it",
+
+  "startQuiz": "Fillo Kuizin",
+  "markCompleted": "Shëno si të Përfunduar",
+  "completed": "I Përfunduar",
+  "nextLesson": "Mësimi Pasardhës",
+  "references": "Referencat",
+  "lessonMarkedCompleted": "Mësimi u shënua si i përfunduar!",
+  "bookmarkAdded": "U shtua te shënimet!",
+
+  "questionOf": "Pyetja {current}/{total}",
+  "@questionOf": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "nextQuestion": "Pyetja Tjetër",
+  "seeResult": "Shiko Rezultatin",
+  "result": "Rezultati",
+  "goBack": "Kthehu",
+  "tryAgain": "Provo Përsëri",
+  "correctCount": "Sakte",
+  "wrongCount": "Gabim",
+  "timeUp": "Koha mbaroi!",
+  "noAnswerTimeUp": "Pa përgjigje (koha mbaroi)",
+
+  "moduleQuiz": "Kuiz i Modulit (3 Nivele)",
+  "lockedLevel": "Nivel i kyçur",
+
+  "error": "Gabim",
+  "loadingError": "Gabim gjatë ngarkimit"
+}

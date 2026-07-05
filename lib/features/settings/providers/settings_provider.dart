@@ -170,6 +170,49 @@ final effectiveThemeProvider = Provider<AppThemeType>((ref) {
 });
 
 // ══════════════════════════════════════════
+//  LOCALE PROVIDER
+// ══════════════════════════════════════════
+
+/// Supported app languages. Albanian is the default.
+const supportedAppLocales = [Locale('sq'), Locale('en')];
+
+String localeDisplayName(Locale locale) {
+  switch (locale.languageCode) {
+    case 'sq':
+      return 'Shqip';
+    case 'en':
+      return 'English';
+    default:
+      return locale.languageCode;
+  }
+}
+
+final localeProvider = StateNotifierProvider<LocaleNotifier, Locale>((ref) {
+  return LocaleNotifier();
+});
+
+class LocaleNotifier extends StateNotifier<Locale> {
+  LocaleNotifier() : super(const Locale('sq')) {
+    _load();
+  }
+
+  Future<void> _load() async {
+    final prefs = await SharedPreferences.getInstance();
+    final code = prefs.getString('app_locale');
+    if (code != null &&
+        supportedAppLocales.any((l) => l.languageCode == code)) {
+      state = Locale(code);
+    }
+  }
+
+  Future<void> setLocale(Locale locale) async {
+    state = locale;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString('app_locale', locale.languageCode);
+  }
+}
+
+// ══════════════════════════════════════════
 //  AVATAR PROVIDER
 // ══════════════════════════════════════════
 

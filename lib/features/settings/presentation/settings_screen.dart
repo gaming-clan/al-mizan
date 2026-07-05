@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/constants/app_constants.dart';
 import '../../../core/theme/app_colors.dart';
+import '../../../l10n/generated/app_localizations.dart';
 import '../providers/settings_provider.dart';
 
 class SettingsScreen extends ConsumerWidget {
@@ -12,15 +13,49 @@ class SettingsScreen extends ConsumerWidget {
     final theme = Theme.of(context);
     final cs = theme.colorScheme;
     final currentTheme = ref.watch(themeProvider);
+    final currentLocale = ref.watch(localeProvider);
+    final l10n = AppLocalizations.of(context);
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Cilësime')),
+      appBar: AppBar(title: Text(l10n.settings)),
       body: ListView(
         padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
         children: [
+          // ── Language picker ──
+          Text(
+            l10n.settingsLanguage,
+            style: theme.textTheme.labelMedium?.copyWith(letterSpacing: 1.2),
+          ),
+          const SizedBox(height: 12),
+          Card(
+            margin: EdgeInsets.zero,
+            child: RadioGroup<String>(
+              groupValue: currentLocale.languageCode,
+              onChanged: (code) {
+                if (code != null) {
+                  ref.read(localeProvider.notifier).setLocale(Locale(code));
+                }
+              },
+              child: Column(
+                children: [
+                  for (final locale in supportedAppLocales)
+                    RadioListTile<String>(
+                      value: locale.languageCode,
+                      title: Text(localeDisplayName(locale)),
+                      secondary: Text(
+                        locale.languageCode == 'sq' ? '🇦🇱' : '🇬🇧',
+                        style: const TextStyle(fontSize: 22),
+                      ),
+                    ),
+                ],
+              ),
+            ),
+          ),
+          const SizedBox(height: 24),
+
           // ── Theme picker ──
           Text(
-            'TEMA',
+            l10n.settingsTheme,
             style: theme.textTheme.labelMedium?.copyWith(letterSpacing: 1.2),
           ),
           const SizedBox(height: 12),
@@ -95,7 +130,7 @@ class SettingsScreen extends ConsumerWidget {
             child: ListTile(
               leading: const Icon(Icons.info_outline_rounded,
                   color: AppColors.info),
-              title: const Text('Rreth App-it'),
+              title: Text(l10n.aboutApp),
               subtitle: const Text('${AppConstants.appName} v1.0.0'),
               onTap: () {
                 showAboutDialog(

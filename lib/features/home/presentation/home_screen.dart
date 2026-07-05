@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../core/constants/app_constants.dart';
 import '../../../core/constants/daily_quotes.dart';
+import '../../../l10n/generated/app_localizations.dart';
 import '../../settings/providers/settings_provider.dart';
 import '../providers/home_provider.dart';
 import '../providers/last_lesson_provider.dart';
@@ -22,6 +23,7 @@ class HomeScreen extends ConsumerWidget {
     final cs = theme.colorScheme;
     final isDark = theme.brightness == Brightness.dark;
 
+    final l10n = AppLocalizations.of(context);
     final width = MediaQuery.sizeOf(context).width;
     // Large screens = tablets & foldables (landscape). Phones (<600) stay as-is.
     final isLargeScreen = width >= 600;
@@ -47,7 +49,9 @@ class HomeScreen extends ConsumerWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Es-selamu alejkum, ${userName.isEmpty ? 'Nxënës' : userName}!',
+                            l10n.homeGreeting(userName.isEmpty
+                                ? l10n.homeGreetingDefault
+                                : userName),
                             style: theme.textTheme.bodyMedium?.copyWith(
                               color: cs.onSurfaceVariant,
                             ),
@@ -122,7 +126,7 @@ class HomeScreen extends ConsumerWidget {
                               size: 16),
                           const SizedBox(width: 6),
                           Text(
-                            'MEDITIMI I DITËS',
+                            l10n.dailyMeditation,
                             style: theme.textTheme.labelMedium?.copyWith(
                               color: isDark ? cs.secondary : cs.onPrimaryContainer,
                               letterSpacing: 1.2,
@@ -190,7 +194,7 @@ class HomeScreen extends ConsumerWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    'VAZHDO KU MBETE',
+                                    l10n.continueWhereYouLeft,
                                     style: theme.textTheme.labelSmall?.copyWith(
                                       color: cs.onSurfaceVariant,
                                       letterSpacing: 1.1,
@@ -229,7 +233,7 @@ class HomeScreen extends ConsumerWidget {
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(20, 16, 20, 8),
                 child: Text(
-                  'VAZHDIMI I STUDIMIT',
+                  l10n.continueStudy,
                   style: theme.textTheme.labelMedium?.copyWith(
                     letterSpacing: 1.2,
                   ),
@@ -270,7 +274,7 @@ class HomeScreen extends ConsumerWidget {
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(20, 20, 20, 8),
                 child: Text(
-                  'VEGLA TË SHPEJTA',
+                  l10n.quickTools,
                   style: theme.textTheme.labelMedium?.copyWith(
                     letterSpacing: 1.2,
                   ),
@@ -285,36 +289,36 @@ class HomeScreen extends ConsumerWidget {
                   children: [
                     _QuickActionTile(
                       icon: Icons.quiz_rounded,
-                      title: 'Kuiz i Përgjithshëm',
-                      subtitle: 'Testo njohuritë nga të gjitha temat',
+                      title: l10n.generalQuiz,
+                      subtitle: l10n.generalQuizSubtitle,
                       onTap: () => context.push('/general-quiz'),
                     ),
                     const SizedBox(height: 8),
                     _QuickActionTile(
                       icon: Icons.timer_rounded,
-                      title: 'Sfida me Kohë',
-                      subtitle: 'Kuiz me kohë të kufizuar — sa më i lartë niveli, aq më pak kohë',
+                      title: l10n.timedChallenge,
+                      subtitle: l10n.timedChallengeSubtitle,
                       onTap: () => context.push('/timed-challenge'),
                     ),
                     const SizedBox(height: 8),
                     _QuickActionTile(
                       icon: Icons.today_rounded,
-                      title: 'Sfida Ditore',
-                      subtitle: '10 pyetje të përziera çdo ditë — ruaj serinë!',
+                      title: l10n.dailyChallenge,
+                      subtitle: l10n.dailyChallengeSubtitle,
                       onTap: () => context.push('/daily-challenge'),
                     ),
                     const SizedBox(height: 8),
                     _QuickActionTile(
                       icon: Icons.calculate_rounded,
-                      title: 'Llogaritës Zekati',
-                      subtitle: 'Llogarit detyrimet e zekatit',
+                      title: l10n.zakatCalculator,
+                      subtitle: l10n.zakatCalculatorSubtitle,
                       onTap: () => context.push('/zakat'),
                     ),
                     const SizedBox(height: 8),
                     _QuickActionTile(
                       icon: Icons.question_answer_rounded,
-                      title: 'Pyet Dijetarin',
-                      subtitle: 'Pyetje dhe përgjigje rreth fesë',
+                      title: l10n.askScholar,
+                      subtitle: l10n.askScholarSubtitle,
                       onTap: () => context.push('/ask'),
                     ),
                   ],
@@ -414,7 +418,7 @@ class _ModuleGridCard extends StatelessWidget {
               ),
               SizedBox(height: large ? 6 : 4),
               Text(
-                '${module.lessons.length} mësime',
+                AppLocalizations.of(context).lessonsCount(module.lessons.length),
                 style: theme.textTheme.bodySmall,
               ),
             ],
