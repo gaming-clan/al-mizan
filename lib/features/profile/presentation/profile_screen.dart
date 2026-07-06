@@ -187,13 +187,17 @@ void _showThemePicker(BuildContext context, WidgetRef ref) {
   final current = ref.read(themeProvider);
   showModalBottomSheet(
     context: context,
+    isScrollControlled: true,
     shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
     ),
     builder: (ctx) {
       final theme = Theme.of(ctx);
       final cs = theme.colorScheme;
-      return Padding(
+      final maxHeight = MediaQuery.sizeOf(ctx).height * 0.75;
+      return ConstrainedBox(
+        constraints: BoxConstraints(maxHeight: maxHeight),
+        child: SingleChildScrollView(
         padding: const EdgeInsets.fromLTRB(24, 20, 24, 32),
         child: Column(
           mainAxisSize: MainAxisSize.min,
@@ -219,7 +223,7 @@ void _showThemePicker(BuildContext context, WidgetRef ref) {
               crossAxisCount: 4,
               crossAxisSpacing: 10,
               mainAxisSpacing: 10,
-              childAspectRatio: 0.78,
+              childAspectRatio: 0.62,
               children: AppThemeType.values.map((t) {
                 final isSelected = t == current;
                 return GestureDetector(
@@ -284,6 +288,7 @@ void _showThemePicker(BuildContext context, WidgetRef ref) {
               }).toList(),
             ),
           ],
+        ),
         ),
       );
     },

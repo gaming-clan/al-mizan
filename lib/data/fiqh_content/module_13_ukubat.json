@@ -240,13 +240,21 @@
           }
         },
         {
-          "heading": "Kusaria (Hiraba) dhe pendimi",
-          "content_sq": "Hiraba është sulmi i armatosur ndaj njerëzve në rrugë (grabitje me dhunë, terrorizimi i shoqërisë) — krimi më i rëndë kundër sigurisë publike, i quajtur në Kuran 'luftë kundër Allahut dhe të Dërguarit'. Dënimet shkallëzohen sipas rëndesës së krimit (vrasje, grabitje, vetëm frikësim). Por Kurani menjëherë pas dënimit shton: kush pendohet PARA se të kapet, i falet dënimi hudud (mbeten vetëm të drejtat e njerëzve si kthimi i pasurisë). Kjo derë e hapur pendimi tregon se qëllimi është ndalja e krimit, jo hakmarrja.",
+          "heading": "Kusaria (Hiraba) dhe Ngatërresat në Tokë (Fesad fil-Ard)",
+          "content_sq": "Hiraba është sulmi i armatosur ndaj njerëzve në rrugë dhe çdo veprim që mbjell terror e shkatërrim në shoqëri — Kurani e quan 'luftë kundër Allahut dhe të Dërguarit' dhe 'ngatërresa në tokë' (فساد في الأرض). Ajeti 33 i Sures El-Maide i cakton masat ndëshkimore, të cilat sipas dijetarëve shkallëzohen sipas rëndesës së krimit: 1) VRASJA — për atë që vrau; 2) GOZHDIMI — për atë që vrau dhe grabiti; 3) PRERJA E DORËS DHE KËMBËS SË ANËVE TË KUNDËRTA — për atë që vetëm grabiti; 4) DËBIMI NGA VENDI — për atë që vetëm frikësoi. Menjëherë pas dënimit, Kurani vendos RREGULLIN E PËRGJITHSHËM TË PENDIMIT (ajeti 34): kush pendohet PARA se të kapet, i falet dënimi hudud — mbeten vetëm të drejtat e njerëzve (kthimi i pasurisë, dëmshpërblimi). Kjo derë e hapur tregon se qëllimi është ndalja e krimit dhe përmirësimi i kriminelit, jo hakmarrja.",
           "evidences": [
             {
               "type": "quran",
+              "arabic": "إِنَّمَا جَزَاءُ الَّذِينَ يُحَارِبُونَ اللَّهَ وَرَسُولَهُ وَيَسْعَوْنَ فِي الْأَرْضِ فَسَادًا أَن يُقَتَّلُوا أَوْ يُصَلَّبُوا أَوْ تُقَطَّعَ أَيْدِيهِمْ وَأَرْجُلُهُم مِّنْ خِلَافٍ أَوْ يُنفَوْا مِنَ الْأَرْضِ ۚ ذَٰلِكَ لَهُمْ خِزْيٌ فِي الدُّنْيَا ۖ وَلَهُمْ فِي الْآخِرَةِ عَذَابٌ عَظِيمٌ",
+              "translation_sq": "Dënimi i atyre që luftojnë (kundërshtojnë) All-llahun dhe të dërguarin e Tij dhe bëjnë shkatërrime në tokë, nuk është tjetër vetëm se të mbyten ose të gozhdohen, ose t'u priten duart dhe këmbët e tyre të anëve të kundërta, ose të dëbohen nga vendi. Kjo (masë ndëshkuese) është poshtërim për ta në Dunja, dhe në botën tjetër ata do të kenë dënim të madh.",
+              "surah": "El-Maide",
+              "surah_number": 5,
+              "ayah": 33
+            },
+            {
+              "type": "quran",
               "arabic": "إِلَّا الَّذِينَ تَابُوا مِن قَبْلِ أَن تَقْدِرُوا عَلَيْهِمْ ۖ فَاعْلَمُوا أَنَّ اللَّهَ غَفُورٌ رَّحِيمٌ",
-              "translation_sq": "Përveç atyre që pendohen para se t'i kapni. Dijeni se Allahu është Falës i madh, Mëshirues.",
+              "translation_sq": "Përveç atyre që janë penduar para se t'i kapni. E, dijeni pra se All-llahu bën falje të madhe, është mëshirues.",
               "surah": "El-Maide",
               "surah_number": 5,
               "ayah": 34
