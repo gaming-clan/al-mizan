@@ -65,6 +65,12 @@ class AppDatabase extends _$AppDatabase {
     );
   }
 
+  Future<void> unmarkLessonCompleted(String lessonId) {
+    return (delete(completedLessons)
+          ..where((t) => t.lessonId.equals(lessonId)))
+        .go();
+  }
+
   Future<bool> isLessonCompleted(String lessonId) async {
     final query = select(completedLessons)
       ..where((t) => t.lessonId.equals(lessonId));

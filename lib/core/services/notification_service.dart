@@ -43,12 +43,37 @@ class NotificationService {
     _initialized = true;
   }
 
-  /// Asks for the POST_NOTIFICATIONS runtime permission (Android 13+).
+  /// Asks for the POST_NOTIFICATIONS runtime permission (Android 13+)
+  /// and the exact-alarm permission (Android 12+).
   static Future<bool> requestPermission() async {
     final android = _plugin.resolvePlatformSpecificImplementation<
         AndroidFlutterLocalNotificationsPlugin>();
     final granted = await android?.requestNotificationsPermission();
+    try {
+      await android?.requestExactAlarmsPermission();
+    } catch (_) {}
     return granted ?? true;
+  }
+
+  /// Shows an immediate notification (used to confirm settings changes).
+  static Future<void> showInstant(String title, String body) async {
+    await init();
+    await _plugin.show(
+      99,
+      title,
+      body,
+      NotificationDetails(
+        android: AndroidNotificationDetails(
+          'daily_quote',
+          'Thënia e Ditës',
+          channelDescription:
+              'Njoftim ditor me thënie të dijetarëve të Islamit',
+          importance: Importance.defaultImportance,
+          priority: Priority.defaultPriority,
+          styleInformation: BigTextStyleInformation(body),
+        ),
+      ),
+    );
   }
 
   /// Reads the saved settings and (re)schedules accordingly.
@@ -66,6 +91,11 @@ class NotificationService {
   }
 
   /// Schedules the next [_daysAhead] daily quote notifications.
+  ///
+  /// The target instants are computed with Dart's device-local [DateTime]
+  /// (whose epoch is always correct for the device clock) and then converted
+  /// to [tz.TZDateTime] preserving the same instant — so the schedule is
+  /// correct even if the tz-database lookup of the local zone failed.
   static Future<void> scheduleDaily({
     required int hour,
     required int minute,
@@ -73,38 +103,49 @@ class NotificationService {
     await init();
     await cancelAll();
 
-    final now = tz.TZDateTime.now(tz.local);
-    var first =
-        tz.TZDateTime(tz.local, now.year, now.month, now.day, hour, minute);
+    final now = DateTime.now();
+    var first = DateTime(now.year, now.month, now.day, hour, minute);
     if (!first.isAfter(now)) {
       first = first.add(const Duration(days: 1));
     }
 
     for (int i = 0; i < _daysAhead; i++) {
-      final when = first.add(Duration(days: i));
-      final quote = DailyQuotes.forDate(when);
+      final localWhen = first.add(Duration(days: i));
+      final when = tz.TZDateTime.from(localWhen, tz.local);
+      final quote = DailyQuotes.forDate(localWhen);
       final body = '"${quote.text}" — ${quote.author}';
+      final details = NotificationDetails(
+        android: AndroidNotificationDetails(
+          'daily_quote',
+          'Thënia e Ditës',
+          channelDescription:
+              'Njoftim ditor me thënie të dijetarëve të Islamit',
+          importance: Importance.defaultImportance,
+          priority: Priority.defaultPriority,
+          styleInformation: BigTextStyleInformation(body),
+        ),
+      );
       try {
         await _plugin.zonedSchedule(
           _baseId + i,
           'Thënia e Ditës ⚖️',
           body,
           when,
-          NotificationDetails(
-            android: AndroidNotificationDetails(
-              'daily_quote',
-              'Thënia e Ditës',
-              channelDescription:
-                  'Njoftim ditor me thënie të dijetarëve të Islamit',
-              importance: Importance.defaultImportance,
-              priority: Priority.defaultPriority,
-              styleInformation: BigTextStyleInformation(body),
-            ),
-          ),
-          androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
+          details,
+          androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
         );
       } catch (_) {
-        // Ignore scheduling failures for individual days.
+        // Exact alarms not permitted — fall back to inexact.
+        try {
+          await _plugin.zonedSchedule(
+            _baseId + i,
+            'Thënia e Ditës ⚖️',
+            body,
+            when,
+            details,
+            androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
+          );
+        } catch (_) {}
       }
     }
   }

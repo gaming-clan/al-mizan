@@ -62,6 +62,10 @@ class DailyNotifNotifier extends StateNotifier<DailyNotifSettings> {
       await NotificationService.requestPermission();
       await NotificationService.scheduleDaily(
           hour: state.hour, minute: state.minute);
+      await NotificationService.showInstant(
+        'Njoftimi ditor u aktivizua ✅',
+        'Do të marrësh një thënie dijetarësh çdo ditë në orën ${state.timeLabel}.',
+      );
     } else {
       await NotificationService.cancelAll();
     }
@@ -75,6 +79,10 @@ class DailyNotifNotifier extends StateNotifier<DailyNotifSettings> {
     if (state.enabled) {
       await NotificationService.scheduleDaily(
           hour: time.hour, minute: time.minute);
+      await NotificationService.showInstant(
+        'Ora u ndryshua ✅',
+        'Njoftimi ditor tani vjen çdo ditë në orën ${state.timeLabel}.',
+      );
     }
   }
 }

@@ -157,7 +157,16 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
                   const SizedBox(height: 16),
                   OutlinedButton.icon(
                     onPressed: isAlreadyRead
-                        ? null
+                        ? () async {
+                            await db.unmarkLessonCompleted(lessonId);
+                            ref.invalidate(lessonProgressProvider(moduleId));
+                            if (!context.mounted) return;
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              const SnackBar(
+                                  content: Text(
+                                      'Shënimi u hoq — mësimi nuk është më i përfunduar.')),
+                            );
+                          }
                         : () async {
                             await db.markLessonCompleted(lessonId, moduleId);
                             await db.recordLearningDay();
@@ -197,7 +206,7 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
                         ? Icons.check_circle_rounded
                         : Icons.check_circle_outline_rounded),
                     label: Text(isAlreadyRead
-                        ? 'I Përfunduar'
+                        ? 'I Përfunduar — kliko për ta hequr'
                         : 'Shëno si të Përfunduar'),
                   ),
                   if (isAlreadyRead && nextLesson != null) ...[
