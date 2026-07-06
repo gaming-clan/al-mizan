@@ -269,7 +269,16 @@ class _GeneralQuizBody extends ConsumerWidget {
                         textAlign: TextAlign.center,
                       ),
                       const SizedBox(height: 24),
-                      FilledButton(
+                      FilledButton.icon(
+                        onPressed: () {
+                          ref.invalidate(allQuestionsProvider(difficulty));
+                          quizNotifier.reset();
+                        },
+                        icon: const Icon(Icons.replay_rounded),
+                        label: const Text('Provo Përsëri'),
+                      ),
+                      const SizedBox(height: 8),
+                      OutlinedButton(
                         onPressed: () {
                           quizNotifier.reset();
                           Navigator.of(context).pop();

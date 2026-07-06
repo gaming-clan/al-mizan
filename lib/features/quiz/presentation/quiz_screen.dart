@@ -132,7 +132,16 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                         ),
                       ],
                       const SizedBox(height: 24),
-                      FilledButton(
+                      FilledButton.icon(
+                        onPressed: () {
+                          setState(() => _resultSaved = false);
+                          quizNotifier.reset();
+                        },
+                        icon: const Icon(Icons.replay_rounded),
+                        label: const Text('Provo Përsëri'),
+                      ),
+                      const SizedBox(height: 8),
+                      OutlinedButton(
                         onPressed: () {
                           quizNotifier.reset();
                           Navigator.of(context).pop();

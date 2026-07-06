@@ -324,14 +324,39 @@ class _ModuleQuizScreenState extends ConsumerState<ModuleQuizScreen> {
                   ),
                 ),
                 const SizedBox(height: 32),
-                if (hasNext)
+                if (!passed) ...[
+                  FilledButton.icon(
+                    onPressed: () {
+                      setState(() {
+                        _correct[_levelIndex] = 0;
+                        _questionsByLevel[_levelIndex].shuffle();
+                      });
+                      _startLevel();
+                    },
+                    icon: const Icon(Icons.replay_rounded),
+                    label: Text('Provo Nivelin $label Përsëri'),
+                  ),
+                  const SizedBox(height: 8),
+                ],
+                if (hasNext && passed)
                   FilledButton.icon(
                     onPressed: _goToNext,
                     icon: const Icon(Icons.arrow_forward_rounded),
                     label: Text('Niveli ${nextLabel!}'),
                   )
-                else
+                else if (hasNext)
+                  OutlinedButton.icon(
+                    onPressed: _goToNext,
+                    icon: const Icon(Icons.arrow_forward_rounded),
+                    label: Text('Niveli ${nextLabel!}'),
+                  )
+                else if (passed)
                   FilledButton(
+                    onPressed: () => setState(() => _phase = 'final'),
+                    child: const Text('Shiko Rezultatin Final'),
+                  )
+                else
+                  OutlinedButton(
                     onPressed: () => setState(() => _phase = 'final'),
                     child: const Text('Shiko Rezultatin Final'),
                   ),
@@ -417,7 +442,21 @@ class _ModuleQuizScreenState extends ConsumerState<ModuleQuizScreen> {
                     const SizedBox(height: 6),
                   ],
                 const SizedBox(height: 32),
-                FilledButton(
+                FilledButton.icon(
+                  onPressed: () {
+                    setState(() {
+                      for (int i = 0; i < _correct.length; i++) {
+                        _correct[i] = 0;
+                      }
+                      _phase = 'loading';
+                    });
+                    _loadQuestions();
+                  },
+                  icon: const Icon(Icons.replay_rounded),
+                  label: const Text('Provo Përsëri'),
+                ),
+                const SizedBox(height: 8),
+                OutlinedButton(
                   onPressed: () => Navigator.of(context).pop(),
                   child: const Text('Kthehu'),
                 ),
