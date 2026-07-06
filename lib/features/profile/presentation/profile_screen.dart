@@ -6,6 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:image_picker/image_picker.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../home/providers/home_provider.dart';
+import '../../settings/providers/notification_provider.dart';
 import '../../settings/providers/settings_provider.dart';
 
 // ── Avatar widget ──────────────────────────────────────────
@@ -347,6 +348,7 @@ class ProfileScreen extends ConsumerWidget {
     final isAutoTheme = ref.watch(autoThemeProvider);
     final effectiveTheme = ref.watch(effectiveThemeProvider);
     final avatarPath = ref.watch(avatarPathProvider);
+    final notifSettings = ref.watch(dailyNotifProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Profili')),
@@ -543,6 +545,54 @@ class ProfileScreen extends ConsumerWidget {
               onTap: isAutoTheme
                   ? null
                   : () => _showThemePicker(context, ref),
+            ),
+          ),
+          const SizedBox(height: 8),
+          // Daily quote notification toggle
+          _SettingsTile(
+            icon: Icons.notifications_active_rounded,
+            title: 'Njoftimi ditor',
+            subtitle: notifSettings.enabled
+                ? 'Thënie dijetarësh çdo ditë në ${notifSettings.timeLabel}'
+                : 'I çaktivizuar',
+            trailing: Switch.adaptive(
+              value: notifSettings.enabled,
+              onChanged: (v) =>
+                  ref.read(dailyNotifProvider.notifier).setEnabled(v),
+              activeTrackColor: cs.primary,
+            ),
+            onTap: () => ref
+                .read(dailyNotifProvider.notifier)
+                .setEnabled(!notifSettings.enabled),
+          ),
+          const SizedBox(height: 4),
+          // Notification time picker (disabled when notifications are off)
+          Opacity(
+            opacity: notifSettings.enabled ? 1.0 : 0.4,
+            child: _SettingsTile(
+              icon: Icons.schedule_rounded,
+              title: 'Ora e njoftimit',
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(notifSettings.timeLabel,
+                      style: theme.textTheme.bodySmall),
+                  const SizedBox(width: 4),
+                  Icon(Icons.chevron_right_rounded,
+                      color: cs.onSurfaceVariant, size: 20),
+                ],
+              ),
+              onTap: notifSettings.enabled
+                  ? () async {
+                      final picked = await showTimePicker(
+                        context: context,
+                        initialTime: notifSettings.time,
+                      );
+                      if (picked != null) {
+                        ref.read(dailyNotifProvider.notifier).setTime(picked);
+                      }
+                    }
+                  : null,
             ),
           ),
           const SizedBox(height: 8),

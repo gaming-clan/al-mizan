@@ -7,9 +7,10 @@ class DailyQuote {
 class DailyQuotes {
   DailyQuotes._();
 
-  static DailyQuote forToday() {
-    final now = DateTime.now();
-    final dayOfYear = now.difference(DateTime(now.year)).inDays;
+  static DailyQuote forToday() => forDate(DateTime.now());
+
+  static DailyQuote forDate(DateTime date) {
+    final dayOfYear = date.difference(DateTime(date.year)).inDays;
     return _quotes[dayOfYear % _quotes.length];
   }
 
