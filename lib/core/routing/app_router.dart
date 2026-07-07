@@ -77,7 +77,12 @@ final appRouter = GoRouter(
       builder: (context, state) {
         final moduleId = state.pathParameters['moduleId']!;
         final lessonId = state.pathParameters['lessonId']!;
-        return LessonScreen(moduleId: moduleId, lessonId: lessonId);
+        final browseMode = state.uri.queryParameters['mode'];
+        return LessonScreen(
+          moduleId: moduleId,
+          lessonId: lessonId,
+          browseMode: browseMode,
+        );
       },
     ),
     GoRoute(

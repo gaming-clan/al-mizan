@@ -56,34 +56,48 @@ class LevelChipsRow extends StatelessWidget {
       children: [
         for (final level in kLevels) ...[
           Expanded(
-            child: ChoiceChip(
-              label: SizedBox(
-                width: double.infinity,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Icon(
-                      kLevelIcons[level],
-                      size: 15,
-                      color: level == selectedLevel
-                          ? kLevelColors[level]
-                          : cs.onSurfaceVariant,
-                    ),
-                    const SizedBox(width: 4),
-                    Flexible(
-                      child: Text(
-                        kLevelLabels[level]!,
-                        overflow: TextOverflow.ellipsis,
+            child: Builder(builder: (context) {
+              final isSelected = level == selectedLevel;
+              final levelColor = kLevelColors[level]!;
+              return ChoiceChip(
+                label: SizedBox(
+                  width: double.infinity,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(
+                        kLevelIcons[level],
+                        size: 15,
+                        color:
+                            isSelected ? levelColor : cs.onSurfaceVariant,
                       ),
-                    ),
-                  ],
+                      const SizedBox(width: 4),
+                      Flexible(
+                        child: Text(
+                          kLevelLabels[level]!,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-              selected: level == selectedLevel,
-              onSelected: (_) => onLevelChanged(level),
-              showCheckmark: false,
-            ),
+                selected: isSelected,
+                onSelected: (_) => onLevelChanged(level),
+                showCheckmark: false,
+                backgroundColor: cs.surfaceContainerLowest,
+                selectedColor: levelColor.withValues(alpha: 0.15),
+                side: BorderSide(
+                  color: isSelected ? levelColor : cs.outlineVariant,
+                  width: isSelected ? 1.5 : 1,
+                ),
+                labelStyle: TextStyle(
+                  color: isSelected ? levelColor : cs.onSurfaceVariant,
+                  fontWeight:
+                      isSelected ? FontWeight.w700 : FontWeight.w500,
+                ),
+              );
+            }),
           ),
           if (level != kLevels.last) const SizedBox(width: 8),
         ],
@@ -158,8 +172,8 @@ class LevelLessonTile extends ConsumerWidget {
           ],
         ),
         trailing: const Icon(Icons.arrow_forward_ios_rounded, size: 16),
-        onTap: () =>
-            context.push('/lesson/${module.moduleId}/${lesson.id}'),
+        onTap: () => context
+            .push('/lesson/${module.moduleId}/${lesson.id}?mode=level'),
       ),
     );
   }

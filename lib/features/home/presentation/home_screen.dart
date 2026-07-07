@@ -283,6 +283,9 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                         mainAxisSpacing: isLargeScreen ? 12 : 10,
                         crossAxisSpacing: isLargeScreen ? 12 : 10,
                         childAspectRatio: isLargeScreen ? 0.82 : 1.15,
+                        // Fixed height on large screens so two-line titles
+                        // never overflow regardless of column width.
+                        mainAxisExtent: isLargeScreen ? 230 : null,
                       ),
                       delegate: SliverChildBuilderDelegate(
                         (context, index) => _ModuleGridCard(

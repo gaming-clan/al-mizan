@@ -10,12 +10,22 @@ import '../../home/providers/home_provider.dart';
 import '../../home/providers/last_lesson_provider.dart';
 import '../providers/module_provider.dart';
 import '../data/models/fiqh_models.dart';
+import 'widgets/level_lessons.dart';
 
 class LessonScreen extends ConsumerStatefulWidget {
   final String moduleId;
   final String lessonId;
-  const LessonScreen(
-      {super.key, required this.moduleId, required this.lessonId});
+
+  /// 'level' when opened from the by-level list — then "next lesson"
+  /// follows the same level across modules instead of the module order.
+  final String? browseMode;
+
+  const LessonScreen({
+    super.key,
+    required this.moduleId,
+    required this.lessonId,
+    this.browseMode,
+  });
 
   @override
   ConsumerState<LessonScreen> createState() => _LessonScreenState();
@@ -56,16 +66,35 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
         }
         final isAlreadyRead = progressAsync.valueOrNull?[lessonId]?.isRead ?? false;
 
-        // Ordered lesson list: beginner → intermediate → advanced
-        final levelOrder = ['beginner', 'intermediate', 'advanced'];
-        final allLessonsOrdered = [
-          for (final lvl in levelOrder)
-            ...module.lessons.where((l) => l.level == lvl),
-        ];
-        final currentIdx = allLessonsOrdered.indexWhere((l) => l.id == lessonId);
-        final nextLesson = (currentIdx >= 0 && currentIdx < allLessonsOrdered.length - 1)
-            ? allLessonsOrdered[currentIdx + 1]
-            : null;
+        final isLevelMode = widget.browseMode == 'level';
+
+        // Next lesson depends on the browsing context:
+        // - level mode: next lesson of the SAME LEVEL across all modules
+        // - module mode: next lesson of the same module (levels in order)
+        Lesson? nextLesson;
+        String nextLessonModuleId = moduleId;
+        if (isLevelMode) {
+          final allModules = ref.watch(modulesProvider).valueOrNull;
+          if (allModules != null) {
+            final entries = lessonsOfLevel(allModules, lesson.level);
+            final idx = entries.indexWhere((e) => e.$2.id == lessonId);
+            if (idx >= 0 && idx < entries.length - 1) {
+              nextLessonModuleId = entries[idx + 1].$1.moduleId;
+              nextLesson = entries[idx + 1].$2;
+            }
+          }
+        } else {
+          final levelOrder = ['beginner', 'intermediate', 'advanced'];
+          final allLessonsOrdered = [
+            for (final lvl in levelOrder)
+              ...module.lessons.where((l) => l.level == lvl),
+          ];
+          final currentIdx =
+              allLessonsOrdered.indexWhere((l) => l.id == lessonId);
+          if (currentIdx >= 0 && currentIdx < allLessonsOrdered.length - 1) {
+            nextLesson = allLessonsOrdered[currentIdx + 1];
+          }
+        }
 
         // First lesson of next level (for the level-complete dialog)
         final nextLevel = lesson.level == 'beginner'
@@ -212,8 +241,9 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
                   if (isAlreadyRead && nextLesson != null) ...[
                     const SizedBox(height: 8),
                     FilledButton.icon(
-                      onPressed: () =>
-                          context.push('/lesson/$moduleId/${nextLesson.id}'),
+                      onPressed: () => context.push(
+                          '/lesson/$nextLessonModuleId/${nextLesson!.id}'
+                          '${isLevelMode ? '?mode=level' : ''}'),
                       icon: const Icon(Icons.arrow_forward_rounded),
                       label: const Text('Mësimi Pasardhës'),
                     ),
