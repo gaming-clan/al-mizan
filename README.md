@@ -43,8 +43,8 @@ Aplikacion edukativ Flutter për jurisprudencën islame (Fikh) në gjuhën shqip
 | Xhenazja | 4 | 15 | 12 |
 | Betimet dhe Nedhri | 4 | 15 | 14 |
 | Ushqimi dhe Pija | 4 | 14 | 15 |
-| E Drejta Penale Islame | 5 | 24 | 31 |
-| **Gjithsej** | **60** | **261** | **213** |
+| E Drejta Penale Islame | 5 | 24 | 32 |
+| **Gjithsej** | **60** | **261** | **214** |
 
 ### Veçoritë kryesore
 
@@ -54,6 +54,9 @@ Aplikacion edukativ Flutter për jurisprudencën islame (Fikh) në gjuhën shqip
 - **Krahasim i katër medhhebeve** (Hanefi, Maliki, Shafi'i, Hanbeli) për çdo çështje
 - **Sfida me Kohë** — kuize me kohëmatës: sa më i lartë niveli, aq më pak kohë për pyetje
 - **Sfida Ditore** — 10 pyetje të përziera çdo ditë, me seri ditore (streak)
+- **Njoftim ditor** me thënie dijetarësh — ora e konfigurueshme nga përdoruesi (parazgjedhja 08:00)
+- **Shfletim i dyfishtë** — sipas moduleve ose sipas niveleve (mësimet e një niveli nga të gjitha modulet)
+- **Provo Përsëri** në çdo kuiz — përfshirë rifillimin e një niveli të vetëm te kuizi i modulit
 - **Vazhdo ku mbete** — kartë në ballinë që të kthen te mësimi i fundit i hapur
 - **Kalim automatik** — buton për mësimin pasardhës dhe për nivelin tjetër pas përfundimit
 - **Llogaritës Zekati** me shumë lloje pasurie dhe nisab
@@ -83,6 +86,7 @@ Përmbajtja është nxjerrë dhe përshtatur nga vepra të njohura fikhore:
 - **Riverpod** — menaxhimi i gjendjes
 - **GoRouter** — navigimi
 - **Drift** — databaza lokale SQLite
+- **flutter_local_notifications** — njoftimet ditore lokale
 - **Material 3** — dizajn modern me Google Fonts
 - **Design System**: Al-Mizan (Google Stitch) — Source Serif 4, Plus Jakarta Sans, Amiri
 
@@ -139,8 +143,8 @@ lib/
 | Janazah — Funeral | 4 | 15 | 12 |
 | Oaths & Vows | 4 | 15 | 14 |
 | Food & Drink | 4 | 14 | 15 |
-| Islamic Criminal Law | 5 | 24 | 31 |
-| **Total** | **60** | **261** | **213** |
+| Islamic Criminal Law | 5 | 24 | 32 |
+| **Total** | **60** | **261** | **214** |
 
 ### Key Features
 
@@ -150,6 +154,9 @@ lib/
 - **Four-madhab comparison** (Hanafi, Maliki, Shafi'i, Hanbali) for every ruling
 - **Timed Challenge** — quizzes against the clock: the higher the level, the less time per question
 - **Daily Challenge** — 10 mixed-level questions every day, with a daily streak
+- **Daily notification** with scholars' sayings — user-configurable time (default 08:00)
+- **Dual browsing** — by module or by level (lessons of one level across all modules)
+- **Try Again** on every quiz — including retrying a single level in the module quiz
 - **Continue where you left off** — home card that takes you back to the last opened lesson
 - **Auto progression** — next-lesson button and next-level navigation on completion
 - **Zakat calculator** with multiple asset types and nisab thresholds
@@ -178,6 +185,7 @@ Content is derived and adapted from well-known Fiqh works:
 - **Riverpod** — state management
 - **GoRouter** — navigation
 - **Drift** — local SQLite database
+- **flutter_local_notifications** — local daily notifications
 - **Material 3** — modern design with Google Fonts
 - **Design System**: Al-Mizan (Google Stitch) — Source Serif 4, Plus Jakarta Sans, Amiri
 
@@ -234,8 +242,8 @@ lib/
 | الجنازة | ٤ | ١٥ | ١٢ |
 | الأيمان والنذور | ٤ | ١٥ | ١٤ |
 | الأطعمة والأشربة | ٤ | ١٤ | ١٥ |
-| العقوبات — الفقه الجنائي | ٥ | ٢٤ | ٣١ |
-| **المجموع** | **٦٠** | **٢٦١** | **٢١٣** |
+| العقوبات — الفقه الجنائي | ٥ | ٢٤ | ٣٢ |
+| **المجموع** | **٦٠** | **٢٦١** | **٢١٤** |
 
 ### المميزات الرئيسية
 
@@ -245,6 +253,9 @@ lib/
 - **مقارنة المذاهب الأربعة** (الحنفي، المالكي، الشافعي، الحنبلي) في كل مسألة
 - **تحدي الوقت** — اختبارات بعدّاد تنازلي: كلما ارتفع المستوى قلّ الوقت لكل سؤال
 - **التحدي اليومي** — ١٠ أسئلة منوّعة كل يوم مع سلسلة أيام متتالية
+- **إشعار يومي** بأقوال العلماء — وقت قابل للتخصيص (الافتراضي ٠٨:٠٠)
+- **تصفّح مزدوج** — حسب الوحدات أو حسب المستويات (دروس مستوى واحد من جميع الوحدات)
+- **حاول مرة أخرى** في كل اختبار — بما في ذلك إعادة مستوى واحد في اختبار الوحدة
 - **تابع من حيث توقفت** — بطاقة في الرئيسية تعيدك إلى آخر درس فتحته
 - **تنقّل تلقائي** — زر للدرس التالي وللمستوى التالي عند الإتمام
 - **حاسبة الزكاة** بأنواع أموال متعددة وحساب النصاب
@@ -273,6 +284,7 @@ lib/
 - **Riverpod** — إدارة الحالة
 - **GoRouter** — التنقل
 - **Drift** — قاعدة بيانات SQLite المحلية
+- **flutter_local_notifications** — الإشعارات اليومية المحلية
 - **Material 3** — تصميم حديث مع خطوط Google
 - **نظام التصميم**: الميزان (Google Stitch) — Source Serif 4, Plus Jakarta Sans, أميري
 
@@ -329,8 +341,8 @@ lib/
 | Janazah — Funerale | 4 | 15 | 12 |
 | Giuramenti e Voti | 4 | 15 | 14 |
 | Cibo & Bevande | 4 | 14 | 15 |
-| Diritto Penale Islamico | 5 | 24 | 31 |
-| **Totale** | **60** | **261** | **213** |
+| Diritto Penale Islamico | 5 | 24 | 32 |
+| **Totale** | **60** | **261** | **214** |
 
 ### Caratteristiche principali
 
@@ -340,6 +352,9 @@ lib/
 - **Confronto tra quattro madhab** (Hanafi, Maliki, Shafi'i, Hanbali) per ogni sentenza
 - **Sfida a tempo** — quiz con timer: più alto il livello, meno tempo per domanda
 - **Sfida giornaliera** — 10 domande miste ogni giorno, con serie giornaliera (streak)
+- **Notifica giornaliera** con detti degli studiosi — orario configurabile (predefinito 08:00)
+- **Navigazione doppia** — per modulo o per livello (lezioni di un livello da tutti i moduli)
+- **Riprova** in ogni quiz — incluso il retry di un singolo livello nel quiz del modulo
 - **Riprendi da dove eri** — scheda nella home che riporta all'ultima lezione aperta
 - **Progressione automatica** — pulsante per la lezione successiva e per il livello successivo
 - **Calcolatore Zakat** con più tipologie di patrimonio e soglie di nisab
@@ -375,8 +390,8 @@ lib/
 | Cenaze | 4 | 15 | 12 |
 | Yeminler ve Adaklar | 4 | 15 | 14 |
 | Yiyecek & İçecek | 4 | 14 | 15 |
-| İslam Ceza Hukuku | 5 | 24 | 31 |
-| **Toplam** | **60** | **261** | **213** |
+| İslam Ceza Hukuku | 5 | 24 | 32 |
+| **Toplam** | **60** | **261** | **214** |
 
 ### Temel özellikler
 
@@ -386,6 +401,9 @@ lib/
 - **Dört mezhep karşılaştırması** (Hanefi, Maliki, Şafii, Hanbeli) her hüküm için
 - **Zamana Karşı Meydan Okuma** — süre sayaçlı sınavlar: seviye yükseldikçe soru başına süre azalır
 - **Günlük Meydan Okuma** — her gün 10 karışık soru, günlük seri (streak) ile
+- **Günlük bildirim** — âlimlerin sözleriyle, kullanıcı tarafından ayarlanabilir saat (varsayılan 08:00)
+- **Çift görünüm** — modüllere göre veya seviyelere göre (bir seviyenin dersleri tüm modüllerden)
+- **Tekrar Dene** her sınavda — modül sınavında tek bir seviyeyi yeniden deneme dahil
 - **Kaldığın yerden devam et** — ana ekrandaki kart son açılan derse götürür
 - **Otomatik ilerleme** — sonraki ders ve sonraki seviye düğmeleri
 - **Zekat hesaplayıcı** çoklu varlık türleri ve nisap eşikleri ile
@@ -421,8 +439,8 @@ lib/
 | Dženaza | 4 | 15 | 12 |
 | Zakletve i Zavjeti | 4 | 15 | 14 |
 | Hrana & Piće | 4 | 14 | 15 |
-| Islamsko krivično pravo | 5 | 24 | 31 |
-| **Ukupno** | **60** | **261** | **213** |
+| Islamsko krivično pravo | 5 | 24 | 32 |
+| **Ukupno** | **60** | **261** | **214** |
 
 ### Ključne funkcionalnosti
 
@@ -432,6 +450,9 @@ lib/
 - **Usporedba četiri mezheba** (Hanefi, Maliki, Šafii, Hanbeli) za svako pitanje
 - **Izazov na vrijeme** — kvizovi sa tajmerom: što je viši nivo, manje vremena po pitanju
 - **Dnevni izazov** — 10 miješanih pitanja svaki dan, s dnevnim nizom (streak)
+- **Dnevna notifikacija** s izrekama učenjaka — vrijeme podesivo (zadano 08:00)
+- **Dvostruki pregled** — po modulima ili po nivoima (lekcije jednog nivoa iz svih modula)
+- **Pokušaj ponovo** u svakom kvizu — uključujući ponavljanje jednog nivoa u kvizu modula
 - **Nastavi gdje si stao** — kartica na početnoj vraća na zadnju otvorenu lekciju
 - **Automatski napredak** — dugme za sljedeću lekciju i sljedeći nivo
 - **Kalkulator zekata** s više vrsta imovine i nisab pragovima
