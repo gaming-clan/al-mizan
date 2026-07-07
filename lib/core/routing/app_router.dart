@@ -11,6 +11,7 @@ import '../../features/quiz/presentation/general_quiz_screen.dart';
 import '../../features/quiz/presentation/timed_challenge_screen.dart';
 import '../../features/quiz/presentation/daily_challenge_screen.dart';
 import '../../features/quiz/presentation/weekly_challenge_screen.dart';
+import '../../features/stats/presentation/stats_screen.dart';
 import '../../features/quiz/presentation/module_quiz_screen.dart';
 import '../../features/search/presentation/search_screen.dart';
 import '../../features/bookmarks/presentation/bookmarks_screen.dart';
@@ -114,6 +115,11 @@ final appRouter = GoRouter(
       path: '/weekly-challenge',
       parentNavigatorKey: _rootNavigatorKey,
       builder: (context, state) => const WeeklyChallengeScreen(),
+    ),
+    GoRoute(
+      path: '/stats',
+      parentNavigatorKey: _rootNavigatorKey,
+      builder: (context, state) => const StatsScreen(),
     ),
     GoRoute(
       path: '/module-quiz/:moduleId',

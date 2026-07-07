@@ -90,6 +90,20 @@ class AppDatabase extends _$AppDatabase {
     return list.length;
   }
 
+  Future<List<CompletedLesson>> getAllCompletedLessons() {
+    return select(completedLessons).get();
+  }
+
+  Future<List<QuizResult>> getAllQuizResults() {
+    return select(quizResults).get();
+  }
+
+  /// All dates (yyyy-MM-dd) on which the user studied.
+  Future<Set<String>> getStudiedDates() async {
+    final rows = await select(learningStreak).get();
+    return {for (final r in rows) r.date};
+  }
+
   // ── Bookmarks ──
 
   Future<int> addBookmark(String lessonId, String moduleId) {

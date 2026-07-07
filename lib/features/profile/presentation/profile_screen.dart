@@ -8,6 +8,7 @@ import '../../../core/theme/app_colors.dart';
 import '../../home/providers/home_provider.dart';
 import '../../settings/providers/notification_provider.dart';
 import '../../settings/providers/settings_provider.dart';
+import '../../stats/providers/stats_provider.dart';
 
 // ── Avatar widget ──────────────────────────────────────────
 class _ProfileAvatar extends StatelessWidget {
@@ -546,6 +547,19 @@ class ProfileScreen extends ConsumerWidget {
                   ? null
                   : () => _showThemePicker(context, ref),
             ),
+          ),
+          const SizedBox(height: 8),
+          // Personal statistics
+          _SettingsTile(
+            icon: Icons.insights_rounded,
+            title: 'Statistikat e Mia',
+            subtitle: 'Progresi, kuizet, seritë dhe sfidat',
+            trailing: Icon(Icons.chevron_right_rounded,
+                color: cs.onSurfaceVariant, size: 20),
+            onTap: () {
+              ref.invalidate(userStatsProvider);
+              context.push('/stats');
+            },
           ),
           const SizedBox(height: 8),
           // Daily quote notification toggle
