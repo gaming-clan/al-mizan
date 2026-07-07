@@ -374,6 +374,13 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                     ),
                     const SizedBox(height: 8),
                     _QuickActionTile(
+                      icon: Icons.date_range_rounded,
+                      title: 'Sfida Javore',
+                      subtitle: '3 pjesë me kohëmatës — vështirësia rritet, koha ulet',
+                      onTap: () => context.push('/weekly-challenge'),
+                    ),
+                    const SizedBox(height: 8),
+                    _QuickActionTile(
                       icon: Icons.calculate_rounded,
                       title: 'Llogaritës Zekati',
                       subtitle: 'Llogarit detyrimet e zekatit',
