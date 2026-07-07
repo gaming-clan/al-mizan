@@ -4,15 +4,24 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../core/constants/app_constants.dart';
 import '../../../core/constants/daily_quotes.dart';
+import '../../modules/presentation/widgets/level_lessons.dart';
 import '../../settings/providers/settings_provider.dart';
 import '../providers/home_provider.dart';
 import '../providers/last_lesson_provider.dart';
 
-class HomeScreen extends ConsumerWidget {
+class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends ConsumerState<HomeScreen> {
+  bool _byLevel = false;
+  String _selectedLevel = 'beginner';
+
+  @override
+  Widget build(BuildContext context) {
     final modulesAsync = ref.watch(modulesProvider);
     final streakAsync = ref.watch(streakProvider);
     final userName = ref.watch(userNameProvider);
@@ -237,26 +246,83 @@ class HomeScreen extends ConsumerWidget {
               ),
             ),
 
-            // Module grid
-            modulesAsync.when(
-              data: (modules) => SliverPadding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                sliver: SliverGrid(
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: gridCols,
-                    mainAxisSpacing: isLargeScreen ? 12 : 10,
-                    crossAxisSpacing: isLargeScreen ? 12 : 10,
-                    childAspectRatio: isLargeScreen ? 0.82 : 1.15,
-                  ),
-                  delegate: SliverChildBuilderDelegate(
-                    (context, index) => _ModuleGridCard(
-                      module: modules[index],
-                      large: isLargeScreen,
+            // View toggle: by module / by level
+            SliverToBoxAdapter(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(16, 0, 16, 10),
+                child: SegmentedButton<bool>(
+                  segments: const [
+                    ButtonSegment(
+                      value: false,
+                      label: Text('Sipas Moduleve'),
+                      icon: Icon(Icons.menu_book_rounded, size: 18),
                     ),
-                    childCount: modules.length,
-                  ),
+                    ButtonSegment(
+                      value: true,
+                      label: Text('Sipas Niveleve'),
+                      icon: Icon(Icons.stairs_rounded, size: 18),
+                    ),
+                  ],
+                  selected: {_byLevel},
+                  onSelectionChanged: (s) =>
+                      setState(() => _byLevel = s.first),
+                  showSelectedIcon: false,
                 ),
               ),
+            ),
+
+            // Module grid or by-level lesson list
+            modulesAsync.when(
+              data: (modules) {
+                if (!_byLevel) {
+                  return SliverPadding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    sliver: SliverGrid(
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: gridCols,
+                        mainAxisSpacing: isLargeScreen ? 12 : 10,
+                        crossAxisSpacing: isLargeScreen ? 12 : 10,
+                        childAspectRatio: isLargeScreen ? 0.82 : 1.15,
+                      ),
+                      delegate: SliverChildBuilderDelegate(
+                        (context, index) => _ModuleGridCard(
+                          module: modules[index],
+                          large: isLargeScreen,
+                        ),
+                        childCount: modules.length,
+                      ),
+                    ),
+                  );
+                }
+                final entries = lessonsOfLevel(modules, _selectedLevel);
+                final levelColor = kLevelColors[_selectedLevel]!;
+                return SliverMainAxisGroup(
+                  slivers: [
+                    SliverToBoxAdapter(
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
+                        child: LevelChipsRow(
+                          selectedLevel: _selectedLevel,
+                          onLevelChanged: (l) =>
+                              setState(() => _selectedLevel = l),
+                        ),
+                      ),
+                    ),
+                    SliverList.builder(
+                      itemCount: entries.length,
+                      itemBuilder: (context, index) {
+                        final (module, lesson) = entries[index];
+                        return LevelLessonTile(
+                          module: module,
+                          lesson: lesson,
+                          index: index,
+                          color: levelColor,
+                        );
+                      },
+                    ),
+                  ],
+                );
+              },
               loading: () => const SliverFillRemaining(
                 child: Center(child: CircularProgressIndicator()),
               ),

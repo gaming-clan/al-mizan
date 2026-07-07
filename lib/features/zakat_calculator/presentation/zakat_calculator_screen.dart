@@ -478,7 +478,7 @@ class _WealthResultCard extends StatelessWidget {
                     Text(
                       '$s${_fmt(result.zakatAmount)}',
                       style: theme.textTheme.headlineLarge?.copyWith(
-                        color: AppColors.primary,
+                        color: theme.colorScheme.primary,
                         fontWeight: FontWeight.w700,
                       ),
                     ),
@@ -547,7 +547,7 @@ class _CropResultCard extends StatelessWidget {
                     Text(
                       '${result.zakatKg.toStringAsFixed(1)} kg',
                       style: theme.textTheme.headlineLarge?.copyWith(
-                        color: AppColors.primary,
+                        color: theme.colorScheme.primary,
                         fontWeight: FontWeight.w700,
                       ),
                     ),

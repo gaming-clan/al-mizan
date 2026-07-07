@@ -82,7 +82,8 @@ class _DifficultySelector extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               const SizedBox(height: 20),
-              const Icon(Icons.quiz_rounded, size: 64, color: AppColors.primary),
+              Icon(Icons.quiz_rounded,
+                  size: 64, color: theme.colorScheme.primary),
               const SizedBox(height: 16),
               Text(
                 'Testo njohuritë e tua',

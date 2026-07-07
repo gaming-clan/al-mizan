@@ -139,8 +139,7 @@ class _DailyIntro extends ConsumerWidget {
                 padding: const EdgeInsets.all(24),
                 children: [
                   const SizedBox(height: 12),
-                  const Icon(Icons.today_rounded,
-                      size: 64, color: AppColors.primary),
+                  Icon(Icons.today_rounded, size: 64, color: cs.primary),
                   const SizedBox(height: 12),
                   Text(
                     _sqDate(DateTime.now()),

@@ -24,7 +24,8 @@ class BookmarksScreen extends ConsumerWidget {
                 children: [
                   Icon(Icons.bookmark_border_rounded,
                       size: 64,
-                      color: AppColors.primary.withValues(alpha: 0.3)),
+                      color: theme.colorScheme.primary
+                          .withValues(alpha: 0.45)),
                   const SizedBox(height: 16),
                   Text('Asnjë shënim ende.',
                       style: theme.textTheme.bodyLarge),

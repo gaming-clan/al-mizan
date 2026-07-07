@@ -140,8 +140,7 @@ class _LevelSelector extends StatelessWidget {
               padding: const EdgeInsets.all(24),
               children: [
                 const SizedBox(height: 12),
-                const Icon(Icons.timer_rounded,
-                    size: 64, color: AppColors.primary),
+                Icon(Icons.timer_rounded, size: 64, color: cs.primary),
                 const SizedBox(height: 16),
                 Text(
                   'Sa shpejt mendon?',
