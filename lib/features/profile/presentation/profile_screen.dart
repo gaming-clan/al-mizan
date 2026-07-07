@@ -439,7 +439,7 @@ class ProfileScreen extends ConsumerWidget {
               Expanded(
                 child: _StatCard(
                   icon: Icons.local_fire_department_rounded,
-                  label: 'Ditë rrjesht',
+                  label: 'Ditë rresht',
                   value: streakAsync.when(
                     data: (s) => '$s',
                     loading: () => '—',
