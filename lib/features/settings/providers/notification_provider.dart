@@ -67,7 +67,7 @@ class DailyNotifNotifier extends StateNotifier<DailyNotifSettings> {
         'Do të marrësh një thënie dijetarësh çdo ditë në orën ${state.timeLabel}.',
       );
     } else {
-      await NotificationService.cancelAll();
+      await NotificationService.cancelDaily();
     }
   }
 
@@ -83,6 +83,87 @@ class DailyNotifNotifier extends StateNotifier<DailyNotifSettings> {
         'Ora u ndryshua ✅',
         'Njoftimi ditor tani vjen çdo ditë në orën ${state.timeLabel}.',
       );
+    }
+  }
+}
+
+// ── Challenge reminders (daily + weekly) ──
+
+class ChallengeNotifSettings {
+  final bool dailyEnabled;
+  final bool weeklyEnabled;
+
+  const ChallengeNotifSettings({
+    required this.dailyEnabled,
+    required this.weeklyEnabled,
+  });
+
+  ChallengeNotifSettings copyWith({bool? dailyEnabled, bool? weeklyEnabled}) {
+    return ChallengeNotifSettings(
+      dailyEnabled: dailyEnabled ?? this.dailyEnabled,
+      weeklyEnabled: weeklyEnabled ?? this.weeklyEnabled,
+    );
+  }
+}
+
+final challengeNotifProvider =
+    StateNotifierProvider<ChallengeNotifNotifier, ChallengeNotifSettings>((ref) {
+  return ChallengeNotifNotifier();
+});
+
+class ChallengeNotifNotifier extends StateNotifier<ChallengeNotifSettings> {
+  ChallengeNotifNotifier()
+      : super(const ChallengeNotifSettings(
+          dailyEnabled: true,
+          weeklyEnabled: true,
+        )) {
+    _load();
+  }
+
+  static String _hm(int h, int m) =>
+      '${h.toString().padLeft(2, '0')}:${m.toString().padLeft(2, '0')}';
+
+  Future<void> _load() async {
+    final prefs = await SharedPreferences.getInstance();
+    state = ChallengeNotifSettings(
+      dailyEnabled:
+          prefs.getBool(NotificationService.prefsChallengeEnabledKey) ?? true,
+      weeklyEnabled:
+          prefs.getBool(NotificationService.prefsWeeklyEnabledKey) ?? true,
+    );
+  }
+
+  Future<void> setDailyEnabled(bool enabled) async {
+    state = state.copyWith(dailyEnabled: enabled);
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(NotificationService.prefsChallengeEnabledKey, enabled);
+    if (enabled) {
+      await NotificationService.requestPermission();
+      await NotificationService.scheduleDailyChallenge();
+      await NotificationService.showInstant(
+        'Kujtesa e Sfidës Ditore u aktivizua ✅',
+        'Do të të kujtojmë çdo ditë në orën '
+            '${_hm(NotificationService.challengeHour, NotificationService.challengeMinute)} '
+            'për të bërë Sfidën Ditore.',
+      );
+    } else {
+      await NotificationService.cancelDailyChallenge();
+    }
+  }
+
+  Future<void> setWeeklyEnabled(bool enabled) async {
+    state = state.copyWith(weeklyEnabled: enabled);
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(NotificationService.prefsWeeklyEnabledKey, enabled);
+    if (enabled) {
+      await NotificationService.requestPermission();
+      await NotificationService.scheduleWeeklyChallenge();
+      await NotificationService.showInstant(
+        'Kujtesa e Sfidës Javore u aktivizua ✅',
+        'Do të të kujtojmë çdo të premte për të bërë Sfidën Javore.',
+      );
+    } else {
+      await NotificationService.cancelWeeklyChallenge();
     }
   }
 }

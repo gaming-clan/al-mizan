@@ -350,6 +350,7 @@ class ProfileScreen extends ConsumerWidget {
     final effectiveTheme = ref.watch(effectiveThemeProvider);
     final avatarPath = ref.watch(avatarPathProvider);
     final notifSettings = ref.watch(dailyNotifProvider);
+    final challengeNotif = ref.watch(challengeNotifProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Profili')),
@@ -608,6 +609,42 @@ class ProfileScreen extends ConsumerWidget {
                     }
                   : null,
             ),
+          ),
+          const SizedBox(height: 8),
+          // Daily-challenge reminder toggle
+          _SettingsTile(
+            icon: Icons.today_rounded,
+            title: 'Kujtesë për Sfidën Ditore',
+            subtitle: challengeNotif.dailyEnabled
+                ? 'Kujtesë çdo ditë në 18:00'
+                : 'I çaktivizuar',
+            trailing: Switch.adaptive(
+              value: challengeNotif.dailyEnabled,
+              onChanged: (v) =>
+                  ref.read(challengeNotifProvider.notifier).setDailyEnabled(v),
+              activeTrackColor: cs.primary,
+            ),
+            onTap: () => ref
+                .read(challengeNotifProvider.notifier)
+                .setDailyEnabled(!challengeNotif.dailyEnabled),
+          ),
+          const SizedBox(height: 4),
+          // Weekly-challenge reminder toggle
+          _SettingsTile(
+            icon: Icons.date_range_rounded,
+            title: 'Kujtesë për Sfidën Javore',
+            subtitle: challengeNotif.weeklyEnabled
+                ? 'Kujtesë çdo të premte në 10:00'
+                : 'I çaktivizuar',
+            trailing: Switch.adaptive(
+              value: challengeNotif.weeklyEnabled,
+              onChanged: (v) =>
+                  ref.read(challengeNotifProvider.notifier).setWeeklyEnabled(v),
+              activeTrackColor: cs.primary,
+            ),
+            onTap: () => ref
+                .read(challengeNotifProvider.notifier)
+                .setWeeklyEnabled(!challengeNotif.weeklyEnabled),
           ),
           const SizedBox(height: 8),
           _SettingsTile(
