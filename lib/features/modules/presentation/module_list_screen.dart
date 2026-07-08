@@ -108,6 +108,15 @@ class _LevelView extends StatelessWidget {
             onLevelChanged: onLevelChanged,
           ),
         ),
+        if (entries.isNotEmpty)
+          Padding(
+            padding: const EdgeInsets.fromLTRB(16, 4, 16, 4),
+            child: LevelStartButton(
+              modules: modules,
+              level: selectedLevel,
+              color: color,
+            ),
+          ),
         Padding(
           padding: const EdgeInsets.fromLTRB(20, 4, 20, 4),
           child: Row(

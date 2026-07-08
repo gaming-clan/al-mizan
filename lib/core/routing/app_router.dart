@@ -104,7 +104,9 @@ final appRouter = GoRouter(
     GoRoute(
       path: '/timed-challenge',
       parentNavigatorKey: _rootNavigatorKey,
-      builder: (context, state) => const TimedChallengeScreen(),
+      builder: (context, state) => TimedChallengeScreen(
+        initialLevel: state.uri.queryParameters['level'],
+      ),
     ),
     GoRoute(
       path: '/daily-challenge',

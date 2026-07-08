@@ -205,31 +205,64 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
                               const SnackBar(
                                   content: Text('Mësimi u shënua si i përfunduar!')),
                             );
-                            try {
-                              final progress = await ref
-                                  .read(lessonProgressProvider(moduleId).future);
-                              if (!context.mounted) return;
-                              final levelLessons = module.lessons
-                                  .where((l) => l.level == lesson.level)
-                                  .toList();
-                              final allComplete = levelLessons.isNotEmpty &&
-                                  levelLessons.every(
-                                      (l) => progress[l.id]?.isComplete == true);
-                              if (allComplete) {
-                                showDialog(
-                                  context: context,
-                                  barrierDismissible: false,
-                                  builder: (_) => LevelCompleteDialog(
-                                    level: lesson.level,
-                                    nextLevelLabel: nextLevelLabel,
-                                    onContinue: nextLevelFirstLesson != null
-                                        ? () => context.push(
-                                            '/lesson/$moduleId/${nextLevelFirstLesson.id}')
-                                        : null,
-                                  ),
-                                );
-                              }
-                            } catch (_) {}
+                            if (isLevelMode) {
+                              // By-level mode: a "level" spans all modules.
+                              // When every lesson of this level is done, offer
+                              // the timed general quiz of the level.
+                              try {
+                                final allModules =
+                                    await ref.read(modulesProvider.future);
+                                final completed =
+                                    await db.getAllCompletedLessons();
+                                final completedIds = {
+                                  for (final c in completed) c.lessonId
+                                };
+                                final levelEntries =
+                                    lessonsOfLevel(allModules, lesson.level);
+                                final allLevelComplete =
+                                    levelEntries.isNotEmpty &&
+                                        levelEntries.every((e) =>
+                                            completedIds.contains(e.$2.id));
+                                if (allLevelComplete && context.mounted) {
+                                  showDialog(
+                                    context: context,
+                                    barrierDismissible: false,
+                                    builder: (_) => LevelQuizDialog(
+                                      level: lesson.level,
+                                      onStartQuiz: () => context.push(
+                                          '/timed-challenge?level=${lesson.level}'),
+                                    ),
+                                  );
+                                }
+                              } catch (_) {}
+                            } else {
+                              // By-module mode: level = this module's lessons.
+                              try {
+                                final progress = await ref.read(
+                                    lessonProgressProvider(moduleId).future);
+                                if (!context.mounted) return;
+                                final levelLessons = module.lessons
+                                    .where((l) => l.level == lesson.level)
+                                    .toList();
+                                final allComplete = levelLessons.isNotEmpty &&
+                                    levelLessons.every((l) =>
+                                        progress[l.id]?.isComplete == true);
+                                if (allComplete) {
+                                  showDialog(
+                                    context: context,
+                                    barrierDismissible: false,
+                                    builder: (_) => LevelCompleteDialog(
+                                      level: lesson.level,
+                                      nextLevelLabel: nextLevelLabel,
+                                      onContinue: nextLevelFirstLesson != null
+                                          ? () => context.push(
+                                              '/lesson/$moduleId/${nextLevelFirstLesson.id}')
+                                          : null,
+                                    ),
+                                  );
+                                }
+                              } catch (_) {}
+                            }
                           },
                     icon: Icon(isAlreadyRead
                         ? Icons.check_circle_rounded

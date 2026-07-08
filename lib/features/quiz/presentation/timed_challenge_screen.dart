@@ -99,7 +99,11 @@ final timedQuestionsProvider =
 });
 
 class TimedChallengeScreen extends ConsumerStatefulWidget {
-  const TimedChallengeScreen({super.key});
+  /// When set (e.g. 'beginner'), skips the level selector and starts the
+  /// timed quiz for that level directly — used after finishing a level.
+  final String? initialLevel;
+
+  const TimedChallengeScreen({super.key, this.initialLevel});
 
   @override
   ConsumerState<TimedChallengeScreen> createState() =>
@@ -108,6 +112,18 @@ class TimedChallengeScreen extends ConsumerStatefulWidget {
 
 class _TimedChallengeScreenState extends ConsumerState<TimedChallengeScreen> {
   TimedLevel? _level;
+
+  @override
+  void initState() {
+    super.initState();
+    final init = widget.initialLevel;
+    if (init != null) {
+      _level = TimedLevel.values.firstWhere(
+        (l) => l.lessonLevel == init,
+        orElse: () => TimedLevel.beginner,
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context) {

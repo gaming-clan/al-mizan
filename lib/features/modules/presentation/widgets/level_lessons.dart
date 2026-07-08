@@ -106,6 +106,42 @@ class LevelChipsRow extends StatelessWidget {
   }
 }
 
+/// Full-width button that starts the first lesson of [level] (in level
+/// browsing mode, so "next lesson" follows the same level across modules).
+class LevelStartButton extends StatelessWidget {
+  final List<FiqhModule> modules;
+  final String level;
+  final Color color;
+
+  const LevelStartButton({
+    super.key,
+    required this.modules,
+    required this.level,
+    required this.color,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final entries = lessonsOfLevel(modules, level);
+    if (entries.isEmpty) return const SizedBox.shrink();
+    final first = entries.first;
+    final label = kLevelLabels[level] ?? level;
+    return SizedBox(
+      width: double.infinity,
+      child: FilledButton.icon(
+        style: FilledButton.styleFrom(
+          backgroundColor: color,
+          padding: const EdgeInsets.symmetric(vertical: 14),
+        ),
+        onPressed: () => context.push(
+            '/lesson/${first.$1.moduleId}/${first.$2.id}?mode=level'),
+        icon: const Icon(Icons.play_circle_fill_rounded),
+        label: Text('Fillo mësimet e nivelit $label'),
+      ),
+    );
+  }
+}
+
 /// A lesson tile in the by-level list: shows the module name as subtitle
 /// and a completion check when the lesson is done.
 class LevelLessonTile extends ConsumerWidget {

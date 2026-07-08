@@ -311,6 +311,17 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                         ),
                       ),
                     ),
+                    if (entries.isNotEmpty)
+                      SliverToBoxAdapter(
+                        child: Padding(
+                          padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
+                          child: LevelStartButton(
+                            modules: modules,
+                            level: _selectedLevel,
+                            color: levelColor,
+                          ),
+                        ),
+                      ),
                     SliverList.builder(
                       itemCount: entries.length,
                       itemBuilder: (context, index) {
