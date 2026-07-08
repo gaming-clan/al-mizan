@@ -320,6 +320,52 @@
               "ayah": 4
             }
           ]
+        },
+        {
+          "heading": "Li'ani (El-Li'an)",
+          "content_sq": "Li'ani (اللعان — mallkimi mes bashkëshortëve) është procedura kur burri e akuzon gruan e tij për zina (imoralitet) por nuk ka katër dëshmitarë, ose kur mohon atësinë e fëmijës. Meqë nuk ka dëshmitarë, çështja zgjidhet me betime të përsëritura para gjykatësit: burri betohet katër herë në All-llahun se e thotë të vërtetën, dhe herën e pestë thërret mallkimin (la'netin) e All-llahut mbi vete nëse gënjen. Pastaj gruaja betohet katër herë se ai gënjen, dhe herën e pestë thërret hidhërimin (gadabin) e All-llahut mbi vete nëse ai e thotë të vërtetën — kjo e largon prej saj dënimin (hadd-in) e zinasë. Pas li'anit, bashkëshortët ndahen përgjithmonë dhe nuk lejohet të rimartohen kurrë, ndërsa fëmija i mohuar i atribuohet nënës. Këto dispozita zbritën në suren En-Nur.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "وَالَّذِينَ يَرْمُونَ أَزْوَاجَهُمْ وَلَمْ يَكُن لَّهُمْ شُهَدَاءُ إِلَّا أَنفُسُهُمْ فَشَهَادَةُ أَحَدِهِمْ أَرْبَعُ شَهَادَاتٍ بِاللَّهِ ۙ إِنَّهُ لَمِنَ الصَّادِقِينَ",
+              "translation_sq": "Ndërsa ata të cilët shpifin për gra të veta dhe nuk kanë dëshmitar tjetër pos vetes, dëshmimi i çdonjërit prej tyre është: të betohen katër herë në All-llahun se e thonë të vërtetën.",
+              "surah": "En-Nur",
+              "surah_number": 24,
+              "ayah": 6
+            },
+            {
+              "type": "quran",
+              "arabic": "وَالْخَامِسَةُ أَنَّ لَعْنَتَ اللَّهِ عَلَيْهِ إِن كَانَ مِنَ الْكَاذِبِينَ",
+              "translation_sq": "E pesta (herë e betimit) është: Mallkimi i All-llahut qoftë mbi të nëse ai gënjen.",
+              "surah": "En-Nur",
+              "surah_number": 24,
+              "ayah": 7
+            },
+            {
+              "type": "quran",
+              "arabic": "وَيَدْرَأُ عَنْهَا الْعَذَابَ أَن تَشْهَدَ أَرْبَعَ شَهَادَاتٍ بِاللَّهِ ۙ إِنَّهُ لَمِنَ الْكَاذِبِينَ",
+              "translation_sq": "E nga ajo (gruaja e shpifur) largohet dënimi, nëse katër herë betohet në All-llahun se ai (shpifësi) gënjen.",
+              "surah": "En-Nur",
+              "surah_number": 24,
+              "ayah": 8
+            },
+            {
+              "type": "quran",
+              "arabic": "وَالْخَامِسَةَ أَنَّ غَضَبَ اللَّهِ عَلَيْهَا إِن كَانَ مِنَ الصَّادِقِينَ",
+              "translation_sq": "E pesta herë e betimit të jetë që ta godisë hidhërimi i All-llahut, atë (gruan) nëse shpifja ka qenë e vërtetë.",
+              "surah": "En-Nur",
+              "surah_number": 24,
+              "ayah": 9
+            },
+            {
+              "type": "quran",
+              "arabic": "وَلَوْلَا فَضْلُ اللَّهِ عَلَيْكُمْ وَرَحْمَتُهُ وَأَنَّ اللَّهَ تَوَّابٌ حَكِيمٌ",
+              "translation_sq": "Dhe sikur të mos ishin dhurata dhe mëshira e All-llahut ndaj jush (ju do të mbarojshit). Pa dyshim All-llahu pranon pendimin, është i gjithëdijshëm.",
+              "surah": "En-Nur",
+              "surah_number": 24,
+              "ayah": 10
+            }
+          ]
         }
       ],
       "quiz": [
