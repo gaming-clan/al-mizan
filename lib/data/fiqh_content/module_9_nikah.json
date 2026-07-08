@@ -445,6 +445,39 @@
           ],
           "correct_index": 1,
           "explanation": "Divorci është hallall por mekruh — gjëja më e urryer e lejuar tek Allahu."
+        },
+        {
+          "question": "Çka është li'ani?",
+          "options": [
+            "Betimi për të mos iu afruar gruas",
+            "Procedura e betimeve kur burri e akuzon gruan për zina pa katër dëshmitarë",
+            "Divorci i tretë i pakthyeshëm",
+            "Anulimi i martesës nga gjykata"
+          ],
+          "correct_index": 1,
+          "explanation": "Li'ani është procedura kur burri e akuzon gruan e tij për zina por nuk ka katër dëshmitarë: ai betohet katër herë në All-llahun se e thotë të vërtetën, dhe herën e pestë thërret mallkimin e All-llahut mbi vete nëse gënjen (En-Nur 24:6-7)."
+        },
+        {
+          "question": "Si largohet dënimi nga gruaja në li'an?",
+          "options": [
+            "Duke ia kthyer mehrin burrit",
+            "Duke u betuar katër herë se burri gënjen, e të pestën thërret hidhërimin e All-llahut mbi vete nëse ai e thotë të vërtetën",
+            "Duke sjellë katër dëshmitarë",
+            "Duke kërkuar divorcin nga gjykata"
+          ],
+          "correct_index": 1,
+          "explanation": "Nga gruaja largohet dënimi nëse betohet katër herë në All-llahun se shpifësi gënjen, dhe herën e pestë thërret hidhërimin e All-llahut mbi vete nëse shpifja ka qenë e vërtetë (En-Nur 24:8-9)."
+        },
+        {
+          "question": "Cila është pasoja e li'anit për bashkëshortët?",
+          "options": [
+            "Ndahen përkohësisht deri në pendim",
+            "Ndahen përgjithmonë dhe nuk lejohet të rimartohen kurrë",
+            "Vazhdojnë martesën pas kefaretit",
+            "Gruaja humb mehrin dhe kthehet te burri"
+          ],
+          "correct_index": 1,
+          "explanation": "Pas li'anit bashkëshortët ndahen përgjithmonë dhe nuk lejohet të rimartohen kurrë, ndërsa fëmija i mohuar i atribuohet nënës."
         }
       ]
     },
