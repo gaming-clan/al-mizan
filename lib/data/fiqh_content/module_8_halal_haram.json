@@ -27,17 +27,9 @@
           "evidences": [
             {
               "type": "hadith",
-              "arabic": "الحلال ما أحل الله في كتابه، والحرام ما حرم الله في كتابه، وما سكت عنه فهو مما عفا عنه",
-              "translation_sq": "Hallall është ajo që e ka lejuar Allahu në Librin e Tij, haram është ajo që e ka ndaluar, ndërsa ajo për të cilën ka heshtur — është falje nga Ai.",
-              "narrator": "Selman Farisiu (r.a.)",
-              "collection": "Sunen Tirmidhij",
-              "classification": "sahih"
-            },
-            {
-              "type": "hadith",
               "arabic": "إن الله فرض فرائض فلا تضيعوها، وحدّ حدوداً فلا تعتدوها، وحرّم أشياء فلا تنتهكوها، وسكت عن أشياء رحمة بكم غير نسيان فلا تبحثوا عنها",
-              "translation_sq": "Allahu ka obliguar farze, pra mos i humbni; ka caktuar kufij, pra mos i tejkaloni; ka ndaluar gjëra, pra mos i shkelni! Heshtja e Tij ndaj disa gjërave është mëshirë, jo harresë — pra mos i gjurmoni!",
-              "narrator": "Ebu Thealebe el Hasheni (r.a.)",
+              "translation_sq": "Padyshim që Allahu i Madhëruar i ka bërë obligim disa farze, prandaj mos i lini pas dore; ka vendosur kufij, në mënyrë që të mos i tejkaloni ato; ka ndaluar disa gjëra prandaj mos i thyeni ato, ka heshtur për disa gjëra nga mëshira ndaj jush e jo nga harresa, ndaj mos hulumtoni rreth tyre!",
+              "narrator": "Ebu Thealebe el Hasheni Xhurthum bin Nashir (RadijAllahu anhu)",
               "collection": "Sunen Darekutnij (dhe të tjerë)",
               "classification": "hasen"
             }
