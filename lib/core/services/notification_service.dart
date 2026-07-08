@@ -27,16 +27,20 @@ class NotificationService {
   static const _challengeBaseId = 200; // 200..213
   static const _challengeDaysAhead = 14;
   static const prefsChallengeEnabledKey = 'daily_challenge_notif_enabled';
-  static const challengeHour = 18;
-  static const challengeMinute = 0;
+  static const prefsChallengeHourKey = 'daily_challenge_notif_hour';
+  static const prefsChallengeMinuteKey = 'daily_challenge_notif_minute';
+  static const defaultChallengeHour = 18;
+  static const defaultChallengeMinute = 0;
 
   // ── Weekly-challenge reminder ──
   static const _weeklyBaseId = 300; // 300..307
   static const _weeklyWeeksAhead = 8;
   static const prefsWeeklyEnabledKey = 'weekly_challenge_notif_enabled';
+  static const prefsWeeklyHourKey = 'weekly_challenge_notif_hour';
+  static const prefsWeeklyMinuteKey = 'weekly_challenge_notif_minute';
   static const weeklyWeekday = DateTime.friday; // 5
-  static const weeklyHour = 10;
-  static const weeklyMinute = 0;
+  static const defaultWeeklyHour = 10;
+  static const defaultWeeklyMinute = 0;
 
   static final _plugin = FlutterLocalNotificationsPlugin();
   static bool _initialized = false;
@@ -101,13 +105,20 @@ class NotificationService {
     }
 
     if (prefs.getBool(prefsChallengeEnabledKey) ?? true) {
-      await scheduleDailyChallenge();
+      await scheduleDailyChallenge(
+        hour: prefs.getInt(prefsChallengeHourKey) ?? defaultChallengeHour,
+        minute:
+            prefs.getInt(prefsChallengeMinuteKey) ?? defaultChallengeMinute,
+      );
     } else {
       await cancelDailyChallenge();
     }
 
     if (prefs.getBool(prefsWeeklyEnabledKey) ?? true) {
-      await scheduleWeeklyChallenge();
+      await scheduleWeeklyChallenge(
+        hour: prefs.getInt(prefsWeeklyHourKey) ?? defaultWeeklyHour,
+        minute: prefs.getInt(prefsWeeklyMinuteKey) ?? defaultWeeklyMinute,
+      );
     } else {
       await cancelWeeklyChallenge();
     }
@@ -153,13 +164,15 @@ class NotificationService {
   // ── Daily-challenge reminder ──
 
   /// Schedules a daily reminder to do the Daily Challenge.
-  static Future<void> scheduleDailyChallenge() async {
+  static Future<void> scheduleDailyChallenge({
+    required int hour,
+    required int minute,
+  }) async {
     await init();
     await cancelDailyChallenge();
 
     final now = DateTime.now();
-    var first =
-        DateTime(now.year, now.month, now.day, challengeHour, challengeMinute);
+    var first = DateTime(now.year, now.month, now.day, hour, minute);
     if (!first.isAfter(now)) first = first.add(const Duration(days: 1));
 
     const body =
@@ -184,12 +197,15 @@ class NotificationService {
 
   /// Schedules a weekly reminder (every [weeklyWeekday]) to do the Weekly
   /// Challenge.
-  static Future<void> scheduleWeeklyChallenge() async {
+  static Future<void> scheduleWeeklyChallenge({
+    required int hour,
+    required int minute,
+  }) async {
     await init();
     await cancelWeeklyChallenge();
 
     final now = DateTime.now();
-    var first = DateTime(now.year, now.month, now.day, weeklyHour, weeklyMinute);
+    var first = DateTime(now.year, now.month, now.day, hour, minute);
     final daysUntil = (weeklyWeekday - first.weekday) % 7; // 0..6, always >= 0
     first = first.add(Duration(days: daysUntil));
     if (!first.isAfter(now)) first = first.add(const Duration(days: 7));

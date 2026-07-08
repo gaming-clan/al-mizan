@@ -616,7 +616,7 @@ class ProfileScreen extends ConsumerWidget {
             icon: Icons.today_rounded,
             title: 'Kujtesë për Sfidën Ditore',
             subtitle: challengeNotif.dailyEnabled
-                ? 'Kujtesë çdo ditë në 18:00'
+                ? 'Kujtesë çdo ditë në ${challengeNotif.dailyLabel}'
                 : 'I çaktivizuar',
             trailing: Switch.adaptive(
               value: challengeNotif.dailyEnabled,
@@ -629,12 +629,44 @@ class ProfileScreen extends ConsumerWidget {
                 .setDailyEnabled(!challengeNotif.dailyEnabled),
           ),
           const SizedBox(height: 4),
+          // Daily-challenge reminder time picker
+          Opacity(
+            opacity: challengeNotif.dailyEnabled ? 1.0 : 0.4,
+            child: _SettingsTile(
+              icon: Icons.schedule_rounded,
+              title: 'Ora e Sfidës Ditore',
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(challengeNotif.dailyLabel,
+                      style: theme.textTheme.bodySmall),
+                  const SizedBox(width: 4),
+                  Icon(Icons.chevron_right_rounded,
+                      color: cs.onSurfaceVariant, size: 20),
+                ],
+              ),
+              onTap: challengeNotif.dailyEnabled
+                  ? () async {
+                      final picked = await showTimePicker(
+                        context: context,
+                        initialTime: challengeNotif.dailyTime,
+                      );
+                      if (picked != null) {
+                        ref
+                            .read(challengeNotifProvider.notifier)
+                            .setDailyTime(picked);
+                      }
+                    }
+                  : null,
+            ),
+          ),
+          const SizedBox(height: 8),
           // Weekly-challenge reminder toggle
           _SettingsTile(
             icon: Icons.date_range_rounded,
             title: 'Kujtesë për Sfidën Javore',
             subtitle: challengeNotif.weeklyEnabled
-                ? 'Kujtesë çdo të premte në 10:00'
+                ? 'Kujtesë çdo të premte në ${challengeNotif.weeklyLabel}'
                 : 'I çaktivizuar',
             trailing: Switch.adaptive(
               value: challengeNotif.weeklyEnabled,
@@ -645,6 +677,38 @@ class ProfileScreen extends ConsumerWidget {
             onTap: () => ref
                 .read(challengeNotifProvider.notifier)
                 .setWeeklyEnabled(!challengeNotif.weeklyEnabled),
+          ),
+          const SizedBox(height: 4),
+          // Weekly-challenge reminder time picker
+          Opacity(
+            opacity: challengeNotif.weeklyEnabled ? 1.0 : 0.4,
+            child: _SettingsTile(
+              icon: Icons.schedule_rounded,
+              title: 'Ora e Sfidës Javore',
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(challengeNotif.weeklyLabel,
+                      style: theme.textTheme.bodySmall),
+                  const SizedBox(width: 4),
+                  Icon(Icons.chevron_right_rounded,
+                      color: cs.onSurfaceVariant, size: 20),
+                ],
+              ),
+              onTap: challengeNotif.weeklyEnabled
+                  ? () async {
+                      final picked = await showTimePicker(
+                        context: context,
+                        initialTime: challengeNotif.weeklyTime,
+                      );
+                      if (picked != null) {
+                        ref
+                            .read(challengeNotifProvider.notifier)
+                            .setWeeklyTime(picked);
+                      }
+                    }
+                  : null,
+            ),
           ),
           const SizedBox(height: 8),
           _SettingsTile(
