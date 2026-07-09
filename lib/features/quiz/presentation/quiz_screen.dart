@@ -179,41 +179,49 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                             AppColors.primary.withValues(alpha: 0.1),
                       ),
                       const SizedBox(height: 24),
-                      Text(q.question,
-                          style: theme.textTheme.headlineSmall),
-                      const SizedBox(height: 24),
-                      for (int i = 0; i < q.options.length; i++) ...[
-                        _OptionButton(
-                          text: q.options[i],
-                          index: i,
-                          correctIndex: q.correctIndex,
-                          selected: quizState.selectedOption,
-                          answered: quizState.answered,
-                          onTap: () =>
-                              quizNotifier.selectOption(i, q.correctIndex),
+                      Expanded(
+                        child: ListView(
+                          children: [
+                            Text(q.question,
+                                style: theme.textTheme.headlineSmall),
+                            const SizedBox(height: 24),
+                            for (int i = 0; i < q.options.length; i++) ...[
+                              _OptionButton(
+                                text: q.options[i],
+                                index: i,
+                                correctIndex: q.correctIndex,
+                                selected: quizState.selectedOption,
+                                answered: quizState.answered,
+                                onTap: () => quizNotifier.selectOption(
+                                    i, q.correctIndex),
+                              ),
+                              const SizedBox(height: 8),
+                            ],
+                            if (quizState.answered) ...[
+                              const SizedBox(height: 16),
+                              Card(
+                                color:
+                                    AppColors.primary.withValues(alpha: 0.08),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(12),
+                                  child: Text(q.explanation,
+                                      style: theme.textTheme.bodyMedium),
+                                ),
+                              ),
+                              const SizedBox(height: 16),
+                              FilledButton(
+                                onPressed: quizNotifier.nextQuestion,
+                                child: Text(
+                                  quizState.currentIndex + 1 <
+                                          questions.length
+                                      ? 'Pyetja Tjetër'
+                                      : 'Shiko Rezultatin',
+                                ),
+                              ),
+                            ],
+                          ],
                         ),
-                        const SizedBox(height: 8),
-                      ],
-                      if (quizState.answered) ...[
-                        const SizedBox(height: 16),
-                        Card(
-                          color: AppColors.primary.withValues(alpha: 0.08),
-                          child: Padding(
-                            padding: const EdgeInsets.all(12),
-                            child: Text(q.explanation,
-                                style: theme.textTheme.bodyMedium),
-                          ),
-                        ),
-                        const Spacer(),
-                        FilledButton(
-                          onPressed: quizNotifier.nextQuestion,
-                          child: Text(
-                            quizState.currentIndex + 1 < questions.length
-                                ? 'Pyetja Tjetër'
-                                : 'Shiko Rezultatin',
-                          ),
-                        ),
-                      ],
+                      ),
                     ],
                   ),
                 ),
