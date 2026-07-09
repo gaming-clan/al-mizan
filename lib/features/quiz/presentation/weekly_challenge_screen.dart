@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../../../core/services/quiz_resume_service.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../modules/data/fiqh_data_source.dart';
 import '../../modules/data/models/fiqh_models.dart';
@@ -173,7 +174,65 @@ class _WeeklyChallengeScreenState
   final List<int> _wrong = [0, 0, 0];
   final List<int> _timeouts = [0, 0, 0];
 
+  /// Saved mid-challenge state for this week, if any.
+  Map<String, dynamic>? _resume;
+
   _WeeklyPart get _part => _parts[_partIndex];
+
+  @override
+  void initState() {
+    super.initState();
+    _loadResume();
+  }
+
+  Future<void> _loadResume() async {
+    final saved = await QuizResumeService.load(QuizResumeService.weeklyKey);
+    if (saved == null) return;
+    if (saved['week'] != _weekKey(DateTime.now())) {
+      // Stale (another week) — discard.
+      await QuizResumeService.clear(QuizResumeService.weeklyKey);
+      return;
+    }
+    if (!mounted) return;
+    setState(() => _resume = saved);
+  }
+
+  void _applyResume() {
+    final saved = _resume;
+    if (saved == null) return;
+    List<int> ints(String key) => [
+          for (final v in (saved[key] as List? ?? const []))
+            (v as num).toInt(),
+        ];
+    final corr = ints('correct');
+    final wrong = ints('wrong');
+    final touts = ints('timeouts');
+    setState(() {
+      _partIndex = ((saved['partIndex'] as num?)?.toInt() ?? 0).clamp(0, 2);
+      _qIndex = (saved['qIndex'] as num?)?.toInt() ?? 0;
+      for (int i = 0; i < 3; i++) {
+        _correct[i] = i < corr.length ? corr[i] : 0;
+        _wrong[i] = i < wrong.length ? wrong[i] : 0;
+        _timeouts[i] = i < touts.length ? touts[i] : 0;
+      }
+      _saved = saved['alreadySaved'] == true;
+      _answered = false;
+      _selected = null;
+      _phase = 'partIntro';
+    });
+  }
+
+  void _persist() {
+    QuizResumeService.save(QuizResumeService.weeklyKey, {
+      'week': _weekKey(DateTime.now()),
+      'partIndex': _partIndex,
+      'qIndex': _qIndex,
+      'correct': _correct,
+      'wrong': _wrong,
+      'timeouts': _timeouts,
+      'alreadySaved': _saved,
+    });
+  }
 
   @override
   void dispose() {
@@ -232,6 +291,7 @@ class _WeeklyChallengeScreenState
       final partLen = questions?[_partIndex].length ?? 0;
       if (_qIndex + 1 < partLen) {
         setState(() => _qIndex++);
+        _persist();
         _startQuestion();
       } else if (_partIndex + 1 < _parts.length) {
         setState(() {
@@ -239,7 +299,9 @@ class _WeeklyChallengeScreenState
           _qIndex = 0;
           _phase = 'partIntro';
         });
+        _persist();
       } else {
+        QuizResumeService.clear(QuizResumeService.weeklyKey);
         setState(() => _phase = 'final');
       }
     });
@@ -248,7 +310,9 @@ class _WeeklyChallengeScreenState
   void _restart() {
     _ticker?.cancel();
     _advanceTimer?.cancel();
+    QuizResumeService.clear(QuizResumeService.weeklyKey);
     setState(() {
+      _resume = null;
       _phase = 'partIntro';
       _partIndex = 0;
       _qIndex = 0;
@@ -413,6 +477,36 @@ class _WeeklyChallengeScreenState
                       },
                       icon: const Icon(Icons.replay_rounded),
                       label: const Text('Provo Përsëri (pa u regjistruar)'),
+                    ),
+                  ] else if (_resume != null) ...[
+                    FilledButton.icon(
+                      onPressed: _applyResume,
+                      style: FilledButton.styleFrom(
+                        padding: const EdgeInsets.symmetric(vertical: 16),
+                      ),
+                      icon: const Icon(Icons.play_arrow_rounded),
+                      label: Text(
+                        'Vazhdo ku mbete (Pjesa ${(((_resume!['partIndex'] as num?)?.toInt() ?? 0).clamp(0, 2)) + 1}, pyetja ${((_resume!['qIndex'] as num?)?.toInt() ?? 0) + 1})',
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    OutlinedButton.icon(
+                      onPressed: () {
+                        QuizResumeService.clear(QuizResumeService.weeklyKey);
+                        setState(() {
+                          _resume = null;
+                          _partIndex = 0;
+                          _qIndex = 0;
+                          for (int i = 0; i < 3; i++) {
+                            _correct[i] = 0;
+                            _wrong[i] = 0;
+                            _timeouts[i] = 0;
+                          }
+                          _phase = 'partIntro';
+                        });
+                      },
+                      icon: const Icon(Icons.replay_rounded),
+                      label: const Text('Fillo nga e para'),
                     ),
                   ] else
                     FilledButton.icon(

@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../../../core/services/quiz_resume_service.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../modules/data/fiqh_data_source.dart';
 import '../../modules/data/models/fiqh_models.dart';
@@ -83,8 +84,10 @@ enum TimedLevel {
 }
 
 /// Loads shuffled questions from lessons of the given level.
-final timedQuestionsProvider =
-    FutureProvider.family<List<QuizQuestion>, TimedLevel>((ref, level) async {
+/// Seeded so an interrupted challenge can be resumed with the same set.
+final timedQuestionsProvider = FutureProvider.family<List<QuizQuestion>,
+    (TimedLevel, int)>((ref, args) async {
+  final (level, seed) = args;
   final modules = await FiqhDataSource().loadAllModules();
   final questions = <QuizQuestion>[];
   for (final module in modules) {
@@ -94,7 +97,7 @@ final timedQuestionsProvider =
       }
     }
   }
-  questions.shuffle(Random());
+  questions.shuffle(Random(seed));
   return questions.take(level.questionCount).toList();
 });
 
@@ -112,6 +115,11 @@ class TimedChallengeScreen extends ConsumerStatefulWidget {
 
 class _TimedChallengeScreenState extends ConsumerState<TimedChallengeScreen> {
   TimedLevel? _level;
+  int _seed = QuizResumeService.newSeed();
+  int _startIndex = 0;
+  int _startCorrect = 0;
+  int _startWrong = 0;
+  int _startTimeouts = 0;
 
   @override
   void initState() {
@@ -122,17 +130,90 @@ class _TimedChallengeScreenState extends ConsumerState<TimedChallengeScreen> {
         (l) => l.lessonLevel == init,
         orElse: () => TimedLevel.beginner,
       );
+    } else {
+      _checkResume();
     }
+  }
+
+  Future<void> _checkResume() async {
+    final saved = await QuizResumeService.load(QuizResumeService.timedKey);
+    if (saved == null || saved['seed'] is! int || !mounted) return;
+    final levelName = saved['level'] as String?;
+    final level = TimedLevel.values
+        .where((l) => l.name == levelName)
+        .firstOrNull;
+    if (level == null) return;
+    final index = (saved['index'] as num?)?.toInt() ?? 0;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      showDialog<bool>(
+        context: context,
+        barrierDismissible: false,
+        builder: (_) => AlertDialog(
+          title: const Text('Sfidë e papërfunduar'),
+          content: Text(
+              'E ke lënë përgjysmë një sfidë me kohë (${level.label}) te pyetja ${index + 1}. Dëshiron të vazhdosh ku mbete?'),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context, false),
+              child: const Text('Fillo nga e para'),
+            ),
+            FilledButton(
+              onPressed: () => Navigator.pop(context, true),
+              child: const Text('Vazhdo ku mbete'),
+            ),
+          ],
+        ),
+      ).then((resume) {
+        if (!mounted) return;
+        if (resume == true) {
+          setState(() {
+            _seed = saved['seed'] as int;
+            _startIndex = index;
+            _startCorrect = (saved['correct'] as num?)?.toInt() ?? 0;
+            _startWrong = (saved['wrong'] as num?)?.toInt() ?? 0;
+            _startTimeouts = (saved['timeouts'] as num?)?.toInt() ?? 0;
+            _level = level;
+          });
+        } else {
+          QuizResumeService.clear(QuizResumeService.timedKey);
+        }
+      });
+    });
+  }
+
+  void _freshStart() {
+    _seed = QuizResumeService.newSeed();
+    _startIndex = 0;
+    _startCorrect = 0;
+    _startWrong = 0;
+    _startTimeouts = 0;
   }
 
   @override
   Widget build(BuildContext context) {
     if (_level == null) {
-      return _LevelSelector(onSelect: (l) => setState(() => _level = l));
+      return _LevelSelector(onSelect: (l) {
+        QuizResumeService.clear(QuizResumeService.timedKey);
+        setState(() {
+          _freshStart();
+          _level = l;
+        });
+      });
     }
     return _TimedQuizBody(
+      key: ValueKey('timed_${_level!.name}_$_seed'),
       level: _level!,
-      onExit: () => setState(() => _level = null),
+      seed: _seed,
+      startIndex: _startIndex,
+      startCorrect: _startCorrect,
+      startWrong: _startWrong,
+      startTimeouts: _startTimeouts,
+      onRetry: () => setState(_freshStart),
+      onExit: () => setState(() {
+        _freshStart();
+        _level = null;
+      }),
     );
   }
 }
@@ -238,8 +319,25 @@ class _LevelSelector extends StatelessWidget {
 
 class _TimedQuizBody extends ConsumerStatefulWidget {
   final TimedLevel level;
+  final int seed;
+  final int startIndex;
+  final int startCorrect;
+  final int startWrong;
+  final int startTimeouts;
+  final VoidCallback onRetry;
   final VoidCallback onExit;
-  const _TimedQuizBody({required this.level, required this.onExit});
+
+  const _TimedQuizBody({
+    super.key,
+    required this.level,
+    required this.seed,
+    this.startIndex = 0,
+    this.startCorrect = 0,
+    this.startWrong = 0,
+    this.startTimeouts = 0,
+    required this.onRetry,
+    required this.onExit,
+  });
 
   @override
   ConsumerState<_TimedQuizBody> createState() => _TimedQuizBodyState();
@@ -250,13 +348,29 @@ class _TimedQuizBodyState extends ConsumerState<_TimedQuizBody> {
   static const _feedbackDelay = Duration(milliseconds: 1600);
 
   List<QuizQuestion>? _questions;
-  int _index = 0;
-  int _correct = 0;
-  int _wrong = 0;
-  int _timeouts = 0;
+  late int _index = widget.startIndex;
+  late int _correct = widget.startCorrect;
+  late int _wrong = widget.startWrong;
+  late int _timeouts = widget.startTimeouts;
   bool _answered = false;
   int? _selected;
   double _remaining = 0;
+
+  void _persist() {
+    final total = _questions?.length ?? 0;
+    if (_index < total) {
+      QuizResumeService.save(QuizResumeService.timedKey, {
+        'level': widget.level.name,
+        'seed': widget.seed,
+        'index': _index,
+        'correct': _correct,
+        'wrong': _wrong,
+        'timeouts': _timeouts,
+      });
+    } else {
+      QuizResumeService.clear(QuizResumeService.timedKey);
+    }
+  }
   Timer? _ticker;
   Timer? _advanceTimer;
 
@@ -316,6 +430,7 @@ class _TimedQuizBodyState extends ConsumerState<_TimedQuizBody> {
     _advanceTimer = Timer(_feedbackDelay, () {
       if (!mounted) return;
       setState(() => _index++);
+      _persist();
       if (_index < (_questions?.length ?? 0)) {
         _startQuestion();
       }
@@ -324,7 +439,8 @@ class _TimedQuizBodyState extends ConsumerState<_TimedQuizBody> {
 
   @override
   Widget build(BuildContext context) {
-    final questionsAsync = ref.watch(timedQuestionsProvider(widget.level));
+    final questionsAsync =
+        ref.watch(timedQuestionsProvider((widget.level, widget.seed)));
     final theme = Theme.of(context);
     final cs = theme.colorScheme;
 
@@ -339,7 +455,11 @@ class _TimedQuizBodyState extends ConsumerState<_TimedQuizBody> {
 
         if (_questions == null) {
           _questions = questions;
-          WidgetsBinding.instance.addPostFrameCallback((_) => _startQuestion());
+          WidgetsBinding.instance.addPostFrameCallback((_) {
+            if (!mounted) return;
+            _persist();
+            _startQuestion();
+          });
           return const Scaffold(
               body: Center(child: CircularProgressIndicator()));
         }
@@ -353,14 +473,8 @@ class _TimedQuizBodyState extends ConsumerState<_TimedQuizBody> {
             wrong: _wrong,
             timeouts: _timeouts,
             onRetry: () {
-              ref.invalidate(timedQuestionsProvider(widget.level));
-              setState(() {
-                _questions = null;
-                _index = 0;
-                _correct = 0;
-                _wrong = 0;
-                _timeouts = 0;
-              });
+              QuizResumeService.clear(QuizResumeService.timedKey);
+              widget.onRetry();
             },
             onExit: widget.onExit,
           );

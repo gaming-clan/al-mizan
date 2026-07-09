@@ -1,6 +1,7 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../../../core/services/quiz_resume_service.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../modules/data/fiqh_data_source.dart';
 import '../../modules/data/models/fiqh_models.dart';
@@ -13,9 +14,11 @@ enum QuizDifficulty {
   hard,
 }
 
-/// Provider that loads all quiz questions across all modules
-final allQuestionsProvider =
-    FutureProvider.family<List<QuizQuestion>, QuizDifficulty>((ref, difficulty) async {
+/// Provider that loads all quiz questions across all modules.
+/// Seeded so an interrupted quiz can be resumed with the same questions.
+final allQuestionsProvider = FutureProvider.family<List<QuizQuestion>,
+    (QuizDifficulty, int)>((ref, args) async {
+  final (difficulty, seed) = args;
   final dataSource = FiqhDataSource();
   final modules = await dataSource.loadAllModules();
   final allQuestions = <QuizQuestion>[];
@@ -26,21 +29,13 @@ final allQuestionsProvider =
     }
   }
 
-  // Filter by difficulty based on question count
-  switch (difficulty) {
-    case QuizDifficulty.easy:
-      // 10 questions
-      allQuestions.shuffle(Random());
-      return allQuestions.take(10).toList();
-    case QuizDifficulty.medium:
-      // 20 questions
-      allQuestions.shuffle(Random());
-      return allQuestions.take(20).toList();
-    case QuizDifficulty.hard:
-      // 30 questions (all available, shuffled)
-      allQuestions.shuffle(Random());
-      return allQuestions.take(30).toList();
-  }
+  allQuestions.shuffle(Random(seed));
+  final count = switch (difficulty) {
+    QuizDifficulty.easy => 10,
+    QuizDifficulty.medium => 20,
+    QuizDifficulty.hard => 30,
+  };
+  return allQuestions.take(count).toList();
 });
 
 /// The difficulty selection + quiz screen
@@ -53,16 +48,83 @@ class GeneralQuizScreen extends ConsumerStatefulWidget {
 
 class _GeneralQuizScreenState extends ConsumerState<GeneralQuizScreen> {
   QuizDifficulty? _selectedDifficulty;
+  int _seed = QuizResumeService.newSeed();
+  int _startIndex = 0;
+  int _startCorrect = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    _checkResume();
+  }
+
+  Future<void> _checkResume() async {
+    final saved = await QuizResumeService.load(QuizResumeService.generalKey);
+    if (saved == null || saved['seed'] is! int || !mounted) return;
+    final diffIdx = ((saved['difficulty'] as num?)?.toInt() ?? 0)
+        .clamp(0, QuizDifficulty.values.length - 1);
+    final index = (saved['index'] as num?)?.toInt() ?? 0;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      showDialog<bool>(
+        context: context,
+        barrierDismissible: false,
+        builder: (_) => AlertDialog(
+          title: const Text('Kuiz i papërfunduar'),
+          content: Text(
+              'E ke lënë përgjysmë një kuiz të përgjithshëm te pyetja ${index + 1}. Dëshiron të vazhdosh ku mbete?'),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context, false),
+              child: const Text('Fillo nga e para'),
+            ),
+            FilledButton(
+              onPressed: () => Navigator.pop(context, true),
+              child: const Text('Vazhdo ku mbete'),
+            ),
+          ],
+        ),
+      ).then((resume) {
+        if (!mounted) return;
+        if (resume == true) {
+          setState(() {
+            _seed = saved['seed'] as int;
+            _startIndex = index;
+            _startCorrect = (saved['correct'] as num?)?.toInt() ?? 0;
+            _selectedDifficulty = QuizDifficulty.values[diffIdx];
+          });
+        } else {
+          QuizResumeService.clear(QuizResumeService.generalKey);
+        }
+      });
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     if (_selectedDifficulty == null) {
       return _DifficultySelector(
-        onSelect: (d) => setState(() => _selectedDifficulty = d),
+        onSelect: (d) => setState(() {
+          _seed = QuizResumeService.newSeed();
+          _startIndex = 0;
+          _startCorrect = 0;
+          _selectedDifficulty = d;
+        }),
       );
     }
 
-    return _GeneralQuizBody(difficulty: _selectedDifficulty!);
+    return _GeneralQuizBody(
+      key: ValueKey('general_$_seed'),
+      difficulty: _selectedDifficulty!,
+      seed: _seed,
+      startIndex: _startIndex,
+      startCorrect: _startCorrect,
+      onNewSeed: () => setState(() {
+        _seed = QuizResumeService.newSeed();
+        _startIndex = 0;
+        _startCorrect = 0;
+      }),
+    );
   }
 }
 
@@ -181,11 +243,36 @@ class _DifficultyCard extends StatelessWidget {
 
 class _GeneralQuizBody extends ConsumerWidget {
   final QuizDifficulty difficulty;
-  const _GeneralQuizBody({required this.difficulty});
+  final int seed;
+  final int startIndex;
+  final int startCorrect;
+  final VoidCallback onNewSeed;
+
+  const _GeneralQuizBody({
+    super.key,
+    required this.difficulty,
+    required this.seed,
+    required this.startIndex,
+    required this.startCorrect,
+    required this.onNewSeed,
+  });
+
+  void _persist(QuizState s, int total) {
+    if (s.currentIndex < total) {
+      QuizResumeService.save(QuizResumeService.generalKey, {
+        'difficulty': difficulty.index,
+        'seed': seed,
+        'index': s.currentIndex,
+        'correct': s.correctCount,
+      });
+    } else {
+      QuizResumeService.clear(QuizResumeService.generalKey);
+    }
+  }
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final questionsAsync = ref.watch(allQuestionsProvider(difficulty));
+    final questionsAsync = ref.watch(allQuestionsProvider((difficulty, seed)));
     final quizState = ref.watch(quizProvider);
     final quizNotifier = ref.read(quizProvider.notifier);
     final theme = Theme.of(context);
@@ -202,7 +289,13 @@ class _GeneralQuizBody extends ConsumerWidget {
         // Initialize shuffled questions
         if (quizState.questions.isEmpty) {
           WidgetsBinding.instance.addPostFrameCallback((_) {
-            quizNotifier.initialize(rawQuestions);
+            quizNotifier.initialize(
+              rawQuestions,
+              seed: seed,
+              startIndex: startIndex.clamp(0, rawQuestions.length - 1),
+              startCorrect: startCorrect,
+            );
+            _persist(ref.read(quizProvider), rawQuestions.length);
           });
           return const Scaffold(
             body: Center(child: CircularProgressIndicator()),
@@ -272,8 +365,10 @@ class _GeneralQuizBody extends ConsumerWidget {
                       const SizedBox(height: 24),
                       FilledButton.icon(
                         onPressed: () {
-                          ref.invalidate(allQuestionsProvider(difficulty));
+                          QuizResumeService.clear(
+                              QuizResumeService.generalKey);
                           quizNotifier.reset();
+                          onNewSeed();
                         },
                         icon: const Icon(Icons.replay_rounded),
                         label: const Text('Provo Përsëri'),
@@ -338,7 +433,10 @@ class _GeneralQuizBody extends ConsumerWidget {
                     ),
                     const Spacer(),
                     FilledButton(
-                      onPressed: quizNotifier.nextQuestion,
+                      onPressed: () {
+                        quizNotifier.nextQuestion();
+                        _persist(ref.read(quizProvider), questions.length);
+                      },
                       child: Text(
                         quizState.currentIndex + 1 < questions.length
                             ? 'Pyetja Tjetër'

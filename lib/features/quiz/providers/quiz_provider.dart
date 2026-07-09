@@ -38,9 +38,18 @@ class QuizNotifier extends StateNotifier<QuizState> {
   QuizNotifier() : super(const QuizState());
 
   /// Shuffles both question order and each question's option order.
-  void initialize(List<QuizQuestion> originalQuestions) {
+  ///
+  /// With a [seed] the shuffle is reproducible, so an interrupted quiz can
+  /// be resumed with the same questions in the same order; [startIndex] and
+  /// [startCorrect] restore the saved position and score.
+  void initialize(
+    List<QuizQuestion> originalQuestions, {
+    int? seed,
+    int startIndex = 0,
+    int startCorrect = 0,
+  }) {
     if (state.questions.isNotEmpty) return;
-    final rng = Random();
+    final rng = seed != null ? Random(seed) : Random();
     final shuffled = List<QuizQuestion>.from(originalQuestions);
     shuffled.shuffle(rng);
     final randomized = shuffled.map((q) {
@@ -55,7 +64,11 @@ class QuizNotifier extends StateNotifier<QuizState> {
         explanation: q.explanation,
       );
     }).toList();
-    state = QuizState(questions: randomized);
+    state = QuizState(
+      questions: randomized,
+      currentIndex: startIndex,
+      correctCount: startCorrect,
+    );
   }
 
   void selectOption(int index, int correctIndex) {

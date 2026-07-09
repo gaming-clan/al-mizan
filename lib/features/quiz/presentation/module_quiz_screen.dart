@@ -1,6 +1,7 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../../../core/services/quiz_resume_service.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../modules/data/models/fiqh_models.dart';
 import '../../modules/providers/module_provider.dart';
@@ -28,15 +29,93 @@ class _ModuleQuizScreenState extends ConsumerState<ModuleQuizScreen> {
   bool _answered = false;
   final List<int> _correct = [0, 0, 0];
 
+  int _seed = QuizResumeService.newSeed();
+  String get _resumeKey => QuizResumeService.moduleKey(widget.moduleId);
+
   @override
   void initState() {
     super.initState();
-    _loadQuestions();
+    _init();
   }
 
-  Future<void> _loadQuestions() async {
+  Future<void> _init() async {
+    final saved = await QuizResumeService.load(_resumeKey);
+    if (saved != null && saved['seed'] is int) {
+      _seed = saved['seed'] as int;
+    }
+    await _loadQuestions();
+    if (saved != null && saved['seed'] is int && mounted) {
+      WidgetsBinding.instance.addPostFrameCallback((_) => _askResume(saved));
+    }
+  }
+
+  void _askResume(Map<String, dynamic> saved) {
+    final levelIdx =
+        ((saved['levelIndex'] as num?)?.toInt() ?? 0).clamp(0, 2);
+    final q = (saved['currentQ'] as num?)?.toInt() ?? 0;
+    showDialog<bool>(
+      context: context,
+      barrierDismissible: false,
+      builder: (_) => AlertDialog(
+        title: const Text('Kuiz i papërfunduar'),
+        content: Text(
+            'E ke lënë përgjysmë kuizin e këtij moduli — Niveli ${_levelLabels[levelIdx]}, pyetja ${q + 1}. Dëshiron të vazhdosh ku mbete?'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context, false),
+            child: const Text('Fillo nga e para'),
+          ),
+          FilledButton(
+            onPressed: () => Navigator.pop(context, true),
+            child: const Text('Vazhdo ku mbete'),
+          ),
+        ],
+      ),
+    ).then((resume) async {
+      if (!mounted) return;
+      if (resume == true) {
+        final corr = (saved['correct'] as List?) ?? const [];
+        setState(() {
+          _levelIndex = levelIdx;
+          for (int i = 0; i < _correct.length && i < corr.length; i++) {
+            _correct[i] = (corr[i] as num).toInt();
+          }
+          _currentQ = q.clamp(
+              0, _questionsByLevel[levelIdx].isEmpty
+                  ? 0
+                  : _questionsByLevel[levelIdx].length - 1);
+          _selected = null;
+          _answered = false;
+          _phase = _questionsByLevel[levelIdx].isEmpty ? 'final' : 'question';
+        });
+      } else {
+        await QuizResumeService.clear(_resumeKey);
+        if (!mounted) return;
+        setState(() {
+          _seed = QuizResumeService.newSeed();
+          _phase = 'loading';
+          for (int i = 0; i < _correct.length; i++) {
+            _correct[i] = 0;
+          }
+          _currentQ = 0;
+        });
+        await _loadQuestions();
+      }
+    });
+  }
+
+  void _saveResume() {
+    QuizResumeService.save(_resumeKey, {
+      'seed': _seed,
+      'levelIndex': _levelIndex,
+      'currentQ': _currentQ,
+      'correct': _correct,
+    });
+  }
+
+  Future<void> _loadQuestions({bool resetPosition = true}) async {
     final module = await ref.read(moduleProvider(widget.moduleId).future);
-    final rng = Random();
+    final rng = Random(_seed);
 
     final byLevel = _levels.map((level) {
       final questions = module.lessons
@@ -60,11 +139,13 @@ class _ModuleQuizScreenState extends ConsumerState<ModuleQuizScreen> {
     final firstNonEmpty = byLevel.indexWhere((q) => q.isNotEmpty);
     setState(() {
       _questionsByLevel = byLevel;
-      if (firstNonEmpty >= 0) {
-        _levelIndex = firstNonEmpty;
-        _phase = 'level_intro';
-      } else {
-        _phase = 'final';
+      if (resetPosition) {
+        if (firstNonEmpty >= 0) {
+          _levelIndex = firstNonEmpty;
+          _phase = 'level_intro';
+        } else {
+          _phase = 'final';
+        }
       }
     });
   }
@@ -79,12 +160,15 @@ class _ModuleQuizScreenState extends ConsumerState<ModuleQuizScreen> {
 
   int get _totalCorrect => _correct.fold(0, (sum, c) => sum + c);
 
-  void _startLevel() => setState(() {
-        _phase = 'question';
-        _currentQ = 0;
-        _selected = null;
-        _answered = false;
-      });
+  void _startLevel() {
+    setState(() {
+      _phase = 'question';
+      _currentQ = 0;
+      _selected = null;
+      _answered = false;
+    });
+    _saveResume();
+  }
 
   void _selectOption(int index, int correctIndex) {
     if (_answered) return;
@@ -102,6 +186,7 @@ class _ModuleQuizScreenState extends ConsumerState<ModuleQuizScreen> {
         _selected = null;
         _answered = false;
       });
+      _saveResume();
     } else {
       setState(() => _phase = 'level_result');
     }
@@ -120,7 +205,9 @@ class _ModuleQuizScreenState extends ConsumerState<ModuleQuizScreen> {
         _selected = null;
         _answered = false;
       });
+      _saveResume();
     } else {
+      QuizResumeService.clear(_resumeKey);
       setState(() => _phase = 'final');
     }
   }
@@ -326,12 +413,14 @@ class _ModuleQuizScreenState extends ConsumerState<ModuleQuizScreen> {
                 const SizedBox(height: 32),
                 if (!passed) ...[
                   FilledButton.icon(
-                    onPressed: () {
+                    onPressed: () async {
                       setState(() {
                         _correct[_levelIndex] = 0;
-                        _questionsByLevel[_levelIndex].shuffle();
+                        _seed = QuizResumeService.newSeed();
+                        _phase = 'loading';
                       });
-                      _startLevel();
+                      await _loadQuestions(resetPosition: false);
+                      if (mounted) _startLevel();
                     },
                     icon: const Icon(Icons.replay_rounded),
                     label: Text('Provo Nivelin $label Përsëri'),
@@ -352,12 +441,18 @@ class _ModuleQuizScreenState extends ConsumerState<ModuleQuizScreen> {
                   )
                 else if (passed)
                   FilledButton(
-                    onPressed: () => setState(() => _phase = 'final'),
+                    onPressed: () {
+                      QuizResumeService.clear(_resumeKey);
+                      setState(() => _phase = 'final');
+                    },
                     child: const Text('Shiko Rezultatin Final'),
                   )
                 else
                   OutlinedButton(
-                    onPressed: () => setState(() => _phase = 'final'),
+                    onPressed: () {
+                      QuizResumeService.clear(_resumeKey);
+                      setState(() => _phase = 'final');
+                    },
                     child: const Text('Shiko Rezultatin Final'),
                   ),
               ],
@@ -444,10 +539,13 @@ class _ModuleQuizScreenState extends ConsumerState<ModuleQuizScreen> {
                 const SizedBox(height: 32),
                 FilledButton.icon(
                   onPressed: () {
+                    QuizResumeService.clear(_resumeKey);
                     setState(() {
                       for (int i = 0; i < _correct.length; i++) {
                         _correct[i] = 0;
                       }
+                      _seed = QuizResumeService.newSeed();
+                      _currentQ = 0;
                       _phase = 'loading';
                     });
                     _loadQuestions();

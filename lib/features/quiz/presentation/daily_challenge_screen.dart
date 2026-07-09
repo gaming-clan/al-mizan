@@ -2,6 +2,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../../../core/services/quiz_resume_service.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../modules/data/fiqh_data_source.dart';
 import '../../modules/data/models/fiqh_models.dart';
@@ -107,19 +108,68 @@ class DailyChallengeScreen extends ConsumerStatefulWidget {
 
 class _DailyChallengeScreenState extends ConsumerState<DailyChallengeScreen> {
   bool _started = false;
+  int _startIndex = 0;
+  int _startCorrect = 0;
+
+  /// Saved mid-quiz state for today, if any (index of the next question).
+  int? _resumeIndex;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadResume();
+  }
+
+  Future<void> _loadResume() async {
+    final saved = await QuizResumeService.load(QuizResumeService.dailyKey);
+    if (saved == null) return;
+    if (saved['date'] != _dateKey(DateTime.now())) {
+      // Stale (another day) — discard.
+      await QuizResumeService.clear(QuizResumeService.dailyKey);
+      return;
+    }
+    if (!mounted) return;
+    setState(() => _resumeIndex = (saved['index'] as num?)?.toInt() ?? 0);
+    _startCorrect = (saved['correct'] as num?)?.toInt() ?? 0;
+  }
 
   @override
   Widget build(BuildContext context) {
     if (!_started) {
-      return _DailyIntro(onStart: () => setState(() => _started = true));
+      return _DailyIntro(
+        resumeIndex: _resumeIndex,
+        onStart: () {
+          QuizResumeService.clear(QuizResumeService.dailyKey);
+          setState(() {
+            _startIndex = 0;
+            _startCorrect = 0;
+            _started = true;
+          });
+        },
+        onResume: _resumeIndex == null
+            ? null
+            : () => setState(() {
+                  _startIndex = _resumeIndex!;
+                  _started = true;
+                }),
+      );
     }
-    return const _DailyQuizBody();
+    return _DailyQuizBody(
+      startIndex: _startIndex,
+      startCorrect: _startCorrect,
+    );
   }
 }
 
 class _DailyIntro extends ConsumerWidget {
   final VoidCallback onStart;
-  const _DailyIntro({required this.onStart});
+  final VoidCallback? onResume;
+  final int? resumeIndex;
+  const _DailyIntro({
+    required this.onStart,
+    this.onResume,
+    this.resumeIndex,
+  });
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -222,6 +272,22 @@ class _DailyIntro extends ConsumerWidget {
                       icon: const Icon(Icons.replay_rounded),
                       label: const Text('Provo Përsëri (pa u regjistruar)'),
                     ),
+                  ] else if (onResume != null) ...[
+                    FilledButton.icon(
+                      onPressed: onResume,
+                      style: FilledButton.styleFrom(
+                        padding: const EdgeInsets.symmetric(vertical: 16),
+                      ),
+                      icon: const Icon(Icons.play_arrow_rounded),
+                      label: Text(
+                          'Vazhdo ku mbete (pyetja ${(resumeIndex ?? 0) + 1})'),
+                    ),
+                    const SizedBox(height: 8),
+                    OutlinedButton.icon(
+                      onPressed: onStart,
+                      icon: const Icon(Icons.replay_rounded),
+                      label: const Text('Fillo nga e para'),
+                    ),
                   ] else
                     FilledButton.icon(
                       onPressed: onStart,
@@ -244,19 +310,33 @@ class _DailyIntro extends ConsumerWidget {
 }
 
 class _DailyQuizBody extends ConsumerStatefulWidget {
-  const _DailyQuizBody();
+  final int startIndex;
+  final int startCorrect;
+  const _DailyQuizBody({this.startIndex = 0, this.startCorrect = 0});
 
   @override
   ConsumerState<_DailyQuizBody> createState() => _DailyQuizBodyState();
 }
 
 class _DailyQuizBodyState extends ConsumerState<_DailyQuizBody> {
-  int _index = 0;
-  int _correct = 0;
+  late int _index = widget.startIndex;
+  late int _correct = widget.startCorrect;
   bool _answered = false;
   int? _selected;
   bool _saved = false;
   int _streak = 0;
+
+  void _persist(int total) {
+    if (_index < total) {
+      QuizResumeService.save(QuizResumeService.dailyKey, {
+        'date': _dateKey(DateTime.now()),
+        'index': _index,
+        'correct': _correct,
+      });
+    } else {
+      QuizResumeService.clear(QuizResumeService.dailyKey);
+    }
+  }
 
   String _levelTag(int index) {
     if (index < 4) return 'Fillestar';
@@ -465,6 +545,7 @@ class _DailyQuizBodyState extends ConsumerState<_DailyQuizBody> {
                                     _answered = false;
                                     _selected = null;
                                   });
+                                  _persist(questions.length);
                                 },
                                 child: Text(
                                   _index + 1 < questions.length
