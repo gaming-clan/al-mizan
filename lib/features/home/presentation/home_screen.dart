@@ -4,7 +4,9 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../core/constants/app_constants.dart';
 import '../../../core/constants/daily_quotes.dart';
+import '../../../core/theme/app_colors.dart';
 import '../../modules/presentation/widgets/level_lessons.dart';
+import '../../modules/providers/module_provider.dart';
 import '../../settings/providers/settings_provider.dart';
 import '../providers/home_provider.dart';
 import '../providers/last_lesson_provider.dart';
@@ -322,6 +324,13 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                           ),
                         ),
                       ),
+                    SliverToBoxAdapter(
+                      child: LevelCompletedBadge(
+                        modules: modules,
+                        level: _selectedLevel,
+                        padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
+                      ),
+                    ),
                     SliverList.builder(
                       itemCount: entries.length,
                       itemBuilder: (context, index) {
@@ -420,7 +429,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
 }
 
 /// Module card matching Stitch design — bordered, no shadow, icon + title
-class _ModuleGridCard extends StatelessWidget {
+class _ModuleGridCard extends ConsumerWidget {
   final dynamic module;
   final bool large;
   const _ModuleGridCard({required this.module, this.large = false});
@@ -459,9 +468,15 @@ class _ModuleGridCard extends StatelessWidget {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
     final cs = theme.colorScheme;
+    final progress = ref
+        .watch(lessonProgressProvider(module.moduleId as String))
+        .valueOrNull;
+    final isModuleComplete = progress != null &&
+        progress.isNotEmpty &&
+        progress.values.every((s) => s.isComplete);
 
     return Material(
       color: cs.surfaceContainerLowest,
@@ -480,13 +495,16 @@ class _ModuleGridCard extends StatelessWidget {
               Container(
                 padding: EdgeInsets.all(large ? 18 : 12),
                 decoration: BoxDecoration(
-                  color: cs.primary.withValues(alpha: 0.08),
+                  color: (isModuleComplete ? AppColors.success : cs.primary)
+                      .withValues(alpha: 0.08),
                   borderRadius: BorderRadius.circular(large ? 14 : 10),
                 ),
                 child: Icon(
-                  _iconForModule(module.moduleIcon),
+                  isModuleComplete
+                      ? Icons.check_circle_rounded
+                      : _iconForModule(module.moduleIcon),
                   size: large ? 40 : 26,
-                  color: cs.primary,
+                  color: isModuleComplete ? AppColors.success : cs.primary,
                 ),
               ),
               SizedBox(height: large ? 14 : 10),
@@ -501,8 +519,15 @@ class _ModuleGridCard extends StatelessWidget {
               ),
               SizedBox(height: large ? 6 : 4),
               Text(
-                '${module.lessons.length} mësime',
-                style: theme.textTheme.bodySmall,
+                isModuleComplete
+                    ? 'Modul i përfunduar ✓'
+                    : '${module.lessons.length} mësime',
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: isModuleComplete ? AppColors.success : null,
+                  fontWeight: isModuleComplete ? FontWeight.w700 : null,
+                ),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
               ),
             ],
           ),

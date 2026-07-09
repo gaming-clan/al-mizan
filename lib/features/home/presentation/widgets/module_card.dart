@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import '../../../../core/theme/app_colors.dart';
 import '../../../modules/data/models/fiqh_models.dart';
+import '../../../modules/providers/module_provider.dart';
 
-class ModuleCard extends StatelessWidget {
+class ModuleCard extends ConsumerWidget {
   final FiqhModule module;
   const ModuleCard({super.key, required this.module});
 
@@ -40,9 +43,14 @@ class ModuleCard extends StatelessWidget {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
     final cs = theme.colorScheme;
+    final progress =
+        ref.watch(lessonProgressProvider(module.moduleId)).valueOrNull;
+    final isModuleComplete = progress != null &&
+        progress.isNotEmpty &&
+        progress.values.every((s) => s.isComplete);
     return Card(
       child: InkWell(
         borderRadius: BorderRadius.circular(16),
@@ -55,13 +63,16 @@ class ModuleCard extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
-                  color: cs.primary.withValues(alpha: 0.12),
+                  color: (isModuleComplete ? AppColors.success : cs.primary)
+                      .withValues(alpha: 0.12),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Icon(
-                  _iconForModule(module.moduleIcon),
+                  isModuleComplete
+                      ? Icons.check_circle_rounded
+                      : _iconForModule(module.moduleIcon),
                   size: 28,
-                  color: cs.primary,
+                  color: isModuleComplete ? AppColors.success : cs.primary,
                 ),
               ),
               const SizedBox(height: 10),
@@ -76,8 +87,15 @@ class ModuleCard extends StatelessWidget {
               ),
               const SizedBox(height: 4),
               Text(
-                '${module.lessons.length} mësime',
-                style: theme.textTheme.bodySmall,
+                isModuleComplete
+                    ? 'Modul i përfunduar ✓'
+                    : '${module.lessons.length} mësime',
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: isModuleComplete ? AppColors.success : null,
+                  fontWeight: isModuleComplete ? FontWeight.w700 : null,
+                ),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
               ),
             ],
           ),

@@ -121,13 +121,17 @@ class _LevelView extends StatelessWidget {
           padding: const EdgeInsets.fromLTRB(20, 4, 20, 4),
           child: Row(
             children: [
-              Text(
-                '${entries.length} mësime — niveli ${kLevelLabels[selectedLevel]}',
-                style: theme.textTheme.labelMedium?.copyWith(
-                  color: color,
-                  letterSpacing: 0.5,
+              Expanded(
+                child: Text(
+                  '${entries.length} mësime — niveli ${kLevelLabels[selectedLevel]}',
+                  style: theme.textTheme.labelMedium?.copyWith(
+                    color: color,
+                    letterSpacing: 0.5,
+                  ),
+                  overflow: TextOverflow.ellipsis,
                 ),
               ),
+              LevelCompletedBadge(modules: modules, level: selectedLevel),
             ],
           ),
         ),

@@ -106,6 +106,66 @@ class LevelChipsRow extends StatelessWidget {
   }
 }
 
+/// Green "Nivel i përfunduar" chip, shown only when every lesson of [level]
+/// across all modules is complete. Renders nothing otherwise.
+class LevelCompletedBadge extends ConsumerWidget {
+  final List<FiqhModule> modules;
+  final String level;
+
+  /// Applied only when the badge is visible.
+  final EdgeInsetsGeometry? padding;
+
+  const LevelCompletedBadge({
+    super.key,
+    required this.modules,
+    required this.level,
+    this.padding,
+  });
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final entries = lessonsOfLevel(modules, level);
+    if (entries.isEmpty) return const SizedBox.shrink();
+    for (final (module, lesson) in entries) {
+      final progress =
+          ref.watch(lessonProgressProvider(module.moduleId)).valueOrNull;
+      if (progress == null || progress[lesson.id]?.isComplete != true) {
+        return const SizedBox.shrink();
+      }
+    }
+
+    final theme = Theme.of(context);
+    final chip = Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+      decoration: BoxDecoration(
+        color: AppColors.success.withValues(alpha: 0.12),
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: AppColors.success),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          const Icon(Icons.check_circle_rounded,
+              size: 14, color: AppColors.success),
+          const SizedBox(width: 4),
+          Text(
+            'Nivel i përfunduar',
+            style: theme.textTheme.labelSmall?.copyWith(
+              color: AppColors.success,
+              fontWeight: FontWeight.w700,
+            ),
+          ),
+        ],
+      ),
+    );
+    if (padding == null) return chip;
+    return Padding(
+      padding: padding!,
+      child: Align(alignment: Alignment.centerLeft, child: chip),
+    );
+  }
+}
+
 /// Full-width button that starts the first lesson of [level] (in level
 /// browsing mode, so "next lesson" follows the same level across modules).
 class LevelStartButton extends StatelessWidget {
