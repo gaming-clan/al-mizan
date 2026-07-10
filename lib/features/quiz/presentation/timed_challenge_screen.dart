@@ -120,6 +120,7 @@ class _TimedChallengeScreenState extends ConsumerState<TimedChallengeScreen> {
   int _startCorrect = 0;
   int _startWrong = 0;
   int _startTimeouts = 0;
+  List<Map<String, dynamic>> _startResults = const [];
 
   @override
   void initState() {
@@ -173,6 +174,10 @@ class _TimedChallengeScreenState extends ConsumerState<TimedChallengeScreen> {
             _startCorrect = (saved['correct'] as num?)?.toInt() ?? 0;
             _startWrong = (saved['wrong'] as num?)?.toInt() ?? 0;
             _startTimeouts = (saved['timeouts'] as num?)?.toInt() ?? 0;
+            _startResults = [
+              for (final r in (saved['results'] as List? ?? const []))
+                Map<String, dynamic>.from(r as Map),
+            ];
             _level = level;
           });
         } else {
@@ -188,6 +193,7 @@ class _TimedChallengeScreenState extends ConsumerState<TimedChallengeScreen> {
     _startCorrect = 0;
     _startWrong = 0;
     _startTimeouts = 0;
+    _startResults = const [];
   }
 
   @override
@@ -209,6 +215,7 @@ class _TimedChallengeScreenState extends ConsumerState<TimedChallengeScreen> {
       startCorrect: _startCorrect,
       startWrong: _startWrong,
       startTimeouts: _startTimeouts,
+      startResults: _startResults,
       onRetry: () => setState(_freshStart),
       onExit: () => setState(() {
         _freshStart();
@@ -246,7 +253,7 @@ class _LevelSelector extends StatelessWidget {
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  'Përgjigju para se të mbarojë koha! Sa më i lartë niveli, aq më pak kohë ke për çdo pyetje.',
+                  'Përgjigju para se të mbarojë koha! Sa më i lartë niveli, aq më pak kohë ke për çdo pyetje. Pas çdo niveli kalon automatikisht te niveli tjetër.',
                   style: theme.textTheme.bodyMedium
                       ?.copyWith(color: cs.onSurfaceVariant),
                   textAlign: TextAlign.center,
@@ -324,6 +331,7 @@ class _TimedQuizBody extends ConsumerStatefulWidget {
   final int startCorrect;
   final int startWrong;
   final int startTimeouts;
+  final List<Map<String, dynamic>> startResults;
   final VoidCallback onRetry;
   final VoidCallback onExit;
 
@@ -335,6 +343,7 @@ class _TimedQuizBody extends ConsumerStatefulWidget {
     this.startCorrect = 0,
     this.startWrong = 0,
     this.startTimeouts = 0,
+    this.startResults = const [],
     required this.onRetry,
     required this.onExit,
   });
@@ -346,6 +355,11 @@ class _TimedQuizBody extends ConsumerStatefulWidget {
 class _TimedQuizBodyState extends ConsumerState<_TimedQuizBody> {
   static const _tick = Duration(milliseconds: 100);
   static const _feedbackDelay = Duration(milliseconds: 1600);
+  static const _transitionSeconds = 3;
+
+  // 'question' | 'transition' | 'final'
+  String _phase = 'question';
+  late TimedLevel _currentLevel = widget.level;
 
   List<QuizQuestion>? _questions;
   late int _index = widget.startIndex;
@@ -355,31 +369,42 @@ class _TimedQuizBodyState extends ConsumerState<_TimedQuizBody> {
   bool _answered = false;
   int? _selected;
   double _remaining = 0;
+  Timer? _transitionTimer;
+  double _transitionRemaining = 0;
+
+  /// Results of levels already finished in this run:
+  /// {level, correct, wrong, timeouts, total}.
+  late final List<Map<String, dynamic>> _levelResults =
+      List<Map<String, dynamic>>.from(widget.startResults);
+
+  TimedLevel? get _nextLevel {
+    final idx = TimedLevel.values.indexOf(_currentLevel);
+    return idx + 1 < TimedLevel.values.length
+        ? TimedLevel.values[idx + 1]
+        : null;
+  }
 
   void _persist() {
-    final total = _questions?.length ?? 0;
-    if (_index < total) {
-      QuizResumeService.save(QuizResumeService.timedKey, {
-        'level': widget.level.name,
-        'seed': widget.seed,
-        'index': _index,
-        'correct': _correct,
-        'wrong': _wrong,
-        'timeouts': _timeouts,
-      });
-    } else {
-      QuizResumeService.clear(QuizResumeService.timedKey);
-    }
+    QuizResumeService.save(QuizResumeService.timedKey, {
+      'level': _currentLevel.name,
+      'seed': widget.seed,
+      'index': _index,
+      'correct': _correct,
+      'wrong': _wrong,
+      'timeouts': _timeouts,
+      'results': _levelResults,
+    });
   }
   Timer? _ticker;
   Timer? _advanceTimer;
 
-  int get _totalSeconds => widget.level.secondsPerQuestion;
+  int get _totalSeconds => _currentLevel.secondsPerQuestion;
 
   @override
   void dispose() {
     _ticker?.cancel();
     _advanceTimer?.cancel();
+    _transitionTimer?.cancel();
     super.dispose();
   }
 
@@ -430,54 +455,200 @@ class _TimedQuizBodyState extends ConsumerState<_TimedQuizBody> {
     _advanceTimer = Timer(_feedbackDelay, () {
       if (!mounted) return;
       setState(() => _index++);
-      _persist();
       if (_index < (_questions?.length ?? 0)) {
+        _persist();
         _startQuestion();
+      } else {
+        _finishLevel();
       }
     });
+  }
+
+  /// Records the finished level's result, then either auto-advances to the
+  /// next level (via a short countdown screen) or shows the final result.
+  void _finishLevel() {
+    _levelResults.add({
+      'level': _currentLevel.name,
+      'correct': _correct,
+      'wrong': _wrong,
+      'timeouts': _timeouts,
+      'total': _questions?.length ?? 0,
+    });
+    final next = _nextLevel;
+    if (next == null) {
+      QuizResumeService.clear(QuizResumeService.timedKey);
+      setState(() => _phase = 'final');
+      return;
+    }
+    setState(() {
+      _phase = 'transition';
+      _transitionRemaining = _transitionSeconds.toDouble();
+    });
+    // Save the boundary so an interrupted run resumes at the next level.
+    QuizResumeService.save(QuizResumeService.timedKey, {
+      'level': next.name,
+      'seed': widget.seed,
+      'index': 0,
+      'correct': 0,
+      'wrong': 0,
+      'timeouts': 0,
+      'results': _levelResults,
+    });
+    _transitionTimer?.cancel();
+    _transitionTimer = Timer.periodic(_tick, (_) {
+      if (!mounted) return;
+      setState(() {
+        _transitionRemaining -= 0.1;
+        if (_transitionRemaining <= 0) {
+          _transitionRemaining = 0;
+          _transitionTimer?.cancel();
+          _advanceToLevel(next);
+        }
+      });
+    });
+  }
+
+  void _advanceToLevel(TimedLevel next) {
+    setState(() {
+      _currentLevel = next;
+      _questions = null;
+      _index = 0;
+      _correct = 0;
+      _wrong = 0;
+      _timeouts = 0;
+      _answered = false;
+      _selected = null;
+      _phase = 'question';
+    });
+  }
+
+  /// Level-finished screen that counts down and auto-starts the next level.
+  Widget _buildTransition() {
+    final theme = Theme.of(context);
+    final done = _levelResults.isNotEmpty ? _levelResults.last : null;
+    final doneCorrect = (done?['correct'] as num?)?.toInt() ?? 0;
+    final doneTotal = (done?['total'] as num?)?.toInt() ?? 0;
+    final next = _nextLevel;
+    if (next == null) return const SizedBox.shrink();
+    final ratio =
+        (_transitionRemaining / _transitionSeconds).clamp(0.0, 1.0);
+
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Sfida me Kohë'),
+        automaticallyImplyLeading: false,
+      ),
+      body: SafeArea(
+        child: Center(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 500),
+            child: SingleChildScrollView(
+              padding: const EdgeInsets.all(32),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Icon(Icons.check_circle_rounded,
+                      size: 64, color: AppColors.success),
+                  const SizedBox(height: 12),
+                  Text(
+                    'Niveli ${_currentLevel.label} përfundoi!',
+                    style: theme.textTheme.headlineSmall,
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    '$doneCorrect / $doneTotal sakte',
+                    style: theme.textTheme.titleMedium
+                        ?.copyWith(color: AppColors.success),
+                  ),
+                  const SizedBox(height: 28),
+                  Icon(next.icon, size: 48, color: next.color),
+                  const SizedBox(height: 10),
+                  Text(
+                    'Niveli tjetër: ${next.label}',
+                    style: theme.textTheme.titleLarge,
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    '${next.questionCount} pyetje × ${next.secondsPerQuestion}s për pyetje',
+                    style: theme.textTheme.bodyMedium
+                        ?.copyWith(color: next.color),
+                  ),
+                  const SizedBox(height: 24),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(4),
+                    child: LinearProgressIndicator(
+                      value: ratio,
+                      minHeight: 8,
+                      valueColor: AlwaysStoppedAnimation<Color>(next.color),
+                    ),
+                  ),
+                  const SizedBox(height: 10),
+                  Text(
+                    'Fillon automatikisht për ${_transitionRemaining.ceil()}s…',
+                    style: theme.textTheme.bodyMedium,
+                    textAlign: TextAlign.center,
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     final questionsAsync =
-        ref.watch(timedQuestionsProvider((widget.level, widget.seed)));
+        ref.watch(timedQuestionsProvider((_currentLevel, widget.seed)));
     final theme = Theme.of(context);
     final cs = theme.colorScheme;
+
+    if (_phase == 'transition') return _buildTransition();
+    if (_phase == 'final') {
+      int agg(String key) =>
+          _levelResults.fold(0, (s, r) => s + ((r[key] as num?)?.toInt() ?? 0));
+      return _ResultScreen(
+        level: _currentLevel,
+        total: agg('total'),
+        correct: agg('correct'),
+        wrong: agg('wrong'),
+        timeouts: agg('timeouts'),
+        breakdown: _levelResults,
+        onRetry: () {
+          QuizResumeService.clear(QuizResumeService.timedKey);
+          widget.onRetry();
+        },
+        onExit: widget.onExit,
+      );
+    }
 
     return questionsAsync.when(
       data: (questions) {
         if (questions.isEmpty) {
-          return Scaffold(
-            appBar: AppBar(title: const Text('Sfida me Kohë')),
-            body: const Center(child: Text('Nuk ka pyetje për këtë nivel.')),
-          );
+          // No questions for this level — skip it.
+          WidgetsBinding.instance.addPostFrameCallback((_) {
+            if (mounted && _phase == 'question') _finishLevel();
+          });
+          return const Scaffold(
+              body: Center(child: CircularProgressIndicator()));
         }
 
         if (_questions == null) {
           _questions = questions;
           WidgetsBinding.instance.addPostFrameCallback((_) {
             if (!mounted) return;
-            _persist();
-            _startQuestion();
+            if (_index >= _questions!.length) {
+              _finishLevel();
+            } else {
+              _persist();
+              _startQuestion();
+            }
           });
           return const Scaffold(
               body: Center(child: CircularProgressIndicator()));
-        }
-
-        // Results
-        if (_index >= _questions!.length) {
-          return _ResultScreen(
-            level: widget.level,
-            total: _questions!.length,
-            correct: _correct,
-            wrong: _wrong,
-            timeouts: _timeouts,
-            onRetry: () {
-              QuizResumeService.clear(QuizResumeService.timedKey);
-              widget.onRetry();
-            },
-            onExit: widget.onExit,
-          );
         }
 
         final q = _questions![_index];
@@ -653,6 +824,10 @@ class _ResultScreen extends StatelessWidget {
   final int correct;
   final int wrong;
   final int timeouts;
+
+  /// Per-level results when the run covered several levels:
+  /// {level, correct, wrong, timeouts, total}.
+  final List<Map<String, dynamic>>? breakdown;
   final VoidCallback onRetry;
   final VoidCallback onExit;
 
@@ -662,6 +837,7 @@ class _ResultScreen extends StatelessWidget {
     required this.correct,
     required this.wrong,
     required this.timeouts,
+    this.breakdown,
     required this.onRetry,
     required this.onExit,
   });
@@ -670,6 +846,7 @@ class _ResultScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final pct = total > 0 ? (correct / total) * 100 : 0.0;
+    final multi = (breakdown?.length ?? 0) > 1;
 
     return Scaffold(
       appBar: AppBar(title: const Text('Rezultati i Sfidës')),
@@ -697,10 +874,50 @@ class _ResultScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    'Niveli: ${level.label} — ${level.secondsPerQuestion}s për pyetje',
+                    multi
+                        ? 'Sfida e plotë — ${breakdown!.length} nivele'
+                        : 'Niveli: ${level.label} — ${level.secondsPerQuestion}s për pyetje',
                     style: theme.textTheme.bodyMedium,
                     textAlign: TextAlign.center,
                   ),
+                  if (multi) ...[
+                    const SizedBox(height: 16),
+                    for (final r in breakdown!)
+                      Builder(builder: (context) {
+                        final lvl = TimedLevel.values
+                                .where((l) => l.name == r['level'])
+                                .firstOrNull ??
+                            level;
+                        final c = (r['correct'] as num?)?.toInt() ?? 0;
+                        final t = (r['total'] as num?)?.toInt() ?? 0;
+                        return Padding(
+                          padding: const EdgeInsets.only(bottom: 8),
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 16, vertical: 10),
+                            decoration: BoxDecoration(
+                              color: lvl.color.withValues(alpha: 0.08),
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: Row(
+                              children: [
+                                Icon(lvl.icon, color: lvl.color, size: 18),
+                                const SizedBox(width: 10),
+                                Expanded(
+                                  child: Text(lvl.label,
+                                      style: theme.textTheme.bodyMedium),
+                                ),
+                                Text(
+                                  '$c/$t',
+                                  style: theme.textTheme.titleSmall
+                                      ?.copyWith(color: lvl.color),
+                                ),
+                              ],
+                            ),
+                          ),
+                        );
+                      }),
+                  ],
                   const SizedBox(height: 24),
                   _StatRow(
                     icon: Icons.check_circle_rounded,
