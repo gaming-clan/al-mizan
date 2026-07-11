@@ -399,7 +399,7 @@ class _ZakatCalculatorScreenState
             padding: const EdgeInsets.all(12),
             child: Text(
               'Nisabi: Dhen/dhi ≥ 40, Lopë/ka ≥ 30, Deve ≥ 5.\n'
-              'Bagëtia duhet të jetë kullotuese (saime) — jo e ushqyer me blerje.',
+              'Bagëtia duhet të jetë kullotëse (saime) — jo e ushqyer me blerje.',
               style: theme.textTheme.bodyMedium,
             ),
           ),
