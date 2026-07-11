@@ -741,6 +741,182 @@
           "explanation": "Profeti ﷺ agjëroi dhe urdhëroi agjërimin me dëshminë e vetme të Ibn Umerit r.a. — për Shevalin (Bajramin) kërkohen dy."
         }
       ]
+    },
+    {
+      "id": "ukb_006",
+      "title_sq": "Jomuslimanët në Shtetin Islam",
+      "title_ar": "غير المسلمين في الدولة الإسلامية",
+      "level": "advanced",
+      "source_references": [
+        "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book, IIPH, Rijad 2007",
+        "Dr. Jusuf el-Kardavi, Hallalli dhe Harami në Islam — kreu 'Marrëdhëniet e Muslimanit me Jomuslimanin'",
+        "Shaban Sulejmani, E Drejta Penale Islame - pjesa e posaçme, Kumanovë 2025"
+      ],
+      "sections": [
+        {
+          "heading": "Kush janë jomuslimanët në shtetin islam",
+          "content_sq": "Sheriati i njeh disa kategori jomuslimanësh sipas marrëdhënies së tyre juridike me shtetin islam, dhe secilës i korrespondon një shkallë e caktuar mbrojtjeje penalo-juridike: 1) EDH-DHIMMIU — jobesimtari, banor i përhershëm i shtetit islam, i cili ka pranuar mbrojtjen e tij në këmbim të pagesës së xhizjes dhe respektimit të ligjeve të përgjithshme; sipas terminologjisë bashkëkohore, ai është 'shtetas' i shtetit islam. 2) EL-MUSTE'MENI — jomusliman që ka marrë leje të përkohshme hyrjeje dhe qëndrimi (p.sh. tregtar, i ftuar, diplomat); gëzon mbrojtje nga dëmet dhe trajtim të ndershëm gjatë qëndrimit. 3) EL-MUAHIDI — shtetasi i një vendi që ka marrëveshje armëpushimi ose paqeje me shtetin islam. 4) EL-HARBIU — banori i një shteti me të cilin shteti islam është në luftë të hapur; vetëm ky i fundit mbetet jashtë mbrojtjes penalo-juridike, dhe kjo vetëm përgjatë gjendjes së armiqësisë aktive. Të tria kategoritë e para e kanë jetën, pasurinë dhe nderin të mbrojtura me ligj — pikërisht si muslimani — sepse mbrojtja buron nga kontrata me shtetin islam, jo nga përkatësia fetare. Islami gjithashtu bën dallim të veçantë për ithtarët e Librit (hebrenjtë dhe të krishterët), me të cilët ka afërsi në rrënjët e besimit qiellor.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "لَا يَنْهَاكُمُ اللَّهُ عَنِ الَّذِينَ لَمْ يُقَاتِلُوكُمْ فِي الدِّينِ وَلَمْ يُخْرِجُوكُم مِّن دِيَارِكُمْ أَن تَبَرُّوهُمْ وَتُقْسِطُوا إِلَيْهِمْ ۚ إِنَّ اللَّهَ يُحِبُّ الْمُقْسِطِينَ",
+              "translation_sq": "All-llahu nuk ju ndalon të bëni mirë dhe të mbani drejtësi me ata që nuk ju luftuan për shkak të fesë e as nuk ju dëbuan prej shtëpive tuaja; All-llahu i do ata që mbajnë drejtësinë.",
+              "surah": "El-Mumtehine",
+              "surah_number": 60,
+              "ayah": 8
+            }
+          ]
+        },
+        {
+          "heading": "Kontrata e Dhimmes — të drejtat dhe detyrimet",
+          "content_sq": "Dhimme do të thotë 'mbrojtje, garanci, kontratë'. Kontrata lidhet kur udhëheqësi i shtetit islam pranon që ithtarët e Librit — ose jobesimtarë të tjerë — të mbeten në besimin e tyre brenda shtetit islam, me dy kushte: 1) të paguajnë xhizjen, dhe 2) t'u përmbahen ligjeve të përgjithshme të shtetit. Në këmbim, dhimmiu fiton kontratë mbrojtjeje nga Allahu, nga Profeti ﷺ dhe nga bashkësia islame: ndalohet lufta kundër tij, mbrohet pasuria e tij, respektohet nderi i tij, garantohet liria e tij fetare dhe nuk i bëhet asnjë dëm. Xhizja nuk merret nga kushdo — përjashtohen gratë, fëmijët, të varfrit, të moshuarit e paaftë për punë dhe murgjërinjtë; merret vetëm nga burrat e rritur, të lirë e me mundësi materiale. Shuma fillestare, sipas porosisë së Profetit ﷺ për Muadh ibn Xhebelin në Jemen, ishte një dinar për person; më vonë Umeri r.a. e caktoi sipas gjendjes ekonomike (katër dinarë ari, dyzet dirhemë argjendi), duke i shtuar shtetit detyrimin për t'u siguruar atyre mikpritje. Xhizja funksionon si zëvendësim i shërbimit ushtarak, prej të cilit dhimmiu përjashtohet — mbrojtjen ushtarake ndaj armikut të jashtëm ia siguron shteti islam.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "قَاتِلُوا الَّذِينَ لَا يُؤْمِنُونَ بِاللَّهِ وَلَا بِالْيَوْمِ الْآخِرِ وَلَا يُحَرِّمُونَ مَا حَرَّمَ اللَّهُ وَرَسُولُهُ وَلَا يَدِينُونَ دِينَ الْحَقِّ مِنَ الَّذِينَ أُوتُوا الْكِتَابَ حَتَّىٰ يُعْطُوا الْجِزْيَةَ عَنْ يَدٍ وَهُمْ صَاغِرُونَ",
+              "translation_sq": "...derisa të paguajnë xhizjen me dorë (të vetën), duke qenë të nënshtruar.",
+              "surah": "Et-Teube",
+              "surah_number": 9,
+              "ayah": 29
+            },
+            {
+              "type": "hadith",
+              "arabic": "أَنْ يَأْخُذَ مِنْ كُلِّ حَالِمٍ دِينَارًا أَوْ عَدْلَهُ مِنَ الْمَعَافِرِ",
+              "translation_sq": "(Profeti ﷺ e urdhëroi Muadhin) të merrte nga çdo person i pjekur një dinar, ose vlerën e tij në rroba jemenase (mea'fir).",
+              "narrator": "Muadh ibn Xhebeli (r.a.)",
+              "collection": "Ebu Davud",
+              "hadith_number": 3038,
+              "classification": "sahih"
+            }
+          ]
+        },
+        {
+          "heading": "Barazia në zbatimin e ligjit penal",
+          "content_sq": "Parimi themelor është se jeta, nderi dhe pasuria e dhimmiut mbrohen nga i njëjti ligj penal si ato të muslimanit, dhe se dhimmiu vetë mbetet i lidhur nga i njëjti ligj kur kryen vepër penale. Kështu, kur një hebre i shtypi kokën një vajze skllave për t'i marrë stolitë, Profeti ﷺ urdhëroi që edhe atij t'i ndodhte njësoj. Në krimin e hirabes (kusarisë), nëse kryerësi vret dikë gjatë grabitjes, dënohet me vdekje pavarësisht fesë së viktimës, muslimanit apo dhimmiut. Juristët ndahen vetëm për një çështje të veçantë: nëse musliman vret qëllimisht një dhimmi, a zbatohet kisasi (dënimi me vdekje) apo dëmshpërblimi (dije)? Shkolla hanefite e barazon plotësisht dhimmiun me muslimanin edhe në këtë rast, ndërsa shumica e juristëve e kufizojnë kisasin mes 'gjaqeve të barasvlershme' dhe e zëvendësojnë me dëmshpërblim të përgjysmuar. Ky mospajtim mes medhhebeve nuk e prek parimin qendror: dëmtimi i jetës së dhimmiut trajtohet gjithmonë si vepër penale e rëndë e ndëshkueshme.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "أَنَّ يَهُودِيًّا قَتَلَ جَارِيَةً عَلَى أَوْضَاحٍ لَهَا فَرَضَّ رَأْسَهَا بَيْنَ حَجَرَيْنِ، فَقِيلَ لَهَا: مَنْ فَعَلَ بِكِ هَذَا؟ فُلَانٌ؟ حَتَّى سُمِّيَ الْيَهُودِيُّ، فَأَشَارَتْ: أَنْ نَعَمْ، فَأَقَرَّ، فَأَمَرَ بِهِ رَسُولُ اللَّهِ ﷺ فَرُضَّ رَأْسُهُ بَيْنَ حَجَرَيْنِ",
+              "translation_sq": "Një hebre ia shtypi kokën një vajze skllave mes dy gurësh (për t'i marrë stolitë e saj). Duke qenë ende gjallë, e pyetën: 'Kush ta bëri këtë? Filani?' — derisa përmendën emrin e hebreut, dhe ajo bëri shenjë me kokë 'Po'. E sollën hebreun, ai e pranoi veprën, dhe i Dërguari i Allahut ﷺ urdhëroi që t'i shtypej koka mes dy gurësh, po ashtu.",
+              "narrator": "Enesi (r.a.)",
+              "collection": "Sahih Muslim",
+              "hadith_number": 1672,
+              "classification": "sahih"
+            }
+          ],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Kisasi zbatohet plotësisht: nëse musliman vret qëllimisht një dhimmi, dënohet me kisas (vdekje), sepse dhimmiu e ka jetën të mbrojtur njësoj si muslimani përderisa është banor i shtetit islam.",
+              "source": "Es-Sarakhsi, El-Mebsut"
+            },
+            "maliki": {
+              "ruling": "Pozicioni i shumicës: nuk zbatohet kisasi mes 'gjaqeve jo të barasvlershme'; dëmshpërblimi (dije) i dhimmiut është gjysma e atij të muslimanit.",
+              "source": "Ibn Rushd, Bidajetu'l-Muxhtehid"
+            },
+            "shafii": {
+              "ruling": "Nuk zbatohet kisasi nëse musliman vret dhimmi; zbatohet vetëm dëmshpërblimi, i cili për dhimmiun (ithtar i Librit) është gjysma e dijetit të muslimanit.",
+              "source": "Al-Sayyid Sabik, Fikh es-Sunneh"
+            },
+            "hanbali": {
+              "ruling": "Njësoj si shafitët: gjaku i dhimmiut nuk barazohet me atë të muslimanit për kisas; dijeti i tij mbetet gjysma e dijetit të muslimanit.",
+              "source": "Ibn Kudame, El-Mugni"
+            },
+            "consensus_note": "Të katër medhhebet pajtohen se dëmtimi i jetës së dhimmiut është vepër penale e rëndë e ndëshkueshme; mospajtimi është vetëm mes kisasit të plotë (pozicioni hanefit) dhe dëmshpërblimit të përgjysmuar (pozicioni i shumicës)."
+          }
+        },
+        {
+          "heading": "Ndalimi i dëmtimit të jomuslimanëve — porosia e Profetit ﷺ",
+          "content_sq": "Profeti ﷺ e ngriti mbrojtjen e jomuslimanit banor të shtetit islam në nivel të një kontrate hyjnore, dhe dëmtimi i tij barazohet me shkeljen e një amaneti të Allahut e të Profetit ﷺ. Juristi malikit Shihabuddin el-Kurafi shkroi: 'Përgjegjësia ndaj të drejtave të rezidentëve jomuslimanë është jona, ngase jetojnë pranë nesh, nën përgjegjësinë tonë e nën mbrojtjen e Zotit, të Profetit ﷺ dhe të Islamit; kush i sulmon ata ose ua ofendon nderin, e humb garancinë e Zotit, të Profetit ﷺ dhe të Fesë islame.' Ibn Hazmi shkoi edhe më larg: nëse armiku i jashtëm sulmon rezidentët jomuslimanë të shtetit islam, muslimanët obligohen të dalin e t'i mbrojnë deri në vdekje, sepse ata janë nën garancinë e Allahut dhe të Profetit ﷺ. Respekti për jomuslimanin shihet edhe në sjelljen personale të Profetit ﷺ: kur i thanë se xhenazja pranë së cilës ishte ngritur në këmbë ishte e një hebreu, ai u përgjigj: 'A nuk është (ai) shpirt?' — duke treguar se shenjtëria e jetës njerëzore nuk kushtëzohet nga feja.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "مَنْ قَتَلَ مُعَاهَدًا لَمْ يَرَحْ رَائِحَةَ الْجَنَّةِ، وَإِنَّ رِيحَهَا تُوجَدُ مِنْ مَسَافَةِ أَرْبَعِينَ عَامًا",
+              "translation_sq": "Kush vret një muahid (jomusliman me marrëveshje mbrojtjeje nga shteti islam), nuk do ta shijojë erën e Xhenetit, ndonëse aroma e tij ndjehet nga një largësi dyzet vjetësh.",
+              "narrator": "Abdullah ibn Amri (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 3166,
+              "classification": "sahih"
+            },
+            {
+              "type": "hadith",
+              "arabic": "كَانَا بِالْقَادِسِيَّةِ فَمَرُّوا بِجَنَازَةٍ فَقَامُوا، فَقِيلَ لَهُمْ: إِنَّهَا مِنْ أَهْلِ الْأَرْضِ (يَعْنِي مِنْ أَهْلِ الْجِزْيَةِ)، فَقَالُوا: إِنَّ النَّبِيَّ ﷺ مَرَّتْ بِهِ جَنَازَةٌ فَقَامَ، فَقِيلَ لَهُ: إِنَّهُ يَهُودِيٌّ، فَقَالَ: أَلَيْسَتْ نَفْسًا؟",
+              "translation_sq": "Kur pranë Profetit ﷺ kaloi një xhenaze, ai u ngrit në këmbë; i thanë: 'Kjo është xhenazja e një hebreu!' Ai tha: 'A nuk është (ai) shpirt?'",
+              "narrator": "Sehl ibn Hunejf dhe Kajs ibn Sead (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 1312,
+              "classification": "sahih"
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Çka nënkupton termi 'edh-Dhimmi'?",
+          "options": [
+            "Jomusliman në luftë të hapur me shtetin islam",
+            "Jobesimtari, banor i përhershëm i shtetit islam, i mbrojtur me kontratë kundrejt xhizjes dhe respektimit të ligjeve",
+            "Diplomat i huaj në vizitë të shkurtër",
+            "Musliman i ri i konvertuar"
+          ],
+          "correct_index": 1,
+          "explanation": "Dhimmiu është jobesimtari banor i përhershëm i shtetit islam, i cili gëzon mbrojtje të plotë ligjore në këmbim të pagesës së xhizjes dhe respektimit të ligjeve të përgjithshme."
+        },
+        {
+          "question": "Cilët përjashtohen nga pagesa e xhizjes?",
+          "options": [
+            "Vetëm tregtarët",
+            "Gratë, fëmijët, të varfrit, të moshuarit e paaftë dhe murgjërinjtë",
+            "Vetëm ithtarët e Librit",
+            "Askush, të gjithë dhimmitë e paguajnë"
+          ],
+          "correct_index": 1,
+          "explanation": "Xhizja merret vetëm nga burrat e rritur, të lirë e me mundësi materiale; Umeri r.a. shprehimisht ndaloi marrjen e saj nga gratë dhe fëmijët."
+        },
+        {
+          "question": "Çka tregon rasti i hebreut që vrau vajzën skllave duke ia shtypur kokën (transmetim i Enesit r.a.)?",
+          "options": [
+            "Se dhimmitë nuk dënoheshin për vrasje",
+            "Se ligji penal islam zbatohej njësoj ndaj kryerësit dhimmi, i cili u dënua me të njëjtin akt",
+            "Se dënimi u fal për shkak të fesë së kryerësit",
+            "Se çështja u dërgua te udhëheqësit hebrenj"
+          ],
+          "correct_index": 1,
+          "explanation": "Profeti ﷺ urdhëroi që hebreu kryerës të dënohej me të njëjtën formë ekzekutimi që kishte përdorur — ligji penal islam vlen njësoj për dhimmitë si kryerës të veprës penale."
+        },
+        {
+          "question": "Sipas hadithit të transmetuar nga Abdullah ibn Amri, çka i ndodh atij që vret një muahid?",
+          "options": [
+            "Nuk ndëshkohet fare",
+            "Nuk do ta shijojë erën e Xhenetit",
+            "Dënohet vetëm me gjobë",
+            "I falet automatikisht"
+          ],
+          "correct_index": 1,
+          "explanation": "Profeti ﷺ tha: 'Kush vret një muahid, nuk do ta shijojë erën e Xhenetit, ndonëse aroma e tij ndjehet nga një largësi dyzet vjetësh' (Sahih Bukhari)."
+        },
+        {
+          "question": "Çka u përgjigj Profeti ﷺ kur i thanë se xhenazja pranë së cilës ishte ngritur ishte e një hebreu?",
+          "options": [
+            "'Uluni, s'kishte nevojë të ngriheni'",
+            "'A nuk është (ai) shpirt?'",
+            "Nuk tha asgjë",
+            "'Kjo nuk na përket'"
+          ],
+          "correct_index": 1,
+          "explanation": "Profeti ﷺ tha 'A nuk është (ai) shpirt?', duke treguar se shenjtëria e jetës njerëzore nuk kushtëzohet nga feja."
+        },
+        {
+          "question": "Si ndryshojnë medhhebet për dënimin e muslimanit që vret qëllimisht një dhimmi?",
+          "options": [
+            "Të katër medhhebet e falin plotësisht",
+            "Hanefitët zbatojnë kisasin e plotë; shumica e kufizojnë në dëmshpërblim (dije) të përgjysmuar",
+            "Të katër medhhebet zbatojnë vetëm ta'zir",
+            "Çështja nuk trajtohet nga asnjë medhheb"
+          ],
+          "correct_index": 1,
+          "explanation": "Shkolla hanefite e barazon plotësisht dhimmiun me muslimanin edhe në kisas, ndërsa maliki, shafii dhe hanbeli e zëvendësojnë kisasin me dëmshpërblim të përgjysmuar."
+        }
+      ]
     }
   ]
 }
