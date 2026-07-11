@@ -15,6 +15,7 @@ class AppConstants {
   static const double cropNisabKg = 653.0; // 5 wasaq
   static const double cropRateRainIrrigated = 0.10; // 10% ushur
   static const double cropRateMachineIrrigated = 0.05; // 5%
+  static const double cropRateBothIrrigated = 0.075; // 7.5% (ujitje e përzier)
 
   // Currency data (fallback rates vs USD)
   static const Map<String, String> currencySymbols = {

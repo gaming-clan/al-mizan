@@ -2,6 +2,35 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import '../constants/app_constants.dart';
 
+/// The three irrigation methods that determine the ushr rate.
+enum CropIrrigationMethod {
+  natural, // rain, river, natural springs — no cost
+  machine, // machinery / purchased water — with cost
+  both; // irrigated with both methods
+
+  String get label {
+    switch (this) {
+      case CropIrrigationMethod.natural:
+        return 'Ujitet me shi / ujë natyral';
+      case CropIrrigationMethod.machine:
+        return 'Ujitet me makineri / ujë të blerë';
+      case CropIrrigationMethod.both:
+        return 'Ujitet me të dyja';
+    }
+  }
+
+  double get rate {
+    switch (this) {
+      case CropIrrigationMethod.natural:
+        return AppConstants.cropRateRainIrrigated;
+      case CropIrrigationMethod.machine:
+        return AppConstants.cropRateMachineIrrigated;
+      case CropIrrigationMethod.both:
+        return AppConstants.cropRateBothIrrigated;
+    }
+  }
+}
+
 class ZakatCalculator {
   /// Fetches live exchange rates vs USD from open.er-api.com.
   /// Falls back to constants if offline or API fails.
@@ -85,15 +114,13 @@ class ZakatCalculator {
   /// Calculates zakat on crops (ushur).
   static CropZakatResult calculateCropZakat({
     required double harvestKg,
-    required bool isRainIrrigated,
+    required CropIrrigationMethod irrigationMethod,
     required double pricePerKg,
     required String currencyCode,
   }) {
     const nisabKg = AppConstants.cropNisabKg;
     final isEligible = harvestKg >= nisabKg;
-    final rate = isRainIrrigated
-        ? AppConstants.cropRateRainIrrigated
-        : AppConstants.cropRateMachineIrrigated;
+    final rate = irrigationMethod.rate;
     final zakatKg = isEligible ? harvestKg * rate : 0.0;
     final zakatValue = zakatKg * pricePerKg;
 

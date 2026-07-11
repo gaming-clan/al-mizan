@@ -28,7 +28,7 @@ class _ZakatCalculatorScreenState
   // Crop controllers
   final _harvestCtrl = TextEditingController();
   final _pricePerKgCtrl = TextEditingController();
-  bool _isRainIrrigated = true;
+  CropIrrigationMethod _irrigationMethod = CropIrrigationMethod.natural;
 
   // Livestock controllers
   final _sheepCtrl = TextEditingController();
@@ -85,7 +85,7 @@ class _ZakatCalculatorScreenState
     final code = ref.read(selectedCurrencyProvider);
     final result = ZakatCalculator.calculateCropZakat(
       harvestKg: double.tryParse(_harvestCtrl.text) ?? 0,
-      isRainIrrigated: _isRainIrrigated,
+      irrigationMethod: _irrigationMethod,
       pricePerKg: double.tryParse(_pricePerKgCtrl.text) ?? 0,
       currencyCode: code,
     );
@@ -331,7 +331,7 @@ class _ZakatCalculatorScreenState
             padding: const EdgeInsets.all(12),
             child: Text(
               'Nisabi i të mbjellave: ${AppConstants.cropNisabKg.toStringAsFixed(0)} kg (5 vesak).\n'
-              'Ushri: 10% nëse ujitet me shi, 5% nëse ujitet me makineri.',
+              'Ushri: 10% nëse ujitet me shi/burime natyrore, 5% nëse ujitet me makineri/ujë të blerë, 7.5% nëse ujitet me të dyja.',
               style: theme.textTheme.bodyMedium,
             ),
           ),
@@ -340,14 +340,37 @@ class _ZakatCalculatorScreenState
         _field('Sasia e korrjes (kg)', _harvestCtrl, Icons.grass_rounded),
         _field('Çmimi për kg ($sym)', _pricePerKgCtrl,
             Icons.price_change_rounded),
+        const SizedBox(height: 12),
+        Text('Mënyra e ujitjes:', style: theme.textTheme.titleSmall),
         const SizedBox(height: 8),
-        SwitchListTile(
-          title: const Text('Ujitet me shi / ujë natyral'),
-          subtitle: Text(_isRainIrrigated
-              ? 'Ushri: 10%'
-              : 'Ushri: 5% (ujitje me makineri)'),
-          value: _isRainIrrigated,
-          onChanged: (v) => setState(() => _isRainIrrigated = v),
+        SegmentedButton<CropIrrigationMethod>(
+          segments: const [
+            ButtonSegment(
+              value: CropIrrigationMethod.natural,
+              label: Text('Shi / natyral'),
+              icon: Icon(Icons.water_drop_rounded, size: 16),
+            ),
+            ButtonSegment(
+              value: CropIrrigationMethod.machine,
+              label: Text('Makineri'),
+              icon: Icon(Icons.settings_rounded, size: 16),
+            ),
+            ButtonSegment(
+              value: CropIrrigationMethod.both,
+              label: Text('Të dyja'),
+              icon: Icon(Icons.merge_type_rounded, size: 16),
+            ),
+          ],
+          selected: {_irrigationMethod},
+          onSelectionChanged: (s) =>
+              setState(() => _irrigationMethod = s.first),
+          showSelectedIcon: false,
+        ),
+        const SizedBox(height: 4),
+        Text(
+          'Ushri: ${(_irrigationMethod.rate * 100).toStringAsFixed(1).replaceAll('.0', '')}%',
+          style: theme.textTheme.bodySmall
+              ?.copyWith(color: theme.colorScheme.onSurfaceVariant),
         ),
         const SizedBox(height: 16),
         FilledButton.icon(
