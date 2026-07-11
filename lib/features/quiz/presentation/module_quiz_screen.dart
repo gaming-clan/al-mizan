@@ -120,7 +120,7 @@ class _ModuleQuizScreenState extends ConsumerState<ModuleQuizScreen> {
     final byLevel = _levels.map((level) {
       final questions = module.lessons
           .where((l) => l.level == level)
-          .expand((l) => l.quiz)
+          .expand((l) => [...l.quiz, ...l.poolQuiz])
           .toList();
       questions.shuffle(rng);
       return questions.map((q) {

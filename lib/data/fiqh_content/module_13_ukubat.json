@@ -916,7 +916,76 @@
           "correct_index": 1,
           "explanation": "Shkolla hanefite e barazon plotësisht dhimmiun me muslimanin edhe në kisas, ndërsa maliki, shafii dhe hanbeli e zëvendësojnë kisasin me dëmshpërblim të përgjysmuar."
         }
+      ],
+      "pool_quiz": [
+        {
+          "question": "Cila kategori jomuslimanësh ka leje vetëm të përkohshme hyrjeje dhe qëndrimi në shtetin islam?",
+          "options": [
+            "Dhimmiu",
+            "El-Muste'meni",
+            "El-Muahidi",
+            "El-Harbiu"
+          ],
+          "correct_index": 1,
+          "explanation": "El-Muste'meni është jomusliman me leje të përkohshme hyrjeje e qëndrimi (p.sh. tregtar ose i ftuar) — gëzon mbrojtje nga dëmet gjatë qëndrimit të tij."
+        },
+        {
+          "question": "Çka nënkupton fjala 'dhimme'?",
+          "options": [
+            "Luftë",
+            "Mbrojtje, garanci, kontratë",
+            "Taksë ushtarake",
+            "Emigrim"
+          ],
+          "correct_index": 1,
+          "explanation": "Dhimme do të thotë mbrojtje/garanci/kontratë — dhimmiu gëzon kontratë mbrojtjeje nga Allahu, nga Profeti ﷺ dhe nga bashkësia islame."
+        },
+        {
+          "question": "Çka shkroi juristi malikit Shihabuddin el-Kurafi për të drejtat e rezidentëve jomuslimanë?",
+          "options": [
+            "Se nuk kanë asnjë të drejtë",
+            "Se përgjegjësia ndaj të drejtave të tyre është e muslimanëve, sepse janë nën mbrojtjen e Zotit, të Profetit ﷺ e të Islamit",
+            "Se duhet të largohen nga shteti islam",
+            "Se vetëm gjykatësi ka përgjegjësi ndaj tyre"
+          ],
+          "correct_index": 1,
+          "explanation": "El-Kurafi shkroi se përgjegjësia ndaj të drejtave të rezidentëve jomuslimanë është jona, sepse jetojnë nën garancinë e Zotit, të Profetit ﷺ dhe të Fesë islame."
+        },
+        {
+          "question": "Në krimin e hirabes (kusarisë), nëse kryerësi vret dikë gjatë grabitjes, si ndikon feja e viktimës në dënim?",
+          "options": [
+            "Nëse viktima është dhimmi, dënimi zbutet",
+            "Nuk ndikon fare — dënimi është vdekja pavarësisht nëse viktima është musliman apo dhimmi",
+            "Nëse viktima është dhimmi, çështja bie",
+            "Dënimi varet nga vendimi i familjes së kryerësit"
+          ],
+          "correct_index": 1,
+          "explanation": "Në hirabe, vrasja dënohet me vdekje pavarësisht përkatësisë fetare të viktimës — muslimanit apo dhimmiut."
+        },
+        {
+          "question": "Sipas porosisë së Profetit ﷺ për Muadh ibn Xhebelin, sa ishte shuma fillestare e xhizjes për person?",
+          "options": [
+            "Një dinar, ose vlera e tij në rroba jemenase",
+            "Dhjetë dinarë",
+            "Gjysmë dirhemi",
+            "Nuk kishte shumë të caktuar"
+          ],
+          "correct_index": 0,
+          "explanation": "Profeti ﷺ e urdhëroi Muadhin të merrte nga çdo person i pjekur një dinar, ose vlerën e tij në rroba jemenase (mea'fir)."
+        },
+        {
+          "question": "Sipas Ibn Hazmit, çka obligohen të bëjnë muslimanët nëse armiku i jashtëm sulmon rezidentët jomuslimanë të shtetit islam?",
+          "options": [
+            "Të mos ndërhyjnë, pasi nuk janë muslimanë",
+            "T'i dorëzojnë pa rezistencë",
+            "Të dalin e t'i mbrojnë deri në vdekje, sepse janë nën garancinë e Allahut e të Profetit ﷺ",
+            "T'i dëbojnë nga shteti"
+          ],
+          "correct_index": 2,
+          "explanation": "Ibn Hazmi thotë se muslimanët obligohen të dalin e të luftojnë për t'i mbrojtur rezidentët jomuslimanë deri në vdekje, sepse janë nën garancinë e Allahut dhe të Profetit ﷺ."
+        }
       ]
     }
   ]
 }
+

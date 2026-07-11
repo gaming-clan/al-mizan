@@ -38,6 +38,11 @@ class Lesson {
   final String level; // beginner, intermediate, advanced
   final List<LessonSection> sections;
   final List<QuizQuestion> quiz;
+
+  /// Extra questions that feed only the shared quiz pools (general quiz,
+  /// module quiz, daily/weekly/timed challenges) — not the standalone
+  /// single-lesson quiz, which uses [quiz] only.
+  final List<QuizQuestion> poolQuiz;
   final List<String> sourceReferences;
 
   const Lesson({
@@ -47,6 +52,7 @@ class Lesson {
     required this.level,
     required this.sections,
     required this.quiz,
+    this.poolQuiz = const [],
     required this.sourceReferences,
   });
 
@@ -60,6 +66,10 @@ class Lesson {
           .map((e) => LessonSection.fromJson(e as Map<String, dynamic>))
           .toList(),
       quiz: (json['quiz'] as List<dynamic>?)
+              ?.map((e) => QuizQuestion.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          [],
+      poolQuiz: (json['pool_quiz'] as List<dynamic>?)
               ?.map((e) => QuizQuestion.fromJson(e as Map<String, dynamic>))
               .toList() ??
           [],

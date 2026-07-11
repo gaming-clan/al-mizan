@@ -85,7 +85,9 @@ final weeklyQuestionsProvider =
   final byLevel = <String, List<QuizQuestion>>{};
   for (final module in modules) {
     for (final lesson in module.lessons) {
-      byLevel.putIfAbsent(lesson.level, () => []).addAll(lesson.quiz);
+      final bucket = byLevel.putIfAbsent(lesson.level, () => []);
+      bucket.addAll(lesson.quiz);
+      bucket.addAll(lesson.poolQuiz);
     }
   }
 

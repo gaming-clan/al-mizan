@@ -94,6 +94,7 @@ final timedQuestionsProvider = FutureProvider.family<List<QuizQuestion>,
     for (final lesson in module.lessons) {
       if (lesson.level == level.lessonLevel) {
         questions.addAll(lesson.quiz);
+        questions.addAll(lesson.poolQuiz);
       }
     }
   }

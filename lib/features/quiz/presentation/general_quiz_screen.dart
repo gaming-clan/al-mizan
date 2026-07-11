@@ -26,6 +26,7 @@ final allQuestionsProvider = FutureProvider.family<List<QuizQuestion>,
   for (final module in modules) {
     for (final lesson in module.lessons) {
       allQuestions.addAll(lesson.quiz);
+      allQuestions.addAll(lesson.poolQuiz);
     }
   }
 

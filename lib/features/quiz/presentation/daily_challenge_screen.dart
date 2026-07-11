@@ -21,8 +21,12 @@ const _sqMonths = [
 
 String _sqDate(DateTime d) => '${d.day} ${_sqMonths[d.month - 1]} ${d.year}';
 
-/// Today's fixed question set: 4 beginner + 3 intermediate + 3 advanced,
-/// seeded by the date so the whole day serves the same questions.
+/// Number of questions taken from each level per day.
+const _kQuestionsPerLevel = 5;
+
+/// Today's fixed question set: truly interleaved 1 beginner + 1 intermediate
+/// + 1 advanced, repeated, seeded by the date so the whole day serves the
+/// same questions.
 final dailyQuestionsProvider = FutureProvider<List<QuizQuestion>>((ref) async {
   final modules = await FiqhDataSource().loadAllModules();
   final byLevel = <String, List<QuizQuestion>>{
@@ -33,6 +37,7 @@ final dailyQuestionsProvider = FutureProvider<List<QuizQuestion>>((ref) async {
   for (final module in modules) {
     for (final lesson in module.lessons) {
       byLevel[lesson.level]?.addAll(lesson.quiz);
+      byLevel[lesson.level]?.addAll(lesson.poolQuiz);
     }
   }
 
@@ -46,12 +51,18 @@ final dailyQuestionsProvider = FutureProvider<List<QuizQuestion>>((ref) async {
     return list.take(count).toList();
   }
 
-  // Progressive difficulty: easy first, hard last.
-  return [
-    ...pick('beginner', 4),
-    ...pick('intermediate', 3),
-    ...pick('advanced', 3),
-  ];
+  final beginner = pick('beginner', _kQuestionsPerLevel);
+  final intermediate = pick('intermediate', _kQuestionsPerLevel);
+  final advanced = pick('advanced', _kQuestionsPerLevel);
+
+  // True mix: 1 easy, 1 medium, 1 advanced, repeated.
+  final mixed = <QuizQuestion>[];
+  for (var i = 0; i < _kQuestionsPerLevel; i++) {
+    if (i < beginner.length) mixed.add(beginner[i]);
+    if (i < intermediate.length) mixed.add(intermediate[i]);
+    if (i < advanced.length) mixed.add(advanced[i]);
+  }
+  return mixed;
 });
 
 /// Completion state for today's challenge.
@@ -205,7 +216,7 @@ class _DailyIntro extends ConsumerWidget {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    '10 pyetje të përziera nga të tre nivelet — nga më e lehta te më e vështira. Pyetjet ndryshojnë çdo ditë!',
+                    '15 pyetje të përziera në mënyrë të barabartë nga të tre nivelet (1 e lehtë, 1 mesatare, 1 e avancuar, me radhë). Pyetjet ndryshojnë çdo ditë!',
                     style: theme.textTheme.bodyMedium
                         ?.copyWith(color: cs.onSurfaceVariant),
                     textAlign: TextAlign.center,
@@ -339,15 +350,25 @@ class _DailyQuizBodyState extends ConsumerState<_DailyQuizBody> {
   }
 
   String _levelTag(int index) {
-    if (index < 4) return 'Fillestar';
-    if (index < 7) return 'Mesatar';
-    return 'Avancuar';
+    switch (index % 3) {
+      case 0:
+        return 'Fillestar';
+      case 1:
+        return 'Mesatar';
+      default:
+        return 'Avancuar';
+    }
   }
 
   Color _levelColor(int index) {
-    if (index < 4) return AppColors.success;
-    if (index < 7) return AppColors.warning;
-    return AppColors.error;
+    switch (index % 3) {
+      case 0:
+        return AppColors.success;
+      case 1:
+        return AppColors.warning;
+      default:
+        return AppColors.error;
+    }
   }
 
   @override

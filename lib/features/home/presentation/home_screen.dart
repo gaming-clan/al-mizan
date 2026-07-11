@@ -389,7 +389,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                     _QuickActionTile(
                       icon: Icons.today_rounded,
                       title: 'Sfida Ditore',
-                      subtitle: '10 pyetje të përziera çdo ditë — ruaj serinë!',
+                      subtitle: '15 pyetje të përziera çdo ditë — ruaj serinë!',
                       onTap: () => context.push('/daily-challenge'),
                     ),
                     const SizedBox(height: 8),
