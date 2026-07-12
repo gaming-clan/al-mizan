@@ -139,11 +139,9 @@ class _DifficultySelector extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Kuiz i Përgjithshëm')),
       body: SafeArea(
-        child: Padding(
+        child: ListView(
           padding: const EdgeInsets.all(24),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
+          children: [
               const SizedBox(height: 20),
               Icon(Icons.quiz_rounded,
                   size: 64, color: theme.colorScheme.primary),
@@ -188,7 +186,6 @@ class _DifficultySelector extends StatelessWidget {
             ],
           ),
         ),
-      ),
     );
   }
 }
