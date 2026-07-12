@@ -38,29 +38,31 @@ Aplikacion edukativ Flutter për jurisprudencën islame (Fikh) në gjuhën shqip
 | Zekati | 4 | 14 | 9 |
 | Haxhi dhe Umreja | 4 | 17 | 10 |
 | Muamelati — Tregtia | 5 | 19 | 17 |
-| Hallalli dhe Harami | 4 | 23 | 15 |
-| Nikahu — Martesa | 4 | 22 | 26 |
+| Hallalli dhe Harami | 4 | 23 | 14 |
+| Nikahu — Martesa | 4 | 25 | 31 |
 | Xhenazja | 4 | 15 | 12 |
 | Betimet dhe Nedhri | 4 | 15 | 14 |
-| Ushqimi dhe Pija | 4 | 14 | 15 |
-| E Drejta Penale Islame | 5 | 24 | 32 |
-| **Gjithsej** | **60** | **261** | **214** |
+| Ushqimi dhe Pija | 4 | 14 | 16 |
+| E Drejta Penale Islame | 6 | 36 | 38 |
+| **Gjithsej** | **61** | **276** | **225** |
 
 ### Veçoritë kryesore
 
-- **13 module fikhore** me **60 mësime** të ndara sipas niveleve (fillestar, mesatar, avancuar)
-- **261 pyetje kuizi** me shpjegime të detajuara
-- **213 evidenca** nga Kurani dhe hadithet me tekst arab dhe përkthim shqip
+- **13 module fikhore** me **61 mësime** të ndara sipas niveleve (fillestar, mesatar, avancuar)
+- **276 pyetje kuizi** me shpjegime të detajuara, të përbashkëta për të gjitha modalitetet e kuizit
+- **225 evidenca** nga Kurani dhe hadithet me tekst arab dhe përkthim shqip
 - **Krahasim i katër medhhebeve** (Hanefi, Maliki, Shafi'i, Hanbeli) për çdo çështje
-- **Sfida me Kohë** — kuize me kohëmatës: sa më i lartë niveli, aq më pak kohë për pyetje
-- **Sfida Ditore** — 10 pyetje të përziera çdo ditë, me seri ditore (streak)
-- **Njoftim ditor** me thënie dijetarësh — ora e konfigurueshme nga përdoruesi (parazgjedhja 08:00)
+- **Sfida me Kohë** — kuize me kohëmatës që kalojnë automatikisht te niveli tjetër pas çdo niveli: sa më i lartë niveli, aq më pak kohë për pyetje
+- **Kuiz i Përgjithshëm** — sipas vështirësisë (i lehtë/mesatar/i vështirë), ose **Testi i Plotë**: 45 pyetje nga të tria nivelet me një kronometër të vazhdueshëm nga 00:00
+- **Kuiz i Nivelit** — kuiz me pyetje nga të gjitha mësimet e një niveli, nga të gjitha modulet, në fund të listës së mësimeve të nivelit
+- **Sfida Ditore** — 15 pyetje të përziera në mënyrë të barabartë nga të tria nivelet (1 e lehtë, 1 mesatare, 1 e avancuar, me radhë), me seri ditore (streak)
+- **Sfida Javore** — tri raunde me kohë sipas nivelit, me seri javore
+- **Vazhdo ku mbete** — në çdo lloj kuizi (modul, i përgjithshëm, me kohë, ditor, javor, nivel) dhe në kartën e mësimit të fundit në ballinë
+- **Njoftime të konfigurueshme** — citimi ditor, sfida ditore dhe sfida javore, secili me orën e vet dhe çelës veçantë ndezje/fikje
+- **Distinktivë përfundimi** — shenjë e gjelbër shfaqet kur përfundohen të gjitha mësimet e një moduli ose niveli
+- **Llogaritës Zekati** me shumë lloje pasurie, nisab, dhe tri mënyra ujitjeje për zekatin e të mbjellave (natyrale, me makineri, ose të dyja — 10%/5%/7.5%)
+- **Shpërndaj statistikat** — si tekst i formatuar ose si kartelë imazhi e dizajnuar
 - **Shfletim i dyfishtë** — sipas moduleve ose sipas niveleve (mësimet e një niveli nga të gjitha modulet)
-- **Provo Përsëri** në çdo kuiz — përfshirë rifillimin e një niveli të vetëm te kuizi i modulit
-- **Vazhdo ku mbete** — kartë në ballinë që të kthen te mësimi i fundit i hapur
-- **Kalim automatik** — buton për mësimin pasardhës dhe për nivelin tjetër pas përfundimit
-- **Llogaritës Zekati** me shumë lloje pasurie dhe nisab
-- **Kuiz i përgjithshëm** dhe **kuiz moduli me 3 nivele**
 - **Kërkim i plotë** nëpër mësime dhe përmbajtje
 - **Shënime/Bookmark** për ruajtjen e mësimeve të preferuara
 - **Personalizim** — vendos emrin ose pseudonimin gjatë onboarding-ut; ndryshohet në çdo kohë nga profili
@@ -79,6 +81,7 @@ Përmbajtja është nxjerrë dhe përshtatur nga vepra të njohura fikhore:
 - Abedin Musallari — *Haxhi dhe Rregullat e Tij*
 - Sejjid Sabik — *Fikhus-Sunneh*
 - Ibn Kudame — *El-Mugni*
+- Shaban Sulejmani — *E Drejta Penale Islame* (pjesa e posaçme)
 
 ### Teknologjia
 
@@ -87,6 +90,7 @@ Përmbajtja është nxjerrë dhe përshtatur nga vepra të njohura fikhore:
 - **GoRouter** — navigimi
 - **Drift** — databaza lokale SQLite
 - **flutter_local_notifications** — njoftimet ditore lokale
+- **share_plus** — ndarja e statistikave si tekst ose imazh me aplikacione të tjera
 - **Material 3** — dizajn modern me Google Fonts
 - **Design System**: Al-Mizan (Google Stitch) — Source Serif 4, Plus Jakarta Sans, Amiri
 
@@ -115,7 +119,7 @@ flutter build apk --debug
 lib/
 ├── core/           # Tema, ngjyra, routing, database, konstante
 ├── data/           # 13 skedarë JSON me përmbajtje fikhore
-├── features/       # Home, Modules, Quiz, Search, Bookmarks, Profile, Zakat, Ask Scholar
+├── features/       # Home, Modules, Quiz, Search, Bookmarks, Profile, Zakat, Ask Scholar, Stats
 └── shared/         # Widget-e të përbashkëta (QuranVerseCard, HadithCard, MadhabComparison)
 ```
 
@@ -138,29 +142,31 @@ lib/
 | Zakat — Alms | 4 | 14 | 9 |
 | Hajj & Umrah | 4 | 17 | 10 |
 | Mu'amalat — Trade | 5 | 19 | 17 |
-| Halal & Haram | 4 | 23 | 15 |
-| Nikah — Marriage | 4 | 22 | 26 |
+| Halal & Haram | 4 | 23 | 14 |
+| Nikah — Marriage | 4 | 25 | 31 |
 | Janazah — Funeral | 4 | 15 | 12 |
 | Oaths & Vows | 4 | 15 | 14 |
-| Food & Drink | 4 | 14 | 15 |
-| Islamic Criminal Law | 5 | 24 | 32 |
-| **Total** | **60** | **261** | **214** |
+| Food & Drink | 4 | 14 | 16 |
+| Islamic Criminal Law | 6 | 36 | 38 |
+| **Total** | **61** | **276** | **225** |
 
 ### Key Features
 
-- **13 Fiqh modules** with **60 lessons** organized by level (beginner, intermediate, advanced)
-- **261 quiz questions** with detailed explanations
-- **213 evidences** from the Quran and Hadith with Arabic text and Albanian translation
+- **13 Fiqh modules** with **61 lessons** organized by level (beginner, intermediate, advanced)
+- **276 quiz questions** with detailed explanations, pooled across every quiz mode
+- **225 evidences** from the Quran and Hadith with Arabic text and Albanian translation
 - **Four-madhab comparison** (Hanafi, Maliki, Shafi'i, Hanbali) for every ruling
-- **Timed Challenge** — quizzes against the clock: the higher the level, the less time per question
-- **Daily Challenge** — 10 mixed-level questions every day, with a daily streak
-- **Daily notification** with scholars' sayings — user-configurable time (default 08:00)
+- **Timed Challenge** — countdown quiz that auto-advances to the next level: the higher the level, the less time per question
+- **General Quiz** — by difficulty (easy/medium/hard), or the **Full Test**: 45 questions across all three levels with one continuous stopwatch from 00:00
+- **Level Quiz** — a quiz covering every lesson of one level across all modules, at the end of that level's lesson list
+- **Daily Challenge** — 15 questions evenly mixed across all three levels (1 easy, 1 medium, 1 advanced, repeating), with a daily streak
+- **Weekly Challenge** — three timed rounds by level, with a weekly streak
+- **Resume where you left off** — in every quiz type (module, general, timed, daily, weekly, level) and on the home lesson card
+- **Configurable notifications** — daily quote, daily challenge, and weekly challenge, each with its own on/off switch and time
+- **Completion badges** — a green checkmark appears once every lesson in a module or level is finished
+- **Zakat calculator** with multiple asset types, nisab thresholds, and three crop-irrigation methods (rain-fed, machine, or both — 10%/5%/7.5%)
+- **Share your stats** — as a formatted text summary or a designed image card
 - **Dual browsing** — by module or by level (lessons of one level across all modules)
-- **Try Again** on every quiz — including retrying a single level in the module quiz
-- **Continue where you left off** — home card that takes you back to the last opened lesson
-- **Auto progression** — next-lesson button and next-level navigation on completion
-- **Zakat calculator** with multiple asset types and nisab thresholds
-- **General quiz** and **3-level module quiz**
 - **Full-text search** across lessons and content
 - **Bookmarks** to save favorite lessons
 - **Personalization** — set your name or nickname during onboarding; change it anytime from the profile card
@@ -178,6 +184,7 @@ Content is derived and adapted from well-known Fiqh works:
 - Muhammad Nasiruddin al-Albani — *Rulings of Hajj and Umrah*
 - Sayyid Sabiq — *Fiqh us-Sunnah*
 - Ibn Qudamah — *al-Mughni*
+- Shaban Sulejmani — *Islamic Criminal Law* (Special Part)
 
 ### Tech Stack
 
@@ -186,6 +193,7 @@ Content is derived and adapted from well-known Fiqh works:
 - **GoRouter** — navigation
 - **Drift** — local SQLite database
 - **flutter_local_notifications** — local daily notifications
+- **share_plus** — sharing stats as text or image with other apps
 - **Material 3** — modern design with Google Fonts
 - **Design System**: Al-Mizan (Google Stitch) — Source Serif 4, Plus Jakarta Sans, Amiri
 
@@ -214,7 +222,7 @@ flutter build apk --debug
 lib/
 ├── core/           # Themes, colors, routing, database, constants
 ├── data/           # 13 JSON files with Fiqh content
-├── features/       # Home, Modules, Quiz, Search, Bookmarks, Profile, Zakat, Ask Scholar
+├── features/       # Home, Modules, Quiz, Search, Bookmarks, Profile, Zakat, Ask Scholar, Stats
 └── shared/         # Reusable widgets (QuranVerseCard, HadithCard, MadhabComparison)
 ```
 
@@ -237,29 +245,31 @@ lib/
 | الزكاة | ٤ | ١٤ | ٩ |
 | الحج والعمرة | ٤ | ١٧ | ١٠ |
 | المعاملات — التجارة | ٥ | ١٩ | ١٧ |
-| الحلال والحرام | ٤ | ٢٣ | ١٥ |
-| النكاح — الزواج | ٤ | ٢٢ | ٢٦ |
+| الحلال والحرام | ٤ | ٢٣ | ١٤ |
+| النكاح — الزواج | ٤ | ٢٥ | ٣١ |
 | الجنازة | ٤ | ١٥ | ١٢ |
 | الأيمان والنذور | ٤ | ١٥ | ١٤ |
-| الأطعمة والأشربة | ٤ | ١٤ | ١٥ |
-| العقوبات — الفقه الجنائي | ٥ | ٢٤ | ٣٢ |
-| **المجموع** | **٦٠** | **٢٦١** | **٢١٤** |
+| الأطعمة والأشربة | ٤ | ١٤ | ١٦ |
+| العقوبات — الفقه الجنائي | ٦ | ٣٦ | ٣٨ |
+| **المجموع** | **٦١** | **٢٧٦** | **٢٢٥** |
 
 ### المميزات الرئيسية
 
-- **١٣ وحدة فقهية** بـ **٦٠ درساً** مرتّبة حسب المستوى (مبتدئ، متوسط، متقدم)
-- **٢٦١ سؤال اختبار** مع شروحات مفصّلة
-- **٢١٣ دليل شرعي** من القرآن والأحاديث بالعربية مع ترجمة ألبانية
+- **١٣ وحدة فقهية** بـ **٦١ درساً** مرتّبة حسب المستوى (مبتدئ، متوسط، متقدم)
+- **٢٧٦ سؤال اختبار** مع شروحات مفصّلة، مشتركة بين جميع أنماط الاختبار
+- **٢٢٥ دليل شرعي** من القرآن والأحاديث بالعربية مع ترجمة ألبانية
 - **مقارنة المذاهب الأربعة** (الحنفي، المالكي، الشافعي، الحنبلي) في كل مسألة
-- **تحدي الوقت** — اختبارات بعدّاد تنازلي: كلما ارتفع المستوى قلّ الوقت لكل سؤال
-- **التحدي اليومي** — ١٠ أسئلة منوّعة كل يوم مع سلسلة أيام متتالية
-- **إشعار يومي** بأقوال العلماء — وقت قابل للتخصيص (الافتراضي ٠٨:٠٠)
+- **تحدي الوقت** — اختبارات بعدّاد تنازلي تنتقل تلقائياً إلى المستوى التالي: كلما ارتفع المستوى قلّ الوقت لكل سؤال
+- **اختبار شامل** — حسب المستوى (سهل/متوسط/صعب)، أو **الاختبار الكامل**: ٤٥ سؤالاً من المستويات الثلاثة بعدّاد زمني مستمر من ٠٠:٠٠
+- **اختبار المستوى** — اختبار يشمل جميع دروس مستوى واحد من كل الوحدات، في آخر قائمة دروس المستوى
+- **التحدي اليومي** — ١٥ سؤالاً موزّعة بالتساوي على المستويات الثلاثة، مع سلسلة أيام متتالية
+- **التحدي الأسبوعي** — ثلاث جولات بعدّاد زمني حسب المستوى، مع سلسلة أسابيع متتالية
+- **تابع من حيث توقفت** — في كل نوع اختبار (وحدة، شامل، وقت، يومي، أسبوعي، مستوى) وفي بطاقة الدرس بالرئيسية
+- **إشعارات قابلة للتخصيص** — الاقتباس اليومي، التحدي اليومي، والتحدي الأسبوعي، لكلٍّ مفتاحه ووقته الخاص
+- **شارات الإتمام** — علامة صحّ خضراء تظهر عند إتمام كل دروس الوحدة أو المستوى
+- **حاسبة الزكاة** بأنواع أموال متعددة وحساب النصاب، وثلاث طرق سقي لزكاة الزروع (مطر، آلي، أو كلاهما)
+- **شارك إحصائياتك** — كنص منسّق أو كبطاقة صورة مصمّمة
 - **تصفّح مزدوج** — حسب الوحدات أو حسب المستويات (دروس مستوى واحد من جميع الوحدات)
-- **حاول مرة أخرى** في كل اختبار — بما في ذلك إعادة مستوى واحد في اختبار الوحدة
-- **تابع من حيث توقفت** — بطاقة في الرئيسية تعيدك إلى آخر درس فتحته
-- **تنقّل تلقائي** — زر للدرس التالي وللمستوى التالي عند الإتمام
-- **حاسبة الزكاة** بأنواع أموال متعددة وحساب النصاب
-- **اختبار شامل** واختبار وحدة **بثلاثة مستويات**
 - **بحث كامل** في الدروس والمحتوى
 - **حفظ الملاحظات** لتخزين الدروس المفضلة
 - **التخصيص** — أدخل اسمك أو لقبك عند الإعداد الأوّلي؛ يمكن تغييره في أي وقت من بطاقة الملف الشخصي
@@ -277,6 +287,7 @@ lib/
 - محمد ناصر الدين الألباني — *أحكام الحج والعمرة*
 - سيد سابق — *فقه السنة*
 - ابن قدامة — *المغني*
+- شعبان سليمانی — *الفقه الجنائي الإسلامي* (القسم الخاص)
 
 ### التقنيات المستخدمة
 
@@ -285,6 +296,7 @@ lib/
 - **GoRouter** — التنقل
 - **Drift** — قاعدة بيانات SQLite المحلية
 - **flutter_local_notifications** — الإشعارات اليومية المحلية
+- **share_plus** — مشاركة الإحصائيات كنص أو صورة مع تطبيقات أخرى
 - **Material 3** — تصميم حديث مع خطوط Google
 - **نظام التصميم**: الميزان (Google Stitch) — Source Serif 4, Plus Jakarta Sans, أميري
 
@@ -313,7 +325,7 @@ flutter build apk --debug
 lib/
 ├── core/           # السمات، الألوان، التوجيه، قاعدة البيانات، الثوابت
 ├── data/           # ١٣ ملف JSON بمحتوى فقهي
-├── features/       # الرئيسية، الوحدات، الاختبار، البحث، المحفوظات، الملف الشخصي، الزكاة
+├── features/       # الرئيسية، الوحدات، الاختبار، البحث، المحفوظات، الملف الشخصي، الزكاة، الإحصائيات
 └── shared/         # عناصر مشتركة (بطاقة آية، بطاقة حديث، مقارنة مذاهب)
 ```
 
@@ -336,29 +348,31 @@ lib/
 | Zakat — Elemosina | 4 | 14 | 9 |
 | Hajj & Umrah | 4 | 17 | 10 |
 | Mu'amalat — Commercio | 5 | 19 | 17 |
-| Halal & Haram | 4 | 23 | 15 |
-| Nikah — Matrimonio | 4 | 22 | 26 |
+| Halal & Haram | 4 | 23 | 14 |
+| Nikah — Matrimonio | 4 | 25 | 31 |
 | Janazah — Funerale | 4 | 15 | 12 |
 | Giuramenti e Voti | 4 | 15 | 14 |
-| Cibo & Bevande | 4 | 14 | 15 |
-| Diritto Penale Islamico | 5 | 24 | 32 |
-| **Totale** | **60** | **261** | **214** |
+| Cibo & Bevande | 4 | 14 | 16 |
+| Diritto Penale Islamico | 6 | 36 | 38 |
+| **Totale** | **61** | **276** | **225** |
 
 ### Caratteristiche principali
 
-- **13 moduli Fiqh** con **60 lezioni** organizzate per livello (principiante, intermedio, avanzato)
-- **261 domande quiz** con spiegazioni dettagliate
-- **213 prove** dal Corano e Hadith con testo arabo e traduzione albanese
+- **13 moduli Fiqh** con **61 lezioni** organizzate per livello (principiante, intermedio, avanzato)
+- **276 domande quiz** con spiegazioni dettagliate, condivise tra tutte le modalità di quiz
+- **225 prove** dal Corano e Hadith con testo arabo e traduzione albanese
 - **Confronto tra quattro madhab** (Hanafi, Maliki, Shafi'i, Hanbali) per ogni sentenza
-- **Sfida a tempo** — quiz con timer: più alto il livello, meno tempo per domanda
-- **Sfida giornaliera** — 10 domande miste ogni giorno, con serie giornaliera (streak)
-- **Notifica giornaliera** con detti degli studiosi — orario configurabile (predefinito 08:00)
+- **Sfida a tempo** — quiz con timer che passa automaticamente al livello successivo: più alto il livello, meno tempo per domanda
+- **Quiz generale** — per difficoltà (facile/medio/difficile), oppure il **Test Completo**: 45 domande sui tre livelli con un cronometro continuo da 00:00
+- **Quiz di livello** — un quiz con tutte le lezioni di un livello da tutti i moduli, alla fine dell'elenco delle lezioni del livello
+- **Sfida giornaliera** — 15 domande distribuite equamente sui tre livelli, con serie giornaliera (streak)
+- **Sfida settimanale** — tre round a tempo per livello, con serie settimanale
+- **Riprendi da dove eri** — in ogni tipo di quiz (modulo, generale, a tempo, giornaliero, settimanale, livello) e nella scheda della lezione in home
+- **Notifiche configurabili** — citazione giornaliera, sfida giornaliera e sfida settimanale, ciascuna con il proprio orario
+- **Distintivi di completamento** — un segno di spunta verde appare quando tutte le lezioni di un modulo o livello sono completate
+- **Calcolatore Zakat** con più tipologie di patrimonio, soglie di nisab, e tre metodi di irrigazione per lo zakat delle colture
+- **Condividi le statistiche** — come testo formattato o come scheda immagine progettata
 - **Navigazione doppia** — per modulo o per livello (lezioni di un livello da tutti i moduli)
-- **Riprova** in ogni quiz — incluso il retry di un singolo livello nel quiz del modulo
-- **Riprendi da dove eri** — scheda nella home che riporta all'ultima lezione aperta
-- **Progressione automatica** — pulsante per la lezione successiva e per il livello successivo
-- **Calcolatore Zakat** con più tipologie di patrimonio e soglie di nisab
-- **Quiz generale** e **quiz del modulo a 3 livelli**
 - **Ricerca testuale completa** nelle lezioni e nei contenuti
 - **Segnalibri** per salvare le lezioni preferite
 - **Personalizzazione** — imposta il nome o soprannome durante l'onboarding; modificabile in qualsiasi momento dal profilo
@@ -385,29 +399,31 @@ lib/
 | Zekat | 4 | 14 | 9 |
 | Hac & Umre | 4 | 17 | 10 |
 | Muamelat — Ticaret | 5 | 19 | 17 |
-| Helal & Haram | 4 | 23 | 15 |
-| Nikah — Evlilik | 4 | 22 | 26 |
+| Helal & Haram | 4 | 23 | 14 |
+| Nikah — Evlilik | 4 | 25 | 31 |
 | Cenaze | 4 | 15 | 12 |
 | Yeminler ve Adaklar | 4 | 15 | 14 |
-| Yiyecek & İçecek | 4 | 14 | 15 |
-| İslam Ceza Hukuku | 5 | 24 | 32 |
-| **Toplam** | **60** | **261** | **214** |
+| Yiyecek & İçecek | 4 | 14 | 16 |
+| İslam Ceza Hukuku | 6 | 36 | 38 |
+| **Toplam** | **61** | **276** | **225** |
 
 ### Temel özellikler
 
-- **13 fıkıh modülü** ile **60 ders** (başlangıç, orta, ileri seviye)
-- **261 sınav sorusu** ayrıntılı açıklamalarla
-- **213 delil** Kuran ve hadislerden, Arapça metin ve Arnavutça çeviriyle
+- **13 fıkıh modülü** ile **61 ders** (başlangıç, orta, ileri seviye)
+- **276 sınav sorusu** ayrıntılı açıklamalarla, tüm sınav modları arasında ortak bir havuzdan
+- **225 delil** Kuran ve hadislerden, Arapça metin ve Arnavutça çeviriyle
 - **Dört mezhep karşılaştırması** (Hanefi, Maliki, Şafii, Hanbeli) her hüküm için
-- **Zamana Karşı Meydan Okuma** — süre sayaçlı sınavlar: seviye yükseldikçe soru başına süre azalır
-- **Günlük Meydan Okuma** — her gün 10 karışık soru, günlük seri (streak) ile
-- **Günlük bildirim** — âlimlerin sözleriyle, kullanıcı tarafından ayarlanabilir saat (varsayılan 08:00)
+- **Zamana Karşı Meydan Okuma** — süre sayaçlı sınavlar, her seviye bitince otomatik olarak sonrakine geçer: seviye yükseldikçe soru başına süre azalır
+- **Genel Sınav** — zorluk derecesine göre (kolay/orta/zor), ya da **Tam Test**: üç seviyeden 45 soru, 00:00'dan başlayan sürekli bir kronometre ile
+- **Seviye Sınavı** — bir seviyenin tüm modüllerdeki tüm derslerini kapsayan sınav, seviyenin ders listesinin sonunda
+- **Günlük Meydan Okuma** — üç seviyeden eşit dağıtılmış 15 soru, günlük seri (streak) ile
+- **Haftalık Meydan Okuma** — seviyeye göre üç zamanlı tur, haftalık seri ile
+- **Kaldığın yerden devam et** — her sınav türünde (modül, genel, zamanlı, günlük, haftalık, seviye) ve ana ekrandaki ders kartında
+- **Özelleştirilebilir bildirimler** — günlük söz, günlük meydan okuma ve haftalık meydan okuma, her biri kendi saatiyle
+- **Tamamlama rozetleri** — bir modül veya seviyenin tüm dersleri bitince yeşil onay işareti belirir
+- **Zekat hesaplayıcı** çoklu varlık türleri, nisap eşikleri, ve ekin zekatı için üç sulama yöntemi ile
+- **İstatistiklerini paylaş** — biçimlendirilmiş metin veya tasarlanmış görsel kart olarak
 - **Çift görünüm** — modüllere göre veya seviyelere göre (bir seviyenin dersleri tüm modüllerden)
-- **Tekrar Dene** her sınavda — modül sınavında tek bir seviyeyi yeniden deneme dahil
-- **Kaldığın yerden devam et** — ana ekrandaki kart son açılan derse götürür
-- **Otomatik ilerleme** — sonraki ders ve sonraki seviye düğmeleri
-- **Zekat hesaplayıcı** çoklu varlık türleri ve nisap eşikleri ile
-- **Genel sınav** ve **3 seviyeli modül sınavı**
 - **Tam metin arama** dersler ve içerikler arasında
 - **Yer imleri** favori dersleri kaydetmek için
 - **Kişiselleştirme** — kayıt sırasında isim veya takma ad belirle; profil kartından istediğin zaman değiştir
@@ -434,29 +450,31 @@ lib/
 | Zekat | 4 | 14 | 9 |
 | Hadž & Umra | 4 | 17 | 10 |
 | Muamelat — Trgovina | 5 | 19 | 17 |
-| Halal & Haram | 4 | 23 | 15 |
-| Nikah — Brak | 4 | 22 | 26 |
+| Halal & Haram | 4 | 23 | 14 |
+| Nikah — Brak | 4 | 25 | 31 |
 | Dženaza | 4 | 15 | 12 |
 | Zakletve i Zavjeti | 4 | 15 | 14 |
-| Hrana & Piće | 4 | 14 | 15 |
-| Islamsko krivično pravo | 5 | 24 | 32 |
-| **Ukupno** | **60** | **261** | **214** |
+| Hrana & Piće | 4 | 14 | 16 |
+| Islamsko krivično pravo | 6 | 36 | 38 |
+| **Ukupno** | **61** | **276** | **225** |
 
 ### Ključne funkcionalnosti
 
-- **13 fikhskih modula** sa **60 lekcija** po nivoima (početnik, srednji, napredni)
-- **261 kviz pitanja** s detaljnim objašnjenjima
-- **213 dokaza** iz Kur'ana i hadisa s arapskim tekstom i albanskim prijevodom
+- **13 fikhskih modula** sa **61 lekcijom** po nivoima (početnik, srednji, napredni)
+- **276 kviz pitanja** s detaljnim objašnjenjima, zajedničkih za sve vrste kvizova
+- **225 dokaza** iz Kur'ana i hadisa s arapskim tekstom i albanskim prijevodom
 - **Usporedba četiri mezheba** (Hanefi, Maliki, Šafii, Hanbeli) za svako pitanje
-- **Izazov na vrijeme** — kvizovi sa tajmerom: što je viši nivo, manje vremena po pitanju
-- **Dnevni izazov** — 10 miješanih pitanja svaki dan, s dnevnim nizom (streak)
-- **Dnevna notifikacija** s izrekama učenjaka — vrijeme podesivo (zadano 08:00)
+- **Izazov na vrijeme** — kvizovi sa tajmerom koji automatski prelaze na sljedeći nivo: što je viši nivo, manje vremena po pitanju
+- **Opći kviz** — po težini (lako/srednje/teško), ili **Kompletni test**: 45 pitanja iz sva tri nivoa s jednim kontinuiranim štopericom od 00:00
+- **Kviz nivoa** — kviz koji obuhvata sve lekcije jednog nivoa iz svih modula, na kraju liste lekcija tog nivoa
+- **Dnevni izazov** — 15 pitanja ravnomjerno raspoređenih po sva tri nivoa, s dnevnim nizom (streak)
+- **Sedmični izazov** — tri runde na vrijeme po nivou, sa sedmičnim nizom
+- **Nastavi gdje si stao** — u svakoj vrsti kviza (modul, opći, na vrijeme, dnevni, sedmični, nivo) i na kartici lekcije na početnoj
+- **Podesive notifikacije** — dnevni citat, dnevni izazov i sedmični izazov, svaka sa svojim vremenom
+- **Značke za završetak** — zeleni znak kvačice se pojavljuje kada su završene sve lekcije modula ili nivoa
+- **Kalkulator zekata** s više vrsta imovine, nisab pragovima, i tri metode navodnjavanja za zekat useva
+- **Podijeli statistiku** — kao formatirani tekst ili kao dizajniranu slikovnu karticu
 - **Dvostruki pregled** — po modulima ili po nivoima (lekcije jednog nivoa iz svih modula)
-- **Pokušaj ponovo** u svakom kvizu — uključujući ponavljanje jednog nivoa u kvizu modula
-- **Nastavi gdje si stao** — kartica na početnoj vraća na zadnju otvorenu lekciju
-- **Automatski napredak** — dugme za sljedeću lekciju i sljedeći nivo
-- **Kalkulator zekata** s više vrsta imovine i nisab pragovima
-- **Opći kviz** i **kviz modula na 3 nivoa**
 - **Pretraga cijelog teksta** kroz lekcije i sadržaj
 - **Oznake** za čuvanje omiljenih lekcija
 - **Personalizacija** — unesi ime ili nadimak tokom onboardinga; promjeni u bilo kom trenutku iz profila
