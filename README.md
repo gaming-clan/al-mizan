@@ -17,6 +17,8 @@ Aplikacion edukativ Flutter për jurisprudencën islame (Fikh) në gjuhën shqip
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20Web-3DDC84?logo=android)](https://developer.android.com)
 
+Licenca: [MIT](LICENSE) · [shqip (informues)](LICENSE.sq.md)
+
 </div>
 
 ---
