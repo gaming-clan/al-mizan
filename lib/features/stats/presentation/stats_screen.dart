@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../modules/presentation/widgets/level_lessons.dart';
 import '../providers/stats_provider.dart';
+import 'stats_share_screen.dart';
 
 class StatsScreen extends ConsumerWidget {
   const StatsScreen({super.key});
@@ -17,6 +18,13 @@ class StatsScreen extends ConsumerWidget {
       appBar: AppBar(
         title: const Text('Statistikat e Mia'),
         actions: [
+          IconButton(
+            icon: const Icon(Icons.share_rounded),
+            tooltip: 'Shpërndaj statistikat',
+            onPressed: statsAsync.value == null
+                ? null
+                : () => showStatsShareSheet(context, statsAsync.value!),
+          ),
           IconButton(
             icon: const Icon(Icons.refresh_rounded),
             onPressed: () => ref.invalidate(userStatsProvider),
