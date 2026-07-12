@@ -39,6 +39,7 @@ class LevelQuizScreen extends ConsumerStatefulWidget {
 }
 
 class _LevelQuizScreenState extends ConsumerState<LevelQuizScreen> {
+  bool _started = false;
   int _seed = QuizResumeService.newSeed();
   int _startIndex = 0;
   int _startCorrect = 0;
@@ -82,6 +83,7 @@ class _LevelQuizScreenState extends ConsumerState<LevelQuizScreen> {
             _seed = saved['seed'] as int;
             _startIndex = index;
             _startCorrect = (saved['correct'] as num?)?.toInt() ?? 0;
+            _started = true;
           });
         } else {
           QuizResumeService.clear(_resumeKey);
@@ -102,12 +104,71 @@ class _LevelQuizScreenState extends ConsumerState<LevelQuizScreen> {
     }
   }
 
+  Widget _buildIntro(BuildContext context, String label, Color color,
+      AsyncValue<List<QuizQuestion>> questionsAsync) {
+    final theme = Theme.of(context);
+    final ready =
+        questionsAsync.maybeWhen(data: (qs) => qs.isNotEmpty, orElse: () => false);
+
+    return Scaffold(
+      appBar: AppBar(title: Text('Kuiz i Nivelit $label')),
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.all(32),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(kLevelIcons[widget.level] ?? Icons.quiz_rounded,
+                  size: 80, color: color),
+              const SizedBox(height: 24),
+              Text(
+                'Kuizi i Nivelit $label',
+                style: theme.textTheme.headlineMedium,
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 12),
+              questionsAsync.when(
+                data: (qs) => Text(
+                  '${qs.length} pyetje',
+                  style: theme.textTheme.bodyLarge
+                      ?.copyWith(color: AppColors.textSecondary),
+                ),
+                loading: () => const SizedBox(
+                  height: 20,
+                  width: 20,
+                  child: CircularProgressIndicator(strokeWidth: 2),
+                ),
+                error: (e, _) => Text(
+                  'Gabim: $e',
+                  style: theme.textTheme.bodyMedium
+                      ?.copyWith(color: AppColors.error),
+                ),
+              ),
+              const SizedBox(height: 32),
+              FilledButton.icon(
+                onPressed:
+                    ready ? () => setState(() => _started = true) : null,
+                icon: const Icon(Icons.play_arrow_rounded),
+                label: const Text('Fillo Kuizin'),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final label = kLevelLabels[widget.level] ?? widget.level;
     final color = kLevelColors[widget.level] ?? AppColors.primary;
     final questionsAsync =
         ref.watch(levelQuizQuestionsProvider((widget.level, _seed)));
+
+    if (!_started) {
+      return _buildIntro(context, label, color, questionsAsync);
+    }
+
     final quizState = ref.watch(quizProvider);
     final quizNotifier = ref.read(quizProvider.notifier);
     final theme = Theme.of(context);
