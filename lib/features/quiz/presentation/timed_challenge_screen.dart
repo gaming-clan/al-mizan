@@ -85,11 +85,9 @@ enum TimedLevel {
 
 /// Loads shuffled questions from lessons of the given level.
 /// Seeded so an interrupted challenge can be resumed with the same set.
-/// The third element of the key is how many questions to take — callers
-/// pass either [TimedLevel.questionCount] or a fixed override.
 final timedQuestionsProvider = FutureProvider.family<List<QuizQuestion>,
-    (TimedLevel, int, int)>((ref, args) async {
-  final (level, seed, count) = args;
+    (TimedLevel, int)>((ref, args) async {
+  final (level, seed) = args;
   final modules = await FiqhDataSource().loadAllModules();
   final questions = <QuizQuestion>[];
   for (final module in modules) {
@@ -101,7 +99,7 @@ final timedQuestionsProvider = FutureProvider.family<List<QuizQuestion>,
     }
   }
   questions.shuffle(Random(seed));
-  return questions.take(count).toList();
+  return questions.take(level.questionCount).toList();
 });
 
 class TimedChallengeScreen extends ConsumerStatefulWidget {
@@ -210,14 +208,10 @@ class _TimedChallengeScreenState extends ConsumerState<TimedChallengeScreen> {
         });
       });
     }
-    return TimedQuizBody(
+    return _TimedQuizBody(
       key: ValueKey('timed_${_level!.name}_$_seed'),
-      startLevel: _level!,
+      level: _level!,
       seed: _seed,
-      resumeKey: QuizResumeService.timedKey,
-      title: 'Sfida me Kohë',
-      resultTitle: 'Rezultati i Sfidës',
-      exitLabel: 'Zgjidh Nivel Tjetër',
       startIndex: _startIndex,
       startCorrect: _startCorrect,
       startWrong: _startWrong,
@@ -331,32 +325,9 @@ class _LevelSelector extends StatelessWidget {
   }
 }
 
-/// Runs a (possibly multi-level) timed quiz: per-question countdown that
-/// shrinks with difficulty, auto-advance between levels with a brief
-/// transition screen, and a combined result at the end. Shared by the
-/// standalone Timed Challenge (progressive question counts per level,
-/// user picks the starting level) and the General Quiz's full timed test
-/// (fixed question count per level, always starts at beginner).
-class TimedQuizBody extends ConsumerStatefulWidget {
-  final TimedLevel startLevel;
+class _TimedQuizBody extends ConsumerStatefulWidget {
+  final TimedLevel level;
   final int seed;
-
-  /// SharedPreferences key used to persist/resume progress.
-  final String resumeKey;
-
-  /// AppBar title shown on the question and transition screens.
-  final String title;
-
-  /// AppBar title shown on the final result screen.
-  final String resultTitle;
-
-  /// Label of the result screen's secondary button.
-  final String exitLabel;
-
-  /// How many questions to draw per level. Defaults to
-  /// [TimedLevel.questionCount] (progressive by difficulty).
-  final int Function(TimedLevel)? questionCountFor;
-
   final int startIndex;
   final int startCorrect;
   final int startWrong;
@@ -365,15 +336,10 @@ class TimedQuizBody extends ConsumerStatefulWidget {
   final VoidCallback onRetry;
   final VoidCallback onExit;
 
-  const TimedQuizBody({
+  const _TimedQuizBody({
     super.key,
-    required this.startLevel,
+    required this.level,
     required this.seed,
-    required this.resumeKey,
-    required this.title,
-    required this.resultTitle,
-    required this.exitLabel,
-    this.questionCountFor,
     this.startIndex = 0,
     this.startCorrect = 0,
     this.startWrong = 0,
@@ -384,20 +350,17 @@ class TimedQuizBody extends ConsumerStatefulWidget {
   });
 
   @override
-  ConsumerState<TimedQuizBody> createState() => _TimedQuizBodyState();
+  ConsumerState<_TimedQuizBody> createState() => _TimedQuizBodyState();
 }
 
-class _TimedQuizBodyState extends ConsumerState<TimedQuizBody> {
+class _TimedQuizBodyState extends ConsumerState<_TimedQuizBody> {
   static const _tick = Duration(milliseconds: 100);
   static const _feedbackDelay = Duration(milliseconds: 1600);
   static const _transitionSeconds = 3;
 
   // 'question' | 'transition' | 'final'
   String _phase = 'question';
-  late TimedLevel _currentLevel = widget.startLevel;
-
-  int _countFor(TimedLevel l) =>
-      widget.questionCountFor?.call(l) ?? l.questionCount;
+  late TimedLevel _currentLevel = widget.level;
 
   List<QuizQuestion>? _questions;
   late int _index = widget.startIndex;
@@ -423,7 +386,7 @@ class _TimedQuizBodyState extends ConsumerState<TimedQuizBody> {
   }
 
   void _persist() {
-    QuizResumeService.save(widget.resumeKey, {
+    QuizResumeService.save(QuizResumeService.timedKey, {
       'level': _currentLevel.name,
       'seed': widget.seed,
       'index': _index,
@@ -514,7 +477,7 @@ class _TimedQuizBodyState extends ConsumerState<TimedQuizBody> {
     });
     final next = _nextLevel;
     if (next == null) {
-      QuizResumeService.clear(widget.resumeKey);
+      QuizResumeService.clear(QuizResumeService.timedKey);
       setState(() => _phase = 'final');
       return;
     }
@@ -523,7 +486,7 @@ class _TimedQuizBodyState extends ConsumerState<TimedQuizBody> {
       _transitionRemaining = _transitionSeconds.toDouble();
     });
     // Save the boundary so an interrupted run resumes at the next level.
-    QuizResumeService.save(widget.resumeKey, {
+    QuizResumeService.save(QuizResumeService.timedKey, {
       'level': next.name,
       'seed': widget.seed,
       'index': 0,
@@ -573,7 +536,7 @@ class _TimedQuizBodyState extends ConsumerState<TimedQuizBody> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: const Text('Sfida me Kohë'),
         automaticallyImplyLeading: false,
       ),
       body: SafeArea(
@@ -609,7 +572,7 @@ class _TimedQuizBodyState extends ConsumerState<TimedQuizBody> {
                   ),
                   const SizedBox(height: 6),
                   Text(
-                    '${_countFor(next)} pyetje × ${next.secondsPerQuestion}s për pyetje',
+                    '${next.questionCount} pyetje × ${next.secondsPerQuestion}s për pyetje',
                     style: theme.textTheme.bodyMedium
                         ?.copyWith(color: next.color),
                   ),
@@ -639,8 +602,8 @@ class _TimedQuizBodyState extends ConsumerState<TimedQuizBody> {
 
   @override
   Widget build(BuildContext context) {
-    final questionsAsync = ref.watch(timedQuestionsProvider(
-        (_currentLevel, widget.seed, _countFor(_currentLevel))));
+    final questionsAsync =
+        ref.watch(timedQuestionsProvider((_currentLevel, widget.seed)));
     final theme = Theme.of(context);
     final cs = theme.colorScheme;
 
@@ -649,16 +612,14 @@ class _TimedQuizBodyState extends ConsumerState<TimedQuizBody> {
       int agg(String key) =>
           _levelResults.fold(0, (s, r) => s + ((r[key] as num?)?.toInt() ?? 0));
       return _ResultScreen(
-        title: widget.resultTitle,
         level: _currentLevel,
         total: agg('total'),
         correct: agg('correct'),
         wrong: agg('wrong'),
         timeouts: agg('timeouts'),
         breakdown: _levelResults,
-        exitLabel: widget.exitLabel,
         onRetry: () {
-          QuizResumeService.clear(widget.resumeKey);
+          QuizResumeService.clear(QuizResumeService.timedKey);
           widget.onRetry();
         },
         onExit: widget.onExit,
@@ -859,7 +820,6 @@ class _TimedOption extends StatelessWidget {
 }
 
 class _ResultScreen extends StatelessWidget {
-  final String title;
   final TimedLevel level;
   final int total;
   final int correct;
@@ -869,19 +829,16 @@ class _ResultScreen extends StatelessWidget {
   /// Per-level results when the run covered several levels:
   /// {level, correct, wrong, timeouts, total}.
   final List<Map<String, dynamic>>? breakdown;
-  final String exitLabel;
   final VoidCallback onRetry;
   final VoidCallback onExit;
 
   const _ResultScreen({
-    required this.title,
     required this.level,
     required this.total,
     required this.correct,
     required this.wrong,
     required this.timeouts,
     this.breakdown,
-    required this.exitLabel,
     required this.onRetry,
     required this.onExit,
   });
@@ -893,7 +850,7 @@ class _ResultScreen extends StatelessWidget {
     final multi = (breakdown?.length ?? 0) > 1;
 
     return Scaffold(
-      appBar: AppBar(title: Text(title)),
+      appBar: AppBar(title: const Text('Rezultati i Sfidës')),
       body: SafeArea(
         child: Center(
           child: ConstrainedBox(
@@ -998,7 +955,7 @@ class _ResultScreen extends StatelessWidget {
                   const SizedBox(height: 8),
                   OutlinedButton(
                     onPressed: onExit,
-                    child: Text(exitLabel),
+                    child: const Text('Zgjidh Nivel Tjetër'),
                   ),
                 ],
               ),
