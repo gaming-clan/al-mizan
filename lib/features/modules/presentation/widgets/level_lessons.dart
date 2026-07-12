@@ -202,6 +202,27 @@ class LevelStartButton extends StatelessWidget {
   }
 }
 
+/// Button shown at the end of a level's lesson list — quizzes every lesson
+/// of that level across all modules.
+class LevelQuizButton extends StatelessWidget {
+  final String level;
+
+  const LevelQuizButton({super.key, required this.level});
+
+  @override
+  Widget build(BuildContext context) {
+    final label = kLevelLabels[level] ?? level;
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 8, 16, 20),
+      child: OutlinedButton.icon(
+        onPressed: () => context.push('/level-quiz/$level'),
+        icon: const Icon(Icons.quiz_rounded),
+        label: Text('Kuiz i Nivelit $label'),
+      ),
+    );
+  }
+}
+
 /// A lesson tile in the by-level list: shows the module name as subtitle
 /// and a completion check when the lesson is done.
 class LevelLessonTile extends ConsumerWidget {

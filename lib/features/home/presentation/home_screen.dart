@@ -343,6 +343,10 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                         );
                       },
                     ),
+                    if (entries.isNotEmpty)
+                      SliverToBoxAdapter(
+                        child: LevelQuizButton(level: _selectedLevel),
+                      ),
                   ],
                 );
               },

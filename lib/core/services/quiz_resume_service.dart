@@ -10,6 +10,7 @@ class QuizResumeService {
   QuizResumeService._();
 
   static String moduleKey(String moduleId) => 'quiz_resume_module_$moduleId';
+  static String levelQuizKey(String level) => 'quiz_resume_level_$level';
   static const generalKey = 'quiz_resume_general';
   static const generalFullKey = 'quiz_resume_general_full';
   static const timedKey = 'quiz_resume_timed';

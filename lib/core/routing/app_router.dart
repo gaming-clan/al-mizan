@@ -14,6 +14,7 @@ import '../../features/quiz/presentation/daily_challenge_screen.dart';
 import '../../features/quiz/presentation/weekly_challenge_screen.dart';
 import '../../features/stats/presentation/stats_screen.dart';
 import '../../features/quiz/presentation/module_quiz_screen.dart';
+import '../../features/quiz/presentation/level_quiz_screen.dart';
 import '../../features/search/presentation/search_screen.dart';
 import '../../features/bookmarks/presentation/bookmarks_screen.dart';
 import '../../features/settings/presentation/settings_screen.dart';
@@ -135,6 +136,14 @@ final appRouter = GoRouter(
       builder: (context, state) {
         final moduleId = state.pathParameters['moduleId']!;
         return ModuleQuizScreen(moduleId: moduleId);
+      },
+    ),
+    GoRoute(
+      path: '/level-quiz/:level',
+      parentNavigatorKey: _rootNavigatorKey,
+      builder: (context, state) {
+        final level = state.pathParameters['level']!;
+        return LevelQuizScreen(level: level);
       },
     ),
     GoRoute(

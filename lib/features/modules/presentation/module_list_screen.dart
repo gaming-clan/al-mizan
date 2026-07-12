@@ -153,8 +153,11 @@ class _LevelView extends StatelessWidget {
                         top: 4,
                         bottom: MediaQuery.of(context).padding.bottom + 24,
                       ),
-                      itemCount: entries.length,
+                      itemCount: entries.length + 1,
                       itemBuilder: (context, index) {
+                        if (index == entries.length) {
+                          return LevelQuizButton(level: selectedLevel);
+                        }
                         final (module, lesson) = entries[index];
                         return LevelLessonTile(
                           module: module,
