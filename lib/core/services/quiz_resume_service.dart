@@ -11,6 +11,7 @@ class QuizResumeService {
 
   static String moduleKey(String moduleId) => 'quiz_resume_module_$moduleId';
   static const generalKey = 'quiz_resume_general';
+  static const generalFullKey = 'quiz_resume_general_full';
   static const timedKey = 'quiz_resume_timed';
   static const dailyKey = 'quiz_resume_daily';
   static const weeklyKey = 'quiz_resume_weekly';

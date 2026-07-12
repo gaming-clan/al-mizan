@@ -1,6 +1,7 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import '../../../core/services/quiz_resume_service.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../modules/data/fiqh_data_source.dart';
@@ -182,6 +183,16 @@ class _DifficultySelector extends StatelessWidget {
               icon: Icons.local_fire_department_rounded,
               color: AppColors.error,
               onTap: () => onSelect(QuizDifficulty.hard),
+            ),
+            const SizedBox(height: 28),
+            const Divider(),
+            const SizedBox(height: 12),
+            _DifficultyCard(
+              title: 'Kuiz i Përgjithshëm',
+              subtitle: '45 pyetje me kohë — 3 pjesë × 15 pyetje',
+              icon: Icons.bolt_rounded,
+              color: AppColors.primary,
+              onTap: () => context.push('/general-quiz-full'),
             ),
           ],
         ),
