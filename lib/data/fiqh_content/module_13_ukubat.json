@@ -755,7 +755,7 @@
       "sections": [
         {
           "heading": "Kush janë jomuslimanët në shtetin islam",
-          "content_sq": "Sheriati i njeh disa kategori jomuslimanësh sipas marrëdhënies së tyre juridike me shtetin islam, dhe secilës i korrespondon një shkallë e caktuar mbrojtjeje penalo-juridike: 1) EDH-DHIMMIU — jobesimtari, banor i përhershëm i shtetit islam, i cili ka pranuar mbrojtjen e tij në këmbim të pagesës së xhizjes dhe respektimit të ligjeve të përgjithshme; sipas terminologjisë bashkëkohore, ai është 'shtetas' i shtetit islam. 2) EL-MUSTE'MENI — jomusliman që ka marrë leje të përkohshme hyrjeje dhe qëndrimi (p.sh. tregtar, i ftuar, diplomat); gëzon mbrojtje nga dëmet dhe trajtim të ndershëm gjatë qëndrimit. 3) EL-MUAHIDI — shtetasi i një vendi që ka marrëveshje armëpushimi ose paqeje me shtetin islam. 4) EL-HARBIU — banori i një shteti me të cilin shteti islam është në luftë të hapur; vetëm ky i fundit mbetet jashtë mbrojtjes penalo-juridike, dhe kjo vetëm përgjatë gjendjes së armiqësisë aktive. Të tria kategoritë e para e kanë jetën, pasurinë dhe nderin të mbrojtura me ligj — pikërisht si muslimani — sepse mbrojtja buron nga kontrata me shtetin islam, jo nga përkatësia fetare. Islami gjithashtu bën dallim të veçantë për ithtarët e Librit (hebrenjtë dhe të krishterët), me të cilët ka afërsi në rrënjët e besimit qiellor.",
+          "content_sq": "Sheriati i njeh disa kategori jomuslimanësh sipas marrëdhënies së tyre juridike me shtetin islam, dhe secilës i korrespondon një shkallë e caktuar mbrojtjeje penalo-juridike: 1) EDH-DHIMMIU — jobesimtari, banor i përhershëm i shtetit islam, i cili ka pranuar mbrojtjen e tij në këmbim të pagesës së xhizjes dhe respektimit të ligjeve të përgjithshme; sipas terminologjisë bashkëkohore, ai është 'shtetas' i shtetit islam. 2) EL-MUSTE'MENI — jomusliman që ka marrë leje të përkohshme hyrjeje dhe qëndrimi (p.sh. tregtar, i ftuar, diplomat); gëzon mbrojtje nga dëmet dhe trajtim të ndershëm gjatë qëndrimit. 3) EL-MUAHIDI — shtetasi i një vendi që ka marrëveshje armëpushimi ose paqeje me shtetin islam. 4) EL-HARBIU — banori i një shteti me të cilin shteti islam është në luftë të hapur; vetëm ky i fundit mbetet jashtë mbrojtjes penalo-juridike, dhe kjo vetëm përgjatë gjendjes së armiqësisë aktive. Të tria kategoritë e para e kanë jetën, pasurinë dhe nderin të mbrojtura me ligj — pikërisht si muslimani — sepse mbrojtja buron nga kontrata me shtetin islam, jo nga përkatësia fetare. Islami gjithashtu bën dallim të veçantë për ithtarët e Librit (hebrenjtë dhe të krishterët), me të cilët ka afërsi në rrënjët e besimit qiellor. Kurani e vendos parimin qartë në dy ajete vijuese: mirësia dhe drejtësia lejohen ndaj çdo jomusliman që nuk lufton kundër muslimanëve dhe nuk i dëbon nga shtëpitë e tyre; ndalimi i miqësisë së ngushtë vlen vetëm për ata që kryejnë armiqësi aktive — luftojnë, dëbojnë ose ndihmojnë dëbimin e muslimanëve.",
           "evidences": [
             {
               "type": "quran",
@@ -764,6 +764,14 @@
               "surah": "El-Mumtehine",
               "surah_number": 60,
               "ayah": 8
+            },
+            {
+              "type": "quran",
+              "arabic": "إِنَّمَا يَنْهَاكُمُ اللَّهُ عَنِ الَّذِينَ قَاتَلُوكُمْ فِي الدِّينِ وَأَخْرَجُوكُم مِّن دِيَارِكُمْ وَظَاهَرُوا عَلَىٰ إِخْرَاجِكُمْ أَن تَوَلَّوْهُمْ ۚ وَمَن يَتَوَلَّهُمْ فَأُولَـٰئِكَ هُمُ الظَّالِمُونَ",
+              "translation_sq": "All-llahu ua ndalon t'u afroheni vetëm atyre që ju luftuan për shkak të fesë, që ju nxorën prej shtëpive tuaja dhe që ndihmuan dëbimin tuaj; ju ndalon të miqësoheni me ta. Kush miqësohet me ta, të tillët janë dëmtues të vetvetes.",
+              "surah": "El-Mumtehine",
+              "surah_number": 60,
+              "ayah": 9
             }
           ]
         },
