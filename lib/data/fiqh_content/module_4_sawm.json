@@ -228,7 +228,8 @@
       "source_references": [
         "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book",
         "Sahih Muslim",
-        "Sahih Bukhari"
+        "Sahih Bukhari",
+        "Sedat Islami, Agjërimi Fakultativ (Vullnetar), 2010"
       ],
       "sections": [
         {
@@ -250,6 +251,21 @@
           "heading": "Ditët kur ndalohet Agjërimi",
           "content_sq": "Ndalohet agjërimi në: ditën e Bajramit të Ramazanit (1 Sheval), ditën e Bajramit të Kurbanit (10 Dhul Hixhe), ditët e Teshrikut (11, 12, 13 Dhul Hixhe) — sipas shumicës. Gjithashtu mekruh (e papëlqyeshme) është veçimi i ditës së xhuma ose ditës së shtunë me agjërim pa pasur arsye, dhe agjërimi i dyshimit (dita e 30-të e Shabanit kur ka dyshim për Ramazanin).",
           "evidences": []
+        },
+        {
+          "heading": "Ekuilibri në agjërimin vullnetar",
+          "content_sq": "Agjërimi vullnetar ka shpërblim të madh, por nuk duhet të kalojë në ekstrem duke shpërfillur të drejtat e trupit, familjes dhe mysafirit. Kur Profeti ﷺ mësoi se Abdullah ibn Amr ibn el-Asi agjëronte çdo ditë dhe falej gjithë natën, e ndaloi këtë dhe i tha se trupi, gruaja e mysafiri kanë të drejta ndaj tij. E udhëzoi ta praktikojë agjërimin e Profetit Davudit a.s. — një ditë agjëron, një ditë jo — duke e cilësuar këtë si maksimumin e agjërimit vullnetar që nuk duhet tejkaluar. Rregull e lidhur: kush lë pas dore ndonjë obligim (farz) mund t'i plotësohet nga vepra vullnetare e të njëjtit lloj — kështu, nëse i mungon namazi i natës farz (siç ishte fillimisht), namazi nafile ia plotëson mangësinë; e njëjta gjë vlen për agjërimin dhe çdo adhurim tjetër.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "أَلَمْ أُخْبَرْ أَنَّكَ تَصُومُ النَّهَارَ وَتَقُومُ اللَّيْلَ؟ فَلَا تَفْعَلْ، صُمْ وَأَفْطِرْ، وَقُمْ وَنَمْ، فَإِنَّ لِجَسَدِكَ عَلَيْكَ حَقًّا، وَإِنَّ لِعَيْنِكَ عَلَيْكَ حَقًّا، وَإِنَّ لِزَوْجِكَ عَلَيْكَ حَقًّا، وَإِنَّ لِزَوْرِكَ عَلَيْكَ حَقًّا",
+              "translation_sq": "A nuk jam informuar se ti agjëron ditën dhe falesh gjithë natën? Mos bëj kështu — agjëro por edhe ha, falu por edhe fli, se trupit tënd i ke borxh (të drejtë), syrit tënd i ke të drejtë, gruas tënde i ke të drejtë, mysafirit tënd i ke të drejtë.",
+              "narrator": "Abdullah ibn Amr ibn el-Asi (r.a.)",
+              "collection": "Sahih Bukhari",
+              "classification": "sahih"
+            }
+          ],
+          "ruling": "important_concept"
         }
       ],
       "quiz": [
@@ -285,6 +301,17 @@
           ],
           "correct_index": 1,
           "explanation": "Ndalohet agjërimi ditën e Bajramit të Ramazanit dhe ditën e Bajramit të Kurbanit."
+        },
+        {
+          "question": "Çfarë modeli agjërimi i sugjeroi Profeti ﷺ Abdullah ibn Amrit si maksimum të agjërimit vullnetar?",
+          "options": [
+            "Agjërim çdo ditë, pa ndërprerje",
+            "Agjërimin e Profetit Davud a.s. — një ditë agjëron, një ditë jo",
+            "Agjërim vetëm ditën e xhuma",
+            "Asnjë agjërim vullnetar"
+          ],
+          "correct_index": 1,
+          "explanation": "Profeti ﷺ e ndaloi Abdullah ibn Amrin nga agjërimi e namazi i tepërt, duke i thënë se trupi, gruaja e mysafiri kanë të drejta ndaj tij, dhe e udhëzoi drejt modelit të Davudit a.s."
         }
       ]
     },

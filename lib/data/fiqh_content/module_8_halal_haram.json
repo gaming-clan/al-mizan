@@ -572,6 +572,76 @@
           "explanation": "Dijetarët theksojnë: 'Vështirësia lehtëson, por jo çdo gjë' — darura kërkon rrezik real, jo shqetësim të zakonshëm."
         }
       ]
+    },
+    {
+      "id": "hh_005",
+      "title_sq": "Pjesëmarrja në Lojërat Shpërblyese Komerciale",
+      "title_ar": "المسابقات التجارية والجوائز",
+      "level": "advanced",
+      "source_references": [
+        "Alaudin Abazi, Pjesëmarrja në lojërat shpërblyese, klubikulturor.com 2011",
+        "Fetava Lexhne Daime (Komisioni i Përhershëm për Fetva i Arabisë Saudite), vëll. 15",
+        "Akademia e Fikhut Islam pranë Konferencës Islamike, vendimi nr. 127 (1/14), janar 2003"
+      ],
+      "sections": [
+        {
+          "heading": "Llojet e qarta: e lejuar dhe e ndaluar",
+          "content_sq": "Qendrat tregtare organizojnë lloje të ndryshme lojërash shpërblyese për të rritur shitjet. Dy llojet janë të qarta me pajtimin e dijetarëve: 1) E NDALUAR RREPTËSISHT: blerja e një kuponi/tikete me çmim të veçantë, pa asnjë mall tjetër, vetëm për të hyrë në short për një shpërblim (makinë, banesë, etj.) — kjo është lotari dhe bixhoz i kulluar, i ndaluar me tekstin kuranor për bixhozin. 2) E LEJUAR PA KUSHT: dhurata të vogla promovuese (lapsa, kalendarë, mbajtës çelësash) që u shpërndahen klientëve pa lidhje me ndonjë blerje të veçantë — nuk ka asnjë pengesë në to.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا إِنَّمَا الْخَمْرُ وَالْمَيْسِرُ وَالْأَنصَابُ وَالْأَزْلَامُ رِجْسٌ مِّنْ عَمَلِ الشَّيْطَانِ فَاجْتَنِبُوهُ",
+              "translation_sq": "O besimtarë! Me të vërtetë, pijet alkoolike, bixhozi, idhujt dhe shigjetat e fallit janë vepra të ndyta nga punët e djallit. Prandaj, largohuni nga këto, me qëllim që të shpëtoni!",
+              "surah": "El-Maide",
+              "surah_number": 5,
+              "ayah": 90
+            }
+          ]
+        },
+        {
+          "heading": "Rasti i diskutueshëm: blerje me hyrje në short",
+          "content_sq": "Rasti i diskutueshëm mes dijetarëve bashkëkohorë: klienti blen një produkt (ose arrin një shumë të caktuar blerjeje) dhe kështu fiton automatikisht një kupon pjesëmarrjeje në shortin për shpërblime (makinë, pastrim gratis, etj.), pa pagesë shtesë përveç blerjes së zakonshme. Komisioni i Përhershëm për Fetva i Arabisë Saudite e ndalon këtë, duke e konsideruar afër bixhozit. Dijetari hanefi Mustafa Zerka e lejon nëse shpërblimi nuk është i madh (jo makinë a banesë). Sheikh Muhamed el-Uthejmin e lejon me DY KUSHTE: 1) çmimi i produktit të blerë të mos jetë rritur artificialisht për të financuar shpërblimin — të jetë njësoj siç do të ishte pa lojën shpërblyese; 2) blerësi ta blejë sepse ka nevojë reale për produktin, jo thjesht për të hyrë në short (përndryshe është shpenzim i kotë i pasurisë, i ndaluar). Akademia e Fikhut Islam (pranë Konferencës Islamike, vendimi 127/2003) i lejon lojërat shpërblyese nëse nuk ka asnjë kompensim shtesë nga ana e klientit.",
+          "evidences": [],
+          "madhab_rulings": {
+            "consensus_note": "Nuk ka ixhma të plotë: Komisioni Saudit i Fetvave e ndalon; Mustafa Zerka e lejon nëse shpërblimi është i vogël; Muhamed el-Uthejmin e lejon me kushtet e çmimit të pandryshuar dhe nevojës reale për blerjen; Akademia e Fikhut Islam e lejon nëse s'ka kompensim shtesë nga klienti. Mendimi i Uthejminit konsiderohet më i qëndrueshëm për shkak të kushteve të qarta që largojnë elementin e bixhozit."
+          }
+        }
+      ],
+      "quiz": [
+        {
+          "question": "A lejohet blerja e një kuponi me çmim të veçantë vetëm për të hyrë në short të shpërblimit, pa marrë ndonjë mall tjetër?",
+          "options": [
+            "Po, është e lejuar plotësisht",
+            "Jo — kjo është lotari/bixhoz i kulluar, e ndaluar rreptësisht",
+            "Vetëm gjatë Ramazanit",
+            "Po, nëse shpërblimi është i vogël"
+          ],
+          "correct_index": 1,
+          "explanation": "Blerja e një bilete/kuponi vetëm për hyrje në short, pa asnjë mall tjetër, është lotari dhe bixhoz i kulluar — e ndaluar rreptësisht (Maide, 90)."
+        },
+        {
+          "question": "Cilat janë dy kushtet e Sheikh Uthejminit për lejimin e lojërave shpërblyese të lidhura me blerje?",
+          "options": [
+            "Çmimi i produktit të mos rritet artificialisht, dhe blerësi ta blejë për nevojë reale, jo vetëm për shortin",
+            "Shpërblimi të jetë gjithmonë i madh",
+            "Të mos ketë asnjë kusht",
+            "Vetëm shitësi të pajtohet"
+          ],
+          "correct_index": 0,
+          "explanation": "Uthejmini kërkon: 1) çmimi i produktit të mos jetë rritur për të financuar shpërblimin, 2) blerja të bëhet nga nevojë reale, jo thjesht për të fituar të drejtën e pjesëmarrjes në short."
+        },
+        {
+          "question": "A lejohen dhuratat e vogla promovuese (lapsa, kalendarë) që u shpërndahen klientëve pa lidhje me ndonjë blerje?",
+          "options": [
+            "Jo, janë bixhoz",
+            "Po, lejohen pa asnjë pengesë sipas pajtimit të dijetarëve",
+            "Vetëm nëse janë të shtrenjta",
+            "Janë haram gjithmonë"
+          ],
+          "correct_index": 1,
+          "explanation": "Dhuratat e vogla promovuese pa lidhje me blerje të veçantë janë të lejuara me pajtimin e dijetarëve — nuk ka bazë fati apo bixhozi në to."
+        }
+      ]
     }
   ]
 }

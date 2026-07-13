@@ -423,6 +423,107 @@
           "explanation": "Betimi për të lënë diçka vaxhib (si namazi) nuk plotësohet — jepet kefaret dhe plotësohet vaxhibi."
         }
       ]
+    },
+    {
+      "id": "betim_5",
+      "title_sq": "Lista e Shpagimeve (Kefaretet)",
+      "title_ar": "جدول الكفارات",
+      "level": "advanced",
+      "source_references": [
+        "Abdullah b. Muhamed Et-Tajjar, Lista e shpagimeve - Kefareteve (përktheu Talha Kurtishi), albislam.com 2010"
+      ],
+      "sections": [
+        {
+          "heading": "Çka janë shpagimet (kefaretet)",
+          "content_sq": "Shpagim-kefaret është emërtim i përgjithshëm për adhurimet (në pasuri ose me trup) me të cilat obligohet ai që bën kundërvajtje ndaj disa rregullave fetare të caktuara — me qëllim dënimi por edhe faljeje të gjynahut. Kefaretet janë dispozita që caktohen vetëm me argumente tekstuale fetare, jo me analogji të lirë. Më poshtë një pasqyrë e shpagimeve kryesore që lidhen me betimet, nedhrin dhe agjërimin (shiko modulin e Haxhit për kefaretet specifike të ihramit).",
+          "evidences": []
+        },
+        {
+          "heading": "Kefareti i shkeljes së betimit dhe nedhrit",
+          "content_sq": "Për shkeljen e betimit (jemin), shkeljen e nedhrit (zotimit), dhe betimin e Ilasë (abstenim nga marrëdhëniet me gruan), kefareti është VAXHIB dhe personi ka të drejtë ZGJEDHJEJE mes tri gjërave: 1) të ushqejë dhjetë të varfër, 2) të sigurojë veshmbathje për dhjetë të varfër, ose 3) të lirojë një rob besimtar. Nëse nuk ka mundësi ta bëjë asnjërën prej këtyre, agjëron tri ditë me radhë.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "فَكَفَّارَتُهُ إِطْعَامُ عَشَرَةِ مَسَاكِينَ مِنْ أَوْسَطِ مَا تُطْعِمُونَ أَهْلِيكُمْ أَوْ كِسْوَتُهُمْ أَوْ تَحْرِيرُ رَقَبَةٍ ۖ فَمَن لَّمْ يَجِدْ فَصِيَامُ ثَلَاثَةِ أَيَّامٍ",
+              "translation_sq": "Shpagimi i tij (i betimit të shkelur) është të ushqesh dhjetë të varfër me ushqim mesatar që u jepni familjeve tuaja, ose t'i vishni ata, ose të lirosh një rob; e kush nuk gjen (mundësi), atëherë të agjërojë tri ditë.",
+              "surah": "El-Maide",
+              "surah_number": 5,
+              "ayah": 89
+            }
+          ]
+        },
+        {
+          "heading": "Kefareti i Dhiharit dhe i marrëdhënies në Ramazan",
+          "content_sq": "Për Dhiharin (kur burri i thotë gruas 'ti je për mua si shpina e nënës sime') dhe për prishjen e agjërimit të Ramazanit me marrëdhënie intime, kefareti është VAXHIB me RENDITJE TË DETYRUAR (nuk lejohet të kalohet te i dyti pa u siguruar se i pari është i pamundur): 1) lirimi i një robi besimtar, 2) agjërimi i dy muajve me radhë, 3) ushqyerja e gjashtëdhjetë të varfërve.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "فَتَحْرِيرُ رَقَبَةٍ مِّن قَبْلِ أَن يَتَمَاسَّا ۚ فَمَن لَّمْ يَسْتَطِعْ فَصِيَامُ شَهْرَيْنِ مُتَتَابِعَيْنِ مِن قَبْلِ أَن يَتَمَاسَّا ۖ فَمَن لَّمْ يَسْتَطِعْ فَإِطْعَامُ سِتِّينَ مِسْكِينًا",
+              "translation_sq": "(Për Dhiharin) lirimi i një robi para se të kontaktojnë; e kush nuk mundet, agjërimi i dy muajve me radhë para se të kontaktojnë; e kush nuk mundet, ushqyerja e gjashtëdhjetë të varfërve.",
+              "surah": "El-Mudhexhile",
+              "surah_number": 58,
+              "ayah": 4
+            }
+          ],
+          "madhab_rulings": {
+            "consensus_note": "Dijetarët pajtohen se kefareti i Dhiharit dhe i prishjes së agjërimit të Ramazanit me marrëdhënie intime është me renditje të detyruar (nuk zgjidhet lirisht mes tri opsioneve, ndryshe nga kefareti i betimit të thjeshtë) — kalohet te opsioni tjetër vetëm kur i pari është vërtet i pamundur."
+          }
+        },
+        {
+          "heading": "Kefareti i vrasjes pa qëllim",
+          "content_sq": "Për vrasjen pa qëllim (aksidentale), kefareti është me RENDITJE TË DETYRUAR: 1) lirimi i një robi besimtar, 2) nëse nuk mundet, agjërimi i dy muajve me radhë. Kjo shpagim është veç e ndarë nga dijeti (dëmshpërblimi i gjakut) që i takon familjes së viktimës — kefareti është e drejtë e Allahut (pastrim i gjynahut), ndërsa dijeti është e drejtë e njeriut (kompensim).",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "وَمَن قَتَلَ مُؤْمِنًا خَطَأً فَتَحْرِيرُ رَقَبَةٍ مُّؤْمِنَةٍ وَدِيَةٌ مُّسَلَّمَةٌ إِلَىٰ أَهْلِهِ",
+              "translation_sq": "Kush vret një besimtar pa qëllim (gabimisht), (kefareti i tij është) lirimi i një robi besimtar dhe dëmshpërblim i dorëzuar familjes së tij.",
+              "surah": "En-Nisa",
+              "surah_number": 4,
+              "ayah": 92
+            }
+          ]
+        },
+        {
+          "heading": "Kefaretet e Haxhit dhe Ihramit (pasqyrë e shkurtër)",
+          "content_sq": "Disa shkelje gjatë Ihramit kanë kefarete të veçanta, të shtjelluara në modulin e Haxhit: LËNIA E NDONJË VAXHIBI (p.sh. bitimi natën në Mina) — therja e një kurbani (dele), ose agjërimi i dhjetë ditëve (tre gjatë Haxhit, shtatë pas kthimit në shtëpi), me renditje të detyruar. PENGIMI NGA KRYERJA E HAXHIT/UMRES pas fillimit — njësoj si më lart. VRASJA E GJAHUT brenda haremit ose në ihram — pagimi i vlerës së kafshës së ngjashme, të shpërndarë si ushqim, ose agjërim, sipas zgjedhjes. MARRËDHËNIET INTIME PARA LIRIMIT TË PLOTË NGA IHRAMI — therja e një kurbani të madh (deve ose lopë), me renditje të detyruar si më lart.",
+          "evidences": []
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Cilat janë tri opsionet mes të cilave zgjedh personi për kefaretin e betimit të shkelur?",
+          "options": [
+            "Vetëm agjërim",
+            "Ushqyerja e dhjetë të varfërve, veshmbathja e tyre, ose lirimi i një robi — me zgjedhje të lirë",
+            "Vetëm lirimi i një robi",
+            "Vetëm haxhi"
+          ],
+          "correct_index": 1,
+          "explanation": "Kefareti i betimit të shkelur jepet me zgjedhje të lirë mes tri gjërave; nëse nuk mundet asnjërën, agjëron tri ditë (El-Maide, 89)."
+        },
+        {
+          "question": "Çka e dallon kefaretin e Dhiharit nga kefareti i betimit të thjeshtë?",
+          "options": [
+            "Nuk ka dallim",
+            "Kefareti i Dhiharit është me renditje të detyruar, jo me zgjedhje të lirë",
+            "Dhihari nuk ka kefaret",
+            "Betimi i thjeshtë kërkon më shumë se Dhihari"
+          ],
+          "correct_index": 1,
+          "explanation": "Ndryshe nga betimi i thjeshtë (zgjedhje e lirë), kefareti i Dhiharit ndjek renditje të detyruar: lirim robi → agjërim dy muajsh → ushqyerje gjashtëdhjetë të varfërve."
+        },
+        {
+          "question": "Çka e dallon kefaretin e vrasjes pa qëllim nga dijeti (dëmshpërblimi i gjakut)?",
+          "options": [
+            "Janë e njëjta gjë",
+            "Kefareti është e drejtë e Allahut (pastrim gjynahu); dijeti është e drejtë e familjes së viktimës (kompensim)",
+            "Dijeti zëvendëson kefaretin gjithmonë",
+            "Kefareti paguhet vetëm në para"
+          ],
+          "correct_index": 1,
+          "explanation": "Kefareti (lirimi i robit ose agjërimi i dy muajve) pastron gjynahun e vrasësit, ndërsa dijeti është dëmshpërblim material që i takon familjes së viktimës — dy detyrime të ndara."
+        }
+      ]
     }
   ]
 }

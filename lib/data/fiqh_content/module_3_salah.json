@@ -833,6 +833,316 @@
           "explanation": "Profeti ﷺ e thoshte 'Amin' me zë dhe i fortë. Ai ka thënë: 'Kujt i bie Amin-i me Amin-in e melekëve, i falen mëkatet e kaluara.'"
         }
       ]
+    },
+    {
+      "id": "sal_007",
+      "title_sq": "Namazi i Kusufit (Zënia e Diellit ose Hënës)",
+      "title_ar": "صلاة الكسوف والخسوف",
+      "level": "intermediate",
+      "source_references": [
+        "Talha Kurtishi, Namazi me rastin e zënies së Diellit apo Hënës, albislam.com 2011"
+      ],
+      "sections": [
+        {
+          "heading": "Rasti dhe urtësia e namazit të Kusufit",
+          "content_sq": "Dielli dhe Hëna janë dy argumente të fuqisë së Allahut; errësimi i tyre për një kohë të caktuar (kur Hëna ose Toka ndodhen mes trupit tjetër dhe Diellit) nuk ka lidhje me lindjen apo vdekjen e ndonjë njeriu — një besim i kotë që ekzistonte para Islamit. Kjo ndodhi në kohën e Profetit ﷺ kur vdiq djali i tij Ibrahimi, dhe disa menduan se zënia e diellit ndodhi për shkak të kësaj; Profeti ﷺ shpejtoi ta korrigjojë këtë besim dhe urdhëroi që në raste të tilla të shpejtohet për t'u falur e lutur derisa të largohet zënia.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "إِنَّ الشَّمْسَ وَالْقَمَرَ آيَتَانِ مِنْ آيَاتِ اللَّهِ، لَا يَنْكَسِفَانِ لِمَوْتِ أَحَدٍ وَلَا لِحَيَاتِهِ، فَإِذَا رَأَيْتُمْ ذَلِكَ فَادْعُوا اللَّهَ وَكَبِّرُوا وَصَلُّوا وَتَصَدَّقُوا حَتَّى يَنْكَشِفَ مَا بِكُمْ",
+              "translation_sq": "Me të vërtetë dielli dhe hëna janë dy prej argumenteve të Allahut, dhe ato nuk e humbin dritën për shkak të vdekjes së ndonjë personi as për shkak të jetës së tij; kur të ndodhë kjo, shpejtoni për t'u falur, për t'u lutur Allahun (me frikërespekt) dhe për të dhënë sadaka, derisa të largohet ajo që ju ka ndodhur.",
+              "collection": "Sahih Bukhari & Sahih Muslim",
+              "classification": "sahih"
+            }
+          ]
+        },
+        {
+          "heading": "Si falet dhe dispozita e tij",
+          "content_sq": "Thirrja për këtë namaz bëhet me fjalët 'Es-Salatu Xhamiatun' (Tubohuni për namaz), jo me ezan të rregullt. Namazi falet dy rekate, por me katër ruku dhe katër sexhde (dy ruku në çdo rekat): pas tekbirit fillestar lexohet Kur'an gjatë, pastaj ruku i gjatë, pastaj ngrihet ('semi'AL-lahu limen hamideh') dhe përsërit leximin (më të shkurtë), pastaj ruku i dytë (më i shkurtë se i pari), e kështu vazhdon në rekatin e dytë njësoj. Mund të falet edhe vetëm, pa xhemat. Pas namazit është sunet të mbahet hutbe këshilluese, siç bëri Profeti ﷺ. Sa i përket dispozitës: shumica e dijetarëve e konsiderojnë sunet të fortë (sunnet muekede), ndërsa disa e konsiderojnë vaxhib.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "الصَّلَاةُ جَامِعَةٌ",
+              "translation_sq": "Tubohuni për namaz (thirrje e veçantë për namazin e kusufit, jo ezan i rregullt).",
+              "narrator": "Abdullah ibn Amr ibn el-Asi (r.a.)",
+              "collection": "Sahih Bukhari & Ebu Davud",
+              "classification": "sahih"
+            }
+          ],
+          "madhab_rulings": {
+            "consensus_note": "Shumica e dijetarëve (Ibn Haxher citon Ebu Avane dhe Ibn Huzejme) e konsiderojnë namazin e kusufit sunet të fortë (sunnet muekede); disa dijetarë e kanë konsideruar vaxhib, por mendimi më i saktë mbetet sunet i fortë, sepse Profeti ﷺ nuk e ka përmendur mes namazeve të obliguara kur ia përshkroi Beduinit pesë kohët e namazit."
+          }
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Çka ndodhi kur u errësua dielli në kohën e Profetit ﷺ, dhe si reagoi ai?",
+          "options": [
+            "Nuk tha asgjë",
+            "Tha se zënia e diellit ndodhi për vdekjen e djalit të tij Ibrahim",
+            "Sqaroi se dielli dhe hëna nuk errësohen për vdekjen a jetën e ndonjë personi, dhe urdhëroi të falen e të luten",
+            "Ndaloi njerëzit të dalin nga shtëpia"
+          ],
+          "correct_index": 2,
+          "explanation": "Profeti ﷺ korrigjoi besimin e kotë duke thënë se dielli e hëna janë argumente të Allahut që nuk errësohen për vdekje a jetë njeriu, dhe urdhëroi lutje, tekbir, namaz e sadaka."
+        },
+        {
+          "question": "Sa ruku ka çdo rekat i namazit të kusufit?",
+          "options": [
+            "Një ruku, si namazi i zakonshëm",
+            "Dy ruku në çdo rekat",
+            "Tre ruku",
+            "Asnjë ruku"
+          ],
+          "correct_index": 1,
+          "explanation": "Namazi i kusufit falet dy rekate, por çdo rekat ka dy ruku (gjithsej katër ruku dhe katër sexhde)."
+        },
+        {
+          "question": "Si thirret namazi i kusufit?",
+          "options": [
+            "Me ezan të rregullt",
+            "Nuk thirret fare",
+            "Me fjalët 'Es-Salatu Xhamiatun' (Tubohuni për namaz)",
+            "Me ikamet"
+          ],
+          "correct_index": 2,
+          "explanation": "Thirrja bëhet me 'Es-Salatu Xhamiatun', jo me ezan a ikamet të rregullt."
+        }
+      ]
+    },
+    {
+      "id": "sal_008",
+      "title_sq": "Pastërtia dhe Namazi i të Sëmurit",
+      "title_ar": "طهارة وصلاة المريض",
+      "level": "intermediate",
+      "source_references": [
+        "Muhamed b. Salih El-Uthejmin, Pastërtia dhe namazi i të sëmurit (përktheu Driton Lekaj), Dar ul-Vatan, 2011"
+      ],
+      "sections": [
+        {
+          "heading": "Pastërtia e të sëmurit",
+          "content_sq": "I sëmuri pastrohet me ujë (abdes/gusull) normalisht nëse mundet. Nëse nuk mundet për shkak të paaftësisë, shtimit të sëmundjes, ose vonimit të shërimit, merr tejemum (goditje njëherë mbi tokë të pastër me duart, fshin fytyrën, pastaj fshin duart njëra me tjetrën); nëse nuk mund ta bëjë vetë, ia bën dikush tjetër. Plagët në gjymtyrët e abdesit: lahen nëse nuk dëmtohen; nëse larja dëmton, u bëhet mes'h (fshirje e lehtë); nëse edhe mes'hu dëmton, merret tejemum për atë gjymtyrë. Gjymtyra e thyer e lidhur me fashë/gips: merr mes'h mbi fashë, pa nevojë për tejemum shtesë. Tejemumi mund të merret mbi mur ose sipërfaqe të pastër me pluhur, dhe mbetet i vlefshëm derisa të prishet — nuk përsëritet për çdo namaz veç e veç nëse ende është valid. Nëse nuk mund të pastrojë trupin, rrobat ose vendin e faljes, falet ashtu si është dhe namazi i tij është i saktë e nuk përsëritet. Nuk i lejohet ta shtyjë namazin nga koha e tij për shkak të pamundësisë për t'u pastruar — pastrohet aq sa mundet dhe e fal në kohën e vet.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا",
+              "translation_sq": "Allahu nuk e ngarkon njeriun përtej mundësisë së tij.",
+              "surah": "El-Bekare",
+              "surah_number": 2,
+              "ayah": 286
+            }
+          ]
+        },
+        {
+          "heading": "Si falet i sëmuri",
+          "content_sq": "I sëmuri falet në këmbë nëse mundet, qoftë edhe i kërrusur ose i mbështetur në mur/shkop. Nëse nuk mund të qëndrojë në këmbë, falet ulur (këmbëkryq gjatë kijamit e rukusë preferohet). Nëse nuk mund të ulet, falet në një anë të kthyer nga kibla (ana e djathtë e preferuar); nëse nuk mund të kthehet nga kibla, falet siç është, e namazi i tij mbetet i saktë. Nëse nuk mund të shtrihet në anë, shtrihet me shpinë, me këmbët nga kibla (preferohet ngritja e lehtë e kokës). Duhet ta kryejë ruku-n dhe sexhden fizikisht nëse mundet; nëse jo, bën me shenjë me kokë (sexhdja më ulët se rukuja); nëse mund të kryejë vetëm njërën prej tyre fizikisht, e bën atë dhe bën me shenjë për tjetrën. Nëse nuk mund të bëjë me shenjë me kokën, bën me shenjë me sytë (mbyllja e syve — më pak për ruku, më shumë për sexhde); shenja me gisht nuk ka bazë në Kuran, Sunet a fjalët e dijetarëve. Nëse nuk mund asnjërën nga këto, falet me zemër — bën nijetin dhe e imagjinon çdo pjesë të namazit. Nëse i vjen rëndë falja e çdo namazi në kohën e vet, lejohet bashkimi i drekës me ikindinë dhe akshamit me jacinë (herët ose vonë, sipas lehtësisë), ndërsa sabahu falet vetëm, pa bashkim. I sëmuri në udhëtim për mjekim i shkurton namazet katërekatëshe në dy rekate.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "صَلِّ قَائِمًا، فَإِنْ لَمْ تَسْتَطِعْ فَقَاعِدًا، فَإِنْ لَمْ تَسْتَطِعْ فَعَلَى جَنْبٍ",
+              "translation_sq": "Falu në këmbë; nëse nuk mundesh, falu ulur; nëse nuk mundesh, falu (shtrirë) në një anë.",
+              "narrator": "Imran ibn Husajn (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 1117,
+              "classification": "sahih"
+            }
+          ],
+          "ruling": "important_concept"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Si falet i sëmuri që nuk mund të qëndrojë në këmbë e as të ulet?",
+          "options": [
+            "Nuk falet fare deri sa të shërohet",
+            "Falet në një anë të kthyer nga kibla (e djathta e preferuar)",
+            "E fal dikush tjetër për të",
+            "E lë namazin pa kompensim"
+          ],
+          "correct_index": 1,
+          "explanation": "Sipas radhës së lehtësimit: këmbë → ulur → në një anë të kthyer nga kibla → i shtrirë me shpinë, sipas mundësisë."
+        },
+        {
+          "question": "Çka bën i sëmuri që nuk mund të kryejë ruku e sexhde fizikisht, por mund të lëvizë kokën?",
+          "options": [
+            "I lë ruku e sexhde krejtësisht",
+            "Bën me shenjë me kokë — sexhdja më ulët se rukuja",
+            "I bën njësoj, pa dallim",
+            "Përsërit namazin më vonë"
+          ],
+          "correct_index": 1,
+          "explanation": "Bën me shenjë me kokë, duke e ulur kokën më shumë për sexhden sesa për rukun, për të treguar dallimin mes tyre."
+        },
+        {
+          "question": "Çka bën i sëmuri që nuk mund të bëjë asnjë prej shenjave (kokë, sy)?",
+          "options": [
+            "Nuk falet fare",
+            "Falet me zemër — bën nijetin dhe i imagjinon pjesët e namazit",
+            "E fal dikush në vend të tij",
+            "E kompenson kur shërohet"
+          ],
+          "correct_index": 1,
+          "explanation": "Në gradën e fundit, falet me zemër: bën tekbirin, lexon Kur'an, dhe bën nijet për ruku, sexhde, kijam e ulje me zemrën e tij."
+        }
+      ]
+    },
+    {
+      "id": "sal_009",
+      "title_sq": "Namazi i Teravive",
+      "title_ar": "صلاة التراويح",
+      "level": "intermediate",
+      "source_references": [
+        "Fehd ibn Jahja El-Ammarij, Përmbledhje e Rregullave të Taravisë (përshtati Uthman Agolli), Tiranë 2026"
+      ],
+      "sections": [
+        {
+          "heading": "Çka është Taravia dhe dispozita e saj",
+          "content_sq": "Namazi i teravisë është namazi i natës (Kijamu'l-lejl) që falet me xhemat në netët e Ramazanit, zakonisht pas namazit të jacisë. I pari që i udhëhoqi njerëzit në këtë namaz ishte Profeti ﷺ; më pas Umeri r.a. mblodhi njerëzit ta falin me xhemat në xhami, dhe Umeti e pranoi këtë praktikë me dakordësi. Dispozita e saj është sunet i fortë (sunnet muekede), i vendosur nga Profeti ﷺ dhe sahabet me unanimitet — vetëm risi-përhapësit (bidatçitë) e mohojnë. Vlera e saj: Profeti ﷺ ka thënë se kush e fal namazin e natës në Ramazan me besim dhe duke shpresuar shpërblimin, i falen mëkatet e kaluara (të vogla, sipas mendimit më të saktë, sepse ato të mëdha kërkojnë pendim të veçantë).",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "مَنْ قَامَ رَمَضَانَ إِيمَانًا وَاحْتِسَابًا غُفِرَ لَهُ مَا تَقَدَّمَ مِنْ ذَنْبِهِ",
+              "translation_sq": "Kush e fal namazin e natës në Ramazan, me besim dhe duke shpresuar shpërblimin, i falen mëkatet e kaluara.",
+              "collection": "Sahih Bukhari & Sahih Muslim",
+              "classification": "sahih"
+            }
+          ]
+        },
+        {
+          "heading": "Numri i rekateve dhe forma e faljes",
+          "content_sq": "Numri i rekateve të teravisë: shumica e dijetarëve thonë 20 rekate; mendimi më i saktë (sipas autorit) është 11 rekate (duke përfshirë vitrin), bazuar në praktikën më të njohur të Profetit ﷺ; lejohet edhe më shumë se 20, sepse sahabet e kanë falur me numër të ndryshëm rekatesh — çka tregon liri në këtë çështje. Forma: falet dy e nga dy rekate me unanimitet, bazuar në hadithin se namazi i natës falet 'dy e nga dy'; lejohet edhe katër rekate me një selam (si vitri). Koha: pas namazit të jacisë (edhe pas sunetit të tij), deri para agimit; nuk falet para jacisë — nëse falet para, konsiderohet namaz nafile i zakonshëm, jo teravi. Pushimi bëhet zakonisht pas çdo katër rekatesh. Paralajmërim: disa njerëz kujdesen më shumë për namazet nafile (si teravia) sesa për farzet — kjo është kuptim i shtrembëruar i fesë; siç ka thënë Ibn Haxheri: 'Kush është i zënë me farzet dhe nuk mund të falë nafilet, është i justifikuar; por kush është i zënë me nafilet dhe lë pas dore farzet, është i mashtruar.'",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "صَلَاةُ اللَّيْلِ مَثْنَى مَثْنَى",
+              "translation_sq": "Namazi i natës falet dy e nga dy (rekate).",
+              "narrator": "Abdullah ibn Umer (r.a.)",
+              "collection": "Sahih Bukhari & Sahih Muslim",
+              "classification": "sahih"
+            }
+          ],
+          "madhab_rulings": {
+            "consensus_note": "Të gjitha medhhebet pajtohen se teravia falet dy e nga dy me xhemat në Ramazan si sunet i fortë; mospajtimi është vetëm në numrin e rekateve — 20 (shumica) kundrejt 11 (mendimi i konsideruar më i saktë nga disa dijetarë bashkëkohorë), pa kufi maksimal të detyrueshëm."
+          }
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Cila dispozitë kanë dhënë dijetarët për namazin e teravisë?",
+          "options": [
+            "Vaxhib",
+            "Sunet i fortë (sunnet muekede), me unanimitet të sahabeve",
+            "Mubah",
+            "Haram"
+          ],
+          "correct_index": 1,
+          "explanation": "Teravia është sunet i fortë i vendosur nga Profeti ﷺ dhe i praktikuar në xhemat nga Umeri r.a. me pajtimin e sahabeve."
+        },
+        {
+          "question": "Sa rekate mendohet të jenë teravia sipas mendimit të shumicës së dijetarëve?",
+          "options": [
+            "8 rekate",
+            "11 rekate",
+            "20 rekate",
+            "40 rekate"
+          ],
+          "correct_index": 2,
+          "explanation": "Shumica e dijetarëve thonë 20 rekate, ndërsa disa e konsiderojnë 11 (me vitrin) mendimin më të saktë; lejohet edhe më shumë, pasi ka liri në këtë çështje."
+        },
+        {
+          "question": "A lejohet të falet teravia para namazit të jacisë?",
+          "options": [
+            "Po, është njësoj",
+            "Jo — nëse falet para jacisë, konsiderohet namaz nafile i zakonshëm, jo teravi",
+            "Po, është edhe më e mirë",
+            "Vetëm gratë mund ta bëjnë këtë"
+          ],
+          "correct_index": 1,
+          "explanation": "Teravia falet pas namazit të jacisë; nëse falet para saj, nuk konsiderohet teravi, por thjesht namaz nafile i natës."
+        }
+      ]
+    },
+    {
+      "id": "sal_010",
+      "title_sq": "Namazi dhe Rregullat e Bajrameve",
+      "title_ar": "صلاة العيدين وأحكامهما",
+      "level": "intermediate",
+      "source_references": [
+        "Ibrahim b. Muhamed El-Hukajl, Rregullat e Bajrameve (përktheu Bekir Halimi), Albislam.com 2009"
+      ],
+      "sections": [
+        {
+          "heading": "Struktura e namazit të Bajramit",
+          "content_sq": "Namazi i Bajramit falet dy rekate, pa ezan e pa ikamet. Në rekatin e parë bëhen shtatë tekbire (pa tekbirin fillestar dhe pa tekbirin e rukusë), e në rekatin e dytë pesë tekbire (pa tekbirin e rukusë). Hutbeja mbahet PAS namazit (ndryshe nga xhumaja, ku hutbeja është para namazit) dhe përbëhet nga dy hutbe me ndenjje mes tyre, sipas shumicës së dijetarëve. Prania për ta dëgjuar hutben është sunet, jo obligim — kush dëshiron mund të largohet pas namazit.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "أَنَّ رَسُولَ اللَّهِ ﷺ كَانَ يُكَبِّرُ فِي الْفِطْرِ وَالْأَضْحَى، فِي الْأُولَى سَبْعَ تَكْبِيرَاتٍ، وَفِي الثَّانِيَةِ خَمْسًا",
+              "translation_sq": "I Dërguari i Allahut ﷺ bënte tekbire në (namazin e) Fitrit dhe Kurbanit: në rekatin e parë shtatë tekbire, e në të dytin pesë.",
+              "narrator": "Amr ibn Shuajb (nga babai e gjyshi i tij)",
+              "collection": "Ebu Davud",
+              "classification": "hasen"
+            }
+          ]
+        },
+        {
+          "heading": "Sunetet dhe etika e ditës së Bajramit",
+          "content_sq": "1) TEKBIRET: preferohet të merren tekbire gjatë netëve të dy Bajrameve — në xhami, shtëpi, rrugë — burrat me zë të lartë, gratë me zë të ulur. 2) LARJA DHE ZBUKURIMI: preferohet larja dhe veshja e rrobave më të mira para namazit (Umeri r.a. bleu një mantel të veçantë për Bajram). 3) NGRËNIA PARA BAJRAMIT: në Fitër Bajram hahet (zakonisht hurma, në numër tek) PARA se të dilet për namaz; në Kurban Bajram NUK hahet para namazit — hahet pas therjes së kurbanit, nga mishi i tij. 4) DALJA HERËT për namaz. 5) DALJA E GRAVE DHE FËMIJËVE — gratë (edhe ato me menstruacione, të cilat nuk falen por dëshmojnë të mirat e lutjet) dhe fëmijët dalin për Bajram, të mbuluara siç mëson sheriati. 6) URIMET: sahabet, kur takoheshin ditën e Bajramit, i thoshin njëri-tjetrit: 'Tekabbel-lAllahu minna ve minke' (Allahu i pranoftë veprat tona dhe tuajat).",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "كَانَ رَسُولُ اللَّهِ ﷺ لَا يَخْرُجُ يَوْمَ الْفِطْرِ حَتَّى يَأْكُلَ تَمَرَاتٍ",
+              "translation_sq": "I Dërguari i Allahut ﷺ nuk dilte ditën e Fitër Bajramit derisa të hante disa hurma (në numër tek).",
+              "narrator": "Enesi (r.a.)",
+              "collection": "Sahih Bukhari",
+              "classification": "sahih"
+            },
+            {
+              "type": "hadith",
+              "arabic": "أُمِرْنَا أَنْ نُخْرِجَ الْحُيَّضَ يَوْمَ الْفِطْرِ وَالْأَضْحَى، وَيَشْهَدْنَ دَعْوَةَ الْمُسْلِمِينَ وَيَعْتَزِلْنَ الصَّلَاةَ",
+              "translation_sq": "Jemi urdhëruar t'i nxjerrim gratë me menstruacione ditën e Fitrit dhe Kurbanit; ato dëshmojnë lutjen e muslimanëve, por qëndrojnë larg namazit.",
+              "narrator": "Ummu Atijje (r.a.)",
+              "collection": "Sahih Bukhari & Sahih Muslim",
+              "classification": "sahih"
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Sa tekbire shtesë bëhen në rekatin e parë të namazit të Bajramit?",
+          "options": [
+            "Tre",
+            "Pesë",
+            "Shtatë",
+            "Dhjetë"
+          ],
+          "correct_index": 2,
+          "explanation": "Në rekatin e parë bëhen shtatë tekbire (përveç tekbirit fillestar dhe atij të rukusë), e në të dytin pesë."
+        },
+        {
+          "question": "Kur mbahet hutbeja e Bajramit — para apo pas namazit?",
+          "options": [
+            "Para namazit, si xhumaja",
+            "Pas namazit",
+            "Nuk mbahet fare",
+            "Gjatë namazit"
+          ],
+          "correct_index": 1,
+          "explanation": "Ndryshe nga xhumaja, hutbeja e Bajramit mbahet PAS namazit; prania për ta dëgjuar është sunet, jo obligim."
+        },
+        {
+          "question": "Cili është dallimi mes ngrënies para namazit në Fitër Bajram dhe Kurban Bajram?",
+          "options": [
+            "Nuk ka dallim",
+            "Në Fitër hahet para namazit (hurma); në Kurban nuk hahet deri pas therjes së kurbanit",
+            "Në të dyja rastet nuk hahet asgjë",
+            "Në Kurban hahet para, në Fitër jo"
+          ],
+          "correct_index": 1,
+          "explanation": "Profeti ﷺ hante hurma para se të dilte për Fitër Bajram, ndërsa në Kurban Bajram e vononte ngrënien deri sa të therte kurbanin."
+        }
+      ]
     }
   ]
 }

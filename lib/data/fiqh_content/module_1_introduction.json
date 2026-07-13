@@ -332,7 +332,8 @@
       "source_references": [
         "Imam Abdullah Ibn Baz, Zhvlerësuesit e Islamit (MBUROJA.net)",
         "E Drejta Islame I (Fikh), Komuniteti Mysliman i Shqipërisë, Stamboll 2013",
-        "Shejh Muhamed ibn Abdul-Uehab, el-Akidetus-Sahiha"
+        "Shejh Muhamed ibn Abdul-Uehab, el-Akidetus-Sahiha",
+        "Akademia e Fikhut Islam pranë Ligës Botërore Islame, Gjykimi i Islamit ndaj sektit Behai dhe sektit Kadijani (përktheu Driton Lekaj), 2011"
       ],
       "sections": [
         {
@@ -378,6 +379,21 @@
           "content_sq": "Imam Ibn Bazi thekson se para se të aplikohet gjykimi i riddes (largimit nga Islami) ndaj dikujt, duhen plotësuar kushtet:\n\n1. Personi duhet të dijë se ai veprim/besim kundërshton Islamin (nuk vlen për të padijshmin).\n2. Nuk duhet të ketë arsye detyruese (ikrah — shtrëngim).\n3. Nuk duhet të jetë në gjendje konfuze mendore.\n\nQëllimi i studimit të kësaj teme nuk është të akuzosh njerëzit, por të mbrosh besimin e vet nga gabimet. Profeti ﷺ tha: 'Pyesni Allahun për udhëzim, drejtësi dhe shëndet.'",
           "evidences": [],
           "ruling": null
+        },
+        {
+          "heading": "Shembuj bashkëkohorë: sektet e dala nga Islami",
+          "content_sq": "Baza e zhvlerësuesit 'pretendimi i vazhdimit të shpalljes pas Profetit Muhamed ﷺ' shihet qartë në dy sekte bashkëkohore, për të cilat Akademia e Fikhut Islam (pranë Ligës Botërore Islame) ka nxjerrë vendime zyrtare: BEHAIZMI, i themeluar nga Mirza Husejn Ali (i quajtur 'Beha', lindur 1817 në Iran) mbi themelet e Babizmit — themeluesi pretendoi së pari se ishte 'derë' e Mehdiut, pastaj vetë Mehdiu, e në fund pretendoi hyjni për veten. Predikoi se të gjitha fetë e mëparshme (përfshirë Islamin) janë anuluar me ardhjen e tij. KADIJANIZMI (Ahmedizmi), i themeluar nga Mirza Gulam Ahmed El-Kadijani (Indi, 1876), i cili pretendoi se ishte profet të cilit i vjen shpallje (mbi 10 mijë ajete të reja, sipas tij), se ishte Mesihu i premtuar, dhe se qyteti i Kadijanit është vend i shenjtë si Meka. Pasuesit e tij deklaruan haptazi: 'Çdo musliman që nuk i jep besën Shpëtimtarit të premtuar (Mirza Gulam Ahmedit)... është mosbesimtar dhe ka dalë nga feja Islame.' Në të dyja rastet, Akademia e Fikhut — me nënshkrimin e dijetarëve si Abdul-Aziz bin Baz dhe Muhamed ibn Salih el-Uthejmin — vendosi unanimisht se pasuesit e këtyre dy sekteve kanë dalë nga Islami, sepse pretendimi i një profeti a shpalljeje të re pas Muhamedit ﷺ bie ndesh drejtpërdrejt me ajetin që vulos përfundimin e profetësisë.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "مَّا كَانَ مُحَمَّدٌ أَبَا أَحَدٍ مِّن رِّجَالِكُمْ وَلَٰكِن رَّسُولَ اللَّهِ وَخَاتَمَ النَّبِيِّينَ",
+              "translation_sq": "Muhamedi nuk është baba i asnjërit prej burrave tuaj, por është i Dërguari i Allahut dhe vula (i fundmi) e profetëve.",
+              "surah": "El-Ahzab",
+              "surah_number": 33,
+              "ayah": 40
+            }
+          ],
+          "ruling": null
         }
       ],
       "quiz": [
@@ -413,6 +429,148 @@
           ],
           "correct_index": 1,
           "explanation": "Dijetarët janë unanim se i padijshmi ka arsyetim (uzur bil-xhehl) — gjykimi i riddes kërkon që personi ta dijë se ai veprim/besim kundërshton Islamin."
+        },
+        {
+          "question": "Çka pretendoi themeluesi i Behaizmit, Mirza Husejn Ali?",
+          "options": [
+            "Se ishte vetëm një dijetar i madh",
+            "Se ishte hyjni (Zot) dhe se feja e tij ka anuluar Islamin",
+            "Se ishte thjesht pasues i Islamit",
+            "Se nuk kishte lidhje me fenë"
+          ],
+          "correct_index": 1,
+          "explanation": "Mirza Husejn Ali (Beha) pretendoi në fund të jetës së tij hyjni për veten dhe shpalli se Behaizmi ka anuluar fenë Islame, ashtu si Islami anuloi fetë e mëparshme."
+        },
+        {
+          "question": "Sipas Akademisë së Fikhut Islam, pse sekti Kadijani (Ahmedi) konsiderohet i dalë nga Islami?",
+          "options": [
+            "Sepse pasuesit e tij nuk agjërojnë",
+            "Sepse themeluesi i tij pretendoi profetësi dhe shpallje të re pas Muhamedit ﷺ",
+            "Sepse jetojnë në Indi",
+            "Sepse nuk falin namaz fare"
+          ],
+          "correct_index": 1,
+          "explanation": "Mirza Gulam Ahmedi pretendoi se ishte profet të cilit i vjen shpallje, në kundërshtim të drejtpërdrejtë me ajetin që e quan Muhamedin ﷺ vulën e profetëve (El-Ahzab, 40)."
+        }
+      ]
+    },
+    {
+      "id": "intro_006",
+      "title_sq": "Rregullat Fikhore të Përgjithshme (El-Kavaidul-Fikhije)",
+      "title_ar": "القواعد الفقهية",
+      "level": "advanced",
+      "source_references": [
+        "Abdurrahman El-Ued'an Ed-Deuseri, El-Xheuheretu en-Nekijjetu fi el-Kava'idi el-Fikhijjeti (përktheu Jusuf Hilmi Kastrati), Prishtinë 2016"
+      ],
+      "sections": [
+        {
+          "heading": "Çka janë rregullat fikhore",
+          "content_sq": "Rregulla fikhore (kaide fikhije) është ligj i përgjithshëm fetar në fushën e fikhut, prej të cilit nxirren normat e shumë degëzimeve (çështjeve praktike) të po atij ligji — pra një parim i gjerë që përmbledh dhjetëra e qindra çështje të veçanta nën një formulë të vetme. Dijetarët e kësaj shkence i quajnë pesë prej tyre 'kryerregulla' (el-kavaidu el-kubra), sepse nga to nxirren shumica e rregullave të tjera më të vogla: 1) Çështjet janë sipas qëllimeve. 2) Bindja nuk zhbëhet me dyshim. 3) Vështirësia e sjell lehtësimin. 4) Dëmi duhet mënjanuar. 5) Zakoni duhet marrë parasysh.",
+          "evidences": []
+        },
+        {
+          "heading": "Çështjet janë sipas qëllimeve",
+          "content_sq": "Veprat e njeriut vlerësohen sipas nijetit (qëllimit) të tij: nëse nijeti është i vlefshëm, edhe vepra është e vlefshme, e nëse nijeti është i prishur, edhe vepra bie. Kjo rregull dallon: 1) sinqeritetin (ihlas) nga syefaqësia (rija); 2) adhurimet nga zakonet e zakonshme (p.sh. lënia e ushqimit në Ramazan nga dieta); 3) adhurimet që duken të njëjta (suneti i sabahut nga farzi i tij); 4) shndërrimin e zakoneve të lejuara në adhurim (ngrënia me qëllim të marrjes së forcës për adhurim shpërblehet). Degëzim kryesor: 'Pa nijet nuk ka shpërblim' — p.sh. sadaka vullnetare nuk mund të shndërrohet pastaj në zekat, sepse zekati kërkonte nijetin e vet nga fillimi.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى",
+              "translation_sq": "Vërtet veprat vlerësohen sipas qëllimeve, dhe secilit i takon vetëm ajo që e ka pasur për qëllim.",
+              "narrator": "Umer ibn el-Hattab (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 1,
+              "classification": "sahih"
+            }
+          ],
+          "ruling": "important_concept"
+        },
+        {
+          "heading": "Bindja nuk zhbëhet me dyshim",
+          "content_sq": "Nëse njeriu ka qenë i bindur për një gjendje dhe pastaj bie në dyshim, ai gjykon sipas bindjes paraprake dhe nuk ia kushton rëndësi dyshimit të ri. Degëzime: 1) 'Në parim çdo gjë mbetet siç ka qenë' — kush është i bindur se ka abdes, e pastaj dyshon nëse e ka prishur, konsiderohet se ka ende abdes. 2) 'Ndodhia e re i përshkruhet kohës më të afërt' — kush sheh papastërti pa kujtuar kohën, i përshkruhet kohës më të fundit të mundshme, jo më herët. 3) 'Në parim gjërat janë të pastra' — kush pretendon papastërtinë e diçkaje duhet ta argumentojë. 4) 'Në parim çdokush është i lirë nga përgjegjësia' — kush pretendon borxh ndaj tjetrit duhet ta provojë, përndryshe i akuzuari mbetet i lirë.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "لَا يَنْصَرِفْ حَتَّى يَسْمَعَ صَوْتًا أَوْ يَجِدَ رِيحًا",
+              "translation_sq": "Të mos dalë (nga namazi) derisa të dëgjojë zë ose të ndiejë erë.",
+              "narrator": "Abdullah ibn Zejd (r.a.)",
+              "collection": "Sahih Bukhari",
+              "classification": "sahih"
+            }
+          ]
+        },
+        {
+          "heading": "Vështirësia e sjell lehtësimin",
+          "content_sq": "Kur njeriu i ngarkuar me detyra fetare has vështirësi të dukshme (që dëmton jetën, gjymtyrën, shëndetin, ose sjell dhimbje të qartë) në zbatimin e një norme, Sheriati ia lehtëson atë normë. Vështirësia e zakonshme e lehtë (si lodhja e vogël) nuk e sjell lehtësimin. Shembuj: i sëmuri merr tejemum në vend të abdesit nëse uji ia shton sëmundjen; lejohet bashkimi i namazeve (xhem') në udhëtim, sëmundje, ose shi të madh.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "يُرِيدُ اللَّهُ بِكُمُ الْيُسْرَ وَلَا يُرِيدُ بِكُمُ الْعُسْرَ",
+              "translation_sq": "Allahu dëshiron t'jua lehtësojë dhe jo t'jua vështirësojë.",
+              "surah": "El-Bekare",
+              "surah_number": 2,
+              "ayah": 185
+            }
+          ]
+        },
+        {
+          "heading": "Dëmi duhet mënjanuar; Zakoni duhet marrë parasysh",
+          "content_sq": "KRYERREGULLA E KATËRT: Sheriati e ndalon dëmtimin dhe prishjen — as duke lejuar që të ndodhë, as duke e lënë pas ndodhjes. Shembull: kush prish ose harxhon pasurinë e tjetërkujt, detyrohet ta kompensojë. KRYERREGULLA E PESTË: Zakoni (traditat e njohura të njerëzve) merret parasysh në gjykimet fikhore, me tri kushte: 1) të mos bjerë ndesh me Sheriatin, 2) të jetë i rëndomtë (i njohur gjerësisht), 3) të jetë ekzistues para rastit që gjykohet — jo i shpikur pas tij.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "لَا ضَرَرَ وَلَا ضِرَارَ",
+              "translation_sq": "S'ka dëm e as dëmtim (i qëllimshëm).",
+              "narrator": "Ebu Seid el-Hudrij (r.a.)",
+              "collection": "Sunen Ibn Maxhe",
+              "classification": "hasen"
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Sa 'kryerregulla' kryesore ka shkenca e rregullave fikhore?",
+          "options": [
+            "Tre",
+            "Katër",
+            "Pesë",
+            "Dhjetë"
+          ],
+          "correct_index": 2,
+          "explanation": "Pesë janë kryerregullat: qëllimet, bindja kundër dyshimit, vështirësia-lehtësimi, dëmi i mënjanuar, dhe zakoni."
+        },
+        {
+          "question": "Cili hadith është argumenti kryesor për rregullën 'Çështjet janë sipas qëllimeve'?",
+          "options": [
+            "Hadithi i pesë shtyllave",
+            "'Vërtet veprat vlerësohen sipas qëllimeve'",
+            "Hadithi i xhihadit",
+            "Hadithi i namazit të xhumasë"
+          ],
+          "correct_index": 1,
+          "explanation": "Ky është hadithi i parë në Sahihun e Bukharit, i transmetuar nga Umer ibn el-Hattabi r.a."
+        },
+        {
+          "question": "Sipas rregullës 'Bindja nuk zhbëhet me dyshim', çka gjykohet nëse dikush është i bindur se ka abdes, por dyshon nëse e ka prishur?",
+          "options": [
+            "Duhet të marrë abdes përsëri gjithsesi",
+            "Konsiderohet se ka ende abdes, sepse bindja paraprake mbizotëron dyshimin",
+            "Namazi i tij bie automatikisht",
+            "Duhet të pyesë dikë tjetër"
+          ],
+          "correct_index": 1,
+          "explanation": "Parimi 'në parim çdo gjë mbetet siç ka qenë' bën që bindja paraprake (ka abdes) të mbetet, pa u prishur nga dyshimi i ri."
+        },
+        {
+          "question": "Cilat janë kushtet për të marrë parasysh zakonin (traditën) në një gjykim fikhor?",
+          "options": [
+            "Të jetë i ri dhe modern",
+            "Të mos bjerë ndesh me Sheriatin, të jetë i rëndomtë, dhe të ekzistojë para rastit",
+            "Të pëlqehet nga shumica",
+            "Të mos ketë asnjë kusht"
+          ],
+          "correct_index": 1,
+          "explanation": "Rregulla 'Zakoni duhet marrë parasysh' zbatohet vetëm nëse zakoni pajtohet me Sheriatin, është i njohur gjerësisht, dhe ekzistonte para ngjarjes që gjykohet."
         }
       ]
     }

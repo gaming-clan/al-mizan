@@ -750,7 +750,9 @@
       "source_references": [
         "Dr. Abdul-Azeem Badawi, The Concise Presentation of the Fiqh of the Sunnah and the Noble Book, IIPH, Rijad 2007",
         "Dr. Jusuf el-Kardavi, Hallalli dhe Harami në Islam — kreu 'Marrëdhëniet e Muslimanit me Jomuslimanin'",
-        "Shaban Sulejmani, E Drejta Penale Islame - pjesa e posaçme, Kumanovë 2025"
+        "Shaban Sulejmani, E Drejta Penale Islame - pjesa e posaçme, Kumanovë 2025",
+        "Alaudin Abazi, Pranimi i dhuratave nga jomuslimanët me rastin e festave të tyre, klubikulturor.com 2009",
+        "Muhamed Salih El Munexhid, Urimi i jobesimtarëve për festat e tyre (përktheu Driton Lekaj), 2010"
       ],
       "sections": [
         {
@@ -853,6 +855,48 @@
               "collection": "Sahih Bukhari",
               "hadith_number": 1312,
               "classification": "sahih"
+            }
+          ]
+        },
+        {
+          "heading": "Pranimi i dhuratave nga jomuslimanët",
+          "content_sq": "Në parim, muslimanit i lejohet të pranojë dhurata nga jobesimtarët — Profeti ﷺ pranonte dhurata prej tyre, si ajo e Mukaukisit (perandorit të Bizantit) apo delja e helmuar që ia dhuroi një hebreje e Medinës. Po ashtu i lejohet muslimanit t'u dhurojë atyre, posaçërisht të afërmve e fqinjëve (Umeri r.a. i dhuroi një rrobë vëllait të tij idhujtar). Megjithatë, kjo shkëmbueshmëri ndalohet KUR bëhet posaçërisht PËR festat e tyre fetare (Krishtlindje, Vitin e Ri): t'u dhurohet atyre në atë ditë llogaritet si bashkëngjitje me festën e tyre, dhe disa dijetarë e cilësojnë si mëkat të rëndë nëse dhurata është vetë simboli i festës (qirinj, vezë të ngjyrosura, bredh i stolisur). Ndryshe qëndron pranimi: nëse jobesimtari i dhuron muslimanit diçka ditën e festës së tij, kjo NUK llogaritet pjesëmarrje në festë, por përfitim dhe afrim drejt Islamit, me katër kushte: 1) dhurata të mos jetë mish i therur për atë festë; 2) të mos jetë vetë simboli i ritit të festës; 3) prindërit t'u sqarojnë fëmijëve qëndrimin islam ndaj festës, që të mos u mbillet dashuria për të; 4) pranimi të bëhet me qëllim mirësie dhe afrimi, jo miratimi i festës.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "لَا يَنْهَاكُمُ اللَّهُ عَنِ الَّذِينَ لَمْ يُقَاتِلُوكُمْ فِي الدِّينِ وَلَمْ يُخْرِجُوكُم مِّن دِيَارِكُمْ أَن تَبَرُّوهُمْ وَتُقْسِطُوا إِلَيْهِمْ",
+              "translation_sq": "Allahu nuk ju ndalon të bëni mirë dhe të mbani drejtësi me ata që nuk ju luftuan për shkak të fesë, e as nuk ju dëbuan prej shtëpive tuaja.",
+              "surah": "El-Mumtehine",
+              "surah_number": 60,
+              "ayah": 8
+            },
+            {
+              "type": "hadith",
+              "arabic": "بَابُ قَبُولِ الْهَدِيَّةِ مِنَ الْمُشْرِكِينَ",
+              "translation_sq": "(Kapitulli mbi pranimin e dhuratave nga idhujtarët — kapitull i tërë me hadithe të Profetit ﷺ që pranonte dhurata prej jobesimtarëve, ndër to edhe delja e helmuar që ia dhuroi një hebreje e Medinës.)",
+              "collection": "Sahih Bukhari",
+              "classification": "sahih"
+            }
+          ]
+        },
+        {
+          "heading": "Urimi i jobesimtarëve për festat e tyre",
+          "content_sq": "Ndryshe nga pranimi i dhuratës, URIMI i jobesimtarëve për festat e tyre fetare (p.sh. 'Gëzuar Krishtlindjet') është haram me pajtimin e dijetarëve. Ibn Kajjimi shkroi në 'Ahkamu Ehlidh-Dhimme': urimi për simbolet dhe festat e kufrit është i ndaluar me konsensus, sepse përmban pohim (miratim) të simboleve të tyre të kufrit — edhe pse vetë uruesi nuk bie në kufër, ai bie në një mëkat që Ibn Kajjimi e krahason si më të rëndë se urimi për pirjen e alkoolit apo vrasjen e të pafajshmit. Muslimani nuk pajtohet me simbolet e kufrit, sepse Allahu vetë nuk pajtohet me mosbesimin e robërve të Tij. Nëse ata na urojnë për festat tona, nuk u përgjigjemi në të njëjtën formë me festat e tyre, ngase ato nuk janë festa që i do Allahu. Ndalohet gjithashtu: pranimi i ftesave të tyre për këto festa (më e rëndë se urimi, sepse përfshin pjesëmarrje), shkëmbimi i dhuratave për shkak të festës, shpërndarja e ëmbëlsirave për festën e tyre, dhe çdo formë përngjasimi me kremtimet e tyre — bazuar në parimin se 'kush i përngjason një populli, është prej tyre'.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "الْيَوْمَ أَكْمَلْتُ لَكُمْ دِينَكُمْ وَأَتْمَمْتُ عَلَيْكُمْ نِعْمَتِي وَرَضِيتُ لَكُمُ الْإِسْلَامَ دِينًا",
+              "translation_sq": "Sot përsosa për ju fenë tuaj, plotësova ndaj jush dhuntinë Time, dhe zgjodha për ju Islamin fe.",
+              "surah": "El-Maide",
+              "surah_number": 5,
+              "ayah": 3
+            },
+            {
+              "type": "hadith",
+              "arabic": "مَنْ تَشَبَّهَ بِقَوْمٍ فَهُوَ مِنْهُمْ",
+              "translation_sq": "Kush i përngjason një populli, është prej tyre.",
+              "collection": "Ebu Davud",
+              "classification": "hasen"
             }
           ]
         }
@@ -991,6 +1035,28 @@
           ],
           "correct_index": 2,
           "explanation": "Ibn Hazmi thotë se muslimanët obligohen të dalin e të luftojnë për t'i mbrojtur rezidentët jomuslimanë deri në vdekje, sepse janë nën garancinë e Allahut dhe të Profetit ﷺ."
+        },
+        {
+          "question": "A lejohet të pranohet dhurata nga jobesimtari ditën e festës së tij?",
+          "options": [
+            "Jo, kurrsesi",
+            "Po, nëse plotësohen kushte si mos-përfshirja e mishit/simbolit të festës dhe qëllimi i mirësisë",
+            "Po, pa asnjë kusht",
+            "Vetëm nëse jobesimtari është i afërm"
+          ],
+          "correct_index": 1,
+          "explanation": "Pranimi lejohet me kushte: të mos jetë mish i therur për festën apo simbol i ritit të saj, dhe të bëhet me qëllim mirësie e afrimi, jo miratim i festës."
+        },
+        {
+          "question": "Çfarë dispozite ka urimi i jobesimtarëve për festat e tyre fetare?",
+          "options": [
+            "Mubah (i lejuar)",
+            "Sunet",
+            "Haram me pajtimin e dijetarëve, sipas Ibn Kajjimit",
+            "Vaxhib"
+          ],
+          "correct_index": 2,
+          "explanation": "Ibn Kajjimi në 'Ahkamu Ehlidh-Dhimme' thotë se urimi për festat dhe simbolet e kufrit është haram me konsensus, sepse përmban pohim të tyre."
         }
       ]
     }

@@ -15,7 +15,8 @@
         "Dr. Vehbe ez-Zuhajli, El-Fikhu el-Islami",
         "E Drejta Islame II (Fikh), Komuniteti Mysliman i Shqipërisë, Stamboll 2013",
         "E Drejta Islame III (Fikh), Komuniteti Mysliman i Shqipërisë, Stamboll 2013",
-        "Dr. Jusuf El-Kardavi, Hallalli dhe Harami në Islam (Logos-A, Shkup 1998)"
+        "Dr. Jusuf El-Kardavi, Hallalli dhe Harami në Islam (Logos-A, Shkup 1998)",
+        "Abdurrahman b. Nasir Es-Sadij, Kapitulli për Martesën (përktheu Irfan Tota), 2010"
       ],
       "sections": [
         {
@@ -69,6 +70,33 @@
               "ayah": 23
             }
           ]
+        },
+        {
+          "heading": "Rendi i kujdestarëve dhe etika e akdit të martesës",
+          "content_sq": "Personi i parë që ka të drejtë ta martojë një vajzë të lirë është babai i saj, pastaj paraardhësit e tij (gjyshi), pastaj djali i saj (nëse ka), pastaj të afërmit më të afërt sipas rendit të trashëgimisë. Nëse femra nuk ka kujdestar, ose kujdestari mungon për një kohë të gjatë, ose refuzon pa arsye ta martojë me dikë të denjë, atëherë e marton udhëheqësi (kryetari/gjykatësi), sepse 'udhëheqësi është kujdestar për atë që nuk ka kujdestar'. Nuk lejohet t'i kërkohet dora e një femre kur një musliman tjetër tashmë po e kërkon, derisa ai të heqë dorë ose t'i japë leje; gjithashtu nuk lejohet t'i kërkohet drejtpërdrejt dora e një gruaje që është në idde nga burri i vdekur ose i ndarë përfundimisht — por lejohet në mënyrë të tërthortë (p.sh. 'të pëlqej një grua si ty'), bazuar në ajetin kuranor. Është sunet që akti i martesës të fillojë me hutben e Ibn Mesudit (r.a.), dhe të përhapet lajmi i martesës botërisht (jo fshehurazi) — me dëshmitarë, njoftim, e simbolet e gëzimit — sepse Profeti ﷺ ka urdhëruar përhapjen e martesës, ndryshe nga marrëdhëniet e fshehta.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "لَا نِكَاحَ إِلَّا بِوَلِيٍّ",
+              "translation_sq": "Nuk ka martesë pa kujdestar (veli).",
+              "collection": "Ahmed, Ebu Davud, Tirmidhi",
+              "classification": "sahih"
+            },
+            {
+              "type": "hadith",
+              "arabic": "السُّلْطَانُ وَلِيُّ مَنْ لَا وَلِيَّ لَهُ",
+              "translation_sq": "Udhëheqësi (i shtetit) është kujdestar për atë që nuk ka kujdestar.",
+              "collection": "Ahmed, Ebu Davud",
+              "classification": "hasen"
+            },
+            {
+              "type": "hadith",
+              "arabic": "أَعْلِنُوا هَذَا النِّكَاحَ",
+              "translation_sq": "Bëjeni publik (të njohur) këtë martesë.",
+              "collection": "Ahmed, Tirmidhi, Ibn Maxhe",
+              "classification": "hasen"
+            }
+          ]
         }
       ],
       "quiz": [
@@ -115,6 +143,17 @@
           ],
           "correct_index": 1,
           "explanation": "Pëlqimi i gruas është kusht i martesës sipas hadithit."
+        },
+        {
+          "question": "Kush e marton femrën nëse ajo nuk ka kujdestar (veli) ose ai refuzon pa arsye?",
+          "options": [
+            "Nuk martohet kurrë",
+            "Udhëheqësi (kryetari/gjykatësi), sepse ai është kujdestar për atë që nuk ka kujdestar",
+            "Vetëm nëna e saj",
+            "Çdo musliman i afërt"
+          ],
+          "correct_index": 1,
+          "explanation": "Sipas hadithit, udhëheqësi i shtetit bëhet kujdestar për femrën që nuk ka veli ose kujdestari i saj refuzon pa arsye ta martojë."
         }
       ]
     },
@@ -671,6 +710,117 @@
           ],
           "correct_index": 1,
           "explanation": "Burri merr gjysmën kur gruaja s'ka fëmijë; kur ajo ka fëmijë, ai merr një të katërtën (En-Nisa 4:12)."
+        }
+      ]
+    },
+    {
+      "id": "nikah_5",
+      "title_sq": "Rregullat e Fëmijës së Porsalindur",
+      "title_ar": "أحكام المولود الجديد",
+      "level": "intermediate",
+      "source_references": [
+        "Irfan Tota, Disa rregulla për fëmijën e porsalindur (rishikoi Driton Lekaj), 2010"
+      ],
+      "sections": [
+        {
+          "heading": "Ezani, tahniku dhe rruajtja e kokës",
+          "content_sq": "Nga rregullat e fëmijës së porsalindur: 1) EZANI NË VESHIN E DJATHTË — Profeti ﷺ i thirri ezanin Hasenit r.a. në veshin e djathtë kur lindi. 2) TAHNIKU — t'i jepet një hurme e përtypur (ose diçka e ëmbël, nëse s'ka hurma) nga një prind, e vendosur në gojën e foshnjës. 3) RRUAJTJA E KOKËS ditën e shtatë, dhe pesha e flokëve llogaritet në argjend e jepet sadaka për të varfrit në atë vlerë.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "أَنَّ رَسُولَ اللَّهِ ﷺ أَذَّنَ فِي أُذُنِ الْحَسَنِ بْنِ عَلِيٍّ حِينَ وَلَدَتْهُ فَاطِمَةُ",
+              "translation_sq": "I Dërguari i Allahut ﷺ e thirri ezanin në veshin e Hasen ibn Aliut kur e lindi Fatimja.",
+              "collection": "Ebu Davud & Tirmidhi",
+              "classification": "hasen"
+            }
+          ]
+        },
+        {
+          "heading": "Akika — kurbani i lindjes",
+          "content_sq": "Akika është kurbani i lindjes, sunet i fortë: theret ditën e shtatë (nëse s'mundet, ditën e 14-të, pastaj të 21-të, e nëse nuk mundet edhe atëherë, theret pa afat kohor të caktuar). Për djalin theren dy krerë dele/dhi, për vajzën një. Rregullat e saj janë njësoj si të kurbanit të Bajramit (nuk theret kafshë e çalë, e verbër, ose e dobët); mishi ndahet në tri pjesë — hahet, dhurohet, jepet sadaka; nuk shitet lëkura as leshi i saj. Mosha minimale e kafshës: deve 5+ vjet, lopë 2+ vjet, dhi 1+ vit, dele 6+ muaj.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "عَنِ الْغُلَامِ شَاتَانِ مُكَافِئَتَانِ، وَعَنِ الْجَارِيَةِ شَاةٌ",
+              "translation_sq": "Për djalin (theren) dy dele të barasvlershme, e për vajzën një dele.",
+              "narrator": "Aishja (r.a.)",
+              "collection": "Sunen Ebu Davud & Tirmidhi",
+              "classification": "sahih"
+            }
+          ]
+        },
+        {
+          "heading": "Emri i fëmijës",
+          "content_sq": "Preferohet të vendoset emri ditën e shtatë ose ditën e lindjes, dhe të jetë emër i bukur, sipas hadithit se në Ditën e Kiametit njerëzit thirren me emrat e tyre e të baballarëve. Emrat më të dashur te Allahu janë Abdullah dhe Abdurrahman; pëlqehen emrat e profetëve dhe të njerëzve të devotshëm; lejohen edhe emrat jo-arabë me kuptim të mirë. NUK LEJOHEN/NUK PËLQEHEN: 1) emri 'abd' (rob) i lidhur me dikë tjetër përveç Allahut (Abduresul, Abdunebi); 2) emrat ekskluzivë për Allahun ose në trajtë të shquar (Rrahmani, Mbreti i mbretërve); 3) emrat me kuptim të keq (Luftë, i Hidhur, i Zemëruar); 4) emrat e feve të tjera pa kuptim islam; 5) emrat vetëlavdërues (i Shpëtuari, i Fituari); 6) emërtimi me emra suresh (Jasin, etj.).",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "إِنَّكُمْ تُدْعَوْنَ يَوْمَ الْقِيَامَةِ بِأَسْمَائِكُمْ وَأَسْمَاءِ آبَائِكُمْ، فَأَحْسِنُوا أَسْمَاءَكُمْ",
+              "translation_sq": "Ju do të thirreni Ditën e Kiametit në emrat tuaj dhe të baballarëve tuaj, prandaj vini emra të bukur.",
+              "collection": "Ebu Davud",
+              "classification": "hasen"
+            }
+          ]
+        },
+        {
+          "heading": "Synetllëku (Prerja e Lafshës)",
+          "content_sq": "Synetllëku për meshkujt është pjesë e natyrës së pastër njerëzore sipas Profetit ﷺ, dhe shumica e dijetarëve e konsiderojnë të detyruar (vaxhib) për meshkujt.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "خَمْسٌ مِنَ الْفِطْرَةِ: الْخِتَانُ، وَالِاسْتِحْدَادُ، وَتَقْلِيمُ الْأَظْفَارِ، وَنَتْفُ الْإِبِطِ، وَقَصُّ الشَّارِبِ",
+              "translation_sq": "Pesë gjëra janë nga natyra e pastër e njeriut: synetllëku, rruajtja e pjesëve rreth organeve intime, prerja e thonjve, heqja e qimeve të sqetullave, dhe shkurtimi i mustaqeve.",
+              "narrator": "Ebu Hurejre (r.a.)",
+              "collection": "Sahih Bukhari & Sahih Muslim",
+              "classification": "sahih"
+            }
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Ku e thirri Profeti ﷺ ezanin kur lindi Haseni r.a.?",
+          "options": [
+            "Nuk thirri fare",
+            "Në veshin e djathtë",
+            "Në të dyja veshët",
+            "Në vesh të majtë"
+          ],
+          "correct_index": 1,
+          "explanation": "Profeti ﷺ e thirri ezanin në veshin e djathtë të Hasen ibn Aliut sapo lindi."
+        },
+        {
+          "question": "Sa krerë dele theren për akikën e një djali?",
+          "options": [
+            "Një",
+            "Dy",
+            "Tre",
+            "Asnjë, akika është vetëm për vajzat"
+          ],
+          "correct_index": 1,
+          "explanation": "Për djalin theren dy krerë dele/dhi të barasvlershme, për vajzën një, sipas hadithit të Aishes r.a."
+        },
+        {
+          "question": "Cili emër konsiderohet i papëlqyer sipas rregullave të emërtimit?",
+          "options": [
+            "Abdullah",
+            "Emri i një profeti",
+            "Abduresul (rob i të Dërguarit, jo i Allahut)",
+            "Emër arab me kuptim të mirë"
+          ],
+          "correct_index": 2,
+          "explanation": "Emri 'abd' (rob) nuk lejohet t'i lidhet dikujt përveç Allahut — Abduresul dhe Abdunebi janë shembuj të emrave të papëlqyer."
+        },
+        {
+          "question": "Çfarë dispozite ka synetllëku për meshkujt sipas shumicës së dijetarëve?",
+          "options": [
+            "Haram",
+            "Mekruh",
+            "Vaxhib (i detyruar)",
+            "Nuk ka dispozitë fare"
+          ],
+          "correct_index": 2,
+          "explanation": "Shumica e dijetarëve e konsiderojnë synetllëkun për meshkujt si vaxhib, bazuar në hadithin e pesë gjërave të natyrës së pastër."
         }
       ]
     }
