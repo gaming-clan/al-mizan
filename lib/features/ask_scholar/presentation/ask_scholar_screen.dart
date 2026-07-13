@@ -21,6 +21,7 @@ class _AskScholarScreenState extends State<AskScholarScreen> {
     'Ushqimi',
     'Familja',
     'Tregtia',
+    'Shoqëria',
   ];
 
   static const List<_QA> _qaList = [
@@ -97,6 +98,65 @@ class _AskScholarScreenState extends State<AskScholarScreen> {
           'Sipas Hanefive lejohet agjërimi vullnetar i shtunës. Shumica këshillojnë bashkimin e shtunës me të premten ose të dielën.',
       scholar: 'Ibn Tejmijje',
       source: 'Mexhmu el-Fetava',
+    ),
+    _QA(
+      topic: 'Namazi',
+      question:
+          'A duhet falur namaz i veçantë kur ndodh zënia e diellit ose hënës?',
+      answer:
+          'Po, quhet namazi i Kusufit — dy rekate me katër ruku e katër sexhde (dy ruku në çdo rekat), të falura me xhemat ose vetëm. Profeti ﷺ na mësoi se dielli e hëna nuk errësohen për vdekjen a jetën e ndonjë njeriu, por janë argumente të fuqisë së Allahut; kur të ndodhë kjo, shpejtohet për namaz, lutje e sadaka derisa të largohet.',
+      scholar: 'Talha Kurtishi',
+      source: 'Namazi me rastin e zënies së Diellit apo Hënës',
+    ),
+    _QA(
+      topic: 'Namazi',
+      question: 'A thirret ezani për namazin e Bajramit?',
+      answer:
+          'Jo, namazi i Bajramit falet pa ezan e pa ikamet. Ai ka dy rekate, me shtatë tekbire shtesë në rekatin e parë dhe pesë në të dytin. Hutbeja mbahet PAS namazit (ndryshe nga xhumaja), dhe prania për ta dëgjuar është sunet, jo obligim.',
+      scholar: 'Ibrahim b. Muhamed El-Hukajl',
+      source: 'Rregullat e Bajrameve',
+    ),
+    _QA(
+      topic: 'Namazi',
+      question: 'Sa rekate falet namazi i teravisë?',
+      answer:
+          'Shumica e dijetarëve thonë 20 rekate, ndërsa disa e konsiderojnë 11 (me vitrin, sipas praktikës më të njohur të Profetit ﷺ) mendimin më të saktë. Lejohet edhe më shumë a më pak, pasi sahabet e kanë falur me numër të ndryshëm rekatesh — ka liri në këtë çështje, me kusht që të falet dy e nga dy.',
+      scholar: 'Fehd ibn Jahja El-Ammarij',
+      source: 'Përmbledhje e Rregullave të Taravisë',
+    ),
+    _QA(
+      topic: 'Namazi',
+      question: 'Si falet një person i sëmurë që nuk mund të qëndrojë në këmbë?',
+      answer:
+          'Falet ulur (këmbëkryq preferohet); nëse nuk mundet, në një anë të kthyer nga kibla (e djathta e preferuar); nëse nuk mundet, i shtrirë me shpinë e këmbët nga kibla. Nëse nuk mund të bëjë ruku e sexhde fizikisht, bën me shenjë me kokë (sexhdja më ulët); e në gradën e fundit, falet me zemër, duke bërë nijetin për çdo pjesë të namazit.',
+      scholar: 'Muhamed b. Salih El-Uthejmin',
+      source: 'Pastërtia dhe namazi i të sëmurit',
+    ),
+    _QA(
+      topic: 'Familja',
+      question: 'Çka bëhet kur lind një fëmijë në Islam?',
+      answer:
+          'Nga rregullat kryesore: 1) ezani në veshin e djathtë të foshnjës, 2) tahniku — t\'i vendoset një hurme e përtypur në gojë, 3) rruajtja e kokës ditën e shtatë dhe dhënia e sadakasë sipas peshës së flokëve në argjend, 4) akika — kurbani i lindjes (dy dele për djalin, një për vajzën), 5) vendosja e një emri të bukur, zakonisht ditën e shtatë.',
+      scholar: 'Irfan Tota',
+      source: 'Disa rregulla për fëmijën e porsalindur',
+    ),
+    _QA(
+      topic: 'Tregtia',
+      question: 'A lejohen lojërat shpërblyese që organizojnë qendrat tregtare?',
+      answer:
+          'Nuk lejohet blerja e një kuponi vetëm për të hyrë në short (kjo është bixhoz i kulluar). Por lojërat e lidhura me blerje të zakonshme lejohen sipas Sheikh Uthejminit me dy kushte: çmimi i produktit të mos rritet artificialisht për të financuar shpërblimin, dhe blerësi ta blejë sepse ka nevojë reale, jo thjesht për të hyrë në short.',
+      scholar: 'Alaudin Abazi',
+      source: 'Pjesëmarrja në lojërat shpërblyese',
+    ),
+    _QA(
+      topic: 'Shoqëria',
+      question:
+          'A lejohet të pranohet dhuratë nga një jobesimtar ditën e festës së tij?',
+      answer:
+          'Po, pranimi i dhuratës nuk llogaritet pjesëmarrje në festë, por përfitim e afrim drejt Islamit — me kusht që të mos jetë mish i therur për atë festë a simbol i ritit të saj (qirinj, vezë të ngjyrosura). Ndryshe qëndron urimi për festat e tyre fetare, i cili është haram me pajtimin e dijetarëve, sepse përmban pohim të simboleve të kufrit.',
+      scholar: 'Alaudin Abazi & Muhamed Salih El-Munexhid',
+      source:
+          'Pranimi i dhuratave nga jomuslimanët / Urimi i jobesimtarëve për festat e tyre',
     ),
   ];
 
