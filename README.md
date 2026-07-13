@@ -33,7 +33,7 @@ Licenca: [MIT](LICENSE) · [shqip (informues)](LICENSE.sq.md)
 
 | Moduli | Mësime | Kuize | Evidenca |
 |--------|--------|-------|----------|
-| Hyrje në Fikh | 6 | 18 | 17 |
+| Hyrje në Fikh | 7 | 25 | 28 |
 | Taharet — Pastërtia | 6 | 33 | 18 |
 | Namazi — Falja | 10 | 47 | 29 |
 | Agjërimi | 5 | 19 | 15 |
@@ -46,13 +46,13 @@ Licenca: [MIT](LICENSE) · [shqip (informues)](LICENSE.sq.md)
 | Betimet dhe Nedhri | 5 | 18 | 17 |
 | Ushqimi dhe Pija | 4 | 14 | 16 |
 | E Drejta Penale Islame | 6 | 38 | 43 |
-| **Gjithsej** | **69** | **308** | **256** |
+| **Gjithsej** | **70** | **315** | **267** |
 
 ### Veçoritë kryesore
 
-- **13 module fikhore** me **69 mësime** të ndara sipas niveleve (fillestar, mesatar, avancuar)
-- **308 pyetje kuizi** me shpjegime të detajuara, të përbashkëta për të gjitha modalitetet e kuizit
-- **256 evidenca** nga Kurani dhe hadithet me tekst arab dhe përkthim shqip
+- **13 module fikhore** me **70 mësime** të ndara sipas niveleve (fillestar, mesatar, avancuar)
+- **315 pyetje kuizi** me shpjegime të detajuara, të përbashkëta për të gjitha modalitetet e kuizit
+- **267 evidenca** nga Kurani dhe hadithet me tekst arab dhe përkthim shqip
 - **Krahasim i katër medhhebeve** (Hanefi, Maliki, Shafi'i, Hanbeli) për çdo çështje
 - **Sfida me Kohë** — kuize me kohëmatës që kalojnë automatikisht te niveli tjetër pas çdo niveli: sa më i lartë niveli, aq më pak kohë për pyetje
 - **Kuiz i Përgjithshëm** — sipas vështirësisë (i lehtë/mesatar/i vështirë), ose **Testi i Plotë**: 45 pyetje nga të tria nivelet me një kronometër të vazhdueshëm nga 00:00
@@ -139,7 +139,7 @@ lib/
 
 | Module | Lessons | Quizzes | Evidences |
 |--------|---------|---------|-----------|
-| Introduction to Fiqh | 6 | 18 | 17 |
+| Introduction to Fiqh | 7 | 25 | 28 |
 | Taharah — Purification | 6 | 33 | 18 |
 | Salah — Prayer | 10 | 47 | 29 |
 | Sawm — Fasting | 5 | 19 | 15 |
@@ -152,13 +152,13 @@ lib/
 | Oaths & Vows | 5 | 18 | 17 |
 | Food & Drink | 4 | 14 | 16 |
 | Islamic Criminal Law | 6 | 38 | 43 |
-| **Total** | **69** | **308** | **256** |
+| **Total** | **70** | **315** | **267** |
 
 ### Key Features
 
-- **13 Fiqh modules** with **69 lessons** organized by level (beginner, intermediate, advanced)
-- **308 quiz questions** with detailed explanations, pooled across every quiz mode
-- **256 evidences** from the Quran and Hadith with Arabic text and Albanian translation
+- **13 Fiqh modules** with **70 lessons** organized by level (beginner, intermediate, advanced)
+- **315 quiz questions** with detailed explanations, pooled across every quiz mode
+- **267 evidences** from the Quran and Hadith with Arabic text and Albanian translation
 - **Four-madhab comparison** (Hanafi, Maliki, Shafi'i, Hanbali) for every ruling
 - **Timed Challenge** — countdown quiz that auto-advances to the next level: the higher the level, the less time per question
 - **General Quiz** — by difficulty (easy/medium/hard), or the **Full Test**: 45 questions across all three levels with one continuous stopwatch from 00:00
@@ -244,7 +244,7 @@ lib/
 
 | الوحدة | الدروس | الاختبارات | الأدلة |
 |--------|--------|-----------|--------|
-| مقدمة في الفقه | ٦ | ١٨ | ١٧ |
+| مقدمة في الفقه | ٧ | ٢٥ | ٢٨ |
 | الطهارة | ٦ | ٣٣ | ١٨ |
 | الصلاة | ١٠ | ٤٧ | ٢٩ |
 | الصيام | ٥ | ١٩ | ١٥ |
@@ -257,13 +257,13 @@ lib/
 | الأيمان والنذور | ٥ | ١٨ | ١٧ |
 | الأطعمة والأشربة | ٤ | ١٤ | ١٦ |
 | العقوبات — الفقه الجنائي | ٦ | ٣٨ | ٤٣ |
-| **المجموع** | **٦٩** | **٣٠٨** | **٢٥٦** |
+| **المجموع** | **٧٠** | **٣١٥** | **٢٦٧** |
 
 ### المميزات الرئيسية
 
-- **١٣ وحدة فقهية** بـ **٦٩ درساً** مرتّبة حسب المستوى (مبتدئ، متوسط، متقدم)
-- **٣٠٨ سؤال اختبار** مع شروحات مفصّلة، مشتركة بين جميع أنماط الاختبار
-- **٢٥٦ دليل شرعي** من القرآن والأحاديث بالعربية مع ترجمة ألبانية
+- **١٣ وحدة فقهية** بـ **٧٠ درساً** مرتّبة حسب المستوى (مبتدئ، متوسط، متقدم)
+- **٣١٥ سؤال اختبار** مع شروحات مفصّلة، مشتركة بين جميع أنماط الاختبار
+- **٢٦٧ دليل شرعي** من القرآن والأحاديث بالعربية مع ترجمة ألبانية
 - **مقارنة المذاهب الأربعة** (الحنفي، المالكي، الشافعي، الحنبلي) في كل مسألة
 - **تحدي الوقت** — اختبارات بعدّاد تنازلي تنتقل تلقائياً إلى المستوى التالي: كلما ارتفع المستوى قلّ الوقت لكل سؤال
 - **اختبار شامل** — حسب المستوى (سهل/متوسط/صعب)، أو **الاختبار الكامل**: ٤٥ سؤالاً من المستويات الثلاثة بعدّاد زمني مستمر من ٠٠:٠٠
@@ -349,7 +349,7 @@ lib/
 
 | Modulo | Lezioni | Quiz | Prove |
 |--------|---------|------|-------|
-| Introduzione al Fiqh | 6 | 18 | 17 |
+| Introduzione al Fiqh | 7 | 25 | 28 |
 | Taharah — Purificazione | 6 | 33 | 18 |
 | Salah — Preghiera | 10 | 47 | 29 |
 | Sawm — Digiuno | 5 | 19 | 15 |
@@ -362,13 +362,13 @@ lib/
 | Giuramenti e Voti | 5 | 18 | 17 |
 | Cibo & Bevande | 4 | 14 | 16 |
 | Diritto Penale Islamico | 6 | 38 | 43 |
-| **Totale** | **69** | **308** | **256** |
+| **Totale** | **70** | **315** | **267** |
 
 ### Caratteristiche principali
 
-- **13 moduli Fiqh** con **69 lezioni** organizzate per livello (principiante, intermedio, avanzato)
-- **308 domande quiz** con spiegazioni dettagliate, condivise tra tutte le modalità di quiz
-- **256 prove** dal Corano e Hadith con testo arabo e traduzione albanese
+- **13 moduli Fiqh** con **70 lezioni** organizzate per livello (principiante, intermedio, avanzato)
+- **315 domande quiz** con spiegazioni dettagliate, condivise tra tutte le modalità di quiz
+- **267 prove** dal Corano e Hadith con testo arabo e traduzione albanese
 - **Confronto tra quattro madhab** (Hanafi, Maliki, Shafi'i, Hanbali) per ogni sentenza
 - **Sfida a tempo** — quiz con timer che passa automaticamente al livello successivo: più alto il livello, meno tempo per domanda
 - **Quiz generale** — per difficoltà (facile/medio/difficile), oppure il **Test Completo**: 45 domande sui tre livelli con un cronometro continuo da 00:00
@@ -400,7 +400,7 @@ lib/
 
 | Modül | Dersler | Sınav Soruları | Deliller |
 |-------|---------|----------------|---------|
-| Fıkha Giriş | 6 | 18 | 17 |
+| Fıkha Giriş | 7 | 25 | 28 |
 | Taharet — Temizlik | 6 | 33 | 18 |
 | Namaz — İbadet | 10 | 47 | 29 |
 | Oruç | 5 | 19 | 15 |
@@ -413,13 +413,13 @@ lib/
 | Yeminler ve Adaklar | 5 | 18 | 17 |
 | Yiyecek & İçecek | 4 | 14 | 16 |
 | İslam Ceza Hukuku | 6 | 38 | 43 |
-| **Toplam** | **69** | **308** | **256** |
+| **Toplam** | **70** | **315** | **267** |
 
 ### Temel özellikler
 
-- **13 fıkıh modülü** ile **69 ders** (başlangıç, orta, ileri seviye)
-- **308 sınav sorusu** ayrıntılı açıklamalarla, tüm sınav modları arasında ortak bir havuzdan
-- **256 delil** Kuran ve hadislerden, Arapça metin ve Arnavutça çeviriyle
+- **13 fıkıh modülü** ile **70 ders** (başlangıç, orta, ileri seviye)
+- **315 sınav sorusu** ayrıntılı açıklamalarla, tüm sınav modları arasında ortak bir havuzdan
+- **267 delil** Kuran ve hadislerden, Arapça metin ve Arnavutça çeviriyle
 - **Dört mezhep karşılaştırması** (Hanefi, Maliki, Şafii, Hanbeli) her hüküm için
 - **Zamana Karşı Meydan Okuma** — süre sayaçlı sınavlar, her seviye bitince otomatik olarak sonrakine geçer: seviye yükseldikçe soru başına süre azalır
 - **Genel Sınav** — zorluk derecesine göre (kolay/orta/zor), ya da **Tam Test**: üç seviyeden 45 soru, 00:00'dan başlayan sürekli bir kronometre ile
@@ -451,7 +451,7 @@ lib/
 
 | Modul | Lekcije | Pitanja | Dokazi |
 |-------|---------|---------|--------|
-| Uvod u Fikh | 6 | 18 | 17 |
+| Uvod u Fikh | 7 | 25 | 28 |
 | Taharet — Čistoća | 6 | 33 | 18 |
 | Salat — Namaz | 10 | 47 | 29 |
 | Post — Ramazan | 5 | 19 | 15 |
@@ -464,13 +464,13 @@ lib/
 | Zakletve i Zavjeti | 5 | 18 | 17 |
 | Hrana & Piće | 4 | 14 | 16 |
 | Islamsko krivično pravo | 6 | 38 | 43 |
-| **Ukupno** | **69** | **308** | **256** |
+| **Ukupno** | **70** | **315** | **267** |
 
 ### Ključne funkcionalnosti
 
-- **13 fikhskih modula** sa **69 lekcijom** po nivoima (početnik, srednji, napredni)
-- **308 kviz pitanja** s detaljnim objašnjenjima, zajedničkih za sve vrste kvizova
-- **256 dokaza** iz Kur'ana i hadisa s arapskim tekstom i albanskim prijevodom
+- **13 fikhskih modula** sa **70 lekcijom** po nivoima (početnik, srednji, napredni)
+- **315 kviz pitanja** s detaljnim objašnjenjima, zajedničkih za sve vrste kvizova
+- **267 dokaza** iz Kur'ana i hadisa s arapskim tekstom i albanskim prijevodom
 - **Usporedba četiri mezheba** (Hanefi, Maliki, Šafii, Hanbeli) za svako pitanje
 - **Izazov na vrijeme** — kvizovi sa tajmerom koji automatski prelaze na sljedeći nivo: što je viši nivo, manje vremena po pitanju
 - **Opći kviz** — po težini (lako/srednje/teško), ili **Kompletni test**: 45 pitanja iz sva tri nivoa s jednim kontinuiranim štopericom od 00:00
