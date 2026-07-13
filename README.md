@@ -33,26 +33,26 @@ Licenca: [MIT](LICENSE) · [shqip (informues)](LICENSE.sq.md)
 
 | Moduli | Mësime | Kuize | Evidenca |
 |--------|--------|-------|----------|
-| Hyrje në Fikh | 5 | 12 | 12 |
+| Hyrje në Fikh | 6 | 18 | 17 |
 | Taharet — Pastërtia | 6 | 33 | 18 |
-| Namazi — Falja | 6 | 35 | 20 |
-| Agjërimi | 5 | 18 | 14 |
+| Namazi — Falja | 10 | 47 | 29 |
+| Agjërimi | 5 | 19 | 15 |
 | Zekati | 4 | 14 | 9 |
 | Haxhi dhe Umreja | 4 | 17 | 10 |
 | Muamelati — Tregtia | 5 | 19 | 17 |
-| Hallalli dhe Harami | 4 | 23 | 14 |
-| Nikahu — Martesa | 4 | 25 | 31 |
+| Hallalli dhe Harami | 5 | 26 | 15 |
+| Nikahu — Martesa | 5 | 30 | 38 |
 | Xhenazja | 4 | 15 | 12 |
-| Betimet dhe Nedhri | 4 | 15 | 14 |
+| Betimet dhe Nedhri | 5 | 18 | 17 |
 | Ushqimi dhe Pija | 4 | 14 | 16 |
-| E Drejta Penale Islame | 6 | 36 | 38 |
-| **Gjithsej** | **61** | **276** | **225** |
+| E Drejta Penale Islame | 6 | 38 | 43 |
+| **Gjithsej** | **69** | **308** | **256** |
 
 ### Veçoritë kryesore
 
-- **13 module fikhore** me **61 mësime** të ndara sipas niveleve (fillestar, mesatar, avancuar)
-- **276 pyetje kuizi** me shpjegime të detajuara, të përbashkëta për të gjitha modalitetet e kuizit
-- **225 evidenca** nga Kurani dhe hadithet me tekst arab dhe përkthim shqip
+- **13 module fikhore** me **69 mësime** të ndara sipas niveleve (fillestar, mesatar, avancuar)
+- **308 pyetje kuizi** me shpjegime të detajuara, të përbashkëta për të gjitha modalitetet e kuizit
+- **256 evidenca** nga Kurani dhe hadithet me tekst arab dhe përkthim shqip
 - **Krahasim i katër medhhebeve** (Hanefi, Maliki, Shafi'i, Hanbeli) për çdo çështje
 - **Sfida me Kohë** — kuize me kohëmatës që kalojnë automatikisht te niveli tjetër pas çdo niveli: sa më i lartë niveli, aq më pak kohë për pyetje
 - **Kuiz i Përgjithshëm** — sipas vështirësisë (i lehtë/mesatar/i vështirë), ose **Testi i Plotë**: 45 pyetje nga të tria nivelet me një kronometër të vazhdueshëm nga 00:00
@@ -63,7 +63,7 @@ Licenca: [MIT](LICENSE) · [shqip (informues)](LICENSE.sq.md)
 - **Njoftime të konfigurueshme** — citimi ditor, sfida ditore dhe sfida javore, secili me orën e vet dhe çelës veçantë ndezje/fikje
 - **Distinktivë përfundimi** — shenjë e gjelbër shfaqet kur përfundohen të gjitha mësimet e një moduli ose niveli
 - **Llogaritës Zekati** me shumë lloje pasurie, nisab, dhe tri mënyra ujitjeje për zekatin e të mbjellave (natyrale, me makineri, ose të dyja — 10%/5%/7.5%)
-- **Shpërndaj statistikat** — si tekst i formatuar ose si kartelë imazhi e dizajnuar
+- **Shpërndaj statistikat** — si tekst i formatuar ose si kartelë imazhi e dizajnuar (me përmbledhje të plotë), të ruajtshme edhe në galerinë e telefonit
 - **Shfletim i dyfishtë** — sipas moduleve ose sipas niveleve (mësimet e një niveli nga të gjitha modulet)
 - **Kërkim i plotë** nëpër mësime dhe përmbajtje
 - **Shënime/Bookmark** për ruajtjen e mësimeve të preferuara
@@ -84,6 +84,7 @@ Përmbajtja është nxjerrë dhe përshtatur nga vepra të njohura fikhore:
 - Sejjid Sabik — *Fikhus-Sunneh*
 - Ibn Kudame — *El-Mugni*
 - Shaban Sulejmani — *E Drejta Penale Islame* (pjesa e posaçme)
+- Muhamed b. Salih El-Uthejmin, Ibn Kajjim el-Xhevzije, Akademia e Fikhut Islam, dhe autorë të tjerë bashkëkohorë — esè fikhore për namazin e kusufit, teravinë, bajramet, kefaretet, rregullat e fëmijës së porsalindur, dhe jomuslimanët në shtetin islam
 
 ### Teknologjia
 
@@ -93,6 +94,7 @@ Përmbajtja është nxjerrë dhe përshtatur nga vepra të njohura fikhore:
 - **Drift** — databaza lokale SQLite
 - **flutter_local_notifications** — njoftimet ditore lokale
 - **share_plus** — ndarja e statistikave si tekst ose imazh me aplikacione të tjera
+- **gal** — ruajtja e kartelës së statistikave në galerinë e telefonit
 - **Material 3** — dizajn modern me Google Fonts
 - **Design System**: Al-Mizan (Google Stitch) — Source Serif 4, Plus Jakarta Sans, Amiri
 
@@ -137,26 +139,26 @@ lib/
 
 | Module | Lessons | Quizzes | Evidences |
 |--------|---------|---------|-----------|
-| Introduction to Fiqh | 5 | 12 | 12 |
+| Introduction to Fiqh | 6 | 18 | 17 |
 | Taharah — Purification | 6 | 33 | 18 |
-| Salah — Prayer | 6 | 35 | 20 |
-| Sawm — Fasting | 5 | 18 | 14 |
+| Salah — Prayer | 10 | 47 | 29 |
+| Sawm — Fasting | 5 | 19 | 15 |
 | Zakat — Alms | 4 | 14 | 9 |
 | Hajj & Umrah | 4 | 17 | 10 |
 | Mu'amalat — Trade | 5 | 19 | 17 |
-| Halal & Haram | 4 | 23 | 14 |
-| Nikah — Marriage | 4 | 25 | 31 |
+| Halal & Haram | 5 | 26 | 15 |
+| Nikah — Marriage | 5 | 30 | 38 |
 | Janazah — Funeral | 4 | 15 | 12 |
-| Oaths & Vows | 4 | 15 | 14 |
+| Oaths & Vows | 5 | 18 | 17 |
 | Food & Drink | 4 | 14 | 16 |
-| Islamic Criminal Law | 6 | 36 | 38 |
-| **Total** | **61** | **276** | **225** |
+| Islamic Criminal Law | 6 | 38 | 43 |
+| **Total** | **69** | **308** | **256** |
 
 ### Key Features
 
-- **13 Fiqh modules** with **61 lessons** organized by level (beginner, intermediate, advanced)
-- **276 quiz questions** with detailed explanations, pooled across every quiz mode
-- **225 evidences** from the Quran and Hadith with Arabic text and Albanian translation
+- **13 Fiqh modules** with **69 lessons** organized by level (beginner, intermediate, advanced)
+- **308 quiz questions** with detailed explanations, pooled across every quiz mode
+- **256 evidences** from the Quran and Hadith with Arabic text and Albanian translation
 - **Four-madhab comparison** (Hanafi, Maliki, Shafi'i, Hanbali) for every ruling
 - **Timed Challenge** — countdown quiz that auto-advances to the next level: the higher the level, the less time per question
 - **General Quiz** — by difficulty (easy/medium/hard), or the **Full Test**: 45 questions across all three levels with one continuous stopwatch from 00:00
@@ -167,7 +169,7 @@ lib/
 - **Configurable notifications** — daily quote, daily challenge, and weekly challenge, each with its own on/off switch and time
 - **Completion badges** — a green checkmark appears once every lesson in a module or level is finished
 - **Zakat calculator** with multiple asset types, nisab thresholds, and three crop-irrigation methods (rain-fed, machine, or both — 10%/5%/7.5%)
-- **Share your stats** — as a formatted text summary or a designed image card
+- **Share your stats** — as a full formatted text summary or a designed image card, savable directly to your photo gallery
 - **Dual browsing** — by module or by level (lessons of one level across all modules)
 - **Full-text search** across lessons and content
 - **Bookmarks** to save favorite lessons
@@ -187,6 +189,7 @@ Content is derived and adapted from well-known Fiqh works:
 - Sayyid Sabiq — *Fiqh us-Sunnah*
 - Ibn Qudamah — *al-Mughni*
 - Shaban Sulejmani — *Islamic Criminal Law* (Special Part)
+- Muhammad ibn al-Uthaymeen, Ibn al-Qayyim al-Jawziyyah, the Islamic Fiqh Academy, and other contemporary scholars — essays on eclipse prayer, Taraweeh, Eid, expiations, newborn-child rulings, and non-Muslims in the Islamic state
 
 ### Tech Stack
 
@@ -196,6 +199,7 @@ Content is derived and adapted from well-known Fiqh works:
 - **Drift** — local SQLite database
 - **flutter_local_notifications** — local daily notifications
 - **share_plus** — sharing stats as text or image with other apps
+- **gal** — saving the stats card to the phone's photo gallery
 - **Material 3** — modern design with Google Fonts
 - **Design System**: Al-Mizan (Google Stitch) — Source Serif 4, Plus Jakarta Sans, Amiri
 
@@ -240,26 +244,26 @@ lib/
 
 | الوحدة | الدروس | الاختبارات | الأدلة |
 |--------|--------|-----------|--------|
-| مقدمة في الفقه | ٥ | ١٢ | ١٢ |
+| مقدمة في الفقه | ٦ | ١٨ | ١٧ |
 | الطهارة | ٦ | ٣٣ | ١٨ |
-| الصلاة | ٦ | ٣٥ | ٢٠ |
-| الصيام | ٥ | ١٨ | ١٤ |
+| الصلاة | ١٠ | ٤٧ | ٢٩ |
+| الصيام | ٥ | ١٩ | ١٥ |
 | الزكاة | ٤ | ١٤ | ٩ |
 | الحج والعمرة | ٤ | ١٧ | ١٠ |
 | المعاملات — التجارة | ٥ | ١٩ | ١٧ |
-| الحلال والحرام | ٤ | ٢٣ | ١٤ |
-| النكاح — الزواج | ٤ | ٢٥ | ٣١ |
+| الحلال والحرام | ٥ | ٢٦ | ١٥ |
+| النكاح — الزواج | ٥ | ٣٠ | ٣٨ |
 | الجنازة | ٤ | ١٥ | ١٢ |
-| الأيمان والنذور | ٤ | ١٥ | ١٤ |
+| الأيمان والنذور | ٥ | ١٨ | ١٧ |
 | الأطعمة والأشربة | ٤ | ١٤ | ١٦ |
-| العقوبات — الفقه الجنائي | ٦ | ٣٦ | ٣٨ |
-| **المجموع** | **٦١** | **٢٧٦** | **٢٢٥** |
+| العقوبات — الفقه الجنائي | ٦ | ٣٨ | ٤٣ |
+| **المجموع** | **٦٩** | **٣٠٨** | **٢٥٦** |
 
 ### المميزات الرئيسية
 
-- **١٣ وحدة فقهية** بـ **٦١ درساً** مرتّبة حسب المستوى (مبتدئ، متوسط، متقدم)
-- **٢٧٦ سؤال اختبار** مع شروحات مفصّلة، مشتركة بين جميع أنماط الاختبار
-- **٢٢٥ دليل شرعي** من القرآن والأحاديث بالعربية مع ترجمة ألبانية
+- **١٣ وحدة فقهية** بـ **٦٩ درساً** مرتّبة حسب المستوى (مبتدئ، متوسط، متقدم)
+- **٣٠٨ سؤال اختبار** مع شروحات مفصّلة، مشتركة بين جميع أنماط الاختبار
+- **٢٥٦ دليل شرعي** من القرآن والأحاديث بالعربية مع ترجمة ألبانية
 - **مقارنة المذاهب الأربعة** (الحنفي، المالكي، الشافعي، الحنبلي) في كل مسألة
 - **تحدي الوقت** — اختبارات بعدّاد تنازلي تنتقل تلقائياً إلى المستوى التالي: كلما ارتفع المستوى قلّ الوقت لكل سؤال
 - **اختبار شامل** — حسب المستوى (سهل/متوسط/صعب)، أو **الاختبار الكامل**: ٤٥ سؤالاً من المستويات الثلاثة بعدّاد زمني مستمر من ٠٠:٠٠
@@ -270,7 +274,7 @@ lib/
 - **إشعارات قابلة للتخصيص** — الاقتباس اليومي، التحدي اليومي، والتحدي الأسبوعي، لكلٍّ مفتاحه ووقته الخاص
 - **شارات الإتمام** — علامة صحّ خضراء تظهر عند إتمام كل دروس الوحدة أو المستوى
 - **حاسبة الزكاة** بأنواع أموال متعددة وحساب النصاب، وثلاث طرق سقي لزكاة الزروع (مطر، آلي، أو كلاهما)
-- **شارك إحصائياتك** — كنص منسّق أو كبطاقة صورة مصمّمة
+- **شارك إحصائياتك الكاملة** — كنص منسّق أو كبطاقة صورة مصمّمة، مع إمكانية حفظها في معرض الصور
 - **تصفّح مزدوج** — حسب الوحدات أو حسب المستويات (دروس مستوى واحد من جميع الوحدات)
 - **بحث كامل** في الدروس والمحتوى
 - **حفظ الملاحظات** لتخزين الدروس المفضلة
@@ -290,6 +294,7 @@ lib/
 - سيد سابق — *فقه السنة*
 - ابن قدامة — *المغني*
 - شعبان سليمانی — *الفقه الجنائي الإسلامي* (القسم الخاص)
+- محمد بن صالح العثيمين، ابن قيّم الجوزية، أكاديمية الفقه الإسلامي، وعلماء معاصرون آخرون — مقالات فقهية عن صلاة الكسوف، التراويح، العيدين، الكفارات، أحكام المولود الجديد، وغير المسلمين في الدولة الإسلامية
 
 ### التقنيات المستخدمة
 
@@ -299,6 +304,7 @@ lib/
 - **Drift** — قاعدة بيانات SQLite المحلية
 - **flutter_local_notifications** — الإشعارات اليومية المحلية
 - **share_plus** — مشاركة الإحصائيات كنص أو صورة مع تطبيقات أخرى
+- **gal** — حفظ بطاقة الإحصائيات في معرض صور الهاتف
 - **Material 3** — تصميم حديث مع خطوط Google
 - **نظام التصميم**: الميزان (Google Stitch) — Source Serif 4, Plus Jakarta Sans, أميري
 
@@ -343,26 +349,26 @@ lib/
 
 | Modulo | Lezioni | Quiz | Prove |
 |--------|---------|------|-------|
-| Introduzione al Fiqh | 5 | 12 | 12 |
+| Introduzione al Fiqh | 6 | 18 | 17 |
 | Taharah — Purificazione | 6 | 33 | 18 |
-| Salah — Preghiera | 6 | 35 | 20 |
-| Sawm — Digiuno | 5 | 18 | 14 |
+| Salah — Preghiera | 10 | 47 | 29 |
+| Sawm — Digiuno | 5 | 19 | 15 |
 | Zakat — Elemosina | 4 | 14 | 9 |
 | Hajj & Umrah | 4 | 17 | 10 |
 | Mu'amalat — Commercio | 5 | 19 | 17 |
-| Halal & Haram | 4 | 23 | 14 |
-| Nikah — Matrimonio | 4 | 25 | 31 |
+| Halal & Haram | 5 | 26 | 15 |
+| Nikah — Matrimonio | 5 | 30 | 38 |
 | Janazah — Funerale | 4 | 15 | 12 |
-| Giuramenti e Voti | 4 | 15 | 14 |
+| Giuramenti e Voti | 5 | 18 | 17 |
 | Cibo & Bevande | 4 | 14 | 16 |
-| Diritto Penale Islamico | 6 | 36 | 38 |
-| **Totale** | **61** | **276** | **225** |
+| Diritto Penale Islamico | 6 | 38 | 43 |
+| **Totale** | **69** | **308** | **256** |
 
 ### Caratteristiche principali
 
-- **13 moduli Fiqh** con **61 lezioni** organizzate per livello (principiante, intermedio, avanzato)
-- **276 domande quiz** con spiegazioni dettagliate, condivise tra tutte le modalità di quiz
-- **225 prove** dal Corano e Hadith con testo arabo e traduzione albanese
+- **13 moduli Fiqh** con **69 lezioni** organizzate per livello (principiante, intermedio, avanzato)
+- **308 domande quiz** con spiegazioni dettagliate, condivise tra tutte le modalità di quiz
+- **256 prove** dal Corano e Hadith con testo arabo e traduzione albanese
 - **Confronto tra quattro madhab** (Hanafi, Maliki, Shafi'i, Hanbali) per ogni sentenza
 - **Sfida a tempo** — quiz con timer che passa automaticamente al livello successivo: più alto il livello, meno tempo per domanda
 - **Quiz generale** — per difficoltà (facile/medio/difficile), oppure il **Test Completo**: 45 domande sui tre livelli con un cronometro continuo da 00:00
@@ -373,7 +379,7 @@ lib/
 - **Notifiche configurabili** — citazione giornaliera, sfida giornaliera e sfida settimanale, ciascuna con il proprio orario
 - **Distintivi di completamento** — un segno di spunta verde appare quando tutte le lezioni di un modulo o livello sono completate
 - **Calcolatore Zakat** con più tipologie di patrimonio, soglie di nisab, e tre metodi di irrigazione per lo zakat delle colture
-- **Condividi le statistiche** — come testo formattato o come scheda immagine progettata
+- **Condividi le statistiche complete** — come testo formattato o come scheda immagine progettata, salvabile nella galleria
 - **Navigazione doppia** — per modulo o per livello (lezioni di un livello da tutti i moduli)
 - **Ricerca testuale completa** nelle lezioni e nei contenuti
 - **Segnalibri** per salvare le lezioni preferite
@@ -394,26 +400,26 @@ lib/
 
 | Modül | Dersler | Sınav Soruları | Deliller |
 |-------|---------|----------------|---------|
-| Fıkha Giriş | 5 | 12 | 12 |
+| Fıkha Giriş | 6 | 18 | 17 |
 | Taharet — Temizlik | 6 | 33 | 18 |
-| Namaz — İbadet | 6 | 35 | 20 |
-| Oruç | 5 | 18 | 14 |
+| Namaz — İbadet | 10 | 47 | 29 |
+| Oruç | 5 | 19 | 15 |
 | Zekat | 4 | 14 | 9 |
 | Hac & Umre | 4 | 17 | 10 |
 | Muamelat — Ticaret | 5 | 19 | 17 |
-| Helal & Haram | 4 | 23 | 14 |
-| Nikah — Evlilik | 4 | 25 | 31 |
+| Helal & Haram | 5 | 26 | 15 |
+| Nikah — Evlilik | 5 | 30 | 38 |
 | Cenaze | 4 | 15 | 12 |
-| Yeminler ve Adaklar | 4 | 15 | 14 |
+| Yeminler ve Adaklar | 5 | 18 | 17 |
 | Yiyecek & İçecek | 4 | 14 | 16 |
-| İslam Ceza Hukuku | 6 | 36 | 38 |
-| **Toplam** | **61** | **276** | **225** |
+| İslam Ceza Hukuku | 6 | 38 | 43 |
+| **Toplam** | **69** | **308** | **256** |
 
 ### Temel özellikler
 
-- **13 fıkıh modülü** ile **61 ders** (başlangıç, orta, ileri seviye)
-- **276 sınav sorusu** ayrıntılı açıklamalarla, tüm sınav modları arasında ortak bir havuzdan
-- **225 delil** Kuran ve hadislerden, Arapça metin ve Arnavutça çeviriyle
+- **13 fıkıh modülü** ile **69 ders** (başlangıç, orta, ileri seviye)
+- **308 sınav sorusu** ayrıntılı açıklamalarla, tüm sınav modları arasında ortak bir havuzdan
+- **256 delil** Kuran ve hadislerden, Arapça metin ve Arnavutça çeviriyle
 - **Dört mezhep karşılaştırması** (Hanefi, Maliki, Şafii, Hanbeli) her hüküm için
 - **Zamana Karşı Meydan Okuma** — süre sayaçlı sınavlar, her seviye bitince otomatik olarak sonrakine geçer: seviye yükseldikçe soru başına süre azalır
 - **Genel Sınav** — zorluk derecesine göre (kolay/orta/zor), ya da **Tam Test**: üç seviyeden 45 soru, 00:00'dan başlayan sürekli bir kronometre ile
@@ -424,7 +430,7 @@ lib/
 - **Özelleştirilebilir bildirimler** — günlük söz, günlük meydan okuma ve haftalık meydan okuma, her biri kendi saatiyle
 - **Tamamlama rozetleri** — bir modül veya seviyenin tüm dersleri bitince yeşil onay işareti belirir
 - **Zekat hesaplayıcı** çoklu varlık türleri, nisap eşikleri, ve ekin zekatı için üç sulama yöntemi ile
-- **İstatistiklerini paylaş** — biçimlendirilmiş metin veya tasarlanmış görsel kart olarak
+- **İstatistiklerini tam olarak paylaş** — biçimlendirilmiş metin veya tasarlanmış görsel kart olarak, galeriye kaydedilebilir
 - **Çift görünüm** — modüllere göre veya seviyelere göre (bir seviyenin dersleri tüm modüllerden)
 - **Tam metin arama** dersler ve içerikler arasında
 - **Yer imleri** favori dersleri kaydetmek için
@@ -445,26 +451,26 @@ lib/
 
 | Modul | Lekcije | Pitanja | Dokazi |
 |-------|---------|---------|--------|
-| Uvod u Fikh | 5 | 12 | 12 |
+| Uvod u Fikh | 6 | 18 | 17 |
 | Taharet — Čistoća | 6 | 33 | 18 |
-| Salat — Namaz | 6 | 35 | 20 |
-| Post — Ramazan | 5 | 18 | 14 |
+| Salat — Namaz | 10 | 47 | 29 |
+| Post — Ramazan | 5 | 19 | 15 |
 | Zekat | 4 | 14 | 9 |
 | Hadž & Umra | 4 | 17 | 10 |
 | Muamelat — Trgovina | 5 | 19 | 17 |
-| Halal & Haram | 4 | 23 | 14 |
-| Nikah — Brak | 4 | 25 | 31 |
+| Halal & Haram | 5 | 26 | 15 |
+| Nikah — Brak | 5 | 30 | 38 |
 | Dženaza | 4 | 15 | 12 |
-| Zakletve i Zavjeti | 4 | 15 | 14 |
+| Zakletve i Zavjeti | 5 | 18 | 17 |
 | Hrana & Piće | 4 | 14 | 16 |
-| Islamsko krivično pravo | 6 | 36 | 38 |
-| **Ukupno** | **61** | **276** | **225** |
+| Islamsko krivično pravo | 6 | 38 | 43 |
+| **Ukupno** | **69** | **308** | **256** |
 
 ### Ključne funkcionalnosti
 
-- **13 fikhskih modula** sa **61 lekcijom** po nivoima (početnik, srednji, napredni)
-- **276 kviz pitanja** s detaljnim objašnjenjima, zajedničkih za sve vrste kvizova
-- **225 dokaza** iz Kur'ana i hadisa s arapskim tekstom i albanskim prijevodom
+- **13 fikhskih modula** sa **69 lekcijom** po nivoima (početnik, srednji, napredni)
+- **308 kviz pitanja** s detaljnim objašnjenjima, zajedničkih za sve vrste kvizova
+- **256 dokaza** iz Kur'ana i hadisa s arapskim tekstom i albanskim prijevodom
 - **Usporedba četiri mezheba** (Hanefi, Maliki, Šafii, Hanbeli) za svako pitanje
 - **Izazov na vrijeme** — kvizovi sa tajmerom koji automatski prelaze na sljedeći nivo: što je viši nivo, manje vremena po pitanju
 - **Opći kviz** — po težini (lako/srednje/teško), ili **Kompletni test**: 45 pitanja iz sva tri nivoa s jednim kontinuiranim štopericom od 00:00
@@ -475,7 +481,7 @@ lib/
 - **Podesive notifikacije** — dnevni citat, dnevni izazov i sedmični izazov, svaka sa svojim vremenom
 - **Značke za završetak** — zeleni znak kvačice se pojavljuje kada su završene sve lekcije modula ili nivoa
 - **Kalkulator zekata** s više vrsta imovine, nisab pragovima, i tri metode navodnjavanja za zekat useva
-- **Podijeli statistiku** — kao formatirani tekst ili kao dizajniranu slikovnu karticu
+- **Podijeli kompletnu statistiku** — kao formatirani tekst ili kao dizajniranu slikovnu karticu, sa mogućnošću spremanja u galeriju
 - **Dvostruki pregled** — po modulima ili po nivoima (lekcije jednog nivoa iz svih modula)
 - **Pretraga cijelog teksta** kroz lekcije i sadržaj
 - **Oznake** za čuvanje omiljenih lekcija

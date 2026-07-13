@@ -472,7 +472,7 @@ class ProfileScreen extends ConsumerWidget {
                       int total = 0;
                       for (final mod in m) {
                         for (final l in mod.lessons) {
-                          total += l.quiz.length;
+                          total += l.quiz.length + l.poolQuiz.length;
                         }
                       }
                       return '$total';
