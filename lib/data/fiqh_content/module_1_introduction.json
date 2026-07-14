@@ -740,6 +740,20 @@
           ]
         },
         {
+          "heading": "Kadijanizmi dhe Behaizmi — pretendimi i profecisë pas Muhamedit ﷺ",
+          "content_sq": "Dy sekte bashkëkohore dolën plotësisht nga Islami për një shkak të përbashkët: pretendimin e një profeti a shpalljeje të re pas Profetit Muhamed ﷺ, gjë që bie ndesh drejtpërdrejt me ajetin që e vulos profecinë. KADIJANIZMI (Ahmedizmi), i themeluar nga Mirza Gulam Ahmed El-Kadijani (Indi, 1876), i cili pretendoi se ishte profet me shpallje, Mesihu i premtuar, dhe se Kadijani është vend i shenjtë si Meka. BEHAIZMI, i themeluar nga Mirza Husejn Ali ('Beha', Iran, shek. XIX) mbi themelet e Babizmit — themeluesi kaloi nga pretendimi i 'derës' së Mehdiut te pretendimi i hyjnisë, duke shpallur se feja e tij anuloi Islamin. Për të dyja, Akademia e Fikhut Islam (pranë Ligës Botërore Islame), me nënshkrimin e dijetarëve si Ibn Bazi dhe el-Uthejmini, vendosi njëzëri se pasuesit e tyre kanë dalë nga feja Islame. (Këto trajtohen edhe në mësimin 'Zhvlerësuesit e Islamit'.)",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "مَّا كَانَ مُحَمَّدٌ أَبَا أَحَدٍ مِّن رِّجَالِكُمْ وَلَٰكِن رَّسُولَ اللَّهِ وَخَاتَمَ النَّبِيِّينَ",
+              "translation_sq": "Muhamedi nuk është baba i asnjërit prej burrave tuaj, por është i Dërguari i Allahut dhe vula (i fundmi) e profetëve.",
+              "surah": "El-Ahzab",
+              "surah_number": 33,
+              "ayah": 40
+            }
+          ]
+        },
+        {
           "heading": "Lëvizjet dhe grupet moderne",
           "content_sq": "Përveç firkave klasike, dijetarët e metodologjisë selefije kanë kritikuar edhe disa lëvizje moderne për metodologjinë e tyre (jo si dalje nga Islami, por si devijime metodike apo bidate): IKHUANUL-MUSLIMIN (Vëllazëria Muslimane) — kritikohet për politizim, tubim mbi baza të gjera pa korrigjim akaidor, dhe zbutje në çështje besimi. TABLIGËT (Xhemati Tablig) — kritikohen për mbështetje në hadithe të dobëta, tesavvuf dhe largim nga dija e saktë. HIZBU-TAHRIR — për bindje të devijuara në akide dhe fokusim politik te 'hilafeti'. KUTBIJUNËT dhe SURURITË — rryma të ndikuara nga mendimi politik i Sejjid Kutbit. HADADIJET — ekstrem në ashpërsi dhe tekfir/hexhr të tepruar brenda vetë selefive. KURANIJUNËT — mohues të autoritetit të Sunetit (pretendojnë 'vetëm Kuran'), pozicion që dijetarët e konsiderojnë devijim shumë të rëndë. HUTHITË (Jemen, zejdi-xharudi me prirje shiite) dhe disa prirje te TALIBANËT kritikohen po ashtu. Kritika ndaj tyre është metodologjike dhe duhet bërë me drejtësi e dituri, jo me përgjithësime.",
           "evidences": [
@@ -798,6 +812,17 @@
           ],
           "correct_index": 2,
           "explanation": "Firkat ghulat si Nusajritë dhe Druzët mohojnë parime bazë (p.sh. teuhidin, duke i atribuar hyjni njerëzve) dhe konsiderohen jashtë Islamit nga konsensusi i gjerë sunni e shia."
+        },
+        {
+          "question": "Cili është shkaku i përbashkët pse Kadijanizmi dhe Behaizmi konsiderohen jashtë Islamit?",
+          "options": [
+            "Sepse nuk agjërojnë",
+            "Sepse pretenduan profeci a shpallje të re pas Muhamedit ﷺ, kundër vulës së profetësisë",
+            "Sepse jetojnë jashtë vendeve arabe",
+            "Sepse ndjekin një medhheb tjetër"
+          ],
+          "correct_index": 1,
+          "explanation": "Të dyja pretenduan profet/shpallje pas Muhamedit ﷺ; Akademia e Fikhut Islam vendosi njëzëri se pasuesit e tyre kanë dalë nga Islami (El-Ahzab, 40 — vula e profetëve)."
         },
         {
           "question": "Si duhet të jetë kritika ndaj lëvizjeve moderne sipas metodologjisë së drejtë?",
