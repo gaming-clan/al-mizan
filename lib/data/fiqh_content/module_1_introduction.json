@@ -699,7 +699,7 @@
         },
         {
           "heading": "Esh'aritë dhe Maturiditë — shkollat e kelamit",
-          "content_sq": "ESH'ARITË (pasues të Ebul-Hasen el-Esh'ariut) dhe MATURIDITË (pasues të Ebu Mensur el-Maturidiut) janë dy shkollat më të mëdha teologjike të kelamit (teologjisë racionale) në botën sunite. Duhet theksuar qartë: ata JANË muslimanë dhe pjesë e Ehli Sunetit sipas shumicës — madje përbëjnë akiden e shumicës historike të sunive, përfshirë shumë dijetarë të mëdhenj (En-Nevevi, Ibn Haxheri) dhe medhhebin tradicional të shqiptarëve (Maturidi, i lidhur me medhhebin Hanefi). Mospajtimi i tyre me shkollën Athari/Selefije është metodologjik: ata bëjnë te'vil (interpretim figurativ) të disa cilësive të Allahut, ndërsa Ehli Hadithi i pohojnë cilësitë ashtu siç kanë ardhur pa te'vil. Dijetarët si Ibn Tejmije e kritikuan metodën e kelamit si risi (bidat) në disa çështje të cilësive, POR pa i nxjerrë nga Islami — dallim thelbësor nga firkat jashtë fesë.",
+          "content_sq": "ESH'ARITË (pasues të Ebul-Hasen el-Esh'ariut) dhe MATURIDITË (pasues të Ebu Mensur el-Maturidiut) janë dy shkolla të kelamit. Në metodologjinë e tyre pohohen shtatë cilësi themelore: jeta, dituria, fuqia, vullneti, dëgjimi, shikimi dhe të folurit; Maturiditë trajtojnë gjithashtu tekvinin si cilësi të përjetshme. Ata bëjnë te'vil ose tefvid në disa cilësi të ardhura në tekstet e shpalljes dhe nuk i pohojnë të gjitha cilësitë e teksteve në kuptimin e tyre të drejtpërdrejtë. Në çështjen e të folurit të Allahut, ata pohojnë 'kelamin nefsi' të përjetshëm, ndërsa fjalët, shkronjat, zërat, shkrimi dhe recitimi i dëgjuar nga njerëzit i trajtojnë si forma të krijuara ose të ndodhura në kohë; kjo nuk është e njëjtë me formulimin e Mu'tezilive se Kurani në tërësi është i krijuar. Sipas qasjes Athari/Selefije, kjo është devijim i rëndë nga metodologjia e sahabëve dhe e Ehli-Hadithit, sepse cilësitë e Allahut duhen pohuar ashtu siç kanë ardhur, pa te'vil, shtrembërim, pyetje për mënyrën ose përngjasim me krijesat. Kjo qasje nuk e pranon pretendimin se Esharitë dhe Maturiditë janë Ehl-us-Sunneh në kuptimin e akides Athari/Selefije. Artikulli 'Pretendimi i Esharive dhe Maturidive se janë Ehl-us-Sunneh' në Perlat Muslimane i paraqet këto kritika dhe e përfshin edhe çështjen e shtatë cilësive, ngritjes mbi Arsh dhe cilësive veprore. Gjykimi mbi një pohim doktrinar duhet dalluar nga tekfiri i një individi të caktuar, i cili kërkon plotësimin e kushteve dhe largimin e pengesave; artikulli i cituar nuk formulon një tekfir automatik të çdo individi.",
           "evidences": [
             {
               "type": "hadith",
@@ -792,15 +792,15 @@
           "explanation": "Hadithi autentik i përshkruan Khauarixhët; ekstremizmi modern si ISIS konsiderohet vazhdim i metodologjisë së tyre të tekfirit e dhunës."
         },
         {
-          "question": "A i konsideron shumica e dijetarëve Esh'aritë dhe Maturiditë jashtë Islamit?",
+          "question": "Si e vlerëson qasja Athari/Selefije te'vilin dhe kufizimin e cilësive te Esh'aritë dhe Maturiditë?",
           "options": [
-            "Po, janë jobesimtarë",
-            "Jo — janë muslimanë e pjesë e Ehli Sunetit; mospajtimi është metodologjik në disa çështje të cilësive",
-            "Po, njësoj si Nusajritë",
-            "Nuk ka mendim për ta"
+            "Është e njëjtë me metodologjinë Athari",
+            "Është devijim i rëndë; mohimi i cilësive të shpallura konsiderohet kufër në vetë pohimin, ndërsa tekfiri i individit kërkon kushte e pengesa",
+            "Nuk kanë asnjë dallim me Mu'tezilitë",
+            "Nuk kanë asnjë qëndrim teologjik"
           ],
           "correct_index": 1,
-          "explanation": "Esh'aritë e Maturiditë janë akidja e shumicës historike të sunive (përfshirë medhhebin tradicional shqiptar); dallimi me Atharitë është metodologjik (te'vili i cilësive), jo dalje nga Islami."
+          "explanation": "Sipas kritikës Athari/Selefije, te'vili dhe kufizimi i cilësive të Allahut janë devijim i rëndë dhe mohimi i një cilësie të pohuar qartë është kufër në vetë pohimin. Kjo nuk do të thotë se tekfiri i çdo individi bëhet automatikisht; për të gjykuar një person të caktuar kërkohen kushtet dhe hiqen pengesat. Burimet teologjike i përshkruajnë Esharitë dhe Maturiditë si shkolla kelami me formulimin e 'kelamit nefsi' dhe me dallimin mes fjalës së përjetshme dhe formës së recituar/shkruar të Kuranit."
         },
         {
           "question": "Cilat firka i konsiderojnë dijetarët — sunni e shia njësoj — jashtë Islamit?",
