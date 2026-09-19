@@ -1,7 +1,14 @@
+import 'dart:io';
+import 'dart:typed_data';
+import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:gal/gal.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:share_plus/share_plus.dart';
 import '../../../core/constants/app_constants.dart';
 import '../../../core/constants/daily_quotes.dart';
 import '../../../core/theme/app_colors.dart';
@@ -10,6 +17,271 @@ import '../../modules/providers/module_provider.dart';
 import '../../settings/providers/settings_provider.dart';
 import '../providers/home_provider.dart';
 import '../providers/last_lesson_provider.dart';
+
+Future<void> showDailyQuoteShareSheet(
+    BuildContext context, DailyQuote quote) async {
+  final choice = await showModalBottomSheet<String>(
+    context: context,
+    shape: const RoundedRectangleBorder(
+      borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+    ),
+    builder: (sheetContext) => SafeArea(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          const SizedBox(height: 10),
+          Container(
+            width: 40,
+            height: 4,
+            decoration: BoxDecoration(
+              color: Theme.of(sheetContext).colorScheme.outlineVariant,
+              borderRadius: BorderRadius.circular(4),
+            ),
+          ),
+          const SizedBox(height: 12),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                'Shpërndaj Thënien e Ditës',
+                style: Theme.of(sheetContext).textTheme.titleMedium,
+              ),
+            ),
+          ),
+          const SizedBox(height: 8),
+          ListTile(
+            leading: const Icon(Icons.image_rounded, color: AppColors.primary),
+            title: const Text('Si imazh'),
+            subtitle: const Text('Kartelë e dizajnuar për t\'u ndarë'),
+            onTap: () => Navigator.pop(sheetContext, 'image'),
+          ),
+          ListTile(
+            leading: const Icon(Icons.text_snippet_rounded,
+                color: AppColors.primary),
+            title: const Text('Si tekst'),
+            subtitle: const Text('Tekst i plotë i thënies'),
+            onTap: () => Navigator.pop(sheetContext, 'text'),
+          ),
+          const SizedBox(height: 8),
+        ],
+      ),
+    ),
+  );
+
+  if (choice == 'text') {
+    await SharePlus.instance.share(
+      ShareParams(text: buildDailyQuoteShareText(quote)),
+    );
+  } else if (choice == 'image' && context.mounted) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => DailyQuoteShareImageScreen(quote: quote),
+      ),
+    );
+  }
+}
+
+class DailyQuoteShareImageScreen extends StatefulWidget {
+  final DailyQuote quote;
+  const DailyQuoteShareImageScreen({super.key, required this.quote});
+
+  @override
+  State<DailyQuoteShareImageScreen> createState() =>
+      _DailyQuoteShareImageScreenState();
+}
+
+class _DailyQuoteShareImageScreenState
+    extends State<DailyQuoteShareImageScreen> {
+  final _cardKey = GlobalKey();
+  bool _busy = false;
+
+  Future<Uint8List?> _captureBytes() async {
+    final boundary =
+        _cardKey.currentContext?.findRenderObject() as RenderRepaintBoundary?;
+    if (boundary == null) return null;
+    final image = await boundary.toImage(pixelRatio: 3.0);
+    final byteData = await image.toByteData(format: ui.ImageByteFormat.png);
+    return byteData?.buffer.asUint8List();
+  }
+
+  Future<void> _share() async {
+    setState(() => _busy = true);
+    try {
+      final bytes = await _captureBytes();
+      if (bytes == null) return;
+      final dir = await getTemporaryDirectory();
+      final file = File(
+          '${dir.path}/al_mizan_thenia_dite_${DateTime.now().millisecondsSinceEpoch}.png');
+      await file.writeAsBytes(bytes);
+      await SharePlus.instance.share(ShareParams(
+        files: [XFile(file.path)],
+        text: buildDailyQuoteShareText(widget.quote),
+      ));
+    } finally {
+      if (mounted) setState(() => _busy = false);
+    }
+  }
+
+  Future<void> _saveToGallery() async {
+    setState(() => _busy = true);
+    try {
+      final bytes = await _captureBytes();
+      if (bytes == null || !mounted) return;
+      await Gal.putImageBytes(bytes,
+          album: 'Al Mizan', name: 'al_mizan_thenia_dite');
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+        content: Text('U ruajt në galeri!'),
+      ));
+    } on GalException catch (e) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: Text('Nuk u ruajt: ${e.type.message}'),
+      ));
+    } finally {
+      if (mounted) setState(() => _busy = false);
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final cs = theme.colorScheme;
+    final isDark = theme.brightness == Brightness.dark;
+
+    return Scaffold(
+      appBar: AppBar(title: const Text('Shpërndaj si Imazh')),
+      body: SafeArea(
+        child: Column(
+          children: [
+            Expanded(
+              child: Center(
+                child: SingleChildScrollView(
+                  padding: const EdgeInsets.all(24),
+                  child: RepaintBoundary(
+                    key: _cardKey,
+                    child: _DailyQuoteShareCard(
+                      quote: widget.quote,
+                      isDark: isDark,
+                      cs: cs,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: OutlinedButton.icon(
+                      onPressed: _busy ? null : _saveToGallery,
+                      icon: const Icon(Icons.download_rounded),
+                      label: const Text('Ruaj në Galeri'),
+                      style: OutlinedButton.styleFrom(
+                        padding: const EdgeInsets.symmetric(vertical: 16),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: FilledButton.icon(
+                      onPressed: _busy ? null : _share,
+                      icon: _busy
+                          ? const SizedBox(
+                              width: 18,
+                              height: 18,
+                              child: CircularProgressIndicator(strokeWidth: 2),
+                            )
+                          : const Icon(Icons.share_rounded),
+                      label: Text(_busy ? 'Po ndan...' : 'Ndaj'),
+                      style: FilledButton.styleFrom(
+                        padding: const EdgeInsets.symmetric(vertical: 16),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _DailyQuoteShareCard extends StatelessWidget {
+  final DailyQuote quote;
+  final bool isDark;
+  final ColorScheme cs;
+
+  const _DailyQuoteShareCard({
+    required this.quote,
+    required this.isDark,
+    required this.cs,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 360,
+      padding: const EdgeInsets.all(24),
+      decoration: BoxDecoration(
+        color: isDark ? cs.surfaceContainerHigh : AppColors.primaryContainer,
+        borderRadius: BorderRadius.circular(24),
+        border: Border.all(color: cs.outlineVariant),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(Icons.auto_awesome_rounded,
+                  color: isDark ? cs.secondary : cs.onPrimaryContainer,
+                  size: 16),
+              const SizedBox(width: 6),
+              Text(
+                'THËNIA E DITËS',
+                style: Theme.of(context).textTheme.labelMedium?.copyWith(
+                      color: isDark ? cs.secondary : cs.onPrimaryContainer,
+                      letterSpacing: 1.2,
+                    ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 16),
+          Text(
+            '"${quote.text}"',
+            style: GoogleFonts.sourceSerif4(
+              fontSize: 23,
+              fontWeight: FontWeight.w600,
+              color: isDark ? cs.onSurface : cs.onPrimaryContainer,
+              height: 1.4,
+            ),
+          ),
+          const SizedBox(height: 12),
+          Text(
+            '— ${quote.author}',
+            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  color: isDark
+                      ? cs.onSurfaceVariant
+                      : cs.onPrimaryContainer.withValues(alpha: 0.8),
+                  fontStyle: FontStyle.italic,
+                ),
+          ),
+          const SizedBox(height: 16),
+          Text(
+            'Al Mizan 📿',
+            style: Theme.of(context).textTheme.labelMedium?.copyWith(
+                  color: isDark ? cs.secondary : cs.onPrimaryContainer,
+                ),
+          ),
+        ],
+      ),
+    );
+  }
+}
 
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
@@ -46,388 +318,422 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
           child: ConstrainedBox(
             constraints: const BoxConstraints(maxWidth: 1200),
             child: CustomScrollView(
-          slivers: [
-            // ── HEADER ──
-            SliverToBoxAdapter(
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(20, 20, 20, 8),
-                child: Row(
-                  children: [
-                    Expanded(
+              slivers: [
+                // ── HEADER ──
+                SliverToBoxAdapter(
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 20, 20, 8),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Es-selamu alejkum, ${userName.isEmpty ? 'Nxënës' : userName}!',
+                                style: theme.textTheme.bodyMedium?.copyWith(
+                                  color: cs.onSurfaceVariant,
+                                ),
+                              ),
+                              const SizedBox(height: 2),
+                              Text(
+                                AppConstants.appName,
+                                style: theme.textTheme.headlineMedium?.copyWith(
+                                  color: cs.primary,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        // Streak badge
+                        streakAsync.when(
+                          data: (streak) => streak > 0
+                              ? Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 12, vertical: 6),
+                                  decoration: BoxDecoration(
+                                    color: cs.secondaryContainer
+                                        .withValues(alpha: 0.3),
+                                    borderRadius: BorderRadius.circular(20),
+                                    border: Border.all(
+                                      color: cs.outlineVariant,
+                                    ),
+                                  ),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      Icon(Icons.local_fire_department_rounded,
+                                          color: cs.secondary, size: 18),
+                                      const SizedBox(width: 4),
+                                      Text(
+                                        '$streak',
+                                        style: theme.textTheme.labelLarge
+                                            ?.copyWith(
+                                          color: cs.secondary,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                )
+                              : const SizedBox.shrink(),
+                          loading: () => const SizedBox.shrink(),
+                          error: (_, __) => const SizedBox.shrink(),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+
+                // ── DAILY CONTEMPLATION CARD ──
+                SliverToBoxAdapter(
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: isDark
+                            ? cs.surfaceContainerHigh
+                            : cs.primaryContainer,
+                        borderRadius: BorderRadius.circular(16),
+                        border: Border.all(color: cs.outlineVariant),
+                      ),
+                      padding: const EdgeInsets.all(20),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
-                            'Es-selamu alejkum, ${userName.isEmpty ? 'Nxënës' : userName}!',
-                            style: theme.textTheme.bodyMedium?.copyWith(
-                              color: cs.onSurfaceVariant,
-                            ),
-                          ),
-                          const SizedBox(height: 2),
-                          Text(
-                            AppConstants.appName,
-                            style: theme.textTheme.headlineMedium?.copyWith(
-                              color: cs.primary,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    // Streak badge
-                    streakAsync.when(
-                      data: (streak) => streak > 0
-                          ? Container(
-                              padding: const EdgeInsets.symmetric(
-                                  horizontal: 12, vertical: 6),
-                              decoration: BoxDecoration(
-                                color: cs.secondaryContainer.withValues(alpha: 0.3),
-                                borderRadius: BorderRadius.circular(20),
-                                border: Border.all(
-                                  color: cs.outlineVariant,
+                          Row(
+                            children: [
+                              Expanded(
+                                child: Row(
+                                  children: [
+                                    Icon(Icons.auto_awesome_rounded,
+                                        color: isDark
+                                            ? cs.secondary
+                                            : cs.onPrimaryContainer,
+                                        size: 16),
+                                    const SizedBox(width: 6),
+                                    Text(
+                                      'MEDITIMI I DITËS',
+                                      style:
+                                          theme.textTheme.labelMedium?.copyWith(
+                                        color: isDark
+                                            ? cs.secondary
+                                            : cs.onPrimaryContainer,
+                                        letterSpacing: 1.2,
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.min,
-                                children: [
-                                  Icon(Icons.local_fire_department_rounded,
-                                      color: cs.secondary, size: 18),
-                                  const SizedBox(width: 4),
-                                  Text(
-                                    '$streak',
-                                    style: theme.textTheme.labelLarge?.copyWith(
-                                      color: cs.secondary,
-                                    ),
-                                  ),
-                                ],
+                              IconButton(
+                                visualDensity: VisualDensity.compact,
+                                tooltip: 'Shpërndaj thënien e ditës',
+                                onPressed: () => showDailyQuoteShareSheet(
+                                  context,
+                                  DailyQuotes.forToday(),
+                                ),
+                                icon: Icon(Icons.share_rounded,
+                                    color: isDark
+                                        ? cs.secondary
+                                        : cs.onPrimaryContainer),
                               ),
-                            )
-                          : const SizedBox.shrink(),
-                      loading: () => const SizedBox.shrink(),
-                      error: (_, __) => const SizedBox.shrink(),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-
-            // ── DAILY CONTEMPLATION CARD ──
-            SliverToBoxAdapter(
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: isDark
-                        ? cs.surfaceContainerHigh
-                        : cs.primaryContainer,
-                    borderRadius: BorderRadius.circular(16),
-                    border: Border.all(color: cs.outlineVariant),
-                  ),
-                  padding: const EdgeInsets.all(20),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          Icon(Icons.auto_awesome_rounded,
-                              color: isDark ? cs.secondary : cs.onPrimaryContainer,
-                              size: 16),
-                          const SizedBox(width: 6),
+                            ],
+                          ),
+                          const SizedBox(height: 12),
                           Text(
-                            'MEDITIMI I DITËS',
-                            style: theme.textTheme.labelMedium?.copyWith(
-                              color: isDark ? cs.secondary : cs.onPrimaryContainer,
-                              letterSpacing: 1.2,
+                            DailyQuotes.forToday().text,
+                            style: GoogleFonts.sourceSerif4(
+                              fontSize: 20,
+                              fontWeight: FontWeight.w600,
+                              color:
+                                  isDark ? cs.onSurface : cs.onPrimaryContainer,
+                              height: 1.4,
+                            ),
+                          ),
+                          const SizedBox(height: 8),
+                          Text(
+                            '— ${DailyQuotes.forToday().author}',
+                            style: theme.textTheme.bodySmall?.copyWith(
+                              color: isDark
+                                  ? cs.onSurfaceVariant
+                                  : cs.onPrimaryContainer
+                                      .withValues(alpha: 0.75),
+                              fontStyle: FontStyle.italic,
                             ),
                           ),
                         ],
                       ),
-                      const SizedBox(height: 12),
-                      Text(
-                        DailyQuotes.forToday().text,
-                        style: GoogleFonts.sourceSerif4(
-                          fontSize: 20,
-                          fontWeight: FontWeight.w600,
-                          color: isDark ? cs.onSurface : cs.onPrimaryContainer,
-                          height: 1.4,
-                        ),
-                      ),
-                      const SizedBox(height: 8),
-                      Text(
-                        '— ${DailyQuotes.forToday().author}',
-                        style: theme.textTheme.bodySmall?.copyWith(
-                          color: isDark
-                              ? cs.onSurfaceVariant
-                              : cs.onPrimaryContainer.withValues(alpha: 0.75),
-                          fontStyle: FontStyle.italic,
-                        ),
-                      ),
-                    ],
+                    ),
                   ),
                 ),
-              ),
-            ),
 
-            // ── CONTINUE WHERE YOU LEFT OFF ──
-            if (lastLesson != null)
-              SliverToBoxAdapter(
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
-                  child: Material(
-                    color: cs.secondaryContainer.withValues(alpha: 0.35),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(16),
-                      side: BorderSide(color: cs.outlineVariant),
-                    ),
-                    child: InkWell(
-                      borderRadius: BorderRadius.circular(16),
-                      onTap: () => context.push(
-                          '/lesson/${lastLesson.moduleId}/${lastLesson.lessonId}'),
-                      child: Padding(
-                        padding: const EdgeInsets.all(16),
-                        child: Row(
-                          children: [
-                            Container(
-                              padding: const EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                color: cs.primary.withValues(alpha: 0.10),
-                                borderRadius: BorderRadius.circular(10),
-                              ),
-                              child: Icon(Icons.play_circle_fill_rounded,
-                                  color: cs.primary, size: 26),
+                // ── CONTINUE WHERE YOU LEFT OFF ──
+                if (lastLesson != null)
+                  SliverToBoxAdapter(
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
+                      child: Material(
+                        color: cs.secondaryContainer.withValues(alpha: 0.35),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(16),
+                          side: BorderSide(color: cs.outlineVariant),
+                        ),
+                        child: InkWell(
+                          borderRadius: BorderRadius.circular(16),
+                          onTap: () => context.push(
+                              '/lesson/${lastLesson.moduleId}/${lastLesson.lessonId}'),
+                          child: Padding(
+                            padding: const EdgeInsets.all(16),
+                            child: Row(
+                              children: [
+                                Container(
+                                  padding: const EdgeInsets.all(10),
+                                  decoration: BoxDecoration(
+                                    color: cs.primary.withValues(alpha: 0.10),
+                                    borderRadius: BorderRadius.circular(10),
+                                  ),
+                                  child: Icon(Icons.play_circle_fill_rounded,
+                                      color: cs.primary, size: 26),
+                                ),
+                                const SizedBox(width: 14),
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        'VAZHDO KU MBETE',
+                                        style: theme.textTheme.labelSmall
+                                            ?.copyWith(
+                                          color: cs.onSurfaceVariant,
+                                          letterSpacing: 1.1,
+                                        ),
+                                      ),
+                                      const SizedBox(height: 3),
+                                      Text(
+                                        lastLesson.lessonTitle,
+                                        style: theme.textTheme.titleSmall,
+                                        maxLines: 1,
+                                        overflow: TextOverflow.ellipsis,
+                                      ),
+                                      Text(
+                                        lastLesson.moduleTitle,
+                                        style:
+                                            theme.textTheme.bodySmall?.copyWith(
+                                          color: cs.onSurfaceVariant,
+                                        ),
+                                        maxLines: 1,
+                                        overflow: TextOverflow.ellipsis,
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Icon(Icons.chevron_right_rounded,
+                                    color: cs.onSurfaceVariant, size: 22),
+                              ],
                             ),
-                            const SizedBox(width: 14),
-                            Expanded(
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    'VAZHDO KU MBETE',
-                                    style: theme.textTheme.labelSmall?.copyWith(
-                                      color: cs.onSurfaceVariant,
-                                      letterSpacing: 1.1,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 3),
-                                  Text(
-                                    lastLesson.lessonTitle,
-                                    style: theme.textTheme.titleSmall,
-                                    maxLines: 1,
-                                    overflow: TextOverflow.ellipsis,
-                                  ),
-                                  Text(
-                                    lastLesson.moduleTitle,
-                                    style: theme.textTheme.bodySmall?.copyWith(
-                                      color: cs.onSurfaceVariant,
-                                    ),
-                                    maxLines: 1,
-                                    overflow: TextOverflow.ellipsis,
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Icon(Icons.chevron_right_rounded,
-                                color: cs.onSurfaceVariant, size: 22),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-
-            // ── STUDY PROGRESS ──
-            SliverToBoxAdapter(
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(20, 16, 20, 8),
-                child: Text(
-                  'VAZHDIMI I STUDIMIT',
-                  style: theme.textTheme.labelMedium?.copyWith(
-                    letterSpacing: 1.2,
-                  ),
-                ),
-              ),
-            ),
-
-            // View toggle: by module / by level
-            SliverToBoxAdapter(
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(16, 0, 16, 10),
-                child: SegmentedButton<bool>(
-                  segments: const [
-                    ButtonSegment(
-                      value: false,
-                      label: Text('Sipas Moduleve'),
-                      icon: Icon(Icons.menu_book_rounded, size: 18),
-                    ),
-                    ButtonSegment(
-                      value: true,
-                      label: Text('Sipas Niveleve'),
-                      icon: Icon(Icons.stairs_rounded, size: 18),
-                    ),
-                  ],
-                  selected: {_byLevel},
-                  onSelectionChanged: (s) =>
-                      setState(() => _byLevel = s.first),
-                  showSelectedIcon: false,
-                ),
-              ),
-            ),
-
-            // Module grid or by-level lesson list
-            modulesAsync.when(
-              data: (modules) {
-                if (!_byLevel) {
-                  return SliverPadding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
-                    sliver: SliverGrid(
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: gridCols,
-                        mainAxisSpacing: isLargeScreen ? 12 : 10,
-                        crossAxisSpacing: isLargeScreen ? 12 : 10,
-                        childAspectRatio: isLargeScreen ? 0.82 : 1.15,
-                        // Fixed height on large screens so two-line titles
-                        // never overflow regardless of column width.
-                        mainAxisExtent: isLargeScreen ? 230 : null,
-                      ),
-                      delegate: SliverChildBuilderDelegate(
-                        (context, index) => _ModuleGridCard(
-                          module: modules[index],
-                          large: isLargeScreen,
-                        ),
-                        childCount: modules.length,
-                      ),
-                    ),
-                  );
-                }
-                final entries = lessonsOfLevel(modules, _selectedLevel);
-                final levelColor = kLevelColors[_selectedLevel]!;
-                return SliverMainAxisGroup(
-                  slivers: [
-                    SliverToBoxAdapter(
-                      child: Padding(
-                        padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
-                        child: LevelChipsRow(
-                          selectedLevel: _selectedLevel,
-                          onLevelChanged: (l) =>
-                              setState(() => _selectedLevel = l),
-                        ),
-                      ),
-                    ),
-                    if (entries.isNotEmpty)
-                      SliverToBoxAdapter(
-                        child: Padding(
-                          padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
-                          child: LevelStartButton(
-                            modules: modules,
-                            level: _selectedLevel,
-                            color: levelColor,
                           ),
                         ),
                       ),
-                    SliverToBoxAdapter(
-                      child: LevelCompletedBadge(
-                        modules: modules,
-                        level: _selectedLevel,
-                        padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
-                      ),
                     ),
-                    SliverList.builder(
-                      itemCount: entries.length,
-                      itemBuilder: (context, index) {
-                        final (module, lesson) = entries[index];
-                        return LevelLessonTile(
-                          module: module,
-                          lesson: lesson,
-                          index: index,
-                          color: levelColor,
-                        );
-                      },
-                    ),
-                    if (entries.isNotEmpty)
-                      SliverToBoxAdapter(
-                        child: LevelQuizButton(level: _selectedLevel),
-                      ),
-                  ],
-                );
-              },
-              loading: () => const SliverFillRemaining(
-                child: Center(child: CircularProgressIndicator()),
-              ),
-              error: (e, _) => SliverFillRemaining(
-                child: Center(child: Text('Gabim: $e')),
-              ),
-            ),
+                  ),
 
-            // ── QUICK ACTIONS ──
-            SliverToBoxAdapter(
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(20, 20, 20, 8),
-                child: Text(
-                  'VEGLA TË SHPEJTA',
-                  style: theme.textTheme.labelMedium?.copyWith(
-                    letterSpacing: 1.2,
+                // ── STUDY PROGRESS ──
+                SliverToBoxAdapter(
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 16, 20, 8),
+                    child: Text(
+                      'VAZHDIMI I STUDIMIT',
+                      style: theme.textTheme.labelMedium?.copyWith(
+                        letterSpacing: 1.2,
+                      ),
+                    ),
                   ),
                 ),
-              ),
-            ),
 
-            SliverToBoxAdapter(
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: Column(
-                  children: [
-                    _QuickActionTile(
-                      icon: Icons.quiz_rounded,
-                      title: 'Kuiz i Përgjithshëm',
-                      subtitle: 'Testo njohuritë nga të gjitha temat',
-                      onTap: () => context.push('/general-quiz'),
+                // View toggle: by module / by level
+                SliverToBoxAdapter(
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 0, 16, 10),
+                    child: SegmentedButton<bool>(
+                      segments: const [
+                        ButtonSegment(
+                          value: false,
+                          label: Text('Sipas Moduleve'),
+                          icon: Icon(Icons.menu_book_rounded, size: 18),
+                        ),
+                        ButtonSegment(
+                          value: true,
+                          label: Text('Sipas Niveleve'),
+                          icon: Icon(Icons.stairs_rounded, size: 18),
+                        ),
+                      ],
+                      selected: {_byLevel},
+                      onSelectionChanged: (s) =>
+                          setState(() => _byLevel = s.first),
+                      showSelectedIcon: false,
                     ),
-                    const SizedBox(height: 8),
-                    _QuickActionTile(
-                      icon: Icons.timer_rounded,
-                      title: 'Sfida me Kohë',
-                      subtitle: 'Kuiz me kohë të kufizuar — sa më i lartë niveli, aq më pak kohë',
-                      onTap: () => context.push('/timed-challenge'),
-                    ),
-                    const SizedBox(height: 8),
-                    _QuickActionTile(
-                      icon: Icons.today_rounded,
-                      title: 'Sfida Ditore',
-                      subtitle: '15 pyetje të përziera çdo ditë — ruaj serinë!',
-                      onTap: () => context.push('/daily-challenge'),
-                    ),
-                    const SizedBox(height: 8),
-                    _QuickActionTile(
-                      icon: Icons.date_range_rounded,
-                      title: 'Sfida Javore',
-                      subtitle: '3 pjesë me kohëmatës — vështirësia rritet, koha ulet',
-                      onTap: () => context.push('/weekly-challenge'),
-                    ),
-                    const SizedBox(height: 8),
-                    _QuickActionTile(
-                      icon: Icons.calculate_rounded,
-                      title: 'Llogaritës Zekati',
-                      subtitle: 'Llogarit detyrimet e zekatit',
-                      onTap: () => context.push('/zakat'),
-                    ),
-                    const SizedBox(height: 8),
-                    _QuickActionTile(
-                      icon: Icons.question_answer_rounded,
-                      title: 'Pyet Dijetarin',
-                      subtitle: 'Pyetje dhe përgjigje rreth fesë',
-                      onTap: () => context.push('/ask'),
-                    ),
-                  ],
+                  ),
                 ),
-              ),
-            ),
 
-            const SliverPadding(padding: EdgeInsets.only(bottom: 32)),
-          ],
+                // Module grid or by-level lesson list
+                modulesAsync.when(
+                  data: (modules) {
+                    if (!_byLevel) {
+                      return SliverPadding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        sliver: SliverGrid(
+                          gridDelegate:
+                              SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: gridCols,
+                            mainAxisSpacing: isLargeScreen ? 12 : 10,
+                            crossAxisSpacing: isLargeScreen ? 12 : 10,
+                            childAspectRatio: isLargeScreen ? 0.82 : 1.15,
+                            // Fixed height on large screens so two-line titles
+                            // never overflow regardless of column width.
+                            mainAxisExtent: isLargeScreen ? 230 : null,
+                          ),
+                          delegate: SliverChildBuilderDelegate(
+                            (context, index) => _ModuleGridCard(
+                              module: modules[index],
+                              large: isLargeScreen,
+                            ),
+                            childCount: modules.length,
+                          ),
+                        ),
+                      );
+                    }
+                    final entries = lessonsOfLevel(modules, _selectedLevel);
+                    final levelColor = kLevelColors[_selectedLevel]!;
+                    return SliverMainAxisGroup(
+                      slivers: [
+                        SliverToBoxAdapter(
+                          child: Padding(
+                            padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
+                            child: LevelChipsRow(
+                              selectedLevel: _selectedLevel,
+                              onLevelChanged: (l) =>
+                                  setState(() => _selectedLevel = l),
+                            ),
+                          ),
+                        ),
+                        if (entries.isNotEmpty)
+                          SliverToBoxAdapter(
+                            child: Padding(
+                              padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
+                              child: LevelStartButton(
+                                modules: modules,
+                                level: _selectedLevel,
+                                color: levelColor,
+                              ),
+                            ),
+                          ),
+                        SliverToBoxAdapter(
+                          child: LevelCompletedBadge(
+                            modules: modules,
+                            level: _selectedLevel,
+                            padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
+                          ),
+                        ),
+                        SliverList.builder(
+                          itemCount: entries.length,
+                          itemBuilder: (context, index) {
+                            final (module, lesson) = entries[index];
+                            return LevelLessonTile(
+                              module: module,
+                              lesson: lesson,
+                              index: index,
+                              color: levelColor,
+                            );
+                          },
+                        ),
+                        if (entries.isNotEmpty)
+                          SliverToBoxAdapter(
+                            child: LevelQuizButton(level: _selectedLevel),
+                          ),
+                      ],
+                    );
+                  },
+                  loading: () => const SliverFillRemaining(
+                    child: Center(child: CircularProgressIndicator()),
+                  ),
+                  error: (e, _) => SliverFillRemaining(
+                    child: Center(child: Text('Gabim: $e')),
+                  ),
+                ),
+
+                // ── QUICK ACTIONS ──
+                SliverToBoxAdapter(
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 20, 20, 8),
+                    child: Text(
+                      'VEGLA TË SHPEJTA',
+                      style: theme.textTheme.labelMedium?.copyWith(
+                        letterSpacing: 1.2,
+                      ),
+                    ),
+                  ),
+                ),
+
+                SliverToBoxAdapter(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Column(
+                      children: [
+                        _QuickActionTile(
+                          icon: Icons.quiz_rounded,
+                          title: 'Kuiz i Përgjithshëm',
+                          subtitle: 'Testo njohuritë nga të gjitha temat',
+                          onTap: () => context.push('/general-quiz'),
+                        ),
+                        const SizedBox(height: 8),
+                        _QuickActionTile(
+                          icon: Icons.timer_rounded,
+                          title: 'Sfida me Kohë',
+                          subtitle:
+                              'Kuiz me kohë të kufizuar — sa më i lartë niveli, aq më pak kohë',
+                          onTap: () => context.push('/timed-challenge'),
+                        ),
+                        const SizedBox(height: 8),
+                        _QuickActionTile(
+                          icon: Icons.today_rounded,
+                          title: 'Sfida Ditore',
+                          subtitle:
+                              '15 pyetje të përziera çdo ditë — ruaj serinë!',
+                          onTap: () => context.push('/daily-challenge'),
+                        ),
+                        const SizedBox(height: 8),
+                        _QuickActionTile(
+                          icon: Icons.date_range_rounded,
+                          title: 'Sfida Javore',
+                          subtitle:
+                              '3 pjesë me kohëmatës — vështirësia rritet, koha ulet',
+                          onTap: () => context.push('/weekly-challenge'),
+                        ),
+                        const SizedBox(height: 8),
+                        _QuickActionTile(
+                          icon: Icons.calculate_rounded,
+                          title: 'Llogaritës Zekati',
+                          subtitle: 'Llogarit detyrimet e zekatit',
+                          onTap: () => context.push('/zakat'),
+                        ),
+                        const SizedBox(height: 8),
+                        _QuickActionTile(
+                          icon: Icons.question_answer_rounded,
+                          title: 'Pyet Dijetarin',
+                          subtitle: 'Pyetje dhe përgjigje rreth fesë',
+                          onTap: () => context.push('/ask'),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+
+                const SliverPadding(padding: EdgeInsets.only(bottom: 32)),
+              ],
+            ),
+          ),
         ),
       ),
-    ),
-  ),
     );
   }
 }
