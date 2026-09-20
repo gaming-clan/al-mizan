@@ -38,6 +38,29 @@
           "ruling": "farz"
         },
         {
+          "heading": "Pyetja e Shejhut Albanin — A prishet namazi nëse nuk e lexon Fatihanë?",
+          "content_sq": "Pyetja: 'A prishet namazi nëse nuk e lexon Fatihanë?'\n\nPërgjigja e Shejhut Albanin është se çështja varet nga medh'hebi. Sipas medh'hebit Hanefi, leximi i El-Fatihasë në namaz është vaxhib (i detyrueshëm). Nëse lihet me qëllim, namazi duhet të përsëritet. Nëse harrohet, bëhet sexhde-sehvi. Sipas tre medh'hebeve tjera (Maliki, Shafi'i dhe Hanbeli), El-Fatiha është rukn (shtyllë), dhe pa të namazi nuk pranohet fare.\n\nKjo është një nga pyetjet më të shpeshta në praktikën e namazit dhe rregullimi i saj varet nga medh'hebi, por në të gjitha rastet, nevoja e kujdesit ndaj namazit dhe rregullsisë së tij është e qartë.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "لَا صَلَاةَ لِمَنْ لَمْ يَقْرَأْ بِفَاتِحَةِ الْكِتَابِ",
+              "translation_sq": "Nuk ka namaz për atë që nuk lexon Fatihën e Librit.",
+              "surah": "Sahih Bukhari",
+              "ayah": 756
+            },
+            {
+              "type": "hadith",
+              "arabic": "لا صلاة لمن لم يقرأ بفاتحة الكتاب",
+              "translation_sq": "Nuk ka namaz për atë që nuk lexon Fatihën e Librit.",
+              "narrator": "Ubade ibn es-Samit (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 756,
+              "classification": "sahih"
+            }
+          ],
+          "ruling": "vaxhib"
+        },
+        {
           "heading": "Kohët e Namazeve",
           "content_sq": "Pesë namazet ditore dhe kohët e tyre: Sabahu (el-fexhr) — nga agimi deri para lindjes së diellit. Dreka (edh-dhuhr) — kur dielli kalon zeniten deri kur hija bëhet sa objekti (ose dyfishi sipas Hanefijve). Ikindia (el-asr) — nga mbarimi i kohës së drekës deri para perëndimit. Akshami (el-magrib) — pas perëndimit të diellit deri kur zhduket skuqja në horizont. Jacia (el-isha) — pas zhdukjes së skuqjes deri në mesnatë (ose agim sipas nevojës).",
           "evidences": [

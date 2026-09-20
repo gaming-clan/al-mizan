@@ -44,6 +44,47 @@
           ]
         },
         {
+          "heading": "Pyetja e Shejhut Albanin — A lejohen kreditë bankare me kamatë?",
+          "content_sq": "Pyetja: 'A lejohen kreditë bankare me kamatë?'\n\nPërgjigja e Shejhut Albanin është e qartë: kamat e bankave, me të cilat bëhet marrëveshja e huasë, konsiderohen riba (kamatë), dhe kjo është e ndaluar me tekstin e Kur'anit dhe haditheve. 'Allahu ka lejuar tregtinë dhe ka ndaluar kamatën.' (Bekare 2:275). Këto kredi nuk janë të lejuara për një musliman të dëshiron të jetojë sipas udhëzimeve të Islamit; alternativat e lejueshme përfshijnë financimin islamik, murabahën, ixharën, musharaken dhe partneritetet e tjera pa qiraxh.\n\nPrandaj, përgjigja e drejtë është se kredia e kamatës është e ndaluar, dhe duhet të shmanget me të gjitha mënyrat e mundshme; nëse ndodhet në një situatë ku nuk ka alternativë, duhet të kërkohet këshillë dhe të merret vendim i saktë sipas dijenit.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "أَحَلَّ اللَّهُ الْبَيْعَ وَحَرَّمَ الرِّبَا",
+              "translation_sq": "Allahu e ka lejuar tregtinë dhe e ka ndaluar kamatën.",
+              "surah": "El-Bekare",
+              "surah_number": 2,
+              "ayah": 275
+            },
+            {
+              "type": "quran",
+              "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ وَذَرُوا مَا بَقِيَ مِنَ الرِّبَا إِن كُنتُم مُّؤْمِنِينَ",
+              "translation_sq": "O ju që besuat, kini frikë Allahun dhe nëse jeni besimtarë të sinqertë, hiqni dorë prej asaj që ka mbetur nga kamata.",
+              "surah": "El-Bekare",
+              "surah_number": 2,
+              "ayah": 278
+            }
+          ],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Riba ndodh në 6 mallra ribevije. Shkëmbimi duhet të jetë i menjëhershëm dhe i barabartë për mallra të të njëjtit lloj.",
+              "source": "El-Hidaje, Merginanij"
+            },
+            "maliki": {
+              "ruling": "Riba zbatohet për mallra ushqimore dhe monetare. Kriteret janë: ushqimi që ruhet dhe vlera monetare.",
+              "source": "Esh-Sherhu el-Kebir"
+            },
+            "shafii": {
+              "ruling": "Riba zbatohet për mallra ushqimore (çdo ushqim) dhe monetare (ari, argjendi dhe ekuivalentët).",
+              "source": "El-Mexhmu', Nevevij"
+            },
+            "hanbali": {
+              "ruling": "Riba zbatohet për mallra që maten me peshë ose vëllim, plus arin dhe argjendin.",
+              "source": "El-Mugni, Ibn Kudame"
+            },
+            "consensus_note": "Ixhma' (unanimitet): Të katër medhhebet pajtohen se kamata (riba) është haram kategorikisht."
+          }
+        },
+        {
           "heading": "Ndalimi i Kamatës (Riba)",
           "content_sq": "Kamata (الربا) është nga mëkatet më të rënda në Islam. Ajo ndahet në dy lloje: 1) Riba el-Fadl — shkëmbimi i të njëjtit mall me shtesë (p.sh. 100g ar me 110g ar). 2) Riba en-Nesie — vonesa në shkëmbim të mallrave ribevije (ari, argjendi, gruri, elbi, hurma, kripa). Në kohën moderne, kamata bankare (interesi) konsiderohet riba nga shumica dërrmuese e dijetarëve. Alternativat islame përfshijnë: murabaha (shitje me fitim), ixhare (qira), mudarabe (partneritet me fitim/humbje), musharake (bashkëpjesëmarrje).",
           "evidences": [

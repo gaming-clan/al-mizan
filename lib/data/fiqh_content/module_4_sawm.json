@@ -40,6 +40,39 @@
           "ruling": "farz"
         },
         {
+          "heading": "Pyetja e Shejhut Albanin — A e prish agjërimin injeksioni?",
+          "content_sq": "Pyetja: 'A e prish agjërimin injeksioni?'\n\nPërgjigja e Shejhut Albanin është e qartë: injeksionet intramuskulare dhe nënlëkurore nuk e prishin agjërimin sepse ato nuk hyjnë në stomak nëpërmjet rrugëve natyrale. Injeksionet intravenoze ushqyese (si glukoza ose vitamina) e prishin agjërimin sipas shumicës së dijetarëve, sepse kanë funksion ushqyes dhe ndjejnë trupin si një hyrje nëtruese të ushqimit.\n\nKjo është një çështje e rëndësishme për të trajtuar në praktikë, sepse jo çdo substancë qenie e cila futet në trup e prish agjërimin; fokus është nëse ajo ka vlerë ushqyese, jo thjesht në mënyrën e dhënies.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "مَنْ نَسِيَ وَهُوَ صَائِمٌ فَأَكَلَ أَوْ شَرِبَ فَلْيُتِمَّ صَوْمَهُ فَإِنَّمَا أَطْعَمَهُ اللَّهُ وَسَقَاهُ",
+              "translation_sq": "Kush harron duke qenë agjërueshëm dhe ha ose pi, le ta plotësojë agjërimin e tij, sepse Allahu e ka ushqyer dhe i ka dhënë të pijë.",
+              "narrator": "Ebu Hurejre (r.a.)",
+              "collection": "Sahih Bukhari",
+              "hadith_number": 1933,
+              "classification": "sahih"
+            }
+          ],
+          "madhab_rulings": {
+            "hanafi": {
+              "ruling": "Vjellja e provokuar me qëllim e prish agjërimin nëse goja mbushet plot. Injeksionet ushqyese e prishin.",
+              "source": "Hashijetu Ibn Abidin"
+            },
+            "maliki": {
+              "ruling": "Vjellja e provokuar me qëllim e prish agjërimin. Kush vjell pa dashje nuk ka asgjë.",
+              "source": "Esh-Sherhu es-Sagir"
+            },
+            "shafii": {
+              "ruling": "Vjellja e provokuar me qëllim e prish nëse del diçka. Pikat e syrit nuk e prishin.",
+              "source": "El-Mexhmu', Nevevij"
+            },
+            "hanbali": {
+              "ruling": "Vjellja e provokuar e prish. Pikat e hundës dhe injeksionet venore nuk e prishin sipas mendimit më të saktë.",
+              "source": "El-Mugni, Ibn Kudame"
+            }
+          }
+        },
+        {
           "heading": "Gjërat që e prishin Agjërimin",
           "content_sq": "Agjërimi prishet nga: ngrënia ose pirja me qëllim, marrëdhëniet intime gjatë ditës, vjellja e provokuar me qëllim (sipas shumicës), hyrja e substancave në trup nëpërmjet hundës ose veshit (sipas disa dijetarëve). Nëse dikush ha ose pi nga harresa, agjërimi nuk prishet sipas hadithit: 'Kush harron duke qenë agjërueshëm dhe ha ose pi, le ta plotësojë agjërimin, sepse Allahu e ka ushqyer.'",
           "evidences": [

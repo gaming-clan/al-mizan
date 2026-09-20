@@ -13,6 +13,11 @@ class AskScholarScreen extends StatefulWidget {
 class _AskScholarScreenState extends State<AskScholarScreen> {
   String _selectedTopic = 'Të gjitha';
 
+  static const _sourceNotice =
+      'Burimi aktiv: pyetjet dhe përgjigjet me Shejhu Albanin (nr. 1–17). '
+      'Audioja e pyetje-pergjigjeve të numrit 18 mungon nga burimi origjinal, '
+      'prandaj ky numër është hequr plotësisht nga rrjedha e punës.';
+
   static const _topics = [
     'Të gjitha',
     'Namazi',
@@ -126,7 +131,8 @@ class _AskScholarScreenState extends State<AskScholarScreen> {
     ),
     _QA(
       topic: 'Namazi',
-      question: 'Si falet një person i sëmurë që nuk mund të qëndrojë në këmbë?',
+      question:
+          'Si falet një person i sëmurë që nuk mund të qëndrojë në këmbë?',
       answer:
           'Falet ulur (këmbëkryq preferohet); nëse nuk mundet, në një anë të kthyer nga kibla (e djathta e preferuar); nëse nuk mundet, i shtrirë me shpinë e këmbët nga kibla. Nëse nuk mund të bëjë ruku e sexhde fizikisht, bën me shenjë me kokë (sexhdja më ulët); e në gradën e fundit, falet me zemër, duke bërë nijetin për çdo pjesë të namazit.',
       scholar: 'Muhamed b. Salih El-Uthejmin',
@@ -142,7 +148,8 @@ class _AskScholarScreenState extends State<AskScholarScreen> {
     ),
     _QA(
       topic: 'Tregtia',
-      question: 'A lejohen lojërat shpërblyese që organizojnë qendrat tregtare?',
+      question:
+          'A lejohen lojërat shpërblyese që organizojnë qendrat tregtare?',
       answer:
           'Nuk lejohet blerja e një kuponi vetëm për të hyrë në short (kjo është bixhoz i kulluar). Por lojërat e lidhura me blerje të zakonshme lejohen sipas Sheikh Uthejminit me dy kushte: çmimi i produktit të mos rritet artificialisht për të financuar shpërblimin, dhe blerësi ta blejë sepse ka nevojë reale, jo thjesht për të hyrë në short.',
       scholar: 'Alaudin Abazi',
@@ -177,6 +184,22 @@ class _AskScholarScreenState extends State<AskScholarScreen> {
       ),
       body: Column(
         children: [
+          Container(
+            width: double.infinity,
+            margin: const EdgeInsets.fromLTRB(16, 12, 16, 8),
+            padding: const EdgeInsets.all(12),
+            decoration: BoxDecoration(
+              color: cs.tertiaryContainer.withValues(alpha: 0.35),
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(color: cs.outlineVariant),
+            ),
+            child: Text(
+              _sourceNotice,
+              style: theme.textTheme.bodySmall?.copyWith(
+                color: cs.onSurfaceVariant,
+              ),
+            ),
+          ),
           // Topic chips
           SizedBox(
             height: 48,
@@ -191,8 +214,7 @@ class _AskScholarScreenState extends State<AskScholarScreen> {
                 return FilterChip(
                   label: Text(topic),
                   selected: selected,
-                  onSelected: (_) =>
-                      setState(() => _selectedTopic = topic),
+                  onSelected: (_) => setState(() => _selectedTopic = topic),
                   selectedColor: cs.primaryContainer,
                   checkmarkColor: cs.onPrimary,
                   labelStyle: theme.textTheme.labelMedium?.copyWith(
@@ -206,7 +228,8 @@ class _AskScholarScreenState extends State<AskScholarScreen> {
           // Q&A list
           Expanded(
             child: ListView.separated(
-              padding: EdgeInsets.fromLTRB(16, 8, 16, MediaQuery.of(context).padding.bottom + 24),
+              padding: EdgeInsets.fromLTRB(
+                  16, 8, 16, MediaQuery.of(context).padding.bottom + 24),
               itemCount: _filteredList.length,
               separatorBuilder: (_, __) => const SizedBox(height: 12),
               itemBuilder: (context, index) {
@@ -254,8 +277,7 @@ class _QACardState extends State<_QACard> {
             children: [
               // Topic badge
               Container(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
                 decoration: BoxDecoration(
                   color: cs.primary.withValues(alpha: 0.08),
                   borderRadius: BorderRadius.circular(6),

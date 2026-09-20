@@ -43,6 +43,30 @@
           "ruling": "farz"
         },
         {
+          "heading": "Pyetja e Shejhut Albanin — A jepet zekat për paratë e kursyera për shtëpi?",
+          "content_sq": "Pyetja: 'A jepet zekat për paratë e kursyera për shtëpi?'\n\nPërgjigja e Shejhut Albanin është se po, nëse shuma arrin nisabin dhe kalon një vit hënor mbi të, ajo duhet të jepet si zekat edhe nëse është caktuar për blerje shtëpie. Qëllimi i përdorimit nuk e heq detyrimin e zekatit; detyrimi varet nga pasuria dhe kalimi i hixhit, jo vetëm nga përdorimi i saj.\n\nKjo është një këshillë thelbësore për praktikën e muslimanit: veprimi i kursimit është i lejuar, por pasuria e mbajtur mbi nisab duhet të trajtohet sipas rregullave të zekatit, duke u kryer me qetësi dhe pa hezitim.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "خُذْ مِنْ أَمْوَالِهِمْ صَدَقَةً تُطَهِّرُهُمْ وَتُزَكِّيهِم بِهَا",
+              "translation_sq": "Merr nga pasuria e tyre lëmoshë (zekat) me të cilën i pastron dhe i rrit ata.",
+              "surah": "Et-Teube",
+              "surah_number": 9,
+              "ayah": 103
+            },
+            {
+              "type": "hadith",
+              "arabic": "إذا كانَتْ لَكَ مِئَتا دِرْهَمٍ وحالَ عَلَيْها الحَوْلُ فَفِيها خَمْسَةُ دَراهِمَ",
+              "translation_sq": "Kur ke 200 dirhem dhe kalon një vit mbi to, jep pesë dirhem (2.5%).",
+              "narrator": "Ali ibn Ebi Talib (r.a.)",
+              "collection": "Sunen Ebu Davud",
+              "hadith_number": 1573,
+              "classification": "hasen"
+            }
+          ],
+          "ruling": "farz"
+        },
+        {
           "heading": "Nisabi dhe Llogaritja",
           "content_sq": "Nisabi është pragu minimal i pasurisë mbi të cilin zekati bëhet obligim. Nisabi llogaritet sipas vlerës së arit ose argjendit: Ari: 85 gram ar i pastër (21 karat ose më shumë). Argjendi: 595 gram argjend i pastër. Paraja: ekuivalenti i 85g ar ose 595g argjend (merret vlera më e ulët sipas shumicës). Llogaritja: Pasuria totale (para, ar, argjend, investime, mallra tregtare) minus borxhet = pasuria neto. Nëse pasuria neto > nisabi për 1 vit hënor → zekat = 2.5% e pasurisë neto.",
           "evidences": [

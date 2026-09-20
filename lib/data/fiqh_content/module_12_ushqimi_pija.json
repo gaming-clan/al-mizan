@@ -103,6 +103,29 @@
       ],
       "sections": [
         {
+          "heading": "Pyetja e Shejhut Albanin — A lejohet ngrënia e ushqimit nga Ehli Kitabi?",
+          "content_sq": "Pyetja: 'A lejohet ngrënia e ushqimit nga Ehli Kitabi?'\n\nPërgjigja e Shejhut Albanin është po, sepse Allahu ka lejuar ushqimin e atyre që iu dha Libri: 'Ushqimi i atyre që iu dha Libri është hallall për ju.' (Maide 5:5). Kjo ka kuptimin e mishit të therur me emrin e Allahut sipas ritit të tyre, me kushtin që nuk tërhiqet e cila ka dëmtim apo mënyrën që e shikon Islamin si haram. Kur një ushqim vjen nga një popull të Librit, është i lejuar përderisa nuk ka pengesë tjetër në tij, dhe pasuria shoqërohet me etikën e punës dhe shpeshtë e ndershmërisë.",
+          "evidences": [
+            {
+              "type": "quran",
+              "arabic": "يَا أَيُّهَا النَّاسُ كُلُوا مِمَّا فِي الْأَرْضِ حَلَالًا طَيِّبًا",
+              "translation_sq": "O njerëz! Hani nga ajo që është në tokë, hallall dhe e mirë.",
+              "surah": "El-Bekare",
+              "surah_number": 2,
+              "ayah": 168
+            },
+            {
+              "type": "quran",
+              "arabic": "طَعَامُ الَّذِينَ أُوتُوا الْكِتَابَ حِلٌّ لَكُمْ",
+              "translation_sq": "Ushqimi i atyre që iu dha Libri është hallall për ju.",
+              "surah": "El-Maide",
+              "surah_number": 5,
+              "ayah": 5
+            }
+          ],
+          "ruling": "hallall"
+        },
+        {
           "heading": "Ndalimi i alkoolit (el-Hamr)",
           "content_sq": "Alkooli është i ndaluar me tekst kur'anor. Ndalimi erdhi gradualisht: 1) Fillimisht u tha se ka mëkat e dobi (Bekare 2:219). 2) Pastaj u ndalua namazi i dehur (Nisa 4:43). 3) Përfundimisht u ndalua plotësisht (Maide 5:90). Çdo pije dehëse është haram, qoftë pak apo shumë. Profeti ﷺ: 'Çdo dehëse është hamer dhe çdo hamer është haram.'",
           "evidences": [

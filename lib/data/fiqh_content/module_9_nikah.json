@@ -40,6 +40,24 @@
           ]
         },
         {
+          "heading": "Pyetja e Shejhut Albanin — Cilat janë kushtet e nikahut (martesës) në Islam?",
+          "content_sq": "Pyetja: 'Cilat janë kushtet e nikahut (martesës) në Islam?'\n\nPërgjigja e Shejhut Albanin është se martesa në Islam ka disa kushte të rëndësishme: 1) Pëlqimi i dy palëve, 2) Kujdestari (Veliu) sipas shumicës, 3) Dy dëshmitarë të drejtë, 4) Mehri (dhurata martesore), 5) Formulimi i kontratës (ijab dhe kabul).\n\nNëse një nga këto kushte mungon, martesa mund të jetë e pavlefshme ose e diskutueshme sipas medh'hebeve. Çështja është e rëndësishme sepse martesa është një obligim dhe një pergjegjësi e madhe, dhe nuk duhet të trajtohet si një çështje e thjeshtë e shoqërisë, por si një akd i shenjtë me rregulla dhe etikë islame.",
+          "evidences": [
+            {
+              "type": "hadith",
+              "arabic": "لا نكاح إلا بولي وشاهدي عدل",
+              "translation_sq": "Nuk ka martesë pa kujdestar dhe dy dëshmitarë të drejtë.",
+              "collection": "Tirmidhiu"
+            },
+            {
+              "type": "hadith",
+              "arabic": "لا تُنكح الأيم حتى تُستأمر ولا تُنكح البكر حتى تُستأذن",
+              "translation_sq": "Nuk martohet e veja derisa të pyetet, as virgjëresha derisa t'i merret leja.",
+              "collection": "Buhariu"
+            }
+          ]
+        },
+        {
           "heading": "Kushtet e martesës (Shurutu en-Nikah)",
           "content_sq": "Kushtet e vlefshmerisë së martesës janë: 1) Pëlqimi i dy palëve — gruaja nuk martohet me detyrim. 2) Kujdestari (Veliu) — sipas Shafiive dhe Hanbelive është kusht, sipas Hanefive gruaja e pjekur mund të martohet vetë. 3) Dy dëshmitarë meshkuj muslimanë. 4) Mehri (dhurata martesore) — e drejtë e gruas që burri duhet ta japë. 5) Formulimi (Ixhab dhe Kabul) — oferta dhe pranimi.",
           "evidences": [
